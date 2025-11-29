@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilly-SMP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        minecoin: '#dbb004',
+                        'minecoin-glow': '#ffc107'
+                    }
+                },
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif']
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0 font-poppins bg-gray-800 text-gray-100 min-h-screen relative">
+    <div class="relative max-w-7xl mx-auto px-5 py-6 z-10 bg-transparent">
+        <header class="text-center py-6">
+            <nav class="mb-8">
+                <ul class="flex justify-center space-x-8">
+                    <li><a href="wiki.html" class="text-white hover:text-minecoin-glow transition-colors duration-300">Wiki</a></li>
+                    <li><a href="#" class="text-minecoin hover:text-minecoin-glow transition-colors duration-300">Home</a></li>
+                </ul>
+            </nav>
+            <h1 class="text-5xl mb-5 text-white text-shadow-lg">Welcome to Gilly-SMP</h1>
+            <div class="bg-black/40 border-2 border-minecoin backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto">
+                <p class="leading-relaxed text-lg">Join our amazing Minecraft community! We offer a unique gaming experience with both Java and Bedrock support. Explore vast landscapes, build incredible structures, and make new friends in an awesome server.</p>
+            </div>
+        </header>
+        <main>
+            <section class="bg-black/40 border-2 border-minecoin backdrop-blur-sm rounded-2xl p-8 my-5">
+                <h2 class="text-3xl text-center mb-8">Join Our Community</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center p-6">
+                        <h3 class="text-2xl mb-4">Java Edition</h3>
+                        <p id="java-ip" class="text-lg text-minecoin mb-4">mc.gillyb.net:25568</p>
+                        <button onclick="copyIP('java-ip')" class="bg-black/60 text-white border border-minecoin px-5 py-2.5 rounded cursor-pointer hover:bg-minecoin hover:text-black transition-all duration-300 transform hover:-translate-y-0.5">Copy IP</button>
+                    </div>
+                    <div class="text-center p-6">
+                        <h3 class="text-2xl mb-4">Bedrock Edition</h3>
+                        <p id="bedrock-ip" class="text-lg text-minecoin mb-4">mc.gillyb.net:19132</p>
+                        <button onclick="connectBedrock()" class="bg-black/60 text-white border border-minecoin px-5 py-2.5 rounded cursor-pointer hover:bg-minecoin hover:text-black transition-all duration-300 transform hover:-translate-y-0.5">Connect Now</button>
+                    </div>
+                </div>
+                <p id="copy-message" class="text-center mt-4"></p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

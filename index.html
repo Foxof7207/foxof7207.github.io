@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilly-SMP</title>
+    <title>Wiki - GillyB.net</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -21,40 +21,238 @@
             }
         }
     </script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .accordion-title::after {
+            content: '\002B'; /* Unicode character for "plus" sign */
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion-button[aria-expanded="true"] .accordion-title::after {
+            content: '\2212'; /* Unicode character for "minus" sign */
+        }
+
+        .accordion-title {
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .accordion-item {
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .accordion-item button {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+        }
+    </style>
 </head>
 <body class="m-0 p-0 font-poppins bg-gray-800 text-gray-100 min-h-screen relative">
     <div class="relative max-w-7xl mx-auto px-5 py-6 z-10 bg-transparent">
         <header class="text-center py-6">
-            <nav class="mb-8">
-                <ul class="flex justify-center space-x-8">
-                    <li><a href="wiki.html" class="text-white hover:text-minecoin-glow transition-colors duration-300">Wiki</a></li>
-                    <li><a href="#" class="text-minecoin hover:text-minecoin-glow transition-colors duration-300">Home</a></li>
-                </ul>
-            </nav>
-            <h1 class="text-5xl mb-5 text-white text-shadow-lg">Welcome to Gilly-SMP</h1>
+            <h1 class="text-5xl mb-5 text-white text-shadow-lg">Gilly-SMP Wiki</h1>
             <div class="bg-black/40 border-2 border-minecoin backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto">
-                <p class="leading-relaxed text-lg">Join our amazing Minecraft community! We offer a unique gaming experience with both Java and Bedrock support. Explore vast landscapes, build incredible structures, and make new friends in an awesome server.</p>
+                <p class="leading-relaxed text-lg">Explore our knowledge base for server information, guides, and more.</p>
             </div>
         </header>
-        <main>
-            <section class="bg-black/40 border-2 border-minecoin backdrop-blur-sm rounded-2xl p-8 my-5">
-                <h2 class="text-3xl text-center mb-8">Join Our Community</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="text-center p-6">
-                        <h3 class="text-2xl mb-4">Java Edition</h3>
-                        <p id="java-ip" class="text-lg text-minecoin mb-4">mc.gillyb.net:25568</p>
-                        <button onclick="copyIP('java-ip')" class="bg-black/60 text-white border border-minecoin px-5 py-2.5 rounded cursor-pointer hover:bg-minecoin hover:text-black transition-all duration-300 transform hover:-translate-y-0.5">Copy IP</button>
-                    </div>
-                    <div class="text-center p-6">
-                        <h3 class="text-2xl mb-4">Bedrock Edition</h3>
-                        <p id="bedrock-ip" class="text-lg text-minecoin mb-4">mc.gillyb.net:19132</p>
-                        <button onclick="connectBedrock()" class="bg-black/60 text-white border border-minecoin px-5 py-2.5 rounded cursor-pointer hover:bg-minecoin hover:text-black transition-all duration-300 transform hover:-translate-y-0.5">Connect Now</button>
-                    </div>
+
+
+                    <section class="bg-black/40 border-2 border-minecoin backdrop-blur-sm rounded-2xl p-8">
+                        <h2 class="text-3xl text-center mb-8">Server Commands</h2>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-button" aria-expanded="false">
+                                    <span class="accordion-title">Faction Management</span><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f create</span>
+                                            <span>- Create a new faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f join</span>
+                                            <span>- Join a faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f leave</span>
+                                            <span>- Leave your current faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f claim add</span>
+                                            <span>- Claim land for your faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f unclaim</span>
+                                            <span>- Unclaim land from your faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f map</span>
+                                            <span>- View the faction map</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f home</span>
+                                            <span>- Teleport to your faction's home</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f home set</span>
+                                            <span>- Set your faction's home</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f invite add</span>
+                                            <span>- Invite a player to your faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f kick</span>
+                                            <span>- Kick a player from your faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f safe</span>
+                                            <span>- Open your faction chest</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f rank promote</span>
+                                            <span>- Promote a player in your faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f rank demote</span>
+                                            <span>- Demote a player in your faction</span>
+                                        </li>
+                                         <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f modify description</span>
+                                            <span>- Set your faction's description</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f modify motd</span>
+                                            <span>- Set your faction's message of the day</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f modify open</span>
+                                            <span>- Open your faction to public joining</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f modify close</span>
+                                            <span>- Close your faction to public joining</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f declare ally</span>
+                                            <span>- Ally with another faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f declare neutral</span>
+                                            <span>- Set neutral relations with a faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f declare enemy</span>
+                                            <span>- Set enemy relations with a faction</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/f chat</span>
+                                            <span>- Toggle faction chat</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button" aria-expanded="false">
+                                    <span class="accordion-title">Teleportation</span><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/tpa</span>
+                                            <span>- Teleport you to someone else</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/lastdeath</span>
+                                            <span>- Teleport you where you died</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button" aria-expanded="false">
+                                    <span class="accordion-title">Home Management</span><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/sethome</span>
+                                            <span>- Set your home (You can have up to 2 homes)</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/home</span>
+                                            <span>- Teleport you to the specified home</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/delhome</span>
+                                            <span>- Delete a home</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/homes</span>
+                                            <span>- List your homes</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                             <div class="accordion-item">
+                                <button class="accordion-button" aria-expanded="false">
+                                    <span class="accordion-title">Player Options</span><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="text-minecoin">/pvp</span>
+                                            <span>- Turn ON or OFF your PVP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <p id="copy-message" class="text-center mt-4"></p>
-            </section>
+            </div>
         </main>
+
+
+        <footer class="text-center mt-16 pb-8">
+            <p class="text-gray-400">&copy; 2025 mc.gillyb.net</p>
+        </footer>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionItem = button.parentNode;
+                const accordionContent = button.nextElementSibling;
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    button.setAttribute('aria-expanded', 'false');
+                    accordionContent.style.maxHeight = null;
+                } else {
+                    button.setAttribute('aria-expanded', 'true');
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
