@@ -1,388 +1,386 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki - GillyB.net</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
-    <style>
-        body { font-family: Poppins, sans-serif; }
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height .2s; }
-        .accordion-title::after { content: '▼'; float: right; transition: transform .2s; }
-        button[aria-expanded="true"] .accordion-title::after { transform: rotate(-180deg); }
-    </style>
-</head>
-<body class="bg-gray-800 text-gray-100 min-h-screen">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-gray-800 text-gray-100 min-h-screen">
     <div class="max-w-7xl mx-auto px-5 py-6">
-        <header class="text-center py-6">
-            <div class="flex justify-end mb-4">
-                <select id="languageSelector" class="bg-gray-700 text-white px-4 py-2 rounded-lg border border-yellow-500 cursor-pointer hover:bg-gray-600">
-                    <option value="en">🇬🇧 English</option>
-                    <option value="fr">🇫🇷 Français</option>
-                    <option value="pl">🇵🇱 Polski</option>
-                </select>
+      <header class="text-center py-6">
+        <div class="flex justify-end mb-4">
+          <select id="languageSelector" class="bg-gray-700 text-white px-4 py-2 rounded-lg border border-yellow-500 cursor-pointer hover:bg-gray-600">
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="pl">🇵🇱 Polski</option>
+          </select>
+        </div>
+        <h1 class="text-5xl mb-5 text-white" data-i18n="title">Gilly-SMP Wiki</h1>
+        <div class="bg-black/40 border-2 border-yellow-500 rounded-2xl p-8 max-w-3xl mx-auto">
+          <p class="text-lg" data-i18n="subtitle">Explore our knowledge base for server information, guides, and more.</p>
+        </div>
+      </header>
+
+      <section class="bg-black/40 border-2 border-yellow-500 rounded-2xl p-8 mt-8">
+        <h2 class="text-3xl text-center mb-8" data-i18n="commandsTitle">Server Commands</h2>
+        <div class="space-y-2">
+          <div class="border border-gray-600 rounded-lg overflow-hidden">
+            <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
+              <span class="accordion-title font-semibold" data-i18n="villagerManagement">Villager Management</span>
+            </button>
+            <div class="accordion-content">
+              <ul class="p-4 space-y-2 text-sm">
+                <li><span class="text-yellow-500" data-i18n="villager.pickup">Pickup:</span> <span data-i18n="villager.pickupDesc">Shift + Right Click to pick up villagers</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.place">Place:</span> <span data-i18n="villager.placeDesc">Place villager head to release them (works in boats, minecarts)</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.anchor">Anchor:</span> <span data-i18n="villager.anchorDesc">Shift + Right Click with Shears to prevent movement</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.claim">Claim:</span> <span data-i18n="villager.claimDesc">Shift + Right Click with Shovel to protect from damage</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.menu">Menu:</span> <span data-i18n="villager.menuDesc">Shift + Right Click claimed villager to change biome, trading, and partners</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.hoppers">Hoppers:</span> <span data-i18n="villager.hoppersDesc">Craft with 1 Hopper + 1 Emerald to auto-pickup villagers</span></li>
+                <li><span class="text-yellow-500" data-i18n="villager.trades">Trades:</span> <span data-i18n="villager.tradesDesc">View trades in villager description, reset in trading menu</span></li>
+              </ul>
             </div>
-            <h1 class="text-5xl mb-5 text-white" data-i18n="title">Gilly-SMP Wiki</h1>
-            <div class="bg-black/40 border-2 border-yellow-500 rounded-2xl p-8 max-w-3xl mx-auto">
-                <p class="text-lg" data-i18n="subtitle">Explore our knowledge base for server information, guides, and more.</p>
+          </div>
+
+          <div class="border border-gray-600 rounded-lg overflow-hidden">
+            <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
+              <span class="accordion-title font-semibold" data-i18n="claimManagement">Claim Management</span>
+            </button>
+            <div class="accordion-content">
+              <ul class="p-4 space-y-2 text-sm">
+                <li><span class="text-yellow-500">/claim [<radius>]</span> - <span data-i18n="cmd.claim">Claim a territory (chunk), with an option to set the radius</span></li>
+                <li><span class="text-yellow-500">/claim main <claim-name></span> - <span data-i18n="cmd.claimMain">Open the main gui of a claim</span></li>
+                <li><span class="text-yellow-500">/claim settings [<claim-name>]</span> - <span data-i18n="cmd.claimSettings">Open the settings gui of a claim</span></li>
+                <li><span class="text-yellow-500">/claim members [<claim-name>]</span> - <span data-i18n="cmd.claimMembers">Open the members gui of a claim</span></li>
+                <li><span class="text-yellow-500">/claim chunks [<claim-name>]</span> - <span data-i18n="cmd.claimChunks">Open the chunks gui of a claim</span></li>
+                <li><span class="text-yellow-500">/claim add [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimAdd">Add a player to your claim, use '*' for all your claims</span></li>
+                <li><span class="text-yellow-500">/claim remove [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimRemove">Remove a player from your claim, use '*' for all your claims</span></li>
+                <li><span class="text-yellow-500">/claim ban [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimBan">Ban a player from your claim, use '*' for all claims</span></li>
+                <li><span class="text-yellow-500">/claim unban [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimUnban">Unban a player from your claim, use '*' for all your claims</span></li>
+                <li><span class="text-yellow-500">/claim bans [<claim-name>]</span> - <span data-i18n="cmd.claimBans">Open the bans gui of a claim</span></li>
+                <li><span class="text-yellow-500">/claim kick [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimKick">Kick physically a player from your claim, use '*' for all your claims</span></li>
+                <li><span class="text-yellow-500">/claim owner [<*|claim-name>] <player></span> - <span data-i18n="cmd.claimOwner">Transfer the ownership of a claim, use '*' for all your territories</span></li>
+                <li><span class="text-yellow-500">/claim tp <claim-name></span> - <span data-i18n="cmd.claimTp">Teleport to one of your territory</span></li>
+                <li><span class="text-yellow-500">/claim see [<player>]</span> - <span data-i18n="cmd.claimSee">See the chunk you are in with border of particles</span></li>
+                <li><span class="text-yellow-500">/claim map</span> - <span data-i18n="cmd.claimMap">Check the claims around you in a chat map</span></li>
+                <li><span class="text-yellow-500">/claim automap</span> - <span data-i18n="cmd.claimAutomap">Check automatically the map when you change chunk</span></li>
+                <li><span class="text-yellow-500">/claim autoclaim</span> - <span data-i18n="cmd.claimAutoclaim">Claim automatically the chunk when you change chunk</span></li>
+                <li><span class="text-yellow-500">/claim autounclaim</span> - <span data-i18n="cmd.claimAutounclaim">Unclaim automatically the chunk when you change chunk</span></li>
+                <li><span class="text-yellow-500">/claim fly</span> - <span data-i18n="cmd.claimFly">Enable/disable the claim fly</span></li>
+                <li><span class="text-yellow-500">/claim autofly</span> - <span data-i18n="cmd.claimAutofly">Enable/disable the claim fly automatically</span></li>
+                <li><span class="text-yellow-500">/claim list</span> - <span data-i18n="cmd.claimList">Open the gui with your claims</span></li>
+                <li><span class="text-yellow-500">/claim chat</span> - <span data-i18n="cmd.claimChat">Change your claim chat mode (public or claim chat)</span></li>
+                <li><span class="text-yellow-500">/claim setspawn</span> - <span data-i18n="cmd.claimSetspawn">Change the location of the claim's spawn</span></li>
+                <li><span class="text-yellow-500">/claim setname <old> <new></span> - <span data-i18n="cmd.claimSetname">Change the name of one of your claims</span></li>
+                <li><span class="text-yellow-500">/claim setdesc <claim-name> <desc></span> - <span data-i18n="cmd.claimSetdesc">Change the description of one of your claims</span></li>
+                <li><span class="text-yellow-500">/claim merge <claim-name> <claim-name></span> - <span data-i18n="cmd.claimMerge">Merge two claims into one</span></li>
+                <li><span class="text-yellow-500">/claim addchunk <claim-name></span> - <span data-i18n="cmd.claimAddchunk">Add the chunk you're standing at to a claim</span></li>
+                <li><span class="text-yellow-500">/claim delchunk <claim-name> <chunk></span> - <span data-i18n="cmd.claimDelchunk">Remove a chunk from a claim. Use format 'world;x;z'</span></li>
+                <li><span class="text-yellow-500">/claim autoaddchunk <claim-name></span> - <span data-i18n="cmd.claimAutoaddchunk">Add automatically the chunk to the specified claim</span></li>
+                <li><span class="text-yellow-500">/claim autodelchunk <claim-name></span> - <span data-i18n="cmd.claimAutodelchunk">Remove automatically the chunk from the specified claim</span></li>
+                <li><span class="text-yellow-500">/claims</span> - <span data-i18n="cmd.claims">Open the gui with all the claims of the server</span></li>
+                <li><span class="text-yellow-500">/unclaim [<claim-name|*>]</span> - <span data-i18n="cmd.unclaim">Delete a claim, use '*' for all your claims</span></li>
+              </ul>
             </div>
-        </header>
+          </div>
 
-        <section class="bg-black/40 border-2 border-yellow-500 rounded-2xl p-8 mt-8">
-            <h2 class="text-3xl text-center mb-8" data-i18n="commandsTitle">Server Commands</h2>
-            <div class="space-y-2">
-                <div class="border border-gray-600 rounded-lg overflow-hidden">
-                    <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
-                        <span class="accordion-title font-semibold" data-i18n="villagerManagement">Villager Management</span>
-                    </button>
-                    <div class="accordion-content">
-                        <ul class="p-4 space-y-2 text-sm">
-                            <li><span class="text-yellow-500" data-i18n="villager.pickup">Pickup:</span> <span data-i18n="villager.pickupDesc">Shift + Right Click to pick up villagers</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.place">Place:</span> <span data-i18n="villager.placeDesc">Place villager head to release them (works in boats, minecarts)</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.anchor">Anchor:</span> <span data-i18n="villager.anchorDesc">Shift + Right Click with Shears to prevent movement</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.claim">Claim:</span> <span data-i18n="villager.claimDesc">Shift + Right Click with Shovel to protect from damage</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.menu">Menu:</span> <span data-i18n="villager.menuDesc">Shift + Right Click claimed villager to change biome, trading, and partners</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.hoppers">Hoppers:</span> <span data-i18n="villager.hoppersDesc">Craft with 1 Hopper + 1 Emerald to auto-pickup villagers</span></li>
-                            <li><span class="text-yellow-500" data-i18n="villager.trades">Trades:</span> <span data-i18n="villager.tradesDesc">View trades in villager description, reset in trading menu</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="border border-gray-600 rounded-lg overflow-hidden">
-                    <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
-                        <span class="accordion-title font-semibold" data-i18n="claimManagement">Claim Management</span>
-                    </button>
-                    <div class="accordion-content">
-                        <ul class="p-4 space-y-2 text-sm">
-                            <li><span class="text-yellow-500">/claim [&lt;radius&gt;]</span> - <span data-i18n="cmd.claim">Claim a territory (chunk), with an option to set the radius</span></li>
-                            <li><span class="text-yellow-500">/claim main &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimMain">Open the main gui of a claim</span></li>
-                            <li><span class="text-yellow-500">/claim settings [&lt;claim-name&gt;]</span> - <span data-i18n="cmd.claimSettings">Open the settings gui of a claim</span></li>
-                            <li><span class="text-yellow-500">/claim members [&lt;claim-name&gt;]</span> - <span data-i18n="cmd.claimMembers">Open the members gui of a claim</span></li>
-                            <li><span class="text-yellow-500">/claim chunks [&lt;claim-name&gt;]</span> - <span data-i18n="cmd.claimChunks">Open the chunks gui of a claim</span></li>
-                            <li><span class="text-yellow-500">/claim add [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimAdd">Add a player to your claim, use '*' for all your claims</span></li>
-                            <li><span class="text-yellow-500">/claim remove [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimRemove">Remove a player from your claim, use '*' for all your claims</span></li>
-                            <li><span class="text-yellow-500">/claim ban [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimBan">Ban a player from your claim, use '*' for all claims</span></li>
-                            <li><span class="text-yellow-500">/claim unban [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimUnban">Unban a player from your claim, use '*' for all your claims</span></li>
-                            <li><span class="text-yellow-500">/claim bans [&lt;claim-name&gt;]</span> - <span data-i18n="cmd.claimBans">Open the bans gui of a claim</span></li>
-                            <li><span class="text-yellow-500">/claim kick [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimKick">Kick physically a player from your claim, use '*' for all your claims</span></li>
-                            <li><span class="text-yellow-500">/claim owner [&lt;*|claim-name&gt;] &lt;player&gt;</span> - <span data-i18n="cmd.claimOwner">Transfer the ownership of a claim, use '*' for all your territories</span></li>
-                            <li><span class="text-yellow-500">/claim tp &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimTp">Teleport to one of your territory</span></li>
-                            <li><span class="text-yellow-500">/claim see [&lt;player&gt;]</span> - <span data-i18n="cmd.claimSee">See the chunk you are in with border of particles</span></li>
-                            <li><span class="text-yellow-500">/claim map</span> - <span data-i18n="cmd.claimMap">Check the claims around you in a chat map</span></li>
-                            <li><span class="text-yellow-500">/claim automap</span> - <span data-i18n="cmd.claimAutomap">Check automatically the map when you change chunk</span></li>
-                            <li><span class="text-yellow-500">/claim autoclaim</span> - <span data-i18n="cmd.claimAutoclaim">Claim automatically the chunk when you change chunk</span></li>
-                            <li><span class="text-yellow-500">/claim autounclaim</span> - <span data-i18n="cmd.claimAutounclaim">Unclaim automatically the chunk when you change chunk</span></li>
-                            <li><span class="text-yellow-500">/claim fly</span> - <span data-i18n="cmd.claimFly">Enable/disable the claim fly</span></li>
-                            <li><span class="text-yellow-500">/claim autofly</span> - <span data-i18n="cmd.claimAutofly">Enable/disable the claim fly automatically</span></li>
-                            <li><span class="text-yellow-500">/claim list</span> - <span data-i18n="cmd.claimList">Open the gui with your claims</span></li>
-                            <li><span class="text-yellow-500">/claim chat</span> - <span data-i18n="cmd.claimChat">Change your claim chat mode (public or claim chat)</span></li>
-                            <li><span class="text-yellow-500">/claim setspawn</span> - <span data-i18n="cmd.claimSetspawn">Change the location of the claim's spawn</span></li>
-                            <li><span class="text-yellow-500">/claim setname &lt;old&gt; &lt;new&gt;</span> - <span data-i18n="cmd.claimSetname">Change the name of one of your claims</span></li>
-                            <li><span class="text-yellow-500">/claim setdesc &lt;claim-name&gt; &lt;desc&gt;</span> - <span data-i18n="cmd.claimSetdesc">Change the description of one of your claims</span></li>
-                            <li><span class="text-yellow-500">/claim merge &lt;claim-name&gt; &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimMerge">Merge two claims into one</span></li>
-                            <li><span class="text-yellow-500">/claim addchunk &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimAddchunk">Add the chunk you're standing at to a claim</span></li>
-                            <li><span class="text-yellow-500">/claim delchunk &lt;claim-name&gt; &lt;chunk&gt;</span> - <span data-i18n="cmd.claimDelchunk">Remove a chunk from a claim. Use format 'world;x;z'</span></li>
-                            <li><span class="text-yellow-500">/claim autoaddchunk &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimAutoaddchunk">Add automatically the chunk to the specified claim</span></li>
-                            <li><span class="text-yellow-500">/claim autodelchunk &lt;claim-name&gt;</span> - <span data-i18n="cmd.claimAutodelchunk">Remove automatically the chunk from the specified claim</span></li>
-                            <li><span class="text-yellow-500">/claims</span> - <span data-i18n="cmd.claims">Open the gui with all the claims of the server</span></li>
-                            <li><span class="text-yellow-500">/unclaim [&lt;claim-name|*&gt;]</span> - <span data-i18n="cmd.unclaim">Delete a claim, use '*' for all your claims</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="border border-gray-600 rounded-lg overflow-hidden">
-                    <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
-                        <span class="accordion-title font-semibold" data-i18n="teleportation">Teleportation</span>
-                    </button>
-                    <div class="accordion-content">
-                        <ul class="p-4 space-y-2">
-                            <li><span class="text-yellow-500">/tpa</span> - <span data-i18n="cmd.tpa">Teleport you to someone else</span></li>
-                            <li><span class="text-yellow-500">/lastdeath</span> - <span data-i18n="cmd.lastdeath">Teleport you back where you died</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="border border-gray-600 rounded-lg overflow-hidden">
-                    <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
-                        <span class="accordion-title font-semibold" data-i18n="smartSpawner">Smart Spawner</span>
-                    </button>
-                    <div class="accordion-content">
-                        <ul class="p-4 space-y-2 text-sm">
-                            <li><span class="text-yellow-500" data-i18n="spawner.stacking">Stacking:</span> <span data-i18n="spawner.stackingDesc">Reduce lag with seamless stacking mechanics</span></li>
-                            <li class="ml-4"><span data-i18n="spawner.rightClick">• Right-click with spawner in hand to add one to stack</span></li>
-                            <li class="ml-4"><span data-i18n="spawner.shiftClick">• Shift + Right-click to stack all spawners</span></li>
-                            <li class="ml-4"><span data-i18n="spawner.stackerGui">• Use Stacker GUI for precise stack management</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="border border-gray-600 rounded-lg overflow-hidden">
-                    <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
-                        <span class="accordion-title font-semibold" data-i18n="playerOptions">Player Options</span>
-                    </button>
-                    <div class="accordion-content">
-                        <ul class="p-4 space-y-2">
-                            <li><span class="text-yellow-500">/pvp</span> - <span data-i18n="cmd.pvp">Turn ON or OFF your PVP</span></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="border border-gray-600 rounded-lg overflow-hidden">
+            <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
+              <span class="accordion-title font-semibold" data-i18n="teleportation">Teleportation</span>
+            </button>
+            <div class="accordion-content">
+              <ul class="p-4 space-y-2">
+                <li><span class="text-yellow-500">/tpa</span> - <span data-i18n="cmd.tpa">Teleport you to someone else</span></li>
+                <li><span class="text-yellow-500">/back</span> - <span data-i18n="cmd.back">Teleport you back where you last where</span></li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-        <footer class="text-center mt-16 pb-8">
-            <p class="text-gray-400">&copy; 2025 mc.gillyb.net</p>
-        </footer>
+          <div class="border border-gray-600 rounded-lg overflow-hidden">
+            <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
+              <span class="accordion-title font-semibold" data-i18n="smartSpawner">Smart Spawner</span>
+            </button>
+            <div class="accordion-content">
+              <ul class="p-4 space-y-2 text-sm">
+                <li><span class="text-yellow-500" data-i18n="spawner.stacking">Stacking:</span> <span data-i18n="spawner.stackingDesc">Reduce lag with seamless stacking mechanics</span></li>
+                <li class="ml-4"><span data-i18n="spawner.rightClick">• Right-click with spawner in hand to add one to stack</span></li>
+                <li class="ml-4"><span data-i18n="spawner.shiftClick">• Shift + Right-click to stack all spawners</span></li>
+                <li class="ml-4"><span data-i18n="spawner.stackerGui">• Use Stacker GUI for precise stack management</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border border-gray-600 rounded-lg overflow-hidden">
+            <button class="accordion-button w-full text-left p-4 hover:bg-gray-700/50" aria-expanded="false">
+              <span class="accordion-title font-semibold" data-i18n="playerOptions">Player Options</span>
+            </button>
+            <div class="accordion-content">
+              <ul class="p-4 space-y-2">
+                <li><span class="text-yellow-500">/pvp</span> - <span data-i18n="cmd.pvp">Turn ON or OFF your PVP</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center mt-16 pb-8">
+        <p class="text-gray-400">&copy; 2025 mc.gillyb.net</p>
+      </footer>
     </div>
     <script>
-        // Translation data
-        const translations = {
-            en: {
-                title: "Gilly-SMP Wiki",
-                subtitle: "Explore our knowledge base for server information, guides, and more.",
-                commandsTitle: "Server Commands",
-                claimManagement: "Claim Management",
-                villagerManagement: "Villager Management",
-                smartSpawner: "Smart Spawner",
-                teleportation: "Teleportation",
-                playerOptions: "Player Options",
-                "cmd.claim": "Claim a territory (chunk), with an option to set the radius",
-                "cmd.claimMain": "Open the main gui of a claim",
-                "cmd.claimSettings": "Open the settings gui of a claim",
-                "cmd.claimMembers": "Open the members gui of a claim",
-                "cmd.claimChunks": "Open the chunks gui of a claim",
-                "cmd.claimAdd": "Add a player to your claim, use '*' for all your claims",
-                "cmd.claimRemove": "Remove a player from your claim, use '*' for all your claims",
-                "cmd.claimBan": "Ban a player from your claim, use '*' for all claims",
-                "cmd.claimUnban": "Unban a player from your claim, use '*' for all your claims",
-                "cmd.claimBans": "Open the bans gui of a claim",
-                "cmd.claimKick": "Kick physically a player from your claim, use '*' for all your claims",
-                "cmd.claimOwner": "Transfer the ownership of a claim, use '*' for all your territories",
-                "cmd.claimTp": "Teleport to one of your territory",
-                "cmd.claimSee": "See the chunk you are in with border of particles",
-                "cmd.claimMap": "Check the claims around you in a chat map",
-                "cmd.claimAutomap": "Check automatically the map when you change chunk",
-                "cmd.claimAutoclaim": "Claim automatically the chunk when you change chunk",
-                "cmd.claimAutounclaim": "Unclaim automatically the chunk when you change chunk",
-                "cmd.claimFly": "Enable/disable the claim fly",
-                "cmd.claimAutofly": "Enable/disable the claim fly automatically",
-                "cmd.claimList": "Open the gui with your claims",
-                "cmd.claimChat": "Change your claim chat mode (public or claim chat)",
-                "cmd.claimSetspawn": "Change the location of the claim's spawn",
-                "cmd.claimSetname": "Change the name of one of your claims",
-                "cmd.claimSetdesc": "Change the description of one of your claims",
-                "cmd.claimMerge": "Merge two claims into one",
-                "cmd.claimAddchunk": "Add the chunk you're standing at to a claim",
-                "cmd.claimDelchunk": "Remove a chunk from a claim. Use format 'world;x;z'",
-                "cmd.claimAutoaddchunk": "Add automatically the chunk to the specified claim",
-                "cmd.claimAutodelchunk": "Remove automatically the chunk from the specified claim",
-                "cmd.claims": "Open the gui with all the claims of the server",
-                "cmd.unclaim": "Delete a claim, use '*' for all your claims",
-                "villager.pickup": "Pickup:",
-                "villager.pickupDesc": "Shift + Right Click to pick up villagers",
-                "villager.place": "Place:",
-                "villager.placeDesc": "Place villager head to release them (works in boats, minecarts)",
-                "villager.anchor": "Anchor:",
-                "villager.anchorDesc": "Shift + Right Click with Shears to prevent movement",
-                "villager.claim": "Claim:",
-                "villager.claimDesc": "Shift + Right Click with Shovel to protect from damage",
-                "villager.menu": "Menu:",
-                "villager.menuDesc": "Shift + Right Click claimed villager to change biome, trading, and partners",
-                "villager.hoppers": "Hoppers:",
-                "villager.hoppersDesc": "Craft with 1 Hopper + 1 Emerald to auto-pickup villagers",
-                "villager.trades": "Trades:",
-                "villager.tradesDesc": "View trades in villager description, reset in trading menu",
-                "spawner.gui": "GUI System:",
-                "spawner.guiDesc": "User-friendly interface to view, manage, and interact with spawners",
-                "spawner.main": "Main Interface:",
-                "spawner.mainDesc": "Drop/experience management, quick controls, and spawner metrics",
-                "spawner.storage": "Storage:",
-                "spawner.storageDesc": "Automatic item collection, one-click selling, bulk management, sort & filter",
-                "spawner.stacking": "Stacking:",
-                "spawner.stackingDesc": "Reduce lag with seamless stacking mechanics",
-                "spawner.rightClick": "• Right-click with spawner in hand to add one to stack",
-                "spawner.shiftClick": "• Shift + Right-click to stack all spawners",
-                "spawner.stackerGui": "• Use Stacker GUI for precise stack management",
-                "spawner.benefits": "Benefits:",
-                "spawner.benefitsDesc": "Scalable, easy visual management, drop rates scale with stack size",
-                "cmd.tpa": "Teleport you to someone else",
-                "cmd.pvp": "Turn ON or OFF your PVP"
-            },
-            fr: {
-                title: "Wiki Gilly-SMP",
-                subtitle: "Explorez notre base de connaissances pour des informations sur le serveur, des guides et plus encore.",
-                commandsTitle: "Commandes du serveur",
-                claimManagement: "Gestion des claims",
-                villagerManagement: "Gestion des villageois",
-                smartSpawner: "Smart Spawner",
-                teleportation: "Téléportation",
-                playerOptions: "Options du joueur",
-                "cmd.claim": "Réclamer un claim (chunk), avec option de rayon",
-                "cmd.claimMain": "Ouvrir l'interface principale d'un claim",
-                "cmd.claimSettings": "Ouvrir l'interface des paramètres d'un claim",
-                "cmd.claimMembers": "Ouvrir l'interface des membres d'un claim",
-                "cmd.claimChunks": "Ouvrir l'interface des chunks d'un claim",
-                "cmd.claimAdd": "Ajouter un joueur à votre claim, utilisez '*' pour tous vos claims",
-                "cmd.claimRemove": "Retirer un joueur de votre claim, utilisez '*' pour tous vos claims",
-                "cmd.claimBan": "Bannir un joueur de votre claim, utilisez '*' pour tous les claims",
-                "cmd.claimUnban": "Débannir un joueur de votre claim, utilisez '*' pour tous vos claims",
-                "cmd.claimBans": "Ouvrir l'interface des bannissements d'un claim",
-                "cmd.claimKick": "Expulser physiquement un joueur de votre claim, utilisez '*' pour tous vos claims",
-                "cmd.claimOwner": "Transférer la propriété d'un claim, utilisez '*' pour tous vos claims",
-                "cmd.claimTp": "Se téléporter à l'un de vos claims",
-                "cmd.claimSee": "Voir le chunk dans lequel vous êtes avec une bordure de particules",
-                "cmd.claimMap": "Vérifier les claims autour de vous dans une carte de chat",
-                "cmd.claimAutomap": "Vérifier automatically la carte lors du changement de chunk",
-                "cmd.claimAutoclaim": "Réclamer automatically le chunk lors du changement de chunk",
-                "cmd.claimAutounclaim": "Abandonner automatically le chunk lors du changement de chunk",
-                "cmd.claimFly": "Activer/désactiver le vol dans les claims",
-                "cmd.claimAutofly": "Activer/désactiver le vol automatique dans les claims",
-                "cmd.claimList": "Ouvrir l'interface avec vos claims",
-                "cmd.claimChat": "Changer votre mode de chat (public ou chat de claim)",
-                "cmd.claimSetspawn": "Changer l'emplacement du spawn du claim",
-                "cmd.claimSetname": "Changer le nom de l'un de vos claims",
-                "cmd.claimSetdesc": "Changer la description de l'un de vos claims",
-                "cmd.claimMerge": "Fusionner deux claims en un seul",
-                "cmd.claimAddchunk": "Ajouter le chunk où vous vous tenez à un claim",
-                "cmd.claimDelchunk": "Retirer un chunk d'un claim. Utilisez le format 'world;x;z'",
-                "cmd.claimAutoaddchunk": "Ajouter automatically le chunk au claim spécifié",
-                "cmd.claimAutodelchunk": "Retirer automatically le chunk du claim spécifié",
-                "cmd.claims": "Ouvrir l'interface avec tous les claims du serveur",
-                "cmd.unclaim": "Supprimer un claim, utilisez '*' pour tous vos claims",
-                "villager.pickup": "Ramasser :",
-                "villager.pickupDesc": "Shift + Clic droit pour ramasser les villageois",
-                "villager.place": "Placer :",
-                "villager.placeDesc": "Placez la tête de villageois pour les relâcher (fonctionne dans les bateaux, wagonnets)",
-                "villager.anchor": "Ancrer :",
-                "villager.anchorDesc": "Shift + Clic droit avec des Ciseaux pour empêcher le mouvement",
-                "villager.claim": "Revendiquer :",
-                "villager.claimDesc": "Shift + Clic droit avec une Pelle pour protéger des dégâts",
-                "villager.menu": "Menu :",
-                "villager.menuDesc": "Shift + Clic droit sur un villageois revendiqué pour changer le biome, le commerce et les partenaires",
-                "villager.hoppers": "Entonnoirs :",
-                "villager.hoppersDesc": "Fabriquez avec 1 Entonnoir + 1 Émeraude pour ramasser automatically les villageois",
-                "villager.trades": "Échanges :",
-                "villager.tradesDesc": "Voir les échanges dans la description du villageois, réinitialiser dans le menu d'échange",
-                "spawner.gui": "Système GUI :",
-                "spawner.guiDesc": "Interface conviviale pour voir, gérer et interagir avec les spawners",
-                "spawner.main": "Interface principale :",
-                "spawner.mainDesc": "Gestion des drops/expérience, contrôles rapides et métriques des spawners",
-                "spawner.storage": "Stockage :",
-                "spawner.storageDesc": "Collecte automatique d'objets, vente en un clic, gestion en masse, tri et filtrage",
-                "spawner.stacking": "Empilement :",
-                "spawner.stackingDesc": "Réduisez le lag avec des mécaniques d'empilement fluides",
-                "spawner.rightClick": "• Clic droit avec un spawner en main pour en ajouter un à la pile",
-                "spawner.shiftClick": "• Shift + Clic droit pour empiler tous les spawners",
-                "spawner.stackerGui": "• Utilisez le GUI d'empilement pour une gestion précise",
-                "spawner.benefits": "Avantages :",
-                "spawner.benefitsDesc": "Évolutif, gestion visuelle facile, les taux de drop évoluent avec la taille de la pile",
-                "cmd.tpa": "Vous téléporter vers quelqu'un d'autre",
-                "cmd.pvp": "Activer ou désactiver votre PVP"
-            },
-            pl: {
-                title: "Wiki Gilly-SMP",
-                subtitle: "Przeglądaj naszą bazę wiedzy, aby uzyskać informacje o serwerze, przewodniki i więcej.",
-                commandsTitle: "Komendy serwera",
-                claimManagement: "Zarządzanie terytoriami",
-                villagerManagement: "Zarządzanie wieśniakami",
-                smartSpawner: "Smart Spawner",
-                teleportation: "Teleportacja",
-                playerOptions: "Opcje gracza",
-                "cmd.claim": "Zajmij terytorium (chunk), z opcją ustawienia promienia",
-                "cmd.claimMain": "Otwórz główny interfejs terytorium",
-                "cmd.claimSettings": "Otwórz interfejs ustawień terytorium",
-                "cmd.claimMembers": "Otwórz interfejs członków terytorium",
-                "cmd.claimChunks": "Otwórz interfejs chunków terytorium",
-                "cmd.claimAdd": "Dodaj gracza do swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "cmd.claimRemove": "Usuń gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "cmd.claimBan": "Zbanuj gracza ze swojego terytorium, użyj '*' dla wszystkich terytoriów",
-                "cmd.claimUnban": "Odbanuj gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "cmd.claimBans": "Otwórz interfejs banów terytorium",
-                "cmd.claimKick": "Wyrzuć fizycznie gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "cmd.claimOwner": "Przenieś własność terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "cmd.claimTp": "Teleportuj się do jednego ze swoich terytoriów",
-                "cmd.claimSee": "Zobacz chunk, w którym się znajdujesz z granicą z cząstek",
-                "cmd.claimMap": "Sprawdź terytoria wokół ciebie na mapie czatu",
-                "cmd.claimAutomap": "Sprawdzaj automatycznie mapę przy zmianie chunku",
-                "cmd.claimAutoclaim": "Zajmuj automatycznie chunk przy zmianie chunku",
-                "cmd.claimAutounclaim": "Zwalniaj automatycznie chunk przy zmianie chunku",
-                "cmd.claimFly": "Włącz/wyłącz latanie na terytoriach",
-                "cmd.claimAutofly": "Włącz/wyłącz automatyczne latanie na terytoriach",
-                "cmd.claimList": "Otwórz interfejs ze swoimi terytoriami",
-                "cmd.claimChat": "Zmień tryb czatu (publiczny lub czat terytorium)",
-                "cmd.claimSetspawn": "Zmień lokalizację spawnu terytorium",
-                "cmd.claimSetname": "Zmień nazwę jednego ze swoich terytoriów",
-                "cmd.claimSetdesc": "Zmień opis jednego ze swoich terytoriów",
-                "cmd.claimMerge": "Połącz dwa terytoria w jedno",
-                "cmd.claimAddchunk": "Dodaj chunk, na którym stoisz do terytorium",
-                "cmd.claimDelchunk": "Usuń chunk z terytorium. Użyj formatu 'world;x;z'",
-                "cmd.claimAutoaddchunk": "Dodawaj automatycznie chunk do określonego terytorium",
-                "cmd.claimAutodelchunk": "Usuwaj automatycznie chunk z określonego terytorium",
-                "cmd.claims": "Otwórz interfejs ze wszystkimi terytoriami serwera",
-                "cmd.unclaim": "Usuń terytorium, użyj '*' dla wszystkich twoich terytoriów",
-                "villager.pickup": "Podnoszenie:",
-                "villager.pickupDesc": "Shift + Prawy przycisk myszy, aby podnieść wieśniaków",
-                "villager.place": "Stawianie:",
-                "villager.placeDesc": "Postaw głowę wieśniaka, aby ich uwolnić (działa w łódkach, wagonikach)",
-                "villager.anchor": "Kotwiczenie:",
-                "villager.anchorDesc": "Shift + Prawy przycisk myszy z Nożycami, aby zapobiec ruchowi",
-                "villager.claim": "Przejmowanie:",
-                "villager.claimDesc": "Shift + Prawy przycisk myszy z Łopatą, aby chronić przed obrażeniami",
-                "villager.menu": "Menu:",
-                "villager.menuDesc": "Shift + Prawy przycisk myszy na przejętym wieśniaku, aby zmienić biom, handel i partnerów",
-                "villager.hoppers": "Lejki:",
-                "villager.hoppersDesc": "Stwórz z 1 Lejka + 1 Szmaragdu, aby automatycznie podnosić wieśniaków",
-                "villager.trades": "Transakcje:",
-                "villager.tradesDesc": "Zobacz transakcje w opisie wieśniaka, zresetuj w menu handlu",
-                "spawner.gui": "System GUI:",
-                "spawner.guiDesc": "Przyjazny interfejs do przeglądania, zarządzania i interakcji ze spawnerami",
-                "spawner.main": "Główny interfejs:",
-                "spawner.mainDesc": "Zarządzanie dropami/doświadczeniem, szybkie kontrole i metryki spawnerów",
-                "spawner.storage": "Przechowywanie:",
-                "spawner.storageDesc": "Automatyczne zbieranie przedmiotów, sprzedaż jednym kliknięciem, zarządzanie masowe, sortowanie i filtrowanie",
-                "spawner.stacking": "Układanie w stosy:",
-                "spawner.stackingDesc": "Zmniejsz lag dzięki płynnym mechanikom układania w stosy",
-                "spawner.rightClick": "• Prawy przycisk myszy ze spawnerem w ręce, aby dodać jeden do stosu",
-                "spawner.shiftClick": "• Shift + Prawy przycisk myszy, aby ułożyć wszystkie spawnery w stos",
-                "spawner.stackerGui": "• Użyj GUI układania do precyzyjnego zarządzania stosem",
-                "spawner.benefits": "Korzyści:",
-                "spawner.benefitsDesc": "Skalowalny, łatwe zarządzanie wizualne, współczynniki dropu skalują się z rozmiarem stosu",
-                "cmd.tpa": "Teleportuj się do kogoś innego",
-                "cmd.pvp": "Włącz lub wyłącz swoje PVP"
-            }
-        };
-
-        // Function to change language
-        function changeLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-            localStorage.setItem('selectedLanguage', lang);
+      // Translation data
+      const translations = {
+        en: {
+          title: "Gilly-SMP Wiki",
+          subtitle: "Explore our knowledge base for server information, guides, and more.",
+          commandsTitle: "Server Commands",
+          claimManagement: "Claim Management",
+          villagerManagement: "Villager Management",
+          smartSpawner: "Smart Spawner",
+          teleportation: "Teleportation",
+          playerOptions: "Player Options",
+          "cmd.claim": "Claim a territory (chunk), with an option to set the radius",
+          "cmd.claimMain": "Open the main gui of a claim",
+          "cmd.claimSettings": "Open the settings gui of a claim",
+          "cmd.claimMembers": "Open the members gui of a claim",
+          "cmd.claimChunks": "Open the chunks gui of a claim",
+          "cmd.claimAdd": "Add a player to your claim, use '*' for all your claims",
+          "cmd.claimRemove": "Remove a player from your claim, use '*' for all your claims",
+          "cmd.claimBan": "Ban a player from your claim, use '*' for all claims",
+          "cmd.claimUnban": "Unban a player from your claim, use '*' for all your claims",
+          "cmd.claimBans": "Open the bans gui of a claim",
+          "cmd.claimKick": "Kick physically a player from your claim, use '*' for all your claims",
+          "cmd.claimOwner": "Transfer the ownership of a claim, use '*' for all your territories",
+          "cmd.claimTp": "Teleport to one of your territory",
+          "cmd.claimSee": "See the chunk you are in with border of particles",
+          "cmd.claimMap": "Check the claims around you in a chat map",
+          "cmd.claimAutomap": "Check automatically the map when you change chunk",
+          "cmd.claimAutoclaim": "Claim automatically the chunk when you change chunk",
+          "cmd.claimAutounclaim": "Unclaim automatically the chunk when you change chunk",
+          "cmd.claimFly": "Enable/disable the claim fly",
+          "cmd.claimAutofly": "Enable/disable the claim fly automatically",
+          "cmd.claimList": "Open the gui with your claims",
+          "cmd.claimChat": "Change your claim chat mode (public or claim chat)",
+          "cmd.claimSetspawn": "Change the location of the claim's spawn",
+          "cmd.claimSetname": "Change the name of one of your claims",
+          "cmd.claimSetdesc": "Change the description of one of your claims",
+          "cmd.claimMerge": "Merge two claims into one",
+          "cmd.claimAddchunk": "Add the chunk you're standing at to a claim",
+          "cmd.claimDelchunk": "Remove a chunk from a claim. Use format 'world;x;z'",
+          "cmd.claimAutoaddchunk": "Add automatically the chunk to the specified claim",
+          "cmd.claimAutodelchunk": "Remove automatically the chunk from the specified claim",
+          "cmd.claims": "Open the gui with all the claims of the server",
+          "cmd.unclaim": "Delete a claim, use '*' for all your claims",
+          "villager.pickup": "Pickup:",
+          "villager.pickupDesc": "Shift + Right Click to pick up villagers",
+          "villager.place": "Place:",
+          "villager.placeDesc": "Place villager head to release them (works in boats, minecarts)",
+          "villager.anchor": "Anchor:",
+          "villager.anchorDesc": "Shift + Right Click with Shears to prevent movement",
+          "villager.claim": "Claim:",
+          "villager.claimDesc": "Shift + Right Click with Shovel to protect from damage",
+          "villager.menu": "Menu:",
+          "villager.menuDesc": "Shift + Right Click claimed villager to change biome, trading, and partners",
+          "villager.hoppers": "Hoppers:",
+          "villager.hoppersDesc": "Craft with 1 Hopper + 1 Emerald to auto-pickup villagers",
+          "villager.trades": "Trades:",
+          "villager.tradesDesc": "View trades in villager description, reset in trading menu",
+          "spawner.gui": "GUI System:",
+          "spawner.guiDesc": "User-friendly interface to view, manage, and interact with spawners",
+          "spawner.main": "Main Interface:",
+          "spawner.mainDesc": "Drop/experience management, quick controls, and spawner metrics",
+          "spawner.storage": "Storage:",
+          "spawner.storageDesc": "Automatic item collection, one-click selling, bulk management, sort & filter",
+          "spawner.stacking": "Stacking:",
+          "spawner.stackingDesc": "Reduce lag with seamless stacking mechanics",
+          "spawner.rightClick": "• Right-click with spawner in hand to add one to stack",
+          "spawner.shiftClick": "• Shift + Right-click to stack all spawners",
+          "spawner.stackerGui": "• Use Stacker GUI for precise stack management",
+          "spawner.benefits": "Benefits:",
+          "spawner.benefitsDesc": "Scalable, easy visual management, drop rates scale with stack size",
+          "cmd.tpa": "Teleport you to someone else",
+          "cmd.pvp": "Turn ON or OFF your PVP"
+        },
+        fr: {
+          title: "Wiki Gilly-SMP",
+          subtitle: "Explorez notre base de connaissances pour des informations sur le serveur, des guides et plus encore.",
+          commandsTitle: "Commandes du serveur",
+          claimManagement: "Gestion des claims",
+          villagerManagement: "Gestion des villageois",
+          smartSpawner: "Smart Spawner",
+          teleportation: "Téléportation",
+          playerOptions: "Options du joueur",
+          "cmd.claim": "Réclamer un claim (chunk), avec option de rayon",
+          "cmd.claimMain": "Ouvrir l'interface principale d'un claim",
+          "cmd.claimSettings": "Ouvrir l'interface des paramètres d'un claim",
+          "cmd.claimMembers": "Ouvrir l'interface des membres d'un claim",
+          "cmd.claimChunks": "Ouvrir l'interface des chunks d'un claim",
+          "cmd.claimAdd": "Ajouter un joueur à votre claim, utilisez '*' pour tous vos claims",
+          "cmd.claimRemove": "Retirer un joueur de votre claim, utilisez '*' pour tous vos claims",
+          "cmd.claimBan": "Bannir un joueur de votre claim, utilisez '*' pour tous les claims",
+          "cmd.claimUnban": "Débannir un joueur de votre claim, utilisez '*' pour tous vos claims",
+          "cmd.claimBans": "Ouvrir l'interface des bannissements d'un claim",
+          "cmd.claimKick": "Expulser physiquement un joueur de votre claim, utilisez '*' pour tous vos claims",
+          "cmd.claimOwner": "Transférer la propriété d'un claim, utilisez '*' pour tous vos claims",
+          "cmd.claimTp": "Se téléporter à l'un de vos claims",
+          "cmd.claimSee": "Voir le chunk dans lequel vous êtes avec une bordure de particules",
+          "cmd.claimMap": "Vérifier les claims autour de vous dans une carte de chat",
+          "cmd.claimAutomap": "Vérifier automatically la carte lors du changement de chunk",
+          "cmd.claimAutoclaim": "Réclamer automatically le chunk lors du changement de chunk",
+          "cmd.claimAutounclaim": "Abandonner automatically le chunk lors du changement de chunk",
+          "cmd.claimFly": "Activer/désactiver le vol dans les claims",
+          "cmd.claimAutofly": "Activer/désactiver le vol automatique dans les claims",
+          "cmd.claimList": "Ouvrir l'interface avec vos claims",
+          "cmd.claimChat": "Changer votre mode de chat (public ou chat de claim)",
+          "cmd.claimSetspawn": "Changer l'emplacement du spawn du claim",
+          "cmd.claimSetname": "Changer le nom de l'un de vos claims",
+          "cmd.claimSetdesc": "Changer la description de l'un de vos claims",
+          "cmd.claimMerge": "Fusionner deux claims en un seul",
+          "cmd.claimAddchunk": "Ajouter le chunk où vous vous tenez à un claim",
+          "cmd.claimDelchunk": "Retirer un chunk d'un claim. Utilisez le format 'world;x;z'",
+          "cmd.claimAutoaddchunk": "Ajouter automatically le chunk au claim spécifié",
+          "cmd.claimAutodelchunk": "Retirer automatically le chunk du claim spécifié",
+          "cmd.claims": "Ouvrir l'interface avec tous les claims du serveur",
+          "cmd.unclaim": "Supprimer un claim, utilisez '*' pour tous vos claims",
+          "villager.pickup": "Ramasser :",
+          "villager.pickupDesc": "Shift + Clic droit pour ramasser les villageois",
+          "villager.place": "Placer :",
+          "villager.placeDesc": "Placez la tête de villageois pour les relâcher (fonctionne dans les bateaux, wagonnets)",
+          "villager.anchor": "Ancrer :",
+          "villager.anchorDesc": "Shift + Clic droit avec des Ciseaux pour empêcher le mouvement",
+          "villager.claim": "Revendiquer :",
+          "villager.claimDesc": "Shift + Clic droit avec une Pelle pour protéger des dégâts",
+          "villager.menu": "Menu :",
+          "villager.menuDesc": "Shift + Clic droit sur un villageois revendiqué pour changer le biome, le commerce et les partenaires",
+          "villager.hoppers": "Entonnoirs :",
+          "villager.hoppersDesc": "Fabriquez avec 1 Entonnoir + 1 Émeraude pour ramasser automatically les villageois",
+          "villager.trades": "Échanges :",
+          "villager.tradesDesc": "Voir les échanges dans la description du villageois, réinitialiser dans le menu d'échange",
+          "spawner.gui": "Système GUI :",
+          "spawner.guiDesc": "Interface conviviale pour voir, gérer et interagir avec les spawners",
+          "spawner.main": "Interface principale :",
+          "spawner.mainDesc": "Gestion des drops/expérience, contrôles rapides et métriques des spawners",
+          "spawner.storage": "Stockage :",
+          "spawner.storageDesc": "Collecte automatique d'objets, vente en un clic, gestion en masse, tri et filtrage",
+          "spawner.stacking": "Empilement :",
+          "spawner.stackingDesc": "Réduisez le lag avec des mécaniques d'empilement fluides",
+          "spawner.rightClick": "• Clic droit avec un spawner en main pour en ajouter un à la pile",
+          "spawner.shiftClick": "• Shift + Clic droit pour empiler tous les spawners",
+          "spawner.stackerGui": "• Utilisez le GUI d'empilement pour une gestion précise",
+          "spawner.benefits": "Avantages :",
+          "spawner.benefitsDesc": "Évolutif, gestion visuelle facile, les taux de drop évoluent avec la taille de la pile",
+          "cmd.tpa": "Vous téléporter vers quelqu'un d'autre",
+          "cmd.pvp": "Activer ou désactiver votre PVP",
+          "cmd.back": "Retournez à l'endroit où vous étiez précédemment"
+        },
+        pl: {
+          title: "Wiki Gilly-SMP",
+          subtitle: "Przeglądaj naszą bazę wiedzy, aby uzyskać informacje o serwerze, przewodniki i więcej.",
+          commandsTitle: "Komendy serwera",
+          claimManagement: "Zarządzanie terytoriami",
+          villagerManagement: "Zarządzanie wieśniakami",
+          smartSpawner: "Smart Spawner",
+          teleportation: "Teleportacja",
+          playerOptions: "Opcje gracza",
+          "cmd.claim": "Zajmij terytorium (chunk), z opcją ustawienia promienia",
+          "cmd.claimMain": "Otwórz główny interfejs terytorium",
+          "cmd.claimSettings": "Otwórz interfejs ustawień terytorium",
+          "cmd.claimMembers": "Otwórz interfejs członków terytorium",
+          "cmd.claimChunks": "Otwórz interfejs chunków terytorium",
+          "cmd.claimAdd": "Dodaj gracza do swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "cmd.claimRemove": "Usuń gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "cmd.claimBan": "Zbanuj gracza ze swojego terytorium, użyj '*' dla wszystkich terytoriów",
+          "cmd.claimUnban": "Odbanuj gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "cmd.claimBans": "Otwórz interfejs banów terytorium",
+          "cmd.claimKick": "Wyrzuć fizycznie gracza ze swojego terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "cmd.claimOwner": "Przenieś własność terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "cmd.claimTp": "Teleportuj się do jednego ze swoich terytoriów",
+          "cmd.claimSee": "Zobacz chunk, w którym się znajdujesz z granicą z cząstek",
+          "cmd.claimMap": "Sprawdź terytoria wokół ciebie na mapie czatu",
+          "cmd.claimAutomap": "Sprawdzaj automatycznie mapę przy zmianie chunku",
+          "cmd.claimAutoclaim": "Zajmuj automatycznie chunk przy zmianie chunku",
+          "cmd.claimAutounclaim": "Zwalniaj automatycznie chunk przy zmianie chunku",
+          "cmd.claimFly": "Włącz/wyłącz latanie na terytoriach",
+          "cmd.claimAutofly": "Włącz/wyłącz automatyczne latanie na terytoriach",
+          "cmd.claimList": "Otwórz interfejs ze swoimi terytoriami",
+          "cmd.claimChat": "Zmień tryb czatu (publiczny lub czat terytorium)",
+          "cmd.claimSetspawn": "Zmień lokalizację spawnu terytorium",
+          "cmd.claimSetname": "Zmień nazwę jednego ze swoich terytoriów",
+          "cmd.claimSetdesc": "Zmień opis jednego ze swoich terytoriów",
+          "cmd.claimMerge": "Połącz dwa terytoria w jedno",
+          "cmd.claimAddchunk": "Dodaj chunk, na którym stoisz do terytorium",
+          "cmd.claimDelchunk": "Usuń chunk z terytorium. Użyj formatu 'world;x;z'",
+          "cmd.claimAutoaddchunk": "Dodawaj automatycznie chunk do określonego terytorium",
+          "cmd.claimAutodelchunk": "Usuwaj automatycznie chunk z określonego terytorium",
+          "cmd.claims": "Otwórz interfejs ze wszystkimi terytoriami serwera",
+          "cmd.unclaim": "Usuń terytorium, użyj '*' dla wszystkich twoich terytoriów",
+          "villager.pickup": "Podnoszenie:",
+          "villager.pickupDesc": "Shift + Prawy przycisk myszy, aby podnieść wieśniaków",
+          "villager.place": "Stawianie:",
+          "villager.placeDesc": "Postaw głowę wieśniaka, aby ich uwolnić (działa w łódkach, wagonikach)",
+          "villager.anchor": "Kotwiczenie:",
+          "villager.anchorDesc": "Shift + Prawy przycisk myszy z Nożycami, aby zapobiec ruchowi",
+          "villager.claim": "Przejmowanie:",
+          "villager.claimDesc": "Shift + Prawy przycisk myszy z Łopatą, aby chronić przed obrażeniami",
+          "villager.menu": "Menu:",
+          "villager.menuDesc": "Shift + Prawy przycisk myszy na przejętym wieśniaku, aby zmienić biom, handel i partnerów",
+          "villager.hoppers": "Lejki:",
+          "villager.hoppersDesc": "Stwórz z 1 Lejka + 1 Szmaragdu, aby automatycznie podnosić wieśniaków",
+          "villager.trades": "Transakcje:",
+          "villager.tradesDesc": "Zobacz transakcje w opisie wieśniaka, zresetuj w menu handlu",
+          "spawner.gui": "System GUI:",
+          "spawner.guiDesc": "Przyjazny interfejs do przeglądania, zarządzania i interakcji ze spawnerami",
+          "spawner.main": "Główny interfejs:",
+          "spawner.mainDesc": "Zarządzanie dropami/doświadczeniem, szybkie kontrole i metryki spawnerów",
+          "spawner.storage": "Przechowywanie:",
+          "spawner.storageDesc": "Automatyczne zbieranie przedmiotów, sprzedaż jednym kliknięciem, zarządzanie masowe, sortowanie i filtrowanie",
+          "spawner.stacking": "Układanie w stosy:",
+          "spawner.stackingDesc": "Zmniejsz lag dzięki płynnym mechanikom układania w stosy",
+          "spawner.rightClick": "• Prawy przycisk myszy ze spawnerem w ręce, aby dodać jeden do stosu",
+          "spawner.shiftClick": "• Shift + Prawy przycisk myszy, aby ułożyć wszystkie spawnery w stos",
+          "spawner.stackerGui": "• Użyj GUI układania do precyzyjnego zarządzania stosem",
+          "spawner.benefits": "Korzyści:",
+          "spawner.benefitsDesc": "Skalowalny, łatwe zarządzanie wizualne, współczynniki dropu skalują się z rozmiarem stosu",
+          "cmd.tpa": "Teleportuj się do kogoś innego",
+          "cmd.pvp": "Włącz lub wyłącz swoje PVP",
+          "cmd.back": "Wróć do miejsca, w którym byliście wcześniej"
         }
+      };
 
-        // Load saved language or default to English
-        const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-        document.getElementById('languageSelector').value = savedLang;
-        changeLanguage(savedLang);
-
-        // Language selector event
-        document.getElementById('languageSelector').addEventListener('change', (e) => {
-            changeLanguage(e.target.value);
+      // Function to change language
+      function changeLanguage(lang) {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
         });
+        localStorage.setItem('selectedLanguage', lang);
+      }
 
-        // Accordion functionality
-        document.querySelectorAll('.accordion-button').forEach(btn => {
-            btn.onclick = () => {
-                const content = btn.nextElementSibling;
-                const isOpen = btn.getAttribute('aria-expanded') === 'true';
-                btn.setAttribute('aria-expanded', !isOpen);
-                content.style.maxHeight = isOpen ? null : content.scrollHeight + 'px';
-            };
-        });
+      // Load saved language or default to English
+      const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+      document.getElementById('languageSelector').value = savedLang;
+      changeLanguage(savedLang);
+
+      // Language selector event
+      document.getElementById('languageSelector').addEventListener('change', (e) => {
+        changeLanguage(e.target.value);
+      });
+
+      // Accordion functionality
+      document.querySelectorAll('.accordion-button').forEach(btn => {
+        btn.onclick = () => {
+          const content = btn.nextElementSibling;
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !isOpen);
+          content.style.maxHeight = isOpen ? null : content.scrollHeight + 'px';
+        };
+      });
     </script>
-</body>
+  <link rel="stylesheet" href="styles.css">
+  </body>
 </html>

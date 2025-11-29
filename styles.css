@@ -1,0 +1,4 @@
+body { font-family: Poppins, sans-serif; }
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height .2s; }
+.accordion-title::after { content: '▼'; float: right; transition: transform .2s; }
+button[aria-expanded="true"] .accordion-title::after { transform: rotate(-180deg); }
