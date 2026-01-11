@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/',
   title: "Gilly-SMP Wiki",
-  description: "THe Official wiki of Gilly-SMP",
+  description: "The Official wiki of Gilly-SMP",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
