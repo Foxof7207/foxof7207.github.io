@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Gilly-SMP Wiki",
   description: "The Official wiki of Gilly-SMP",
   head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }],
     ['script', { defer: '', src: 'https://u.crbo.dev/script.js', 'data-website-id': '2aae1459-9c84-422e-a850-317547da79fc' }]
   ],
   themeConfig: {
