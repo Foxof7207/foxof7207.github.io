@@ -173,3 +173,28 @@ Trade items and manage your wealth.
 | `/ping` | A simple connection test (returns "Pong!"). |
 :::
 
+::: details 🔥 Nether
+Survive the harsh environments and unique phenomena of the Nether.
+
+#### 🫀 Environmental Hazards
+- **Melting Boots**: Standing on blocks like **Netherrack**, **Crimson Nylium**, or **Nether Bricks** will slowly damage your boots. If they break, you'll take direct damage!
+- **Basalt Deltas Hazards**: Entering the **Basalt Deltas** biome without a **Carved Pumpkin** on your head will cause blindness and slowness due to the ash-filled air.
+- **Soul Sand Effect**: Walking on **Soul Sand** or **Soul Soil** applies the **Wither** effect, making these blocks even more dangerous.
+- **Warped Nylium Levitation**: Stepping on **Warped Nylium** gives you a **levitation** effect, adding a unique twist to exploration.
+:::
+
+::: details 🎟️ Lottery
+Test your luck and win big in the server lottery!
+
+#### 🎮 Player Commands
+| Command | Description |
+| :--- | :--- |
+| `/lottery buy <amount>` | Buy lottery tickets |
+| `/lottery leaderboard` | View the leaderboard |
+| `/lottery claim` | Claim unclaimed rewards |
+| `/lottery status` | Check pot, next draw, and your tickets |
+| `/lottery help` | Provide the list of commands players can use |
+
+
+:::
+
