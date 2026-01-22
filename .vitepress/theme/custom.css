@@ -1,0 +1,28 @@
+:root {
+  /* Improve brand color contrast (Light Mode) */
+  --vp-c-brand-1: #3451b2; /* Slightly darker to meet contrast requirements against white */
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5672e5;
+  
+  /* Text contrast improvements (Light Mode) */
+  --vp-c-text-1: #1a1a1a;
+  --vp-c-text-2: #4a4a4a;
+  --vp-c-text-3: #6a6a6a;
+}
+
+.dark {
+  /* Brand color contrast (Dark Mode) */
+  --vp-c-brand-1: #a8b1ff;
+  --vp-c-brand-2: #5c73e7;
+  --vp-c-brand-3: #3e56c4;
+  
+  /* Text contrast improvements (Dark Mode) */
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #ebebeb;
+  --vp-c-text-3: #d1d1d1;
+}
+
+/* Ensure 'main' landmark is visible to screen readers and browsers */
+main {
+  display: block;
+}

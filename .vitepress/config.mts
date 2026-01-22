@@ -3,12 +3,15 @@ import { withPwa } from '@vite-pwa/vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(defineConfig({
+  lang: 'en-US',
   base: '/',
   title: "Gilly-SMP Wiki",
   description: "The Official wiki of Gilly-SMP",
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
-    ['script', { defer: '', src: 'https://u.crbo.dev/script.js', 'data-website-id': '2aae1459-9c84-422e-a850-317547da79fc' }]
+    ['script', { defer: '', src: 'https://u.crbo.dev/script.js', 'data-website-id': '2aae1459-9c84-422e-a850-317547da79fc' }],
+    // Preload fonts to reduce render-blocking
+    ['link', { rel: 'preload', href: '/assets/inter-roman-latin.Di8DUHzh.woff2', as: 'font', type: 'font/woff2', crossorigin: '' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -62,7 +65,34 @@ export default withPwa(defineConfig({
       ]
     },
     workbox: {
-      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}']
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/u\.crbo\.dev\/.*/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'analytics-cache',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+            },
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        },
+        {
+          urlPattern: /\.(?:png|jpg|jpeg|svg|gif|woff2)$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'assets-cache',
+            expiration: {
+              maxEntries: 50,
+              maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+            }
+          }
+        }
+      ]
     }
   }
 }))
