@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
   base: '/',
   title: "Gilly-SMP Wiki",
   description: "The Official wiki of Gilly-SMP",
@@ -32,5 +33,36 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  pwa: {
+    registerType: 'autoUpdate',
+    includeAssets: ['favicon.png', 'logo.png'],
+    manifest: {
+      name: 'Gilly-SMP Wiki',
+      short_name: 'Gilly Wiki',
+      description: 'The Official wiki of Gilly-SMP',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        },
+        {
+          src: 'maskable-icon.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}']
+    }
   }
-})
+}))
