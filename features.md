@@ -4,18 +4,13 @@ Welcome! Here you will find all the commands and features available on the serve
 
 ---
 
-::: details 🧑‍🌾 Villagers Management
-Efficiently manage your villagers with these specialized actions.
+::: details ⚙️ Player Options
+Personalize your gameplay setup.
 
-| Action | How to Use | Description |
-| :--- | :--- | :--- |
-| **Pickup** | `Shift + Right Click` | Pick up a villager into your inventory. |
-| **Place** | `Right Click` | Place the villager head to release them (works in boats/minecarts). |
-| **Anchor** | `Shift + Right Click` with **Shears** | Prevent the villager from moving. |
-| **Claim** | `Shift + Right Click` with **Shovel** | Protect the villager from taking damage. |
-| **Menu** | `Shift + Right Click` | Open management menu (biome, trading, partners) on a claimed villager. |
-| **Hoppers** | `Crafting` | Use `1 Hopper` + `1 Emerald` to create an auto-pickup hopper. |
-| **Trades** | `Description/Menu` | View trades in the villager's description or reset in the trading menu. |
+| Command | Description |
+| :--- | :--- |
+| `/pvp` | Toggle your PvP status ON or OFF. |
+| `/discord link` | Link your Minecraft account with our Discord server. |
 :::
 
 ::: details 🏰 Claim Management
@@ -55,6 +50,77 @@ Protect your land and collaborate with others using the claim system.
 | `/claim autodelchunk` | Automatically remove chunks from a specified claim. |
 | `/claims` | View all claims across the server. |
 | `/unclaim [*]` | Delete a claim (use `*` for all your claims). |
+:::
+
+::: details 🧑‍🌾 Villagers Management
+Efficiently manage your villagers with these specialized actions.
+
+| Action | How to Use | Description |
+| :--- | :--- | :--- |
+| **Pickup** | `Shift + Right Click` | Pick up a villager into your inventory. |
+| **Place** | `Right Click` | Place the villager head to release them (works in boats/minecarts). |
+| **Anchor** | `Shift + Right Click` with **Shears** | Prevent the villager from moving. |
+| **Claim** | `Shift + Right Click` with **Shovel** | Protect the villager from taking damage. |
+| **Menu** | `Shift + Right Click` | Open management menu (biome, trading, partners) on a claimed villager. |
+| **Hoppers** | `Crafting` | Use `1 Hopper` + `1 Emerald` to create an auto-pickup hopper. |
+| **Trades** | `Description/Menu` | View trades in the villager's description or reset in the trading menu. |
+:::
+
+::: details 💰 Economy
+Trade items and manage your wealth.
+
+> [!WARNING]
+>The market system adjusts item prices based on supply and demand.
+
+
+| Command | Description |
+| :--- | :--- |
+| `/ehelp` | Display economy help documentation. |
+| `/readmail` | Check your economy-related notifications. |
+| `/clearmail <all/unread/read>` | Delete your economy mail. |
+| `/balance [player]` | Check your or another player's balance. |
+| `/pay <player> <amount>` | Send cash to another player. |
+| `/baltop` | See the wealthiest players on the server. |
+| `/search <item>` | Look up items in the market. |
+| `/buy <item> <amount>` | Purchase items from the market. |
+| `/sell <item> <amount>` | Sell items to the market. |
+| `/sellall [items]` | Sell all matching items in your inventory. |
+| `/handbuy <amount>` | Buy more of the item you are currently holding. |
+| `/handsell <amount>` | Sell the item you are currently holding. |
+| `/value <item> <amount>` | Check the current market value of an item. |
+| `/information <item>` | Get detailed market data for an item. |
+| `/handinformation` | Get market data for the item in your hand. |
+| `/handvalue <amount>` | Get the value of the items in your hand. |
+| `/ping` | A simple connection test (returns "Pong!"). |
+:::
+
+::: details 🎟️ Lottery
+Test your luck and win big in the server lottery!
+
+#### 🎮 Player Commands
+| Command | Description |
+| :--- | :--- |
+| `/lottery buy <amount>` | Buy lottery tickets |
+| `/lottery leaderboard` | View the leaderboard |
+| `/lottery claim` | Claim unclaimed rewards |
+| `/lottery status` | Check pot, next draw, and your tickets |
+| `/lottery help` | Provide the list of commands players can use |
+
+
+:::
+
+::: details ✨ Enchants
+Discover unique custom enchantments created in collaboration between Gilly-SMP and plugin developers!
+
+| Enchant | Effect |
+| :--- | :--- |
+| **Timber** | Mine a tree instantly with a single hit. |
+| **Swift Edge** | Increases your movement speed after dealing damage. |
+| **Frostbite** | Slows enemies and grants you resistance when you hit them. |
+| **Lifesteal** | Heals you for a portion of the damage you deal to enemies. |
+| **Bloodlust** | Heals you and gives strength when you defeat enemies. |
+| **Beheader** | Drop the heads of players you defeat in PvP. |
+
 :::
 
 ::: details 🌀 Teleportation
@@ -111,15 +177,6 @@ Manage and stack your mob spawners.
 - **Stack All:** `Shift + Right Click` to add all spawners in your inventory to the stack.
 :::
 
-::: details ⚙️ Player Options
-Personalize your gameplay setup.
-
-| Command | Description |
-| :--- | :--- |
-| `/pvp` | Toggle your PvP status ON or OFF. |
-| `/discord link` | Link your Minecraft account with our Discord server. |
-:::
-
 ::: details ⚔️ EliteMobs
 Brave the challenges and earn unique rewards!
 
@@ -145,34 +202,6 @@ Brave the challenges and earn unique rewards!
 | `/em scroll` | Manage your magical scrolls. |
 :::
 
-::: details 💰 Economy
-Trade items and manage your wealth.
-
-> [!WARNING]
->The market system adjusts item prices based on supply and demand.
-
-
-| Command | Description |
-| :--- | :--- |
-| `/ehelp` | Display economy help documentation. |
-| `/readmail` | Check your economy-related notifications. |
-| `/clearmail <all/unread/read>` | Delete your economy mail. |
-| `/balance [player]` | Check your or another player's balance. |
-| `/pay <player> <amount>` | Send cash to another player. |
-| `/baltop` | See the wealthiest players on the server. |
-| `/search <item>` | Look up items in the market. |
-| `/buy <item> <amount>` | Purchase items from the market. |
-| `/sell <item> <amount>` | Sell items to the market. |
-| `/sellall [items]` | Sell all matching items in your inventory. |
-| `/handbuy <amount>` | Buy more of the item you are currently holding. |
-| `/handsell <amount>` | Sell the item you are currently holding. |
-| `/value <item> <amount>` | Check the current market value of an item. |
-| `/information <item>` | Get detailed market data for an item. |
-| `/handinformation` | Get market data for the item in your hand. |
-| `/handvalue <amount>` | Get the value of the items in your hand. |
-| `/ping` | A simple connection test (returns "Pong!"). |
-:::
-
 ::: details 🔥 Nether
 Survive the harsh environments and unique phenomena of the Nether.
 
@@ -181,21 +210,6 @@ Survive the harsh environments and unique phenomena of the Nether.
 - **Basalt Deltas Hazards**: Entering the **Basalt Deltas** biome without a **Carved Pumpkin** on your head will cause blindness and slowness due to the ash-filled air.
 - **Soul Sand Effect**: Walking on **Soul Sand** or **Soul Soil** applies the **Wither** effect, making these blocks even more dangerous.
 - **Warped Nylium Levitation**: Stepping on **Warped Nylium** gives you a **levitation** effect, adding a unique twist to exploration.
-:::
-
-::: details 🎟️ Lottery
-Test your luck and win big in the server lottery!
-
-#### 🎮 Player Commands
-| Command | Description |
-| :--- | :--- |
-| `/lottery buy <amount>` | Buy lottery tickets |
-| `/lottery leaderboard` | View the leaderboard |
-| `/lottery claim` | Claim unclaimed rewards |
-| `/lottery status` | Check pot, next draw, and your tickets |
-| `/lottery help` | Provide the list of commands players can use |
-
-
 :::
 
 ::: details 🐉 The END
@@ -213,4 +227,6 @@ Fight the Ender Dragon with special mechanics and challenges!
 - The Dragon Egg grants buffs while held; effects are lost if dropped or placed.
 
 :::
+
+
 
