@@ -137,7 +137,7 @@ Getting around the world quickly.
 Fast vertical travel using matching blocks.
 
 #### 🏗️ Setup
-1. Place an **elevator block** on the ground.
+1. Place an **iron block** on the ground.
 2. Place another elevator block directly above it at the desired floor.
 
 #### 📜 Rules
@@ -154,7 +154,7 @@ Fast vertical travel using matching blocks.
 Link two distant points for instant travel.
 
 #### 🏗️ Setup
-1. Place a **teleporter block** on the ground.
+1. Place a **iron block** on the ground.
 2. Stand on it and use `/teleporter add` (take note of the ID).
 3. Repeat at the destination.
 4. Link them: `/teleporter link [id1] [id2]`.
