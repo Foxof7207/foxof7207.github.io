@@ -198,3 +198,19 @@ Test your luck and win big in the server lottery!
 
 :::
 
+::: details 🐉 The END
+Fight the Ender Dragon with special mechanics and challenges!
+
+#### 🎮 Dragon Fight Features
+- **Cooperative Dragon Fight**: The Ender Dragon fight is a team activity! Each player can contribute up to 3 Eyes of Ender to open the End Portal. All contributors must be present in the portal room for it to activate.
+- **Harder Dragon**: The Ender Dragon is significantly stronger with **1000 HP** (instead of 200) and gains increasing resistance levels as its HP decreases, making the fight progressively more challenging.
+- **Dragon Egg Buffs**: Pick up the Dragon Egg in your inventory to gain powerful passive effects.
+
+#### ⚡ What to Know
+- Portal requires **all contributors** to be present or it will close.
+- Each player can only place **3 Eyes of Ender** per portal.
+- Once the Ender Dragon is defeated for the first time, End Portals revert to normal behavior.
+- The Dragon Egg grants buffs while held; effects are lost if dropped or placed.
+
+:::
+
