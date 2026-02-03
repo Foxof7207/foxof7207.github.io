@@ -216,7 +216,7 @@ Survive the harsh environments and unique phenomena of the Nether.
 Fight the Ender Dragon with special mechanics and challenges!
 
 #### 🎮 Dragon Fight Features
-- **Cooperative Dragon Fight**: The Ender Dragon fight is a team activity! Each player can contribute up to 3 Eyes of Ender to open the End Portal. All contributors must be present in the portal room for it to activate.
+- **Cooperative Dragon Fight**: The Ender Dragon fight is a team activity! Each player can contribute up to 2 Eyes of Ender to open the End Portal. All contributors must be present in the portal room for it to activate.
 - **Harder Dragon**: The Ender Dragon is significantly stronger with **1000 HP** (instead of 200) and gains increasing resistance levels as its HP decreases, making the fight progressively more challenging.
 - **Dragon Egg Buffs**: Pick up the Dragon Egg in your inventory to gain powerful passive effects.
 
