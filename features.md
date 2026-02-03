@@ -222,7 +222,7 @@ Fight the Ender Dragon with special mechanics and challenges!
 
 #### ⚡ What to Know
 - Portal requires **all contributors** to be present or it will close.
-- Each player can only place **3 Eyes of Ender** per portal.
+- Each player can only place **2 Eyes of Ender** per portal.
 - Once the Ender Dragon is defeated for the first time, End Portals revert to normal behavior.
 - The Dragon Egg grants buffs while held; effects are lost if dropped or placed.
 
