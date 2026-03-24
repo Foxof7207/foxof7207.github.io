@@ -18,17 +18,25 @@ export default withPwa(defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Rules', link: '/rules' },
-      { text: 'Features', link: '/features' },
+      { text: 'Features', link: '/features/economy' },
       { text: 'How to Join', link: '/how-to-join' }
     ],
 
     sidebar: [
       {
-        text: 'Information',
+        text: 'Getting Started',
         items: [
-          { text: 'Rules', link: '/rules' },
-          { text: 'Features', link: '/features' },
-          { text: 'How to Join', link: '/how-to-join' }
+          { text: 'How to Join', link: '/how-to-join' },
+          { text: 'Rules', link: '/rules' }
+        ]
+      },
+      {
+        text: 'Features',
+        items: [
+          { text: 'Economy & Market', link: '/features/economy' },
+          { text: 'Claims & Teams', link: '/features/claims-and-teams' },
+          { text: 'Skills & Enchants', link: '/features/skills' },
+          { text: 'World Mechanics', link: '/features/mechanics' }
         ]
       }
     ],

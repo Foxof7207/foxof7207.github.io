@@ -17,7 +17,7 @@ hero:
 
     - theme: brand
       text: Features
-      link: /features
+      link: /features/economy
 
 features:
   - title: Cross-platforms
