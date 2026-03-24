@@ -15,16 +15,21 @@
 
 ## 🎮 Console Players (Bedrock)
 
-If you are playing on a console (Xbox, PlayStation, Nintendo Switch), you can use the **BedrockTogether** app to join the server. 
+If you are playing on a console (Xbox, PlayStation, Nintendo Switch), you can use the **NetherLink** app to join the server. 
 
-- [**BedrockTogether on Google Play**](https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp)
-- [**BedrockTogether on App Store**](https://apps.apple.com/us/app/bedrocktogether/id1534593376)
+- [**NetherLink on Google Play**](https://play.google.com/store/apps/details?id=net.netherdev.netherLink)
+- [**NetherLink on App Store**](https://apps.apple.com/be/app/netherlink/id6747323142)
 
 ::: tip How to use
-1. Open the BedrockTogether app on your mobile device.
+1. Open the NetherLink app on your phone.
 2. Enter the server IP (`mc.gillyb.net`) and port (`19132`).
-3. Click "Run AD and watch the server".
-4. On your console, go to the "Friends" tab in Minecraft. The server should appear under **LAN Games**.
+3. Select "EU "server"
+4. Toggle "Nintendo Switch" if you are using a Nintendo Switch.
+5. Press "Start Broadcasting"
+6. On your console, go to the "Friends" tab in Minecraft. The server should appear under **LAN Games**.
+
+> [!WARNING]
+>Keep the app open on your phone, otherwise you are likely to be disconnected from the server.
 :::
 
 ## 📝 Whitelist Requirement
