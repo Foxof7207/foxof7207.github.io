@@ -23,11 +23,11 @@ features:
   - title: Cross-platforms
     details: Java & Bedrock support. <br/> You can join with both Edition and link your accounts together.
 
-  - title: Optional PvP
-    details: Individual toogleable PvP. <br/>If you don't want to fight, it's your choice.
+  - title: Lifesteal
+    details: Steal hearts from your enemies and become the ultimate survivor!
 
-  - title: Customs Dungeons
-    details: 100% option dungeons made for the one who's bored of the vanilla game.
+  - title: Customs Enchants
+    details: A variety of custom enchants to make your gameplay more interesting.
 
   - title: Better Villagers
     details: You can claim you villagers, so no one can use them.
@@ -36,6 +36,6 @@ features:
     details: After mining a spawner, place it back and you will have a nice GUI
 
   - title: Economy
-    details: A smart economy, the prices will fluctuate depending on the market
+    details: A player driven economy.
 ---
 

@@ -6,7 +6,7 @@ The Gilly-SMP economy is dynamic, with prices that fluctuate based on supply and
 
 ## Market Commands
 
-The market system adjusts item prices automatically. Use these commands to interact with it.
+The market system adjusts item prices automatically. Use these commands to interact with it. Won't be available on the new version.
 
 > [!WARNING]
 > The market system responds to the community. Buying a lot of one item will drive its price up, while selling a lot will drive it down.

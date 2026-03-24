@@ -40,6 +40,8 @@ const close = () => {
           <p class="description">
             Get ready for a massive update with new features, a fresh world, and improved performance. 
             Stay tuned to our Discord for the official launch date!
+
+            The wiki is a bit messy, it a mix of the current version and the new one. 🫠
           </p>
         </div>
         
