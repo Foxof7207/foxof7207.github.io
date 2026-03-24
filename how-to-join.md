@@ -27,10 +27,10 @@ If you are playing on a console (Xbox, PlayStation, Nintendo Switch), you can us
 4. Toggle "Nintendo Switch" if you are using a Nintendo Switch.
 5. Press "Start Broadcasting"
 6. On your console, go to the "Friends" tab in Minecraft. The server should appear under **LAN Games**.
-
+:::
 > [!WARNING]
 >Keep the app open on your phone, otherwise you are likely to be disconnected from the server.
-:::
+
 
 ## 📝 Whitelist Requirement
 
