@@ -1,12 +1,11 @@
-# 🛡️ Claims & Teams
+# Claims & Teams
 
 Gilly-SMP is built on collaboration and protection. Form a team, claim your land, and manage your villagers safely.
 
----
 
-## Teams (Clans)
+## Teams
 
-Build your legacy and collaborate with others by forming a clan.
+Build your legacy and collaborate with others by forming a team.
 
 ### Team Management
 | Command | Description |
@@ -32,12 +31,14 @@ Build your legacy and collaborate with others by forming a clan.
 
 ## Claim Management
 
-Protect your land and collaborate with others using the claim system. Most of these commands are for **Clan Owners**.
+Protect your land and collaborate with others using the claim system. Most of these commands are for **Team Owners**.
+
+::: warning
+Your team members ***are not*** automatically added to your claims to prevent stealing.
+:::
 
 | Command | Description |
 | :--- | :--- |
-| `/claim [radius]` | Claim a territory (chunk) around you. |
-| `/claim main` | Open the main claim management GUI. |
 | `/claim settings` | Open the settings for your claim. |
 | `/claim members` | Manage members of your claim. |
 | `/claim chunks` | Manage individual chunks within your claim. |
@@ -52,19 +53,4 @@ Protect your land and collaborate with others using the claim system. Most of th
 | `/unclaim [*]` | Delete a claim (use `*` for all your claims). |
 
 > [!TIP]
-> Use `/claim see` often to make sure you're building within your protected borders!
-
----
-
-## Villager Management
-
-Efficiently manage your villagers with these specialized actions.
-
-| Action | How to Use | Description |
-| :--- | :--- | :--- |
-| **Pickup** | `Shift + Right Click` | Pick up a villager into your inventory. |
-| **Place** | `Right Click` | Place the villager head to release them. |
-| **Anchor** | `Shift + Right Click` with **Shears** | Prevent the villager from moving. |
-| **Claim** | `Shift + Right Click` with **Shovel** | Protect the villager from taking damage. |
-| **Menu** | `Shift + Right Click` | Open management menu on a claimed villager. |
-| **Hoppers** | `Crafting` | Use `1 Hopper` + `1 Emerald` for auto-pickup. |
+> You can use `/claim see` to look for enemy's base around you!

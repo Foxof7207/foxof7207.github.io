@@ -1,30 +1,25 @@
-# 💰 Economy & Market
+# Economy & Market
 
 The Gilly-SMP economy is dynamic, with prices that fluctuate based on supply and demand. Trade items, manage your wealth, and maybe even win big in the lottery!
 
----
 
-## Market Commands
 
-The market system adjusts item prices automatically. Use these commands to interact with it. Won't be available on the new version.
+## Auction House
+
+The auction house is available to everyone, you can acces it in-game or via Discord !
 
 > [!WARNING]
-> The market system responds to the community. Buying a lot of one item will drive its price up, while selling a lot will drive it down.
+> The auction house is powered by players, so do not expect to be able to buy everything from there.
 
 | Command | Description |
 | :--- | :--- |
-| `/search <item>` | Look up items in the market. |
-| `/buy <item> <amount>` | Purchase items from the market. |
-| `/sell <item> <amount>` | Sell items to the market. |
-| `/sellall [items]` | Sell all matching items in your inventory. |
-| `/handbuy <amount>` | Buy more of the item you are currently holding. |
-| `/handsell <amount>` | Sell the item you are currently holding. |
-| `/value <item> <amount>` | Check the current market value of an item. |
-| `/information <item>` | Get detailed market data for an item. |
-| `/handinformation` | Get market data for the item in your hand. |
-| `/handvalue <amount>` | Get the value of the items in your hand. |
+| `/ah` | Open the auction house. |
+| `/ah sell <price>` | Put the item on the auction house for the given price. |
+| `/ah listings` | Sell items to the market. |
+| `/ahplus verify` | Give you a code to send to the bot Gilly-SMP 2.0 to acces the web interface of the auction house |
+| `/ahplus claim` | Gives you the items you bought on the web page. |
 
-## Personal Finance
+## Money
 
 Manage your own balance and send money to other players.
 
@@ -32,12 +27,8 @@ Manage your own balance and send money to other players.
 | :--- | :--- |
 | `/balance [player]` | Check your or another player's balance. |
 | `/pay <player> <amount>` | Send cash to another player. |
-| `/baltop` | See the wealthiest players on the server. |
-| `/readmail` | Check your economy-related notifications. |
-| `/clearmail <all/unread/read>` | Delete your economy mail. |
-| `/ping` | A simple connection test (returns "Pong!"). |
 
-## 🎲 Lottery
+## Lottery
 
 Test your luck and win big in the server lottery!
 
@@ -48,3 +39,12 @@ Test your luck and win big in the server lottery!
 | `/lottery claim` | Claim unclaimed rewards |
 | `/lottery status` | Check pot, next draw, and your tickets |
 | `/lottery help` | List of lottery player commands |
+
+## Team
+
+You can withdraw or deposit money from your team's bank
+
+| Command | Description |
+| :--- | :--- |
+| `/team deposit <amount>` | Deposit money into the team bank. |
+| `/team withdraw <amount>` | Withdraw money from the team bank. |
