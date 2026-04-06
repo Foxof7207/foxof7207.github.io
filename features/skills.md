@@ -4,7 +4,7 @@ Enhance your character with powerful abilities and unique custom enchantments.
 
 ---
 
-## Aura-Skills
+## Skills
 
 Level up your character and unlock powerful abilities by performing everyday tasks!
 
