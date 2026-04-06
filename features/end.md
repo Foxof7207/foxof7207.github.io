@@ -14,5 +14,7 @@ Fight the Ender Dragon with special mechanics and challenges!
 
 - **Dragon Egg Buffs**: Holding the Dragon Egg grants passive powers.
 
+- Keep inventory will be OFF inside the dimension.
+
 > [!IMPORTANT]
 > Once the Ender Dragon is defeated for the first time, End Portals revert to normal behavior.
