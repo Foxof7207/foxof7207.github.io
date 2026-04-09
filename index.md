@@ -17,7 +17,11 @@ hero:
 
     - theme: brand
       text: Features
-      link: /features/economy
+      link: /features/
+
+    - theme: brand
+      text: Guilds
+      link: /guilds/
 
 features:
   - title: Cross-platforms

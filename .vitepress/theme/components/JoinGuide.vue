@@ -33,15 +33,15 @@ const devices = [
 const osOptions = computed(() => {
     if (selectedDevice.value === "pc") {
         return [
-            { id: "windows", name: "Windows", icon: "🪟" },
-            { id: "macos", name: "macOS", icon: "🍎" },
-            { id: "linux", name: "Linux", icon: "🐧" },
+            { id: "windows", name: "Windows" },
+            { id: "macos", name: "macOS" },
+            { id: "linux", name: "Linux" },
         ];
     }
     if (selectedDevice.value === "mobile") {
         return [
-            { id: "android", name: "Android", icon: "🤖" },
-            { id: "ios", name: "iOS (iPhone/iPad)", icon: "📱" },
+            { id: "android", name: "Android" },
+            { id: "ios", name: "iOS (iPhone/iPad)" },
         ];
     }
     return [];
@@ -124,7 +124,7 @@ const serverInfo = {
                         class="option-card compact"
                         @click="selectOS(os.id as OS)"
                     >
-                        <span class="option-icon small">{{ os.icon }}</span>
+                        <span class="option-icon small"></span>
                         <span class="option-name">{{ os.name }}</span>
                     </button>
                 </div>

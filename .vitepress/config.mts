@@ -60,6 +60,13 @@ export default withPwa(
             { text: "The End", link: "/features/end" },
           ],
         },
+        {
+          text: "Guilds",
+          items: [
+            { text: "Ashwalkers", link: "/guilds/ashwalker" },
+            { text: "Everlook", link: "/guilds/everlook" },
+          ],
+        },
       ],
 
       socialLinks: [
