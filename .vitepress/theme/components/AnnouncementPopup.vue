@@ -3,9 +3,8 @@ import { ref, onMounted } from "vue";
 
 const show = ref(false);
 
-// Use localStorage to avoid showing the popup multiple times in a session
 onMounted(() => {
-    const hasSeen = localStorage.getItem("gilly-announcement-seen");
+    const hasSeen = localStorage.getItem("gilly-announcement-v2");
     if (!hasSeen) {
         setTimeout(() => {
             show.value = true;
@@ -15,7 +14,7 @@ onMounted(() => {
 
 const close = () => {
     show.value = false;
-    localStorage.setItem("gilly-announcement-seen", "true");
+    localStorage.setItem("gilly-announcement-v2", "true");
 };
 </script>
 
@@ -166,7 +165,6 @@ const close = () => {
     transform: translateY(-2px);
 }
 
-/* Animations */
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.3s ease;

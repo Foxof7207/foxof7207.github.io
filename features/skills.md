@@ -1,3 +1,8 @@
+---
+title: Skills & Enchants
+description: Enhance your character with powerful abilities and unique custom enchantments.
+---
+
 # Skills & Enchants
 
 Enhance your character with powerful abilities and unique custom enchantments.
@@ -50,6 +55,6 @@ Discover unique custom enchantments created in collaboration between Gilly-SMP a
 | **Bloodlust** | Heals and gives strength when you defeat enemies. |
 | **Beheader** | Drop the heads of players you defeat in PvP. |
 
-::::tip Have an idea for an enchant ?
+:::tip Have an idea for an enchant ?
 More enchants can be added by submitting an idea to the Helpers on Discord
-::::
+:::

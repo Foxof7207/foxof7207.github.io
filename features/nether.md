@@ -1,7 +1,11 @@
+---
+title: The Nether
+description: Survive the modified Nether dimensions and its environmental hazards.
+---
 
 # The Nether
 
-The Nether has been twicked to make it more interesting than vanilla.
+The Nether has been tweaked to make it more interesting than vanilla.
 
 ---
 

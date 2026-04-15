@@ -1,25 +1,25 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "Gilly-SMP Wiki"
   text: "The Official wiki"
+  tagline: "Explore features, guides, and guilds"
 
   actions:
     - theme: brand
-      text: How to join ?
+      text: How to Join
       link: /how-to-join
 
-    - theme: brand
+    - theme: alt
       text: Rules
       link: /rules
 
-    - theme: brand
+    - theme: alt
       text: Features
       link: /features/
 
-    - theme: brand
+    - theme: alt
       text: Guilds
       link: /guilds/
 
@@ -30,11 +30,11 @@ features:
   - title: Lifesteal
     details: Steal hearts from your enemies and become the ultimate survivor!
 
-  - title: Customs Enchants
+  - title: Custom Enchants
     details: A variety of custom enchants to make your gameplay more interesting.
 
   - title: Better Villagers
-    details: You can claim you villagers, so no one can use them.
+    details: You can claim your villagers, so no one can use them.
 
   - title: Better Spawners
     details: After mining a spawner, place it back and you will have a nice GUI

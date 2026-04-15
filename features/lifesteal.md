@@ -1,3 +1,8 @@
+---
+title: Lifesteal
+description: Steal hearts from your enemies and become the ultimate survivor!
+---
+
 # Lifesteal
 
 Steal hearts from your enemies and become the ultimate survivor!

@@ -1,3 +1,8 @@
+---
+title: Villager Management
+description: Efficiently manage your villagers with specialized actions.
+---
+
 # Villager Management
 
 Efficiently manage your villagers with these specialized actions.

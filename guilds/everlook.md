@@ -15,12 +15,12 @@ The Everlook are a group of dedicated players who thrive in the challenges of th
 
 We believe in:
 - **Camaraderie**: Working together to achieve common goals.
-- **Our Challenge**: Been able to provide you anyhting you may wish.
+- **Our Challenge**: Being able to provide you anything you may wish.
 ## ⚔️ What We Offer
 
 - **A Safe Haven**: Secure claims where you can build and store your loot safely.
 - **Team Events**: Organized exploration of the Nether, the End, and team-based activities.
-- **Resource Sharing and Gathering**: An acces to a bunch of ressources, gathered by all of us.
+- **Resource Sharing and Gathering**: Access to a pool of resources, gathered by all of us.
 - **Guidance**: Help for newer players navigating the server's features such as Lifesteal and custom enchants.
 
 ## 📝 How to Join

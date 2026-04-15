@@ -9,23 +9,36 @@ const selectedDevice = ref<DeviceType>(null);
 const selectedOS = ref<OS>(null);
 const bedrockMethod = ref<"friend" | "manual">("friend");
 
+const deviceIcons = {
+    pc: "https://api.iconify.design/mdi:laptop.svg?color=%23888888",
+    mobile: "https://api.iconify.design/mdi:cellphone.svg?color=%23888888",
+    console: "https://api.iconify.design/mdi:gamepad-variant.svg?color=%23888888"
+};
+
+const osIcons = {
+    windows: "https://api.iconify.design/logos:microsoft-windows.svg",
+    macos: "https://api.iconify.design/mdi:apple.svg?color=%23888888",
+    linux: "https://api.iconify.design/logos:linux-tux.svg",
+    android: "https://api.iconify.design/logos:android-icon.svg"
+};
+
 const devices = [
     {
         id: "pc",
         name: "PC / Laptop",
-        icon: "💻",
+        icon: deviceIcons.pc,
         description: "Java Edition players on computer",
     },
     {
         id: "mobile",
         name: "Mobile / Tablet",
-        icon: "📱",
+        icon: deviceIcons.mobile,
         description: "Pocket/Bedrock edition on portable devices",
     },
     {
         id: "console",
         name: "Console",
-        icon: "🎮",
+        icon: deviceIcons.console,
         description: "Xbox, PlayStation, or Nintendo Switch",
     },
 ];
@@ -33,15 +46,15 @@ const devices = [
 const osOptions = computed(() => {
     if (selectedDevice.value === "pc") {
         return [
-            { id: "windows", name: "Windows" },
-            { id: "macos", name: "macOS" },
-            { id: "linux", name: "Linux" },
+            { id: "windows", name: "Windows", icon: osIcons.windows },
+            { id: "macos", name: "macOS", icon: osIcons.macos },
+            { id: "linux", name: "Linux", icon: osIcons.linux },
         ];
     }
     if (selectedDevice.value === "mobile") {
         return [
-            { id: "android", name: "Android" },
-            { id: "ios", name: "iOS (iPhone/iPad)" },
+            { id: "android", name: "Android", icon: osIcons.android },
+            { id: "ios", name: "iOS (iPhone/iPad)", icon: osIcons.macos },
         ];
     }
     return [];
@@ -49,11 +62,7 @@ const osOptions = computed(() => {
 
 const selectDevice = (id: DeviceType) => {
     selectedDevice.value = id;
-    if (id === "console") {
-        step.value = 3; // Consoles don't need OS selection in this guide
-    } else {
-        step.value = 2;
-    }
+    step.value = 2;
 };
 
 const selectOS = (id: OS) => {
@@ -71,7 +80,7 @@ const serverInfo = {
     java: {
         address: "mc.gillyb.net",
         port: "Default (25565)",
-        version: "26.1",
+        version: "26.1.2",
     },
     bedrock: {
         address: "mc.gillyb.net",
@@ -104,7 +113,7 @@ const serverInfo = {
                         class="option-card"
                         @click="selectDevice(device.id as DeviceType)"
                     >
-                        <span class="option-icon">{{ device.icon }}</span>
+                        <img :src="device.icon" class="option-icon-img" alt="icon" />
                         <span class="option-name">{{ device.name }}</span>
                         <span class="option-desc">{{
                             device.description
@@ -114,29 +123,43 @@ const serverInfo = {
             </div>
 
             <!-- Step 2: OS Selection -->
-            <div v-else-if="step === 2" key="os" class="step-content">
+            <div v-else-if="step === 2" key="step2" class="step-content">
                 <div class="back-link" @click="step = 1">← Go back</div>
-                <h2 class="step-title">Select Operating System</h2>
-                <div class="grid-options os-grid">
-                    <button
-                        v-for="os in osOptions"
-                        :key="os.id"
-                        class="option-card compact"
-                        @click="selectOS(os.id as OS)"
-                    >
-                        <span class="option-icon small"></span>
-                        <span class="option-name">{{ os.name }}</span>
-                    </button>
-                </div>
+                
+                <template v-if="selectedDevice === 'console'">
+                    <h2 class="step-title">⚠️ Subscription Required</h2>
+                    <div class="warning-box large-warning">
+                        <p>To play multiplayer on consoles, you must have an active paid subscription for your platform:</p>
+                        <ul>
+                            <li><strong>Xbox:</strong> Game Pass Core / Live Gold</li>
+                            <li><strong>PlayStation:</strong> PlayStation Plus</li>
+                            <li><strong>Nintendo Switch:</strong> Nintendo Switch Online</li>
+                        </ul>
+                    </div>
+                    <button class="continue-btn" @click="step = 3">I understand, Continue →</button>
+                </template>
+
+                <template v-else>
+                    <h2 class="step-title">Select Operating System</h2>
+                    <div class="grid-options os-grid">
+                        <button
+                            v-for="os in osOptions"
+                            :key="os.id"
+                            class="option-card compact"
+                            @click="selectOS(os.id as OS)"
+                        >
+                            <img :src="os.icon" class="option-icon-img small" alt="icon" />
+                            <span class="option-name">{{ os.name }}</span>
+                        </button>
+                    </div>
+                </template>
             </div>
 
             <!-- Step 3: Result -->
             <div v-else-if="step === 3" key="result" class="step-content">
                 <div
                     class="back-link"
-                    @click="
-                        selectedDevice === 'console' ? (step = 1) : (step = 2)
-                    "
+                    @click="step = 2"
                 >
                     ← Go back
                 </div>
@@ -202,7 +225,7 @@ const serverInfo = {
                             :class="{ active: bedrockMethod === 'friend' }"
                             @click="bedrockMethod = 'friend'"
                         >
-                            <span class="tab-icon"></span>
+                            <span class="tab-icon">👥</span>
                             <span class="tab-label">Add Friend</span>
                         </button>
                         <button
@@ -210,7 +233,7 @@ const serverInfo = {
                             :class="{ active: bedrockMethod === 'manual' }"
                             @click="bedrockMethod = 'manual'"
                         >
-                            <span class="tab-icon"></span>
+                            <span class="tab-icon">⚙️</span>
                             <span class="tab-label">Manual IP</span>
                         </button>
                     </div>
@@ -222,7 +245,7 @@ const serverInfo = {
                         <div class="info-grid single">
                             <div class="info-item centered">
                                 <label>Minecraft Gamertag</label>
-                                <code>GillySMP</code>
+                                <code>Gilly-SMP</code>
                             </div>
                         </div>
 
@@ -239,7 +262,7 @@ const serverInfo = {
                                     Click <strong>Search for players</strong>.
                                 </li>
                                 <li>
-                                    Search for <code>GillySMP</code> and click
+                                    Search for <code>Gilly-SMP</code> and click
                                     <strong>Add Friend</strong>.
                                 </li>
                                 <li>
@@ -305,7 +328,7 @@ const serverInfo = {
                             :class="{ active: bedrockMethod === 'friend' }"
                             @click="bedrockMethod = 'friend'"
                         >
-                            <span class="tab-icon"></span>
+                            <span class="tab-icon">👥</span>
                             <span class="tab-label">Add a friend</span>
                         </button>
                         <button
@@ -313,7 +336,7 @@ const serverInfo = {
                             :class="{ active: bedrockMethod === 'manual' }"
                             @click="bedrockMethod = 'manual'"
                         >
-                            <span class="tab-icon"></span>
+                            <span class="tab-icon">⚙️</span>
                             <span class="tab-label">Alternative method</span>
                         </button>
                     </div>
@@ -379,7 +402,7 @@ const serverInfo = {
                             <h3>Setup Guide:</h3>
                             <ol>
                                 <li>
-                                    Download and open **NetherLink** on your
+                                    Download and open <strong>NetherLink</strong> on your
                                     phone.
                                 </li>
                                 <li>
@@ -400,7 +423,7 @@ const serverInfo = {
                                     <strong>Friends</strong> tab in Minecraft.
                                 </li>
                                 <li>
-                                    Join <strong>Gilly-SMP</strong> under LAN
+                                    Join <strong>GillySMP</strong> under LAN
                                     Games!
                                 </li>
                             </ol>
@@ -504,12 +527,15 @@ const serverInfo = {
     justify-content: center;
 }
 
-.option-icon {
-    font-size: 32px;
+.option-icon-img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
 }
 
-.option-icon.small {
-    font-size: 24px;
+.option-icon-img.small {
+    height: 24px;
+    width: 24px;
 }
 
 .option-name {
@@ -640,6 +666,9 @@ const serverInfo = {
     font-size: 14px;
     color: var(--vp-c-text-2);
     transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    background: transparent;
 }
 
 .method-tab:hover {
@@ -730,6 +759,38 @@ const serverInfo = {
 .reset-btn:hover {
     background: var(--vp-c-bg-mute);
     color: var(--vp-c-text-1);
+}
+
+.large-warning {
+    font-size: 16px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.large-warning ul {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+.large-warning li {
+    margin-bottom: 6px;
+}
+
+.continue-btn {
+    background: var(--vp-c-brand-1);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.continue-btn:hover {
+    background: var(--vp-c-brand-2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Transitions */

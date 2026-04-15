@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default withPwa(
   defineConfig({
     lang: "en-US",
@@ -18,24 +17,17 @@ export default withPwa(
           "data-website-id": "2aae1459-9c84-422e-a850-317547da79fc",
         },
       ],
-      // Preload fonts to reduce render-blocking
-      [
-        "link",
-        {
-          rel: "preload",
-          href: "/assets/inter-roman-latin.Di8DUHzh.woff2",
-          as: "font",
-          type: "font/woff2",
-          crossorigin: "",
-        },
-      ],
+
     ],
     themeConfig: {
-      // https://vitepress.dev/reference/default-theme-config
+      search: {
+        provider: 'local'
+      },
       nav: [
         { text: "Home", link: "/" },
         { text: "Rules", link: "/rules" },
         { text: "Features", link: "/features/economy" },
+        { text: "Guilds", link: "/guilds/" },
         { text: "How to Join", link: "/how-to-join" },
       ],
 
@@ -70,7 +62,7 @@ export default withPwa(
       ],
 
       socialLinks: [
-        { icon: "github", link: "https://github.com/vuejs/vitepress" },
+        { icon: "github", link: "https://github.com/foxof7207/foxof7207.github.io" },
       ],
     },
     pwa: {
@@ -110,7 +102,7 @@ export default withPwa(
               cacheName: "analytics-cache",
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365,
               },
               cacheableResponse: {
                 statuses: [0, 200],
@@ -124,7 +116,7 @@ export default withPwa(
               cacheName: "assets-cache",
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+                maxAgeSeconds: 60 * 60 * 24 * 30,
               },
             },
           },

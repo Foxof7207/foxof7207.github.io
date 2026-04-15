@@ -9,7 +9,7 @@
 ⟶ Immediate disciplinary action will be taken against cheaters.
 
 ## 3. Claims rules
-⟶ Do not intentionally claims natural structures. (Forteress, Trials Chambers, . . . )  
+⟶ Do not intentionally claim natural structures. (Fortress, Trials Chambers, . . . )  
 ⟶ Do not use inappropriate names for your claims  
 ⟶ Do not overclaim, only claim what you need.
 
@@ -33,7 +33,7 @@
 
 ## 8. Reporting Issues
 ⟶ Report rule violations (theft, spawn kills, griefing) to the Helpers on Discord.  
-⟶ Do not take matters into your own hands, we have tool to restitue the objects.
+⟶ Do not take matters into your own hands, we have tools to restore the items.
 
 ## 9. Enforcement
 ⟶ Admins reserve the right to modify, suspend, or enforce rules.  
@@ -41,6 +41,6 @@
 
 ---
 
-***⚠️ The rules can be modified at any time with annoucement on our Discord***
+***⚠️ The rules can be modified at any time with an announcement on our Discord***
 
 ***⚠️ The only official email address is [gilly-smp@outlook.com](mailto:gilly-smp@outlook.com)***

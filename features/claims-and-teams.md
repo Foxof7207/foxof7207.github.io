@@ -1,5 +1,9 @@
-# Claims & Teams
+---
+title: Claims & Teams
+description: Protect your land and collaborate with others using the claim and team systems.
+---
 
+# Claims & Teams
 Gilly-SMP is built on collaboration and protection. Form a team, claim your land, and manage your villagers safely.
 
 

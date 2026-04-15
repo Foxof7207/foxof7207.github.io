@@ -1,3 +1,8 @@
+---
+title: Economy & Market
+description: Learn about the player-driven economy, auction house, and lottery system on Gilly-SMP.
+---
+
 # Economy & Market
 
 The Gilly-SMP economy is dynamic, with prices that fluctuate based on supply and demand. Trade items, manage your wealth, and maybe even win big in the lottery!
@@ -6,7 +11,7 @@ The Gilly-SMP economy is dynamic, with prices that fluctuate based on supply and
 
 ## Auction House
 
-The auction house is available to everyone, you can acces it in-game or via Discord !
+The auction house is available to everyone, you can access it in-game or via Discord !
 
 > [!WARNING]
 > The auction house is powered by players, so do not expect to be able to buy everything from there.

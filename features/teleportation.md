@@ -1,3 +1,7 @@
+---
+title: Teleportation
+description: Fast travel commands and points to quickly navigate the world.
+---
 
 # Teleportation
 

@@ -1,3 +1,8 @@
+---
+title: The END
+description: Fight the Ender Dragon with special mechanics and challenges!
+---
+
 # The END
 
 Fight the Ender Dragon with special mechanics and challenges!
