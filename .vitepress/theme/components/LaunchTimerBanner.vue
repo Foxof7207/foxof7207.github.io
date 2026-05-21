@@ -42,10 +42,6 @@ onUnmounted(() => {
 <template>
     <section class="launch-timer-banner">
         <div class="launch-timer-content">
-            <div class="launch-timer-text">
-                <span class="launch-label">New Lifesteal season out since the</span>
-                <span class="launch-date">3 June 2026</span>
-            </div>
             <div class="launch-timer-status">
                 <span class="launch-status" v-if="!isLive">Time left until the end of the season: <strong>{{ countdown }}</strong></span>
                 <span class="launch-status live" v-else>Server has now closed.</span>
@@ -56,12 +52,13 @@ onUnmounted(() => {
 
 <style scoped>
 .launch-timer-banner {
-    display: block;
-    width: min(100%, 960px);
+    display: inline-block;
+    max-width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
     padding: 18px 22px;
-    margin: 40px auto 28px;
+    margin: 24px 0 0;
+    text-align: left;
     background: linear-gradient(135deg, rgba(34, 152, 255, 0.15), rgba(60, 180, 142, 0.14));
     border: 1px solid rgba(34, 152, 255, 0.22);
     overflow: hidden;

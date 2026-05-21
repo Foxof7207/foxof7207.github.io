@@ -8,10 +8,9 @@
 ⟶ Cheating, exploiting, or using third-party mods such as x-ray for an unfair advantage is strictly forbidden.  
 ⟶ Immediate disciplinary action will be taken against cheaters.
 
-## 3. Claims rules
-⟶ Do not intentionally claim natural structures. (Fortress, Trials Chambers, . . . )  
-⟶ Do not use inappropriate names for your claims  
-⟶ Do not overclaim, only claim what you need.
+## 3. TPA rules
+⟶ Do not intentionally trap players  
+⟶ Do not spam TPA requests  
 
 ## 4. Keep It Clean
 ⟶ No explicit, inappropriate, or NSFW content.  
@@ -24,7 +23,6 @@
 ⟶ Griefing will be punished by a 1 day account lock.  
 ⟶ Stealing will be punished by a financial loss .  
 ⟶ Spawn killing will be punished by disabling the PvP.  
-
 
 ## 7. Voice Chat rules
 ⟶ Speak clearly and avoid background noise.  

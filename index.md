@@ -29,7 +29,3 @@ features:
   - title: Teleportation
     details: Fast travel with `/tpa` for smooth gameplay.
 ---
-
-<LaunchTimerBanner />
-
-
