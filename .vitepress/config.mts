@@ -26,8 +26,7 @@ export default withPwa(
       nav: [
         { text: "Home", link: "/" },
         { text: "Rules", link: "/rules" },
-        { text: "Features", link: "/features/economy" },
-        { text: "Guilds", link: "/guilds/" },
+        { text: "Features", link: "/features/" },
         { text: "How to Join", link: "/how-to-join" },
       ],
 
@@ -42,21 +41,8 @@ export default withPwa(
         {
           text: "Features",
           items: [
-            { text: "Economy & Market", link: "/features/economy" },
-            { text: "Claims & Teams", link: "/features/claims-and-teams" },
-            { text: "Skills & Enchants", link: "/features/skills" },
             { text: "Lifesteal", link: "/features/lifesteal" },
-            { text: "Villager Management", link: "/features/villagers" },
             { text: "Teleportation", link: "/features/teleportation" },
-            { text: "The Nether", link: "/features/nether" },
-            { text: "The End", link: "/features/end" },
-          ],
-        },
-        {
-          text: "Guilds",
-          items: [
-            { text: "Ashwalkers", link: "/guilds/ashwalker" },
-            { text: "Everlook", link: "/guilds/everlook" },
           ],
         },
       ],

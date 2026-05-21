@@ -40,38 +40,50 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="launch-timer-banner">
+    <section class="launch-timer-banner">
         <div class="launch-timer-content">
-            <span class="launch-label">Server closure:</span>
-            <span class="launch-date">3 June 2026 at 18:00</span>
-            <span class="launch-status" v-if="!isLive">Time left until close: <strong>{{ countdown }}</strong></span>
-            <span class="launch-status live" v-else>Server has now closed.</span>
+            <div class="launch-timer-text">
+                <span class="launch-label">Server closure:</span>
+                <span class="launch-date">3 June 2026 at 18:00</span>
+            </div>
+            <div class="launch-timer-status">
+                <span class="launch-status" v-if="!isLive">Time left until close: <strong>{{ countdown }}</strong></span>
+                <span class="launch-status live" v-else>Server has now closed.</span>
+            </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>
 .launch-timer-banner {
-    border-radius: 18px;
-    padding: 16px 20px;
-    margin: 0 auto 24px;
-    max-width: 920px;
-    background: linear-gradient(135deg, rgba(34, 152, 255, 0.14), rgba(60, 180, 142, 0.14));
-    border: 1px solid rgba(34, 152, 255, 0.18);
+    display: block;
+    width: min(100%, 960px);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 18px 22px;
+    margin: 40px auto 28px;
+    background: linear-gradient(135deg, rgba(34, 152, 255, 0.15), rgba(60, 180, 142, 0.14));
+    border: 1px solid rgba(34, 152, 255, 0.22);
+    overflow: hidden;
 }
 
 .launch-timer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
     color: var(--vp-c-text);
-    text-align: center;
+}
+
+.launch-timer-text,
+.launch-timer-status {
+    min-width: 0;
 }
 
 .launch-label {
     font-weight: 700;
+    margin-right: 0.6rem;
 }
 
 .launch-date {
@@ -79,10 +91,24 @@ onUnmounted(() => {
 }
 
 .launch-status {
+    display: inline-block;
     font-weight: 700;
+    color: var(--vp-c-text);
 }
 
 .launch-status.live {
     color: var(--vp-c-brand-1);
+}
+
+@media (max-width: 680px) {
+    .launch-timer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .launch-timer-banner {
+        padding: 16px 18px;
+    }
 }
 </style>

@@ -27,7 +27,7 @@ features:
     details: Steal hearts from your enemies and become the ultimate survivor.
 
   - title: Teleportation
-    details: Fast travel with `/tpa`, `/warp`, and `/back` for smooth gameplay.
+    details: Fast travel with `/tpa` for smooth gameplay.
 ---
 
 <LaunchTimerBanner />
