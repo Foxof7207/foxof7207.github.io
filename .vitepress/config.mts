@@ -52,6 +52,7 @@ export default withPwa(
       ],
     },
     pwa: {
+      injectRegister: "script-defer",
       registerType: "autoUpdate",
       includeAssets: ["favicon.png", "logo.png"],
       manifest: {

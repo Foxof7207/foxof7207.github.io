@@ -10,16 +10,16 @@ const selectedOS = ref<OS>(null);
 const bedrockMethod = ref<"friend" | "manual">("friend");
 
 const deviceIcons = {
-    pc: "https://api.iconify.design/mdi:laptop.svg?color=%23888888",
-    mobile: "https://api.iconify.design/mdi:cellphone.svg?color=%23888888",
-    console: "https://api.iconify.design/mdi:gamepad-variant.svg?color=%23888888"
+    pc: "/icons/laptop.svg",
+    mobile: "/icons/cellphone.svg",
+    console: "/icons/gamepad.svg"
 };
 
 const osIcons = {
-    windows: "https://api.iconify.design/logos:microsoft-windows.svg",
-    macos: "https://api.iconify.design/mdi:apple.svg?color=%23888888",
-    linux: "https://api.iconify.design/logos:linux-tux.svg",
-    android: "https://api.iconify.design/logos:android-icon.svg"
+    windows: "/icons/windows.svg",
+    macos: "/icons/apple.svg",
+    linux: "/icons/linux.svg",
+    android: "/icons/android.svg"
 };
 
 const devices = [
