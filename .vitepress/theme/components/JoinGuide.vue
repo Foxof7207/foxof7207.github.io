@@ -12,14 +12,14 @@ const bedrockMethod = ref<"friend" | "manual">("friend");
 const deviceIcons = {
     pc: "/icons/laptop.svg",
     mobile: "/icons/cellphone.svg",
-    console: "/icons/gamepad.svg"
+    console: "/icons/gamepad.svg",
 };
 
 const osIcons = {
     windows: "/icons/windows.svg",
     macos: "/icons/apple.svg",
     linux: "/icons/linux.svg",
-    android: "/icons/android.svg"
+    android: "/icons/android.svg",
 };
 
 const devices = [
@@ -113,7 +113,11 @@ const serverInfo = {
                         class="option-card"
                         @click="selectDevice(device.id as DeviceType)"
                     >
-                        <img :src="device.icon" class="option-icon-img" alt="icon" />
+                        <img
+                            :src="device.icon"
+                            class="option-icon-img"
+                            alt="icon"
+                        />
                         <span class="option-name">{{ device.name }}</span>
                         <span class="option-desc">{{
                             device.description
@@ -125,18 +129,31 @@ const serverInfo = {
             <!-- Step 2: OS Selection -->
             <div v-else-if="step === 2" key="step2" class="step-content">
                 <div class="back-link" @click="step = 1">← Go back</div>
-                
+
                 <template v-if="selectedDevice === 'console'">
                     <h2 class="step-title">⚠️ Subscription Required</h2>
                     <div class="warning-box large-warning">
-                        <p>To play multiplayer on consoles, you must have an active paid subscription for your platform:</p>
+                        <p>
+                            To play multiplayer on consoles, you must have an
+                            active paid subscription for your platform:
+                        </p>
                         <ul>
-                            <li><strong>Xbox:</strong> Game Pass Core / Live Gold</li>
-                            <li><strong>PlayStation:</strong> PlayStation Plus</li>
-                            <li><strong>Nintendo Switch:</strong> Nintendo Switch Online</li>
+                            <li>
+                                <strong>Xbox:</strong> Game Pass Core / Live
+                                Gold
+                            </li>
+                            <li>
+                                <strong>PlayStation:</strong> PlayStation Plus
+                            </li>
+                            <li>
+                                <strong>Nintendo Switch:</strong> Nintendo
+                                Switch Online
+                            </li>
                         </ul>
                     </div>
-                    <button class="continue-btn" @click="step = 3">I understand, Continue →</button>
+                    <button class="continue-btn" @click="step = 3">
+                        I understand, Continue →
+                    </button>
                 </template>
 
                 <template v-else>
@@ -148,7 +165,11 @@ const serverInfo = {
                             class="option-card compact"
                             @click="selectOS(os.id as OS)"
                         >
-                            <img :src="os.icon" class="option-icon-img small" alt="icon" />
+                            <img
+                                :src="os.icon"
+                                class="option-icon-img small"
+                                alt="icon"
+                            />
                             <span class="option-name">{{ os.name }}</span>
                         </button>
                     </div>
@@ -157,12 +178,7 @@ const serverInfo = {
 
             <!-- Step 3: Result -->
             <div v-else-if="step === 3" key="result" class="step-content">
-                <div
-                    class="back-link"
-                    @click="step = 2"
-                >
-                    ← Go back
-                </div>
+                <div class="back-link" @click="step = 2">← Go back</div>
 
                 <!-- Java Edition Result -->
                 <div v-if="selectedDevice === 'pc'" class="result-display">
@@ -363,7 +379,7 @@ const serverInfo = {
                                     >.
                                 </li>
                                 <li>
-                                    Search for <code>Gilly-SMP</code> and click
+                                    Search for <code>GillySMP</code> and click
                                     <strong>Add Friend</strong>.
                                 </li>
                                 <li>
@@ -402,8 +418,8 @@ const serverInfo = {
                             <h3>Setup Guide:</h3>
                             <ol>
                                 <li>
-                                    Download and open <strong>NetherLink</strong> on your
-                                    phone.
+                                    Download and open
+                                    <strong>NetherLink</strong> on your phone.
                                 </li>
                                 <li>
                                     Enter IP:
