@@ -43,11 +43,11 @@ onUnmounted(() => {
     <section class="launch-timer-banner">
         <div class="launch-timer-content">
             <div class="launch-timer-text">
-                <span class="launch-label">Server closure:</span>
-                <span class="launch-date">3 June 2026 at 18:00</span>
+                <span class="launch-label">New Lifesteal season out since the</span>
+                <span class="launch-date">3 June 2026</span>
             </div>
             <div class="launch-timer-status">
-                <span class="launch-status" v-if="!isLive">Time left until close: <strong>{{ countdown }}</strong></span>
+                <span class="launch-status" v-if="!isLive">Time left until the end of the season: <strong>{{ countdown }}</strong></span>
                 <span class="launch-status live" v-else>Server has now closed.</span>
             </div>
         </div>
