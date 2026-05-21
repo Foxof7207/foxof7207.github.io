@@ -245,7 +245,7 @@ const serverInfo = {
                         <div class="info-grid single">
                             <div class="info-item centered">
                                 <label>Minecraft Gamertag</label>
-                                <code>Gilly-SMP</code>
+                                <code>GillySMP</code>
                             </div>
                         </div>
 
@@ -262,7 +262,7 @@ const serverInfo = {
                                     Click <strong>Search for players</strong>.
                                 </li>
                                 <li>
-                                    Search for <code>Gilly-SMP</code> and click
+                                    Search for <code>GillySMP</code> and click
                                     <strong>Add Friend</strong>.
                                 </li>
                                 <li>
@@ -295,7 +295,7 @@ const serverInfo = {
                                     <strong>Add Server</strong>.
                                 </li>
                                 <li>
-                                    Enter Name: <code>Gilly-SMP</code>, Address:
+                                    Enter Name: <code>GillySMP</code>, Address:
                                     <code>{{ serverInfo.bedrock.address }}</code
                                     >, Port:
                                     <code>{{ serverInfo.bedrock.port }}</code
@@ -319,7 +319,7 @@ const serverInfo = {
                         <span class="platform-badge badge-console"
                             >Console Players</span
                         >
-                        <h2>Connect to Gilly-SMP</h2>
+                        <h2>Connect to GillySMP</h2>
                     </div>
 
                     <div class="method-tabs">
