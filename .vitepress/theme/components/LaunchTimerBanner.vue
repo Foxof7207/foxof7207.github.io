@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useData } from 'vitepress'
+
+const { lang } = useData()
+const isFr = computed(() => lang.value.startsWith('fr'))
 
 const closeDate = new Date('2026-06-03T18:00:00')
 const timeLeft = ref(getRemaining())
@@ -19,11 +23,24 @@ function formatDuration(ms: number) {
   const minutes = Math.floor((totalSeconds % 3600) / 60)
   const seconds = totalSeconds % 60
 
-  return `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`
+  const d = isFr.value ? 'j' : 'd'
+  return `${days}${d} ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`
 }
 
 const countdown = computed(() => formatDuration(timeLeft.value))
 const isLive = computed(() => timeLeft.value === 0)
+
+const countdownLabel = computed(() =>
+  isFr.value
+    ? 'Temps restant avant la fin de la saison :'
+    : 'Time left until the end of the season:'
+)
+
+const closedLabel = computed(() =>
+  isFr.value
+    ? 'Le serveur est maintenant fermé.'
+    : 'Server has now closed.'
+)
 
 let intervalId: number | undefined
 onMounted(() => {
@@ -43,8 +60,8 @@ onUnmounted(() => {
     <section class="launch-timer-banner">
         <div class="launch-timer-content">
             <div class="launch-timer-status">
-                <span class="launch-status" v-if="!isLive">Time left until the end of the season: <strong>{{ countdown }}</strong></span>
-                <span class="launch-status live" v-else>Server has now closed.</span>
+                <span class="launch-status" v-if="!isLive">{{ countdownLabel }} <strong>{{ countdown }}</strong></span>
+                <span class="launch-status live" v-else>{{ closedLabel }}</span>
             </div>
         </div>
     </section>

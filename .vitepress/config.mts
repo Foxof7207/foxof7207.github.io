@@ -3,10 +3,7 @@ import { withPwa } from "@vite-pwa/vitepress";
 
 export default withPwa(
   defineConfig({
-    lang: "en-US",
     base: "/",
-    title: "Gilly-SMP Wiki",
-    description: "The Official wiki of Gilly-SMP",
     head: [
       ["link", { rel: "icon", href: "/favicon.png" }],
       [
@@ -17,36 +14,95 @@ export default withPwa(
           "data-website-id": "2aae1459-9c84-422e-a850-317547da79fc",
         },
       ],
-
     ],
+    locales: {
+      root: {
+        label: "English",
+        lang: "en-US",
+        title: "Gilly-SMP Wiki",
+        description: "The Official wiki of Gilly-SMP",
+        themeConfig: {
+          nav: [
+            { text: "Home", link: "/" },
+            { text: "Rules", link: "/rules" },
+            { text: "Features", link: "/features/" },
+            { text: "How to Join", link: "/how-to-join" },
+          ],
+          sidebar: [
+            {
+              text: "Getting Started",
+              items: [
+                { text: "How to Join", link: "/how-to-join" },
+                { text: "Rules", link: "/rules" },
+              ],
+            },
+            {
+              text: "Features",
+              items: [
+                { text: "Lifesteal", link: "/features/lifesteal" },
+                { text: "Teleportation", link: "/features/teleportation" },
+              ],
+            },
+          ],
+        },
+      },
+      fr: {
+        label: "Français",
+        lang: "fr-FR",
+        title: "Wiki Gilly-SMP",
+        description: "Le wiki officiel de Gilly-SMP",
+        themeConfig: {
+          nav: [
+            { text: "Accueil", link: "/fr/" },
+            { text: "Règles", link: "/fr/rules" },
+            { text: "Fonctionnalités", link: "/fr/features/" },
+            { text: "Comment rejoindre", link: "/fr/how-to-join" },
+          ],
+          sidebar: [
+            {
+              text: "Pour commencer",
+              items: [
+                { text: "Comment rejoindre", link: "/fr/how-to-join" },
+                { text: "Règles", link: "/fr/rules" },
+              ],
+            },
+            {
+              text: "Fonctionnalités",
+              items: [
+                { text: "Lifesteal", link: "/fr/features/lifesteal" },
+                { text: "Téléportation", link: "/fr/features/teleportation" },
+              ],
+            },
+          ],
+        },
+      },
+    },
     themeConfig: {
       search: {
-        provider: 'local'
+        provider: "local",
+        options: {
+          locales: {
+            fr: {
+              translations: {
+                button: {
+                  buttonText: "Rechercher",
+                  buttonAriaLabel: "Rechercher",
+                },
+                modal: {
+                  displayDetails: "Afficher les détails",
+                  noResultsText: "Aucun résultat trouvé",
+                  resetButtonTitle: "Réinitialiser la recherche",
+                  footer: {
+                    selectText: "pour sélectionner",
+                    navigateText: "pour naviguer",
+                    closeText: "pour fermer",
+                  },
+                },
+              },
+            },
+          },
+        },
       },
-      nav: [
-        { text: "Home", link: "/" },
-        { text: "Rules", link: "/rules" },
-        { text: "Features", link: "/features/" },
-        { text: "How to Join", link: "/how-to-join" },
-      ],
-
-      sidebar: [
-        {
-          text: "Getting Started",
-          items: [
-            { text: "How to Join", link: "/how-to-join" },
-            { text: "Rules", link: "/rules" },
-          ],
-        },
-        {
-          text: "Features",
-          items: [
-            { text: "Lifesteal", link: "/features/lifesteal" },
-            { text: "Teleportation", link: "/features/teleportation" },
-          ],
-        },
-      ],
-
       socialLinks: [
         { icon: "github", link: "https://github.com/foxof7207/foxof7207.github.io" },
       ],

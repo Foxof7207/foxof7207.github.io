@@ -1,5 +1,242 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { useData } from "vitepress";
+
+const { lang } = useData();
+const isFr = computed(() => lang.value.startsWith("fr"));
+
+const t = computed(() =>
+    isFr.value
+        ? {
+              stepOf: "Étape {step} sur 3",
+              chooseDevice: "Choisissez votre appareil",
+              devices: [
+                  {
+                      id: "pc",
+                      name: "PC / Portable",
+                      description: "Joueurs Java Edition sur ordinateur",
+                  },
+                  {
+                      id: "mobile",
+                      name: "Mobile / Tablette",
+                      description:
+                          "Édition Pocket/Bedrock sur appareils portables",
+                  },
+                  {
+                      id: "console",
+                      name: "Console",
+                      description: "Xbox, PlayStation ou Nintendo Switch",
+                  },
+              ],
+              goBack: "← Retour",
+              subscriptionRequired: "⚠️ Abonnement requis",
+              subscriptionText:
+                  "Pour jouer en multijoueur sur console, vous devez avoir un abonnement payant actif pour votre plateforme :",
+              subscriptionXbox: "Game Pass Core / Live Gold",
+              subscriptionPS: "PlayStation Plus",
+              subscriptionNintendo: "Nintendo Switch Online",
+              understandContinue: "Je comprends, Continuer →",
+              selectOS: "Sélectionnez le système d'exploitation",
+              javaEdition: "Java Edition",
+              bedrockEdition: "Bedrock Edition",
+              consolePlayers: "Joueurs Console",
+              howToConnectOn: "Comment se connecter sur",
+              connectToGilly: "Se connecter à GillySMP",
+              serverAddress: "Adresse du serveur",
+              minecraftVersion: "Version Minecraft",
+              port: "Port",
+              gamertag: "Gamertag Minecraft",
+              connectionSteps: "Étapes de connexion :",
+              setupGuide: "Guide d'installation :",
+              addFriend: "Ajouter un ami",
+              manualIP: "IP manuelle",
+              addAFriend: "Ajouter un ami",
+              altMethod: "Méthode alternative",
+              startOver: "Recommencer",
+              // Java steps
+              javaStep1: "Lancez Minecraft Java Edition",
+              javaStep2: "Cliquez sur",
+              javaStep2Bold: "Multijoueur",
+              javaStep3: "Cliquez sur",
+              javaStep3Bold: "Ajouter un serveur",
+              javaStep4Prefix:
+                  "Entrez le nom du serveur (ex: Gilly-SMP) et l'adresse :",
+              javaStep5: "Enregistrez et double-cliquez pour rejoindre !",
+              // Bedrock friend steps
+              bedrockFriendStep1: "Ouvrez Minecraft",
+              bedrockFriendStep2: "Cliquez sur Jouer",
+              bedrockFriendStep3: "Allez dans l'onglet",
+              bedrockFriendStep3Bold: "Amis",
+              bedrockFriendStep3Suffix: ". (en haut à droite)",
+              bedrockFriendStep4: "Cliquez sur",
+              bedrockFriendStep4Bold: "Rechercher des joueurs",
+              bedrockFriendStep5Prefix: "Recherchez",
+              bedrockFriendStep5Suffix: "et cliquez sur",
+              bedrockFriendStep5Bold: "Ajouter un ami",
+              bedrockFriendStep6Prefix:
+                  "Attendez un moment, le serveur apparaîtra sous",
+              bedrockFriendStep6Bold: "Amis joignables",
+              // Bedrock manual steps
+              bedrockManualStep1: "Ouvrez Minecraft.",
+              bedrockManualStep2: "Allez dans l'onglet",
+              bedrockManualStep2Bold: "Serveurs",
+              bedrockManualStep3Prefix: "Descendez et cliquez sur",
+              bedrockManualStep3Bold: "Ajouter un serveur",
+              bedrockManualStep4Prefix: "Entrez Nom :",
+              bedrockManualStep4Address: ", Adresse :",
+              bedrockManualStep4Port: ", Port :",
+              bedrockManualStep5: "Cliquez sur",
+              bedrockManualStep5Bold: "Enregistrer",
+              bedrockManualStep5Suffix:
+                  "et sélectionnez le serveur pour rejoindre !",
+              // Console friend steps
+              consoleFriendStep1:
+                  "Ouvrez Minecraft sur votre console.",
+              consoleFriendStep2: "Allez dans l'onglet",
+              consoleFriendStep2Bold: "Amis",
+              consoleFriendStep3: "Sélectionnez",
+              consoleFriendStep3Bold:
+                  "Trouver des amis multiplateformes",
+              consoleFriendStep4Prefix: "Recherchez",
+              consoleFriendStep4Suffix: "et cliquez sur",
+              consoleFriendStep4Bold: "Ajouter un ami",
+              consoleFriendStep5Prefix:
+                  "Le serveur apparaîtra désormais sous",
+              consoleFriendStep5Bold: "Amis joignables",
+              consoleFriendStep5Suffix:
+                  "chaque fois qu'il est en ligne !",
+              // Console alternative
+              netherlinkText:
+                  "Utilisez l'application NetherLink sur votre téléphone pour établir la connexion avec votre console.",
+              netherlinkStep1:
+                  "Téléchargez et ouvrez NetherLink sur votre téléphone.",
+              netherlinkStep2Prefix: "Entrez IP :",
+              netherlinkStep2Port: "et Port :",
+              netherlinkStep3: 'Sélectionnez le serveur "EU".',
+              netherlinkStep4: "Appuyez sur",
+              netherlinkStep4Bold: "Démarrer la diffusion",
+              netherlinkStep5:
+                  "Sur votre console, allez dans l'onglet Amis dans Minecraft.",
+              netherlinkStep6Prefix: "Rejoignez",
+              netherlinkStep6Suffix: "sous Jeux LAN !",
+              netherlinkWarning:
+                  "⚠️ Gardez l'application ouverte sur votre téléphone pendant le jeu pour rester connecté.",
+          }
+        : {
+              stepOf: "Step {step} of 3",
+              chooseDevice: "Choose your Device",
+              devices: [
+                  {
+                      id: "pc",
+                      name: "PC / Laptop",
+                      description: "Java Edition players on computer",
+                  },
+                  {
+                      id: "mobile",
+                      name: "Mobile / Tablet",
+                      description:
+                          "Pocket/Bedrock edition on portable devices",
+                  },
+                  {
+                      id: "console",
+                      name: "Console",
+                      description: "Xbox, PlayStation, or Nintendo Switch",
+                  },
+              ],
+              goBack: "← Go back",
+              subscriptionRequired: "⚠️ Subscription Required",
+              subscriptionText:
+                  "To play multiplayer on consoles, you must have an active paid subscription for your platform:",
+              subscriptionXbox: "Game Pass Core / Live Gold",
+              subscriptionPS: "PlayStation Plus",
+              subscriptionNintendo: "Nintendo Switch Online",
+              understandContinue: "I understand, Continue →",
+              selectOS: "Select Operating System",
+              javaEdition: "Java Edition",
+              bedrockEdition: "Bedrock Edition",
+              consolePlayers: "Console Players",
+              howToConnectOn: "How to connect on",
+              connectToGilly: "Connect to GillySMP",
+              serverAddress: "Server Address",
+              minecraftVersion: "Minecraft Version",
+              port: "Port",
+              gamertag: "Minecraft Gamertag",
+              connectionSteps: "Connection Steps:",
+              setupGuide: "Setup Guide:",
+              addFriend: "Add Friend",
+              manualIP: "Manual IP",
+              addAFriend: "Add a friend",
+              altMethod: "Alternative method",
+              startOver: "Start Over",
+              // Java steps
+              javaStep1: "Launch Minecraft Java Edition",
+              javaStep2: "Click on",
+              javaStep2Bold: "Multiplayer",
+              javaStep3: "Click",
+              javaStep3Bold: "Add Server",
+              javaStep4Prefix:
+                  "Enter server name (e.g., Gilly-SMP) and address:",
+              javaStep5: "Save and double-click to join!",
+              // Bedrock friend steps
+              bedrockFriendStep1: "Open Minecraft",
+              bedrockFriendStep2: "Click on Play",
+              bedrockFriendStep3: "Go to the",
+              bedrockFriendStep3Bold: "Friends",
+              bedrockFriendStep3Suffix: "tab. (top right)",
+              bedrockFriendStep4: "Click",
+              bedrockFriendStep4Bold: "Search for players",
+              bedrockFriendStep5Prefix: "Search for",
+              bedrockFriendStep5Suffix: "and click",
+              bedrockFriendStep5Bold: "Add Friend",
+              bedrockFriendStep6Prefix:
+                  "Wait a moment, the server will appear under",
+              bedrockFriendStep6Bold: "Joinable Friends",
+              // Bedrock manual steps
+              bedrockManualStep1: "Open Minecraft.",
+              bedrockManualStep2: "Go to the",
+              bedrockManualStep2Bold: "Servers",
+              bedrockManualStep3Prefix: "Scroll down and click",
+              bedrockManualStep3Bold: "Add Server",
+              bedrockManualStep4Prefix: "Enter Name:",
+              bedrockManualStep4Address: ", Address:",
+              bedrockManualStep4Port: ", Port:",
+              bedrockManualStep5: "Click",
+              bedrockManualStep5Bold: "Save",
+              bedrockManualStep5Suffix:
+                  "and select the server to join!",
+              // Console friend steps
+              consoleFriendStep1:
+                  "Open Minecraft on your console.",
+              consoleFriendStep2: "Go to the",
+              consoleFriendStep2Bold: "Friends",
+              consoleFriendStep3: "Select",
+              consoleFriendStep3Bold: "Find Cross-Platform Friends",
+              consoleFriendStep4Prefix: "Search for",
+              consoleFriendStep4Suffix: "and click",
+              consoleFriendStep4Bold: "Add Friend",
+              consoleFriendStep5Prefix:
+                  "The server will now appear under",
+              consoleFriendStep5Bold: "Joinable Friends",
+              consoleFriendStep5Suffix:
+                  "whenever it is online!",
+              // Console alternative
+              netherlinkText:
+                  "Use the NetherLink app on your phone to bridge the connection to your console.",
+              netherlinkStep1:
+                  "Download and open NetherLink on your phone.",
+              netherlinkStep2Prefix: "Enter IP:",
+              netherlinkStep2Port: "and Port:",
+              netherlinkStep3: 'Select "EU" server.',
+              netherlinkStep4: "Tap",
+              netherlinkStep4Bold: "Start Broadcasting",
+              netherlinkStep5:
+                  "On your console, go to Friends tab in Minecraft.",
+              netherlinkStep6Prefix: "Join",
+              netherlinkStep6Suffix: "under LAN Games!",
+              netherlinkWarning:
+                  "⚠️ Keep the app open on your phone during play to stay connected.",
+          }
+);
 
 type DeviceType = "pc" | "mobile" | "console" | null;
 type OS = "windows" | "macos" | "linux" | "android" | "ios" | null;
@@ -21,27 +258,6 @@ const osIcons = {
     linux: "/icons/linux.svg",
     android: "/icons/android.svg",
 };
-
-const devices = [
-    {
-        id: "pc",
-        name: "PC / Laptop",
-        icon: deviceIcons.pc,
-        description: "Java Edition players on computer",
-    },
-    {
-        id: "mobile",
-        name: "Mobile / Tablet",
-        icon: deviceIcons.mobile,
-        description: "Pocket/Bedrock edition on portable devices",
-    },
-    {
-        id: "console",
-        name: "Console",
-        icon: deviceIcons.console,
-        description: "Xbox, PlayStation, or Nintendo Switch",
-    },
-];
 
 const osOptions = computed(() => {
     if (selectedDevice.value === "pc") {
@@ -88,6 +304,10 @@ const serverInfo = {
         version: "Latest",
     },
 };
+
+const stepIndicator = computed(() =>
+    t.value.stepOf.replace("{step}", String(step.value))
+);
 </script>
 
 <template>
@@ -99,22 +319,22 @@ const serverInfo = {
                     :style="{ width: (step / 3) * 100 + '%' }"
                 ></div>
             </div>
-            <div class="step-indicator">Step {{ step }} of 3</div>
+            <div class="step-indicator">{{ stepIndicator }}</div>
         </div>
 
         <Transition name="slide-fade" mode="out-in">
             <!-- Step 1: Device Selection -->
             <div v-if="step === 1" key="device" class="step-content">
-                <h2 class="step-title">Choose your Device</h2>
+                <h2 class="step-title">{{ t.chooseDevice }}</h2>
                 <div class="grid-options">
                     <button
-                        v-for="device in devices"
+                        v-for="device in t.devices"
                         :key="device.id"
                         class="option-card"
                         @click="selectDevice(device.id as DeviceType)"
                     >
                         <img
-                            :src="device.icon"
+                            :src="deviceIcons[device.id as keyof typeof deviceIcons]"
                             class="option-icon-img"
                             alt="icon"
                         />
@@ -128,36 +348,31 @@ const serverInfo = {
 
             <!-- Step 2: OS Selection -->
             <div v-else-if="step === 2" key="step2" class="step-content">
-                <div class="back-link" @click="step = 1">← Go back</div>
+                <div class="back-link" @click="step = 1">{{ t.goBack }}</div>
 
                 <template v-if="selectedDevice === 'console'">
-                    <h2 class="step-title">⚠️ Subscription Required</h2>
+                    <h2 class="step-title">{{ t.subscriptionRequired }}</h2>
                     <div class="warning-box large-warning">
-                        <p>
-                            To play multiplayer on consoles, you must have an
-                            active paid subscription for your platform:
-                        </p>
+                        <p>{{ t.subscriptionText }}</p>
                         <ul>
                             <li>
-                                <strong>Xbox:</strong> Game Pass Core / Live
-                                Gold
+                                <strong>Xbox:</strong> {{ t.subscriptionXbox }}
                             </li>
                             <li>
-                                <strong>PlayStation:</strong> PlayStation Plus
+                                <strong>PlayStation:</strong> {{ t.subscriptionPS }}
                             </li>
                             <li>
-                                <strong>Nintendo Switch:</strong> Nintendo
-                                Switch Online
+                                <strong>Nintendo Switch:</strong> {{ t.subscriptionNintendo }}
                             </li>
                         </ul>
                     </div>
                     <button class="continue-btn" @click="step = 3">
-                        I understand, Continue →
+                        {{ t.understandContinue }}
                     </button>
                 </template>
 
                 <template v-else>
-                    <h2 class="step-title">Select Operating System</h2>
+                    <h2 class="step-title">{{ t.selectOS }}</h2>
                     <div class="grid-options os-grid">
                         <button
                             v-for="os in osOptions"
@@ -178,44 +393,42 @@ const serverInfo = {
 
             <!-- Step 3: Result -->
             <div v-else-if="step === 3" key="result" class="step-content">
-                <div class="back-link" @click="step = 2">← Go back</div>
+                <div class="back-link" @click="step = 2">{{ t.goBack }}</div>
 
                 <!-- Java Edition Result -->
                 <div v-if="selectedDevice === 'pc'" class="result-display">
                     <div class="result-header">
                         <span class="platform-badge badge-java"
-                            >Java Edition</span
+                            >{{ t.javaEdition }}</span
                         >
-                        <h2>How to connect on {{ selectedOS }}</h2>
+                        <h2>{{ t.howToConnectOn }} {{ selectedOS }}</h2>
                     </div>
 
                     <div class="info-grid">
                         <div class="info-item">
-                            <label>Server Address</label>
+                            <label>{{ t.serverAddress }}</label>
                             <code>{{ serverInfo.java.address }}</code>
                         </div>
                         <div class="info-item">
-                            <label>Minecraft Version</label>
+                            <label>{{ t.minecraftVersion }}</label>
                             <span>{{ serverInfo.java.version }}</span>
                         </div>
                     </div>
 
                     <div class="instructions">
-                        <h3>Connection Steps:</h3>
+                        <h3>{{ t.connectionSteps }}</h3>
                         <ol>
                             <li>
-                                Launch Minecraft Java Edition
-                                <strong>{{ serverInfo.java.version }}</strong
-                                >.
+                                {{ t.javaStep1 }}
+                                <strong>{{ serverInfo.java.version }}</strong>.
                             </li>
-                            <li>Click on <strong>Multiplayer</strong>.</li>
-                            <li>Click <strong>Add Server</strong>.</li>
+                            <li>{{ t.javaStep2 }} <strong>{{ t.javaStep2Bold }}</strong>.</li>
+                            <li>{{ t.javaStep3 }} <strong>{{ t.javaStep3Bold }}</strong>.</li>
                             <li>
-                                Enter server name (e.g., Gilly-SMP) and address:
-                                <code>{{ serverInfo.java.address }}</code
-                                >.
+                                {{ t.javaStep4Prefix }}
+                                <code>{{ serverInfo.java.address }}</code>.
                             </li>
-                            <li>Save and double-click to join!</li>
+                            <li>{{ t.javaStep5 }}</li>
                         </ol>
                     </div>
                 </div>
@@ -227,10 +440,10 @@ const serverInfo = {
                 >
                     <div class="result-header">
                         <span class="platform-badge badge-bedrock"
-                            >Bedrock Edition</span
+                            >{{ t.bedrockEdition }}</span
                         >
                         <h2>
-                            How to connect on
+                            {{ t.howToConnectOn }}
                             {{ selectedOS === "ios" ? "iOS" : "Android" }}
                         </h2>
                     </div>
@@ -242,7 +455,7 @@ const serverInfo = {
                             @click="bedrockMethod = 'friend'"
                         >
                             <span class="tab-icon">👥</span>
-                            <span class="tab-label">Add Friend</span>
+                            <span class="tab-label">{{ t.addFriend }}</span>
                         </button>
                         <button
                             class="method-tab"
@@ -250,7 +463,7 @@ const serverInfo = {
                             @click="bedrockMethod = 'manual'"
                         >
                             <span class="tab-icon">⚙️</span>
-                            <span class="tab-label">Manual IP</span>
+                            <span class="tab-label">{{ t.manualIP }}</span>
                         </button>
                     </div>
 
@@ -260,30 +473,29 @@ const serverInfo = {
                     >
                         <div class="info-grid single">
                             <div class="info-item centered">
-                                <label>Minecraft Gamertag</label>
+                                <label>{{ t.gamertag }}</label>
                                 <code>GillySMP</code>
                             </div>
                         </div>
 
                         <div class="instructions">
-                            <h3>Connection Steps:</h3>
+                            <h3>{{ t.connectionSteps }}</h3>
                             <ol>
-                                <li>Open Minecraft</li>
-                                <li>Click on Play</li>
+                                <li>{{ t.bedrockFriendStep1 }}</li>
+                                <li>{{ t.bedrockFriendStep2 }}</li>
                                 <li>
-                                    Go to the <strong>Friends</strong> tab. (top
-                                    right)
+                                    {{ t.bedrockFriendStep3 }} <strong>{{ t.bedrockFriendStep3Bold }}</strong> {{ t.bedrockFriendStep3Suffix }}
                                 </li>
                                 <li>
-                                    Click <strong>Search for players</strong>.
+                                    {{ t.bedrockFriendStep4 }} <strong>{{ t.bedrockFriendStep4Bold }}</strong>.
                                 </li>
                                 <li>
-                                    Search for <code>GillySMP</code> and click
-                                    <strong>Add Friend</strong>.
+                                    {{ t.bedrockFriendStep5Prefix }} <code>GillySMP</code> {{ t.bedrockFriendStep5Suffix }}
+                                    <strong>{{ t.bedrockFriendStep5Bold }}</strong>.
                                 </li>
                                 <li>
-                                    Wait a moment, the server will appear under
-                                    <strong>Joinable Friends</strong>!
+                                    {{ t.bedrockFriendStep6Prefix }}
+                                    <strong>{{ t.bedrockFriendStep6Bold }}</strong>!
                                 </li>
                             </ol>
                         </div>
@@ -292,34 +504,31 @@ const serverInfo = {
                     <div v-else class="method-content">
                         <div class="info-grid">
                             <div class="info-item">
-                                <label>Server Address</label>
+                                <label>{{ t.serverAddress }}</label>
                                 <code>{{ serverInfo.bedrock.address }}</code>
                             </div>
                             <div class="info-item">
-                                <label>Port</label>
+                                <label>{{ t.port }}</label>
                                 <code>{{ serverInfo.bedrock.port }}</code>
                             </div>
                         </div>
 
                         <div class="instructions">
-                            <h3>Connection Steps:</h3>
+                            <h3>{{ t.connectionSteps }}</h3>
                             <ol>
-                                <li>Open Minecraft.</li>
-                                <li>Go to the <strong>Servers</strong> tab.</li>
+                                <li>{{ t.bedrockManualStep1 }}</li>
+                                <li>{{ t.bedrockManualStep2 }} <strong>{{ t.bedrockManualStep2Bold }}</strong>.</li>
                                 <li>
-                                    Scroll down and click
-                                    <strong>Add Server</strong>.
+                                    {{ t.bedrockManualStep3Prefix }}
+                                    <strong>{{ t.bedrockManualStep3Bold }}</strong>.
                                 </li>
                                 <li>
-                                    Enter Name: <code>GillySMP</code>, Address:
-                                    <code>{{ serverInfo.bedrock.address }}</code
-                                    >, Port:
-                                    <code>{{ serverInfo.bedrock.port }}</code
-                                    >.
+                                    {{ t.bedrockManualStep4Prefix }} <code>GillySMP</code>{{ t.bedrockManualStep4Address }}
+                                    <code>{{ serverInfo.bedrock.address }}</code>{{ t.bedrockManualStep4Port }}
+                                    <code>{{ serverInfo.bedrock.port }}</code>.
                                 </li>
                                 <li>
-                                    Click <strong>Save</strong> and select the
-                                    server to join!
+                                    {{ t.bedrockManualStep5 }} <strong>{{ t.bedrockManualStep5Bold }}</strong> {{ t.bedrockManualStep5Suffix }}
                                 </li>
                             </ol>
                         </div>
@@ -333,9 +542,9 @@ const serverInfo = {
                 >
                     <div class="result-header">
                         <span class="platform-badge badge-console"
-                            >Console Players</span
+                            >{{ t.consolePlayers }}</span
                         >
-                        <h2>Connect to GillySMP</h2>
+                        <h2>{{ t.connectToGilly }}</h2>
                     </div>
 
                     <div class="method-tabs">
@@ -345,7 +554,7 @@ const serverInfo = {
                             @click="bedrockMethod = 'friend'"
                         >
                             <span class="tab-icon">👥</span>
-                            <span class="tab-label">Add a friend</span>
+                            <span class="tab-label">{{ t.addAFriend }}</span>
                         </button>
                         <button
                             class="method-tab"
@@ -353,7 +562,7 @@ const serverInfo = {
                             @click="bedrockMethod = 'manual'"
                         >
                             <span class="tab-icon">⚙️</span>
-                            <span class="tab-label">Alternative method</span>
+                            <span class="tab-label">{{ t.altMethod }}</span>
                         </button>
                     </div>
 
@@ -363,29 +572,28 @@ const serverInfo = {
                     >
                         <div class="info-grid single">
                             <div class="info-item centered">
-                                <label>Minecraft Gamertag</label>
+                                <label>{{ t.gamertag }}</label>
                                 <code>GillySMP</code>
                             </div>
                         </div>
 
                         <div class="instructions">
-                            <h3>Connection Steps:</h3>
+                            <h3>{{ t.connectionSteps }}</h3>
                             <ol>
-                                <li>Open Minecraft on your console.</li>
-                                <li>Go to the <strong>Friends</strong> tab.</li>
+                                <li>{{ t.consoleFriendStep1 }}</li>
+                                <li>{{ t.consoleFriendStep2 }} <strong>{{ t.consoleFriendStep2Bold }}</strong>.</li>
                                 <li>
-                                    Select
-                                    <strong>Find Cross-Platform Friends</strong
-                                    >.
+                                    {{ t.consoleFriendStep3 }}
+                                    <strong>{{ t.consoleFriendStep3Bold }}</strong>.
                                 </li>
                                 <li>
-                                    Search for <code>GillySMP</code> and click
-                                    <strong>Add Friend</strong>.
+                                    {{ t.consoleFriendStep4Prefix }} <code>GillySMP</code> {{ t.consoleFriendStep4Suffix }}
+                                    <strong>{{ t.consoleFriendStep4Bold }}</strong>.
                                 </li>
                                 <li>
-                                    The server will now appear under
-                                    <strong>Joinable Friends</strong> whenever
-                                    it is online!
+                                    {{ t.consoleFriendStep5Prefix }}
+                                    <strong>{{ t.consoleFriendStep5Bold }}</strong>
+                                    {{ t.consoleFriendStep5Suffix }}
                                 </li>
                             </ol>
                         </div>
@@ -393,8 +601,7 @@ const serverInfo = {
 
                     <div v-else class="method-content">
                         <p class="summary-text">
-                            Use the <strong>NetherLink</strong> app on your
-                            phone to bridge the connection to your console.
+                            {{ t.netherlinkText }}
                         </p>
 
                         <div class="download-links">
@@ -415,43 +622,32 @@ const serverInfo = {
                         </div>
 
                         <div class="instructions">
-                            <h3>Setup Guide:</h3>
+                            <h3>{{ t.setupGuide }}</h3>
                             <ol>
+                                <li>{{ t.netherlinkStep1 }}</li>
                                 <li>
-                                    Download and open
-                                    <strong>NetherLink</strong> on your phone.
+                                    {{ t.netherlinkStep2Prefix }}
+                                    <code>{{ serverInfo.bedrock.address }}</code>
+                                    {{ t.netherlinkStep2Port }}
+                                    <code>{{ serverInfo.bedrock.port }}</code>.
                                 </li>
+                                <li>{{ t.netherlinkStep3 }}</li>
                                 <li>
-                                    Enter IP:
-                                    <code>{{
-                                        serverInfo.bedrock.address
-                                    }}</code>
-                                    and Port:
-                                    <code>{{ serverInfo.bedrock.port }}</code
-                                    >.
+                                    {{ t.netherlinkStep4 }} <strong>{{ t.netherlinkStep4Bold }}</strong>.
                                 </li>
-                                <li>Select <strong>"EU" server</strong>.</li>
+                                <li>{{ t.netherlinkStep5 }}</li>
                                 <li>
-                                    Tap <strong>Start Broadcasting</strong>.
-                                </li>
-                                <li>
-                                    On your console, go to
-                                    <strong>Friends</strong> tab in Minecraft.
-                                </li>
-                                <li>
-                                    Join <strong>GillySMP</strong> under LAN
-                                    Games!
+                                    {{ t.netherlinkStep6Prefix }} <strong>GillySMP</strong> {{ t.netherlinkStep6Suffix }}
                                 </li>
                             </ol>
                             <div class="warning-box">
-                                ⚠️ Keep the app open on your phone during play
-                                to stay connected.
+                                {{ t.netherlinkWarning }}
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="reset-btn" @click="reset">Start Over</button>
+                <button class="reset-btn" @click="reset">{{ t.startOver }}</button>
             </div>
         </Transition>
     </div>
