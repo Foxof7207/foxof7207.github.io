@@ -4,6 +4,9 @@ import { withPwa } from "@vite-pwa/vitepress";
 export default withPwa(
   defineConfig({
     base: "/",
+    sitemap: {
+      hostname: "https://craft.gillyb.net",
+    },
     head: [
       ["link", { rel: "icon", href: "/favicon.png" }],
       [
