@@ -1,10 +1,12 @@
 ---
 layout: home
+title: "Gilly-SMP Wiki"
+description: "Official wiki for Gilly-SMP server features, rules, guilds, and how to join."
 
 hero:
   name: "Gilly-SMP Wiki"
   text: "The Official wiki"
-  tagline: "Explore features and guides"
+  tagline: "Explore features, guides, and guilds"
 
   actions:
     - theme: brand
@@ -19,13 +21,26 @@ hero:
       text: Features
       link: /features/
 
+    - theme: alt
+      text: Guilds
+      link: /guilds/
+
 features:
   - title: Cross-platforms
-    details: Java & Bedrock support. <br/> Join with either edition and link your accounts.
+    details: Java & Bedrock support. <br/> You can join with both Edition and link your accounts together.
 
   - title: Lifesteal
-    details: Steal hearts from your enemies and become the ultimate survivor.
+    details: Steal hearts from your enemies and become the ultimate survivor!
 
-  - title: Teleportation
-    details: Fast travel with `/tpa` for smooth gameplay.
+  - title: Custom Enchants
+    details: A variety of custom enchants to make your gameplay more interesting.
+
+  - title: Better Villagers
+    details: You can claim your villagers, so no one can use them.
+
+  - title: Better Spawners
+    details: After mining a spawner, place it back and you will have a nice GUI
+
+  - title: Economy
+    details: A player driven economy.
 ---

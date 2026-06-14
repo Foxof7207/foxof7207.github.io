@@ -1,3 +1,8 @@
+---
+title: "Server Rules"
+description: "Official rules for Gilly-SMP players."
+---
+
 # Server Rules
 
 ## 1. Respect and Kindness
@@ -8,9 +13,10 @@
 ⟶ Cheating, exploiting, or using third-party mods such as x-ray for an unfair advantage is strictly forbidden.  
 ⟶ Immediate disciplinary action will be taken against cheaters.
 
-## 3. TPA rules
-⟶ Do not intentionally trap players  
-⟶ Do not spam TPA requests  
+## 3. Claims rules
+⟶ Do not intentionally claim natural structures. (Fortress, Trials Chambers, . . . )  
+⟶ Do not use inappropriate names for your claims  
+⟶ Do not overclaim, only claim what you need.
 
 ## 4. Keep It Clean
 ⟶ No explicit, inappropriate, or NSFW content.  
@@ -24,6 +30,7 @@
 ⟶ Stealing will be punished by a financial loss .  
 ⟶ Spawn killing will be punished by disabling the PvP.  
 
+
 ## 7. Voice Chat rules
 ⟶ Speak clearly and avoid background noise.  
 ⟶ Use push-to-talk whenever possible.
@@ -32,6 +39,8 @@
 ## 8. Reporting Issues
 ⟶ Report rule violations (theft, spawn kills, griefing) to the Helpers on Discord.  
 ⟶ Do not take matters into your own hands, we have tools to restore the items.
+⟶ You can use `/report` or `/bugreport` if you have any issues.
+
 
 ## 9. Enforcement
 ⟶ Admins reserve the right to modify, suspend, or enforce rules.  
