@@ -3,11 +3,17 @@ import { withPwa } from "@vite-pwa/vitepress";
 
 export default withPwa(
   defineConfig({
+    lang: "en-US",
     base: "/",
-    sitemap: {
-      hostname: "https://craft.gillyb.net",
-    },
+    title: "Gilly-SMP Wiki",
+    description: "The Official wiki of Gilly-SMP",
     head: [
+      ["meta", { name: "robots", content: "index, follow" }],
+      ["meta", { name: "keywords", content: "Gilly-SMP, Minecraft, wiki, guilds, features, rules, join guide, economy, claims, team" }],
+      ["meta", { property: "og:title", content: "Gilly-SMP Wiki" }],
+      ["meta", { property: "og:description", content: "The official Gilly-SMP wiki for server features, guilds, rules, and how to join." }],
+      ["meta", { property: "og:url", content: "https://craft.gillyb.net" }],
+      ["meta", { name: "twitter:card", content: "summary_large_image" }],
       ["link", { rel: "icon", href: "/favicon.png" }],
       [
         "script",
@@ -17,101 +23,63 @@ export default withPwa(
           "data-website-id": "2aae1459-9c84-422e-a850-317547da79fc",
         },
       ],
+
     ],
-    locales: {
-      root: {
-        label: "English",
-        lang: "en-US",
-        title: "Gilly-SMP Wiki",
-        description: "The Official wiki of Gilly-SMP",
-        themeConfig: {
-          nav: [
-            { text: "Home", link: "/" },
-            { text: "Rules", link: "/rules" },
-            { text: "Features", link: "/features/" },
-            { text: "How to Join", link: "/how-to-join" },
-          ],
-          sidebar: [
-            {
-              text: "Getting Started",
-              items: [
-                { text: "How to Join", link: "/how-to-join" },
-                { text: "Rules", link: "/rules" },
-              ],
-            },
-            {
-              text: "Features",
-              items: [
-                { text: "Lifesteal", link: "/features/lifesteal" },
-                { text: "Teleportation", link: "/features/teleportation" },
-              ],
-            },
-          ],
-        },
-      },
-      fr: {
-        label: "Français",
-        lang: "fr-FR",
-        title: "Wiki Gilly-SMP",
-        description: "Le wiki officiel de Gilly-SMP",
-        themeConfig: {
-          nav: [
-            { text: "Accueil", link: "/fr/" },
-            { text: "Règles", link: "/fr/rules" },
-            { text: "Fonctionnalités", link: "/fr/features/" },
-            { text: "Comment rejoindre", link: "/fr/how-to-join" },
-          ],
-          sidebar: [
-            {
-              text: "Pour commencer",
-              items: [
-                { text: "Comment rejoindre", link: "/fr/how-to-join" },
-                { text: "Règles", link: "/fr/rules" },
-              ],
-            },
-            {
-              text: "Fonctionnalités",
-              items: [
-                { text: "Lifesteal", link: "/fr/features/lifesteal" },
-                { text: "Téléportation", link: "/fr/features/teleportation" },
-              ],
-            },
-          ],
-        },
-      },
-    },
     themeConfig: {
       search: {
-        provider: "local",
-        options: {
-          locales: {
-            fr: {
-              translations: {
-                button: {
-                  buttonText: "Rechercher",
-                  buttonAriaLabel: "Rechercher",
-                },
-                modal: {
-                  displayDetails: "Afficher les détails",
-                  noResultsText: "Aucun résultat trouvé",
-                  resetButtonTitle: "Réinitialiser la recherche",
-                  footer: {
-                    selectText: "pour sélectionner",
-                    navigateText: "pour naviguer",
-                    closeText: "pour fermer",
-                  },
-                },
-              },
-            },
-          },
-        },
+        provider: 'local'
       },
+      nav: [
+        { text: "Home", link: "/" },
+        { text: "How to Join", link: "/how-to-join" },
+        { text: "Rules", link: "/rules" },
+        { text: "Features", link: "/features/" },
+        { text: "Guilds", link: "/guilds/" },
+      ],
+
+      sidebar: [
+        {
+          text: "Getting Started",
+          items: [
+            { text: "How to Join", link: "/how-to-join" },
+            { text: "Rules", link: "/rules" },
+          ],
+        },
+        {
+          text: "Features",
+          items: [
+            { text: "Features Overview", link: "/features/" },
+            { text: "Economy & Market", link: "/features/economy" },
+            { text: "Claims & Teams", link: "/features/claims-and-teams" },
+            { text: "Skills & Enchants", link: "/features/skills" },
+            { text: "Lifesteal", link: "/features/lifesteal" },
+            { text: "Villager Management", link: "/features/villagers" },
+            { text: "Teleportation", link: "/features/teleportation" },
+            { text: "The Nether", link: "/features/nether" },
+            { text: "The End", link: "/features/end" },
+            { text: "Custom Spawners", link: "/features/spawners" },
+            { text: "Expand the World", link: "/features/expand-the-world" },
+            { text: "Ranks", link: "/features/ranks" },
+            { text: "Server Tweaks", link: "/features/the-tweaks" },
+            { text: "Harder Mobs", link: "/features/harder-mobs" },
+          ],
+        },
+        {
+          text: "Guilds",
+          items: [
+            { text: "Guilds Overview", link: "/guilds/" },
+            { text: "Ashwalkers", link: "/guilds/ashwalker" },
+            { text: "Driftwood", link: "/guilds/driftwood" },
+            { text: "Everlook", link: "/guilds/everlook" },
+          ],
+        },
+      ],
+
       socialLinks: [
         { icon: "github", link: "https://github.com/foxof7207/foxof7207.github.io" },
       ],
     },
     pwa: {
-      injectRegister: "script-defer",
       registerType: "autoUpdate",
       includeAssets: ["favicon.png", "logo.png"],
       manifest: {
