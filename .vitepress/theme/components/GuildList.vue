@@ -26,6 +26,14 @@
         <p class="guild-owner"><strong>Owner:</strong> PinneaplePenguin</p>
       </div>
     </a>
+      <a href="/guilds/lyvenis" class="guild-card">
+      <img src="/logos/lyvenis_logo.jpg" alt="Everlook Logo" class="guild-logo" />
+      <div class="guild-info">
+        <h2 class="guild-name">Lyvenis</h2>
+        <p class="guild-motto">"Ca-chow"</p>
+        <p class="guild-owner"><strong>Owner:</strong> .Ash68214</p>
+      </div>
+    </a>
   </div>
 </template>
 
