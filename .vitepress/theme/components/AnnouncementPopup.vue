@@ -33,13 +33,10 @@ const close = () => {
 
                 <div class="popup-body">
                     <p class="announcement">
-                        The new server will release soon!
+                        The new server is now open!
                     </p>
                     <p class="description">
-                        Get ready for a massive update with new features, a
-                        fresh world, and improved performance. Stay tuned to our
-                        Discord for the official launch date!
-                        <b>The wiki is currently incomplete. 🫠</b>
+                        Come with us and enjoy a peacful server.</b>
                     </p>
                 </div>
 
