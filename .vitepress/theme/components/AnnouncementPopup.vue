@@ -36,7 +36,7 @@ const close = () => {
                         The new server is now open!
                     </p>
                     <p class="description">
-                        Come with us and enjoy a peacful server.</b>
+                     <b> Play with us and enjoy a peacful server.</b>
                     </p>
                 </div>
 
