@@ -29,8 +29,8 @@ features:
   - title: Cross-platforms
     details: Java & Bedrock support. <br/> You can join with both Edition and link your accounts together.
 
-  - title: Lifesteal
-    details: Steal hearts from your enemies and become the ultimate survivor!
+  - title: Teams
+    details: Team up with players and become the ultimate survivor!
 
   - title: Custom Enchants
     details: A variety of custom enchants to make your gameplay more interesting.

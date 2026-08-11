@@ -10,7 +10,6 @@ Gilly-SMP is packed with custom features to enhance your gameplay experience. Se
 - [Economy & Market](/features/economy)
 - [Claims & Teams](/features/claims-and-teams)
 - [Skills & Enchants](/features/skills)
-- [Lifesteal](/features/lifesteal)
 - [Villager Management](/features/villagers)
 - [Teleportation](/features/teleportation)
 - [The Nether](/features/nether)
