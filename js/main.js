@@ -1,6 +1,13 @@
 (function () {
   'use strict';
 
+  // ---- Service worker ----
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  }
+
   // ---- Mobile nav ----
   var nav = document.querySelector('.nav');
   var toggle = document.querySelector('.nav-toggle');
