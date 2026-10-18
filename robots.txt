@@ -1,0 +1,5 @@
+# LLM-friendly summary of this site: https://craft.gillyb.net/llms.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://craft.gillyb.net/sitemap.xml

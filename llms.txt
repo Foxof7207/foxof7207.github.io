@@ -1,0 +1,101 @@
+# Gilly SMP
+
+> Last updated: 2026-10-18. Canonical, complete answers are in the wiki (https://craft.gillyb.net/wiki.html); this file is a summary. Gilly SMP is a non pay-to-win, vanilla-plus Minecraft survival SMP with full crossplay (Java, Bedrock, Xbox, PlayStation, Switch) and playtime sync (inventory, XP, etc.) across platforms.
+
+## Server IPs (most important)
+- Minecraft Java: mc.gillyb.net (Minecraft Java 26.3 required)
+- Minecraft Bedrock: mc.gillyb.net, port 19132
+- Console (Xbox / PlayStation / Switch): add "GillySMP" as a friend, then join from the friends list. An online subscription for the console platform is required (console manufacturer requirement).
+
+## Server facts
+- Hosted in France, around 100 ms ping from the US
+- No whitelist, anyone with a legitimate Minecraft account can join
+- PvP allowed with fair play; griefing and stealing forbidden (warning, then temp ban); no land claiming
+- World is wiped every season; ask for a copy of the world one week after the end of the season, via Discord
+- Ban appeals and staff contact: Discord ticket (fast) or gilly-smp@outlook.com (slower)
+
+## Theme / goal
+Fair, friendly vanilla-plus survival multiplayer. Crossplay between all platforms, synced inventory and XP, and strictly no pay-to-win: the online store sells only quality-of-life items and cosmetics. Playable from anywhere, even on a plane over the Atlantic.
+
+## Target players
+Casual and adult Minecraft survival players, friend groups, and cross-platform players who want to play together on Java, Bedrock or console.
+
+## Wiki sections
+- [Getting started](https://craft.gillyb.net/wiki.html#basics): joining, requirements, accounts
+- [Travel & homes](https://craft.gillyb.net/wiki.html#travel): homes, spawn, tpa, random teleport, elevators
+- [Death & graves](https://craft.gillyb.net/wiki.html#death): recovering items after dying
+- [Trading, points & orders](https://craft.gillyb.net/wiki.html#economy): trades, points currency, player marketplace
+- [Storage](https://craft.gillyb.net/wiki.html#storage): ender chests and sharing
+- [Chat, voice & AFK](https://craft.gillyb.net/wiki.html#chat): ranged chat, voice chat, AFK rules
+- [Quality-of-life features](https://craft.gillyb.net/wiki.html#qol): coordinates HUD, XP bottles, chunk loaders, crafting tricks
+- [Mobs & world changes](https://craft.gillyb.net/wiki.html#mobs): confetti creepers, drops and announcements
+- [Referrals](https://craft.gillyb.net/wiki.html#referral): invite friends and earn rewards
+- [Fair play & rules](https://craft.gillyb.net/wiki.html#rules): non pay-to-win, anti-cheat, PvP, griefing, no land claiming
+- [Server info](https://craft.gillyb.net/wiki.html#server): hosting location and ping, no whitelist, seasonal wipes
+- [Staff & ban appeals](https://craft.gillyb.net/wiki.html#support): Discord tickets and email
+
+## How-to answers (summary of the wiki)
+- What kind of server is Gilly SMP? Gilly SMP is a non pay-to-win, vanilla-plus survival SMP (difficulty: easy, up to 20 players) with crossplay between Java, Bedrock and console, and playtime sync (inventory, XP). It is made for casual and adult survival players who want to build, explore and play with friends on any device.
+- How do I join Gilly SMP? Open the How to Join cards on the home page and pick your platform. Java needs Minecraft Java 26.3. Bedrock players add the server with the address and port shown on the Bedrock card. Console players add GillySMP as a friend and join from the friends list, which needs the online subscription of their console (a console-maker requirement).
+- Do I need a paid Minecraft account? Yes. The server verifies accounts (online mode), so you need a legitimate Minecraft account. Cracked or offline launchers cannot join.
+- What version of Minecraft do I need? Java Edition players need Minecraft Java 26.3. Bedrock and console players use the current Bedrock Edition.
+- Why does my Bedrock name start with a dot? Bedrock players are shown with a "." in front of their name (and spaces become underscores) so they never clash with Java names. That is normal.
+- Do I have to accept the server resource pack? The server uses a resource pack. If the server prompts you to download it, accept it: players who decline can be disconnected.
+- How do I set a home? Stand where you want it and type /sethome <name> (or /home set <name>). You can have unlimited homes and there is no cooldown. The name bed is reserved for your respawn point.
+- How do I teleport to my home? Type /home <name>. Type /home bed to go to your bed or respawn anchor. If you forgot your homes, type /home to see them.
+- How do I delete a home? Type /deletehome <name> (or /home delete <name>). The special bed home cannot be deleted.
+- How do I go to spawn? Type /spawn.
+- How do I teleport to another player? Type /tpa <player> to ask to teleport to them, or /tpahere <player> to ask them to come to you. The other player clicks the chat message (or accepts the request) within 60 seconds to confirm.
+- How do I use a random teleport (RTP)? Gilly SMP uses RTP cannons. Use a cannon to be launched and land in a safe spot in the wilderness (never on lava, cacti and similar hazards). Each player has a 30 second cooldown between launches.
+- Can I use the Nether or the End? Not at the moment. Nether and End portals are currently disabled on Gilly SMP.
+- How do I use an elevator? Drop an Ender Pearl on top of a wool block to turn it into an elevator. Jump on it to travel to the elevator above (same wool colour), crouch on it to travel to the one below.
+- What happens when I die? A grave appears where you died holding your items and your XP, and the chat shows its coordinates. Right-click the grave to get everything back. Other players cannot rob your grave.
+- How do I keep my items safe after dying? Go to your grave and right-click it. Crouch while opening it to make sure only you can pick the items up. Graves also form if you die in lava or water.
+- How do I trade with another player? Type /trade <player> to send a trade request, then both players place items in the trade window and confirm.
+- What are points and how do I check my balance? Points are the server currency. Type /points me (or /p me) to see your balance, /points lead for the leaderboard, and /points look <player> to see another player's balance.
+- How do I send points to another player? Type /points pay <player> <amount>. The minimum payment is 1 point.
+- How do I buy or sell items with the order system? Type /order (or /orders) to open the player marketplace. Players post orders for items they want and set a price per item; other players fill them and get paid in points. Rules: up to 9 open orders per player, minimum price 1 point per item, orders expire after 14 days, new orders are announced in chat, and items can be delivered in shulker boxes.
+- How big is my ender chest? Your ender chest has 3 rows (27 slots). Open it with /ec or /enderchest. It is backed up automatically. Bedrock blocks, command blocks and barriers cannot be stored.
+- How do I share an ender chest with a friend? Use /ec invite <player> to invite them, then they can open it with /ecshare <your name>. Team ender chests (2 rows) open with /teamec.
+- Who can see my chat messages? Chat is ranged: only players within 100 blocks see it. Start your message with ! to shout to everyone.
+- How do I send a private message? Use /msg <player> <message> and answer with /r.
+- How do I use colours and formatting in chat? Use & colour codes (for example &aHello) in chat, on signs and in item names. Messages starting with > appear green, and * makes a gradient message.
+- How does proximity voice chat work? Gilly SMP supports Simple Voice Chat on Java Edition. Install the Simple Voice Chat mod on your client to talk to players within 48 blocks (24 when whispering) and to create voice groups. Bedrock and console players cannot use voice chat, so the server never requires it, and voice recording is disabled.
+- What happens when I go AFK? After 5 minutes without moving you are marked [AFK] and your name turns grey. You can also type /afk to toggle it. After 10 more minutes (15 in total) you are moved to the AFK zone.
+- How do I show my coordinates? Type /ch toggle to show or hide a HUD with your XYZ coordinates, facing direction and in-game clock.
+- How do I store XP in a bottle? Right-click an enchanting table with an empty bottle to fill it with XP (8 XP taken, 7 returned when thrown). Crouch to bottle all the bottles in your hand. Smelting a bottle gives 100% of the XP back.
+- How do I repair with XP? Crouch and right-click an anvil while holding an item with Mending to repair it using your XP. Lapis stays in the enchanting table when you close it.
+- How do I rename an item or a name tag? Crouch and right-click a Name Tag to rename it without an anvil. Anvil renaming supports up to 32 characters.
+- How do I merge an elytra with a chestplate? Drop an elytra and a chestplate on top of an anvil to merge them into one armored elytra. Drop the result on top of a grindstone to separate them. Enchantments are kept.
+- How do I sit on stairs? Right-click a stair block with a saddle to turn it into a chair. Break the stair to get the saddle back.
+- How do I keep a chunk loaded? Drop a Nether Star above a Lodestone to create a chunk loader that keeps its chunk loaded until the Lodestone is broken.
+- How do I get notified when a tool is about to break? You get a warning when an item falls under 10% durability. Customise it with /duraping config.
+- How do I make item frames fixed or invisible? Crouch and right-click an item frame with shears to make it fixed (items cannot be removed or rotated). Crouch and right-click with a brush to make it invisible.
+- How do I use cauldrons for crafting? Right-click a cauldron with concrete powder to harden it, with dirt to make mud, or with a copper ingot to oxidize copper (use an axe to deoxidize). Slime and honey cauldrons age and wax copper in bulk. Slime balls and magma cream convert in lava and water cauldrons.
+- How do I get mini blocks, wood items or paintings? Use a stonecutter. It makes mini blocks (8 per normal block), a sawmill of wood items from planks and logs, and lets you choose a painting variant.
+- How do I make my own music disc? Craft an Empty Music Disc from 8 iron ingots and a diamond, then engrave it with a stonecutter.
+- How do I transfer a pet to another player? Attach a lead to your tamed pet and right-click the other player with it.
+- How do I grow or shrink animals? Right-click mobs with a Golden Dandelion: it turns adults back into babies, or babies into adults (it also works on villagers and zombies).
+- What extra uses do bone meal, seeds and axes have? Bone meal also works on small flowers, sugar cane, cactus and leaf litter. Right-click dirt with seeds to turn it into grass. Right-click a waxed sign with an axe to remove the wax, and a sticky piston with an axe to remove the slime (use a slimeball to make it sticky again).
+- Do I need to unlock recipes? No. All recipes are unlocked as soon as you start playing, and extra crafting recipes exist (for example stairs and slabs back to blocks, carpets to blocks, universal dyeing and more). Use /mechanics to browse them.
+- How do I summon a thunderstorm? Throw a Channeling trident into the sky (it costs 150 durability), or offer a Nether Star at a thunder shrine.
+- What changes were made to mobs and the world? Some creepers explode into harmless confetti (25% chance, no block damage). Husks drop sand, bats drop phantom membranes, infested villagers turn into zombie villagers after 2 to 5 minutes, and more mobs drop heads. Leaves decay faster after you cut a tree. The chat announces nearby Wandering Traders (64 blocks) and villager deaths (without coordinates).
+- How do I invite a friend and get rewards? Type /referral to see your personal referral code and stats. Your friend types /refer <code> within their first 24 hours of playtime. You are rewarded once they have played 2 hours. Each player can refer up to 5 friends, and only one referral is allowed per IP address. See the leaderboard with /referraltop.
+- Is Gilly SMP pay-to-win? No. The store only sells quality-of-life items and cosmetics. Nothing gives a gameplay advantage.
+- Are cheats and hacked clients allowed? No. An anti-cheat is active and mods such as X-ray, freecam or Wurst are not allowed. Players may be required to run a verification mod.
+- Where can I get help or report something? Ask in our Discord.
+- Is PvP allowed? Yes, PvP is allowed as long as you play fair. Tp-trapping, spawn-killing and similar tactics are not allowed.
+- Are griefing and stealing allowed? No. Griefing and stealing are forbidden. The first offence gets you a warning, and doing it again results in a temporary ban.
+- Can I claim land to protect my builds? No. There is no land claiming on Gilly SMP, so build thoughtfully and respect other players' builds.
+- Where is the server hosted and what is the ping? Gilly SMP is hosted in France. Players in the US get around 100 ms ping, and the server is designed to run flawlessly from anywhere.
+- Is there a whitelist or an application? No. There is no whitelist and no application. Anyone with a legitimate Minecraft account can join using the How to Join cards.
+- Does the world reset? Yes. The world is wiped at the end of every season. You can ask for a copy of the world one week after the end of the season, via our Discord.
+- How do I appeal a ban? Open a ticket on our Discord (fastest), or email gilly-smp@outlook.com (slower).
+- How do I contact the staff? Open a ticket on our Discord, or email gilly-smp@outlook.com. Discord is much faster.
+
+## Links
+- [Website](https://craft.gillyb.net/): Home page with the join cards for Java, Bedrock and console
+- [Wiki](https://craft.gillyb.net/wiki.html): Player how-to guides, commands and features
+- [Modrinth server page](https://modrinth.com/server/gilly-smp): Server listing on Modrinth
+- [Discord](https://discord.gg/QjfVSgzDNe): Community, help and announcements
+- [Store](https://gillysmp.craftingstore.net/): Quality-of-life items and cosmetics only, no pay-to-win
