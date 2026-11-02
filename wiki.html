@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gilly SMP Wiki – How-To Guides, Commands &amp; Features</title>
-  <meta name="description" content="How to do everything on Gilly SMP: set homes, teleport, trade, use points and orders, voice chat, graves, referrals and more. Player wiki for our crossplay survival SMP.">
+  <title>Gilly SMP Wiki – Commands, Ranks, Survival Rework &amp; Guides</title>
+  <meta name="description" content="Player wiki for Gilly SMP: joining, the survival rework, ranks, homes, teleports, points, orders, trading, ender chests, chat, voice chat, the Bedrock menu, quality-of-life features and the FAQ.">
   <link rel="canonical" href="https://craft.gillyb.net/wiki.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
   <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/wiki.html">
   <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/wiki.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta name="theme-color" content="#123820">
-  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,469 +19,15 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What kind of server is Gilly SMP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gilly SMP is a non pay-to-win, vanilla-plus survival SMP (difficulty: easy, up to 20 players) with crossplay between Java, Bedrock and console, and playtime sync (inventory, XP). It is made for casual and adult survival players who want to build, explore and play with friends on any device."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I join Gilly SMP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open the How to Join cards on the home page and pick your platform. Java needs Minecraft Java 26.3. Bedrock players add the server with the address and port shown on the Bedrock card. Console players add GillySMP as a friend and join from the friends list, which needs the online subscription of their console (a console-maker requirement)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a paid Minecraft account?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The server verifies accounts (online mode), so you need a legitimate Minecraft account. Cracked or offline launchers cannot join."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What version of Minecraft do I need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Java Edition players need Minecraft Java 26.3. Bedrock and console players use the current Bedrock Edition."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does my Bedrock name start with a dot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bedrock players are shown with a \".\" in front of their name (and spaces become underscores) so they never clash with Java names. That is normal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to accept the server resource pack?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The server uses a resource pack. If the server prompts you to download it, accept it: players who decline can be disconnected."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I set a home?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Stand where you want it and type /sethome <name> (or /home set <name>). You can have unlimited homes and there is no cooldown. The name bed is reserved for your respawn point."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I teleport to my home?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /home <name>. Type /home bed to go to your bed or respawn anchor. If you forgot your homes, type /home to see them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I delete a home?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /deletehome <name> (or /home delete <name>). The special bed home cannot be deleted."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I go to spawn?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /spawn."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I teleport to another player?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /tpa <player> to ask to teleport to them, or /tpahere <player> to ask them to come to you. The other player clicks the chat message (or accepts the request) within 60 seconds to confirm."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I use a random teleport (RTP)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gilly SMP uses RTP cannons. Use a cannon to be launched and land in a safe spot in the wilderness (never on lava, cacti and similar hazards). Each player has a 30 second cooldown between launches."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use the Nether or the End?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not at the moment. Nether and End portals are currently disabled on Gilly SMP."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I use an elevator?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Drop an Ender Pearl on top of a wool block to turn it into an elevator. Jump on it to travel to the elevator above (same wool colour), crouch on it to travel to the one below."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens when I die?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A grave appears where you died holding your items and your XP, and the chat shows its coordinates. Right-click the grave to get everything back. Other players cannot rob your grave."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I keep my items safe after dying?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Go to your grave and right-click it. Crouch while opening it to make sure only you can pick the items up. Graves also form if you die in lava or water."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I trade with another player?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /trade <player> to send a trade request, then both players place items in the trade window and confirm."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are points and how do I check my balance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Points are the server currency. Type /points me (or /p me) to see your balance, /points lead for the leaderboard, and /points look <player> to see another player's balance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I send points to another player?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /points pay <player> <amount>. The minimum payment is 1 point."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I buy or sell items with the order system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /order (or /orders) to open the player marketplace. Players post orders for items they want and set a price per item; other players fill them and get paid in points. Rules: up to 9 open orders per player, minimum price 1 point per item, orders expire after 14 days, new orders are announced in chat, and items can be delivered in shulker boxes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How big is my ender chest?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your ender chest has 3 rows (27 slots). Open it with /ec or /enderchest. It is backed up automatically. Bedrock blocks, command blocks and barriers cannot be stored."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I share an ender chest with a friend?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use /ec invite <player> to invite them, then they can open it with /ecshare <your name>. Team ender chests (2 rows) open with /teamec."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who can see my chat messages?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chat is ranged: only players within 100 blocks see it. Start your message with ! to shout to everyone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I send a private message?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use /msg <player> <message> and answer with /r."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I use colours and formatting in chat?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use & colour codes (for example &aHello) in chat, on signs and in item names. Messages starting with > appear green, and * makes a gradient message."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does proximity voice chat work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gilly SMP supports Simple Voice Chat on Java Edition. Install the Simple Voice Chat mod on your client to talk to players within 48 blocks (24 when whispering) and to create voice groups. Bedrock and console players cannot use voice chat, so the server never requires it, and voice recording is disabled."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens when I go AFK?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "After 5 minutes without moving you are marked [AFK] and your name turns grey. You can also type /afk to toggle it. After 10 more minutes (15 in total) you are moved to the AFK zone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I show my coordinates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /ch toggle to show or hide a HUD with your XYZ coordinates, facing direction and in-game clock."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I store XP in a bottle?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Right-click an enchanting table with an empty bottle to fill it with XP (8 XP taken, 7 returned when thrown). Crouch to bottle all the bottles in your hand. Smelting a bottle gives 100% of the XP back."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I repair with XP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Crouch and right-click an anvil while holding an item with Mending to repair it using your XP. Lapis stays in the enchanting table when you close it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I rename an item or a name tag?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Crouch and right-click a Name Tag to rename it without an anvil. Anvil renaming supports up to 32 characters."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I merge an elytra with a chestplate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Drop an elytra and a chestplate on top of an anvil to merge them into one armored elytra. Drop the result on top of a grindstone to separate them. Enchantments are kept."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I sit on stairs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Right-click a stair block with a saddle to turn it into a chair. Break the stair to get the saddle back."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I keep a chunk loaded?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Drop a Nether Star above a Lodestone to create a chunk loader that keeps its chunk loaded until the Lodestone is broken."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I get notified when a tool is about to break?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You get a warning when an item falls under 10% durability. Customise it with /duraping config."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I make item frames fixed or invisible?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Crouch and right-click an item frame with shears to make it fixed (items cannot be removed or rotated). Crouch and right-click with a brush to make it invisible."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I use cauldrons for crafting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Right-click a cauldron with concrete powder to harden it, with dirt to make mud, or with a copper ingot to oxidize copper (use an axe to deoxidize). Slime and honey cauldrons age and wax copper in bulk. Slime balls and magma cream convert in lava and water cauldrons."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I get mini blocks, wood items or paintings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use a stonecutter. It makes mini blocks (8 per normal block), a sawmill of wood items from planks and logs, and lets you choose a painting variant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I make my own music disc?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Craft an Empty Music Disc from 8 iron ingots and a diamond, then engrave it with a stonecutter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I transfer a pet to another player?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Attach a lead to your tamed pet and right-click the other player with it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I grow or shrink animals?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Right-click mobs with a Golden Dandelion: it turns adults back into babies, or babies into adults (it also works on villagers and zombies)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What extra uses do bone meal, seeds and axes have?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bone meal also works on small flowers, sugar cane, cactus and leaf litter. Right-click dirt with seeds to turn it into grass. Right-click a waxed sign with an axe to remove the wax, and a sticky piston with an axe to remove the slime (use a slimeball to make it sticky again)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to unlock recipes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. All recipes are unlocked as soon as you start playing, and extra crafting recipes exist (for example stairs and slabs back to blocks, carpets to blocks, universal dyeing and more). Use /mechanics to browse them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I summon a thunderstorm?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Throw a Channeling trident into the sky (it costs 150 durability), or offer a Nether Star at a thunder shrine."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What changes were made to mobs and the world?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some creepers explode into harmless confetti (25% chance, no block damage). Husks drop sand, bats drop phantom membranes, infested villagers turn into zombie villagers after 2 to 5 minutes, and more mobs drop heads. Leaves decay faster after you cut a tree. The chat announces nearby Wandering Traders (64 blocks) and villager deaths (without coordinates)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I invite a friend and get rewards?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Type /referral to see your personal referral code and stats. Your friend types /refer <code> within their first 24 hours of playtime. You are rewarded once they have played 2 hours. Each player can refer up to 5 friends, and only one referral is allowed per IP address. See the leaderboard with /referraltop."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Gilly SMP pay-to-win?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The store only sells quality-of-life items and cosmetics. Nothing gives a gameplay advantage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are cheats and hacked clients allowed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. An anti-cheat is active and mods such as X-ray, freecam or Wurst are not allowed. Players may be required to run a verification mod."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I get help or report something?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ask in our Discord."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is PvP allowed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, PvP is allowed as long as you play fair. Tp-trapping, spawn-killing and similar tactics are not allowed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are griefing and stealing allowed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Griefing and stealing are forbidden. The first offence gets you a warning, and doing it again results in a temporary ban."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I claim land to protect my builds?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. There is no land claiming on Gilly SMP, so build thoughtfully and respect other players' builds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is the server hosted and what is the ping?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gilly SMP is hosted in France. Players in the US get around 100 ms ping, and the server is designed to run flawlessly from anywhere."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a whitelist or an application?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. There is no whitelist and no application. Anyone with a legitimate Minecraft account can join using the How to Join cards."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does the world reset?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The world is wiped at the end of every season. You can ask for a copy of the world one week after the end of the season, via our Discord."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I appeal a ban?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open a ticket on our Discord (fastest), or email gilly-smp@outlook.com (slower)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I contact the staff?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open a ticket on our Discord, or email gilly-smp@outlook.com. Discord is much faster."
-      }
-    }
-  ],
-  "dateModified": "2026-10-18"
+  "@type": "WebPage",
+  "name": "Gilly SMP Wiki",
+  "url": "https://craft.gillyb.net/wiki.html",
+  "description": "Player wiki for Gilly SMP, a crossplay Minecraft survival server with a custom survival rework: joining, ranks, homes, points, orders, trading, chat, voice chat, the Bedrock menu and quality-of-life features.",
+  "inLanguage": "en",
+  "dateModified": "2026-10-26",
+  "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
 }
   </script>
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -505,117 +50,216 @@
 
   <main id="main" class="wiki container">
     <h1>Gilly SMP Wiki</h1>
-    <p class="sec-intro">Player guides for Gilly SMP: how to do things on the server, command by command.</p>
+    <p class="sec-intro">How everything works on Gilly SMP: Java, Bedrock and console, one shared world. Press <kbd>/</kbd> to search.</p>
     <div class="wiki-search-slot">
       <div class="wiki-search" role="search">
       <i class="ic" style="--i:url(/assets/icons/search.svg)" aria-hidden="true"></i>
-      <input id="wiki-search" type="search" placeholder="Search the wiki (e.g. home, trade, voice chat)" aria-label="Search the wiki" autocomplete="off">
+      <input id="wiki-search" type="search" placeholder="Search the wiki (e.g. home, trade, hearts)" aria-label="Search the wiki" autocomplete="off">
       <span id="wiki-count" class="wiki-count" aria-live="polite"></span>
     </div>
     </div>
     <div class="wiki-layout">
       <aside class="wiki-side">
         <h2>Contents</h2>
-        <ul><li><a href="#basics">Getting started</a></li><li><a href="#travel">Travel & homes</a></li><li><a href="#death">Death & graves</a></li><li><a href="#economy">Trading, points & orders</a></li><li><a href="#storage">Storage</a></li><li><a href="#chat">Chat, voice & AFK</a></li><li><a href="#qol">Quality-of-life features</a></li><li><a href="#mobs">Mobs & world changes</a></li><li><a href="#referral">Referrals</a></li><li><a href="#rules">Fair play & rules</a></li><li><a href="#server">Server info</a></li><li><a href="#support">Staff & ban appeals</a></li></ul>
+        <ul><li><a href="#basics">Getting started</a></li><li><a href="#survival">Survival rework</a></li><li><a href="#world">World &amp; progression</a></li><li><a href="#ranks">Ranks</a></li><li><a href="#travel">Homes &amp; teleporting</a></li><li><a href="#economy">Points, orders &amp; trading</a></li><li><a href="#storage">Ender chest</a></li><li><a href="#chat">Chat, voice &amp; AFK</a></li><li><a href="#bedrock">Bedrock menu</a></li><li><a href="#qol">Quality-of-life features</a></li><li><a href="#commands">All commands</a></li><li><a href="#referral">Referrals</a></li><li><a href="#rules">Rules</a></li><li><a href="#server">Server info</a></li><li><a href="#support">Staff &amp; ban appeals</a></li><li><a href="#faq">FAQ</a></li></ul>
       </aside>
       <div class="wiki-content">
         <p id="wiki-empty" class="wiki-empty" hidden>No results. Try another keyword, or ask in our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p>
+
         <article id="basics">
           <h2>Getting started</h2>
-          <p class="sec-intro">Everything you need to know before your first login.</p>
-          <div class="qa"><h3>What kind of server is Gilly SMP?</h3><p>Gilly SMP is a non pay-to-win, vanilla-plus <strong>survival SMP</strong> (difficulty: easy, up to 20 players) with crossplay between Java, Bedrock and console, and playtime sync (inventory, XP). It is made for casual and adult survival players who want to build, explore and play with friends on any device.</p></div>
-          <div class="qa"><h3>How do I join Gilly SMP?</h3><p>Open the <a href="/#join">How to Join cards on the home page</a> and pick your platform. Java needs Minecraft Java 26.3. Bedrock players add the server with the address and port shown on the Bedrock card. Console players add <strong>GillySMP</strong> as a friend and join from the friends list, which needs the online subscription of their console (a console-maker requirement).</p></div>
-          <div class="qa"><h3>Do I need a paid Minecraft account?</h3><p>Yes. The server verifies accounts (online mode), so you need a legitimate Minecraft account. Cracked or offline launchers cannot join.</p></div>
-          <div class="qa"><h3>What version of Minecraft do I need?</h3><p>Java Edition players need <strong>Minecraft Java 26.3</strong>. Bedrock and console players use the current Bedrock Edition.</p></div>
-          <div class="qa"><h3>Why does my Bedrock name start with a dot?</h3><p>Bedrock players are shown with a "." in front of their name (and spaces become underscores) so they never clash with Java names. That is normal.</p></div>
-          <div class="qa"><h3>Do I have to accept the server resource pack?</h3><p>The server uses a resource pack. If the server prompts you to download it, accept it: players who decline can be disconnected.</p></div>
+          <div class="qa"><h3>What kind of server is Gilly SMP?</h3><p>A slow-paced, non pay-to-win <strong>survival SMP</strong> (Easy difficulty, up to 20 players, online mode, no whitelist) with a <a href="#survival">custom survival rework</a>. Progression is reworked and slower so casual players can keep up without mob farms or XP farms. Java, Bedrock and console players share one world.</p></div>
+          <div class="qa"><h3>How do I join?</h3><p>Use the <a href="/#join">How to Join cards</a>. Java: <code>mc.gillyb.net</code> (Minecraft Java <strong>26.3</strong>, required). Bedrock: <code>mc.gillyb.net</code>, port <code>19132</code> (on Windows, Android, iPhone and iPad, the <a href="/#join">Add to Minecraft</a> button on the Bedrock card opens the game with the server already added). Console: add <strong>GillySMP</strong> as a friend and join from the Friends tab (your console's online subscription is required by the console maker).</p></div>
+          <div class="qa"><h3>Do I need a paid Minecraft account?</h3><p>Yes. The server runs in online mode, so cracked or offline launchers can't join.</p></div>
+          <div class="qa"><h3>Do I need a resource pack?</h3><p>On Java, yes: the server adds hundreds of custom items and they need the <strong>Gilly SMP resource pack</strong>. The server sends it automatically when you join: just accept the prompt, there is nothing to download. Without it, items look vanilla and some have raw text names. Bedrock can't load Java packs, so Bedrock players always see vanilla textures and some raw keys; everything still works.</p></div>
+          <div class="qa"><h3>Do I need any mods?</h3><p>No. Client-side mods (performance, minimaps, shaders, <a href="#chat">voice chat</a>) are fine. Cheat mods (X-ray, freecam, hacked clients) are not, and the server runs anti-cheat. The installation of a verification mod can be requested by the staff in the event of suspicions.</p></div>
+          <div class="qa"><h3>Why does my Bedrock name start with an underscore?</h3><p>Bedrock names get a <code>_</code> prefix (and spaces become underscores) so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one name everywhere.</p></div>
+          <div class="qa"><h3>I play on Java and Bedrock. Can I keep my progress?</h3><p>Yes. Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other. <code>/unlinkaccount</code> undoes it. Once linked, the two accounts share one player profile.</p></div>
+          <div class="qa"><h3>What should I do first?</h3><p>Open your <strong>advancements</strong> (<kbd>L</kbd>). The survival rework uses them as a step-by-step guide, and the recipe book unlocks recipes when you need them. Early game is slower than vanilla and natural health regeneration is off. Set a home once you have a base (<code>/sethome base</code>), and <code>/spawn</code> takes you back to spawn at any time.</p></div>
+          <div class="qa"><h3>What are the first commands I'll want?</h3><p><code>/menu</code> (Bedrock only), <code>/spawn</code>, <code>/sethome base</code>, <code>/homes</code>, <code>/points me</code> and <code>/mechanics</code> (lists every tweak active on the server). The full list is in <a href="#commands">All commands</a>.</p></div>
         </article>
+
+        <article id="survival">
+          <h2>Survival rework</h2>
+          <p class="sec-intro">The custom rework of survival on Gilly SMP: slow, casual play with no mob farms, no XP farms and no villager trading halls. We ask players to discover it through the advancements (press <kbd>L</kbd>), so this section stays spoiler-light.</p>
+          <div class="qa"><h3>What is the survival rework?</h3><p>A set of changes built for Minecraft 26.3. It adds about 1275 recipes, 880 advancements, 290 villager trades, 31 new and 43 overridden enchantments, 13 structures, 7 music discs, 10 banner patterns, 3 trim materials and about 50 foods. It replaces many vanilla advancements and recipes with its own.</p></div>
+          <div class="qa"><h3>Why can't I heal?</h3><p>Natural health regeneration is off. You heal with food effects, potions and special items. Hunger is effectively gone: you won't starve, and food is about its effects instead of filling a bar.</p></div>
+          <div class="qa"><h3>What happens when I die?</h3><p>You <strong>keep your inventory and XP</strong>, but lose <strong>1 maximum heart</strong>. On Easy (this server) you never drop below 10 hearts. Crystal Hearts add a maximum heart back, up to 30. Thrown ender pearls don't vanish on death.</p></div>
+          <div class="qa"><h3>Why are there so few monsters outside?</h3><p>Creepers, spiders, endermen, witches and slimes don't spawn in the open Overworld. Zombies, skeletons and other undead still do at night, so bring a weapon and light. Caves and ruins are the real danger. Phantoms are disabled, and explosions drop all the blocks they destroy.</p><details class="spoiler"><summary><b>Spoiler: late game</b></summary><p>Once the Ender Dragon is defeated for the first time, evil is banished from the surface for everyone: nothing hostile spawns in the open any more.</p></details></div>
+          <div class="qa"><h3>Why is it so dark?</h3><p>The Overworld uses true darkness: without a light source it's pitch black. Carry torches. Beware that fullbright ressource packs are forbidden !</p></div>
+          <div class="qa"><h3>How does sleeping work?</h3><p>Night doesn't skip instantly. Time speeds up while players sleep, and the more players sleep, the faster it goes. The action bar shows how many players are sleeping.</p></div>
+          <div class="qa"><h3>How does progression work?</h3><p>Each metal has built-in properties (gold has Fortune and Looting, iron and diamond host alloys). Alloys are smithed onto a base metal: <strong>Hepatizon</strong> and <strong>Shakudo</strong> on copper, <strong>Steel</strong> on iron, <strong>Electrum</strong> and <strong>Adamant</strong> on diamond. Silver is an inlay found in mountains and Abbeys. New stations come before the furnace: campfire and mud kiln, then kiln and oven, then the blast furnace, the smithing table and the anvil. Mattocks and Dolabras are two-in-one tools. Take your time at each tier.</p></div>
+          <div class="qa"><h3>I'm stuck at the start.</h3><p>Check the advancements and the recipes you can't craft yet. Start with a campfire, a wooden hoe and dried grass, then light kindling with tinder or a flint firestarter.</p></div>
+          <div class="qa"><h3>Where are the villages?</h3><p>Villages are meant to be <strong>built</strong>, not found. The advancements explain how to bring villagers home.</p></div>
+          <div class="qa"><h3>Can I break spawners?</h3><p>Yes, and you should: they drop rare materials and Divine Fragments. Don't use spawn eggs on them, it destroys nearby spawners and hurts you.</p></div>
+          <div class="qa"><h3>Can I go to the Nether or the End?</h3><p>Not yet. Both are closed and will open in stages. The Nether opens after the next major update, so it generates with the newest version of the rework.</p></div>
+          <div class="qa"><h3>What about fishing, food and enchanting?</h3><p>The <strong>Angler's Almanac</strong> adds around 100 fish depending on biome and water temperature, plus junk and treasure; sell your catch to a Fisherman villager. About 50 new foods and meals exist, and 12 ingredients carry hidden effects revealed by cooking. Enchanting is reworked, with new enchantments, and anvil repairs never become "Too Expensive!". There are also 7 new music discs, 10 pride banner patterns and new trim materials.</p></div>
+          <details class="spoiler"><summary><b>Spoiler: the early-game path</b></summary><p>1. Make a <strong>campfire</strong> and a <strong>wooden hoe</strong>. Harvest grass with the hoe and dry it on the campfire.<br>2. Light kindling with tinder or a flint firestarter.<br>3. Build a <strong>Mud Kiln</strong> from packed mud and mudbricks, and smelt <strong>copper</strong> in it.<br>4. Make bricks and a <strong>ceramic bowl</strong>, then an <strong>Oven</strong> from bricks and iron to cook proper meals.<br>5. Iron → <strong>Carbon-Rich Iron</strong> (iron + coal block) → blast it into <strong>Steel</strong>.<br>6. A steel <strong>Anvil</strong> repairs equipment forever; a <strong>Smithing Table</strong> lets you upgrade with alloys.</p></details>
+          <details class="spoiler"><summary><b>Spoiler: treasures and late game</b></summary><p><strong>Gems ("Cantos")</strong>: Opal (defeat the Sea God), Ruby (pillage the remnants of Pandaemonium), Amber (exhume the Pilgrim's Trails), Topaz (raid Tartarus). <strong>Divine Fragments</strong>: only from breaking spawners or defeating powerful bosses. <strong>Crystal Hearts</strong>: eating one gives an extra maximum heart (it hurts). <strong>Lapis Nazar</strong>: wards off the dead when held, and can be attached to some equipment. <strong>Obols</strong>: currency-like treasure. <strong>Clay Fetishes and statues</strong>: found at abandoned sites. <strong>Beacon Kindling</strong>: signals a Wandering Trader, who arrives about 10 minutes later and stays 5. <strong>Nether</strong>: Estus, Benzene, Blessings, Hell-Bound Books and Warding Stones. <strong>End</strong>: Hepatizon and Shakudo Elytra. <strong>Bedrock Buster</strong>: a special explosive that breaks bedrock. The <strong>Wither</strong> can only be summoned on the Overworld surface.</p></details>
+        </article>
+
+        <article id="world">
+          <h2>World &amp; progression</h2>
+          <div class="qa"><h3>What is the world like?</h3><p>Vanilla terrain and biomes, with extra ores, trees and structures such as abbeys and beta villages. Everything uses vanilla blocks, so no mods are needed.</p></div>
+          <div class="qa"><h3>What difficulty does the server run?</h3><p><strong>Easy</strong>, the mode the survival rework is balanced around for relaxed play. Some mobs (creepers, skeletons, cave spiders) are toned down, and the difficulty never rises on its own. On Normal the rework can switch the world to Hard as players progress; on Easy it stays Easy. When you log in, chat shows a short welcome message and the current mode.</p></div>
+          <div class="qa"><h3>What are the death rules?</h3><p>You keep all your items and XP when you die. Each death removes 1 maximum heart; on Easy you never go below 10 hearts. Crystal Hearts add a maximum heart, up to 30. Natural regeneration is off, so heal with food effects, potions and special items. Thrown ender pearls don't vanish when you die.</p></div>
+          <div class="qa"><h3>Are there any mobs on the surface?</h3><p>Some. Undead (zombies, skeletons...) still spawn at night, but creepers, spiders and other non-undead monsters don't spawn in the open. Caves and ruins are where the real danger is. Phantoms are disabled, and explosions drop all the blocks they destroy.</p></div>
+          <div class="qa"><h3>How does sleeping work?</h3><p>Sleeping doesn't skip the night instantly. Instead, time speeds up, and the more players are asleep, the faster the night passes. The action bar shows how many players are sleeping.</p></div>
+          <div class="qa"><h3>How dark does it get?</h3><p>The Overworld uses <strong>true darkness</strong>: with no light source, it's pitch black. Carry torches.</p></div>
+          <div class="qa"><h3>Are the Nether and the End open?</h3><p>No, both portals are closed for now and will be opened in stages so everyone can enjoy the early game first. The Nether opens after the next major update. When it does: <code>/portal</code> tells you where to build a portal in the other dimension so the two line up, and Nether portals can be any size or shape.</p></div>
+          <div class="qa"><h3>Is there a world border?</h3><p>There's no border set on the world yet. If one is added, the size will be listed here.</p></div>
+        </article>
+
+        <article id="ranks">
+          <h2>Ranks</h2>
+          <p class="sec-intro">There are three ranks. Each one includes everything from the ranks below it, and shows a name tag in chat, the tab list and above your head.</p>
+          <div class="qa"><h3>What do ranks unlock?</h3><p>Each rank includes the perks of the ranks below it.</p>
+            <table>
+              <thead><tr><th></th><th>Default</th><th>Bronze</th><th>Gold</th><th>Diamond</th></tr></thead>
+              <tbody>
+                <tr><td>Name tag in chat and tab</td><td>–</td><td>[Bronze]</td><td>[Gold]</td><td>[Diamond]</td></tr>
+                <tr><td>Ender chest rows</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                <tr><td>Homes</td><td>2</td><td>3</td><td>4</td><td>6</td></tr>
+                <tr><td>Active orders</td><td>5</td><td>7</td><td>10</td><td>15</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qa"><h3>What happens to my items if I lose a rank?</h3><p>They stay in your ender chest. You can only reach the rows your current rank allows.</p></div>
+          <div class="qa"><h3>How do I see my rank?</h3><p>Your rank shows in front of your name in chat and in the tab list. Bedrock players can see their rank and every rank's limits in <code>/menu</code> → <strong>My rank</strong>.</p></div>
+          <div class="qa"><h3>How do I get a rank?</h3><p>Ranks are granted by staff. Have a look at the <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">store</a> and ask in <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> — note that ranks are a quality-of-life perk, not a power advantage.</p></div>
+        </article>
+
         <article id="travel">
-          <h2>Travel & homes</h2>
-          <p class="sec-intro">Teleport commands and ways to get around the world.</p>
-          <div class="qa"><h3>How do I set a home?</h3><p>Stand where you want it and type <code>/sethome &lt;name&gt;</code> (or <code>/home set &lt;name&gt;</code>). You can have unlimited homes and there is no cooldown. The name <code>bed</code> is reserved for your respawn point.</p></div>
-          <div class="qa"><h3>How do I teleport to my home?</h3><p>Type <code>/home &lt;name&gt;</code>. Type <code>/home bed</code> to go to your bed or respawn anchor. If you forgot your homes, type <code>/home</code> to see them.</p></div>
-          <div class="qa"><h3>How do I delete a home?</h3><p>Type <code>/deletehome &lt;name&gt;</code> (or <code>/home delete &lt;name&gt;</code>). The special <code>bed</code> home cannot be deleted.</p></div>
-          <div class="qa"><h3>How do I go to spawn?</h3><p>Type <code>/spawn</code>.</p></div>
-          <div class="qa"><h3>How do I teleport to another player?</h3><p>Type <code>/tpa &lt;player&gt;</code> to ask to teleport to them, or <code>/tpahere &lt;player&gt;</code> to ask them to come to you. The other player clicks the chat message (or accepts the request) within <strong>60 seconds</strong> to confirm.</p></div>
-          <div class="qa"><h3>How do I use a random teleport (RTP)?</h3><p>Gilly SMP uses <strong>RTP cannons</strong>. Use a cannon to be launched and land in a safe spot in the wilderness (never on lava, cacti and similar hazards). Each player has a 30 second cooldown between launches.</p></div>
-          <div class="qa"><h3>Can I use the Nether or the End?</h3><p>Not at the moment. Nether and End portals are currently disabled on Gilly SMP.</p></div>
-          <div class="qa"><h3>How do I use an elevator?</h3><p>Drop an <strong>Ender Pearl</strong> on top of a wool block to turn it into an elevator. Jump on it to travel to the elevator above (same wool colour), crouch on it to travel to the one below.</p></div>
+          <h2>Homes &amp; teleporting</h2>
+          <p class="sec-intro">All teleports have a <strong>3-second warmup</strong>: stand still and don't take damage, or the teleport is cancelled. This stops anyone using teleports to escape a fight.</p>
+          <div class="qa"><h3>How do I go to spawn?</h3><p><code>/spawn</code>. Staff set the spawn point in game, so it's the same for everyone.</p></div>
+          <div class="qa"><h3>How do I set a home?</h3><p><code>/sethome &lt;name&gt;</code> where you stand. You get <strong>2 homes</strong>, more with a <a href="#ranks">rank</a>. Names can use letters, numbers, <code>-</code> and <code>_</code>, up to 16 characters. Using an existing name moves that home.</p></div>
+          <div class="qa"><h3>How do I go home?</h3><p><code>/home &lt;name&gt;</code>, or just <code>/home</code> if you have one. <code>/homes</code> lists them; click one to go there.</p></div>
+          <div class="qa"><h3>How do I delete or edit a home?</h3><p><code>/delhome &lt;name&gt;</code> deletes it. <code>/edithome &lt;name&gt;</code> renames, moves, describes it or makes it public or private.</p></div>
+          <div class="qa"><h3>How do public homes work?</h3><p>Make a home public with <code>/edithome</code> and choose the privacy option. Others list public homes with <code>/phomes</code> and visit with <code>/phome &lt;owner&gt;+&lt;home&gt;</code>, for example <code>/phome Steve+shop</code>. Note the <code>+</code> between the owner and the home name.</p></div>
+          <div class="qa"><h3>How do I teleport to another player?</h3><p><code>/tpa &lt;player&gt;</code> asks to go to them, <code>/tpahere &lt;player&gt;</code> asks them to come to you. They answer with <code>/tpaccept</code> or <code>/tpdecline</code> (or the chat buttons, Java only) within 60 seconds. <code>/tpignore &lt;player&gt;</code> blocks requests from someone; run it again to undo.</p></div>
+          <div class="qa"><h3>Is there a random teleport?</h3><p>There's no <code>/rtp</code> command. Instead there's an <strong>RTP cannon</strong>: step into it and it fires you 500 to 5000 blocks away onto safe ground, with a slow fall. 30-second cooldown. The cannon is placed at spawn; ask in <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> if you can't find it.</p></div>
+          <div class="qa"><h3>How do elevators work?</h3><p>Drop an ender pearl on a wool block to turn it into an elevator. Jump on it to go to the next elevator of the same colour above, crouch to go down.</p></div>
+          <div class="qa"><h3>Can I do all this on Bedrock?</h3><p>Yes. <code>/menu</code> has <strong>Homes</strong> (a dropdown of your homes, plus set and delete) and <strong>Teleport requests</strong> (a dropdown of online players).</p></div>
         </article>
-        <article id="death">
-          <h2>Death & graves</h2>
-          <div class="qa"><h3>What happens when I die?</h3><p>A <strong>grave</strong> appears where you died holding your items and your XP, and the chat shows its coordinates. Right-click the grave to get everything back. Other players cannot rob your grave.</p></div>
-          <div class="qa"><h3>How do I keep my items safe after dying?</h3><p>Go to your grave and right-click it. Crouch while opening it to make sure only you can pick the items up. Graves also form if you die in lava or water.</p></div>
-        </article>
+
         <article id="economy">
-          <h2>Trading, points & orders</h2>
-          <div class="qa"><h3>How do I trade with another player?</h3><p>Type <code>/trade &lt;player&gt;</code> to send a trade request, then both players place items in the trade window and confirm.</p></div>
-          <div class="qa"><h3>What are points and how do I check my balance?</h3><p>Points are the server currency. Type <code>/points me</code> (or <code>/p me</code>) to see your balance, <code>/points lead</code> for the leaderboard, and <code>/points look &lt;player&gt;</code> to see another player's balance.</p></div>
-          <div class="qa"><h3>How do I send points to another player?</h3><p>Type <code>/points pay &lt;player&gt; &lt;amount&gt;</code>. The minimum payment is 1 point.</p></div>
-          <div class="qa"><h3>How do I buy or sell items with the order system?</h3><p>Type <code>/order</code> (or <code>/orders</code>) to open the player marketplace. Players post orders for items they want and set a price per item; other players fill them and get paid in points. Rules: up to <strong>9 open orders</strong> per player, minimum price <strong>1 point per item</strong>, orders expire after <strong>14 days</strong>, new orders are announced in chat, and items can be delivered in shulker boxes.</p></div>
+          <h2>Points, orders &amp; trading</h2>
+          <div class="qa"><h3>What are points?</h3><p>The server currency, used for orders and trades. <code>/points me</code> (or <code>/p me</code>) shows your balance, <code>/points look &lt;player&gt;</code> someone else's, <code>/points lead</code> the leaderboard. Every "money" price on the server is in points.</p></div>
+          <div class="qa"><h3>How do I get points?</h3><p>New players start with <strong>0 points</strong>. You earn them by selling items to other players through the <a href="#economy">order market</a> or in <a href="#economy">trades</a> — the server doesn't hand them out yet, so the economy is entirely player-driven.</p></div>
+          <div class="qa"><h3>How do I pay someone?</h3><p><code>/points pay &lt;player&gt; &lt;amount&gt;</code>. Whole numbers, at least 1. Paying less than 1 is refused.</p></div>
+          <div class="qa"><h3>How does the order market work?</h3><p><code>/order</code> (or <code>/orders</code>) opens it. Post a buy order (item, amount, price per item, at least 1 point); the points are reserved, other players deliver the items and get paid instantly, even while you're offline, and you collect the items later from <em>Your orders</em>. You can have <strong>5 active orders</strong>, more with a <a href="#ranks">rank</a>. Orders expire after 14 days, new ones are announced in chat, and items can be delivered from shulker boxes. Items must match the order exactly — enchantments, damage, custom names and contents included.</p></div>
+          <div class="qa"><h3>How do I trade with a player?</h3><p>Crouch and right-click them, or <code>/trade &lt;player&gt;</code>. You must be within 10 blocks, in the same world, and not in creative. There's a 20-second cooldown between trade requests. Both sides can offer items and points, and both must accept. XP can't be traded: the survival rework manages XP itself. Bedrock players can pick a player from <code>/menu</code> → <strong>Trade</strong>.</p></div>
         </article>
+
         <article id="storage">
-          <h2>Storage</h2>
-          <div class="qa"><h3>How big is my ender chest?</h3><p>Your ender chest has 3 rows (27 slots). Open it with <code>/ec</code> or <code>/enderchest</code>. It is backed up automatically. Bedrock blocks, command blocks and barriers cannot be stored.</p></div>
-          <div class="qa"><h3>How do I share an ender chest with a friend?</h3><p>Use <code>/ec invite &lt;player&gt;</code> to invite them, then they can open it with <code>/ecshare &lt;your name&gt;</code>. Team ender chests (2 rows) open with <code>/teamec</code>.</p></div>
+          <h2>Ender chest</h2>
+          <div class="qa"><h3>How big is my ender chest?</h3><p>3 rows (27 slots), up to 6 rows (54 slots) with a <a href="#ranks">rank</a>. Open it anywhere with <code>/ec</code>. Bedrock, command blocks and barriers can't be stored. It's backed up automatically every night.</p></div>
+          <div class="qa"><h3>Can I share it?</h3><p><code>/ec invite &lt;player&gt;</code> gives access, <code>/ec uninvite &lt;player&gt;</code> removes it, <code>/ec invitelist</code> shows who has it. Invited players open it with <code>/ecshare &lt;owner&gt;</code>.</p></div>
+          <div class="qa"><h3>Can I rename it?</h3><p><code>/ec rename &lt;name&gt;</code>, or <code>/ec rename reset</code>.</p></div>
+          <div class="qa"><h3>What if something goes wrong?</h3><p>Ask a staff member on <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>. Ender chests are backed up every night, so items can usually be restored.</p></div>
         </article>
+
         <article id="chat">
-          <h2>Chat, voice & AFK</h2>
-          <div class="qa"><h3>Who can see my chat messages?</h3><p>Chat is <strong>ranged</strong>: only players within 100 blocks see it. Start your message with <code>!</code> to shout to everyone.</p></div>
-          <div class="qa"><h3>How do I send a private message?</h3><p>Use <code>/msg &lt;player&gt; &lt;message&gt;</code> and answer with <code>/r</code>.</p></div>
-          <div class="qa"><h3>How do I use colours and formatting in chat?</h3><p>Use <code>&amp;</code> colour codes (for example <code>&amp;aHello</code>) in chat, on signs and in item names. Messages starting with <code>&gt;</code> appear green, and <code>*</code> makes a gradient message.</p></div>
-          <div class="qa"><h3>How does proximity voice chat work?</h3><p>Gilly SMP supports Simple Voice Chat on <strong>Java Edition</strong>. Install the Simple Voice Chat mod on your client to talk to players within 48 blocks (24 when whispering) and to create voice groups. Bedrock and console players cannot use voice chat, so the server never requires it, and voice recording is disabled.</p></div>
-          <div class="qa"><h3>What happens when I go AFK?</h3><p>After 5 minutes without moving you are marked <strong>[AFK]</strong> and your name turns grey. You can also type <code>/afk</code> to toggle it. After 10 more minutes (15 in total) you are moved to the AFK zone.</p></div>
+          <h2>Chat, voice &amp; AFK</h2>
+          <div class="qa"><h3>Who sees my messages?</h3><p>Players within <strong>100 blocks</strong> of you, in the same world. Start a message with <code>!</code> to talk to everyone. Your rank shows in front of your name, for example <code>[Gold] &lt;Steve&gt; hello</code>.</p></div>
+          <div class="qa"><h3>How do I send a private message?</h3><p><code>/msg &lt;player&gt; &lt;message&gt;</code> (also <code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), reply with <code>/r</code>. <code>/ignore &lt;player&gt;</code> hides someone, <code>/unignore</code> undoes it. <code>/me</code> sends an emote: <code>/me waves</code> shows <code>* Steve waves</code>. Bedrock players can pick a player from <code>/menu</code> → <strong>Private message</strong>.</p></div>
+          <div class="qa"><h3>Can I use colours?</h3><p><code>&amp;</code> colour codes work in chat, on signs and in anvil names (up to 32 characters). A message starting with <code>&gt;</code> is green (the <code>&gt;</code> stays), one starting with <code>*</code> is a purple-to-blue gradient.</p></div>
+          <div class="qa"><h3>Is spam blocked?</h3><p>Yes. Repeating the same message, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, longer if they keep doing it.</p></div>
+          <div class="qa"><h3>How does voice chat work?</h3><p>Java players can install the <a href="https://modrinth.com/plugin/simple-voice-chat" rel="noopener" target="_blank">Simple Voice Chat</a> mod (Fabric, NeoForge, Forge or Quilt) matching Minecraft 26.3, join and press <kbd>V</kbd> to set it up. You hear players within 48 blocks (24 when whispering) and can make groups with <kbd>G</kbd>. Push-to-talk is on <kbd>Caps Lock</kbd> by default; switch to voice activation in the settings. Recording is disabled. Bedrock and console can't use it, so it's never required.</p></div>
+          <div class="qa"><h3>What happens when I'm AFK?</h3><p>After 5 minutes without moving you're marked <strong>[AFK]</strong> and your name turns grey (<code>/afk</code> toggles it). After 10 more minutes you're disconnected, so the server stays fast for everyone. Just rejoin — and if the main server restarts while you're away, you'll land in the AFK zone and can come back with <code>/server smp</code>.</p></div>
         </article>
+
+        <article id="bedrock">
+          <h2>Bedrock menu</h2>
+          <div class="qa"><h3>Is there a menu for Bedrock and console?</h3><p>Yes. Type <code>/menu</code> to open a touch-friendly menu with buttons for the most common commands: Spawn, Homes, Teleport requests, Ender Chest, Orders, Trade, Private message, Points, Referrals, My rank and Tools. Whenever you need to pick a player, you get a list of everyone online.</p></div>
+          <div class="qa"><h3>Why is a button grey?</h3><p>Buttons that need another player are greyed out with <em>"nobody else is online"</em> when you're alone. "Go to a home" is greyed out until you set one.</p></div>
+          <div class="qa"><h3>Clickable chat messages don't work on Bedrock.</h3><p>That's a Bedrock limitation. Use <code>/menu</code> to accept or decline teleport requests and to pick homes. Java players don't need the menu; they use the <a href="#commands">commands</a> directly.</p></div>
+          <div class="qa"><h3>Where do I see my rank and these limits?</h3><p>In <code>/menu</code> → <strong>My rank</strong>, which lists your rank and the perks of every rank.</p></div>
+        </article>
+
         <article id="qol">
           <h2>Quality-of-life features</h2>
-          <p class="sec-intro">Little things that make survival smoother. Use <code>/mechanics</code> in game for the full list.</p>
-          <div class="qa"><h3>How do I show my coordinates?</h3><p>Type <code>/ch toggle</code> to show or hide a HUD with your XYZ coordinates, facing direction and in-game clock.</p></div>
-          <div class="qa"><h3>How do I store XP in a bottle?</h3><p>Right-click an enchanting table with an empty bottle to fill it with XP (8 XP taken, 7 returned when thrown). Crouch to bottle all the bottles in your hand. Smelting a bottle gives 100% of the XP back.</p></div>
-          <div class="qa"><h3>How do I repair with XP?</h3><p>Crouch and right-click an anvil while holding an item with Mending to repair it using your XP. Lapis stays in the enchanting table when you close it.</p></div>
-          <div class="qa"><h3>How do I rename an item or a name tag?</h3><p>Crouch and right-click a Name Tag to rename it without an anvil. Anvil renaming supports up to 32 characters.</p></div>
-          <div class="qa"><h3>How do I merge an elytra with a chestplate?</h3><p>Drop an elytra and a chestplate on top of an anvil to merge them into one armored elytra. Drop the result on top of a grindstone to separate them. Enchantments are kept.</p></div>
-          <div class="qa"><h3>How do I sit on stairs?</h3><p>Right-click a stair block with a saddle to turn it into a chair. Break the stair to get the saddle back.</p></div>
-          <div class="qa"><h3>How do I keep a chunk loaded?</h3><p>Drop a <strong>Nether Star</strong> above a Lodestone to create a chunk loader that keeps its chunk loaded until the Lodestone is broken.</p></div>
-          <div class="qa"><h3>How do I get notified when a tool is about to break?</h3><p>You get a warning when an item falls under 10% durability. Customise it with <code>/duraping config</code>.</p></div>
-          <div class="qa"><h3>How do I make item frames fixed or invisible?</h3><p>Crouch and right-click an item frame with <strong>shears</strong> to make it fixed (items cannot be removed or rotated). Crouch and right-click with a <strong>brush</strong> to make it invisible.</p></div>
-          <div class="qa"><h3>How do I use cauldrons for crafting?</h3><p>Right-click a cauldron with concrete powder to harden it, with dirt to make mud, or with a copper ingot to oxidize copper (use an axe to deoxidize). Slime and honey cauldrons age and wax copper in bulk. Slime balls and magma cream convert in lava and water cauldrons.</p></div>
-          <div class="qa"><h3>How do I get mini blocks, wood items or paintings?</h3><p>Use a <strong>stonecutter</strong>. It makes mini blocks (8 per normal block), a sawmill of wood items from planks and logs, and lets you choose a painting variant.</p></div>
-          <div class="qa"><h3>How do I make my own music disc?</h3><p>Craft an Empty Music Disc from 8 iron ingots and a diamond, then engrave it with a stonecutter.</p></div>
-          <div class="qa"><h3>How do I transfer a pet to another player?</h3><p>Attach a lead to your tamed pet and right-click the other player with it.</p></div>
-          <div class="qa"><h3>How do I grow or shrink animals?</h3><p>Right-click mobs with a Golden Dandelion: it turns adults back into babies, or babies into adults (it also works on villagers and zombies).</p></div>
-          <div class="qa"><h3>What extra uses do bone meal, seeds and axes have?</h3><p>Bone meal also works on small flowers, sugar cane, cactus and leaf litter. Right-click dirt with seeds to turn it into grass. Right-click a waxed sign with an axe to remove the wax, and a sticky piston with an axe to remove the slime (use a slimeball to make it sticky again).</p></div>
-          <div class="qa"><h3>Do I need to unlock recipes?</h3><p>No. All recipes are unlocked as soon as you start playing, and extra crafting recipes exist (for example stairs and slabs back to blocks, carpets to blocks, universal dyeing and more). Use <code>/mechanics</code> to browse them.</p></div>
-          <div class="qa"><h3>How do I summon a thunderstorm?</h3><p>Throw a Channeling trident into the sky (it costs 150 durability), or offer a Nether Star at a thunder shrine.</p></div>
+          <p class="sec-intro">Small tweaks that make survival nicer, added to the server. Most of them work without any command. Tweaks that bypassed the survival rework's progression (XP bottles, XP mending, unlocking every recipe, ore-block smelting and extra recipes for gated items) are turned off: when something here and the rework disagree, the rework's rules win. Run <code>/mechanics</code> in game to list everything that's active.</p>
+          <div class="qa"><h3>How do I show my coordinates?</h3><p><code>/ch toggle</code> (also <code>/coordshud</code>) shows XYZ, facing direction and a 24-hour in-game clock in your action bar.</p></div>
+          <div class="qa"><h3>How do I rename a name tag without an anvil?</h3><p>Crouch and right-click with it.</p></div>
+          <div class="qa"><h3>How do I merge an elytra with a chestplate?</h3><p>Drop both on an anvil. Drop the result on a grindstone to split them. Enchantments are kept.</p></div>
+          <div class="qa"><h3>How do I sit on stairs?</h3><p>Right-click a stair with a saddle, then right-click it to sit. Break the stair to get the saddle back.</p></div>
+          <div class="qa"><h3>How do I keep a chunk loaded?</h3><p>Drop a Nether Star on a lodestone. The chunk stays loaded until the lodestone is broken.</p></div>
+          <div class="qa"><h3>Can I be warned before a tool breaks?</h3><p>Yes, when a tool or armour piece gets low. Customise it with <code>/duraping config</code>.</p></div>
+          <div class="qa"><h3>How do I lock or hide item frames?</h3><p>Crouch and right-click with <strong>shears</strong> to lock or unlock it, with a <strong>brush</strong> to make it invisible.</p></div>
+          <div class="qa"><h3>What can cauldrons do?</h3><p>Harden concrete powder, turn dirt into mud, fill and empty potions, tip arrows, and swap slime balls and magma cream (lava or water cauldron). Slime-block and honey-block cauldrons age or wax copper in bulk.</p></div>
+          <div class="qa"><h3>What's new in the stonecutter?</h3><p>Mini blocks, wood items from planks and logs, painting variants, and engraving blank music discs (crafted from 8 iron ingots and a diamond).</p></div>
+          <div class="qa"><h3>Can I give my pet to someone?</h3><p>Hold the lead attached to your tamed pet and right-click the other player.</p></div>
+          <div class="qa"><h3>Can I grow or shrink mobs?</h3><p>Right-click with a Golden Dandelion: adults become babies and babies grow up. Works on villagers and zombies too.</p></div>
+          <div class="qa"><h3>What else is there for building?</h3><p>Unwax signs by crouching and right-clicking a waxed sign with an axe, re-dye any dyed block to another colour (except concrete), and lectern books go back to page 1 when closed.</p></div>
+          <div class="qa"><h3>Other small tweaks?</h3><p>Bone meal works on small flowers, sugar cane, cactus and leaf litter. Seeds on dirt make grass. An axe removes slime from sticky pistons; a slime ball makes a piston sticky again. Leaves decay fast. Husks drop sand, more mobs drop heads, a quarter of creepers explode into harmless confetti, and infested villagers turn into zombie villagers after a few minutes.</p></div>
+          <div class="qa"><h3>Are there extra recipes?</h3><p>Yes: stairs, slabs and carpets back to blocks, double slabs from one block, unpacking wool/quartz/nether wart blocks/ice, more output for stairs, wooden trapdoors, bark and sherds, and craftable blackstone, gilded blackstone, calcite, tuff, gravel, coral blocks, small dripleaf, spore blossoms and copper golem statues. Blackstone replaces cobblestone in every cobblestone recipe, and sandstone + red dye makes red sandstone. The survival rework has its own recipes for bricks, packed mud, metal trapdoors, powered rails, chainmail, leather, black dye and glass: its advancements unlock them as you progress.</p></div>
+          <div class="qa"><h3>Can I start a thunderstorm?</h3><p>Throw a Channeling trident at the sky (it costs 150 durability).</p></div>
+          <div class="qa"><h3>Are there graves?</h3><p>No. The survival rework keeps your inventory on death, so you don't need one.</p></div>
+          <div class="qa"><h3>What does the chat announce?</h3><p>Wandering traders that appear nearby (including the ones summoned by Beacon Kindling) and villager deaths, with the location.</p></div>
         </article>
-        <article id="mobs">
-          <h2>Mobs & world changes</h2>
-          <div class="qa"><h3>What changes were made to mobs and the world?</h3><p>Some creepers explode into harmless <strong>confetti</strong> (25% chance, no block damage). Husks drop sand, bats drop phantom membranes, infested villagers turn into zombie villagers after 2 to 5 minutes, and more mobs drop heads. Leaves decay faster after you cut a tree. The chat announces nearby Wandering Traders (64 blocks) and villager deaths (without coordinates).</p></div>
+
+        <article id="commands">
+          <h2>All commands</h2>
+          <p class="sec-intro">These are all the commands players can use. Anything else is blocked, hidden from tab completion and answers "That command is not available. Bedrock players: use /menu." Bedrock players have almost all of these as buttons in <code>/menu</code>.</p>
+          <div class="qa"><h3>Homes, spawn and teleporting</h3><p><code>/spawn</code>, <code>/home</code>, <code>/sethome</code>, <code>/delhome</code>, <code>/homes</code> (<code>/homelist</code>), <code>/edithome</code>, <code>/phome</code>, <code>/phomes</code> (<code>/phomelist</code>), <code>/tpa</code>, <code>/tpahere</code>, <code>/tpaccept</code> (<code>/tpyes</code>), <code>/tpdecline</code> (<code>/tpno</code>, <code>/tpdeny</code>), <code>/tpignore</code></p></div>
+          <div class="qa"><h3>Chat</h3><p><code>/msg</code> (<code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), <code>/r</code> (<code>/reply</code>), <code>/me</code> (<code>/emote</code>), <code>/ignore</code> (<code>/block</code>), <code>/unignore</code> (<code>/unblock</code>)</p></div>
+          <div class="qa"><h3>Economy and storage</h3><p><code>/points</code> (<code>me</code>, <code>pay</code>, <code>look</code>, <code>lead</code>), <code>/order</code> (<code>/orders</code>), <code>/trade</code>, <code>/ec</code> (<code>/enderchest</code>; <code>invite</code>, <code>uninvite</code>, <code>invitelist</code>, <code>rename</code>), <code>/ecshare</code></p></div>
+          <div class="qa"><h3>Tools</h3><p><code>/ch</code> (<code>/coordshud</code>), <code>/afk</code>, <code>/duraping</code> (<code>/durabilityping</code>, with <code>config</code> to customise), <code>/portal</code> (where to build a matching Nether portal, once the Nether is open), <code>/mechanics</code></p></div>
+          <div class="qa"><h3>Referrals</h3><p><code>/referral</code> (<code>/code</code>, <code>/mycode</code>), <code>/refer</code> (<code>/usecode</code>), <code>/referraltop</code> (<code>/reftop</code>, <code>/rtop</code>)</p></div>
+          <div class="qa"><h3>Other</h3><p><code>/menu</code> (Bedrock), <code>/list</code>, <code>/ping</code>, <code>/voicechat</code>, <code>/linkaccount</code>, <code>/unlinkaccount</code>, <code>/discord</code>, <code>/server smp</code> (back from the AFK zone), <code>/glist</code>, <code>/trigger</code> (used by the survival rework, e.g. when it asks you to update an item)</p></div>
         </article>
+
         <article id="referral">
           <h2>Referrals</h2>
-          <div class="qa"><h3>How do I invite a friend and get rewards?</h3><p>Type <code>/referral</code> to see your personal referral code and stats. Your friend types <code>/refer &lt;code&gt;</code> within their first 24 hours of playtime. You are rewarded once they have played 2 hours. Each player can refer up to 5 friends, and only one referral is allowed per IP address. See the leaderboard with <code>/referraltop</code>.</p></div>
+          <div class="qa"><h3>How do I invite a friend?</h3><p>Run <code>/referral</code> to see your personal code, then give it to your friend. When they join, they type <code>/refer &lt;code&gt;</code>. Your friend gets <strong>5 diamonds</strong> immediately, and you get <strong>10 diamonds</strong> once they've played for 2 hours. Up to 5 referrals per player, one per IP address. <code>/referraltop</code> shows the leaderboard.</p></div>
+          <div class="qa"><h3>What are the rules?</h3><p>A new player must use a code within their first <strong>24 hours of playtime</strong>. You can refer up to <strong>5 players</strong>, and only one referral counts per IP address, so alt accounts don't count. Playtime is taken from the server's analytics.</p></div>
+          <div class="qa"><h3>Is a free diamond a problem for progression?</h3><p>It skips part of the way to diamonds on purpose, and staff know about it. If the reward changes to something that doesn't touch progression (points or cosmetics), this page will say so.</p></div>
         </article>
+
         <article id="rules">
-          <h2>Fair play & rules</h2>
-          <p class="sec-intro">Gilly SMP is built to be fair for everyone.</p>
-          <div class="qa"><h3>Is Gilly SMP pay-to-win?</h3><p>No. The <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">store</a> only sells quality-of-life items and cosmetics. Nothing gives a gameplay advantage.</p></div>
-          <div class="qa"><h3>Are cheats and hacked clients allowed?</h3><p>No. An anti-cheat is active and mods such as X-ray, freecam or Wurst are not allowed. Players may be required to run a verification mod.</p></div>
-          <div class="qa"><h3>Where can I get help or report something?</h3><p>Ask in our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p></div>
-          <div class="qa"><h3>Is PvP allowed?</h3><p>Yes, PvP is allowed as long as you play fair. Tp-trapping, spawn-killing and similar tactics are not allowed.</p></div>
-          <div class="qa"><h3>Are griefing and stealing allowed?</h3><p>No. Griefing and stealing are forbidden. The first offence gets you a <strong>warning</strong>, and doing it again results in a <strong>temporary ban</strong>.</p></div>
-          <div class="qa"><h3>Can I claim land to protect my builds?</h3><p>No. There is no land claiming on Gilly SMP, so build thoughtfully and respect other players' builds.</p></div>
+          <h2>Rules</h2>
+          <div class="qa"><h3>Is Gilly SMP pay-to-win?</h3><p>No. The <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">store</a> only sells quality-of-life items and cosmetics.</p></div>
+          <div class="qa"><h3>Are cheats allowed?</h3><p>No. An anti-cheat runs, and mods like X-ray, freecam or Wurst are banned. Suspected players may be asked to run a verification mod.</p></div>
+          <div class="qa"><h3>Is PvP allowed?</h3><p>Yes, if it's fair. No tp-trapping or spawn-killing. Teleports have a 3-second warmup that moving or taking damage cancels, so you can't teleport out of a fight.</p></div>
+          <div class="qa"><h3>Are griefing and stealing allowed?</h3><p>No. First offence: a warning. Second: a temporary ban.</p></div>
+          <div class="qa"><h3>Can I claim land?</h3><p>No, there's no land claiming. Respect other players' builds.</p></div>
+          <div class="qa"><h3>Anything else?</h3><p>Spam is detected and muted automatically, and the console and command blocks aren't available to players — only the commands in <a href="#commands">All commands</a>.</p></div>
         </article>
+
         <article id="server">
           <h2>Server info</h2>
-          <div class="qa"><h3>Where is the server hosted and what is the ping?</h3><p>Gilly SMP is hosted in <strong>France</strong>. Players in the US get around <strong>100 ms</strong> ping, and the server is designed to run flawlessly from anywhere.</p></div>
-          <div class="qa"><h3>Is there a whitelist or an application?</h3><p>No. There is no whitelist and no application. Anyone with a legitimate Minecraft account can join using the <a href="/#join">How to Join cards</a>.</p></div>
-          <div class="qa"><h3>Does the world reset?</h3><p>Yes. The world is wiped at the end of every <strong>season</strong>. You can ask for a copy of the world one week after the end of the season, via our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p></div>
+          <div class="qa"><h3>Where is the server hosted?</h3><p>In <strong>France</strong>. Players in the US get around 100 ms.</p></div>
+          <div class="qa"><h3>Is there a whitelist?</h3><p>No. Anyone with a legitimate account can join.</p></div>
+          <div class="qa"><h3>Does the world reset?</h3><p>Yes, at the end of every <strong>season</strong>. You can ask for a copy of the world on <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> one week after the season ends.</p></div>
+          <div class="qa"><h3>What is the world like?</h3><p>Vanilla terrain and biomes, plus extra ores, trees and structures, all with vanilla blocks.</p></div>
+          <div class="qa"><h3>What are the server's limits?</h3><p>Up to <strong>20 players</strong>, <strong>Easy</strong> difficulty, online mode on (so a legitimate account is required) and no whitelist. The world resets at the end of each season.</p></div>
+          <div class="qa"><h3>What's the AFK zone?</h3><p>If the server restarts or you're idle for 20 minutes, you're moved to a small waiting area instead of being disconnected. You get a chat message and a boss bar there, and <code>/server smp</code> brings you back once the server is up.</p></div>
         </article>
+
         <article id="support">
-          <h2>Staff & ban appeals</h2>
-          <div class="qa"><h3>How do I appeal a ban?</h3><p>Open a ticket on our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> (fastest), or email <a href="mailto:gilly-smp@outlook.com">gilly-smp@outlook.com</a> (slower).</p></div>
-          <div class="qa"><h3>How do I contact the staff?</h3><p>Open a ticket on our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>, or email <a href="mailto:gilly-smp@outlook.com">gilly-smp@outlook.com</a>. Discord is much faster.</p></div>
+          <h2>Staff &amp; ban appeals</h2>
+          <div class="qa"><h3>How do I contact staff or appeal a ban?</h3><p>Open a ticket on <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> (fastest), or email <a href="mailto:gilly-smp@outlook.com">gilly-smp@outlook.com</a>.</p></div>
+        </article>
+
+        <article id="faq">
+          <h2>FAQ</h2>
+          <p class="sec-intro">The questions players ask most. For anything else, ask in <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p>
+          <div class="qa"><h3>My items have raw text names and look like vanilla items.</h3><p>You didn't accept the server's resource pack. Rejoin and accept it, or check Options → Resource Packs. See <a href="#basics">Getting started</a>. On Bedrock this is expected and can't be fixed.</p></div>
+          <div class="qa"><h3>I can't heal!</h3><p>Natural regeneration is off. Eat foods with healing effects, drink potions, or use special items. See <a href="#survival">Survival rework</a>.</p></div>
+          <div class="qa"><h3>I keep losing hearts.</h3><p>Every death costs 1 maximum heart, down to a minimum of 10 hearts. Crystal Hearts give hearts back. See <a href="#world">World &amp; progression</a>.</p></div>
+          <div class="qa"><h3>I don't know what to do next.</h3><p>Open your advancements (<kbd>L</kbd>). The advancements tell you the next step.</p></div>
+          <div class="qa"><h3>Where are the villages?</h3><p>The survival rework expects you to <strong>build</strong> your own village. Advancements explain how to bring villagers to it.</p></div>
+          <div class="qa"><h3>Why are there so few monsters outside?</h3><p>Creepers, spiders and other non-undead monsters don't spawn in the open. Zombies and skeletons still do at night.</p></div>
+          <div class="qa"><h3>"That command is not available"</h3><p>Only player commands are enabled. See <a href="#commands">All commands</a>.</p></div>
+          <div class="qa"><h3>How do I teleport to a friend?</h3><p><code>/tpa &lt;name&gt;</code>, then they type <code>/tpaccept</code>. See <a href="#travel">Homes &amp; teleporting</a>.</p></div>
+          <div class="qa"><h3>My chat messages aren't seen by everyone.</h3><p>Chat only reaches players within 100 blocks. Start your message with <code>!</code> to talk to everyone. See <a href="#chat">Chat, voice &amp; AFK</a>.</p></div>
+          <div class="qa"><h3>I got disconnected for being AFK.</h3><p>Players AFK for 15 minutes are disconnected to keep the server fast. Just rejoin.</p></div>
+          <div class="qa"><h3>I'm on Bedrock and typing commands is annoying.</h3><p>Use <code>/menu</code>. See <a href="#bedrock">Bedrock menu</a>.</p></div>
+          <div class="qa"><h3>How do I get a bigger ender chest or more homes?</h3><p>With a <a href="#ranks">rank</a>.</p></div>
+          <div class="qa"><h3>Can I use mods?</h3><p>Client-side mods (performance, minimap, shaders, <a href="#chat">voice chat</a>) are fine. Cheating (X-ray, freecam, hacked clients) is not allowed, and the server runs anti-cheat.</p></div>
+          <div class="qa"><h3>Can I go to the Nether?</h3><p>Not yet. See <a href="#world">World &amp; progression</a>.</p></div>
         </article>
       </div>
     </div>
@@ -624,7 +268,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
-        <a class="brand" href="/"><img class="pixel" src="/assets/logo.png" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
         <p>A non pay-to-win crossplay survival SMP. Java, Bedrock and console, one world.</p>
       </div>
       <nav class="f-col" aria-label="Explore">
@@ -641,7 +285,7 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-10-18">October 18, 2026</time></p>
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-10-26">October 26, 2026</time></p>
       <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft.</p>
     </div>
   </footer>

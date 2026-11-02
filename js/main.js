@@ -1,13 +1,6 @@
 (function () {
   'use strict';
 
-  // ---- Service worker ----
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/sw.js').catch(function () {});
-    });
-  }
-
   // ---- Mobile nav ----
   var nav = document.querySelector('.nav');
   var toggle = document.querySelector('.nav-toggle');
@@ -33,6 +26,15 @@
       if (btn) btn.setAttribute('aria-pressed', String(flipped));
     });
   });
+
+  // ---- Bedrock "Add to Minecraft" link ----
+  // Bedrock only exists on Windows, Android and iOS/iPadOS (iPads report a Mac UA but have touch).
+  var ua = navigator.userAgent;
+  var isMacDesktop = /Macintosh/.test(ua) && !(navigator.maxTouchPoints > 1);
+  var isLinuxDesktop = /Linux/.test(ua) && !/Android/.test(ua);
+  if (isMacDesktop || isLinuxDesktop) {
+    document.documentElement.classList.add('no-bedrock-link');
+  }
 
   // ---- Copy buttons ----
   function legacyCopy(text) {
@@ -74,7 +76,7 @@
   // ---- Wiki search ----
   var input = document.getElementById('wiki-search');
   if (input) {
-    var items = [].map.call(document.querySelectorAll('.qa'), function (el) {
+    var items = [].map.call(document.querySelectorAll('.qa, .spoiler'), function (el) {
       return { el: el, text: el.textContent.toLowerCase(), section: el.closest('article') };
     });
     var sections = [].slice.call(document.querySelectorAll('.wiki article'));
@@ -89,7 +91,7 @@
         if (ok) shown++;
       });
       sections.forEach(function (s) {
-        var any = s.querySelector('.qa:not([hidden])');
+        var any = s.querySelector('.qa:not([hidden]), .spoiler:not([hidden])');
         s.hidden = !any;
         var link = document.querySelector('.wiki-side a[href="#' + s.id + '"]');
         if (link) link.parentNode.hidden = !any;

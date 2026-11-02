@@ -238,12 +238,12 @@ p { margin: 0 0 1em; }
 
 /* ---------- Flip cards ---------- */
 .join-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.flip { cursor: pointer; perspective: 1200px; min-height: 380px; position: relative; }
+.flip { cursor: pointer; perspective: 1200px; min-height: 420px; position: relative; }
 .flip-btn {
   all: unset; position: absolute; inset: 0; pointer-events: none; z-index: 0; border-radius: var(--radius);
 }
 .flip-btn:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
-.flip-inner { position: relative; width: 100%; height: 100%; min-height: 380px; transition: transform .7s cubic-bezier(.3, .8, .3, 1); transform-style: preserve-3d; }
+.flip-inner { position: relative; width: 100%; height: 100%; min-height: 420px; transition: transform .7s cubic-bezier(.3, .8, .3, 1); transform-style: preserve-3d; }
 .flip.is-flipped .flip-inner { transform: rotateY(180deg); }
 .face {
   position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
@@ -265,6 +265,10 @@ p { margin: 0 0 1em; }
 .copy-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .copy-row .copy { margin-bottom: 0; }
 .face.back .copy { cursor: pointer; }
+.open-mc { background: var(--green); color: #07200a; text-decoration: none; font-size: .95rem; padding: 8px 16px; margin-bottom: 6px; }
+.open-mc:hover { background: #5fc94a; color: #07200a; }
+.open-mc-hint { font-size: .8rem; opacity: .85; margin: 0 0 8px; }
+.no-bedrock-link .open-mc, .no-bedrock-link .open-mc-hint { display: none; }
 .notice { margin-top: 28px; padding: 16px 20px; background: rgba(245, 197, 24, .08); border: 2px dashed var(--yellow-dark); border-radius: var(--radius); text-align: center; }
 
 /* ---------- FAQ ---------- */
@@ -389,6 +393,12 @@ p { margin: 0 0 1em; }
 .qa h3 { font-family: var(--font-body); font-weight: 700; font-size: 1.12rem; color: var(--yellow); margin: 0 0 10px; letter-spacing: 0; }
 .qa p { margin: 0; color: #d6e2cf; line-height: 1.8; }
 .qa code { white-space: nowrap; }
+.wiki-content { min-width: 0; }
+.qa table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin-top: 14px; color: #d6e2cf; }
+.qa th, .qa td { padding: 8px 14px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, .08); white-space: nowrap; }
+.qa th { color: var(--yellow); font-weight: 600; }
+.qa td:first-child, .qa th:first-child { text-align: left; }
+kbd { font: 600 .85em var(--font-body); background: var(--card-2); border: 1px solid var(--green-dark); border-radius: 6px; padding: 1px 7px; }
 .wiki-side { padding: 24px; }
 .wiki-side ul { max-height: calc(100vh - var(--nav-h) - 140px); overflow-y: auto; }
 .wiki-side a { padding: 9px 12px; }
@@ -400,9 +410,20 @@ p { margin: 0 0 1em; }
 .wiki-search input::placeholder { color: var(--muted); }
 .wiki-count { color: var(--muted); font-size: .85rem; white-space: nowrap; }
 .wiki-empty { text-align: center; color: var(--muted); padding: 48px 0; font-size: 1.1rem; }
+.spoiler { background: var(--card); border: 1px solid rgba(255, 255, 255, .07); border-left: 3px solid var(--yellow); border-radius: 10px; padding: 14px 20px; margin-top: 18px; }
+.spoiler > summary { cursor: pointer; font-family: var(--font-body); font-weight: 700; font-size: 1rem; color: var(--yellow); list-style: none; display: flex; align-items: baseline; gap: .55em; }
+.spoiler > summary::-webkit-details-marker { display: none; }
+.spoiler > summary::before { content: "+"; flex: none; color: var(--muted); font-weight: 700; }
+.spoiler[open] > summary::before { content: "–"; }
+.spoiler > summary:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; border-radius: 4px; }
+.spoiler p { margin: 12px 0 0; color: #d6e2cf; line-height: 1.8; }
+.spoiler code { white-space: nowrap; }
 @media (max-width: 900px) {
   .qa { padding: 20px; }
+  .qa code { white-space: normal; overflow-wrap: anywhere; }
   .wiki article { margin-bottom: 52px; }
+  .spoiler { padding: 12px 16px; }
+  .spoiler code { white-space: normal; overflow-wrap: anywhere; }
 }
 
 /* Search bar that docks into the sidebar (desktop only, positioned by JS) */
