@@ -35,6 +35,8 @@ Casual and adult survival players, friend groups, and players on different platf
 ## Wiki sections
 - [Getting started](https://craft.gillyb.net/wiki.html#basics)
 - [Survival rework](https://craft.gillyb.net/wiki.html#survival)
+- [Recipe book](https://craft.gillyb.net/recipes.html): searchable list of every survival-rework recipe (crafting, Mud Kiln, Oven, Blast Furnace, Kindling, Smithing Table, Stonecutter), with how to make each item and what it is used in.
+- [Advancement guide](https://craft.gillyb.net/advancements.html): every step of the survival rework's guided advancements (Tutorial, Nether, End) with what completes each one and its rewards, plus the Angler's Almanac fish list. Made for Bedrock players, who can't open the advancements menu.
 - [World & progression](https://craft.gillyb.net/wiki.html#world)
 - [Ranks](https://craft.gillyb.net/wiki.html#ranks)
 - [Homes & teleporting](https://craft.gillyb.net/wiki.html#travel)

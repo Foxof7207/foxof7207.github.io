@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advancement Guide – Gilly SMP Survival Rework Progression</title>
+  <meta name="description" content="Step-by-step advancement guide for Gilly SMP, made for Bedrock players who can't open the advancements menu: every Tutorial, Nether and End step of the survival rework, what completes it, its rewards, and the Angler's Almanac fish list.">
+  <link rel="canonical" href="https://craft.gillyb.net/advancements.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/advancements/advancements.json?v=34b96165" as="fetch" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/advancements.css?v=8786d631">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Gilly SMP Advancement Guide",
+  "url": "https://craft.gillyb.net/advancements.html",
+  "description": "Step-by-step advancement guide for the Gilly SMP survival rework, made for Bedrock players: Tutorial, Nether and End steps, rewards, and the Angler's Almanac.",
+  "inLanguage": "en",
+  "dateModified": "2026-11-13",
+  "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
+}
+  </script>
+<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+<script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+      <a class="brand" href="/">
+        <span>Gilly<b>SMP</b></span>
+      </a>
+      <nav class="nav-links right" aria-label="Resources">
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recipes</a>
+        <a href="/advancements.html" aria-current="page"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancements</a>
+        <a href="wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="assets/logo.webp" width="72" height="72" alt="">
+        <h1>The <em>Advancement</em> Guide</h1>
+        <p class="sub">The survival rework teaches you the game through its advancements, but Bedrock can't open that menu. Here is every step, in order, with exactly what the game checks for. Tick steps off as you go.</p>
+        <div class="badges">
+          <span class="badge y"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> 75 steps + 85 fish</span>
+          <span class="badge"><i class="ic" style="--i:url(/assets/icons/smartphone.svg)" aria-hidden="true"></i> Made for Bedrock</span>
+          <a class="badge y" href="recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Recipe Book →</a>
+        </div>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+
+    <div class="tool-page container">
+      <p class="spoiler-note"><span aria-hidden="true">⚠</span><span><b>Spoilers ahead.</b> Java players see these hints in the advancements menu (<kbd>L</kbd>); this page also says exactly what completes each step. Your ticks are saved on this device only. Press <kbd>/</kbd> to search.</span></p>
+
+      <div id="av-tabs" class="av-tabs" role="tablist" aria-label="Advancement tabs"></div>
+      <div class="av-bar">
+        <div class="av-search" role="search">
+          <i class="ic" style="--i:url(/assets/icons/search.svg)" aria-hidden="true"></i>
+          <input id="av-q" type="search" placeholder="Search a step (e.g. kiln, steel, curry)" aria-label="Search advancements" autocomplete="off" enterkeyhint="search">
+        </div>
+        <label class="av-toggle"><input id="av-hide" type="checkbox"> Hide completed</label>
+      </div>
+      <div class="av-progress">
+        <div class="av-xp" aria-hidden="true"><i id="av-xp-fill"></i></div>
+        <span id="av-xp-text" class="t" aria-live="polite"></span>
+        <button id="av-reset" class="av-reset" type="button">Reset</button>
+      </div>
+      <p id="av-loading" class="av-empty">Loading the guide…</p>
+      <div id="av-root"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>A non pay-to-win crossplay survival SMP. Java, Bedrock and console, one world.</p>
+      </div>
+      <nav class="f-col" aria-label="Explore">
+        <h3 class="f-title">Explore</h3>
+        <a href="/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Home</a>
+        <a href="/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> How to Join</a>
+        <a href="/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Recipe Book</a>
+        <a href="/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancement Guide</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-13">November 13, 2026</time></p>
+      <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/advancements.js?v=aebec9b1"></script>
+</body>
+</html>
