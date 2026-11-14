@@ -1,0 +1,104 @@
+/* ---------- Advancement guide (advancements.html) ----------
+   Cards borrow the Minecraft advancement tooltip: coloured title bar by type (task / goal / challenge),
+   the in-game frame sprite around the icon, and a gold bar once the step is ticked off. */
+
+
+.av-sprite { display: inline-block; width: 32px; height: 32px; background: url(/assets/advancements/adv.png?v=37e1183f) no-repeat; image-rendering: pixelated; flex: none; }
+.av-item { display: inline-block; width: 20px; height: 20px; background: url(/assets/recipes/items.png?v=f1d307ee) no-repeat; background-size: 640px auto; image-rendering: pixelated; flex: none; }
+
+/* tabs (Minecraft advancement tabs) */
+.av-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 0 0 14px; }
+.av-tab { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 6px 8px; cursor: pointer; font: inherit; color: var(--text);
+  background: var(--card); border: 2px solid var(--card-2); border-radius: 12px 12px 4px 4px; }
+.av-tab:hover { border-color: var(--green-dark); }
+.av-tab[aria-selected="true"] { background: var(--card-2); border-color: var(--yellow); box-shadow: inset 0 -4px 0 var(--yellow); }
+.av-tab .nm { font-weight: 600; font-size: .9rem; line-height: 1.15; text-align: center; }
+.av-tab .pg { font-size: .75rem; color: var(--muted); }
+
+/* sticky tools */
+.av-bar { position: sticky; top: var(--nav-h); z-index: 20; background: rgba(11, 20, 12, .94); backdrop-filter: blur(8px); padding: 10px 0; margin: 0 0 10px;
+  border-bottom: 1px solid var(--card-2); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.av-search { flex: 1 1 260px; display: flex; align-items: center; gap: 10px; background: var(--card); border: 2px solid var(--card-2); border-radius: 12px; padding: 0 14px; }
+.av-search:focus-within { border-color: var(--green); }
+.av-search .ic { width: 18px; height: 18px; opacity: .7; }
+.av-search input { flex: 1; min-width: 0; background: none; border: 0; color: var(--text); font: inherit; padding: 11px 0; outline: none; }
+.av-search input::-webkit-search-cancel-button { filter: invert(1); }
+.av-toggle { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); cursor: pointer; user-select: none; }
+.av-toggle input { width: 18px; height: 18px; accent-color: var(--green); }
+
+/* progress (XP bar) */
+.av-progress { display: flex; align-items: center; gap: 12px; margin: 6px 0 18px; }
+.av-xp { flex: 1; height: 12px; background: #1a1a1a; border: 2px solid #000; border-radius: 3px; overflow: hidden; }
+.av-xp i { display: block; height: 100%; width: 0; background: linear-gradient(#b5f55b, #80c71f 60%, #5c9a12); transition: width .3s; }
+.av-progress .t { font-size: .9rem; color: var(--muted); white-space: nowrap; }
+.av-progress .t b { color: #b5f55b; }
+.av-reset { background: none; border: 0; color: var(--muted); font: inherit; font-size: .8rem; text-decoration: underline; cursor: pointer; padding: 0; }
+.av-reset:hover { color: var(--text); }
+
+.av-note { background: rgba(245, 197, 24, .08); border-left: 4px solid var(--yellow); border-radius: 6px; padding: 8px 12px; margin: 0 0 18px; font-size: .92rem; }
+
+/* chapters */
+.av-chapter { margin: 0 0 34px; }
+.av-chapter h2 { text-align: left; font-size: clamp(1.4rem, 3.4vw, 1.9rem); margin: 0 0 .2em; padding-bottom: 10px; border-bottom: 3px solid var(--green-dark); }
+.av-chapter > p { color: var(--muted); margin: 8px 0 16px; }
+.av-chapter .strong.y, .av-chapter strong.y { color: var(--yellow); }
+.av-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 14px; }
+
+/* advancement card */
+.ac { background: var(--card); border: 2px solid #000; border-radius: 6px; overflow: hidden; scroll-margin-top: calc(var(--nav-h) + 90px); transition: box-shadow .3s; }
+.ac.flash { box-shadow: 0 0 0 3px var(--yellow); }
+.ac-bar { display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; background: var(--bar); box-shadow: inset 0 2px 0 var(--bar-hi); border-bottom: 2px solid #000; }
+.ac[data-f="task"] { --bar: #2f7d24; --bar-hi: #4caf3a; }
+.ac[data-f="goal"] { --bar: #1d4f8f; --bar-hi: #3a74c0; }
+.ac[data-f="challenge"] { --bar: #5b2c87; --bar-hi: #8452b5; }
+.ac.done { --bar: #9a7408; --bar-hi: #f5c518; }
+.ac-frame { width: 52px; height: 52px; flex: none; position: relative; background: url(/assets/advancements/frames.png) no-repeat; background-size: 312px 52px; image-rendering: pixelated; display: grid; place-items: center; }
+.ac-frame .av-sprite { position: relative; }
+.ac-head { flex: 1; min-width: 0; }
+.ac-title { margin: 0; font-family: var(--font-body); font-weight: 700; font-size: 1.02rem; line-height: 1.25; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, .45); }
+.ac-meta { font-size: .72rem; letter-spacing: .5px; text-transform: uppercase; color: rgba(255, 255, 255, .85); }
+.ac-meta .hid { color: #ffb3b2; }
+.ac-check { flex: none; width: 40px; height: 40px; border-radius: 8px; border: 2px solid rgba(0, 0, 0, .55); background: rgba(0, 0, 0, .25); cursor: pointer;
+  display: grid; place-items: center; color: transparent; font-size: 1.3rem; font-weight: 700; padding: 0; }
+.ac-check:hover { background: rgba(0, 0, 0, .4); }
+.ac.done .ac-check { background: #f5c518; color: #2a1f00; border-color: #000; }
+.ac-body { padding: 10px 14px 14px; font-size: .95rem; }
+.ac-body p { margin: 0 0 6px; }
+.ac-after { font-size: .82rem; color: var(--muted); }
+.ac-after a { color: #8fe3ff; }
+.ac-hint { font-style: italic; color: var(--muted); }
+.lbl { font-family: var(--font-title); font-size: .78rem; letter-spacing: .6px; margin-right: 6px; }
+.lbl.todo { color: var(--yellow); }
+.lbl.tip { color: #8fe3ff; }
+.lbl.rw { color: var(--green); }
+.ac-body strong.y { color: var(--yellow); }
+.glyph { width: 16px; height: 16px; image-rendering: pixelated; vertical-align: -3px; }
+.rw-obol { color: var(--green); font-weight: 600; }
+.rw-heart { color: #ff7a78; font-weight: 600; }
+.rw-note { color: var(--muted); font-size: .85rem; }
+.ac-recipes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.ac-recipes a { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 5px; border-radius: 999px; background: #c6c6c6; color: #3f3f3f;
+  font-size: .8rem; font-weight: 600; text-decoration: none; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #555; }
+.ac-recipes a:hover { background: #d8d8d8; color: #222; }
+
+/* almanac */
+.fish { display: flex; gap: 12px; align-items: flex-start; background: var(--card); border: 2px solid var(--card-2); border-radius: 10px; padding: 10px 12px; }
+.fish.done { border-color: var(--yellow); }
+.fish .slot { width: 44px; height: 44px; flex: none; background: #8b8b8b; box-shadow: inset 2px 2px 0 #373737, inset -2px -2px 0 #fff; display: grid; place-items: center; }
+.fish .bd { flex: 1; min-width: 0; }
+.fish h3 { font-family: var(--font-body); font-weight: 700; font-size: 1rem; color: var(--text); margin: 0; }
+.fish .stars { color: #ffd84a; letter-spacing: 1px; font-size: .85rem; }
+.fish .stars .off { color: #4b5a4e; }
+.fish .ch { color: var(--muted); font-size: .8rem; }
+.fish p { margin: 4px 0 0; font-size: .88rem; color: var(--muted); font-style: italic; }
+.fish .ac-check { width: 34px; height: 34px; border-color: var(--card-2); }
+.fish.done .ac-check { background: #f5c518; color: #2a1f00; border-color: #000; }
+
+.av-empty { color: var(--muted); text-align: center; padding: 30px 0; }
+
+@media (max-width: 600px) {
+  .av-tabs { gap: 6px; }
+  .av-tab { padding: 8px 4px 6px; }
+  .av-tab .nm { font-size: .78rem; }
+  .ac-body { font-size: .93rem; }
+}
