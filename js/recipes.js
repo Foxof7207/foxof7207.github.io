@@ -305,17 +305,59 @@
 
   function loreLabel(line) {
     if (line.length !== 1) return null;
-    var t = line[0][0], m = /^([\ue000-\ue05f]) [+\-]?[\d.]+$/.exec(t);
-    if (m) return GLYPH_LABEL[m[1].charCodeAt(0) - 0xe000] || null;
-    if (/^[\ue030\ue032]+$/.test(t)) return ' heals';
-    if (/^[\ue030\ue032]+ \(/.test(t) && line[0][1] === 'aqua') return ' absorption';
+    var m = /^([\ue000-\ue05f]) [+\-]?[\d.]+$/.exec(line[0][0]);
+    return m ? GLYPH_LABEL[m[1].charCodeAt(0) - 0xe000] || null : null;
+  }
+
+  // a heart glyph is 1 heart (2 HP), a half heart 1 HP; the datapack's food hearts match its Regeneration effect exactly
+  function heartsHP(t) { return (t.match(/\ue030/g) || []).length * 2 + (t.match(/\ue032/g) || []).length; }
+  function num(n) { return String(Math.round(n * 100) / 100); }
+  function hearts(hp) { return num(hp / 2) + (hp === 2 ? ' heart' : ' hearts'); }
+
+  // the stats players care about most get spelled out in full: health gained, damage per hit
+  function keyStat(line, it, regenIdx) {
+    if (line.length !== 1) return null;
+    var t = line[0][0], col = line[0][1], m;
+    if ((m = /^([\ue030\ue032]+)$/.exec(t)) && col === 'red') {
+      var hp = heartsHP(m[1]);
+      return [m[1], 'Heals ' + hearts(hp), ' (' + hp + ' HP)'];
+    }
+    if ((m = /^([\ue030\ue032]+) \((.+)\)$/.exec(t)) && col === 'aqua') {
+      var ab = heartsHP(m[1]);
+      return [m[1], '+' + hearts(ab) + ' absorption', ' (' + ab + ' HP) for ' + m[2]];
+    }
+    if ((m = /^\ue030 (Regen(?: I+)?) \((.+)\)$/.exec(t)) && it.rg && it.rg[regenIdx] != null) {
+      // shown as a rate: the total over a long effect is mostly capped by max health
+      var rh = it.rg[regenIdx], secs = m[2].split(':').reduce(function (a, x) { return a * 60 + (+x); }, 0);
+      return ['\ue030', m[1] + ': +1 HP every ' + num(secs / rh) + 's', ' for ' + m[2] + ' (up to ' + rh + ' HP)'];
+    }
+    if ((m = /^\ue037 ([\d.]+)$/.exec(t))) {
+      var dmg = parseFloat(m[1]);
+      return ['\ue037', dmg + ' damage per hit', ' (' + hearts(dmg) + ')'];
+    }
+    if ((m = /^\ue012 ([\d.]+)$/.exec(t))) {
+      var cd = parseFloat(m[1]), dl = (it.l || []).filter(function (l) { return l.length === 1 && /^\ue037 [\d.]+$/.test(l[0][0]); })[0];
+      return ['\ue012', cd + 's between hits', dl && cd ? ' (' + Math.round(parseFloat(dl[0][0].slice(2)) / cd * 10) / 10 + ' damage/s)' : ''];
+    }
     return null;
   }
 
   function statLines(key, box) {
     var it = ITEMS[key] || {};
+    var regenIdx = 0; // the n-th "Regen (time)" line heals it.rg[n] HP
     (it.l || []).forEach(function (line) {
       var d = el('div', 'lo');
+      var ks = keyStat(line, it, regenIdx);
+      if (line.length === 1 && /^\ue030 Regen/.test(line[0][0])) regenIdx++;
+      if (ks) {
+        var sp = el('span', 'lo-v'); var c0 = color(line[0][1]); if (c0) sp.style.color = c0;
+        glyphText(sp, ks[0]);
+        sp.appendChild(document.createTextNode(' ' + ks[1]));
+        d.appendChild(sp);
+        if (ks[2]) d.appendChild(el('span', 'lo-k', ks[2]));
+        box.appendChild(d);
+        return;
+      }
       line.forEach(function (s) {
         var sp = el('span'); var c = color(s[1]); if (c) sp.style.color = c;
         glyphText(sp, s[0]); d.appendChild(sp);
@@ -413,7 +455,7 @@
   bg.addEventListener('click', function (e) { if (e.target === bg) closeSheet(); });
 
   // ---------- boot ----------
-  fetch('/assets/recipes/recipes.json?v=e49cfcf8').then(function (r) { return r.json(); }).then(function (data) {
+  fetch('/assets/recipes/recipes.json?v=6c655678').then(function (r) { return r.json(); }).then(function (data) {
     build(data);
     readHash();
     renderChips();

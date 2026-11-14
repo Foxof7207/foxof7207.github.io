@@ -79,6 +79,7 @@
 .mc-tip .tip-n { color: #fff; margin-bottom: 2px; }
 .mc-tip .lo { display: flex; align-items: center; flex-wrap: wrap; min-height: 18px; font-size: .82rem; }
 .mc-tip .lo > span { display: inline-flex; align-items: center; white-space: pre-wrap; }
+.mc-tip .lo-v { display: inline-flex; align-items: center; font-weight: 600; white-space: pre; }
 .mc-tip .lo-k { color: #9a9ab8; font-size: .74rem; white-space: pre; }
 .mc-tip .lo-dur { color: #9a9ab8; font-size: .74rem; margin-top: 2px; }
 /* datapack font glyphs (hearts, sword, armor...), tinted by the lore colour */
