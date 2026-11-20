@@ -1,0 +1,117 @@
+{
+  "slug": "points-orders-trading",
+  "title": "Points, Orders & Trading",
+  "h1": "Gilly SMP Points, Orders, Player Trading and Referral Rewards Guide",
+  "description": "Learn how Gilly SMP points work, check balances, post buy orders, trade safely with players, earn points by voting and refer friends for diamond rewards.",
+  "intro": "Gilly SMP runs a player-driven economy built on points, a buy-order market and direct trades between players. This guide covers earning and spending points, how orders and trades work, plus voting, referrals and the travel commands you will use to reach other players.",
+  "groups": [
+    {
+      "title": "Points, payments and voting",
+      "items": [
+        {
+          "q": "What are points on Gilly SMP and how do I check my balance?",
+          "a": "Points are the server currency on Gilly SMP, and every “money” price on the server is in points. Check your balance with <code>/points me</code> (or <code>/p me</code>). New players start with 0 points, and the server does not hand them out directly."
+        },
+        {
+          "q": "How do I get points on Gilly SMP?",
+          "a": "You earn points on Gilly SMP by selling items to other players, either through the order market or in a player trade. New players start at 0 points and the server does not hand them out, so the economy is entirely player-driven. You can also earn points by voting with <code>/vote</code>."
+        },
+        {
+          "q": "How do I pay another player points on Gilly SMP?",
+          "a": "Pay another player with <code>/points pay &lt;player&gt; &lt;amount&gt;</code>. The amount must be a whole number of at least 1 point; paying less than 1 is refused."
+        },
+        {
+          "q": "Can I see another player's points balance or the leaderboard?",
+          "a": "Use <code>/points look &lt;player&gt;</code> to see someone else's points balance and <code>/points lead</code> to open the points leaderboard. Your own balance is <code>/points me</code> (or <code>/p me</code>)."
+        },
+        {
+          "q": "How do I vote for points on Gilly SMP?",
+          "a": "Type <code>/vote</code> to vote for Gilly SMP and earn points. You can vote again after each vote site's cooldown has passed."
+        }
+      ]
+    },
+    {
+      "title": "The order market",
+      "items": [
+        {
+          "q": "How does the order market work on Gilly SMP?",
+          "a": "Type <code>/order</code> (or <code>/orders</code>) to open the order market on Gilly SMP. Post a buy order with the item, amount and a price per item of at least 1 point, and the points are reserved up front. Other players deliver the items and are paid instantly, even while you are offline, and you collect the items later from Your orders."
+        },
+        {
+          "q": "How many active orders can I have, and do ranks increase that limit?",
+          "a": "You can have 5 active orders by default on Gilly SMP. Ranks raise the limit: Bronze gets 7, Gold gets 10 and Diamond gets 15 active orders. Each rank includes the perks of the ranks below it."
+        },
+        {
+          "q": "Do orders expire, and can I be paid while offline on Gilly SMP?",
+          "a": "Orders expire after 14 days on Gilly SMP. New orders are announced in chat, and items can be delivered from shulker boxes. When a player delivers to your buy order, they are paid instantly even if you are offline, and you pick up the items later from Your orders."
+        },
+        {
+          "q": "Do items have to match a buy order exactly on Gilly SMP?",
+          "a": "Yes. Items delivered to a buy order on Gilly SMP must match it exactly: enchantments, damage, custom names and contents are all checked. Check the order details carefully before delivering, because a near match will not satisfy the order."
+        }
+      ]
+    },
+    {
+      "title": "Player trades",
+      "items": [
+        {
+          "q": "How do I trade with another player on Gilly SMP?",
+          "a": "Crouch and right-click another player, or use <code>/trade &lt;player&gt;</code>, to start a trade. You must be within 10 blocks, in the same world and not in creative mode. Both sides can offer items and points, and the trade completes only when both players accept; there is a 20-second cooldown between trade requests. Bedrock players can pick a player from <code>/menu</code> → Trade."
+        },
+        {
+          "q": "Can you trade XP with other players on Gilly SMP?",
+          "a": "No. XP cannot be traded between players on Gilly SMP because the survival rework manages XP itself. Trades can only exchange items and points, and both sides must accept before the trade goes through."
+        }
+      ]
+    },
+    {
+      "title": "Referrals and travel",
+      "items": [
+        {
+          "q": "How do referrals work on Gilly SMP and what are the rewards?",
+          "a": "Run <code>/referral</code> to see your personal referral code and give it to a friend, who types <code>/refer &lt;code&gt;</code> after joining. Your friend gets 5 diamonds immediately, and you get 10 diamonds once they have played for 2 hours. The code must be used within the new player's first 24 hours of playtime; you can refer up to 5 players, with only one referral per IP address. <code>/referraltop</code> shows the leaderboard."
+        },
+        {
+          "q": "How do I visit a public home or teleport to a friend on Gilly SMP?",
+          "a": "List public homes with <code>/phomes</code> and visit one using <code>/phome &lt;owner&gt;+&lt;home&gt;</code>, for example <code>/phome Steve+shop</code> — note the + between the owner and the home name. To teleport to a player, use <code>/tpa &lt;player&gt;</code> to ask to go to them or <code>/tpahere &lt;player&gt;</code> to ask them to come to you; they answer with <code>/tpaccept</code> or <code>/tpdecline</code> within 60 seconds. All teleports have a 3-second warmup that is cancelled by moving or taking damage."
+        },
+        {
+          "q": "Is there an /rtp command on Gilly SMP?",
+          "a": "There is no <code>/rtp</code> command on Gilly SMP. Instead, step into the RTP cannon at spawn and it fires you 500 to 5000 blocks away onto safe ground, with a slow fall. It has a 30-second cooldown; ask on Discord if you cannot find the cannon."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/wiki.html#economy",
+      "label": "Wiki: Points, orders & trading"
+    },
+    {
+      "url": "/wiki.html#travel",
+      "label": "Wiki: Homes & teleporting"
+    },
+    {
+      "url": "/wiki.html#referral",
+      "label": "Wiki: Referrals"
+    },
+    {
+      "url": "/wiki.html#commands",
+      "label": "Wiki: All commands"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/ranks-and-storage.html",
+      "label": "Ranks & storage"
+    },
+    {
+      "url": "/guides/chat-voice-afk.html",
+      "label": "Chat, voice & AFK"
+    },
+    {
+      "url": "/guides/rules-support-qol.html",
+      "label": "Rules, support & quality of life"
+    }
+  ]
+}

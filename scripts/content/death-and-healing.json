@@ -1,0 +1,108 @@
+{
+  "slug": "death-and-healing",
+  "title": "Death & Healing",
+  "h1": "Gilly SMP Death & Healing: Hearts, Crystal Hearts and How to Heal",
+  "description": "Gilly SMP death: keep items and XP, lose 1 max heart (min 10 on Easy). Crystal Hearts restore up to 30 hearts; heal with food effects, potions and special items",
+  "intro": "Death and healing work differently on Gilly SMP because of its custom survival rework for Minecraft 26.3. There is no natural regeneration and hunger is effectively gone, while dying costs maximum hearts rather than your gear. This guide covers the exact death penalties, the 10-heart Easy minimum, Crystal Hearts and how you actually recover health.",
+  "groups": [
+    {
+      "title": "Death penalties",
+      "items": [
+        {
+          "q": "What do you lose when you die on Gilly SMP?",
+          "a": "When you die on Gilly SMP you lose 1 maximum heart, but you keep your entire inventory and all of your XP. Thrown ender pearls also don't vanish when you die. On Easy difficulty your maximum hearts can never drop below 10. Details are in the <a href=\"/wiki.html#survival\">Survival rework</a> section."
+        },
+        {
+          "q": "How many hearts do you lose when you die on Gilly SMP?",
+          "a": "Every death on Gilly SMP removes exactly 1 maximum heart from your health cap. Because the server runs on Easy, you never drop below 10 hearts no matter how many times you die. You can earn those hearts back with Crystal Hearts, which restore 1 maximum heart each up to a cap of 30."
+        },
+        {
+          "q": "Do you keep your items and XP when you die on Gilly SMP?",
+          "a": "Yes. On Gilly SMP you keep all your items and all your XP when you die, so there is no inventory or experience penalty. The only cost is 1 maximum heart per death, down to a minimum of 10 hearts on Easy. XP can't be traded either, since the survival rework manages XP itself."
+        },
+        {
+          "q": "What is the minimum number of hearts you can have on Gilly SMP?",
+          "a": "The minimum on Gilly SMP is 10 maximum hearts, because the server runs on Easy difficulty. Each death costs 1 maximum heart, but on Easy that loss stops once you reach 10 hearts. On Normal the rework can switch the world to Hard as players progress, but on Easy it stays Easy, so the 10-heart floor always applies."
+        },
+        {
+          "q": "Do ender pearls disappear when you die on Gilly SMP?",
+          "a": "No. Thrown ender pearls don't vanish when you die on Gilly SMP, so you don't lose them as a death penalty. This applies on top of the normal rules: you keep your inventory and XP and only lose 1 maximum heart, never below 10 on Easy."
+        },
+        {
+          "q": "Which Minecraft server has no natural regeneration and no hunger?",
+          "a": "Gilly SMP runs the Matcha Flavoured rework, where natural regeneration is off and hunger is effectively gone. You heal with food effects, potions and special items instead. Dying keeps your inventory and XP but costs one maximum heart, down to a 10-heart minimum on Easy."
+        }
+      ]
+    },
+    {
+      "title": "Healing and hunger",
+      "items": [
+        {
+          "q": "Why can't I heal naturally on Gilly SMP?",
+          "a": "Natural health regeneration is switched off on Gilly SMP as part of the survival rework for Minecraft 26.3. Waiting around won't restore your health, so you need to heal actively with food effects, potions or special items. This is why players who assume vanilla regeneration often say they can't heal."
+        },
+        {
+          "q": "How do you heal on Gilly SMP without natural regeneration?",
+          "a": "You heal on Gilly SMP by eating foods with healing effects, drinking potions and using special items; natural regeneration is off. There are about 50 foods in the rework, and food is valued for its effects rather than for filling a hunger bar. The <a href=\"/recipes.html\">Recipe Book</a> lists the custom foods and items."
+        },
+        {
+          "q": "Does hunger exist on Gilly SMP?",
+          "a": "Hunger is effectively gone on Gilly SMP. You won't starve, and food is about the effects it gives you instead of filling a hunger bar. That is why healing depends on food effects, potions and special items rather than eating to refill a bar."
+        },
+        {
+          "q": "What can I eat or use to recover health on Gilly SMP?",
+          "a": "To recover health on Gilly SMP, eat foods that give healing effects, drink healing potions or use special healing items. Natural regeneration is off, so simply eating to fill a bar does nothing for your health. The rework adds about 50 foods, many with effects, and you can look them up in the <a href=\"/recipes.html\">Recipe Book</a>."
+        }
+      ]
+    },
+    {
+      "title": "Crystal Hearts and max hearts",
+      "items": [
+        {
+          "q": "What do Crystal Hearts do on Gilly SMP?",
+          "a": "Crystal Hearts add 1 maximum heart back on Gilly SMP, reversing the 1 maximum heart you lose on each death. They work up to a cap of 30 maximum hearts. Because natural regeneration is off, they are the way to rebuild your health cap after deaths."
+        },
+        {
+          "q": "How many maximum hearts can you have on Gilly SMP?",
+          "a": "You can reach up to 30 maximum hearts on Gilly SMP by using Crystal Hearts. Each death removes 1 maximum heart, but Easy difficulty guarantees you never fall below 10 hearts, and Crystal Hearts restore hearts up to the 30 cap. The rules are covered in the <a href=\"/wiki.html#world\">World and progression</a> section."
+        },
+        {
+          "q": "How do I get my lost hearts back after dying on Gilly SMP?",
+          "a": "Each death on Gilly SMP costs 1 maximum heart, and you get it back with a Crystal Heart, which restores 1 maximum heart up to 30. You keep your inventory and XP on death, and on Easy you can never drop below 10 hearts. Natural regeneration is off, so hearts come from Crystal Hearts while health itself comes from food effects, potions and special items."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/wiki.html#survival",
+      "label": "Wiki: Survival rework"
+    },
+    {
+      "url": "/wiki.html#world",
+      "label": "Wiki: World & progression"
+    },
+    {
+      "url": "/recipes.html",
+      "label": "Recipe Book"
+    },
+    {
+      "url": "/advancements.html",
+      "label": "Advancement Guide"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/mobs-and-darkness.html",
+      "label": "Mobs & Darkness"
+    },
+    {
+      "url": "/guides/recipes-and-advancements.html",
+      "label": "Recipes & Advancements"
+    },
+    {
+      "url": "/guides/world-and-dimensions.html",
+      "label": "World & Dimensions"
+    }
+  ]
+}

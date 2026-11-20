@@ -1,0 +1,79 @@
+{
+  "slug": "crossplay",
+  "title": "Crossplay & Accounts",
+  "h1": "Gilly SMP crossplay: Java, Bedrock and console in one world",
+  "description": "How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.",
+  "intro": "Gilly SMP runs one shared world for Java, Bedrock and console players. This guide covers how the platforms connect, how to keep progress when you play on more than one, and what changes visually on Bedrock.",
+  "groups": [
+    {
+      "title": "Playing together across platforms",
+      "items": [
+        {
+          "q": "Can Java and Bedrock players play together on Gilly SMP?",
+          "a": "Yes. Java, Bedrock and console players all share one world on Gilly SMP. You can build, trade and explore together regardless of platform, because the server runs a custom crossplay setup rather than separate worlds."
+        },
+        {
+          "q": "Can Xbox, PlayStation and Switch players join Gilly SMP?",
+          "a": "Yes. Console players add <code>GillySMP</code> as a friend and then join from the console's Friends tab. A console online subscription is required, and that subscription is provided by the console maker, not by Gilly SMP. See the <a href=\"/wiki.html#basics\">Getting started section</a>."
+        },
+        {
+          "q": "Can I use the same inventory and XP on Java and Bedrock?",
+          "a": "Yes, once you link the accounts. Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other. The two accounts then share one player profile, so inventory, XP and progress follow you between platforms. Use <code>/unlinkaccount</code> to undo the link."
+        },
+        {
+          "q": "Why does my Bedrock name start with an underscore?",
+          "a": "Bedrock names get a <code>_</code> prefix on Gilly SMP, and spaces become underscores, so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one consistent name everywhere you play."
+        },
+        {
+          "q": "Are there any Minecraft servers with Java and Bedrock crossplay in Europe?",
+          "a": "Gilly SMP is hosted in France and is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world. <code>/linkaccount</code> syncs inventory and XP between accounts, and a Bedrock-compatible resource pack is in development so Bedrock will eventually see the custom textures too."
+        }
+      ]
+    },
+    {
+      "title": "Resource packs and mods",
+      "items": [
+        {
+          "q": "Do Bedrock players need the Gilly SMP resource pack?",
+          "a": "No. The Gilly SMP resource pack is a Java pack and Bedrock cannot load it. Bedrock players always see vanilla textures and some raw item keys, but every item and mechanic still works the same way."
+        },
+        {
+          "q": "What happens if I don't accept the resource pack on Java?",
+          "a": "The server sends the Gilly SMP resource pack automatically when you join — just accept the prompt. If you don't, custom items look like vanilla items and some show raw text names. You can rejoin and accept it, or check Options → Resource Packs."
+        },
+        {
+          "q": "Are mods allowed on Gilly SMP?",
+          "a": "Client-side mods for performance, minimaps, shaders and voice chat are fine, and no mods are required to play. Cheat mods such as X-ray, freecam and hacked clients are banned; the server runs anti-cheat and staff may ask a suspected player to run a verification mod."
+        },
+        {
+          "q": "Do I need a paid Minecraft account to join?",
+          "a": "Yes. Gilly SMP runs in online mode, so a legitimate Minecraft account is required. Cracked or offline launchers cannot connect. There is no whitelist, so any legitimate account can join."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/wiki.html#basics",
+      "label": "Wiki: Getting started"
+    },
+    {
+      "url": "/wiki.html#rules",
+      "label": "Wiki: Rules"
+    },
+    {
+      "url": "/wiki.html#faq",
+      "label": "Wiki: FAQ"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/join.html",
+      "label": "Joining Gilly SMP"
+    },
+    {
+      "url": "/guides/recipes-and-advancements.html",
+      "label": "Recipes & advancements"
+    }
+  ]
+}

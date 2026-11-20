@@ -1,0 +1,95 @@
+{
+  "slug": "what-is-matcha",
+  "title": "What Is Matcha Flavoured?",
+  "h1": "What is Matcha Flavoured? How the datapack changes survival on Gilly SMP",
+  "description": "What is Matcha Flavoured? How this Minecraft datapack removes hunger and natural regeneration, adds alloys, reworks death and suits casual survival play.",
+  "intro": "Matcha Flavoured is a Minecraft datapack that reworks survival for casual players. Gilly SMP runs it as a crossplay server. These answers explain the pack in plain language and cover the spelling variants people search for.",
+  "groups": [
+    {
+      "title": "The basics",
+      "items": [
+        {
+          "q": "What is the Matcha Flavoured datapack?",
+          "a": "Matcha Flavoured is a Minecraft Java datapack and companion resource pack by Klei Wright that reworks survival progression so casual, non-technical players can gather resources as efficiently as technical players. It removes hunger and natural regeneration, adds alloys and new foods, reworks trading and enchanting, and makes death less punishing. Gilly SMP runs it server-side so you can join without installing it."
+        },
+        {
+          "q": "Why do people write \"Matcha Flavored\" with an o?",
+          "a": "Matcha Flavoured is the British spelling used by the creator; Matcha Flavored is the American spelling many players type. Both refer to the same datapack. Searching either spelling will find the same guides and servers, including Gilly SMP."
+        },
+        {
+          "q": "What does Matcha Flavoured change in Minecraft?",
+          "a": "It replaces hunger with a cooking system where food effects matter, turns off natural regeneration, makes death cost a maximum heart instead of items, adds new alloys and hybrid tools, overhauls villager trades, fishing and world generation, and makes enchanting a crafting process. Gilly SMP adds a non pay-to-win economy and crossplay on top."
+        },
+        {
+          "q": "Is Matcha Flavoured a mod or a datapack?",
+          "a": "It is a datapack with a companion resource pack, not a gameplay mod you install on your client. On Gilly SMP it runs on the server, so Java players only need Minecraft 26.3 and the server resource pack, which is sent automatically. Bedrock cannot load Java resource packs, so Bedrock players see vanilla textures for now while a compatible pack is developed."
+        },
+        {
+          "q": "What Minecraft version does Matcha Flavoured use on Gilly SMP?",
+          "a": "Gilly SMP runs Matcha Flavoured on Minecraft Java 26.3. Java players need 26.3 to connect to <code>mc.gillyb.net</code>; Bedrock players connect on port 19132. The datapack is updated with the game, so check the <a href=\"/wiki.html#basics\">Getting started page</a> for the current required version."
+        }
+      ]
+    },
+    {
+      "title": "Survival rules",
+      "items": [
+        {
+          "q": "Does Matcha Flavoured remove hunger?",
+          "a": "Yes. Hunger is effectively gone in Matcha Flavoured: you do not starve, and food is about its effects instead of filling a bar. On Gilly SMP there are about 50 new foods, and healing comes from food effects, potions and special items."
+        },
+        {
+          "q": "Does Matcha Flavoured disable natural regeneration?",
+          "a": "Yes. Natural health regeneration is off in Matcha Flavoured. You heal by eating foods with healing effects, drinking potions or using special items. On Gilly SMP this is one of the core rules, so bring food when you explore caves."
+        },
+        {
+          "q": "How does death work in Matcha Flavoured?",
+          "a": "You keep your inventory and XP, but each death removes one maximum heart. On Gilly SMP the server runs Easy, where your maximum never drops below 10 hearts. Crystal Hearts restore maximum hearts up to 30, and thrown ender pearls do not vanish when you die."
+        },
+        {
+          "q": "Does Matcha Flavoured get rid of mob farms?",
+          "a": "It is designed so you do not need them. Progression rewards exploration, cooking, fishing and trading instead of technical grinders. On Gilly SMP creepers, spiders and other non-undead monsters do not spawn in the open Overworld, and there are no phantoms."
+        },
+        {
+          "q": "What alloys does Matcha Flavoured add?",
+          "a": "The rework adds four alloys smithed onto base metals: Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond. Gilly SMP also has mattocks and dolabras, two-in-one tools, and custom stations such as the Mud Kiln and Blast Furnace."
+        },
+        {
+          "q": "Is Matcha Flavoured good for casual players?",
+          "a": "Yes. It was made for players who like to explore, farm, cook and build instead of building mob farms or villager halls. Gilly SMP runs it on Easy with a slower progression guided by advancements, which is why it suits casual and adult players."
+        },
+        {
+          "q": "Can you play Matcha Flavoured on a server with friends?",
+          "a": "Yes. Gilly SMP runs Matcha Flavoured as a multiplayer server with one shared world for Java, Bedrock and console players. You can link accounts with <code>/linkaccount</code> to keep one inventory and XP across platforms, and use the order market and trades to exchange items."
+        },
+        {
+          "q": "Where can I play Matcha Flavoured online?",
+          "a": "You can join Gilly SMP, a non pay-to-win European server running the datapack with Java–Bedrock crossplay. Connect with <code>mc.gillyb.net</code> on Java 26.3 or port 19132 on Bedrock. See <a href=\"/guides/matcha-server.html\">Find a Matcha Flavoured server</a> for what to check when choosing one."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/recipes.html",
+      "label": "Recipe Book"
+    },
+    {
+      "url": "/advancements.html",
+      "label": "Advancement Guide"
+    },
+    {
+      "url": "/wiki.html#survival",
+      "label": "Wiki: Survival rework"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/matcha-server.html",
+      "label": "Find a Matcha Flavoured server"
+    },
+    {
+      "url": "/guides/alloys-and-stations.html",
+      "label": "Alloys & stations"
+    }
+  ]
+}

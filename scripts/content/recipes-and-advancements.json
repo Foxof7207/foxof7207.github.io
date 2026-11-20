@@ -1,0 +1,75 @@
+{
+  "slug": "recipes-and-advancements",
+  "title": "Recipes & Advancements",
+  "h1": "Gilly SMP recipe book and advancement guide for every platform",
+  "description": "Find any Gilly SMP recipe, including Mud Kiln, Oven, Blast Furnace and Smithing Table recipes Bedrock can't show, and follow the advancement guide when you can't open the menu.",
+  "intro": "Gilly SMP uses its advancements as a step-by-step guide and has a searchable recipe book for the whole rework. These answers cover finding recipes on any platform, following progress on Bedrock and the Angler's Almanac.",
+  "groups": [
+    {
+      "title": "Finding recipes",
+      "items": [
+        {
+          "q": "Where can I see all Gilly SMP recipes?",
+          "a": "The <a href=\"/recipes.html\">Recipe Book</a> lists every recipe of the survival rework and is searchable. Tap an item to see how to make it and what it is used in. It contains spoilers, so use it when you're stuck or skip it if you like discovering things yourself."
+        },
+        {
+          "q": "Why can't Bedrock see some Gilly SMP recipes in game?",
+          "a": "Bedrock's in-game recipe book only shows crafting-table recipes. The <a href=\"/recipes.html\">Recipe Book</a> also includes Mud Kiln, Oven, Blast Furnace, Kindling and Smithing Table recipes that Bedrock cannot show, and it tells you which vanilla item each custom item looks like on Bedrock."
+        },
+        {
+          "q": "How many recipes and advancements does Gilly SMP have?",
+          "a": "The survival rework has about 1275 recipes and about 880 advancements, along with 290 villager trades, 13 structures, 7 music discs and about 50 new foods. Many vanilla recipes and advancements are replaced with the rework's own versions."
+        },
+        {
+          "q": "Where can I find recipes for the Matcha Flavoured datapack?",
+          "a": "The <a href=\"/recipes.html\">Gilly SMP Recipe Book</a> lists every recipe of the Matcha Flavoured survival rework, including Mud Kiln, Oven, Blast Furnace, Kindling and Smithing Table recipes that Bedrock cannot show in game. Tap an item to see how to make it and what it is used in."
+        }
+      ]
+    },
+    {
+      "title": "Following progression",
+      "items": [
+        {
+          "q": "How do I know what to do next on Gilly SMP?",
+          "a": "Open your advancements with <code>L</code>. The survival rework uses them as a step-by-step guide, and the recipe book unlocks recipes when you need them. Early game is slower than vanilla and natural health regeneration is off, so take your time."
+        },
+        {
+          "q": "How do I follow advancements on Bedrock?",
+          "a": "Bedrock cannot open the advancements menu, so Gilly SMP provides the <a href=\"/advancements.html\">Advancement Guide</a>: every step in order, what completes it, its rewards, and the Angler's Almanac fish list. You can tick steps off as you go."
+        },
+        {
+          "q": "What is the Angler's Almanac on Gilly SMP?",
+          "a": "The Angler's Almanac is the rework's fishing guide, listing around 100 fish. Its full fish list is included in the <a href=\"/advancements.html\">Advancement Guide</a> alongside the advancement steps, including for Bedrock players who cannot open the in-game menu."
+        },
+        {
+          "q": "Do recipes unlock automatically on Gilly SMP?",
+          "a": "Yes. The recipe book unlocks recipes when you need them as you progress through the advancements. If you are stuck, the <a href=\"/recipes.html\">Recipe Book</a> shows every recipe including the custom stations."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/recipes.html",
+      "label": "Recipe Book"
+    },
+    {
+      "url": "/advancements.html",
+      "label": "Advancement Guide"
+    },
+    {
+      "url": "/wiki.html#survival",
+      "label": "Wiki: Survival rework"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/alloys-and-stations.html",
+      "label": "Alloys & stations"
+    },
+    {
+      "url": "/guides/crossplay.html",
+      "label": "Crossplay & accounts"
+    }
+  ]
+}
