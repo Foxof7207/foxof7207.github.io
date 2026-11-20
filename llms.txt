@@ -22,7 +22,7 @@ Casual and adult survival players, friend groups, and players on different platf
 - Creepers, spiders and other non-undead monsters don't spawn in the open; zombies and skeletons still do at night. The surface becomes fully safe after the Ender Dragon is first defeated. No phantoms. True darkness. Explosions drop every block.
 - Nether and End are currently closed and open in stages; the Nether opens after the next major update.
 - Ranks Bronze, Gold and Diamond raise ender chest size (3 to 6 rows), homes (2 to 6) and order-market slots (5 to 15), plus a name tag.
-- Points currency, a player order market (5 to 15 active orders, 14-day expiry), safe player trades with a 20-second cooldown, an RTP cannon (no /rtp), ranged chat (100 blocks, ! to shout), an AFK zone instead of a disconnect, proximity voice chat (Java, push-to-talk on Caps Lock), and a /menu for Bedrock players.
+- Points currency, a player order market (5 to 15 active orders, 14-day expiry), safe player trades with a 20-second cooldown, an RTP cannon (no /rtp), global chat (no ranged chat or shouting), lockable chests, /vote for points, Order and eShop NPCs at spawn, rentable spawn rooms (contact @Foxof7207), an AFK zone instead of a disconnect, proximity voice chat (Java, push-to-talk on Caps Lock), and a /menu for Bedrock players.
 - AFK: marked after 5 minutes idle, disconnected after 10 more; if the main server restarts while idle, players land in the AFK zone and return with /server smp.
 
 ## Server facts

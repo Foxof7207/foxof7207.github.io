@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Recipe Book – Gilly SMP Survival Rework Recipes</title>
   <meta name="description" content="Searchable recipe book for Gilly SMP: every crafting, Mud Kiln, Oven, Blast Furnace, Kindling, Smithing Table and Stonecutter recipe of the survival rework, with how to make each item and what it's used in.">
   <link rel="canonical" href="https://craft.gillyb.net/recipes.html">
@@ -27,8 +29,8 @@
   "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
 }
   </script>
-<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
-<script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -88,6 +90,27 @@
   <div id="rv-sheet-bg" class="rv-sheet-bg" hidden>
     <div class="rv-sheet" role="dialog" aria-modal="true" aria-labelledby="rv-sheet-title"></div>
   </div>
+
+  <section class="section final-cta page-cta" aria-labelledby="cta-h">
+    <div class="container">
+      <h2 id="cta-h">Ready to play?</h2>
+      <p class="lead">Free, no whitelist, one profile across Java, Bedrock and console.</p>
+      <div class="quick" id="quick">
+        <div class="seg" role="tablist" aria-label="Your platform">
+          <button role="tab" data-q="java" aria-selected="false">Java</button>
+          <button role="tab" data-q="bedrock" aria-selected="false">Bedrock</button>
+          <button role="tab" data-q="console" aria-selected="false">Console</button>
+        </div>
+        <div class="quick-row">
+          <code class="quick-addr" id="quick-addr" aria-live="polite">mc.gillyb.net</code>
+          <button class="copy" id="quick-copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy</button>
+        </div>
+        <p class="quick-note" id="quick-note">Java 26.3 required.</p>
+        <p class="status" id="status" hidden><span class="dot" aria-hidden="true"></span><span id="status-text"></span></p>
+      </div>
+      <p class="flex">Not sure what to craft first? The <a href="/advancements.html">Advancement Guide</a> shows the order, and the <a href="/wiki.html">wiki</a> explains the rules.</p>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container footer-grid">

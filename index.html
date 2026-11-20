@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Gilly SMP – Free Crossplay Minecraft Survival Server (Java, Bedrock &amp; Console)</title>
   <meta name="description" content="Gilly SMP is a free, non pay-to-win Minecraft survival SMP with reworked, slower survival progression and crossplay for Java (26.3), Bedrock, Xbox, PlayStation and Switch and synced playtime (inventory, XP).">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -17,7 +19,7 @@
   <meta property="og:url" content="https://craft.gillyb.net/">
   <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <meta name="twitter:card" content="summary">
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
   <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
   <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/">
   <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/">
@@ -260,6 +262,20 @@
           <a class="btn btn-yellow" href="#join">Join the Server</a>
           <a class="btn btn-green" href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Join Discord</a>
         </div>
+        <div class="quick" id="quick">
+          <p class="quick-title">Ready now? Copy the address:</p>
+          <div class="seg" role="tablist" aria-label="Your platform">
+            <button role="tab" data-q="java" aria-selected="false">Java</button>
+            <button role="tab" data-q="bedrock" aria-selected="false">Bedrock</button>
+            <button role="tab" data-q="console" aria-selected="false">Console</button>
+          </div>
+          <div class="quick-row">
+            <code class="quick-addr" id="quick-addr" aria-live="polite">mc.gillyb.net</code>
+            <button class="copy" id="quick-copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy</button>
+          </div>
+          <p class="quick-note" id="quick-note">Minecraft 26.3 required.</p>
+          <p class="status" id="status" hidden><span class="dot" aria-hidden="true"></span><span id="status-text"></span></p>
+        </div>
       </div>
             <div class="ground" aria-hidden="true"></div>
     </section>
@@ -362,62 +378,47 @@
     <section class="section" id="join">
       <div class="container">
         <h2>How to Join</h2>
-        <p class="lead">Pick your platform. Tap a card to flip it and see the address.</p>
+        <p class="lead">Three steps: pick your platform, copy the address, play. Everything you need is on the card.</p>
         <div class="join-grid">
-          <div class="flip" data-platform="java">
-            <div class="flip-inner">
-              <div class="face front"><span class="logo-wrap"><i class="ic big" style="--i:url(/assets/icons/java.svg)" aria-hidden="true"></i></span><h3>Minecraft Java</h3><p class="hint">Click the card to see the IP</p></div>
-              <div class="face back">
-                <i class="ic wm" style="--i:url(/assets/icons/java.svg)" aria-hidden="true"></i><h3>Java Edition</h3>
-                <div class="ip-box">mc.gillyb.net</div>
-                <div class="copy-row"><button class="copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy IP</button></div>
-                <ol>
-                  <li>Open Minecraft Java <strong>26.3</strong></li>
-                  <li>Multiplayer → Add Server</li>
-                  <li>Paste <code>mc.gillyb.net</code></li>
-                </ol>
-                <p class="warn">Java 26.3 is required.</p>
-              </div>
-            </div>
-            <button class="flip-btn" aria-pressed="false" aria-label="Flip Java card"></button>
-          </div>
+          <article class="join-card" data-platform="java">
+            <span class="logo-wrap"><i class="ic big" style="--i:url(/assets/icons/java.svg)" aria-hidden="true"></i></span>
+            <h3>Minecraft Java</h3>
+            <div class="ip-box">mc.gillyb.net</div>
+            <div class="copy-row"><button class="copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy IP</button></div>
+            <ol>
+              <li>Open Minecraft Java <strong>26.3</strong></li>
+              <li>Multiplayer → Add Server</li>
+              <li>Paste <code>mc.gillyb.net</code></li>
+            </ol>
+            <p class="warn">An official MinecraftJava 26.3 is required.</p>
+          </article>
 
-          <div class="flip" data-platform="bedrock">
-            <div class="flip-inner">
-              <div class="face front"><span class="logo-wrap"><i class="ic big" style="--i:url(/assets/icons/minecraft.svg)" aria-hidden="true"></i></span><h3>Minecraft Bedrock</h3><p class="hint">Click the card to see the IP</p></div>
-              <div class="face back">
-                <i class="ic wm" style="--i:url(/assets/icons/minecraft.svg)" aria-hidden="true"></i><h3>Bedrock Edition</h3>
-                <div class="ip-box">mc.gillyb.net<br>Port: 19132</div>
-                <a class="copy open-mc" href="minecraft://?addExternalServer=Gilly%20SMP|mc.gillyb.net:19132" data-umami-event="bedrock-add-server"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Add to Minecraft</a>
-                <p class="open-mc-hint">Opens Minecraft and adds the server for you (Windows, Android, iPhone, iPad). Or add it manually:</p>
-                <div class="copy-row"><button class="copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy IP</button><button class="copy" data-copy="19132"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy port</button></div>
-                <ol>
-                  <li>Play → Servers → Add Server</li>
-                  <li>Address: <code>mc.gillyb.net</code></li>
-                  <li>Port: <code>19132</code></li>
-                </ol>
-              </div>
-            </div>
-            <button class="flip-btn" aria-pressed="false" aria-label="Flip Bedrock card"></button>
-          </div>
+          <article class="join-card" data-platform="bedrock">
+            <span class="logo-wrap"><i class="ic big" style="--i:url(/assets/icons/minecraft.svg)" aria-hidden="true"></i></span>
+            <h3>Minecraft Bedrock</h3>
+            <div class="ip-box">mc.gillyb.net<br>Port: 19132</div>
+            <a class="copy open-mc" href="minecraft://?addExternalServer=Gilly%20SMP|mc.gillyb.net:19132" data-umami-event="bedrock-add-server"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Add to Minecraft</a>
+            <p class="open-mc-hint">Opens Minecraft and adds the server for you (Windows, Android, iPhone, iPad). Or add it manually:</p>
+            <div class="copy-row"><button class="copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy IP</button><button class="copy" data-copy="19132"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy port</button></div>
+            <ol>
+              <li>Play → Servers → Add Server</li>
+              <li>Address: <code>mc.gillyb.net</code></li>
+              <li>Port: <code>19132</code></li>
+            </ol>
+          </article>
 
-          <div class="flip" data-platform="console">
-            <div class="flip-inner">
-              <div class="face front"><span class="logo-wrap trio"><i class="ic big" style="--i:url(/assets/icons/xbox.svg)" aria-hidden="true"></i><i class="ic big" style="--i:url(/assets/icons/playstation.svg)" aria-hidden="true"></i><i class="ic big" style="--i:url(/assets/icons/nintendoswitch.svg)" aria-hidden="true"></i></span><h3>Console</h3><p class="hint">Xbox · PlayStation · Switch<br>Click to see how</p></div>
-              <div class="face back">
-                <i class="ic wm" style="--i:url(/assets/icons/playstation.svg)" aria-hidden="true"></i>
-                <h3>Console</h3>
-                <div class="ip-box">Friend: GillySMP</div>
-                <ol>
-                  <li>Add <code>GillySMP</code> as a friend on your platform</li>
-                  <li>Open Minecraft</li>
-                  <li>Join from the Friends tab</li>
-                </ol>
-                <p class="warn">An online subscription for your console (Xbox, PlayStation or Switch) is required. This is a console-maker requirement, not ours.</p>
-              </div>
-            </div>
-            <button class="flip-btn" aria-pressed="false" aria-label="Flip Console card"></button>
-          </div>
+          <article class="join-card" data-platform="console">
+            <span class="logo-wrap trio"><i class="ic big" style="--i:url(/assets/icons/xbox.svg)" aria-hidden="true"></i><i class="ic big" style="--i:url(/assets/icons/playstation.svg)" aria-hidden="true"></i><i class="ic big" style="--i:url(/assets/icons/nintendoswitch.svg)" aria-hidden="true"></i></span>
+            <h3>Console</h3>
+            <div class="ip-box">Friend: GillySMP</div>
+            <div class="copy-row"><button class="copy" data-copy="GillySMP"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy name</button></div>
+            <ol>
+              <li>Add <code>GillySMP</code> as a friend on your platform</li>
+              <li>Open Minecraft</li>
+              <li>Join from the Friends tab</li>
+            </ol>
+            <p class="warn">An online subscription for your console (Xbox, PlayStation or Switch) is required. This is a console-maker requirement, not ours.</p>
+          </article>
         </div>
         <p class="notice">Need help joining? Ask in our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> or check the <a href="wiki.html#basics">wiki</a>.</p>
       </div>
@@ -433,6 +434,18 @@
         <details><summary>Does the world reset?</summary><p>Yes, every season. You can ask for a copy of the old world on Discord one week after the season ends.</p></details>
         <details><summary>Can I keep my progress if I switch platforms?</summary><p>Yes. Link your Java and Bedrock accounts with <code>/linkaccount</code> and they share one profile.</p></details>
         <p class="notice">More questions? Browse the <a href="wiki.html#faq">full FAQ</a> or ask in our <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="play">
+      <div class="container">
+        <h2>Your world is waiting</h2>
+        <p class="lead">Free to join, no whitelist, and your inventory follows you across platforms.</p>
+        <div class="btn-row">
+          <a class="btn btn-yellow" href="#join">Get the server address</a>
+          <a class="btn btn-green" href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Say hi on Discord</a>
+        </div>
+        <p class="flex">New here? Start with the <a href="advancements.html">Advancement Guide</a>: it tells you what to do next.</p>
       </div>
     </section>
   </main>

@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Gilly SMP Wiki – Commands, Ranks, Survival Rework &amp; Guides</title>
   <meta name="description" content="Player wiki for Gilly SMP: joining, the survival rework, ranks, homes, teleports, points, orders, trading, ender chests, chat, voice chat, the Bedrock menu, quality-of-life features and the FAQ.">
   <link rel="canonical" href="https://craft.gillyb.net/wiki.html">
@@ -28,8 +30,8 @@
   "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
 }
   </script>
-<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
-<script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -132,13 +134,15 @@
           </div>
           <div class="qa"><h3>What happens to my items if I lose a rank?</h3><p>They stay in your ender chest. You can only reach the rows your current rank allows.</p></div>
           <div class="qa"><h3>How do I see my rank?</h3><p>Your rank shows in front of your name in chat and in the tab list. Bedrock players can see their rank and every rank's limits in <code>/menu</code> → <strong>My rank</strong>.</p></div>
-          <div class="qa"><h3>How do I get a rank?</h3><p>Ranks are granted by staff. Have a look at the <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">store</a> and ask in <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> — note that ranks are a quality-of-life perk, not a power advantage.</p></div>
+          <div class="qa"><h3>How do I get a rank?</h3><p>Ranks are granted by staff. Have a look at the <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">store</a> and ask in <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> note that ranks are a quality-of-life perk, not a power advantage.</p></div>
         </article>
 
         <article id="travel">
           <h2>Homes &amp; teleporting</h2>
           <p class="sec-intro">All teleports have a <strong>3-second warmup</strong>: stand still and don't take damage, or the teleport is cancelled. This stops anyone using teleports to escape a fight.</p>
           <div class="qa"><h3>How do I go to spawn?</h3><p><code>/spawn</code>. Staff set the spawn point in game, so it's the same for everyone.</p></div>
+          <div class="qa"><h3>What is at spawn?</h3><p>The <strong>Order</strong> and <strong>eShop</strong> NPCs are available at spawn, so you can reach the order market and the shop without a command. Rooms at spawn can also be <strong>rented</strong>. Contact <strong>@Foxof7207</strong> on <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> to learn more.</p></div>
+          <div class="qa"><h3>How do I vote for the server?</h3><p>Type <code>/vote</code> to vote for Gilly SMP and earn points. You can vote again after each vote site's cooldown.</p></div>
           <div class="qa"><h3>How do I set a home?</h3><p><code>/sethome &lt;name&gt;</code> where you stand. You get <strong>2 homes</strong>, more with a <a href="#ranks">rank</a>. Names can use letters, numbers, <code>-</code> and <code>_</code>, up to 16 characters. Using an existing name moves that home.</p></div>
           <div class="qa"><h3>How do I go home?</h3><p><code>/home &lt;name&gt;</code>, or just <code>/home</code> if you have one. <code>/homes</code> lists them; click one to go there.</p></div>
           <div class="qa"><h3>How do I delete or edit a home?</h3><p><code>/delhome &lt;name&gt;</code> deletes it. <code>/edithome &lt;name&gt;</code> renames, moves, describes it or makes it public or private.</p></div>
@@ -152,9 +156,9 @@
         <article id="economy">
           <h2>Points, orders &amp; trading</h2>
           <div class="qa"><h3>What are points?</h3><p>The server currency, used for orders and trades. <code>/points me</code> (or <code>/p me</code>) shows your balance, <code>/points look &lt;player&gt;</code> someone else's, <code>/points lead</code> the leaderboard. Every "money" price on the server is in points.</p></div>
-          <div class="qa"><h3>How do I get points?</h3><p>New players start with <strong>0 points</strong>. You earn them by selling items to other players through the <a href="#economy">order market</a> or in <a href="#economy">trades</a> — the server doesn't hand them out yet, so the economy is entirely player-driven.</p></div>
+          <div class="qa"><h3>How do I get points?</h3><p>New players start with <strong>0 points</strong>. You earn them by selling items to other players through the <a href="#economy">order market</a> or in <a href="#economy">trades</a> the server doesn't hand them out yet, so the economy is entirely player-driven.</p></div>
           <div class="qa"><h3>How do I pay someone?</h3><p><code>/points pay &lt;player&gt; &lt;amount&gt;</code>. Whole numbers, at least 1. Paying less than 1 is refused.</p></div>
-          <div class="qa"><h3>How does the order market work?</h3><p><code>/order</code> (or <code>/orders</code>) opens it. Post a buy order (item, amount, price per item, at least 1 point); the points are reserved, other players deliver the items and get paid instantly, even while you're offline, and you collect the items later from <em>Your orders</em>. You can have <strong>5 active orders</strong>, more with a <a href="#ranks">rank</a>. Orders expire after 14 days, new ones are announced in chat, and items can be delivered from shulker boxes. Items must match the order exactly — enchantments, damage, custom names and contents included.</p></div>
+          <div class="qa"><h3>How does the order market work?</h3><p><code>/order</code> (or <code>/orders</code>) opens it. Post a buy order (item, amount, price per item, at least 1 point); the points are reserved, other players deliver the items and get paid instantly, even while you're offline, and you collect the items later from <em>Your orders</em>. You can have <strong>5 active orders</strong>, more with a <a href="#ranks">rank</a>. Orders expire after 14 days, new ones are announced in chat, and items can be delivered from shulker boxes. Items must match the order exactly, enchantments, damage, custom names and contents included.</p></div>
           <div class="qa"><h3>How do I trade with a player?</h3><p>Crouch and right-click them, or <code>/trade &lt;player&gt;</code>. You must be within 10 blocks, in the same world, and not in creative. There's a 20-second cooldown between trade requests. Both sides can offer items and points, and both must accept. XP can't be traded: the survival rework manages XP itself. Bedrock players can pick a player from <code>/menu</code> → <strong>Trade</strong>.</p></div>
         </article>
 
@@ -168,12 +172,12 @@
 
         <article id="chat">
           <h2>Chat, voice &amp; AFK</h2>
-          <div class="qa"><h3>Who sees my messages?</h3><p>Players within <strong>100 blocks</strong> of you, in the same world. Start a message with <code>!</code> to talk to everyone. Your rank shows in front of your name, for example <code>[Gold] &lt;Steve&gt; hello</code>.</p></div>
+          <div class="qa"><h3>Who sees my messages?</h3><p>Everyone. Chat is global: there is no ranged chat and no need to shout with <code>!</code>. Your rank shows in front of your name, for example <code>[Gold] &lt;Steve&gt; hello</code>.</p></div>
           <div class="qa"><h3>How do I send a private message?</h3><p><code>/msg &lt;player&gt; &lt;message&gt;</code> (also <code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), reply with <code>/r</code>. <code>/ignore &lt;player&gt;</code> hides someone, <code>/unignore</code> undoes it. <code>/me</code> sends an emote: <code>/me waves</code> shows <code>* Steve waves</code>. Bedrock players can pick a player from <code>/menu</code> → <strong>Private message</strong>.</p></div>
           <div class="qa"><h3>Can I use colours?</h3><p><code>&amp;</code> colour codes work in chat, on signs and in anvil names (up to 32 characters). A message starting with <code>&gt;</code> is green (the <code>&gt;</code> stays), one starting with <code>*</code> is a purple-to-blue gradient.</p></div>
           <div class="qa"><h3>Is spam blocked?</h3><p>Yes. Repeating the same message, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, longer if they keep doing it.</p></div>
           <div class="qa"><h3>How does voice chat work?</h3><p>Java players can install the <a href="https://modrinth.com/plugin/simple-voice-chat" rel="noopener" target="_blank">Simple Voice Chat</a> mod (Fabric, NeoForge, Forge or Quilt) matching Minecraft 26.3, join and press <kbd>V</kbd> to set it up. You hear players within 48 blocks (24 when whispering) and can make groups with <kbd>G</kbd>. Push-to-talk is on <kbd>Caps Lock</kbd> by default; switch to voice activation in the settings. Recording is disabled. Bedrock and console can't use it, so it's never required.</p></div>
-          <div class="qa"><h3>What happens when I'm AFK?</h3><p>After 5 minutes without moving you're marked <strong>[AFK]</strong> and your name turns grey (<code>/afk</code> toggles it). After 10 more minutes you're disconnected, so the server stays fast for everyone. Just rejoin — and if the main server restarts while you're away, you'll land in the AFK zone and can come back with <code>/server smp</code>.</p></div>
+          <div class="qa"><h3>What happens when I'm AFK?</h3><p>After 5 minutes without moving you're marked <strong>[AFK]</strong> and your name turns grey (<code>/afk</code> toggles it). After 10 more minutes you're disconnected, so the server stays fast for everyone. Just rejoin and if the main server restarts while you're away, you'll land in the AFK zone and can come back with <code>/server smp</code>.</p></div>
         </article>
 
         <article id="bedrock">
@@ -193,6 +197,7 @@
           <div class="qa"><h3>How do I sit on stairs?</h3><p>Right-click a stair with a saddle, then right-click it to sit. Break the stair to get the saddle back.</p></div>
           <div class="qa"><h3>How do I keep a chunk loaded?</h3><p>Drop a Nether Star on a lodestone. The chunk stays loaded until the lodestone is broken.</p></div>
           <div class="qa"><h3>Can I be warned before a tool breaks?</h3><p>Yes, when a tool or armour piece gets low. Customise it with <code>/duraping config</code>.</p></div>
+          <div class="qa"><h3>Can I lock my chests?</h3><p>Yes, chests can now be locked so only you (and players you allow) can open them.</p></div>
           <div class="qa"><h3>How do I lock or hide item frames?</h3><p>Crouch and right-click with <strong>shears</strong> to lock or unlock it, with a <strong>brush</strong> to make it invisible.</p></div>
           <div class="qa"><h3>What can cauldrons do?</h3><p>Harden concrete powder, turn dirt into mud, fill and empty potions, tip arrows, and swap slime balls and magma cream (lava or water cauldron). Slime-block and honey-block cauldrons age or wax copper in bulk.</p></div>
           <div class="qa"><h3>What's new in the stonecutter?</h3><p>Mini blocks, wood items from planks and logs, painting variants, and engraving blank music discs (crafted from 8 iron ingots and a diamond).</p></div>
@@ -211,7 +216,7 @@
           <p class="sec-intro">These are all the commands players can use. Anything else is blocked, hidden from tab completion and answers "That command is not available. Bedrock players: use /menu." Bedrock players have almost all of these as buttons in <code>/menu</code>.</p>
           <div class="qa"><h3>Homes, spawn and teleporting</h3><p><code>/spawn</code>, <code>/home</code>, <code>/sethome</code>, <code>/delhome</code>, <code>/homes</code> (<code>/homelist</code>), <code>/edithome</code>, <code>/phome</code>, <code>/phomes</code> (<code>/phomelist</code>), <code>/tpa</code>, <code>/tpahere</code>, <code>/tpaccept</code> (<code>/tpyes</code>), <code>/tpdecline</code> (<code>/tpno</code>, <code>/tpdeny</code>), <code>/tpignore</code></p></div>
           <div class="qa"><h3>Chat</h3><p><code>/msg</code> (<code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), <code>/r</code> (<code>/reply</code>), <code>/me</code> (<code>/emote</code>), <code>/ignore</code> (<code>/block</code>), <code>/unignore</code> (<code>/unblock</code>)</p></div>
-          <div class="qa"><h3>Economy and storage</h3><p><code>/points</code> (<code>me</code>, <code>pay</code>, <code>look</code>, <code>lead</code>), <code>/order</code> (<code>/orders</code>), <code>/trade</code>, <code>/ec</code> (<code>/enderchest</code>; <code>invite</code>, <code>uninvite</code>, <code>invitelist</code>, <code>rename</code>), <code>/ecshare</code></p></div>
+          <div class="qa"><h3>Economy and storage</h3><p><code>/points</code> (<code>me</code>, <code>pay</code>, <code>look</code>, <code>lead</code>), <code>/order</code> (<code>/orders</code>), <code>/vote</code>, <code>/trade</code>, <code>/ec</code> (<code>/enderchest</code>; <code>invite</code>, <code>uninvite</code>, <code>invitelist</code>, <code>rename</code>), <code>/ecshare</code></p></div>
           <div class="qa"><h3>Tools</h3><p><code>/ch</code> (<code>/coordshud</code>), <code>/afk</code>, <code>/duraping</code> (<code>/durabilityping</code>, with <code>config</code> to customise), <code>/portal</code> (where to build a matching Nether portal, once the Nether is open), <code>/mechanics</code></p></div>
           <div class="qa"><h3>Referrals</h3><p><code>/referral</code> (<code>/code</code>, <code>/mycode</code>), <code>/refer</code> (<code>/usecode</code>), <code>/referraltop</code> (<code>/reftop</code>, <code>/rtop</code>)</p></div>
           <div class="qa"><h3>Other</h3><p><code>/menu</code> (Bedrock), <code>/list</code>, <code>/ping</code>, <code>/voicechat</code>, <code>/linkaccount</code>, <code>/unlinkaccount</code>, <code>/discord</code>, <code>/server smp</code> (back from the AFK zone), <code>/glist</code>, <code>/trigger</code> (used by the survival rework, e.g. when it asks you to update an item)</p></div>
@@ -231,7 +236,7 @@
           <div class="qa"><h3>Is PvP allowed?</h3><p>Yes, if it's fair. No tp-trapping or spawn-killing. Teleports have a 3-second warmup that moving or taking damage cancels, so you can't teleport out of a fight.</p></div>
           <div class="qa"><h3>Are griefing and stealing allowed?</h3><p>No. First offence: a warning. Second: a temporary ban.</p></div>
           <div class="qa"><h3>Can I claim land?</h3><p>No, there's no land claiming. Respect other players' builds.</p></div>
-          <div class="qa"><h3>Anything else?</h3><p>Spam is detected and muted automatically, and the console and command blocks aren't available to players — only the commands in <a href="#commands">All commands</a>.</p></div>
+          <div class="qa"><h3>Anything else?</h3><p>Spam is detected and muted automatically, a list of all the commands is available in <a href="#commands">All commands</a>.</p></div>
         </article>
 
         <article id="server">
@@ -272,6 +277,27 @@
       </div>
     </div>
   </main>
+
+  <section class="section final-cta page-cta" aria-labelledby="cta-h">
+    <div class="container">
+      <h2 id="cta-h">Ready to play?</h2>
+      <p class="lead">Free, no whitelist, one profile across Java, Bedrock and console.</p>
+      <div class="quick" id="quick">
+        <div class="seg" role="tablist" aria-label="Your platform">
+          <button role="tab" data-q="java" aria-selected="false">Java</button>
+          <button role="tab" data-q="bedrock" aria-selected="false">Bedrock</button>
+          <button role="tab" data-q="console" aria-selected="false">Console</button>
+        </div>
+        <div class="quick-row">
+          <code class="quick-addr" id="quick-addr" aria-live="polite">mc.gillyb.net</code>
+          <button class="copy" id="quick-copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copy</button>
+        </div>
+        <p class="quick-note" id="quick-note">Java 26.3 required.</p>
+        <p class="status" id="status" hidden><span class="dot" aria-hidden="true"></span><span id="status-text"></span></p>
+      </div>
+      <p class="flex">Looking for a specific item? Try the <a href="/recipes.html">Recipe Book</a> or the <a href="/advancements.html">Advancement Guide</a>.</p>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container footer-grid">

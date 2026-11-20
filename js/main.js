@@ -1,6 +1,9 @@
 (function () {
   'use strict';
 
+  // Clickjacking guard (GitHub Pages cannot send X-Frame-Options / frame-ancestors)
+  try { if (window.top !== window.self) window.top.location = window.self.location; } catch (e) { document.documentElement.style.display = 'none'; }
+
   // ---- Mobile nav ----
   var nav = document.querySelector('.nav');
   var toggle = document.querySelector('.nav-toggle');
@@ -16,16 +19,6 @@
       });
     });
   }
-
-  // ---- Flip cards (click / tap / keyboard) ----
-  document.querySelectorAll('.flip').forEach(function (card) {
-    var btn = card.querySelector('.flip-btn');
-    card.addEventListener('click', function (e) {
-      if (e.target.closest('.copy')) return;
-      var flipped = card.classList.toggle('is-flipped');
-      if (btn) btn.setAttribute('aria-pressed', String(flipped));
-    });
-  });
 
   // ---- Bedrock "Add to Minecraft" link ----
   // Bedrock only exists on Windows, Android and iOS/iPadOS (iPads report a Mac UA but have touch).
@@ -192,5 +185,50 @@
     window.addEventListener('scroll', req, { passive: true });
     window.addEventListener('resize', req);
     place();
+  }
+})();
+
+// ---- Engagement: quick-join, device recommendation, live status ----
+(function () {
+  'use strict';
+  var ua = navigator.userAgent;
+  var guess = /PlayStation|Xbox|Nintendo/i.test(ua) ? 'console'
+    : (/Android|iPhone|iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) ? 'bedrock'
+    : 'java';
+  var data = {
+    java: { addr: 'mc.gillyb.net', copy: 'mc.gillyb.net', note: 'Java 26.3 required.' },
+    bedrock: { addr: 'mc.gillyb.net · port 19132', copy: 'mc.gillyb.net', note: 'Port 19132. On Windows, Android and iOS the "Add to Minecraft" button below does it for you.' },
+    console: { addr: 'Friend: GillySMP', copy: 'GillySMP', note: 'Needs your console\'s online subscription.' }
+  };
+  var tabs = [].slice.call(document.querySelectorAll('.seg [data-q]'));
+  var addr = document.getElementById('quick-addr'), btn = document.getElementById('quick-copy'), note = document.getElementById('quick-note');
+  function select(k) {
+    tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.q === k)); });
+    if (!addr) return;
+    addr.textContent = data[k].addr; btn.setAttribute('data-copy', data[k].copy); note.textContent = data[k].note;
+  }
+  tabs.forEach(function (t) { t.addEventListener('click', function () { select(t.dataset.q); }); });
+  if (tabs.length) select(guess);
+
+  // Mark the card matching the visitor's device
+  var card = document.querySelector('.join-card[data-platform="' + guess + '"]');
+  if (card) {
+    card.classList.add('recommended');
+    var tag = document.createElement('span'); tag.className = 'rec'; tag.textContent = 'Suggested for your device';
+    card.appendChild(tag);
+  }
+
+  // Real player count, hidden if the lookup fails
+  var st = document.getElementById('status');
+  if (st && window.fetch) {
+    fetch('https://api.mcsrvstat.us/3/mc.gillyb.net').then(function (r) { return r.json(); }).then(function (d) {
+      var text = document.getElementById('status-text');
+      if (d && d.online && d.players) {
+        var n = d.players.online;
+        text.textContent = n > 0 ? n + (n === 1 ? ' player' : ' players') + ' online right now' : 'Server online, be the first in';
+      } else if (d && d.online === false) { text.textContent = 'Server currently offline'; st.classList.add('off'); }
+      else return;
+      st.hidden = false;
+    }).catch(function () {});
   }
 })();

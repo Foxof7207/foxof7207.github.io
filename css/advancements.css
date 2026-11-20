@@ -18,7 +18,7 @@
 /* sticky tools */
 .av-bar { position: sticky; top: var(--nav-h); z-index: 20; background: rgba(11, 20, 12, .94); backdrop-filter: blur(8px); padding: 10px 0; margin: 0 0 10px;
   border-bottom: 1px solid var(--card-2); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.av-search { flex: 1 1 260px; display: flex; align-items: center; gap: 10px; background: var(--card); border: 2px solid var(--card-2); border-radius: 12px; padding: 0 14px; }
+.av-search { flex: 1 1 200px; min-width: 0; display: flex; align-items: center; gap: 10px; background: var(--card); border: 2px solid var(--card-2); border-radius: 12px; padding: 0 14px; }
 .av-search:focus-within { border-color: var(--green); }
 .av-search .ic { width: 18px; height: 18px; opacity: .7; }
 .av-search input { flex: 1; min-width: 0; background: none; border: 0; color: var(--text); font: inherit; padding: 11px 0; outline: none; }
