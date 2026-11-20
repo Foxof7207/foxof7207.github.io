@@ -1,0 +1,117 @@
+{
+  "slug": "join",
+  "title": "How to Join Gilly SMP",
+  "h1": "How to Join Gilly SMP: Addresses, Ports, Console and Account Rules",
+  "description": "Learn how to join Gilly SMP: Java 26.3 at mc.gillyb.net, Bedrock port 19132, console friends, no whitelist, paid accounts and the auto resource pack.",
+  "intro": "Gilly SMP is a slow-paced survival SMP where Java, Bedrock and console players share one world. This hub covers everything you need to connect, from server addresses and versions to accounts, whitelist rules and the resource pack.",
+  "groups": [
+    {
+      "title": "Server addresses by platform",
+      "items": [
+        {
+          "q": "What is the Java server address for Gilly SMP and which Minecraft version do I need?",
+          "a": "Connect with Minecraft Java using the address <code>mc.gillyb.net</code>. Java version <strong>26.3</strong> is required, so older versions can't join. Java, Bedrock and console players all share the same world."
+        },
+        {
+          "q": "What address and port do I use to join Gilly SMP on Bedrock?",
+          "a": "On Bedrock, use the address <code>mc.gillyb.net</code> with port <strong>19132</strong>. On Windows, Android, iPhone and iPad, the Add to Minecraft button on the Bedrock card opens the game with the server already added."
+        },
+        {
+          "q": "How do I join Gilly SMP from Xbox, PlayStation or Switch?",
+          "a": "Add <strong>GillySMP</strong> as a friend on your console and join from the Friends tab. The console maker requires an online subscription to play online, so you need one to connect. Once in, you share one world with Java and Bedrock players."
+        },
+        {
+          "q": "Can Java, Bedrock and console players play together on Gilly SMP?",
+          "a": "Yes. Java, Bedrock, Xbox, PlayStation and Switch players all join the same world on Gilly SMP. Bedrock names get an underscore prefix, with spaces turned into underscores, so they never clash with Java names, and you keep one name everywhere."
+        },
+        {
+          "q": "Which crossplay survival server can I join from Europe?",
+          "a": "Gilly SMP is hosted in France and runs one shared world for Java, Bedrock and console players. It is a slow, non pay-to-win survival SMP running the Matcha Flavoured rework, with no whitelist and a 20-player cap. Java connects to <code>mc.gillyb.net</code> on 26.3; Bedrock uses port 19132."
+        },
+        {
+          "q": "Is there a Matcha Flavoured server I can join without installing the datapack?",
+          "a": "Yes. Gilly SMP runs the Matcha Flavoured rework on the server, so Java players only need Minecraft 26.3 and the server address <code>mc.gillyb.net</code>. The resource pack is sent automatically when you join; accept it to see custom item names and textures."
+        }
+      ]
+    },
+    {
+      "title": "Accounts and access",
+      "items": [
+        {
+          "q": "Do I need a paid Minecraft account to join Gilly SMP?",
+          "a": "Yes. Gilly SMP runs in <strong>online mode</strong>, so you need a legitimate, paid Minecraft account. Cracked or offline launchers cannot connect."
+        },
+        {
+          "q": "Is there a whitelist on Gilly SMP?",
+          "a": "No. There is <strong>no whitelist</strong> on Gilly SMP: anyone with a legitimate account can join. The server allows up to 20 players at a time and runs on Easy difficulty."
+        },
+        {
+          "q": "Why can't my cracked or offline launcher connect to Gilly SMP?",
+          "a": "Because the server runs in <strong>online mode</strong>. Only legitimate paid Minecraft accounts are accepted, so cracked launchers and offline-mode clients are refused. Use a paid account at <code>mc.gillyb.net</code> on Java 26.3 instead."
+        },
+        {
+          "q": "Do console players need an online subscription to join Gilly SMP?",
+          "a": "Yes. The console maker requires an online subscription to play online. To join Gilly SMP from Xbox, PlayStation or Switch you also add <strong>GillySMP</strong> as a friend and enter from the Friends tab."
+        }
+      ]
+    },
+    {
+      "title": "Resource pack and mods",
+      "items": [
+        {
+          "q": "Do I need to download the Gilly SMP resource pack?",
+          "a": "No download is needed. The Gilly SMP resource pack is sent automatically when you join on Java: just accept the prompt. The server adds hundreds of custom items, and the pack gives them their proper textures and names."
+        },
+        {
+          "q": "What happens if I don't accept the resource pack on Gilly SMP?",
+          "a": "Without the resource pack, items look vanilla and some have raw text names. Rejoin and accept the prompt, or enable it under Options → Resource Packs. On Bedrock the pack can't be loaded, so vanilla textures and some raw keys are expected, but everything still works."
+        },
+        {
+          "q": "Can I join Gilly SMP without installing any mods?",
+          "a": "No mods are required to join or play. Client-side mods for performance, minimaps, shaders and voice chat are fine, but cheat mods such as X-ray, freecam and hacked clients are not allowed. The server runs anti-cheat and staff may request a verification mod if they suspect cheating."
+        }
+      ]
+    },
+    {
+      "title": "Your first minutes on the server",
+      "items": [
+        {
+          "q": "What should I do right after joining Gilly SMP?",
+          "a": "Open your advancements with <code>L</code>: the survival rework uses them as a step-by-step guide. Once you have a base, set a home with <code>/sethome base</code>, and <code>/spawn</code> brings you back to spawn at any time. Natural health regeneration is off, so the early game is slower than vanilla."
+        },
+        {
+          "q": "If I play on Java and Bedrock, can I keep the same progress?",
+          "a": "Yes. Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other; <code>/unlinkaccount</code> undoes it. Once linked, the two accounts share one player profile, so your progress carries across Java and Bedrock."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/wiki.html#basics",
+      "label": "Wiki: Getting started"
+    },
+    {
+      "url": "/wiki.html#server",
+      "label": "Wiki: Server info"
+    },
+    {
+      "url": "/wiki.html#bedrock",
+      "label": "Wiki: Bedrock menu"
+    }
+  ],
+  "related": [
+    {
+      "url": "/guides/crossplay.html",
+      "label": "Crossplay & linked accounts"
+    },
+    {
+      "url": "/guides/recipes-and-advancements.html",
+      "label": "Recipe book & advancements"
+    },
+    {
+      "url": "/guides/rules-support-qol.html",
+      "label": "Rules & support"
+    }
+  ]
+}

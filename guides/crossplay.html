@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Crossplay &amp; Accounts – Gilly SMP Guide</title>
+  <meta name="description" content="How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.">
+  <link rel="canonical" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:title" content="Crossplay &amp; Accounts – Gilly SMP Guide">
+  <meta property="og:description" content="How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.">
+  <meta property="og:url" content="https://craft.gillyb.net/guides/crossplay.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Gilly SMP crossplay: Java, Bedrock and console in one world",
+      "url": "https://craft.gillyb.net/guides/crossplay.html",
+      "description": "How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-20",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/guides/crossplay.html",
+      "inLanguage": "en",
+      "dateModified": "2026-11-20",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Java and Bedrock players play together on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Java, Bedrock and console players all share one world on Gilly SMP. You can build, trade and explore together regardless of platform, because the server runs a custom crossplay setup rather than separate worlds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Xbox, PlayStation and Switch players join Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Console players add GillySMP as a friend and then join from the console's Friends tab. A console online subscription is required, and that subscription is provided by the console maker, not by Gilly SMP. See the Getting started section."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the same inventory and XP on Java and Bedrock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, once you link the accounts. Run /linkaccount on one account and follow the instructions to link it to the other. The two accounts then share one player profile, so inventory, XP and progress follow you between platforms. Use /unlinkaccount to undo the link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my Bedrock name start with an underscore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bedrock names get a _ prefix on Gilly SMP, and spaces become underscores, so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one consistent name everywhere you play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any Minecraft servers with Java and Bedrock crossplay in Europe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP is hosted in France and is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world. /linkaccount syncs inventory and XP between accounts, and a Bedrock-compatible resource pack is in development so Bedrock will eventually see the custom textures too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Bedrock players need the Gilly SMP resource pack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Gilly SMP resource pack is a Java pack and Bedrock cannot load it. Bedrock players always see vanilla textures and some raw item keys, but every item and mechanic still works the same way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I don't accept the resource pack on Java?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The server sends the Gilly SMP resource pack automatically when you join — just accept the prompt. If you don't, custom items look like vanilla items and some show raw text names. You can rejoin and accept it, or check Options → Resource Packs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mods allowed on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Client-side mods for performance, minimaps, shaders and voice chat are fine, and no mods are required to play. Cheat mods such as X-ray, freecam and hacked clients are banned; the server runs anti-cheat and staff may ask a suspected player to run a verification mod."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a paid Minecraft account to join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Gilly SMP runs in online mode, so a legitimate Minecraft account is required. Cracked or offline launchers cannot connect. There is no whitelist, so any legitimate account can join."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://craft.gillyb.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guides",
+          "item": "https://craft.gillyb.net/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Crossplay & Accounts",
+          "item": "https://craft.gillyb.net/guides/crossplay.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+      <a class="brand" href="/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Resources">
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recipes</a>
+        <a href="/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancements</a>
+        <a href="/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Crossplay &amp; Accounts</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Gilly SMP crossplay: Java, Bedrock and console in one world</h1>
+        <p class="intro">Gilly SMP runs one shared world for Java, Bedrock and console players. This guide covers how the platforms connect, how to keep progress when you play on more than one, and what changes visually on Bedrock.</p>
+        <p class="badges"><span class="badge y">9 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Playing together across platforms</h2>
+    <article class="qa">
+      <h3>Can Java and Bedrock players play together on Gilly SMP?</h3>
+      <p>Yes. Java, Bedrock and console players all share one world on Gilly SMP. You can build, trade and explore together regardless of platform, because the server runs a custom crossplay setup rather than separate worlds.</p>
+    </article>
+    <article class="qa">
+      <h3>Can Xbox, PlayStation and Switch players join Gilly SMP?</h3>
+      <p>Yes. Console players add <code>GillySMP</code> as a friend and then join from the console's Friends tab. A console online subscription is required, and that subscription is provided by the console maker, not by Gilly SMP. See the <a href="/wiki.html#basics">Getting started section</a>.</p>
+    </article>
+    <article class="qa">
+      <h3>Can I use the same inventory and XP on Java and Bedrock?</h3>
+      <p>Yes, once you link the accounts. Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other. The two accounts then share one player profile, so inventory, XP and progress follow you between platforms. Use <code>/unlinkaccount</code> to undo the link.</p>
+    </article>
+    <article class="qa">
+      <h3>Why does my Bedrock name start with an underscore?</h3>
+      <p>Bedrock names get a <code>_</code> prefix on Gilly SMP, and spaces become underscores, so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one consistent name everywhere you play.</p>
+    </article>
+    <article class="qa">
+      <h3>Are there any Minecraft servers with Java and Bedrock crossplay in Europe?</h3>
+      <p>Gilly SMP is hosted in France and is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world. <code>/linkaccount</code> syncs inventory and XP between accounts, and a Bedrock-compatible resource pack is in development so Bedrock will eventually see the custom textures too.</p>
+    </article>
+    <h2 class="topic-title">Resource packs and mods</h2>
+    <article class="qa">
+      <h3>Do Bedrock players need the Gilly SMP resource pack?</h3>
+      <p>No. The Gilly SMP resource pack is a Java pack and Bedrock cannot load it. Bedrock players always see vanilla textures and some raw item keys, but every item and mechanic still works the same way.</p>
+    </article>
+    <article class="qa">
+      <h3>What happens if I don&#x27;t accept the resource pack on Java?</h3>
+      <p>The server sends the Gilly SMP resource pack automatically when you join — just accept the prompt. If you don't, custom items look like vanilla items and some show raw text names. You can rejoin and accept it, or check Options → Resource Packs.</p>
+    </article>
+    <article class="qa">
+      <h3>Are mods allowed on Gilly SMP?</h3>
+      <p>Client-side mods for performance, minimaps, shaders and voice chat are fine, and no mods are required to play. Cheat mods such as X-ray, freecam and hacked clients are banned; the server runs anti-cheat and staff may ask a suspected player to run a verification mod.</p>
+    </article>
+    <article class="qa">
+      <h3>Do I need a paid Minecraft account to join?</h3>
+      <p>Yes. Gilly SMP runs in online mode, so a legitimate Minecraft account is required. Cracked or offline launchers cannot connect. There is no whitelist, so any legitimate account can join.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Go deeper</h2>
+      <ul class="guide-links">
+        <li><a href="/wiki.html#basics">Wiki: Getting started</a></li>
+        <li><a href="/wiki.html#rules">Wiki: Rules</a></li>
+        <li><a href="/wiki.html#faq">Wiki: FAQ</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Related guides</h2>
+      <ul class="guide-links">
+        <li><a href="/guides/join.html">Joining Gilly SMP</a></li>
+        <li><a href="/guides/recipes-and-advancements.html">Recipes &amp; advancements</a></li>
+      </ul>
+    </section>
+  </main>
+    <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>A non pay-to-win crossplay survival SMP. Java, Bedrock and console, one world.</p>
+      </div>
+      <nav class="f-col" aria-label="Explore">
+        <h3 class="f-title">Explore</h3>
+        <a href="/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Home</a>
+        <a href="/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> How to Join</a>
+        <a href="/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Recipe Book</a>
+        <a href="/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancement Guide</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Rules &amp; Quality of Life – Gilly SMP Guide</title>
+  <meta name="description" content="Is Gilly SMP pay to win, is PvP or griefing allowed, can you claim land, how do bans work, and which quality-of-life tweaks are active on the server?">
+  <link rel="canonical" href="https://craft.gillyb.net/guides/rules-support-qol.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:title" content="Rules &amp; Quality of Life – Gilly SMP Guide">
+  <meta property="og:description" content="Is Gilly SMP pay to win, is PvP or griefing allowed, can you claim land, how do bans work, and which quality-of-life tweaks are active on the server?">
+  <meta property="og:url" content="https://craft.gillyb.net/guides/rules-support-qol.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Gilly SMP rules, PvP, griefing, bans and quality-of-life features",
+      "url": "https://craft.gillyb.net/guides/rules-support-qol.html",
+      "description": "Is Gilly SMP pay to win, is PvP or griefing allowed, can you claim land, how do bans work, and which quality-of-life tweaks are active on the server?",
+      "inLanguage": "en",
+      "dateModified": "2026-11-20",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/guides/rules-support-qol.html",
+      "inLanguage": "en",
+      "dateModified": "2026-11-20",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Gilly SMP pay to win?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Gilly SMP is strictly non pay-to-win: the store sells only quality-of-life items and cosmetics, nothing that gives a power advantage. Ranks are quality-of-life perks too, granted by staff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is PvP allowed on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, PvP is allowed when it is fair. Teleport-trapping and spawn-killing are not. Teleports have a 3-second warmup that is cancelled by moving or taking damage, so you cannot teleport out of a fight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is griefing or stealing allowed on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Griefing and stealing are forbidden: the first offence gets a warning, and a second offence gets a temporary ban. There is no land claiming, so respect other players' builds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are cheat mods allowed on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. An anti-cheat runs on the server, and mods such as X-ray, freecam and Wurst are banned. If staff suspect cheating, they may ask you to run a verification mod. Client-side performance, minimap and shader mods are fine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why was I muted on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spam is detected automatically. Repeating the same message, flooding, very long messages, excessive capitals and random characters can trigger a short mute, and it lasts longer if it keeps happening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact staff or appeal a ban on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open a ticket on Discord, which is the fastest route, or email gilly-smp@outlook.com. Ban appeals and staff contact both go through those channels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Gilly SMP say my command is not available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only player commands are enabled on Gilly SMP. Anything else is blocked, hidden from tab completion and answers 'That command is not available'. Bedrock players have almost all available commands as buttons in /menu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which commands can I use on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Commands cover homes and teleporting (/spawn, /sethome, /tpa), chat (/msg, /ignore), economy and storage (/points, /order, /trade, /ec), tools (/ch, /afk, /mechanics), referrals and /menu for Bedrock. The complete list is in All commands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I show my coordinates on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use /ch toggle (also /coordshud) to show XYZ, facing direction and a 24-hour in-game clock in your action bar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I lock chests or item frames on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Chests can be locked so only you and players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I keep a chunk loaded on Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drop a Nether Star on a lodestone. The chunk stays loaded until the lodestone is broken. This is one of the quality-of-life tweaks active on the server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sit on stairs or merge an elytra with a chestplate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes to both. Right-click a stair with a saddle, then right-click it again to sit; break the stair to get the saddle back. For an elytra, drop it together with a chestplate on an anvil, and drop the result on a grindstone to split them again while keeping enchantments."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://craft.gillyb.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guides",
+          "item": "https://craft.gillyb.net/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Rules & Quality of Life",
+          "item": "https://craft.gillyb.net/guides/rules-support-qol.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+      <a class="brand" href="/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Resources">
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recipes</a>
+        <a href="/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancements</a>
+        <a href="/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Rules &amp; Quality of Life</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Gilly SMP rules, PvP, griefing, bans and quality-of-life features</h1>
+        <p class="intro">This guide covers the rules that keep Gilly SMP fair and the small quality-of-life changes layered on top of the survival rework. Run <code>/mechanics</code> in game to see everything that is active.</p>
+        <p class="badges"><span class="badge y">12 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Fair play rules</h2>
+    <article class="qa">
+      <h3>Is Gilly SMP pay to win?</h3>
+      <p>No. Gilly SMP is strictly non pay-to-win: the store sells only quality-of-life items and cosmetics, nothing that gives a power advantage. Ranks are quality-of-life perks too, granted by staff.</p>
+    </article>
+    <article class="qa">
+      <h3>Is PvP allowed on Gilly SMP?</h3>
+      <p>Yes, PvP is allowed when it is fair. Teleport-trapping and spawn-killing are not. Teleports have a 3-second warmup that is cancelled by moving or taking damage, so you cannot teleport out of a fight.</p>
+    </article>
+    <article class="qa">
+      <h3>Is griefing or stealing allowed on Gilly SMP?</h3>
+      <p>No. Griefing and stealing are forbidden: the first offence gets a warning, and a second offence gets a temporary ban. There is no land claiming, so respect other players' builds.</p>
+    </article>
+    <article class="qa">
+      <h3>Are cheat mods allowed on Gilly SMP?</h3>
+      <p>No. An anti-cheat runs on the server, and mods such as X-ray, freecam and Wurst are banned. If staff suspect cheating, they may ask you to run a verification mod. Client-side performance, minimap and shader mods are fine.</p>
+    </article>
+    <article class="qa">
+      <h3>Why was I muted on Gilly SMP?</h3>
+      <p>Spam is detected automatically. Repeating the same message, flooding, very long messages, excessive capitals and random characters can trigger a short mute, and it lasts longer if it keeps happening.</p>
+    </article>
+    <h2 class="topic-title">Staff, appeals and commands</h2>
+    <article class="qa">
+      <h3>How do I contact staff or appeal a ban on Gilly SMP?</h3>
+      <p>Open a ticket on Discord, which is the fastest route, or email gilly-smp@outlook.com. Ban appeals and staff contact both go through those channels.</p>
+    </article>
+    <article class="qa">
+      <h3>Why does Gilly SMP say my command is not available?</h3>
+      <p>Only player commands are enabled on Gilly SMP. Anything else is blocked, hidden from tab completion and answers 'That command is not available'. Bedrock players have almost all available commands as buttons in <code>/menu</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>Which commands can I use on Gilly SMP?</h3>
+      <p>Commands cover homes and teleporting (<code>/spawn</code>, <code>/sethome</code>, <code>/tpa</code>), chat (<code>/msg</code>, <code>/ignore</code>), economy and storage (<code>/points</code>, <code>/order</code>, <code>/trade</code>, <code>/ec</code>), tools (<code>/ch</code>, <code>/afk</code>, <code>/mechanics</code>), referrals and <code>/menu</code> for Bedrock. The complete list is in <a href="/wiki.html#commands">All commands</a>.</p>
+    </article>
+    <h2 class="topic-title">Quality-of-life tweaks</h2>
+    <article class="qa">
+      <h3>How do I show my coordinates on Gilly SMP?</h3>
+      <p>Use <code>/ch toggle</code> (also <code>/coordshud</code>) to show XYZ, facing direction and a 24-hour in-game clock in your action bar.</p>
+    </article>
+    <article class="qa">
+      <h3>Can I lock chests or item frames on Gilly SMP?</h3>
+      <p>Yes. Chests can be locked so only you and players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible.</p>
+    </article>
+    <article class="qa">
+      <h3>How do I keep a chunk loaded on Gilly SMP?</h3>
+      <p>Drop a Nether Star on a lodestone. The chunk stays loaded until the lodestone is broken. This is one of the quality-of-life tweaks active on the server.</p>
+    </article>
+    <article class="qa">
+      <h3>Can I sit on stairs or merge an elytra with a chestplate?</h3>
+      <p>Yes to both. Right-click a stair with a saddle, then right-click it again to sit; break the stair to get the saddle back. For an elytra, drop it together with a chestplate on an anvil, and drop the result on a grindstone to split them again while keeping enchantments.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Go deeper</h2>
+      <ul class="guide-links">
+        <li><a href="/wiki.html#rules">Wiki: Rules</a></li>
+        <li><a href="/wiki.html#support">Wiki: Staff &amp; ban appeals</a></li>
+        <li><a href="/wiki.html#qol">Wiki: Quality-of-life features</a></li>
+        <li><a href="/wiki.html#commands">Wiki: All commands</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Related guides</h2>
+      <ul class="guide-links">
+        <li><a href="/guides/chat-voice-afk.html">Chat, voice &amp; AFK</a></li>
+        <li><a href="/guides/ranks-and-storage.html">Ranks &amp; storage</a></li>
+      </ul>
+    </section>
+  </main>
+    <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>A non pay-to-win crossplay survival SMP. Java, Bedrock and console, one world.</p>
+      </div>
+      <nav class="f-col" aria-label="Explore">
+        <h3 class="f-title">Explore</h3>
+        <a href="/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Home</a>
+        <a href="/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> How to Join</a>
+        <a href="/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+        <a href="/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Recipe Book</a>
+        <a href="/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Advancement Guide</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
