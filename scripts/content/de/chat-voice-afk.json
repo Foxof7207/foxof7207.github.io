@@ -1,0 +1,85 @@
+{
+  "slug": "chat-voice-afk",
+  "title": "Chat, Sprache & AFK",
+  "updated": "2026-11-21",
+  "h1": "Chat auf einem Minecraft-Server: globaler Chat, Privatnachrichten, Sprachchat und AFK",
+  "description": "Globaler Chat, Privatnachrichten, Java-Sprachchat, Spam-Filter und AFK-Regeln auf einem Minecraft-Survival-Server, mit den wichtigsten Befehlen.",
+  "intro": "Chat, Sprache und AFK-Regeln prägen die Stimmung eines Servers, besonders auf einem Crossplay-Server, auf dem nicht alle Sprache nutzen. Diese Antworten behandeln die Grundlagen von Unterhaltung, Nachrichten und Inaktivität. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Chat",
+      "items": [
+        {
+          "q": "Ist der Chat auf einem Minecraft-Server global oder lokal?",
+          "a": "Auf Gilly SMP ist der Chat global: Alle sehen deine Nachrichten. Es gibt keinen Reichweiten-Chat und du musst nicht mit <code>!</code> schreien. Dein Rang wird vor deinem Namen angezeigt."
+        },
+        {
+          "q": "Wie schicke ich auf einem Minecraft-Server eine Privatnachricht?",
+          "a": "Nutze <code>/msg &lt;Spieler&gt; &lt;Nachricht&gt;</code> oder <code>/w</code>, <code>/tell</code>, <code>/m</code> bzw. <code>/whisper</code>, und antworte mit <code>/r</code>. <code>/ignore &lt;Spieler&gt;</code> blendet jemanden aus, <code>/unignore</code> macht es rückgängig."
+        },
+        {
+          "q": "Kann ich im Minecraft-Chat Farben verwenden?",
+          "a": "Ja. <code>&amp;</code>-Farbcodes funktionieren im Chat, auf Schildern und in Amboss-Namen mit bis zu 32 Zeichen. Eine Nachricht, die mit <code>&gt;</code> beginnt, ist grün, und eine mit <code>*</code> erhält einen Verlauf von Lila nach Blau."
+        },
+        {
+          "q": "Wie wird Spam im Chat eines Minecraft-Servers behandelt?",
+          "a": "Auf Gilly SMP werden wiederholte Nachrichten, Flooding, sehr lange Nachrichten, übermäßige Großbuchstaben und Zufallszeichen automatisch erkannt. Spammer werden kurz stummgeschaltet, und länger, wenn sie weitermachen."
+        }
+      ]
+    },
+    {
+      "title": "Sprachchat",
+      "items": [
+        {
+          "q": "Wie funktioniert der Sprachchat auf einem Minecraft-Server?",
+          "a": "Auf Gilly SMP können Java-Spieler die Mod Simple Voice Chat installieren, passend zu Minecraft 26.3, und dann mit <code>V</code> die Einrichtung starten. Du hörst Spieler innerhalb von 48 Blöcken, beim Flüstern 24, und bildest Gruppen mit <code>G</code>. Die Aufnahme ist deaktiviert."
+        },
+        {
+          "q": "Ist Sprachchat auf einem Minecraft-Crossplay-Server Pflicht?",
+          "a": "Nein. Bedrock und Konsole können den Sprachchat nicht nutzen, auf Gilly SMP ist er daher nie Pflicht."
+        }
+      ]
+    },
+    {
+      "title": "AFK und Koordinaten",
+      "items": [
+        {
+          "q": "Was passiert, wenn man auf einem Minecraft-Server AFK ist?",
+          "a": "Auf Gilly SMP wirst du nach 5 Minuten ohne Bewegung als [AFK] markiert und dein Name wird grau; <code>/afk</code> schaltet das um. Nach weiteren 10 Minuten wirst du getrennt. Startet der Server während deiner Abwesenheit neu, landest du in der AFK-Zone und kommst mit <code>/server smp</code> zurück."
+        },
+        {
+          "q": "Wie zeige ich meine Koordinaten in Minecraft an?",
+          "a": "Nutze <code>/ch toggle</code> (oder <code>/coordshud</code>), um deine XYZ-Position, die Blickrichtung und eine 24-Stunden-Spieluhr in der Aktionsleiste anzuzeigen."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/de/wiki.html#chat",
+      "label": "Wiki: Chat, Sprache & AFK"
+    },
+    {
+      "url": "/de/wiki.html#commands",
+      "label": "Wiki: Alle Befehle"
+    },
+    {
+      "url": "/de/wiki.html#bedrock",
+      "label": "Wiki: Bedrock-Menü"
+    }
+  ],
+  "related": [
+    {
+      "url": "/de/guides/rules-support-qol.html",
+      "label": "Regeln & Komfortfunktionen"
+    },
+    {
+      "url": "/de/guides/join.html",
+      "label": "Einem Minecraft-Crossplay-Server beitreten"
+    },
+    {
+      "url": "/de/guides/crossplay.html",
+      "label": "Crossplay & gemeinsamer Fortschritt"
+    }
+  ]
+}

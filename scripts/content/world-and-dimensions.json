@@ -1,79 +1,55 @@
 {
   "slug": "world-and-dimensions",
-  "title": "World & Dimensions",
-  "h1": "Gilly SMP World Guide: Terrain, Difficulty, Seasons and Dimensions",
-  "description": "Explore the Gilly SMP world and dimensions: vanilla terrain, Easy difficulty, season resets, world border, and when the Nether and End open.",
-  "intro": "Gilly SMP runs a vanilla-style survival world with extra ores, trees and structures, all built from vanilla blocks. This guide covers the world's terrain and difficulty, the season resets, where the server is hosted and its limits, and how the Nether, End and portals work.",
+  "title": "World, Difficulty & Dimensions",
+  "updated": "2026-11-21",
+  "h1": "Minecraft World Guide: Difficulty, Nether, End, Seasons and World Resets",
+  "description": "Minecraft survival world guide covering Easy difficulty, terrain, when the Nether and End open, Nether portal alignment, season resets and the world border.",
+  "intro": "A survival server's world rules decide how the game feels: difficulty, what generates, when new dimensions open and when the world resets. These answers cover those rules in plain language. Gilly SMP is the worked example.",
   "groups": [
     {
-      "title": "The world & terrain",
+      "title": "Difficulty and terrain",
       "items": [
         {
-          "q": "What is the world like on Gilly SMP?",
-          "a": "Gilly SMP uses <strong>vanilla terrain and biomes</strong>, with extra ores, trees and structures added on top. Those structures include things like abbeys and beta villages. Everything is built from vanilla blocks, so you don't need to install any mods to explore or build in the world. <a href=\"/wiki.html#world\">World &amp; progression</a>"
+          "q": "What difficulty does a Minecraft survival server run on?",
+          "a": "Gilly SMP runs on <strong>Easy</strong>, the mode the survival rework is balanced around. Some mobs such as creepers, skeletons and cave spiders are toned down, and the difficulty never rises on its own."
         },
         {
-          "q": "Do I need mods or custom blocks to explore the Gilly SMP world?",
-          "a": "No. The Gilly SMP world is made entirely of <strong>vanilla blocks</strong>, with vanilla terrain and biomes plus extra ores, trees and structures. You don't need any mods to explore it, and the added structures include abbeys and beta villages."
+          "q": "What does the terrain look like on this Minecraft survival server?",
+          "a": "Gilly SMP uses vanilla terrain and biomes, with extra ores, trees and structures such as abbeys and beta villages. Everything uses vanilla blocks, so no mods are needed."
         },
         {
-          "q": "Does Gilly SMP have villages and other generated structures?",
-          "a": "Yes. Alongside vanilla terrain and biomes, the world generates extra structures such as <strong>abbeys and beta villages</strong>, as well as extra ores and trees. All of it uses vanilla blocks, so no mods are needed to see or build in these structures."
+          "q": "Are there villages in this Minecraft survival world?",
+          "a": "The survival rework expects you to build your own village on Gilly SMP. Advancements explain how to bring villagers to it."
+        },
+        {
+          "q": "Is there a world border on this Minecraft server?",
+          "a": "No world border is set on Gilly SMP yet. If one is added, its size will be listed on the wiki."
         }
       ]
     },
     {
-      "title": "Difficulty",
+      "title": "Nether, End and portals",
       "items": [
         {
-          "q": "What difficulty does Gilly SMP run on?",
-          "a": "Gilly SMP runs on <strong>Easy</strong> difficulty, the mode its survival rework is balanced around for relaxed play. Some mobs such as creepers, skeletons and cave spiders are toned down, and the difficulty never rises on its own. When you log in, chat shows a short welcome message with the current mode."
+          "q": "Can I go to the Nether on a Minecraft survival server?",
+          "a": "Not yet. On Gilly SMP both the Nether and the End are closed for now and will open in stages. The Nether opens after the next major update."
         },
         {
-          "q": "Will Gilly SMP ever switch to Hard difficulty?",
-          "a": "Gilly SMP stays on <strong>Easy</strong>, so the difficulty never rises on its own. The survival rework can switch a world to Hard as players progress when it runs on Normal, but that doesn't apply here. When you log in, chat shows the current mode."
+          "q": "How do I line up Nether portals on a Minecraft server?",
+          "a": "Once the Nether opens on Gilly SMP, <code>/portal</code> tells you where to build a portal in the other dimension so the two line up. Nether portals can be any size or shape."
+        },
+        {
+          "q": "Does the Minecraft world reset on a survival server?",
+          "a": "Yes. On Gilly SMP the world resets at the end of every season. You can ask for a copy of the world on Discord one week after the season ends."
         }
       ]
     },
     {
-      "title": "Seasons, resets & server limits",
+      "title": "Getting around",
       "items": [
         {
-          "q": "Does the Gilly SMP world reset, and how often?",
-          "a": "Yes. The Gilly SMP world <strong>resets at the end of every season</strong>. After a reset, everyone starts fresh in the new world."
-        },
-        {
-          "q": "Can I get a copy of the world after a Gilly SMP season ends?",
-          "a": "Yes. You can ask for a <strong>copy of the world</strong> on Discord <strong>one week after the season ends</strong>. The world itself resets at the end of each season."
-        },
-        {
-          "q": "Where is Gilly SMP hosted and what is the ping from the US?",
-          "a": "Gilly SMP is <strong>hosted in France</strong>. Players in the US get around <strong>100 ms</strong> ping."
-        },
-        {
-          "q": "Is there a whitelist or a player limit on Gilly SMP?",
-          "a": "There is <strong>no whitelist</strong>, so anyone with a legitimate account can join. The server runs in <strong>online mode</strong>, which means a legitimate Minecraft account is required. There is a cap of <strong>20 players</strong>. <a href=\"/wiki.html#server\">Server info</a>"
-        },
-        {
-          "q": "Is there a world border on Gilly SMP?",
-          "a": "There's <strong>no border set on the world</strong> yet. If a border is ever added, its size will be listed in the world section. For now you can explore freely."
-        }
-      ]
-    },
-    {
-      "title": "Nether, End & portals",
-      "items": [
-        {
-          "q": "Are the Nether and the End open on Gilly SMP?",
-          "a": "No. Both the <strong>Nether and the End portals are closed</strong> for now. They will be opened in stages so everyone can enjoy the early game first. <a href=\"/wiki.html#world\">World &amp; progression</a>"
-        },
-        {
-          "q": "When does the Nether open on Gilly SMP?",
-          "a": "The Nether opens <strong>after the next major update</strong>. Until then both the Nether and the End portals are closed, and they will open in stages so players can enjoy the early game first."
-        },
-        {
-          "q": "How does /portal work and can Nether portals be any size?",
-          "a": "Once the Nether is open, <code>/portal</code> tells you where to build a portal in the other dimension so the two <strong>line up</strong>. Nether portals can be <strong>any size or shape</strong>. Until the Nether opens, this isn't needed. <a href=\"/wiki.html#commands\">All commands</a>"
+          "q": "Is there a random teleport command on a Minecraft server?",
+          "a": "There is no <code>/rtp</code> command on Gilly SMP. Instead, an RTP cannon at spawn fires you 500 to 5000 blocks away onto safe ground, with a slow fall and a 30-second cooldown."
         }
       ]
     }
@@ -81,11 +57,11 @@
   "deeper": [
     {"url": "/wiki.html#world", "label": "Wiki: World & progression"},
     {"url": "/wiki.html#server", "label": "Wiki: Server info"},
-    {"url": "/advancements.html", "label": "Advancement Guide"}
+    {"url": "/wiki.html#travel", "label": "Wiki: Homes & teleporting"}
   ],
   "related": [
-    {"url": "/guides/join.html", "label": "Joining Gilly SMP"},
-    {"url": "/guides/mobs-and-darkness.html", "label": "Mobs & Darkness"},
-    {"url": "/guides/death-and-healing.html", "label": "Death & Healing"}
+    {"url": "/guides/mobs-and-darkness.html", "label": "Mobs, Phantoms & Darkness"},
+    {"url": "/guides/alloys-and-stations.html", "label": "Alloys, Stations & Tools"},
+    {"url": "/guides/join.html", "label": "Joining a Crossplay Minecraft Server"}
   ]
 }

@@ -1,0 +1,85 @@
+{
+  "slug": "chat-voice-afk",
+  "title": "Chat, voz y AFK",
+  "updated": "2026-11-21",
+  "h1": "Guía del chat de un servidor de Minecraft: chat global, mensajes privados, chat de voz y AFK",
+  "description": "Chat global, mensajes privados, chat de voz de Java, filtro antispam y reglas AFK en un servidor de Minecraft, con los comandos clave.",
+  "intro": "El chat, la voz y las reglas AFK marcan el ambiente de un servidor, sobre todo en un servidor crossplay donde no todos usan voz. Estas respuestas cubren lo básico de hablar, enviar mensajes y estar inactivo. Gilly SMP sirve de ejemplo.",
+  "groups": [
+    {
+      "title": "Chat",
+      "items": [
+        {
+          "q": "¿El chat de un servidor de Minecraft es global o local?",
+          "a": "En Gilly SMP el chat es global: todos ven tus mensajes. No hay chat por alcance y no necesitas gritar con <code>!</code>. Tu rango aparece delante de tu nombre."
+        },
+        {
+          "q": "¿Cómo envío un mensaje privado en un servidor de Minecraft?",
+          "a": "Usa <code>/msg &lt;jugador&gt; &lt;mensaje&gt;</code>, o <code>/w</code>, <code>/tell</code>, <code>/m</code> o <code>/whisper</code>, y responde con <code>/r</code>. <code>/ignore &lt;jugador&gt;</code> oculta a alguien y <code>/unignore</code> lo deshace."
+        },
+        {
+          "q": "¿Puedo usar colores en el chat de Minecraft?",
+          "a": "Sí. Los códigos de color <code>&amp;</code> funcionan en el chat, en los carteles y en los nombres del yunque de hasta 32 caracteres. Un mensaje que empieza por <code>&gt;</code> se muestra en verde, y uno que empieza por <code>*</code> recibe un degradado de morado a azul."
+        },
+        {
+          "q": "¿Cómo se gestiona el spam en el chat de un servidor de Minecraft?",
+          "a": "En Gilly SMP se detectan automáticamente los mensajes repetidos, el flood, los mensajes muy largos, el exceso de mayúsculas y los caracteres aleatorios. Los spammers son silenciados durante un tiempo corto, y más si siguen haciéndolo."
+        }
+      ]
+    },
+    {
+      "title": "Chat de voz",
+      "items": [
+        {
+          "q": "¿Cómo funciona el chat de voz en un servidor de Minecraft?",
+          "a": "En Gilly SMP, los jugadores de Java pueden instalar el mod Simple Voice Chat compatible con Minecraft 26.3 y pulsar <code>V</code> para configurarlo. Oyes a los jugadores a menos de 48 bloques, o 24 si susurran, y formas grupos con <code>G</code>. La grabación está desactivada."
+        },
+        {
+          "q": "¿Es obligatorio el chat de voz para jugar en un servidor crossplay de Minecraft?",
+          "a": "No. Bedrock y consola no pueden usar el chat de voz, así que en Gilly SMP nunca es obligatorio."
+        }
+      ]
+    },
+    {
+      "title": "AFK y coordenadas",
+      "items": [
+        {
+          "q": "¿Qué pasa cuando estás AFK en un servidor de Minecraft?",
+          "a": "En Gilly SMP, tras 5 minutos sin moverte se te marca como [AFK] y tu nombre se vuelve gris; <code>/afk</code> lo alterna. Tras 10 minutos más, se te desconecta. Si el servidor se reinicia mientras no estás, acabas en la zona AFK y vuelves con <code>/server smp</code>."
+        },
+        {
+          "q": "¿Cómo muestro mis coordenadas en Minecraft?",
+          "a": "Usa <code>/ch toggle</code> (o <code>/coordshud</code>) para mostrar tu posición XYZ, la dirección en la que miras y un reloj de 24 horas del juego en la barra de acción."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/es/wiki.html#chat",
+      "label": "Wiki: Chat, voz y AFK"
+    },
+    {
+      "url": "/es/wiki.html#commands",
+      "label": "Wiki: Todos los comandos"
+    },
+    {
+      "url": "/es/wiki.html#bedrock",
+      "label": "Wiki: Menú de Bedrock"
+    }
+  ],
+  "related": [
+    {
+      "url": "/es/guides/rules-support-qol.html",
+      "label": "Reglas y comodidades"
+    },
+    {
+      "url": "/es/guides/join.html",
+      "label": "Unirse a un servidor crossplay de Minecraft"
+    },
+    {
+      "url": "/es/guides/crossplay.html",
+      "label": "Crossplay y progreso compartido"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "ranks-and-storage",
+  "title": "Coffre de l'End, maisons et rangs",
+  "updated": "2026-11-21",
+  "h1": "Coffre de l'End, maisons et rangs Minecraft : comment fonctionne le stockage sur un serveur de survie",
+  "description": "Coffre de l'End, maisons publiques et rangs d'un serveur de survie Minecraft : rangées, maisons, partage et ce que débloque chaque rang.",
+  "intro": "Sur un serveur de survie, le stockage et les maisons déterminent le confort de construction. Ce guide couvre le coffre de l'End, les maisons et les avantages de rang qui les étendent. Gilly SMP sert d'exemple.",
+  "groups": [
+    {
+      "title": "Coffre de l'End",
+      "items": [
+        {
+          "q": "Quelle est la taille d'un coffre de l'End Minecraft et peut-on l'améliorer ?",
+          "a": "Sur Gilly SMP, le coffre de l'End commence à 3 rangées (27 emplacements) et va jusqu'à 6 rangées (54 emplacements) avec un rang. Ouvrez-le n'importe où avec <code>/ec</code>."
+        },
+        {
+          "q": "Puis-je partager mon coffre de l'End avec un autre joueur dans Minecraft ?",
+          "a": "Oui. <code>/ec invite &lt;joueur&gt;</code> donne l'accès, <code>/ec uninvite &lt;joueur&gt;</code> le retire, et <code>/ec invitelist</code> affiche qui y a accès. Les joueurs invités l'ouvrent avec <code>/ecshare &lt;propriétaire&gt;</code>."
+        },
+        {
+          "q": "Que ne peut-on pas ranger dans un coffre de l'End Minecraft ?",
+          "a": "Sur Gilly SMP, la roche-mère, les blocs de commande et les barrières ne peuvent pas être rangés dans le coffre de l'End. Le coffre est sauvegardé automatiquement chaque nuit."
+        }
+      ]
+    },
+    {
+      "title": "Maisons",
+      "items": [
+        {
+          "q": "Combien de maisons puis-je définir dans Minecraft ?",
+          "a": "Sur Gilly SMP, vous avez 2 maisons, davantage avec un rang. Utilisez <code>/sethome &lt;nom&gt;</code> à l'endroit où vous vous trouvez, <code>/home &lt;nom&gt;</code> pour y revenir et <code>/homes</code> pour les lister."
+        },
+        {
+          "q": "Comment rendre une maison Minecraft publique pour les autres joueurs ?",
+          "a": "Utilisez <code>/edithome</code> pour rendre une maison publique. Les autres listent les maisons publiques avec <code>/phomes</code> et en visitent une avec <code>/phome &lt;propriétaire&gt;+&lt;maison&gt;</code>, par exemple <code>/phome Steve+shop</code>."
+        }
+      ]
+    },
+    {
+      "title": "Rangs",
+      "items": [
+        {
+          "q": "Que débloquent les rangs d'un serveur de survie Minecraft ?",
+          "a": "Gilly SMP a trois rangs, Bronze, Or et Diamant, et chacun inclut les avantages des rangs inférieurs. Les rangées du coffre de l'End vont de 3 par défaut à 6 pour le Diamant, les maisons de 2 à 6, et les commandes actives de 5 à 15. Les rangs sont un avantage de confort, pas de puissance."
+        },
+        {
+          "q": "Que devient mon coffre de l'End si je perds mon rang ?",
+          "a": "Vos objets restent dans votre coffre de l'End. Vous ne pouvez accéder qu'aux rangées autorisées par votre rang actuel."
+        },
+        {
+          "q": "Comment obtenir un rang sur un serveur Minecraft ?",
+          "a": "Sur Gilly SMP, les rangs sont attribués par le staff. Jetez un œil à la boutique et demandez sur Discord."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/fr/wiki.html#storage",
+      "label": "Wiki : Coffre de l'End"
+    },
+    {
+      "url": "/fr/wiki.html#ranks",
+      "label": "Wiki : Rangs"
+    },
+    {
+      "url": "/fr/wiki.html#travel",
+      "label": "Wiki : Maisons et téléportation"
+    }
+  ],
+  "related": [
+    {
+      "url": "/fr/guides/points-orders-trading.html",
+      "label": "Économie du serveur : points, commandes et échanges"
+    },
+    {
+      "url": "/fr/guides/rules-support-qol.html",
+      "label": "Règles et confort de jeu"
+    },
+    {
+      "url": "/fr/guides/join.html",
+      "label": "Rejoindre un serveur Minecraft crossplay"
+    }
+  ]
+}

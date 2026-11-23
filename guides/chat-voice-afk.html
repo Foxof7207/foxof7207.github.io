@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Chat, Voice &amp; AFK – Gilly SMP Guide</title>
-  <meta name="description" content="Everything about Gilly SMP chat: global messages, /msg private messages, colour codes, spam mutes, Simple Voice Chat, AFK rules, the Bedrock /menu and player commands.">
+  <title>Chat, Voice Chat &amp; AFK – Gilly SMP Guide</title>
+  <meta name="description" content="How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.">
   <link rel="canonical" href="https://craft.gillyb.net/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/chat-voice-afk.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Gilly SMP">
-  <meta property="og:title" content="Chat, Voice &amp; AFK – Gilly SMP Guide">
-  <meta property="og:description" content="Everything about Gilly SMP chat: global messages, /msg private messages, colour codes, spam mutes, Simple Voice Chat, AFK rules, the Bedrock /menu and player commands.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Chat, Voice Chat &amp; AFK – Gilly SMP Guide">
+  <meta property="og:description" content="How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.">
   <meta property="og:url" content="https://craft.gillyb.net/guides/chat-voice-afk.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chat, Voice Chat &amp; AFK – Gilly SMP Guide">
+  <meta name="twitter:description" content="How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
@@ -28,11 +38,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Gilly SMP Global Chat, Voice Chat, AFK and Bedrock Menu Guide",
+      "name": "Minecraft Server Chat Guide: Global Chat, Private Messages, Voice Chat and AFK",
       "url": "https://craft.gillyb.net/guides/chat-voice-afk.html",
-      "description": "Everything about Gilly SMP chat: global messages, /msg private messages, colour codes, spam mutes, Simple Voice Chat, AFK rules, the Bedrock /menu and player commands.",
+      "description": "How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "isPartOf": {
         "@id": "https://craft.gillyb.net/#website"
       }
@@ -42,102 +52,70 @@
       "@type": "FAQPage",
       "url": "https://craft.gillyb.net/guides/chat-voice-afk.html",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Who can see my chat messages on Gilly SMP? Is chat global?",
+          "name": "Is Minecraft server chat global or local?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Everyone sees your messages: chat on Gilly SMP is global, with no ranged chat and no need to shout with !. Your rank appears in front of your name, for example [Gold] &lt;Steve&gt; hello. Just type normally and the whole server reads it."
+            "text": "On Gilly SMP chat is global: everyone sees your messages. There is no ranged chat and no need to shout with !. Your rank shows in front of your name."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I send a private message to another player on Gilly SMP?",
+          "name": "How do I send a private message on a Minecraft server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use /msg &lt;player&gt; &lt;message&gt; to send a private message; /w, /tell, /m and /whisper all do the same thing. Reply to the last person with /r (also /reply). On Bedrock you can pick the player from /menu → Private message."
+            "text": "Use /msg &lt;player&gt; &lt;message&gt;, or /w, /tell, /m or /whisper, and reply with /r. /ignore &lt;player&gt; hides someone and /unignore undoes it."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I ignore or block someone in chat on Gilly SMP?",
+          "name": "Can I use colours in Minecraft chat?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Run /ignore &lt;player&gt; to hide someone's messages, and /block works too. Undo it with /unignore or /unblock."
+            "text": "Yes. &amp; colour codes work in chat, on signs and in anvil names of up to 32 characters. A message starting with &gt; is green, and one starting with * gets a purple-to-blue gradient."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I send an emote in chat on Gilly SMP?",
+          "name": "How is spam handled in Minecraft server chat?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use /me &lt;action&gt;, also available as /emote. For example, /me waves displays in chat as * Steve waves."
+            "text": "On Gilly SMP, repeated messages, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, and longer if they keep doing it."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I use colour codes and special formatting in Gilly SMP chat?",
+          "name": "How does Minecraft voice chat work on a server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, &amp; colour codes work in chat, on signs and in anvil names (up to 32 characters). A message starting with &gt; is shown in green and the &gt; stays visible. A message starting with * becomes a purple-to-blue gradient."
+            "text": "On Gilly SMP, Java players can install the Simple Voice Chat mod matching Minecraft 26.3, then press V to set it up. You hear players within 48 blocks, or 24 when whispering, and can form groups with G. Recording is disabled."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens if I spam in chat on Gilly SMP?",
+          "name": "Is voice chat required to play on a crossplay Minecraft server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Spam is detected automatically: repeating the same message, flooding, very long messages, excessive capitals and random characters all trigger it. Spammers are muted for a short time, and the mute lasts longer if they keep doing it."
+            "text": "No. Bedrock and console can't use voice chat, so it's never required to play on Gilly SMP."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I use voice chat on Gilly SMP?",
+          "name": "What happens when you go AFK on a Minecraft server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Java players can install the Simple Voice Chat mod (Fabric, NeoForge, Forge or Quilt) for Minecraft 26.3 and press V to set it up once joined. You hear players within 48 blocks, or 24 blocks when whispering, and can make groups with G. Push-to-talk is on Caps Lock by default, with voice activation available in the settings, and recording is disabled. Bedrock and console players can't use it, so voice chat is never required."
+            "text": "On Gilly SMP, after 5 minutes without moving you're marked [AFK] and your name turns grey; /afk toggles it. After 10 more minutes you're disconnected. If the server restarts while you're away, you land in the AFK zone and can return with /server smp."
           }
         },
         {
           "@type": "Question",
-          "name": "Can Bedrock or console players use voice chat on Gilly SMP?",
+          "name": "How do I show my coordinates in Minecraft?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The Simple Voice Chat proximity mod is Java-only, so Bedrock and console players can't use it and it's never required to play."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens when I go AFK on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "After 5 minutes without moving you're marked [AFK] and your name turns grey; /afk toggles it manually. After 10 more minutes you're disconnected to keep the server fast, and you simply rejoin. If the main server restarts while you're away, you land in the AFK zone and can come back with /server smp."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I open the menu on Bedrock on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Type /menu to open a touch-friendly menu with buttons for the most common commands: Spawn, Homes, Teleport requests, Ender Chest, Orders, Trade, Private message, Points, Referrals, My rank and Tools. Whenever you need to pick a player, you get a list of everyone online. Java players don't need the menu and use the commands directly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why are some buttons grey in the Gilly SMP Bedrock menu?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Buttons that need another player are greyed out with \"nobody else is online\" when you're alone, and \"Go to a home\" is greyed out until you set a home. Clickable chat messages don't work on Bedrock, so use /menu to accept or decline teleport requests and to pick homes. You can see your rank and every rank's limits under /menu → My rank."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does \"That command is not available\" mean on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Only player commands are enabled on Gilly SMP; anything else is blocked, hidden from tab completion and answers \"That command is not available. Bedrock players: use /menu.\" The full list of allowed commands is in All commands, covering chat, homes, teleporting, economy, storage and tools."
+            "text": "Use /ch toggle (or /coordshud) to show your XYZ position, facing direction and a 24-hour in-game clock in your action bar."
           }
         }
       ]
@@ -167,7 +145,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Chat, Voice & AFK",
+          "name": "Chat, Voice Chat & AFK",
           "item": "https://craft.gillyb.net/guides/chat-voice-afk.html"
         }
       ]
@@ -175,7 +153,7 @@
   ]
 }
   </script>
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
   <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
@@ -183,6 +161,12 @@
   <header class="nav">
     <div class="nav-inner">
       <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Language">
+          <a href="/guides/chat-voice-afk.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          <a href="/fr/guides/chat-voice-afk.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/chat-voice-afk.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/chat-voice-afk.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
         <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
@@ -198,86 +182,69 @@
     </div>
   </header>
   <main id="main" class="guide container">
-    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Chat, Voice &amp; AFK</p>
+    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Chat, Voice Chat &amp; AFK</p>
     <section class="hero page-hero">
       <div class="hero-inner container">
         <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
-        <h1>Gilly SMP Global Chat, Voice Chat, AFK and Bedrock Menu Guide</h1>
-        <p class="intro">On Gilly SMP, chat, voice and AFK are all built for a friendly, casual survival world shared by Java, Bedrock and console players. This guide covers global chat and private messages, colour codes and spam mutes, the Java-only Simple Voice Chat mod, the 5-minute AFK timer, the touch-friendly Bedrock /menu and which player commands are enabled.</p>
-        <p class="badges"><span class="badge y">12 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
+        <h1>Minecraft Server Chat Guide: Global Chat, Private Messages, Voice Chat and AFK</h1>
+        <p class="intro">Chat, voice and AFK rules shape how a server feels, especially on a crossplay server where not everyone uses voice. These answers cover the basics of talking, messaging and idling. Gilly SMP is the worked example.</p>
+        <p class="badges"><span class="badge y">8 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
       </div>
       <div class="ground" aria-hidden="true"></div>
     </section>
-    <h2 class="topic-title">Global chat &amp; private messages</h2>
+    <h2 class="topic-title">Chat</h2>
     <article class="qa">
-      <h3>Who can see my chat messages on Gilly SMP? Is chat global?</h3>
-      <p>Everyone sees your messages: chat on Gilly SMP is <strong>global</strong>, with no ranged chat and no need to shout with <code>!</code>. Your rank appears in front of your name, for example <code>[Gold] &lt;Steve&gt; hello</code>. Just type normally and the whole server reads it.</p>
+      <h3>Is Minecraft server chat global or local?</h3>
+      <p>On Gilly SMP chat is global: everyone sees your messages. There is no ranged chat and no need to shout with <code>!</code>. Your rank shows in front of your name.</p>
     </article>
     <article class="qa">
-      <h3>How do I send a private message to another player on Gilly SMP?</h3>
-      <p>Use <code>/msg &lt;player&gt; &lt;message&gt;</code> to send a private message; <code>/w</code>, <code>/tell</code>, <code>/m</code> and <code>/whisper</code> all do the same thing. Reply to the last person with <code>/r</code> (also <code>/reply</code>). On Bedrock you can pick the player from <code>/menu</code> → Private message.</p>
+      <h3>How do I send a private message on a Minecraft server?</h3>
+      <p>Use <code>/msg &lt;player&gt; &lt;message&gt;</code>, or <code>/w</code>, <code>/tell</code>, <code>/m</code> or <code>/whisper</code>, and reply with <code>/r</code>. <code>/ignore &lt;player&gt;</code> hides someone and <code>/unignore</code> undoes it.</p>
     </article>
     <article class="qa">
-      <h3>How do I ignore or block someone in chat on Gilly SMP?</h3>
-      <p>Run <code>/ignore &lt;player&gt;</code> to hide someone's messages, and <code>/block</code> works too. Undo it with <code>/unignore</code> or <code>/unblock</code>.</p>
+      <h3>Can I use colours in Minecraft chat?</h3>
+      <p>Yes. <code>&amp;</code> colour codes work in chat, on signs and in anvil names of up to 32 characters. A message starting with <code>&gt;</code> is green, and one starting with <code>*</code> gets a purple-to-blue gradient.</p>
     </article>
     <article class="qa">
-      <h3>How do I send an emote in chat on Gilly SMP?</h3>
-      <p>Use <code>/me &lt;action&gt;</code>, also available as <code>/emote</code>. For example, <code>/me waves</code> displays in chat as <code>* Steve waves</code>.</p>
+      <h3>How is spam handled in Minecraft server chat?</h3>
+      <p>On Gilly SMP, repeated messages, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, and longer if they keep doing it.</p>
+    </article>
+    <h2 class="topic-title">Voice chat</h2>
+    <article class="qa">
+      <h3>How does Minecraft voice chat work on a server?</h3>
+      <p>On Gilly SMP, Java players can install the Simple Voice Chat mod matching Minecraft 26.3, then press <code>V</code> to set it up. You hear players within 48 blocks, or 24 when whispering, and can form groups with <code>G</code>. Recording is disabled.</p>
     </article>
     <article class="qa">
-      <h3>Can I use colour codes and special formatting in Gilly SMP chat?</h3>
-      <p>Yes, <code>&amp;</code> colour codes work in chat, on signs and in anvil names (up to 32 characters). A message starting with <code>&gt;</code> is shown in green and the <code>&gt;</code> stays visible. A message starting with <code>*</code> becomes a purple-to-blue gradient.</p>
+      <h3>Is voice chat required to play on a crossplay Minecraft server?</h3>
+      <p>No. Bedrock and console can't use voice chat, so it's never required to play on Gilly SMP.</p>
     </article>
-    <h2 class="topic-title">Spam, voice chat &amp; AFK</h2>
+    <h2 class="topic-title">AFK and coordinates</h2>
     <article class="qa">
-      <h3>What happens if I spam in chat on Gilly SMP?</h3>
-      <p>Spam is detected automatically: repeating the same message, flooding, very long messages, excessive capitals and random characters all trigger it. Spammers are muted for a short time, and the mute lasts longer if they keep doing it.</p>
-    </article>
-    <article class="qa">
-      <h3>How do I use voice chat on Gilly SMP?</h3>
-      <p>Java players can install the <strong>Simple Voice Chat</strong> mod (Fabric, NeoForge, Forge or Quilt) for Minecraft 26.3 and press <code>V</code> to set it up once joined. You hear players within 48 blocks, or 24 blocks when whispering, and can make groups with <code>G</code>. Push-to-talk is on <strong>Caps Lock</strong> by default, with voice activation available in the settings, and recording is disabled. Bedrock and console players can't use it, so voice chat is never required.</p>
+      <h3>What happens when you go AFK on a Minecraft server?</h3>
+      <p>On Gilly SMP, after 5 minutes without moving you're marked [AFK] and your name turns grey; <code>/afk</code> toggles it. After 10 more minutes you're disconnected. If the server restarts while you're away, you land in the AFK zone and can return with <code>/server smp</code>.</p>
     </article>
     <article class="qa">
-      <h3>Can Bedrock or console players use voice chat on Gilly SMP?</h3>
-      <p>No. The <strong>Simple Voice Chat</strong> proximity mod is Java-only, so Bedrock and console players can't use it and it's never required to play.</p>
-    </article>
-    <article class="qa">
-      <h3>What happens when I go AFK on Gilly SMP?</h3>
-      <p>After 5 minutes without moving you're marked <code>[AFK]</code> and your name turns grey; <code>/afk</code> toggles it manually. After 10 more minutes you're disconnected to keep the server fast, and you simply rejoin. If the main server restarts while you're away, you land in the AFK zone and can come back with <code>/server smp</code>.</p>
-    </article>
-    <h2 class="topic-title">Bedrock menu &amp; commands</h2>
-    <article class="qa">
-      <h3>How do I open the menu on Bedrock on Gilly SMP?</h3>
-      <p>Type <code>/menu</code> to open a touch-friendly menu with buttons for the most common commands: Spawn, Homes, Teleport requests, Ender Chest, Orders, Trade, Private message, Points, Referrals, My rank and Tools. Whenever you need to pick a player, you get a list of everyone online. Java players don't need the menu and use the commands directly.</p>
-    </article>
-    <article class="qa">
-      <h3>Why are some buttons grey in the Gilly SMP Bedrock menu?</h3>
-      <p>Buttons that need another player are greyed out with "nobody else is online" when you're alone, and "Go to a home" is greyed out until you set a home. Clickable chat messages don't work on Bedrock, so use <code>/menu</code> to accept or decline teleport requests and to pick homes. You can see your rank and every rank's limits under <code>/menu</code> → My rank.</p>
-    </article>
-    <article class="qa">
-      <h3>What does &quot;That command is not available&quot; mean on Gilly SMP?</h3>
-      <p>Only player commands are enabled on Gilly SMP; anything else is blocked, hidden from tab completion and answers "That command is not available. Bedrock players: use /menu." The full list of allowed commands is in <a href="/wiki.html#commands">All commands</a>, covering chat, homes, teleporting, economy, storage and tools.</p>
+      <h3>How do I show my coordinates in Minecraft?</h3>
+      <p>Use <code>/ch toggle</code> (or <code>/coordshud</code>) to show your XYZ position, facing direction and a 24-hour in-game clock in your action bar.</p>
     </article>
     <section class="guide-deeper">
       <h2>Go deeper</h2>
       <ul class="guide-links">
         <li><a href="/wiki.html#chat">Wiki: Chat, voice &amp; AFK</a></li>
-        <li><a href="/wiki.html#bedrock">Wiki: Bedrock menu</a></li>
         <li><a href="/wiki.html#commands">Wiki: All commands</a></li>
-        <li><a href="/wiki.html#server">Wiki: Server info</a></li>
+        <li><a href="/wiki.html#bedrock">Wiki: Bedrock menu</a></li>
       </ul>
     </section>
     <section class="guide-related">
       <h2>Related guides</h2>
       <ul class="guide-links">
-        <li><a href="/guides/rules-support-qol.html">Rules, support &amp; quality of life</a></li>
-        <li><a href="/guides/crossplay.html">Crossplay &amp; mods</a></li>
-        <li><a href="/guides/join.html">How to join</a></li>
+        <li><a href="/guides/rules-support-qol.html">Rules &amp; Quality of Life</a></li>
+        <li><a href="/guides/join.html">Joining a Crossplay Minecraft Server</a></li>
+        <li><a href="/guides/crossplay.html">Crossplay &amp; Shared Progress</a></li>
       </ul>
     </section>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
         <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
@@ -300,7 +267,7 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-21">November 21, 2026</time></p>
       <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
     </div>
   </footer>

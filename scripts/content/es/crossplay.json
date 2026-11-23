@@ -1,0 +1,85 @@
+{
+  "slug": "crossplay",
+  "title": "Crossplay y progreso compartido",
+  "updated": "2026-11-21",
+  "h1": "¿Pueden los jugadores de Java y Bedrock compartir el mismo mundo de Minecraft? Explicación del crossplay",
+  "description": "Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.",
+  "intro": "El crossplay permite a los jugadores de Minecraft en Java, Bedrock, Xbox, PlayStation y Switch explorar juntos el mismo mundo. Esta guía explica cómo funciona en la práctica, desde vincular cuentas hasta lo que ve cada plataforma. Gilly SMP sirve de ejemplo.",
+  "groups": [
+    {
+      "title": "Jugar juntos entre plataformas",
+      "items": [
+        {
+          "q": "¿Pueden los jugadores de Java y Bedrock jugar en el mismo mundo de Minecraft?",
+          "a": "Sí. En Gilly SMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa <code>mc.gillyb.net</code>, y Bedrock usa la misma dirección en el puerto <strong>19132</strong>."
+        },
+        {
+          "q": "¿Puedo usar los mismos comandos en Bedrock y consola que en Java?",
+          "a": "Casi. Los jugadores de Bedrock y consola tienen la mayoría de los comandos como botones en <code>/menu</code>: hogares, solicitudes de teletransporte, cofre de ender, pedidos, intercambios y mensajes privados. Los mensajes del chat en los que se puede hacer clic no funcionan en Bedrock, es una limitación de Bedrock."
+        },
+        {
+          "q": "¿Puedo usar el chat de voz en un servidor crossplay si juego en consola?",
+          "a": "El chat de voz es opcional. Los jugadores de Java pueden instalar el mod Simple Voice Chat, pero Bedrock y consola no pueden usarlo, así que nunca es obligatorio para jugar."
+        }
+      ]
+    },
+    {
+      "title": "Cuentas y progreso",
+      "items": [
+        {
+          "q": "¿Cómo vinculo una cuenta de Java con una de Bedrock para compartir el progreso?",
+          "a": "Ejecuta <code>/linkaccount</code> en una cuenta y sigue las instrucciones para vincularla con la otra. Una vez vinculadas, ambas cuentas comparten un mismo perfil de jugador. <code>/unlinkaccount</code> deshace la vinculación."
+        },
+        {
+          "q": "¿Por qué mi nombre de Bedrock empieza por un guion bajo?",
+          "a": "Los nombres de Bedrock reciben un prefijo <code>_</code> y los espacios se convierten en guiones bajos. Así nunca chocan con nombres de Java, y el prefijo es el mismo en el proxy y en el servidor, así que conservas un solo nombre en todas partes."
+        },
+        {
+          "q": "¿Pueden los jugadores de Bedrock ver las texturas personalizadas del paquete de Java?",
+          "a": "No. Bedrock no puede cargar paquetes de Java, así que los jugadores de Bedrock ven las texturas vanilla y, a veces, claves sin procesar en los objetos personalizados. Todo funciona igual, pero el aspecto personalizado solo aparece en Java."
+        }
+      ]
+    },
+    {
+      "title": "Mods y juego limpio",
+      "items": [
+        {
+          "q": "¿Qué mods están permitidos en un servidor crossplay de Minecraft?",
+          "a": "Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en Gilly SMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat."
+        },
+        {
+          "q": "¿Es Gilly SMP un servidor pay-to-win?",
+          "a": "No. La tienda solo vende mejoras de comodidad y cosméticos. Los rangos dan ventajas de comodidad, como más hogares y filas de cofre de ender, no poder."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/es/wiki.html#bedrock",
+      "label": "Wiki: Menú de Bedrock"
+    },
+    {
+      "url": "/es/wiki.html#basics",
+      "label": "Wiki: Primeros pasos"
+    },
+    {
+      "url": "/es/recipes.html",
+      "label": "Libro de recetas"
+    }
+  ],
+  "related": [
+    {
+      "url": "/es/guides/join.html",
+      "label": "Unirse a un servidor crossplay de Minecraft"
+    },
+    {
+      "url": "/es/guides/recipes-and-advancements.html",
+      "label": "Recetas y logros"
+    },
+    {
+      "url": "/es/guides/chat-voice-afk.html",
+      "label": "Chat, voz y AFK"
+    }
+  ]
+}

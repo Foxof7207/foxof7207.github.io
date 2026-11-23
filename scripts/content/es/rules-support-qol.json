@@ -1,0 +1,71 @@
+{
+  "slug": "rules-support-qol",
+  "title": "Reglas del servidor y comodidades",
+  "updated": "2026-11-21",
+  "h1": "Reglas de un servidor de Minecraft, anticheat y comodidades explicadas",
+  "description": "Reglas de un servidor de supervivencia sobre PvP, grifeo, mods de trampas y terrenos, además de comodidades, apelaciones de baneo y cómo contactar al staff.",
+  "intro": "Un buen servidor de supervivencia se define tanto por sus reglas como por sus funciones: qué peleas son justas, qué cuenta como grifeo y qué ajustes facilitan el día a día. Estas respuestas cubren ambas cosas. Gilly SMP sirve de ejemplo.",
+  "groups": [
+    {
+      "title": "Juego limpio",
+      "items": [
+        {
+          "q": "¿Está permitido el PvP en un servidor de supervivencia de Minecraft?",
+          "a": "En Gilly SMP, el PvP está permitido siempre que sea justo. El tp-trapping y el spawn-killing están prohibidos. Los teletransportes tienen un retardo de 3 segundos que cancelan el movimiento o el daño, así que no puedes teletransportarte para escapar de una pelea."
+        },
+        {
+          "q": "¿Están permitidos los mods de trampas en un servidor de Minecraft?",
+          "a": "No. En Gilly SMP funciona un anticheat, y los mods como X-ray, freecam o Wurst están prohibidos. A los jugadores sospechosos se les puede pedir que instalen un mod de verificación."
+        },
+        {
+          "q": "¿Cuál es el castigo por grifear en un servidor de Minecraft?",
+          "a": "En Gilly SMP, el grifeo y el robo no están permitidos. La primera infracción recibe una advertencia, y la segunda un baneo temporal."
+        },
+        {
+          "q": "¿Se puede reclamar terreno en un servidor de supervivencia de Minecraft?",
+          "a": "En Gilly SMP no hay reclamación de terrenos. Respeta las construcciones de los demás jugadores."
+        }
+      ]
+    },
+    {
+      "title": "Comodidades",
+      "items": [
+        {
+          "q": "¿Cómo bloqueo un cofre o oculto un marco de objeto en Minecraft?",
+          "a": "En Gilly SMP, los cofres se pueden bloquear para que solo tú y los jugadores que permitas puedan abrirlos. Agáchate y haz clic derecho sobre un marco de objeto con tijeras para bloquearlo o desbloquearlo, o con un pincel para hacerlo invisible."
+        },
+        {
+          "q": "¿Cómo mantengo un chunk cargado en Minecraft?",
+          "a": "Deja caer una Estrella del Nether sobre una piedra guía. En Gilly SMP, el chunk permanece cargado hasta que se rompa la piedra guía."
+        },
+        {
+          "q": "¿Cómo combino un élitro con una pechera en Minecraft?",
+          "a": "Deja caer ambos sobre un yunque. Los encantamientos se conservan. Deja el resultado sobre una piedra de afilar para separarlos de nuevo."
+        }
+      ]
+    },
+    {
+      "title": "¿Es pay-to-win y cómo apelo?",
+      "items": [
+        {
+          "q": "¿Es pay-to-win este servidor de Minecraft?",
+          "a": "No. Gilly SMP no es pay-to-win: la tienda solo vende mejoras de comodidad y cosméticos."
+        },
+        {
+          "q": "¿Cómo apelo un baneo en un servidor de Minecraft?",
+          "a": "En Gilly SMP, abre un ticket en Discord, la vía más rápida, o escribe a la dirección del staff indicada en la sección de soporte de la wiki."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {"url": "/es/wiki.html#rules", "label": "Wiki: Reglas"},
+    {"url": "/es/wiki.html#qol", "label": "Wiki: Comodidades"},
+    {"url": "/es/wiki.html#support", "label": "Wiki: Staff y apelaciones"}
+  ],
+  "related": [
+    {"url": "/es/guides/chat-voice-afk.html", "label": "Chat, voz y AFK"},
+    {"url": "/es/guides/join.html", "label": "Unirse a un servidor crossplay de Minecraft"},
+    {"url": "/es/guides/ranks-and-storage.html", "label": "Cofre de ender, hogares y rangos"}
+  ]
+}

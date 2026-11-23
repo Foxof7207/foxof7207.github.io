@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Chat, voz y AFK – Guía de Gilly SMP</title>
+  <meta name="description" content="Chat global, mensajes privados, chat de voz de Java, filtro antispam y reglas AFK en un servidor de Minecraft, con los comandos clave.">
+  <link rel="canonical" href="https://craft.gillyb.net/es/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/chat-voice-afk.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/chat-voice-afk.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Chat, voz y AFK – Guía de Gilly SMP">
+  <meta property="og:description" content="Chat global, mensajes privados, chat de voz de Java, filtro antispam y reglas AFK en un servidor de Minecraft, con los comandos clave.">
+  <meta property="og:url" content="https://craft.gillyb.net/es/guides/chat-voice-afk.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chat, voz y AFK – Guía de Gilly SMP">
+  <meta name="twitter:description" content="Chat global, mensajes privados, chat de voz de Java, filtro antispam y reglas AFK en un servidor de Minecraft, con los comandos clave.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Guía del chat de un servidor de Minecraft: chat global, mensajes privados, chat de voz y AFK",
+      "url": "https://craft.gillyb.net/es/guides/chat-voice-afk.html",
+      "description": "Chat global, mensajes privados, chat de voz de Java, filtro antispam y reglas AFK en un servidor de Minecraft, con los comandos clave.",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/es/guides/chat-voice-afk.html",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿El chat de un servidor de Minecraft es global o local?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Gilly SMP el chat es global: todos ven tus mensajes. No hay chat por alcance y no necesitas gritar con !. Tu rango aparece delante de tu nombre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo envío un mensaje privado en un servidor de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usa /msg &lt;jugador&gt; &lt;mensaje&gt;, o /w, /tell, /m o /whisper, y responde con /r. /ignore &lt;jugador&gt; oculta a alguien y /unignore lo deshace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar colores en el chat de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Los códigos de color &amp; funcionan en el chat, en los carteles y en los nombres del yunque de hasta 32 caracteres. Un mensaje que empieza por &gt; se muestra en verde, y uno que empieza por * recibe un degradado de morado a azul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se gestiona el spam en el chat de un servidor de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Gilly SMP se detectan automáticamente los mensajes repetidos, el flood, los mensajes muy largos, el exceso de mayúsculas y los caracteres aleatorios. Los spammers son silenciados durante un tiempo corto, y más si siguen haciéndolo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona el chat de voz en un servidor de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Gilly SMP, los jugadores de Java pueden instalar el mod Simple Voice Chat compatible con Minecraft 26.3 y pulsar V para configurarlo. Oyes a los jugadores a menos de 48 bloques, o 24 si susurran, y formas grupos con G. La grabación está desactivada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es obligatorio el chat de voz para jugar en un servidor crossplay de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Bedrock y consola no pueden usar el chat de voz, así que en Gilly SMP nunca es obligatorio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa cuando estás AFK en un servidor de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Gilly SMP, tras 5 minutos sin moverte se te marca como [AFK] y tu nombre se vuelve gris; /afk lo alterna. Tras 10 minutos más, se te desconecta. Si el servidor se reinicia mientras no estás, acabas en la zona AFK y vuelves con /server smp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo muestro mis coordenadas en Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usa /ch toggle (o /coordshud) para mostrar tu posición XYZ, la dirección en la que miras y un reloj de 24 horas del juego en la barra de acción."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://craft.gillyb.net/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/es/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guías",
+          "item": "https://craft.gillyb.net/es/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Chat, voz y AFK",
+          "item": "https://craft.gillyb.net/es/guides/chat-voice-afk.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Comunidad">
+        <span class="lang-switch" role="group" aria-label="Idioma">
+          <a href="/guides/chat-voice-afk.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/chat-voice-afk.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/chat-voice-afk.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/chat-voice-afk.html" hreflang="es" lang="es" aria-current="true">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+      <a class="brand" href="/es/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Recursos">
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Logros</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/es/">Inicio</a><span>›</span><a href="/es/wiki.html">Wiki</a><span>›</span><a href="/es/guides/">Guías</a><span>›</span>Chat, voz y AFK</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Guía del chat de un servidor de Minecraft: chat global, mensajes privados, chat de voz y AFK</h1>
+        <p class="intro">El chat, la voz y las reglas AFK marcan el ambiente de un servidor, sobre todo en un servidor crossplay donde no todos usan voz. Estas respuestas cubren lo básico de hablar, enviar mensajes y estar inactivo. Gilly SMP sirve de ejemplo.</p>
+        <p class="badges"><span class="badge y">8 respuestas</span><a class="badge" href="/es/wiki.html">Wiki completa →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Chat</h2>
+    <article class="qa">
+      <h3>¿El chat de un servidor de Minecraft es global o local?</h3>
+      <p>En Gilly SMP el chat es global: todos ven tus mensajes. No hay chat por alcance y no necesitas gritar con <code>!</code>. Tu rango aparece delante de tu nombre.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Cómo envío un mensaje privado en un servidor de Minecraft?</h3>
+      <p>Usa <code>/msg &lt;jugador&gt; &lt;mensaje&gt;</code>, o <code>/w</code>, <code>/tell</code>, <code>/m</code> o <code>/whisper</code>, y responde con <code>/r</code>. <code>/ignore &lt;jugador&gt;</code> oculta a alguien y <code>/unignore</code> lo deshace.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Puedo usar colores en el chat de Minecraft?</h3>
+      <p>Sí. Los códigos de color <code>&amp;</code> funcionan en el chat, en los carteles y en los nombres del yunque de hasta 32 caracteres. Un mensaje que empieza por <code>&gt;</code> se muestra en verde, y uno que empieza por <code>*</code> recibe un degradado de morado a azul.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Cómo se gestiona el spam en el chat de un servidor de Minecraft?</h3>
+      <p>En Gilly SMP se detectan automáticamente los mensajes repetidos, el flood, los mensajes muy largos, el exceso de mayúsculas y los caracteres aleatorios. Los spammers son silenciados durante un tiempo corto, y más si siguen haciéndolo.</p>
+    </article>
+    <h2 class="topic-title">Chat de voz</h2>
+    <article class="qa">
+      <h3>¿Cómo funciona el chat de voz en un servidor de Minecraft?</h3>
+      <p>En Gilly SMP, los jugadores de Java pueden instalar el mod Simple Voice Chat compatible con Minecraft 26.3 y pulsar <code>V</code> para configurarlo. Oyes a los jugadores a menos de 48 bloques, o 24 si susurran, y formas grupos con <code>G</code>. La grabación está desactivada.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Es obligatorio el chat de voz para jugar en un servidor crossplay de Minecraft?</h3>
+      <p>No. Bedrock y consola no pueden usar el chat de voz, así que en Gilly SMP nunca es obligatorio.</p>
+    </article>
+    <h2 class="topic-title">AFK y coordenadas</h2>
+    <article class="qa">
+      <h3>¿Qué pasa cuando estás AFK en un servidor de Minecraft?</h3>
+      <p>En Gilly SMP, tras 5 minutos sin moverte se te marca como [AFK] y tu nombre se vuelve gris; <code>/afk</code> lo alterna. Tras 10 minutos más, se te desconecta. Si el servidor se reinicia mientras no estás, acabas en la zona AFK y vuelves con <code>/server smp</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Cómo muestro mis coordenadas en Minecraft?</h3>
+      <p>Usa <code>/ch toggle</code> (o <code>/coordshud</code>) para mostrar tu posición XYZ, la dirección en la que miras y un reloj de 24 horas del juego en la barra de acción.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Para saber más</h2>
+      <ul class="guide-links">
+        <li><a href="/es/wiki.html#chat">Wiki: Chat, voz y AFK</a></li>
+        <li><a href="/es/wiki.html#commands">Wiki: Todos los comandos</a></li>
+        <li><a href="/es/wiki.html#bedrock">Wiki: Menú de Bedrock</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Guías relacionadas</h2>
+      <ul class="guide-links">
+        <li><a href="/es/guides/rules-support-qol.html">Reglas y comodidades</a></li>
+        <li><a href="/es/guides/join.html">Unirse a un servidor crossplay de Minecraft</a></li>
+        <li><a href="/es/guides/crossplay.html">Crossplay y progreso compartido</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/es/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Un SMP de supervivencia crossplay sin pay-to-win. Java, Bedrock y consola, un solo mundo.</p>
+      </div>
+      <nav class="f-col" aria-label="Explorar">
+        <h3 class="f-title">Explorar</h3>
+        <a href="/es/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Inicio</a>
+        <a href="/es/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Cómo unirse</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Libro de recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Guía de logros</a>
+      </nav>
+      <nav class="f-col" aria-label="Comunidad">
+        <h3 class="f-title">Comunidad</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Última actualización <time datetime="2026-11-21">21 de noviembre de 2026</time></p>
+      <p class="legal">Gilly SMP no es un servicio oficial de Minecraft y no está aprobado ni asociado con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del paquete de recursos del servidor.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

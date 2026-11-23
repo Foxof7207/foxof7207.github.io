@@ -1,0 +1,29 @@
+GILLY SMP - CODE DE CONDUITE
+
+Soyez loyal et respectez les autres joueurs. Ces règles s'appliquent sur le serveur, dans le chat et sur Discord.
+
+1. PAS DE TRICHE
+   La triche n'est pas autorisée. Un anti-cheat tourne sur le serveur, et les mods comme X-ray, freecam ou Wurst sont bannis.
+   Un joueur suspecté peut être invité à lancer un mod de vérification.
+
+2. PVP
+   Le PvP est autorisé, tant qu'il reste loyal.
+   - Pas de piège par téléportation.
+   - Pas de spawn-kill.
+   - Les téléportations ont un délai de 3 secondes. Bouger ou subir des dégâts l'annule, vous ne pouvez donc pas vous téléporter pour fuir un combat.
+
+3. PAS DE GRIEF NI DE VOL
+   Ne détruisez pas, ne volez pas et ne profitez pas des constructions ou objets des autres joueurs.
+   - Première infraction : un avertissement.
+   - Deuxième infraction : un bannissement temporaire.
+
+4. RESPECTEZ LES CONSTRUCTIONS DES AUTRES
+   Il n'y a pas de revendication de terrain. Si vous trouvez une construction qui n'est pas la vôtre, n'y touchez pas.
+
+5. CHAT ET SPAM
+   Soyez respectueux dans le chat et sur Discord. Le spam est détecté et rendu muet automatiquement.
+
+6. DÉCISIONS DU STAFF
+   Le staff décide de la façon dont ces règles sont appliquées. Pour contacter le staff ou faire appel d'un bannissement, ouvrez un ticket sur Discord (le plus rapide).
+
+Liste complète des commandes et détails : https://craft.gillyb.net/wiki.html#rules

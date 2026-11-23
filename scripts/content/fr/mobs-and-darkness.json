@@ -1,0 +1,80 @@
+{
+  "slug": "mobs-and-darkness",
+  "title": "Monstres, phantoms et obscurité",
+  "updated": "2026-11-21",
+  "h1": "Pourquoi y a-t-il si peu de monstres à l'extérieur ? Monstres, phantoms et obscurité réelle dans Minecraft",
+  "description": "Pourquoi les creepers et phantoms sont rares ici, comment fonctionne l'obscurité, quand la surface devient sûre et comment le sommeil accélère la nuit.",
+  "intro": "Cette refonte de la survie modifie les monstres qui apparaissent à découvert, supprime les phantoms et utilise l'obscurité réelle. Ces réponses expliquent ce qui apparaît où, comment fonctionne le sommeil et quand la surface cesse d'être dangereuse. Gilly SMP sert d'exemple.",
+  "groups": [
+    {
+      "title": "Monstres et apparitions",
+      "items": [
+        {
+          "q": "Pourquoi les creepers n'apparaissent-ils pas à découvert dans Minecraft ?",
+          "a": "Sur Gilly SMP, les creepers, les araignées, les endermen, les sorcières et les slimes n'apparaissent pas à découvert dans l'Overworld. Les zombies, squelettes et autres morts-vivants apparaissent toujours la nuit : les grottes et les ruines sont donc le vrai danger."
+        },
+        {
+          "q": "Les endermen et les sorcières apparaissent-ils à découvert dans Minecraft ?",
+          "a": "Pas sur Gilly SMP. Les endermen, les sorcières et les slimes n'apparaissent pas à découvert dans l'Overworld, comme les creepers et les araignées."
+        },
+        {
+          "q": "Où se trouve le vrai danger dans la survie Minecraft ?",
+          "a": "Sur Gilly SMP, les grottes et les ruines sont là où se trouve le vrai danger. Les zombies et les squelettes apparaissent toujours à découvert la nuit : prenez donc une arme et de la lumière."
+        },
+        {
+          "q": "Les phantoms sont-ils désactivés dans cette refonte de la survie Minecraft ?",
+          "a": "Oui. Les phantoms sont désactivés sur Gilly SMP : rester éveillé la nuit ne les fait pas venir."
+        },
+        {
+          "q": "Quand la surface est-elle sûre dans la survie Minecraft ?",
+          "a": "Sur Gilly SMP, une fois l'Ender Dragon vaincu pour la première fois, le mal est banni de la surface pour tout le monde. Plus rien d'hostile n'apparaît à découvert."
+        }
+      ]
+    },
+    {
+      "title": "Obscurité et sommeil",
+      "items": [
+        {
+          "q": "Qu'est-ce que l'obscurité réelle dans Minecraft ?",
+          "a": "L'Overworld utilise l'obscurité réelle : sans source de lumière, c'est le noir complet. Emportez des torches. Les packs de ressources « fullbright » sont interdits sur Gilly SMP."
+        },
+        {
+          "q": "Comment fonctionne le sommeil en multijoueur Minecraft ?",
+          "a": "Dormir ne fait pas passer la nuit instantanément. Le temps s'accélère pendant que les joueurs dorment, et plus il y a de joueurs endormis, plus la nuit passe vite. La barre d'action indique combien de joueurs dorment."
+        },
+        {
+          "q": "Les explosions détruisent-elles les blocs dans Minecraft ?",
+          "a": "Sur Gilly SMP, les explosions font tomber tous les blocs qu'elles détruisent : vous gardez donc les matériaux, même quand une explosion se produit près de votre base."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/fr/wiki.html#world",
+      "label": "Wiki : Monde et progression"
+    },
+    {
+      "url": "/fr/wiki.html#survival",
+      "label": "Wiki : Refonte de la survie"
+    },
+    {
+      "url": "/fr/wiki.html#faq",
+      "label": "Wiki : FAQ"
+    }
+  ],
+  "related": [
+    {
+      "url": "/fr/guides/death-and-healing.html",
+      "label": "Mort, cœurs et soins"
+    },
+    {
+      "url": "/fr/guides/world-and-dimensions.html",
+      "label": "Monde et dimensions"
+    },
+    {
+      "url": "/fr/guides/rules-support-qol.html",
+      "label": "Règles et confort de jeu"
+    }
+  ]
+}

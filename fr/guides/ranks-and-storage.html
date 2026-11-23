@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Coffre de l&#x27;End, maisons et rangs – Guide Gilly SMP</title>
+  <meta name="description" content="Coffre de l&#x27;End, maisons publiques et rangs d&#x27;un serveur de survie Minecraft : rangées, maisons, partage et ce que débloque chaque rang.">
+  <link rel="canonical" href="https://craft.gillyb.net/fr/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Coffre de l&#x27;End, maisons et rangs – Guide Gilly SMP">
+  <meta property="og:description" content="Coffre de l&#x27;End, maisons publiques et rangs d&#x27;un serveur de survie Minecraft : rangées, maisons, partage et ce que débloque chaque rang.">
+  <meta property="og:url" content="https://craft.gillyb.net/fr/guides/ranks-and-storage.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coffre de l&#x27;End, maisons et rangs – Guide Gilly SMP">
+  <meta name="twitter:description" content="Coffre de l&#x27;End, maisons publiques et rangs d&#x27;un serveur de survie Minecraft : rangées, maisons, partage et ce que débloque chaque rang.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Coffre de l'End, maisons et rangs Minecraft : comment fonctionne le stockage sur un serveur de survie",
+      "url": "https://craft.gillyb.net/fr/guides/ranks-and-storage.html",
+      "description": "Coffre de l'End, maisons publiques et rangs d'un serveur de survie Minecraft : rangées, maisons, partage et ce que débloque chaque rang.",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/fr/guides/ranks-and-storage.html",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la taille d'un coffre de l'End Minecraft et peut-on l'améliorer ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, le coffre de l'End commence à 3 rangées (27 emplacements) et va jusqu'à 6 rangées (54 emplacements) avec un rang. Ouvrez-le n'importe où avec /ec."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je partager mon coffre de l'End avec un autre joueur dans Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. /ec invite &lt;joueur&gt; donne l'accès, /ec uninvite &lt;joueur&gt; le retire, et /ec invitelist affiche qui y a accès. Les joueurs invités l'ouvrent avec /ecshare &lt;propriétaire&gt;."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que ne peut-on pas ranger dans un coffre de l'End Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, la roche-mère, les blocs de commande et les barrières ne peuvent pas être rangés dans le coffre de l'End. Le coffre est sauvegardé automatiquement chaque nuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de maisons puis-je définir dans Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, vous avez 2 maisons, davantage avec un rang. Utilisez /sethome &lt;nom&gt; à l'endroit où vous vous trouvez, /home &lt;nom&gt; pour y revenir et /homes pour les lister."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment rendre une maison Minecraft publique pour les autres joueurs ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilisez /edithome pour rendre une maison publique. Les autres listent les maisons publiques avec /phomes et en visitent une avec /phome &lt;propriétaire&gt;+&lt;maison&gt;, par exemple /phome Steve+shop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que débloquent les rangs d'un serveur de survie Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP a trois rangs, Bronze, Or et Diamant, et chacun inclut les avantages des rangs inférieurs. Les rangées du coffre de l'End vont de 3 par défaut à 6 pour le Diamant, les maisons de 2 à 6, et les commandes actives de 5 à 15. Les rangs sont un avantage de confort, pas de puissance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que devient mon coffre de l'End si je perds mon rang ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vos objets restent dans votre coffre de l'End. Vous ne pouvez accéder qu'aux rangées autorisées par votre rang actuel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment obtenir un rang sur un serveur Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, les rangs sont attribués par le staff. Jetez un œil à la boutique et demandez sur Discord."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://craft.gillyb.net/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/fr/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guides",
+          "item": "https://craft.gillyb.net/fr/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Coffre de l'End, maisons et rangs",
+          "item": "https://craft.gillyb.net/fr/guides/ranks-and-storage.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Communauté">
+        <span class="lang-switch" role="group" aria-label="Langue">
+          <a href="/guides/ranks-and-storage.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/ranks-and-storage.html" hreflang="fr" lang="fr" aria-current="true">FR</a>
+          <a href="/de/guides/ranks-and-storage.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/ranks-and-storage.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Boutique</a>
+      </nav>
+      <a class="brand" href="/fr/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressources">
+        <a href="/fr/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recettes</a>
+        <a href="/fr/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Progrès</a>
+        <a href="/fr/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/fr/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/fr/">Accueil</a><span>›</span><a href="/fr/wiki.html">Wiki</a><span>›</span><a href="/fr/guides/">Guides</a><span>›</span>Coffre de l&#x27;End, maisons et rangs</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Coffre de l&#x27;End, maisons et rangs Minecraft : comment fonctionne le stockage sur un serveur de survie</h1>
+        <p class="intro">Sur un serveur de survie, le stockage et les maisons déterminent le confort de construction. Ce guide couvre le coffre de l'End, les maisons et les avantages de rang qui les étendent. Gilly SMP sert d'exemple.</p>
+        <p class="badges"><span class="badge y">8 réponses</span><a class="badge" href="/fr/wiki.html">Wiki complet →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Coffre de l&#x27;End</h2>
+    <article class="qa">
+      <h3>Quelle est la taille d&#x27;un coffre de l&#x27;End Minecraft et peut-on l&#x27;améliorer ?</h3>
+      <p>Sur Gilly SMP, le coffre de l'End commence à 3 rangées (27 emplacements) et va jusqu'à 6 rangées (54 emplacements) avec un rang. Ouvrez-le n'importe où avec <code>/ec</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>Puis-je partager mon coffre de l&#x27;End avec un autre joueur dans Minecraft ?</h3>
+      <p>Oui. <code>/ec invite &lt;joueur&gt;</code> donne l'accès, <code>/ec uninvite &lt;joueur&gt;</code> le retire, et <code>/ec invitelist</code> affiche qui y a accès. Les joueurs invités l'ouvrent avec <code>/ecshare &lt;propriétaire&gt;</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>Que ne peut-on pas ranger dans un coffre de l&#x27;End Minecraft ?</h3>
+      <p>Sur Gilly SMP, la roche-mère, les blocs de commande et les barrières ne peuvent pas être rangés dans le coffre de l'End. Le coffre est sauvegardé automatiquement chaque nuit.</p>
+    </article>
+    <h2 class="topic-title">Maisons</h2>
+    <article class="qa">
+      <h3>Combien de maisons puis-je définir dans Minecraft ?</h3>
+      <p>Sur Gilly SMP, vous avez 2 maisons, davantage avec un rang. Utilisez <code>/sethome &lt;nom&gt;</code> à l'endroit où vous vous trouvez, <code>/home &lt;nom&gt;</code> pour y revenir et <code>/homes</code> pour les lister.</p>
+    </article>
+    <article class="qa">
+      <h3>Comment rendre une maison Minecraft publique pour les autres joueurs ?</h3>
+      <p>Utilisez <code>/edithome</code> pour rendre une maison publique. Les autres listent les maisons publiques avec <code>/phomes</code> et en visitent une avec <code>/phome &lt;propriétaire&gt;+&lt;maison&gt;</code>, par exemple <code>/phome Steve+shop</code>.</p>
+    </article>
+    <h2 class="topic-title">Rangs</h2>
+    <article class="qa">
+      <h3>Que débloquent les rangs d&#x27;un serveur de survie Minecraft ?</h3>
+      <p>Gilly SMP a trois rangs, Bronze, Or et Diamant, et chacun inclut les avantages des rangs inférieurs. Les rangées du coffre de l'End vont de 3 par défaut à 6 pour le Diamant, les maisons de 2 à 6, et les commandes actives de 5 à 15. Les rangs sont un avantage de confort, pas de puissance.</p>
+    </article>
+    <article class="qa">
+      <h3>Que devient mon coffre de l&#x27;End si je perds mon rang ?</h3>
+      <p>Vos objets restent dans votre coffre de l'End. Vous ne pouvez accéder qu'aux rangées autorisées par votre rang actuel.</p>
+    </article>
+    <article class="qa">
+      <h3>Comment obtenir un rang sur un serveur Minecraft ?</h3>
+      <p>Sur Gilly SMP, les rangs sont attribués par le staff. Jetez un œil à la boutique et demandez sur Discord.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Pour aller plus loin</h2>
+      <ul class="guide-links">
+        <li><a href="/fr/wiki.html#storage">Wiki : Coffre de l&#x27;End</a></li>
+        <li><a href="/fr/wiki.html#ranks">Wiki : Rangs</a></li>
+        <li><a href="/fr/wiki.html#travel">Wiki : Maisons et téléportation</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Guides liés</h2>
+      <ul class="guide-links">
+        <li><a href="/fr/guides/points-orders-trading.html">Économie du serveur : points, commandes et échanges</a></li>
+        <li><a href="/fr/guides/rules-support-qol.html">Règles et confort de jeu</a></li>
+        <li><a href="/fr/guides/join.html">Rejoindre un serveur Minecraft crossplay</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/fr/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Un SMP survie crossplay sans pay-to-win. Java, Bedrock et console, un seul monde.</p>
+      </div>
+      <nav class="f-col" aria-label="Explorer">
+        <h3 class="f-title">Explorer</h3>
+        <a href="/fr/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Accueil</a>
+        <a href="/fr/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Comment rejoindre</a>
+        <a href="/fr/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/fr/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+        <a href="/fr/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Livre de recettes</a>
+        <a href="/fr/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Guide des progrès</a>
+      </nav>
+      <nav class="f-col" aria-label="Communauté">
+        <h3 class="f-title">Communauté</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Boutique</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Dernière mise à jour <time datetime="2026-11-21">21 novembre 2026</time></p>
+      <p class="legal">Gilly SMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni associé à Mojang ou Microsoft. Les textures des objets viennent de Minecraft et du pack de ressources du serveur.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

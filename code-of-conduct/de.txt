@@ -1,0 +1,29 @@
+GILLY SMP - VERHALTENSKODEX
+
+Spiele fair und respektiere die anderen Spieler. Diese Regeln gelten auf dem Server, im Chat und auf Discord.
+
+1. KEIN CHEATEN
+   Cheats sind nicht erlaubt. Auf dem Server läuft ein Anti-Cheat, und Mods wie X-ray, Freecam oder Wurst sind verboten.
+   Verdächtige Spieler können aufgefordert werden, ein Verifizierungs-Mod auszuführen.
+
+2. PVP
+   PvP ist erlaubt, solange es fair bleibt.
+   - Kein Teleport-Trapping.
+   - Kein Spawn-Killing.
+   - Teleportationen haben eine Vorlaufzeit von 3 Sekunden. Bewegung oder erlittener Schaden bricht sie ab, du kannst dich also nicht aus einem Kampf teleportieren.
+
+3. KEIN GRIEFING UND KEIN DIEBSTAHL
+   Zerstöre, stiehl oder nutze nicht die Bauten oder Gegenstände anderer Spieler aus.
+   - Erster Verstoß: eine Verwarnung.
+   - Zweiter Verstoß: ein temporärer Bann.
+
+4. BAUTEN ANDERER RESPEKTIEREN
+   Es gibt kein Land-Claiming. Wenn du einen Bau findest, der nicht dir gehört, lass ihn in Ruhe.
+
+5. CHAT UND SPAM
+   Sei respektvoll im Chat und auf Discord. Spam wird automatisch erkannt und stummgeschaltet.
+
+6. ENTSCHEIDUNGEN DES TEAMS
+   Das Team entscheidet, wie diese Regeln angewendet werden. Um das Team zu kontaktieren oder einen Bann anzufechten, eröffne ein Ticket auf Discord (am schnellsten).
+
+Vollständige Befehlsliste und Details: https://craft.gillyb.net/wiki.html#rules

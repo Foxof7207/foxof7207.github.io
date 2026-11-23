@@ -1,0 +1,85 @@
+{
+  "slug": "crossplay",
+  "title": "Crossplay & gemeinsamer Fortschritt",
+  "updated": "2026-11-21",
+  "h1": "Können Java- und Bedrock-Spieler dieselbe Minecraft-Welt teilen? Crossplay erklärt",
+  "description": "Wie Java-, Bedrock- und Konsolenspieler eine Minecraft-Welt teilen: Kontoverknüpfung, gemeinsamer Fortschritt, Namen und Sprachchat erklärt.",
+  "intro": "Crossplay bedeutet, dass Minecraft-Spieler auf Java, Bedrock, Xbox, PlayStation und Switch gemeinsam dieselbe Welt erkunden können. Dieser Leitfaden zeigt, wie das in der Praxis funktioniert, von der Kontoverknüpfung bis zu dem, was jede Plattform sieht. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Plattformübergreifend gemeinsam spielen",
+      "items": [
+        {
+          "q": "Können Java- und Bedrock-Spieler in derselben Minecraft-Welt spielen?",
+          "a": "Ja. Auf Gilly SMP teilen sich Java-, Bedrock-, Xbox-, PlayStation- und Switch-Spieler eine Welt. Java nutzt <code>mc.gillyb.net</code>, Bedrock dieselbe Adresse auf Port <strong>19132</strong>."
+        },
+        {
+          "q": "Kann ich auf Bedrock und Konsole dieselben Befehle wie auf Java verwenden?",
+          "a": "Fast. Bedrock- und Konsolenspieler bekommen die meisten Befehle als Buttons im <code>/menu</code>, etwa Zuhause, Teleport-Anfragen, Enderkiste, Aufträge, Handel und Privatnachrichten. Anklickbare Chatnachrichten funktionieren auf Bedrock nicht, das ist eine Einschränkung von Bedrock."
+        },
+        {
+          "q": "Kann ich auf einem Crossplay-Server Sprachchat nutzen, wenn ich auf der Konsole spiele?",
+          "a": "Sprachchat ist optional. Java-Spieler können die Mod Simple Voice Chat installieren. Bedrock und Konsole können sie nicht nutzen, daher ist sie zum Spielen nie erforderlich."
+        }
+      ]
+    },
+    {
+      "title": "Konten und Fortschritt",
+      "items": [
+        {
+          "q": "Wie verknüpfe ich ein Java- und ein Bedrock-Konto, damit der Fortschritt geteilt wird?",
+          "a": "Führe <code>/linkaccount</code> auf einem Konto aus und folge den Anweisungen, um es mit dem anderen zu verknüpfen. Danach teilen sich beide Konten ein gemeinsames Spielerprofil. <code>/unlinkaccount</code> hebt die Verknüpfung wieder auf."
+        },
+        {
+          "q": "Warum beginnt mein Bedrock-Name mit einem Unterstrich?",
+          "a": "Bedrock-Namen bekommen ein <code>_</code>-Präfix, und Leerzeichen werden zu Unterstrichen. So gibt es keine Konflikte mit Java-Namen, und das Präfix ist auf Proxy und Server gleich: Du behältst überall denselben Namen."
+        },
+        {
+          "q": "Können Bedrock-Spieler die eigenen Texturen des Java-Pakets sehen?",
+          "a": "Nein. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen und manchmal rohe Schlüssel bei eigenen Gegenständen. Alles funktioniert trotzdem, aber das eigene Aussehen erscheint nur auf Java."
+        }
+      ]
+    },
+    {
+      "title": "Mods und Fair Play",
+      "items": [
+        {
+          "q": "Welche Mods sind auf einem Minecraft-Crossplay-Server erlaubt?",
+          "a": "Clientseitige Mods wie Minimaps, Shader, Performance-Tools und Sprachchat sind auf Gilly SMP erlaubt. Cheat-Mods wie X-Ray oder Freecam sind verboten, und auf dem Server läuft ein Anti-Cheat."
+        },
+        {
+          "q": "Ist Gilly SMP Pay-to-Win?",
+          "a": "Nein. Der Shop verkauft nur Komfortfunktionen und Kosmetik. Ränge geben Komfortvorteile wie mehr Zuhause und Enderkisten-Reihen, keine Macht."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/de/wiki.html#bedrock",
+      "label": "Wiki: Bedrock-Menü"
+    },
+    {
+      "url": "/de/wiki.html#basics",
+      "label": "Wiki: Erste Schritte"
+    },
+    {
+      "url": "/de/recipes.html",
+      "label": "Rezeptbuch"
+    }
+  ],
+  "related": [
+    {
+      "url": "/de/guides/join.html",
+      "label": "Einem Minecraft-Crossplay-Server beitreten"
+    },
+    {
+      "url": "/de/guides/recipes-and-advancements.html",
+      "label": "Rezepte & Fortschritte"
+    },
+    {
+      "url": "/de/guides/chat-voice-afk.html",
+      "label": "Chat, Sprache & AFK"
+    }
+  ]
+}

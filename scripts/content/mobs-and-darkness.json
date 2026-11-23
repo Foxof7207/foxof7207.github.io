@@ -1,75 +1,62 @@
 {
   "slug": "mobs-and-darkness",
-  "title": "Mobs & Darkness",
-  "h1": "Mobs, phantoms and true darkness on Gilly SMP explained",
-  "description": "Why creepers and spiders don't spawn in the open on Gilly SMP, whether phantoms are disabled, how true darkness works, and what sleeping actually does to the night.",
-  "intro": "Gilly SMP's survival rework changes where monsters spawn and how light works. These answers cover the open Overworld, caves, phantoms, sleeping and the late-game change after the Ender Dragon.",
+  "title": "Mobs, Phantoms & Darkness",
+  "updated": "2026-11-21",
+  "h1": "Why Are There So Few Monsters Outside? Mobs, Phantoms and True Darkness in Minecraft",
+  "description": "Why creepers and phantoms are rare on this Minecraft survival rework, how true darkness works, when the surface is safe and how sleeping speeds up nights.",
+  "intro": "This survival rework changes which monsters appear in the open, removes phantoms and uses true darkness. These answers explain what spawns where, how sleeping works and when the surface stops being dangerous. Gilly SMP is the worked example.",
   "groups": [
     {
-      "title": "Where monsters spawn",
+      "title": "Monsters and spawns",
       "items": [
         {
-          "q": "Why are there no creepers or spiders outside on Gilly SMP?",
-          "a": "Creepers, spiders, endermen, witches and slimes do not spawn in the open Overworld on Gilly SMP. Zombies, skeletons and other undead still spawn at night, so carry a weapon and light. Caves and ruins are where the real danger is."
+          "q": "Why don't creepers spawn in the open in Minecraft?",
+          "a": "On Gilly SMP, creepers, spiders, endermen, witches and slimes don't spawn in the open Overworld. Zombies, skeletons and other undead still spawn at night, so caves and ruins are where the real danger is."
         },
         {
-          "q": "Are phantoms disabled on Gilly SMP?",
-          "a": "Yes. Phantoms are disabled entirely on Gilly SMP, so you do not need to worry about them appearing when you sleep through nights."
+          "q": "Do endermen and witches spawn in the open in Minecraft?",
+          "a": "Not on Gilly SMP. Endermen, witches and slimes don't spawn in the open Overworld, the same as creepers and spiders."
         },
         {
-          "q": "When does the Overworld become safe on Gilly SMP?",
-          "a": "After the Ender Dragon is defeated for the first time, evil is banished from the surface for everyone: nothing hostile spawns in the open any more. Caves and other dangerous places remain dangerous."
+          "q": "Where is the real danger in Minecraft survival?",
+          "a": "On Gilly SMP, caves and ruins are where the real danger is. Zombies and skeletons still spawn in the open at night, so bring a weapon and light."
         },
         {
-          "q": "Do explosions destroy blocks on Gilly SMP?",
-          "a": "Explosions drop every block they destroy on Gilly SMP, so an explosion is an inconvenience rather than a permanent loss. This applies along with the reduced surface spawning, which makes the open Overworld much calmer than vanilla."
+          "q": "Are phantoms disabled in this Minecraft survival rework?",
+          "a": "Yes. Phantoms are disabled on Gilly SMP, so staying up at night doesn't bring them after you."
+        },
+        {
+          "q": "When is the surface safe in Minecraft survival?",
+          "a": "On Gilly SMP, once the Ender Dragon is defeated for the first time, evil is banished from the surface for everyone. Nothing hostile spawns in the open any more."
         }
       ]
     },
     {
-      "title": "Light, sleeping and difficulty",
+      "title": "Darkness and sleeping",
       "items": [
         {
-          "q": "Why is it so dark on Gilly SMP?",
-          "a": "The Overworld uses true darkness on Gilly SMP: without a light source it is pitch black. Carry torches when you explore, and note that fullbright resource packs are forbidden."
+          "q": "What is true darkness in Minecraft?",
+          "a": "The Overworld uses true darkness: with no light source it's pitch black. Carry torches. Fullbright resource packs are forbidden on Gilly SMP."
         },
         {
-          "q": "Does sleeping skip the night on Gilly SMP?",
-          "a": "No. Sleeping does not skip the night instantly; instead time speeds up, and the more players who are sleeping, the faster it passes. The action bar shows how many players are asleep."
+          "q": "How does sleeping work in Minecraft multiplayer?",
+          "a": "Sleeping doesn't skip the night instantly. Time speeds up while players sleep, and the more players are asleep, the faster the night passes. The action bar shows how many players are sleeping."
         },
         {
-          "q": "Are some mobs weaker on Gilly SMP?",
-          "a": "Yes. On Easy difficulty, which is what Gilly SMP runs, some mobs such as creepers, skeletons and cave spiders are toned down. The difficulty never rises on its own. On Normal the rework could switch the world to Hard as players progress, but on Easy it stays Easy."
-        },
-        {
-          "q": "What difficulty does Gilly SMP run?",
-          "a": "Gilly SMP runs on Easy, the difficulty the survival rework is balanced around for relaxed play. A short welcome message in chat when you log in shows the current mode, and the difficulty never increases by itself."
+          "q": "Do explosions destroy blocks in Minecraft?",
+          "a": "On Gilly SMP, explosions drop all the blocks they destroy, so you keep the materials even when a blast goes off near your base."
         }
       ]
     }
   ],
   "deeper": [
-    {
-      "url": "/wiki.html#survival",
-      "label": "Wiki: Survival rework"
-    },
-    {
-      "url": "/wiki.html#world",
-      "label": "Wiki: World & progression"
-    },
-    {
-      "url": "/advancements.html",
-      "label": "Advancement Guide"
-    }
+    {"url": "/wiki.html#world", "label": "Wiki: World & progression"},
+    {"url": "/wiki.html#survival", "label": "Wiki: Survival rework"},
+    {"url": "/wiki.html#faq", "label": "Wiki: FAQ"}
   ],
   "related": [
-    {
-      "url": "/guides/death-and-healing.html",
-      "label": "Death & healing"
-    },
-    {
-      "url": "/guides/world-and-dimensions.html",
-      "label": "World & dimensions"
-    }
+    {"url": "/guides/death-and-healing.html", "label": "Death, Hearts & Healing"},
+    {"url": "/guides/world-and-dimensions.html", "label": "World & Dimensions"},
+    {"url": "/guides/rules-support-qol.html", "label": "Rules & Quality of Life"}
   ]
 }

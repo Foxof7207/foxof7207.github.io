@@ -1,0 +1,67 @@
+{
+  "slug": "world-and-dimensions",
+  "title": "Welt, Schwierigkeit & Dimensionen",
+  "updated": "2026-11-21",
+  "h1": "Minecraft-Weltguide: Schwierigkeit, Nether, End, Saisons und Welt-Resets",
+  "description": "Weltguide für einen Minecraft-Survival-Server: Schwierigkeit Einfach, Terrain, Öffnung von Nether und End, Ausrichtung der Portale, Saisons und Weltgrenze.",
+  "intro": "Die Weltregeln eines Survival-Servers bestimmen, wie sich das Spiel anfühlt: Schwierigkeit, erzeugtes Terrain, wann neue Dimensionen öffnen und wann die Welt zurückgesetzt wird. Diese Antworten erklären die Regeln verständlich. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Schwierigkeit und Terrain",
+      "items": [
+        {
+          "q": "Auf welcher Schwierigkeit läuft ein Minecraft-Survival-Server?",
+          "a": "Gilly SMP läuft auf <strong>Einfach</strong>, dem Modus, auf den die Survival-Überarbeitung abgestimmt ist. Manche Monster wie Creeper, Skelette und Höhlenspinnen sind abgeschwächt, und die Schwierigkeit steigt nie von allein."
+        },
+        {
+          "q": "Wie sieht das Terrain auf diesem Minecraft-Survival-Server aus?",
+          "a": "Gilly SMP nutzt Vanilla-Terrain und -Biome mit zusätzlichen Erzen, Bäumen und Strukturen wie Abteien und Beta-Dörfern. Alles besteht aus Vanilla-Blöcken, es sind also keine Mods nötig."
+        },
+        {
+          "q": "Gibt es auf diesem Minecraft-Server eine Weltgrenze?",
+          "a": "Auf Gilly SMP ist noch keine Weltgrenze gesetzt. Falls eine hinzugefügt wird, steht ihre Größe im Wiki."
+        }
+      ]
+    },
+    {
+      "title": "Nether, End und Portale",
+      "items": [
+        {
+          "q": "Kann man auf einem Minecraft-Survival-Server in den Nether gehen?",
+          "a": "Noch nicht. Auf Gilly SMP sind Nether und End vorerst geschlossen und öffnen schrittweise. Der Nether öffnet nach dem nächsten großen Update."
+        },
+        {
+          "q": "Wie richte ich Nether-Portale auf einem Minecraft-Server aus?",
+          "a": "Sobald der Nether auf Gilly SMP geöffnet ist, zeigt dir <code>/portal</code>, wo du ein Portal in der anderen Dimension bauen musst, damit beide zusammenpassen. Nether-Portale können jede Größe und Form haben."
+        },
+        {
+          "q": "Wird die Minecraft-Welt auf einem Survival-Server zurückgesetzt?",
+          "a": "Ja. Auf Gilly SMP wird die Welt am Ende jeder Saison zurückgesetzt. Du kannst eine Kopie der Welt auf Discord anfragen, eine Woche nach dem Saisonende."
+        }
+      ]
+    },
+    {
+      "title": "Unterwegs",
+      "items": [
+        {
+          "q": "Gibt es in Minecraft einen Zufalls-Teleport-Befehl auf dem Server?",
+          "a": "Auf Gilly SMP gibt es keinen Befehl <code>/rtp</code>. Stattdessen schießt dich eine RTP-Kanone am Spawn 500 bis 5000 Blöcke weit auf sicheren Boden, mit langsamem Fall und 30 Sekunden Abklingzeit."
+        },
+        {
+          "q": "Gibt es in dieser Welt Dörfer?",
+          "a": "Die Survival-Überarbeitung erwartet, dass du auf Gilly SMP dein eigenes Dorf baust. Fortschritte erklären, wie du Dorfbewohner dorthin bringst."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {"url": "/de/wiki.html#world", "label": "Wiki: Welt & Fortschritt"},
+    {"url": "/de/wiki.html#server", "label": "Wiki: Serverinfos"},
+    {"url": "/de/wiki.html#travel", "label": "Wiki: Zuhause & Teleportieren"}
+  ],
+  "related": [
+    {"url": "/de/guides/mobs-and-darkness.html", "label": "Mobs, Phantome & Dunkelheit"},
+    {"url": "/de/guides/alloys-and-stations.html", "label": "Legierungen, Stationen & Werkzeuge"},
+    {"url": "/de/guides/join.html", "label": "Einem Minecraft-Crossplay-Server beitreten"}
+  ]
+}

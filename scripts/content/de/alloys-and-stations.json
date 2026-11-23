@@ -1,0 +1,85 @@
+{
+  "slug": "alloys-and-stations",
+  "title": "Legierungen, Stationen & Werkzeuge",
+  "updated": "2026-11-21",
+  "h1": "So stellst du Stahl, Hepatizon und andere Legierungen in einer Minecraft-Survival-Überarbeitung her",
+  "description": "So stellst du Stahl, Hepatizon und Elektrum her, welche Stationen zuerst freigeschaltet werden, wo Silber liegt und warum Eisen einen Hochofen braucht.",
+  "intro": "Diese Survival-Überarbeitung fügt Metalllegierungen, eine Kette von Herstellungsstationen und Zwei-in-eins-Werkzeuge hinzu. Der Fortschritt erfolgt in Stufen, daher hilft es, die Aufgabe jeder Station und ihre Schmelzmöglichkeiten zu kennen. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Legierungen und Metalle",
+      "items": [
+        {
+          "q": "Was ist eine Legierung in Minecraft?",
+          "a": "Eine Legierung ist ein Metall, das auf ein Grundmetall geschmiedet wird. Auf Gilly SMP gibt es Hepatizon und Shakudo auf Kupfer, Stahl auf Eisen sowie Elektrum und Adamant auf Diamant."
+        },
+        {
+          "q": "Wie stelle ich Stahl in Minecraft her?",
+          "a": "Stahl ist eine Legierung, die auf Eisen geschmiedet wird. Legierungen werden auf ein Grundmetall geschmiedet: Hepatizon und Shakudo auf Kupfer, Stahl auf Eisen, Elektrum und Adamant auf Diamant."
+        },
+        {
+          "q": "Welche Metalle haben in dieser Minecraft-Survival-Überarbeitung besondere Eigenschaften?",
+          "a": "Jedes Metall hat eingebaute Eigenschaften: Gold hat Glück und Plünderung, während Eisen und Diamant Legierungen aufnehmen. Deshalb sind Legierungen der wichtigste Weg, über die frühen Stufen hinauszukommen."
+        },
+        {
+          "q": "Wo finde ich Silber in Minecraft?",
+          "a": "Silber ist eine Einlage, die in Bergen und in Abteien zu finden ist."
+        }
+      ]
+    },
+    {
+      "title": "Stationen und Schmelzen",
+      "items": [
+        {
+          "q": "In welcher Reihenfolge werden die Herstellungsstationen in Minecraft freigeschaltet?",
+          "a": "Auf Gilly SMP kommen neue Stationen vor dem Ofen: zuerst das Lagerfeuer und der Schlammofen, dann Brennofen und Ofen, danach der Hochofen, der Schmiedetisch und der Amboss."
+        },
+        {
+          "q": "Was schmilzt der Schlammofen in Minecraft?",
+          "a": "Der Schlammofen schmilzt nur Kupfer und Erdblöcke, etwa Ziegel, Glas, glatten Stein und Terrakotta."
+        },
+        {
+          "q": "Warum kann ich Eisen nicht im Schlammofen schmelzen?",
+          "a": "Rohes Eisen und Gold brauchen einen Hochofen, hergestellt aus 4 poliertem Tiefenschiefer, 2 glatten Steinen und einem Anzünder. Der Ofenblock ist der Ofen, und er gart nur Essen."
+        }
+      ]
+    },
+    {
+      "title": "Werkzeuge",
+      "items": [
+        {
+          "q": "Was sind Mattocks und Dolabras in Minecraft?",
+          "a": "Mattocks und Dolabras sind Zwei-in-eins-Werkzeuge in dieser Survival-Überarbeitung, ein Gegenstand erfüllt also zwei Aufgaben. Sie gehören zur stufenweisen Progression, prüfe also die Rezepte, wenn du diese Stufe erreichst."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/de/wiki.html#survival",
+      "label": "Wiki: Survival-Überarbeitung"
+    },
+    {
+      "url": "/de/recipes.html",
+      "label": "Rezeptbuch"
+    },
+    {
+      "url": "/de/advancements.html",
+      "label": "Fortschrittsleitfaden"
+    }
+  ],
+  "related": [
+    {
+      "url": "/de/guides/recipes-and-advancements.html",
+      "label": "Rezepte & Fortschritte"
+    },
+    {
+      "url": "/de/guides/world-and-dimensions.html",
+      "label": "Welt & Dimensionen"
+    },
+    {
+      "url": "/de/guides/what-is-matcha.html",
+      "label": "Was ist Matcha Flavoured?"
+    }
+  ]
+}

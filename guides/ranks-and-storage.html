@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Ranks &amp; Ender Chest – Gilly SMP Guide</title>
-  <meta name="description" content="Learn how Gilly SMP ranks work: Bronze, Gold and Diamond name tags, ender chest rows (3-6), homes (2-6), active orders (5-15), sharing and nightly backups.">
+  <title>Ender Chest, Homes &amp; Ranks – Gilly SMP Guide</title>
+  <meta name="description" content="How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.">
   <link rel="canonical" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Gilly SMP">
-  <meta property="og:title" content="Ranks &amp; Ender Chest – Gilly SMP Guide">
-  <meta property="og:description" content="Learn how Gilly SMP ranks work: Bronze, Gold and Diamond name tags, ender chest rows (3-6), homes (2-6), active orders (5-15), sharing and nightly backups.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Ender Chest, Homes &amp; Ranks – Gilly SMP Guide">
+  <meta property="og:description" content="How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.">
   <meta property="og:url" content="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ender Chest, Homes &amp; Ranks – Gilly SMP Guide">
+  <meta name="twitter:description" content="How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
@@ -28,11 +38,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Gilly SMP Ranks and Ender Chest: Rows, Homes, Orders and Sharing",
+      "name": "Minecraft Ender Chest, Homes and Server Ranks: How Storage Works on a Survival Server",
       "url": "https://craft.gillyb.net/guides/ranks-and-storage.html",
-      "description": "Learn how Gilly SMP ranks work: Bronze, Gold and Diamond name tags, ender chest rows (3-6), homes (2-6), active orders (5-15), sharing and nightly backups.",
+      "description": "How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "isPartOf": {
         "@id": "https://craft.gillyb.net/#website"
       }
@@ -42,118 +52,70 @@
       "@type": "FAQPage",
       "url": "https://craft.gillyb.net/guides/ranks-and-storage.html",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What ranks are there on Gilly SMP and what do they unlock?",
+          "name": "How big is a Minecraft ender chest and can it be upgraded?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Gilly SMP has three ranks — Bronze, Gold and Diamond — and each one includes every perk of the ranks below it. All three give a name tag in chat, the tab list and above your head, shown as [Bronze], [Gold] or [Diamond]. They also raise your ender chest rows, home count and active order slots as the rank goes up. Ranks are granted by staff, so check the store and ask in Discord about them. Ranks"
+            "text": "On Gilly SMP the ender chest starts at 3 rows (27 slots) and goes up to 6 rows (54 slots) with a rank. Open it anywhere with /ec."
           }
         },
         {
           "@type": "Question",
-          "name": "How many ender chest rows do Bronze, Gold and Diamond give on Gilly SMP?",
+          "name": "Can I share my ender chest with another player in Minecraft?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "On Gilly SMP the ender chest starts at 3 rows (27 slots) with no rank, and each rank adds a row: Bronze gives 4 rows, Gold gives 5 rows and Diamond gives the full 6 rows (54 slots). Ranks are cumulative, so Diamond includes every lower perk. You open your ender chest anywhere with /ec."
+            "text": "Yes. /ec invite &lt;player&gt; gives access, /ec uninvite &lt;player&gt; removes it, and /ec invitelist shows who has it. Invited players open it with /ecshare &lt;owner&gt;."
           }
         },
         {
           "@type": "Question",
-          "name": "How many homes do I get with each rank on Gilly SMP?",
+          "name": "What can't I store in a Minecraft ender chest?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "On Gilly SMP you start with 2 homes as a Default player, and ranks increase that: Bronze gets 3 homes, Gold gets 4 and Diamond gets 6. Set one with /sethome &lt;name&gt; where you stand, list them with /homes and travel with /home &lt;name&gt;. Home names allow letters, numbers, hyphens and underscores, up to 16 characters."
+            "text": "On Gilly SMP, bedrock, command blocks and barriers can't be stored in the ender chest. The ender chest is backed up automatically every night."
           }
         },
         {
           "@type": "Question",
-          "name": "How many active orders can I have with each rank on Gilly SMP?",
+          "name": "How many homes can I set in Minecraft?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "On Gilly SMP you can have 5 active orders by default, and ranks raise the limit: Bronze gets 7, Gold gets 10 and Diamond gets 15. Post or manage orders with /order (also /orders), and note that orders expire after 14 days. Each rank is cumulative, so a Diamond player keeps every lower perk plus 15 active order slots."
+            "text": "On Gilly SMP you get 2 homes, with more available by rank. Use /sethome &lt;name&gt; where you stand, /home &lt;name&gt; to go back and /homes to list them."
           }
         },
         {
           "@type": "Question",
-          "name": "Are Gilly SMP ranks pay-to-win or a power advantage?",
+          "name": "How do I make a Minecraft home public for other players?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No — ranks on Gilly SMP are a quality-of-life perk, not a power advantage, and the store only sells quality-of-life items and cosmetics. Ranks are granted by staff; have a look at the store and ask in Discord about them. They only change conveniences like your name tag, ender chest rows, home count and active order slots — never combat power."
+            "text": "Use /edithome to make a home public. Others list public homes with /phomes and visit one with /phome &lt;owner&gt;+&lt;home&gt;, for example /phome Steve+shop."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I open my ender chest on Gilly SMP and how big is it?",
+          "name": "What do the ranks on a Minecraft survival server unlock?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Open your ender chest anywhere on Gilly SMP with /ec (also /enderchest). It starts at 3 rows (27 slots) and grows with your rank up to 6 rows (54 slots) at Diamond. Note that Bedrock, command blocks and barriers can't be stored in it."
+            "text": "Gilly SMP has three ranks, Bronze, Gold and Diamond, and each includes the perks below it. Ender chest rows go from 3 on the default to 6 on Diamond, homes from 2 to 6, and active orders from 5 to 15. Ranks are a quality-of-life perk, not a power advantage."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I store Bedrock, command blocks or barriers in my ender chest on Gilly SMP?",
+          "name": "What happens to my ender chest if I lose my rank?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No — on Gilly SMP you can't store Bedrock, command blocks or barriers in an ender chest. Every other item can be placed inside, and the chest is backed up automatically every night. Open it anywhere with /ec."
+            "text": "Your items stay in the ender chest. You can only reach the rows your current rank allows."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens to my items if I lose my rank on Gilly SMP?",
+          "name": "How do I get a rank on a Minecraft server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Your items stay in your ender chest if you lose a rank on Gilly SMP — nothing is removed. You can only reach the rows your current rank allows, so items in rows above your new limit stay safely stored but can't be accessed until your rank rises again."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I share my ender chest with a friend on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "On Gilly SMP, give someone access to your ender chest with /ec invite &lt;player&gt;, remove them with /ec uninvite &lt;player&gt;, and see who has access with /ec invitelist. Invited players then open your chest with /ecshare &lt;owner&gt;. Your own chest always opens with /ec."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is /ecshare and how do I open a friend's shared ender chest on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "/ecshare &lt;owner&gt; opens another player's ender chest on Gilly SMP, but only if that owner has invited you first with /ec invite &lt;player&gt;. The owner controls access through /ec uninvite and can check who has it with /ec invitelist. If you're not on the invite list, you can't open their chest."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I rename my ender chest on Gilly SMP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — rename your ender chest on Gilly SMP with /ec rename &lt;name&gt;. To undo a custom name, use /ec rename reset. These are part of the ender chest commands, alongside invite, uninvite and invitelist."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my ender chest backed up on Gilly SMP, and what if something goes wrong?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — ender chests on Gilly SMP are backed up automatically every night. If something goes wrong and you lose items, ask a staff member on Discord; because of the nightly backup, items can usually be restored."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I see my rank and all the rank limits on Gilly SMP, especially on Bedrock?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Your rank shows in front of your name in chat and in the tab list on Gilly SMP — for example [Gold] &lt;Steve&gt; hello. Bedrock and console players can see their rank plus every rank's limits in /menu → My rank. That menu button lists the perks of all ranks, not just your own."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do ranks give a name tag in chat on Gilly SMP, and is chat global?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — every rank gives a name tag in chat, the tab list and above your head, displayed as [Bronze], [Gold] or [Diamond]. Chat on Gilly SMP is global: everyone sees your messages, with no ranged chat and no need to shout with !. A ranked message looks like [Gold] &lt;Steve&gt; hello."
+            "text": "On Gilly SMP, ranks are granted by staff. Have a look at the store and ask in Discord."
           }
         }
       ]
@@ -183,7 +145,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Ranks & Ender Chest",
+          "name": "Ender Chest, Homes & Ranks",
           "item": "https://craft.gillyb.net/guides/ranks-and-storage.html"
         }
       ]
@@ -191,7 +153,7 @@
   ]
 }
   </script>
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
   <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
@@ -199,6 +161,12 @@
   <header class="nav">
     <div class="nav-inner">
       <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Language">
+          <a href="/guides/ranks-and-storage.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          <a href="/fr/guides/ranks-and-storage.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/ranks-and-storage.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/ranks-and-storage.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
         <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
@@ -214,95 +182,69 @@
     </div>
   </header>
   <main id="main" class="guide container">
-    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Ranks &amp; Ender Chest</p>
+    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Ender Chest, Homes &amp; Ranks</p>
     <section class="hero page-hero">
       <div class="hero-inner container">
         <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
-        <h1>Gilly SMP Ranks and Ender Chest: Rows, Homes, Orders and Sharing</h1>
-        <p class="intro">On Gilly SMP, ranks and the ender chest are all about convenience, not power. Bronze, Gold and Diamond are cumulative ranks that add a name tag plus bigger chests, more homes and more order slots, while the ender chest can be shared, renamed and is backed up every night. This hub covers every rank limit, the /ec commands and how sharing and backups work.</p>
-        <p class="badges"><span class="badge y">14 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
+        <h1>Minecraft Ender Chest, Homes and Server Ranks: How Storage Works on a Survival Server</h1>
+        <p class="intro">On a survival server, storage and homes decide how comfortably you can build. This guide covers the ender chest, homes and the rank perks that expand them. Gilly SMP is the worked example.</p>
+        <p class="badges"><span class="badge y">8 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
       </div>
       <div class="ground" aria-hidden="true"></div>
     </section>
-    <h2 class="topic-title">Ranks and perks</h2>
+    <h2 class="topic-title">Ender chest</h2>
     <article class="qa">
-      <h3>What ranks are there on Gilly SMP and what do they unlock?</h3>
-      <p>Gilly SMP has three ranks — <strong>Bronze</strong>, <strong>Gold</strong> and <strong>Diamond</strong> — and each one includes every perk of the ranks below it. All three give a name tag in chat, the tab list and above your head, shown as [Bronze], [Gold] or [Diamond]. They also raise your ender chest rows, home count and active order slots as the rank goes up. Ranks are granted by staff, so check the store and ask in Discord about them. <a href="/wiki.html#ranks">Ranks</a></p>
+      <h3>How big is a Minecraft ender chest and can it be upgraded?</h3>
+      <p>On Gilly SMP the ender chest starts at 3 rows (27 slots) and goes up to 6 rows (54 slots) with a rank. Open it anywhere with <code>/ec</code>.</p>
     </article>
     <article class="qa">
-      <h3>How many ender chest rows do Bronze, Gold and Diamond give on Gilly SMP?</h3>
-      <p>On Gilly SMP the ender chest starts at <strong>3 rows (27 slots)</strong> with no rank, and each rank adds a row: Bronze gives 4 rows, Gold gives 5 rows and Diamond gives the full 6 rows (54 slots). Ranks are cumulative, so Diamond includes every lower perk. You open your ender chest anywhere with <code>/ec</code>.</p>
+      <h3>Can I share my ender chest with another player in Minecraft?</h3>
+      <p>Yes. <code>/ec invite &lt;player&gt;</code> gives access, <code>/ec uninvite &lt;player&gt;</code> removes it, and <code>/ec invitelist</code> shows who has it. Invited players open it with <code>/ecshare &lt;owner&gt;</code>.</p>
     </article>
     <article class="qa">
-      <h3>How many homes do I get with each rank on Gilly SMP?</h3>
-      <p>On Gilly SMP you start with <strong>2 homes</strong> as a Default player, and ranks increase that: Bronze gets 3 homes, Gold gets 4 and Diamond gets 6. Set one with <code>/sethome &lt;name&gt;</code> where you stand, list them with <code>/homes</code> and travel with <code>/home &lt;name&gt;</code>. Home names allow letters, numbers, hyphens and underscores, up to 16 characters.</p>
+      <h3>What can&#x27;t I store in a Minecraft ender chest?</h3>
+      <p>On Gilly SMP, bedrock, command blocks and barriers can't be stored in the ender chest. The ender chest is backed up automatically every night.</p>
+    </article>
+    <h2 class="topic-title">Homes</h2>
+    <article class="qa">
+      <h3>How many homes can I set in Minecraft?</h3>
+      <p>On Gilly SMP you get 2 homes, with more available by rank. Use <code>/sethome &lt;name&gt;</code> where you stand, <code>/home &lt;name&gt;</code> to go back and <code>/homes</code> to list them.</p>
     </article>
     <article class="qa">
-      <h3>How many active orders can I have with each rank on Gilly SMP?</h3>
-      <p>On Gilly SMP you can have <strong>5 active orders</strong> by default, and ranks raise the limit: Bronze gets 7, Gold gets 10 and Diamond gets 15. Post or manage orders with <code>/order</code> (also <code>/orders</code>), and note that orders expire after 14 days. Each rank is cumulative, so a Diamond player keeps every lower perk plus 15 active order slots.</p>
+      <h3>How do I make a Minecraft home public for other players?</h3>
+      <p>Use <code>/edithome</code> to make a home public. Others list public homes with <code>/phomes</code> and visit one with <code>/phome &lt;owner&gt;+&lt;home&gt;</code>, for example <code>/phome Steve+shop</code>.</p>
+    </article>
+    <h2 class="topic-title">Ranks</h2>
+    <article class="qa">
+      <h3>What do the ranks on a Minecraft survival server unlock?</h3>
+      <p>Gilly SMP has three ranks, Bronze, Gold and Diamond, and each includes the perks below it. Ender chest rows go from 3 on the default to 6 on Diamond, homes from 2 to 6, and active orders from 5 to 15. Ranks are a quality-of-life perk, not a power advantage.</p>
     </article>
     <article class="qa">
-      <h3>Are Gilly SMP ranks pay-to-win or a power advantage?</h3>
-      <p>No — ranks on Gilly SMP are a <strong>quality-of-life perk, not a power advantage</strong>, and the store only sells quality-of-life items and cosmetics. Ranks are granted by staff; have a look at the store and ask in Discord about them. They only change conveniences like your name tag, ender chest rows, home count and active order slots — never combat power.</p>
-    </article>
-    <h2 class="topic-title">Ender chest basics</h2>
-    <article class="qa">
-      <h3>How do I open my ender chest on Gilly SMP and how big is it?</h3>
-      <p>Open your ender chest anywhere on Gilly SMP with <code>/ec</code> (also <code>/enderchest</code>). It starts at <strong>3 rows (27 slots)</strong> and grows with your rank up to 6 rows (54 slots) at Diamond. Note that Bedrock, command blocks and barriers can't be stored in it.</p>
+      <h3>What happens to my ender chest if I lose my rank?</h3>
+      <p>Your items stay in the ender chest. You can only reach the rows your current rank allows.</p>
     </article>
     <article class="qa">
-      <h3>Can I store Bedrock, command blocks or barriers in my ender chest on Gilly SMP?</h3>
-      <p>No — on Gilly SMP you <strong>can't store Bedrock, command blocks or barriers</strong> in an ender chest. Every other item can be placed inside, and the chest is backed up automatically every night. Open it anywhere with <code>/ec</code>.</p>
-    </article>
-    <article class="qa">
-      <h3>What happens to my items if I lose my rank on Gilly SMP?</h3>
-      <p>Your items <strong>stay in your ender chest</strong> if you lose a rank on Gilly SMP — nothing is removed. You can only reach the rows your current rank allows, so items in rows above your new limit stay safely stored but can't be accessed until your rank rises again.</p>
-    </article>
-    <h2 class="topic-title">Sharing, renaming and backups</h2>
-    <article class="qa">
-      <h3>How do I share my ender chest with a friend on Gilly SMP?</h3>
-      <p>On Gilly SMP, give someone access to your ender chest with <code>/ec invite &lt;player&gt;</code>, remove them with <code>/ec uninvite &lt;player&gt;</code>, and see who has access with <code>/ec invitelist</code>. Invited players then open your chest with <code>/ecshare &lt;owner&gt;</code>. Your own chest always opens with <code>/ec</code>.</p>
-    </article>
-    <article class="qa">
-      <h3>What is /ecshare and how do I open a friend&#x27;s shared ender chest on Gilly SMP?</h3>
-      <p><code>/ecshare &lt;owner&gt;</code> opens another player's ender chest on Gilly SMP, but only if that owner has invited you first with <code>/ec invite &lt;player&gt;</code>. The owner controls access through <code>/ec uninvite</code> and can check who has it with <code>/ec invitelist</code>. If you're not on the invite list, you can't open their chest.</p>
-    </article>
-    <article class="qa">
-      <h3>Can I rename my ender chest on Gilly SMP?</h3>
-      <p>Yes — rename your ender chest on Gilly SMP with <code>/ec rename &lt;name&gt;</code>. To undo a custom name, use <code>/ec rename reset</code>. These are part of the ender chest commands, alongside invite, uninvite and invitelist.</p>
-    </article>
-    <article class="qa">
-      <h3>Is my ender chest backed up on Gilly SMP, and what if something goes wrong?</h3>
-      <p>Yes — ender chests on Gilly SMP are <strong>backed up automatically every night</strong>. If something goes wrong and you lose items, ask a staff member on Discord; because of the nightly backup, items can usually be restored.</p>
-    </article>
-    <h2 class="topic-title">Seeing your rank in chat</h2>
-    <article class="qa">
-      <h3>How do I see my rank and all the rank limits on Gilly SMP, especially on Bedrock?</h3>
-      <p>Your rank shows in front of your name in chat and in the tab list on Gilly SMP — for example <code>[Gold] &lt;Steve&gt; hello</code>. Bedrock and console players can see their rank plus <strong>every rank's limits</strong> in <code>/menu</code> → <strong>My rank</strong>. That menu button lists the perks of all ranks, not just your own.</p>
-    </article>
-    <article class="qa">
-      <h3>Do ranks give a name tag in chat on Gilly SMP, and is chat global?</h3>
-      <p>Yes — every rank gives a name tag in chat, the tab list and above your head, displayed as [Bronze], [Gold] or [Diamond]. Chat on Gilly SMP is <strong>global</strong>: everyone sees your messages, with no ranged chat and no need to shout with <code>!</code>. A ranked message looks like <code>[Gold] &lt;Steve&gt; hello</code>.</p>
+      <h3>How do I get a rank on a Minecraft server?</h3>
+      <p>On Gilly SMP, ranks are granted by staff. Have a look at the store and ask in Discord.</p>
     </article>
     <section class="guide-deeper">
       <h2>Go deeper</h2>
       <ul class="guide-links">
-        <li><a href="/wiki.html#ranks">Wiki: Ranks</a></li>
         <li><a href="/wiki.html#storage">Wiki: Ender chest</a></li>
-        <li><a href="/wiki.html#economy">Wiki: Points, orders &amp; trading</a></li>
-        <li><a href="/wiki.html#bedrock">Wiki: Bedrock menu</a></li>
+        <li><a href="/wiki.html#ranks">Wiki: Ranks</a></li>
+        <li><a href="/wiki.html#travel">Wiki: Homes &amp; teleporting</a></li>
       </ul>
     </section>
     <section class="guide-related">
       <h2>Related guides</h2>
       <ul class="guide-links">
-        <li><a href="/guides/points-orders-trading.html">Points, orders &amp; trading</a></li>
-        <li><a href="/guides/chat-voice-afk.html">Chat, voice &amp; AFK</a></li>
-        <li><a href="/guides/rules-support-qol.html">Rules, support &amp; QoL</a></li>
+        <li><a href="/guides/points-orders-trading.html">Server Economy: Points, Orders &amp; Trading</a></li>
+        <li><a href="/guides/rules-support-qol.html">Rules &amp; Quality of Life</a></li>
+        <li><a href="/guides/join.html">Joining a Crossplay Minecraft Server</a></li>
       </ul>
     </section>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
         <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
@@ -325,7 +267,7 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-21">November 21, 2026</time></p>
       <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
     </div>
   </footer>

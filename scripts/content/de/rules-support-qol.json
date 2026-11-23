@@ -1,0 +1,71 @@
+{
+  "slug": "rules-support-qol",
+  "title": "Serverregeln & Komfortfunktionen",
+  "updated": "2026-11-21",
+  "h1": "Minecraft-Serverregeln, Anti-Cheat und Komfortfunktionen erklärt",
+  "description": "Regeln eines Survival-Servers zu PvP, Grieving, Cheat-Mods und Landbesitz, dazu Komfortfunktionen, Entbannungsanträge und wie du das Team erreichst.",
+  "intro": "Gute Survival-Server werden ebenso durch ihre Regeln wie durch ihre Funktionen definiert: Welche Kämpfe fair sind, was als Grieving gilt und welche Anpassungen den Alltag erleichtern. Diese Antworten behandeln beides. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Fair Play",
+      "items": [
+        {
+          "q": "Ist PvP auf einem Minecraft-Survival-Server erlaubt?",
+          "a": "Auf Gilly SMP ist PvP erlaubt, solange es fair bleibt. Tp-Trapping und Spawn-Killing sind verboten. Teleports haben eine Vorlaufzeit von 3 Sekunden, die Bewegung oder Schaden abbrechen, du kannst dich also nicht aus einem Kampf teleportieren."
+        },
+        {
+          "q": "Sind Cheat-Mods auf einem Minecraft-Server erlaubt?",
+          "a": "Nein. Auf Gilly SMP läuft ein Anti-Cheat, und Mods wie X-Ray, Freecam oder Wurst sind verboten. Verdächtige Spieler können aufgefordert werden, ein Prüf-Mod zu installieren."
+        },
+        {
+          "q": "Welche Strafe gibt es für Grieving auf einem Minecraft-Server?",
+          "a": "Auf Gilly SMP sind Grieving und Diebstahl nicht erlaubt. Der erste Verstoß gibt eine Verwarnung, der zweite einen zeitlich begrenzten Bann."
+        },
+        {
+          "q": "Kann man auf einem Minecraft-Survival-Server Land beanspruchen?",
+          "a": "Auf Gilly SMP gibt es kein Landbesitz-System. Respektiere die Bauten anderer Spieler."
+        }
+      ]
+    },
+    {
+      "title": "Komfortfunktionen",
+      "items": [
+        {
+          "q": "Wie sperre ich eine Truhe oder verstecke einen Rahmen in Minecraft?",
+          "a": "Auf Gilly SMP können Truhen gesperrt werden, sodass nur du und die Spieler, die du erlaubst, sie öffnen können. Schleiche und klicke mit einer rechten Maustaste mit einer Schere auf einen Gegenstandsrahmen, um ihn zu sperren oder zu entsperren, oder mit einem Pinsel, um ihn unsichtbar zu machen."
+        },
+        {
+          "q": "Wie halte ich in Minecraft einen Chunk geladen?",
+          "a": "Lege einen Nether-Stern auf einen Lodestone. Auf Gilly SMP bleibt der Chunk geladen, bis der Lodestone abgebaut wird."
+        },
+        {
+          "q": "Wie verbinde ich in Minecraft ein Elytra mit einem Brustpanzer?",
+          "a": "Lege beide auf einen Amboss. Verzauberungen bleiben erhalten. Lege das Ergebnis auf einen Schleifstein, um sie wieder zu trennen."
+        }
+      ]
+    },
+    {
+      "title": "Pay-to-Win und Einsprüche",
+      "items": [
+        {
+          "q": "Ist dieser Minecraft-Server Pay-to-Win?",
+          "a": "Nein. Gilly SMP ist ohne Pay-to-Win: Der Shop verkauft nur Komfortfunktionen und Kosmetik."
+        },
+        {
+          "q": "Wie lege ich auf einem Minecraft-Server Einspruch gegen einen Bann ein?",
+          "a": "Auf Gilly SMP öffnest du ein Ticket auf Discord, der schnellste Weg, oder schreibst an die im Support-Bereich des Wikis angegebene Team-Adresse."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {"url": "/de/wiki.html#rules", "label": "Wiki: Regeln"},
+    {"url": "/de/wiki.html#qol", "label": "Wiki: Komfortfunktionen"},
+    {"url": "/de/wiki.html#support", "label": "Wiki: Team & Einsprüche"}
+  ],
+  "related": [
+    {"url": "/de/guides/chat-voice-afk.html", "label": "Chat, Sprache & AFK"},
+    {"url": "/de/guides/join.html", "label": "Einem Minecraft-Crossplay-Server beitreten"},
+    {"url": "/de/guides/ranks-and-storage.html", "label": "Enderkiste, Zuhause & Ränge"}
+  ]
+}

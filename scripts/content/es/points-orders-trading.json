@@ -1,0 +1,81 @@
+{
+  "slug": "points-orders-trading",
+  "title": "Economía del servidor: puntos, pedidos e intercambios",
+  "updated": "2026-11-21",
+  "h1": "Economía de un servidor de Minecraft: puntos, pedidos de compra e intercambios entre jugadores",
+  "description": "Cómo funciona una economía de Minecraft dirigida por jugadores: puntos, pedidos de compra, intercambios, pagos y referidos.",
+  "intro": "Algunos servidores de supervivencia tienen una economía dirigida por los jugadores en lugar de una tienda, así que los objetos cambian de manos entre jugadores. Esta guía explica los puntos, los pedidos de compra, los intercambios y las recompensas por referidos. Gilly SMP sirve de ejemplo.",
+  "groups": [
+    {
+      "title": "Puntos y pagos entre jugadores",
+      "items": [
+        {
+          "q": "¿Cómo funciona una economía dirigida por los jugadores en un servidor de supervivencia de Minecraft?",
+          "a": "En Gilly SMP, la economía la dirigen totalmente los jugadores. Se venden objetos entre ellos a través del mercado de pedidos o en intercambios, y los puntos son la moneda del servidor. Todos los precios del servidor se expresan en puntos."
+        },
+        {
+          "q": "¿Cómo gano puntos en un servidor de supervivencia de Minecraft?",
+          "a": "Los jugadores nuevos empiezan con 0 puntos. Los ganas vendiendo objetos a otros jugadores a través del mercado de pedidos, porque el servidor no reparte puntos."
+        },
+        {
+          "q": "¿Cómo pago a otro jugador en Minecraft?",
+          "a": "Usa <code>/points pay &lt;jugador&gt; &lt;cantidad&gt;</code>. Las cantidades son números enteros de al menos 1, y pagar menos de 1 se rechaza."
+        }
+      ]
+    },
+    {
+      "title": "Pedidos de compra",
+      "items": [
+        {
+          "q": "¿Cómo funcionan los pedidos de compra de Minecraft en un servidor de supervivencia?",
+          "a": "Abre el mercado de pedidos con <code>/order</code> y publica un pedido de compra con un objeto, una cantidad y un precio por unidad de al menos 1 punto. Los puntos quedan reservados, otros jugadores entregan los objetos y cobran al instante, incluso si estás desconectado."
+        },
+        {
+          "q": "¿Cuántos pedidos de compra puedo tener a la vez en Minecraft?",
+          "a": "En Gilly SMP puedes tener 5 pedidos activos, con más según el rango: 7 en Bronce, 10 en Oro y 15 en Diamante. Los pedidos caducan a los 14 días."
+        },
+        {
+          "q": "¿Los pedidos de compra de Minecraft exigen el objeto exacto?",
+          "a": "Sí. Los objetos deben coincidir exactamente con el pedido, incluidos encantamientos, daño, nombres personalizados y contenido. Los objetos pueden entregarse desde cajas shulker."
+        }
+      ]
+    },
+    {
+      "title": "Intercambios y referidos",
+      "items": [
+        {
+          "q": "¿Cómo intercambio objetos con otro jugador en Minecraft?",
+          "a": "Agáchate y haz clic derecho sobre el jugador, o usa <code>/trade &lt;jugador&gt;</code>. Debes estar a menos de 10 bloques, en el mismo mundo y no en modo creativo. Ambos lados ofrecen objetos y puntos, y ambos deben aceptar. La XP no se puede intercambiar."
+        },
+        {
+          "q": "¿Cómo funcionan las recompensas por referidos en un servidor de Minecraft?",
+          "a": "Usa <code>/referral</code> para ver tu código personal y dárselo a un amigo. Cuando entre y escriba <code>/refer &lt;código&gt;</code>, recibirá 5 diamantes al instante, y tú recibirás 10 cuando haya jugado 2 horas. Puedes referir hasta 5 jugadores, uno por dirección IP."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/es/wiki.html#economy",
+      "label": "Wiki: Puntos, pedidos e intercambios"
+    },
+    {
+      "url": "/es/wiki.html#referral",
+      "label": "Wiki: Referidos"
+    }
+  ],
+  "related": [
+    {
+      "url": "/es/guides/ranks-and-storage.html",
+      "label": "Cofre de ender, hogares y rangos"
+    },
+    {
+      "url": "/es/guides/chat-voice-afk.html",
+      "label": "Chat, voz y AFK"
+    },
+    {
+      "url": "/es/guides/rules-support-qol.html",
+      "label": "Reglas y comodidades"
+    }
+  ]
+}

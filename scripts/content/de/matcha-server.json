@@ -1,0 +1,67 @@
+{
+  "slug": "matcha-server",
+  "title": "Einen Matcha-Flavoured-Server finden",
+  "updated": "2026-11-21",
+  "h1": "So wählst du einen Matcha-Flavoured-Server: Europa, Crossplay und ohne Pay-to-Win",
+  "description": "So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.",
+  "intro": "Du suchst einen Server, der das Datapack Matcha Flavoured bereits betreibt? Dieser Leitfaden listet auf, was du vor der Wahl prüfen solltest, und zeigt, wie ein europäischer Crossplay-Server jeden Punkt beantwortet. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Einen Server auswählen",
+      "items": [
+        {
+          "q": "Worauf sollte ich achten, bevor ich einem Matcha-Flavoured-Server beitrete?",
+          "a": "Prüfe, ob das Datapack serverseitig installiert ist, sodass du nichts installieren musst, ob der Server Pay-to-Win ist, wie viele Spieler er aufnimmt, wo er gehostet wird und welche Plattformen unterstützt werden. Gilly SMP wird in Frankreich gehostet, ist ohne Pay-to-Win und nimmt bis zu 20 Spieler auf."
+        },
+        {
+          "q": "Gibt es einen europäischen Matcha-Flavoured-Server, dem ich beitreten kann?",
+          "a": "Gilly SMP wird in Frankreich gehostet und betreibt die Matcha-Flavoured-Survival-Überarbeitung serverseitig. Spieler in den USA haben etwa 100 ms. Verbinde dich mit <code>mc.gillyb.net</code> auf Java 26.3 oder auf Bedrock mit Port 19132."
+        },
+        {
+          "q": "Kann ich einem Matcha-Flavoured-Server beitreten, ohne das Datapack zu installieren?",
+          "a": "Ja, auf Gilly SMP. Das Datapack läuft auf dem Server, Java-Spieler fügen also nur <code>mc.gillyb.net</code> hinzu und treten mit Minecraft 26.3 bei. Der Server sendet sein Ressourcenpaket beim Verbinden automatisch; bestätige die Abfrage, um die Namen und Texturen eigener Gegenstände zu sehen."
+        }
+      ]
+    },
+    {
+      "title": "Plattformen und Crossplay",
+      "items": [
+        {
+          "q": "Gibt es einen Matcha-Flavoured-Server mit Java- und Bedrock-Crossplay?",
+          "a": "Gilly SMP ist einer. Java-, Bedrock- und Konsolenspieler teilen sich eine Welt, und mit <code>/linkaccount</code> kannst du zwei Konten verknüpfen, um den Fortschritt zu teilen. Bedrock kann das Java-Ressourcenpaket nicht laden, eigene Gegenstände erscheinen dort mit Vanilla-Texturen, aber jede Mechanik funktioniert."
+        },
+        {
+          "q": "Kann ich einen Matcha-Flavoured-Server auf Xbox, PlayStation oder Switch spielen?",
+          "a": "Auf Gilly SMP ja. Füge <code>GillySMP</code> auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo. Konsolenspieler können <code>/menu</code> für die gängigsten Befehle nutzen."
+        },
+        {
+          "q": "Wie trete ich einem Matcha-Flavoured-Server mit Crossplay bei?",
+          "a": "Auf Java füge <code>mc.gillyb.net</code> mit Minecraft 26.3 hinzu und bestätige die Abfrage des Ressourcenpakets. Auf Bedrock füge <code>mc.gillyb.net</code> auf Port 19132 hinzu. Auf der Konsole füge <code>GillySMP</code> als Freund hinzu. Nutze <code>/linkaccount</code>, wenn du auf mehreren Plattformen spielst."
+        }
+      ]
+    },
+    {
+      "title": "Pay-to-Win und Spielstil",
+      "items": [
+        {
+          "q": "Gibt es einen Matcha-Flavoured-Server ohne Pay-to-Win?",
+          "a": "Gilly SMP ist ohne Pay-to-Win. Der Shop verkauft nur Kosmetik und Komfortfunktionen, und Ränge geben Komfortvorteile wie mehr Zuhause und Enderkisten-Reihen. Die Wirtschaft wird von Spielern gesteuert: Du verdienst Punkte, indem du an andere Spieler verkaufst."
+        },
+        {
+          "q": "Gibt es einen lockeren Matcha-Flavoured-Survival-Server mit ruhigem Tempo?",
+          "a": "Gilly SMP ist für Gelegenheits- und erwachsene Spieler gedacht, die keine Mob-Farmen, XP-Farmen oder Dorfhandelshallen wollen. Der Server läuft auf Einfach, die natürliche Regeneration ist aus, und der Fortschritt wird durch Fortschritte geführt, damit du dir Zeit lassen kannst."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {"url": "/de/wiki.html#server", "label": "Wiki: Serverinfos"},
+    {"url": "/de/wiki.html#basics", "label": "Wiki: Erste Schritte"},
+    {"url": "/de/guides/join.html", "label": "So trittst du Gilly SMP bei"}
+  ],
+  "related": [
+    {"url": "/de/guides/what-is-matcha.html", "label": "Was ist Matcha Flavoured?"},
+    {"url": "/de/guides/crossplay.html", "label": "Crossplay & gemeinsamer Fortschritt"},
+    {"url": "/de/guides/rules-support-qol.html", "label": "Serverregeln & Komfortfunktionen"}
+  ]
+}

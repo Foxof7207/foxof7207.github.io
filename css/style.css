@@ -473,3 +473,14 @@ a.badge:hover { filter: brightness(1.15); }
   .qa table { display: table; width: 100%; table-layout: fixed; }
   .qa th, .qa td { white-space: normal; padding: 8px 4px; font-size: .78rem; overflow-wrap: anywhere; }
 }
+
+/* Language switcher (EN / FR), first item of the left nav */
+.nav-links .lang-switch {
+  display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px;
+  background: var(--card-2); margin-right: 4px;
+}
+.nav-links .lang-switch a {
+  padding: 6px 10px; border-radius: 999px; font-size: .8rem; font-weight: 700; letter-spacing: .04em;
+}
+.nav-links .lang-switch a[aria-current="true"] { background: var(--yellow); color: #1a1500; }
+.nav-links .lang-switch a[aria-current="true"]:hover { background: var(--yellow); color: #1a1500; }

@@ -1,0 +1,67 @@
+{
+  "slug": "ranks-and-storage",
+  "title": "Enderkiste, Zuhause & Ränge",
+  "updated": "2026-11-21",
+  "h1": "Minecraft-Enderkiste, Zuhause und Ränge: So funktioniert Lagerung auf einem Survival-Server",
+  "description": "Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.",
+  "intro": "Auf einem Survival-Server bestimmen Lagerung und Zuhause, wie bequem du bauen kannst. Dieser Leitfaden behandelt die Enderkiste, die Zuhause und die Rangvorteile, die beides erweitern. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Enderkiste",
+      "items": [
+        {
+          "q": "Wie groß ist eine Minecraft-Enderkiste und kann man sie aufrüsten?",
+          "a": "Auf Gilly SMP beginnt die Enderkiste mit 3 Reihen (27 Plätze) und erreicht mit einem Rang bis zu 6 Reihen (54 Plätze). Öffne sie überall mit <code>/ec</code>."
+        },
+        {
+          "q": "Kann ich meine Enderkiste mit einem anderen Spieler in Minecraft teilen?",
+          "a": "Ja. <code>/ec invite &lt;Spieler&gt;</code> gibt Zugriff, <code>/ec uninvite &lt;Spieler&gt;</code> entzieht ihn, und <code>/ec invitelist</code> zeigt, wer Zugriff hat. Eingeladene Spieler öffnen sie mit <code>/ecshare &lt;Besitzer&gt;</code>."
+        },
+        {
+          "q": "Was kann man in einer Minecraft-Enderkiste nicht lagern?",
+          "a": "Auf Gilly SMP können Bedrock, Befehlsblöcke und Barrieren nicht in der Enderkiste gelagert werden. Die Enderkiste wird jede Nacht automatisch gesichert."
+        }
+      ]
+    },
+    {
+      "title": "Zuhause",
+      "items": [
+        {
+          "q": "Wie viele Zuhause kann ich in Minecraft setzen?",
+          "a": "Auf Gilly SMP hast du 2 Zuhause, mit einem Rang mehr. Setze eines mit <code>/sethome &lt;Name&gt;</code> an deiner Position, gehe mit <code>/home &lt;Name&gt;</code> dorthin und liste sie mit <code>/homes</code> auf."
+        },
+        {
+          "q": "Wie mache ich ein Minecraft-Zuhause für andere Spieler öffentlich?",
+          "a": "Nutze <code>/edithome</code>, um ein Zuhause öffentlich zu machen. Andere listen öffentliche Zuhause mit <code>/phomes</code> auf und besuchen eines mit <code>/phome &lt;Besitzer&gt;+&lt;Zuhause&gt;</code>, zum Beispiel <code>/phome Steve+shop</code>."
+        }
+      ]
+    },
+    {
+      "title": "Ränge",
+      "items": [
+        {
+          "q": "Was schalten die Ränge auf einem Minecraft-Survival-Server frei?",
+          "a": "Gilly SMP hat drei Ränge, Bronze, Gold und Diamant, und jeder enthält die Vorteile der darunterliegenden. Enderkisten-Reihen steigen von 3 im Standard auf 6 beim Diamant, Zuhause von 2 auf 6 und aktive Aufträge von 5 auf 15. Ränge sind ein Komfortvorteil, kein Machtvorteil."
+        },
+        {
+          "q": "Was passiert mit meiner Enderkiste, wenn ich meinen Rang verliere?",
+          "a": "Deine Gegenstände bleiben in der Enderkiste. Du kannst nur die Reihen erreichen, die dein aktueller Rang erlaubt."
+        },
+        {
+          "q": "Wie bekomme ich einen Rang auf einem Minecraft-Server?",
+          "a": "Auf Gilly SMP werden Ränge vom Team vergeben. Schau dir den Shop an und frag auf Discord nach."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {"url": "/de/wiki.html#storage", "label": "Wiki: Enderkiste"},
+    {"url": "/de/wiki.html#ranks", "label": "Wiki: Ränge"},
+    {"url": "/de/wiki.html#travel", "label": "Wiki: Zuhause & Teleportieren"}
+  ],
+  "related": [
+    {"url": "/de/guides/points-orders-trading.html", "label": "Serverwirtschaft: Punkte, Aufträge & Handel"},
+    {"url": "/de/guides/rules-support-qol.html", "label": "Regeln & Komfortfunktionen"},
+    {"url": "/de/guides/join.html", "label": "Einem Minecraft-Crossplay-Server beitreten"}
+  ]
+}

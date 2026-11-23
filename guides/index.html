@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Gilly SMP Player Guides – Answers to Specific Questions</title>
-  <meta name="description" content="Topic guides answering specific questions about joining, crossplay, survival rules, ranks, economy, commands and more on Gilly SMP.">
+  <title>Minecraft Survival Guides – Crossplay, Rules &amp; Progression</title>
+  <meta name="description" content="Guides to Minecraft survival: crossplay between Java, Bedrock and console, hearts and healing, mobs and darkness, crafting and alloys, server economy and rules, with examples from Gilly SMP.">
   <link rel="canonical" href="https://craft.gillyb.net/guides/">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Gilly SMP">
-  <meta property="og:title" content="Gilly SMP Player Guides – Answers to Specific Questions">
-  <meta property="og:description" content="Topic guides answering specific questions about joining, crossplay, survival rules, ranks, economy, commands and more on Gilly SMP.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Minecraft Survival Guides – Crossplay, Rules &amp; Progression">
+  <meta property="og:description" content="Guides to Minecraft survival: crossplay between Java, Bedrock and console, hearts and healing, mobs and darkness, crafting and alloys, server economy and rules, with examples from Gilly SMP.">
   <meta property="og:url" content="https://craft.gillyb.net/guides/">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minecraft Survival Guides – Crossplay, Rules &amp; Progression">
+  <meta name="twitter:description" content="Guides to Minecraft survival: crossplay between Java, Bedrock and console, hearts and healing, mobs and darkness, crafting and alloys, server economy and rules, with examples from Gilly SMP.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
@@ -25,15 +35,17 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Gilly SMP player guides",
+  "name": "Minecraft survival guides",
   "url": "https://craft.gillyb.net/guides/",
-  "description": "Topic guides answering specific questions about Gilly SMP.",
+  "description": "Guides to Minecraft survival: crossplay between Java, Bedrock and console, hearts and healing, mobs and darkness, crafting and alloys, server economy and rules, with examples from Gilly SMP.",
+  "dateModified": "2026-11-21",
+  "inLanguage": "en",
   "isPartOf": {
     "@id": "https://craft.gillyb.net/#website"
   }
 }
   </script>
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
   <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
@@ -41,6 +53,12 @@
   <header class="nav">
     <div class="nav-inner">
       <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Language">
+          <a href="/guides/" hreflang="en" lang="en" aria-current="true">EN</a>
+          <a href="/fr/guides/" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
         <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
@@ -60,8 +78,8 @@
     <section class="hero page-hero">
       <div class="hero-inner container">
         <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
-        <h1>Player <em>guides</em></h1>
-        <p class="sub">Short, specific answers to the questions players ask most about Gilly SMP — joining, crossplay, survival, ranks, commands and more.</p>
+        <h1>Minecraft survival <em>guides</em></h1>
+        <p class="sub">Clear answers to common Minecraft survival questions: crossplay, hearts and healing, mobs, crafting, economy and server rules. Examples come from Gilly SMP.</p>
       </div>
       <div class="ground" aria-hidden="true"></div>
     </section>
@@ -69,87 +87,87 @@
       <h2>Browse by topic</h2>
       <ul class="guide-masonry">
         <li><a class="guide-card featured" href="/guides/join.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i><span class="guide-card-count">15 answers</span></span>
-          <strong>How to Join Gilly SMP</strong>
-          <span class="guide-card-desc">Learn how to join Gilly SMP: Java 26.3 at mc.gillyb.net, Bedrock port 19132, console friends, no whitelist, paid accounts and the auto resource pack.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i><span class="guide-card-count">9 answers</span></span>
+          <strong>Joining a Crossplay Minecraft Server</strong>
+          <span class="guide-card-desc">How to join a crossplay Minecraft survival server from Java, Bedrock, Xbox, PlayStation or Switch: addresses, ports, versions, accounts and the resource pack.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/crossplay.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">9 answers</span></span>
-          <strong>Crossplay &amp; Accounts</strong>
-          <span class="guide-card-desc">How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Crossplay &amp; Shared Progress</strong>
+          <span class="guide-card-desc">How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/death-and-healing.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">13 answers</span></span>
-          <strong>Death &amp; Healing</strong>
-          <span class="guide-card-desc">Gilly SMP death: keep items and XP, lose 1 max heart (min 10 on Easy). Crystal Hearts restore up to 30 hearts; heal with food effects, potions and special items</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Death, Hearts &amp; Healing</strong>
+          <span class="guide-card-desc">Why Minecraft health doesn&#x27;t regenerate on this survival rework, what dying costs in maximum hearts, and how to heal with food, potions and Crystal Hearts.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/mobs-and-darkness.html">
           <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
-          <strong>Mobs &amp; Darkness</strong>
-          <span class="guide-card-desc">Why creepers and spiders don&#x27;t spawn in the open on Gilly SMP, whether phantoms are disabled, how true darkness works, and what sleeping actually does to the night.</span>
+          <strong>Mobs, Phantoms &amp; Darkness</strong>
+          <span class="guide-card-desc">Why creepers and phantoms are rare on this Minecraft survival rework, how true darkness works, when the surface is safe and how sleeping speeds up nights.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/alloys-and-stations.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i><span class="guide-card-count">9 answers</span></span>
-          <strong>Alloys &amp; Stations</strong>
-          <span class="guide-card-desc">How alloys work on Gilly SMP: Hepatizon and Shakudo on copper, Steel on iron, Electrum and Adamant on diamond, plus the Mud Kiln, Oven and Blast Furnace.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Alloys, Stations &amp; Tools</strong>
+          <span class="guide-card-desc">How to make steel, Hepatizon and Electrum alloys in Minecraft, which stations unlock first, where silver is found and why iron needs a Blast Furnace.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/recipes-and-advancements.html">
           <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
           <strong>Recipes &amp; Advancements</strong>
-          <span class="guide-card-desc">Find any Gilly SMP recipe, including Mud Kiln, Oven, Blast Furnace and Smithing Table recipes Bedrock can&#x27;t show, and follow the advancement guide when you can&#x27;t open the menu.</span>
+          <span class="guide-card-desc">Find every recipe and follow the advancements in a custom Minecraft survival rework, including on Bedrock, where the in-game menus are limited.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/world-and-dimensions.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">13 answers</span></span>
-          <strong>World &amp; Dimensions</strong>
-          <span class="guide-card-desc">Explore the Gilly SMP world and dimensions: vanilla terrain, Easy difficulty, season resets, world border, and when the Nether and End open.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>World, Difficulty &amp; Dimensions</strong>
+          <span class="guide-card-desc">Minecraft survival world guide covering Easy difficulty, terrain, when the Nether and End open, Nether portal alignment, season resets and the world border.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/ranks-and-storage.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">14 answers</span></span>
-          <strong>Ranks &amp; Ender Chest</strong>
-          <span class="guide-card-desc">Learn how Gilly SMP ranks work: Bronze, Gold and Diamond name tags, ender chest rows (3-6), homes (2-6), active orders (5-15), sharing and nightly backups.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Ender Chest, Homes &amp; Ranks</strong>
+          <span class="guide-card-desc">How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/points-orders-trading.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/users.svg)" aria-hidden="true"></i><span class="guide-card-count">14 answers</span></span>
-          <strong>Points, Orders &amp; Trading</strong>
-          <span class="guide-card-desc">Learn how Gilly SMP points work, check balances, post buy orders, trade safely with players, earn points by voting and refer friends for diamond rewards.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/users.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Server Economy: Points, Orders &amp; Trading</strong>
+          <span class="guide-card-desc">How a player-driven Minecraft survival economy works: server points, buy orders that pay out while you&#x27;re offline, player trades, payments and referral rewards.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/chat-voice-afk.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i><span class="guide-card-count">12 answers</span></span>
-          <strong>Chat, Voice &amp; AFK</strong>
-          <span class="guide-card-desc">Everything about Gilly SMP chat: global messages, /msg private messages, colour codes, spam mutes, Simple Voice Chat, AFK rules, the Bedrock /menu and player commands.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Chat, Voice Chat &amp; AFK</strong>
+          <span class="guide-card-desc">How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card" href="/guides/rules-support-qol.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/scale.svg)" aria-hidden="true"></i><span class="guide-card-count">12 answers</span></span>
-          <strong>Rules &amp; Quality of Life</strong>
-          <span class="guide-card-desc">Is Gilly SMP pay to win, is PvP or griefing allowed, can you claim land, how do bans work, and which quality-of-life tweaks are active on the server?</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/scale.svg)" aria-hidden="true"></i><span class="guide-card-count">9 answers</span></span>
+          <strong>Server Rules &amp; Quality of Life</strong>
+          <span class="guide-card-desc">Survival server rules on PvP, griefing, cheat mods and land claims, plus quality-of-life tweaks, ban appeals and how to reach staff on a Minecraft server.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card featured" href="/guides/matcha-server.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">13 answers</span></span>
-          <strong>Find a Matcha Server</strong>
-          <span class="guide-card-desc">Find a Matcha Flavoured server in Europe: Gilly SMP runs the datapack with Java, Bedrock and console crossplay, no pay-to-win and no datapack install.</span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 answers</span></span>
+          <strong>Find a Matcha Flavoured Server</strong>
+          <span class="guide-card-desc">How to choose a Matcha Flavoured Minecraft server: what to check for server-side install, pay-to-win, platforms and crossplay. Gilly SMP is one European option.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
         <li><a class="guide-card featured" href="/guides/what-is-matcha.html">
-          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i><span class="guide-card-count">13 answers</span></span>
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i><span class="guide-card-count">10 answers</span></span>
           <strong>What Is Matcha Flavoured?</strong>
-          <span class="guide-card-desc">What is Matcha Flavoured? How this Minecraft datapack removes hunger and natural regeneration, adds alloys, reworks death and suits casual survival play.</span>
+          <span class="guide-card-desc">What is Matcha Flavoured? A Minecraft datapack that removes hunger and natural regeneration, adds alloys and makes death less punishing for casual players.</span>
           <span class="guide-card-more">Read guide →</span>
         </a></li>
       </ul>
     </section>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
         <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
@@ -172,7 +190,7 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-21">November 21, 2026</time></p>
       <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
     </div>
   </footer>

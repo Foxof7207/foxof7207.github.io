@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Enderkiste, Zuhause &amp; Ränge – Gilly SMP Leitfaden</title>
+  <meta name="description" content="Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.">
+  <link rel="canonical" href="https://craft.gillyb.net/de/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/ranks-and-storage.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/ranks-and-storage.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Enderkiste, Zuhause &amp; Ränge – Gilly SMP Leitfaden">
+  <meta property="og:description" content="Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.">
+  <meta property="og:url" content="https://craft.gillyb.net/de/guides/ranks-and-storage.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enderkiste, Zuhause &amp; Ränge – Gilly SMP Leitfaden">
+  <meta name="twitter:description" content="Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Minecraft-Enderkiste, Zuhause und Ränge: So funktioniert Lagerung auf einem Survival-Server",
+      "url": "https://craft.gillyb.net/de/guides/ranks-and-storage.html",
+      "description": "Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/de/guides/ranks-and-storage.html",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie groß ist eine Minecraft-Enderkiste und kann man sie aufrüsten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP beginnt die Enderkiste mit 3 Reihen (27 Plätze) und erreicht mit einem Rang bis zu 6 Reihen (54 Plätze). Öffne sie überall mit /ec."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich meine Enderkiste mit einem anderen Spieler in Minecraft teilen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. /ec invite &lt;Spieler&gt; gibt Zugriff, /ec uninvite &lt;Spieler&gt; entzieht ihn, und /ec invitelist zeigt, wer Zugriff hat. Eingeladene Spieler öffnen sie mit /ecshare &lt;Besitzer&gt;."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kann man in einer Minecraft-Enderkiste nicht lagern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP können Bedrock, Befehlsblöcke und Barrieren nicht in der Enderkiste gelagert werden. Die Enderkiste wird jede Nacht automatisch gesichert."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie viele Zuhause kann ich in Minecraft setzen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP hast du 2 Zuhause, mit einem Rang mehr. Setze eines mit /sethome &lt;Name&gt; an deiner Position, gehe mit /home &lt;Name&gt; dorthin und liste sie mit /homes auf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie mache ich ein Minecraft-Zuhause für andere Spieler öffentlich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nutze /edithome, um ein Zuhause öffentlich zu machen. Andere listen öffentliche Zuhause mit /phomes auf und besuchen eines mit /phome &lt;Besitzer&gt;+&lt;Zuhause&gt;, zum Beispiel /phome Steve+shop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was schalten die Ränge auf einem Minecraft-Survival-Server frei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP hat drei Ränge, Bronze, Gold und Diamant, und jeder enthält die Vorteile der darunterliegenden. Enderkisten-Reihen steigen von 3 im Standard auf 6 beim Diamant, Zuhause von 2 auf 6 und aktive Aufträge von 5 auf 15. Ränge sind ein Komfortvorteil, kein Machtvorteil."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was passiert mit meiner Enderkiste, wenn ich meinen Rang verliere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deine Gegenstände bleiben in der Enderkiste. Du kannst nur die Reihen erreichen, die dein aktueller Rang erlaubt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie bekomme ich einen Rang auf einem Minecraft-Server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP werden Ränge vom Team vergeben. Schau dir den Shop an und frag auf Discord nach."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://craft.gillyb.net/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/de/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Leitfäden",
+          "item": "https://craft.gillyb.net/de/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Enderkiste, Zuhause & Ränge",
+          "item": "https://craft.gillyb.net/de/guides/ranks-and-storage.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Sprache">
+          <a href="/guides/ranks-and-storage.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/ranks-and-storage.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/ranks-and-storage.html" hreflang="de" lang="de" aria-current="true">DE</a>
+          <a href="/es/guides/ranks-and-storage.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+      <a class="brand" href="/de/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressourcen">
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Rezepte</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschritte</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/de/">Startseite</a><span>›</span><a href="/de/wiki.html">Wiki</a><span>›</span><a href="/de/guides/">Leitfäden</a><span>›</span>Enderkiste, Zuhause &amp; Ränge</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Minecraft-Enderkiste, Zuhause und Ränge: So funktioniert Lagerung auf einem Survival-Server</h1>
+        <p class="intro">Auf einem Survival-Server bestimmen Lagerung und Zuhause, wie bequem du bauen kannst. Dieser Leitfaden behandelt die Enderkiste, die Zuhause und die Rangvorteile, die beides erweitern. Gilly SMP dient als Beispiel.</p>
+        <p class="badges"><span class="badge y">8 Antworten</span><a class="badge" href="/de/wiki.html">Gesamtes Wiki →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Enderkiste</h2>
+    <article class="qa">
+      <h3>Wie groß ist eine Minecraft-Enderkiste und kann man sie aufrüsten?</h3>
+      <p>Auf Gilly SMP beginnt die Enderkiste mit 3 Reihen (27 Plätze) und erreicht mit einem Rang bis zu 6 Reihen (54 Plätze). Öffne sie überall mit <code>/ec</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>Kann ich meine Enderkiste mit einem anderen Spieler in Minecraft teilen?</h3>
+      <p>Ja. <code>/ec invite &lt;Spieler&gt;</code> gibt Zugriff, <code>/ec uninvite &lt;Spieler&gt;</code> entzieht ihn, und <code>/ec invitelist</code> zeigt, wer Zugriff hat. Eingeladene Spieler öffnen sie mit <code>/ecshare &lt;Besitzer&gt;</code>.</p>
+    </article>
+    <article class="qa">
+      <h3>Was kann man in einer Minecraft-Enderkiste nicht lagern?</h3>
+      <p>Auf Gilly SMP können Bedrock, Befehlsblöcke und Barrieren nicht in der Enderkiste gelagert werden. Die Enderkiste wird jede Nacht automatisch gesichert.</p>
+    </article>
+    <h2 class="topic-title">Zuhause</h2>
+    <article class="qa">
+      <h3>Wie viele Zuhause kann ich in Minecraft setzen?</h3>
+      <p>Auf Gilly SMP hast du 2 Zuhause, mit einem Rang mehr. Setze eines mit <code>/sethome &lt;Name&gt;</code> an deiner Position, gehe mit <code>/home &lt;Name&gt;</code> dorthin und liste sie mit <code>/homes</code> auf.</p>
+    </article>
+    <article class="qa">
+      <h3>Wie mache ich ein Minecraft-Zuhause für andere Spieler öffentlich?</h3>
+      <p>Nutze <code>/edithome</code>, um ein Zuhause öffentlich zu machen. Andere listen öffentliche Zuhause mit <code>/phomes</code> auf und besuchen eines mit <code>/phome &lt;Besitzer&gt;+&lt;Zuhause&gt;</code>, zum Beispiel <code>/phome Steve+shop</code>.</p>
+    </article>
+    <h2 class="topic-title">Ränge</h2>
+    <article class="qa">
+      <h3>Was schalten die Ränge auf einem Minecraft-Survival-Server frei?</h3>
+      <p>Gilly SMP hat drei Ränge, Bronze, Gold und Diamant, und jeder enthält die Vorteile der darunterliegenden. Enderkisten-Reihen steigen von 3 im Standard auf 6 beim Diamant, Zuhause von 2 auf 6 und aktive Aufträge von 5 auf 15. Ränge sind ein Komfortvorteil, kein Machtvorteil.</p>
+    </article>
+    <article class="qa">
+      <h3>Was passiert mit meiner Enderkiste, wenn ich meinen Rang verliere?</h3>
+      <p>Deine Gegenstände bleiben in der Enderkiste. Du kannst nur die Reihen erreichen, die dein aktueller Rang erlaubt.</p>
+    </article>
+    <article class="qa">
+      <h3>Wie bekomme ich einen Rang auf einem Minecraft-Server?</h3>
+      <p>Auf Gilly SMP werden Ränge vom Team vergeben. Schau dir den Shop an und frag auf Discord nach.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Weiterlesen</h2>
+      <ul class="guide-links">
+        <li><a href="/de/wiki.html#storage">Wiki: Enderkiste</a></li>
+        <li><a href="/de/wiki.html#ranks">Wiki: Ränge</a></li>
+        <li><a href="/de/wiki.html#travel">Wiki: Zuhause &amp; Teleportieren</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Verwandte Leitfäden</h2>
+      <ul class="guide-links">
+        <li><a href="/de/guides/points-orders-trading.html">Serverwirtschaft: Punkte, Aufträge &amp; Handel</a></li>
+        <li><a href="/de/guides/rules-support-qol.html">Regeln &amp; Komfortfunktionen</a></li>
+        <li><a href="/de/guides/join.html">Einem Minecraft-Crossplay-Server beitreten</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/de/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.</p>
+      </div>
+      <nav class="f-col" aria-label="Entdecken">
+        <h3 class="f-title">Entdecken</h3>
+        <a href="/de/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Startseite</a>
+        <a href="/de/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> So trittst du bei</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Rezeptbuch</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschrittsleitfaden</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Zuletzt aktualisiert <time datetime="2026-11-21">21. November 2026</time></p>
+      <p class="legal">Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von Microsoft genehmigt oder mit ihnen verbunden. Item-Texturen stammen von Minecraft und vom Ressourcenpaket des Servers.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

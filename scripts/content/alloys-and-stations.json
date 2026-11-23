@@ -1,32 +1,29 @@
 {
   "slug": "alloys-and-stations",
-  "title": "Alloys & Stations",
-  "h1": "Gilly SMP alloys and stations: steel, Hepatizon, kilns and tools",
-  "description": "How alloys work on Gilly SMP: Hepatizon and Shakudo on copper, Steel on iron, Electrum and Adamant on diamond, plus the Mud Kiln, Oven and Blast Furnace.",
-  "intro": "The Gilly SMP survival rework adds metals, alloys and extra processing stations before the furnace. These answers explain which alloy goes on which metal, what each station does, and why raw iron cannot go in the Mud Kiln.",
+  "title": "Alloys, Stations & Tools",
+  "updated": "2026-11-21",
+  "h1": "How to Make Steel, Hepatizon and Other Alloys in a Minecraft Survival Rework",
+  "description": "How to make steel, Hepatizon and Electrum alloys in Minecraft, which stations unlock first, where silver is found and why iron needs a Blast Furnace.",
+  "intro": "This survival rework adds metal alloys, a chain of crafting stations and two-in-one tools. Progress comes in tiers, so it helps to know what each station is for and what it can smelt. Gilly SMP is the worked example.",
   "groups": [
     {
       "title": "Alloys and metals",
       "items": [
         {
-          "q": "How do alloys work on Gilly SMP?",
-          "a": "Each metal has built-in properties: gold has Fortune and Looting, while iron and diamond can host alloys. Alloys are smithed onto a base metal rather than replacing it. Gilly SMP has about 1275 recipes in total, many of them for these alloys and their components."
+          "q": "What is an alloy in Minecraft?",
+          "a": "An alloy is a metal smithed onto a base metal. On Gilly SMP the alloys are Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond."
         },
         {
-          "q": "Which alloys go on copper, iron and diamond?",
-          "a": "Hepatizon and Shakudo are smithed onto copper, Steel onto iron, and Electrum and Adamant onto diamond. These alloys are a core part of progression, so each tier opens new tools and equipment."
+          "q": "How do you make steel in Minecraft?",
+          "a": "Steel is an alloy smithed onto iron. Alloys are smithed onto a base metal: Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond."
         },
         {
-          "q": "Where do I find silver on Gilly SMP?",
-          "a": "Silver is an inlay found in mountains and Abbeys. Those structures and biomes are the places to look when your progression calls for silver rather than a standard ore."
+          "q": "Which metals have special properties in this Minecraft survival rework?",
+          "a": "Each metal has built-in properties: gold has Fortune and Looting, while iron and diamond host alloys. This is why alloys are the main way to progress past the early tiers."
         },
         {
-          "q": "What are mattocks and dolabras on Gilly SMP?",
-          "a": "Mattocks and Dolabras are two-in-one tools in the survival rework. They combine the functions of separate vanilla tools, which is useful when the rework slows progression and you want fewer tool switches."
-        },
-        {
-          "q": "Which Minecraft datapack adds Hepatizon, Steel and Electrum?",
-          "a": "The Matcha Flavoured datapack adds four alloys: Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond. Gilly SMP runs it with server-side recipes, plus stations like the Mud Kiln and Blast Furnace, and you can look anything up in the <a href=\"/recipes.html\">Recipe Book</a>."
+          "q": "Where do you find silver in Minecraft?",
+          "a": "Silver is an inlay found in mountains and in Abbeys."
         }
       ]
     },
@@ -34,46 +31,37 @@
       "title": "Stations and smelting",
       "items": [
         {
-          "q": "What stations come before the furnace on Gilly SMP?",
-          "a": "Progression starts with the campfire and Mud Kiln, then moves to the kiln and Oven, and after that the Blast Furnace, Smithing Table and anvil. Take your time at each tier; the rework is built around discovering the next station through advancements."
+          "q": "In what order do the crafting stations unlock in Minecraft?",
+          "a": "New stations come before the furnace: the campfire and Mud Kiln first, then the Kiln and Oven, then the Blast Furnace, the Smithing Table and the Anvil."
         },
         {
-          "q": "Why can't I smelt iron in the Mud Kiln on Gilly SMP?",
-          "a": "The Mud Kiln only smelts copper and earthen blocks such as bricks, glass, smooth stone and terracotta. Raw iron and raw gold need a Blast Furnace, crafted from 4 Polished Deepslate, 2 Smooth Stone and a Kindling."
+          "q": "What does the Mud Kiln smelt in Minecraft?",
+          "a": "The Mud Kiln only smelts copper and earthen blocks, such as bricks, glass, smooth stone and terracotta."
         },
         {
-          "q": "What does the Oven do on Gilly SMP?",
-          "a": "The Oven is the rework's cooking block, and it only cooks food. It is not the block for metals: raw iron and gold go in the Blast Furnace, while copper and earthen materials go in the Mud Kiln."
-        },
+          "q": "Why can't I smelt iron in the Mud Kiln?",
+          "a": "Raw iron and gold need a Blast Furnace, crafted from 4 Polished Deepslate, 2 Smooth Stone and a Kindling. The furnace block is the Oven, and it only cooks food."
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
         {
-          "q": "What is a Kindling used for on Gilly SMP?",
-          "a": "Kindling is a component in the recipe for a Blast Furnace, which is crafted from 4 Polished Deepslate, 2 Smooth Stone and a Kindling. Kindling recipes are part of the custom survival rework and appear in the <a href=\"/recipes.html\">Recipe Book</a>."
+          "q": "What are mattocks and dolabras in Minecraft?",
+          "a": "Mattocks and dolabras are two-in-one tools in this survival rework, so one item covers two jobs. They are part of the tier progression, so check the recipes when you reach that stage."
         }
       ]
     }
   ],
   "deeper": [
-    {
-      "url": "/recipes.html",
-      "label": "Recipe Book"
-    },
-    {
-      "url": "/wiki.html#survival",
-      "label": "Wiki: Survival rework"
-    },
-    {
-      "url": "/advancements.html",
-      "label": "Advancement Guide"
-    }
+    {"url": "/wiki.html#survival", "label": "Wiki: Survival rework"},
+    {"url": "/recipes.html", "label": "Recipe Book"},
+    {"url": "/advancements.html", "label": "Advancement Guide"}
   ],
   "related": [
-    {
-      "url": "/guides/recipes-and-advancements.html",
-      "label": "Recipes & advancements"
-    },
-    {
-      "url": "/guides/death-and-healing.html",
-      "label": "Death & healing"
-    }
+    {"url": "/guides/recipes-and-advancements.html", "label": "Recipes & Advancements"},
+    {"url": "/guides/world-and-dimensions.html", "label": "World & Dimensions"},
+    {"url": "/guides/what-is-matcha.html", "label": "What Is Matcha Flavoured?"}
   ]
 }

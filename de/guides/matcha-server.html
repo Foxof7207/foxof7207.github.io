@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Einen Matcha-Flavoured-Server finden – Gilly SMP Leitfaden</title>
+  <meta name="description" content="So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.">
+  <link rel="canonical" href="https://craft.gillyb.net/de/guides/matcha-server.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/matcha-server.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/matcha-server.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/matcha-server.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/matcha-server.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/matcha-server.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Einen Matcha-Flavoured-Server finden – Gilly SMP Leitfaden">
+  <meta property="og:description" content="So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.">
+  <meta property="og:url" content="https://craft.gillyb.net/de/guides/matcha-server.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Einen Matcha-Flavoured-Server finden – Gilly SMP Leitfaden">
+  <meta name="twitter:description" content="So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "So wählst du einen Matcha-Flavoured-Server: Europa, Crossplay und ohne Pay-to-Win",
+      "url": "https://craft.gillyb.net/de/guides/matcha-server.html",
+      "description": "So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/de/guides/matcha-server.html",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Worauf sollte ich achten, bevor ich einem Matcha-Flavoured-Server beitrete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prüfe, ob das Datapack serverseitig installiert ist, sodass du nichts installieren musst, ob der Server Pay-to-Win ist, wie viele Spieler er aufnimmt, wo er gehostet wird und welche Plattformen unterstützt werden. Gilly SMP wird in Frankreich gehostet, ist ohne Pay-to-Win und nimmt bis zu 20 Spieler auf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es einen europäischen Matcha-Flavoured-Server, dem ich beitreten kann?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP wird in Frankreich gehostet und betreibt die Matcha-Flavoured-Survival-Überarbeitung serverseitig. Spieler in den USA haben etwa 100 ms. Verbinde dich mit mc.gillyb.net auf Java 26.3 oder auf Bedrock mit Port 19132."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich einem Matcha-Flavoured-Server beitreten, ohne das Datapack zu installieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, auf Gilly SMP. Das Datapack läuft auf dem Server, Java-Spieler fügen also nur mc.gillyb.net hinzu und treten mit Minecraft 26.3 bei. Der Server sendet sein Ressourcenpaket beim Verbinden automatisch; bestätige die Abfrage, um die Namen und Texturen eigener Gegenstände zu sehen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es einen Matcha-Flavoured-Server mit Java- und Bedrock-Crossplay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP ist einer. Java-, Bedrock- und Konsolenspieler teilen sich eine Welt, und mit /linkaccount kannst du zwei Konten verknüpfen, um den Fortschritt zu teilen. Bedrock kann das Java-Ressourcenpaket nicht laden, eigene Gegenstände erscheinen dort mit Vanilla-Texturen, aber jede Mechanik funktioniert."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich einen Matcha-Flavoured-Server auf Xbox, PlayStation oder Switch spielen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP ja. Füge GillySMP auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo. Konsolenspieler können /menu für die gängigsten Befehle nutzen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie trete ich einem Matcha-Flavoured-Server mit Crossplay bei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Java füge mc.gillyb.net mit Minecraft 26.3 hinzu und bestätige die Abfrage des Ressourcenpakets. Auf Bedrock füge mc.gillyb.net auf Port 19132 hinzu. Auf der Konsole füge GillySMP als Freund hinzu. Nutze /linkaccount, wenn du auf mehreren Plattformen spielst."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es einen Matcha-Flavoured-Server ohne Pay-to-Win?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP ist ohne Pay-to-Win. Der Shop verkauft nur Kosmetik und Komfortfunktionen, und Ränge geben Komfortvorteile wie mehr Zuhause und Enderkisten-Reihen. Die Wirtschaft wird von Spielern gesteuert: Du verdienst Punkte, indem du an andere Spieler verkaufst."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es einen lockeren Matcha-Flavoured-Survival-Server mit ruhigem Tempo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP ist für Gelegenheits- und erwachsene Spieler gedacht, die keine Mob-Farmen, XP-Farmen oder Dorfhandelshallen wollen. Der Server läuft auf Einfach, die natürliche Regeneration ist aus, und der Fortschritt wird durch Fortschritte geführt, damit du dir Zeit lassen kannst."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://craft.gillyb.net/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/de/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Leitfäden",
+          "item": "https://craft.gillyb.net/de/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Einen Matcha-Flavoured-Server finden",
+          "item": "https://craft.gillyb.net/de/guides/matcha-server.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Sprache">
+          <a href="/guides/matcha-server.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/matcha-server.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/matcha-server.html" hreflang="de" lang="de" aria-current="true">DE</a>
+          <a href="/es/guides/matcha-server.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+      <a class="brand" href="/de/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressourcen">
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Rezepte</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschritte</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/de/">Startseite</a><span>›</span><a href="/de/wiki.html">Wiki</a><span>›</span><a href="/de/guides/">Leitfäden</a><span>›</span>Einen Matcha-Flavoured-Server finden</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>So wählst du einen Matcha-Flavoured-Server: Europa, Crossplay und ohne Pay-to-Win</h1>
+        <p class="intro">Du suchst einen Server, der das Datapack Matcha Flavoured bereits betreibt? Dieser Leitfaden listet auf, was du vor der Wahl prüfen solltest, und zeigt, wie ein europäischer Crossplay-Server jeden Punkt beantwortet. Gilly SMP dient als Beispiel.</p>
+        <p class="badges"><span class="badge y">8 Antworten</span><a class="badge" href="/de/wiki.html">Gesamtes Wiki →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Einen Server auswählen</h2>
+    <article class="qa">
+      <h3>Worauf sollte ich achten, bevor ich einem Matcha-Flavoured-Server beitrete?</h3>
+      <p>Prüfe, ob das Datapack serverseitig installiert ist, sodass du nichts installieren musst, ob der Server Pay-to-Win ist, wie viele Spieler er aufnimmt, wo er gehostet wird und welche Plattformen unterstützt werden. Gilly SMP wird in Frankreich gehostet, ist ohne Pay-to-Win und nimmt bis zu 20 Spieler auf.</p>
+    </article>
+    <article class="qa">
+      <h3>Gibt es einen europäischen Matcha-Flavoured-Server, dem ich beitreten kann?</h3>
+      <p>Gilly SMP wird in Frankreich gehostet und betreibt die Matcha-Flavoured-Survival-Überarbeitung serverseitig. Spieler in den USA haben etwa 100 ms. Verbinde dich mit <code>mc.gillyb.net</code> auf Java 26.3 oder auf Bedrock mit Port 19132.</p>
+    </article>
+    <article class="qa">
+      <h3>Kann ich einem Matcha-Flavoured-Server beitreten, ohne das Datapack zu installieren?</h3>
+      <p>Ja, auf Gilly SMP. Das Datapack läuft auf dem Server, Java-Spieler fügen also nur <code>mc.gillyb.net</code> hinzu und treten mit Minecraft 26.3 bei. Der Server sendet sein Ressourcenpaket beim Verbinden automatisch; bestätige die Abfrage, um die Namen und Texturen eigener Gegenstände zu sehen.</p>
+    </article>
+    <h2 class="topic-title">Plattformen und Crossplay</h2>
+    <article class="qa">
+      <h3>Gibt es einen Matcha-Flavoured-Server mit Java- und Bedrock-Crossplay?</h3>
+      <p>Gilly SMP ist einer. Java-, Bedrock- und Konsolenspieler teilen sich eine Welt, und mit <code>/linkaccount</code> kannst du zwei Konten verknüpfen, um den Fortschritt zu teilen. Bedrock kann das Java-Ressourcenpaket nicht laden, eigene Gegenstände erscheinen dort mit Vanilla-Texturen, aber jede Mechanik funktioniert.</p>
+    </article>
+    <article class="qa">
+      <h3>Kann ich einen Matcha-Flavoured-Server auf Xbox, PlayStation oder Switch spielen?</h3>
+      <p>Auf Gilly SMP ja. Füge <code>GillySMP</code> auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo. Konsolenspieler können <code>/menu</code> für die gängigsten Befehle nutzen.</p>
+    </article>
+    <article class="qa">
+      <h3>Wie trete ich einem Matcha-Flavoured-Server mit Crossplay bei?</h3>
+      <p>Auf Java füge <code>mc.gillyb.net</code> mit Minecraft 26.3 hinzu und bestätige die Abfrage des Ressourcenpakets. Auf Bedrock füge <code>mc.gillyb.net</code> auf Port 19132 hinzu. Auf der Konsole füge <code>GillySMP</code> als Freund hinzu. Nutze <code>/linkaccount</code>, wenn du auf mehreren Plattformen spielst.</p>
+    </article>
+    <h2 class="topic-title">Pay-to-Win und Spielstil</h2>
+    <article class="qa">
+      <h3>Gibt es einen Matcha-Flavoured-Server ohne Pay-to-Win?</h3>
+      <p>Gilly SMP ist ohne Pay-to-Win. Der Shop verkauft nur Kosmetik und Komfortfunktionen, und Ränge geben Komfortvorteile wie mehr Zuhause und Enderkisten-Reihen. Die Wirtschaft wird von Spielern gesteuert: Du verdienst Punkte, indem du an andere Spieler verkaufst.</p>
+    </article>
+    <article class="qa">
+      <h3>Gibt es einen lockeren Matcha-Flavoured-Survival-Server mit ruhigem Tempo?</h3>
+      <p>Gilly SMP ist für Gelegenheits- und erwachsene Spieler gedacht, die keine Mob-Farmen, XP-Farmen oder Dorfhandelshallen wollen. Der Server läuft auf Einfach, die natürliche Regeneration ist aus, und der Fortschritt wird durch Fortschritte geführt, damit du dir Zeit lassen kannst.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Weiterlesen</h2>
+      <ul class="guide-links">
+        <li><a href="/de/wiki.html#server">Wiki: Serverinfos</a></li>
+        <li><a href="/de/wiki.html#basics">Wiki: Erste Schritte</a></li>
+        <li><a href="/de/guides/join.html">So trittst du Gilly SMP bei</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Verwandte Leitfäden</h2>
+      <ul class="guide-links">
+        <li><a href="/de/guides/what-is-matcha.html">Was ist Matcha Flavoured?</a></li>
+        <li><a href="/de/guides/crossplay.html">Crossplay &amp; gemeinsamer Fortschritt</a></li>
+        <li><a href="/de/guides/rules-support-qol.html">Serverregeln &amp; Komfortfunktionen</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/de/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.</p>
+      </div>
+      <nav class="f-col" aria-label="Entdecken">
+        <h3 class="f-title">Entdecken</h3>
+        <a href="/de/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Startseite</a>
+        <a href="/de/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> So trittst du bei</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Rezeptbuch</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschrittsleitfaden</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Zuletzt aktualisiert <time datetime="2026-11-21">21. November 2026</time></p>
+      <p class="legal">Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von Microsoft genehmigt oder mit ihnen verbunden. Item-Texturen stammen von Minecraft und vom Ressourcenpaket des Servers.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "slug": "what-is-matcha",
+  "title": "Was ist Matcha Flavoured?",
+  "updated": "2026-11-21",
+  "h1": "Was ist Matcha Flavoured? Ein Minecraft-Survival-Datapack erklärt",
+  "description": "Matcha Flavoured ist ein Minecraft-Datapack, das Hunger und natürliche Regeneration entfernt, Legierungen hinzufügt und den Tod milder macht.",
+  "intro": "Matcha Flavoured ist ein Minecraft-Datapack, das den Survival-Fortschritt für Gelegenheitsspieler überarbeitet. Du siehst es vielleicht auch als Matcha Flavored geschrieben. Diese Antworten erklären verständlich, was es verändert. Gilly SMP betreibt es als Crossplay-Server.",
+  "groups": [
+    {
+      "title": "Das Datapack",
+      "items": [
+        {
+          "q": "Was ist das Datapack Matcha Flavoured?",
+          "a": "Matcha Flavoured ist ein Minecraft-Java-Datapack mit einem begleitenden Ressourcenpaket. Es überarbeitet den Survival-Fortschritt, damit Gelegenheitsspieler Ressourcen in einem Tempo sammeln können, das dem technisch versierter Spieler nahekommt, und es macht den Tod weniger hart. Gilly SMP betreibt es serverseitig, du musst also nichts installieren."
+        },
+        {
+          "q": "Ist Matcha Flavoured ein Mod oder ein Datapack?",
+          "a": "Es ist ein Datapack mit begleitendem Ressourcenpaket, kein Client-Mod, den du installierst. Auf Gilly SMP läuft es auf dem Server, Java-Spieler brauchen also nur Minecraft 26.3 und das Ressourcenpaket des Servers, das automatisch gesendet wird."
+        },
+        {
+          "q": "Warum schreiben manche Matcha Flavored mit einem o?",
+          "a": "Matcha Flavoured und Matcha Flavored bezeichnen dasselbe Datapack. Spieler suchen nach beiden Schreibweisen, deshalb decken die hier aufgeführten Leitfäden und Server beide ab."
+        }
+      ]
+    },
+    {
+      "title": "Was sich im Survival ändert",
+      "items": [
+        {
+          "q": "Entfernt Matcha Flavoured den Hunger?",
+          "a": "Ja. Hunger ist praktisch verschwunden: Du verhungerst nicht, und Essen zählt wegen seiner Effekte und nicht, weil es eine Leiste füllt. Auf Gilly SMP gibt es rund 50 neue Gerichte, und Heilung kommt von Essenseffekten, Tränken und Spezialgegenständen."
+        },
+        {
+          "q": "Schaltet Matcha Flavoured die natürliche Lebensregeneration ab?",
+          "a": "Ja. Die natürliche Lebensregeneration ist aus, du heilst dich also mit Nahrung mit Heileffekten, Tränken oder Spezialgegenständen. Auf Gilly SMP ist das eine der Grundregeln."
+        },
+        {
+          "q": "Wie funktioniert der Tod in Matcha Flavoured?",
+          "a": "Auf Gilly SMP behältst du Inventar und XP, aber jeder Tod entfernt ein maximales Herz. Der Server läuft auf Einfach, dein Maximum sinkt also nie unter 10 Herzen. Kristallherzen stellen maximale Herzen bis 30 wieder her."
+        },
+        {
+          "q": "Braucht Matcha Flavoured Mob-Farmen?",
+          "a": "Es ist so gestaltet, dass du sie nicht brauchst. Der Fortschritt belohnt Erkunden, Kochen, Angeln und Handeln statt technischer Schredder. Auf Gilly SMP gibt es keine Mob-Farmen, keine XP-Farmen und keine Dorfhandelshallen."
+        }
+      ]
+    },
+    {
+      "title": "Spielen",
+      "items": [
+        {
+          "q": "Welche Legierungen fügt Matcha Flavoured hinzu?",
+          "a": "Die Überarbeitung fügt Legierungen hinzu, die auf Grundmetalle geschmiedet werden: Hepatizon und Shakudo auf Kupfer, Stahl auf Eisen sowie Elektrum und Adamant auf Diamant. Gilly SMP hat außerdem Mattocks und Dolabras, Zwei-in-eins-Werkzeuge."
+        },
+        {
+          "q": "Welche Minecraft-Version nutzt Matcha Flavoured auf Gilly SMP?",
+          "a": "Gilly SMP betreibt Matcha Flavoured auf Minecraft Java 26.3. Java-Spieler brauchen 26.3, um sich mit <code>mc.gillyb.net</code> zu verbinden, Bedrock-Spieler verbinden sich über Port 19132. Die aktuell erforderliche Version steht auf der <a href=\"/de/wiki.html#basics\">Seite Erste Schritte</a>."
+        },
+        {
+          "q": "Können Bedrock-Spieler Matcha Flavoured spielen?",
+          "a": "Auf Gilly SMP ja. Bedrock kann Java-Ressourcenpakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen und einige rohe Schlüssel bei eigenen Gegenständen, die Regeln der Überarbeitung gelten aber auch für sie."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/de/wiki.html#survival",
+      "label": "Wiki: Survival-Überarbeitung"
+    },
+    {
+      "url": "/de/wiki.html#basics",
+      "label": "Wiki: Erste Schritte"
+    },
+    {
+      "url": "/de/recipes.html",
+      "label": "Rezeptbuch"
+    }
+  ],
+  "related": [
+    {
+      "url": "/de/guides/matcha-server.html",
+      "label": "Einen Matcha-Server finden"
+    },
+    {
+      "url": "/de/guides/death-and-healing.html",
+      "label": "Tod, Herzen & Heilung"
+    },
+    {
+      "url": "/de/guides/alloys-and-stations.html",
+      "label": "Legierungen, Stationen & Werkzeuge"
+    }
+  ]
+}

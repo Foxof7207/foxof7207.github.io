@@ -1,0 +1,89 @@
+{
+  "slug": "join",
+  "title": "Rejoindre un serveur Minecraft crossplay",
+  "updated": "2026-11-21",
+  "h1": "Comment rejoindre un serveur de survie Minecraft depuis Java, Bedrock ou console",
+  "description": "Rejoindre un serveur de survie Minecraft crossplay depuis Java, Bedrock, Xbox, PlayStation ou Switch : adresses, ports, versions, comptes et pack de ressources.",
+  "intro": "Vous voulez jouer à la survie Minecraft avec des amis qui utilisent un autre appareil ? Ce guide explique comment les joueurs Java, Bedrock et console se connectent à un même serveur crossplay. Gilly SMP sert d'exemple.",
+  "groups": [
+    {
+      "title": "Adresses du serveur par plateforme",
+      "items": [
+        {
+          "q": "Quelle adresse et quel port utiliser pour rejoindre un serveur Minecraft depuis Bedrock ?",
+          "a": "Sur Gilly SMP, les joueurs Bedrock utilisent l'adresse <code>mc.gillyb.net</code> avec le port <strong>19132</strong>. Sous Windows, Android, iPhone et iPad, le bouton Ajouter à Minecraft de la page du serveur ouvre le jeu avec le serveur déjà ajouté."
+        },
+        {
+          "q": "Quelle version de Minecraft Java faut-il pour rejoindre un serveur de survie ?",
+          "a": "Gilly SMP exige Minecraft Java <strong>26.3</strong>, les versions plus anciennes ne peuvent donc pas se connecter. Utilisez l'adresse <code>mc.gillyb.net</code> : les joueurs Java, Bedrock et console partagent le même monde."
+        },
+        {
+          "q": "Comment rejoindre un serveur Minecraft depuis Xbox, PlayStation ou Switch ?",
+          "a": "Ajoutez <strong>GillySMP</strong> comme ami sur votre console et rejoignez depuis l'onglet Amis. Le fabricant de votre console exige un abonnement en ligne pour jouer en ligne, vous en avez donc besoin pour vous connecter."
+        }
+      ]
+    },
+    {
+      "title": "Comptes et accès",
+      "items": [
+        {
+          "q": "Puis-je rejoindre un serveur Minecraft avec un lanceur cracké ou hors ligne ?",
+          "a": "Non. Gilly SMP fonctionne en mode en ligne : seuls les comptes Minecraft légitimes et payants peuvent rejoindre. Les lanceurs crackés et hors ligne ne peuvent pas se connecter."
+        },
+        {
+          "q": "Faut-il être sur une liste blanche pour rejoindre un serveur Minecraft ?",
+          "a": "Pas sur Gilly SMP. Il n'y a pas de liste blanche : toute personne possédant un compte légitime peut rejoindre. Le serveur accueille jusqu'à <strong>20 joueurs</strong>."
+        },
+        {
+          "q": "Pourquoi mon pseudo Bedrock commence-t-il par un tiret bas sur un serveur Java ?",
+          "a": "Les pseudos Bedrock reçoivent un préfixe <code>_</code> et les espaces deviennent des tirets bas, pour ne jamais entrer en conflit avec les pseudos Java. Le préfixe est le même sur le proxy et sur le serveur : vous gardez un seul pseudo partout."
+        }
+      ]
+    },
+    {
+      "title": "Avant votre première session",
+      "items": [
+        {
+          "q": "Faut-il un pack de ressources pour jouer sur un serveur Minecraft avec des objets personnalisés ?",
+          "a": "Sur Java, oui. Gilly SMP envoie automatiquement son pack de ressources quand vous rejoignez : acceptez simplement la demande. Sans lui, les objets personnalisés ressemblent à la version vanilla et certains ont des noms textuels bruts. Bedrock ne peut pas charger les packs Java : les joueurs Bedrock voient donc les textures vanilla, mais tout fonctionne quand même."
+        },
+        {
+          "q": "Quels mods puis-je utiliser sur un serveur de survie Minecraft ?",
+          "a": "Les mods côté client comme les outils de performance, les minimaps, les shaders et le chat vocal sont autorisés sur Gilly SMP. Les mods de triche comme X-ray, freecam ou les clients modifiés ne le sont pas, et le serveur utilise un anti-triche."
+        },
+        {
+          "q": "Que faire en premier après avoir rejoint un serveur de survie ?",
+          "a": "Ouvrez vos progrès avec <code>L</code> sur Java : la refonte de la survie les utilise comme guide pas à pas. Une fois que vous avez une base, définissez une maison avec <code>/sethome base</code>, et <code>/spawn</code> vous ramène au spawn à tout moment."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/fr/wiki.html#basics",
+      "label": "Wiki : Premiers pas"
+    },
+    {
+      "url": "/fr/wiki.html#bedrock",
+      "label": "Wiki : Menu Bedrock"
+    },
+    {
+      "url": "/fr/advancements.html",
+      "label": "Guide des progrès"
+    }
+  ],
+  "related": [
+    {
+      "url": "/fr/guides/crossplay.html",
+      "label": "Crossplay et progression partagée"
+    },
+    {
+      "url": "/fr/guides/what-is-matcha.html",
+      "label": "Qu'est-ce que Matcha Flavoured ?"
+    },
+    {
+      "url": "/fr/guides/matcha-server.html",
+      "label": "Trouver un serveur Matcha"
+    }
+  ]
+}

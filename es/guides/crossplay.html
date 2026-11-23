@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Crossplay y progreso compartido – Guía de Gilly SMP</title>
+  <meta name="description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
+  <link rel="canonical" href="https://craft.gillyb.net/es/guides/crossplay.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/crossplay.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/crossplay.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/crossplay.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Crossplay y progreso compartido – Guía de Gilly SMP">
+  <meta property="og:description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
+  <meta property="og:url" content="https://craft.gillyb.net/es/guides/crossplay.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crossplay y progreso compartido – Guía de Gilly SMP">
+  <meta name="twitter:description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "¿Pueden los jugadores de Java y Bedrock compartir el mismo mundo de Minecraft? Explicación del crossplay",
+      "url": "https://craft.gillyb.net/es/guides/crossplay.html",
+      "description": "Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/es/guides/crossplay.html",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Pueden los jugadores de Java y Bedrock jugar en el mismo mundo de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. En Gilly SMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa mc.gillyb.net, y Bedrock usa la misma dirección en el puerto 19132."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar los mismos comandos en Bedrock y consola que en Java?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casi. Los jugadores de Bedrock y consola tienen la mayoría de los comandos como botones en /menu: hogares, solicitudes de teletransporte, cofre de ender, pedidos, intercambios y mensajes privados. Los mensajes del chat en los que se puede hacer clic no funcionan en Bedrock, es una limitación de Bedrock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar el chat de voz en un servidor crossplay si juego en consola?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El chat de voz es opcional. Los jugadores de Java pueden instalar el mod Simple Voice Chat, pero Bedrock y consola no pueden usarlo, así que nunca es obligatorio para jugar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo vinculo una cuenta de Java con una de Bedrock para compartir el progreso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ejecuta /linkaccount en una cuenta y sigue las instrucciones para vincularla con la otra. Una vez vinculadas, ambas cuentas comparten un mismo perfil de jugador. /unlinkaccount deshace la vinculación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué mi nombre de Bedrock empieza por un guion bajo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los nombres de Bedrock reciben un prefijo _ y los espacios se convierten en guiones bajos. Así nunca chocan con nombres de Java, y el prefijo es el mismo en el proxy y en el servidor, así que conservas un solo nombre en todas partes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pueden los jugadores de Bedrock ver las texturas personalizadas del paquete de Java?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Bedrock no puede cargar paquetes de Java, así que los jugadores de Bedrock ven las texturas vanilla y, a veces, claves sin procesar en los objetos personalizados. Todo funciona igual, pero el aspecto personalizado solo aparece en Java."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué mods están permitidos en un servidor crossplay de Minecraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en Gilly SMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es Gilly SMP un servidor pay-to-win?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La tienda solo vende mejoras de comodidad y cosméticos. Los rangos dan ventajas de comodidad, como más hogares y filas de cofre de ender, no poder."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://craft.gillyb.net/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/es/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guías",
+          "item": "https://craft.gillyb.net/es/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Crossplay y progreso compartido",
+          "item": "https://craft.gillyb.net/es/guides/crossplay.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Comunidad">
+        <span class="lang-switch" role="group" aria-label="Idioma">
+          <a href="/guides/crossplay.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/crossplay.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/crossplay.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/crossplay.html" hreflang="es" lang="es" aria-current="true">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+      <a class="brand" href="/es/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Recursos">
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Logros</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/es/">Inicio</a><span>›</span><a href="/es/wiki.html">Wiki</a><span>›</span><a href="/es/guides/">Guías</a><span>›</span>Crossplay y progreso compartido</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>¿Pueden los jugadores de Java y Bedrock compartir el mismo mundo de Minecraft? Explicación del crossplay</h1>
+        <p class="intro">El crossplay permite a los jugadores de Minecraft en Java, Bedrock, Xbox, PlayStation y Switch explorar juntos el mismo mundo. Esta guía explica cómo funciona en la práctica, desde vincular cuentas hasta lo que ve cada plataforma. Gilly SMP sirve de ejemplo.</p>
+        <p class="badges"><span class="badge y">8 respuestas</span><a class="badge" href="/es/wiki.html">Wiki completa →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Jugar juntos entre plataformas</h2>
+    <article class="qa">
+      <h3>¿Pueden los jugadores de Java y Bedrock jugar en el mismo mundo de Minecraft?</h3>
+      <p>Sí. En Gilly SMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa <code>mc.gillyb.net</code>, y Bedrock usa la misma dirección en el puerto <strong>19132</strong>.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Puedo usar los mismos comandos en Bedrock y consola que en Java?</h3>
+      <p>Casi. Los jugadores de Bedrock y consola tienen la mayoría de los comandos como botones en <code>/menu</code>: hogares, solicitudes de teletransporte, cofre de ender, pedidos, intercambios y mensajes privados. Los mensajes del chat en los que se puede hacer clic no funcionan en Bedrock, es una limitación de Bedrock.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Puedo usar el chat de voz en un servidor crossplay si juego en consola?</h3>
+      <p>El chat de voz es opcional. Los jugadores de Java pueden instalar el mod Simple Voice Chat, pero Bedrock y consola no pueden usarlo, así que nunca es obligatorio para jugar.</p>
+    </article>
+    <h2 class="topic-title">Cuentas y progreso</h2>
+    <article class="qa">
+      <h3>¿Cómo vinculo una cuenta de Java con una de Bedrock para compartir el progreso?</h3>
+      <p>Ejecuta <code>/linkaccount</code> en una cuenta y sigue las instrucciones para vincularla con la otra. Una vez vinculadas, ambas cuentas comparten un mismo perfil de jugador. <code>/unlinkaccount</code> deshace la vinculación.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Por qué mi nombre de Bedrock empieza por un guion bajo?</h3>
+      <p>Los nombres de Bedrock reciben un prefijo <code>_</code> y los espacios se convierten en guiones bajos. Así nunca chocan con nombres de Java, y el prefijo es el mismo en el proxy y en el servidor, así que conservas un solo nombre en todas partes.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Pueden los jugadores de Bedrock ver las texturas personalizadas del paquete de Java?</h3>
+      <p>No. Bedrock no puede cargar paquetes de Java, así que los jugadores de Bedrock ven las texturas vanilla y, a veces, claves sin procesar en los objetos personalizados. Todo funciona igual, pero el aspecto personalizado solo aparece en Java.</p>
+    </article>
+    <h2 class="topic-title">Mods y juego limpio</h2>
+    <article class="qa">
+      <h3>¿Qué mods están permitidos en un servidor crossplay de Minecraft?</h3>
+      <p>Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en Gilly SMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Es Gilly SMP un servidor pay-to-win?</h3>
+      <p>No. La tienda solo vende mejoras de comodidad y cosméticos. Los rangos dan ventajas de comodidad, como más hogares y filas de cofre de ender, no poder.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Para saber más</h2>
+      <ul class="guide-links">
+        <li><a href="/es/wiki.html#bedrock">Wiki: Menú de Bedrock</a></li>
+        <li><a href="/es/wiki.html#basics">Wiki: Primeros pasos</a></li>
+        <li><a href="/es/recipes.html">Libro de recetas</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Guías relacionadas</h2>
+      <ul class="guide-links">
+        <li><a href="/es/guides/join.html">Unirse a un servidor crossplay de Minecraft</a></li>
+        <li><a href="/es/guides/recipes-and-advancements.html">Recetas y logros</a></li>
+        <li><a href="/es/guides/chat-voice-afk.html">Chat, voz y AFK</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/es/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Un SMP de supervivencia crossplay sin pay-to-win. Java, Bedrock y consola, un solo mundo.</p>
+      </div>
+      <nav class="f-col" aria-label="Explorar">
+        <h3 class="f-title">Explorar</h3>
+        <a href="/es/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Inicio</a>
+        <a href="/es/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Cómo unirse</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Libro de recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Guía de logros</a>
+      </nav>
+      <nav class="f-col" aria-label="Comunidad">
+        <h3 class="f-title">Comunidad</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Última actualización <time datetime="2026-11-21">21 de noviembre de 2026</time></p>
+      <p class="legal">Gilly SMP no es un servicio oficial de Minecraft y no está aprobado ni asociado con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del paquete de recursos del servidor.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

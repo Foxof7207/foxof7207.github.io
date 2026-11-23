@@ -1,100 +1,71 @@
 {
   "slug": "rules-support-qol",
-  "title": "Rules & Quality of Life",
-  "h1": "Gilly SMP rules, PvP, griefing, bans and quality-of-life features",
-  "description": "Is Gilly SMP pay to win, is PvP or griefing allowed, can you claim land, how do bans work, and which quality-of-life tweaks are active on the server?",
-  "intro": "This guide covers the rules that keep Gilly SMP fair and the small quality-of-life changes layered on top of the survival rework. Run <code>/mechanics</code> in game to see everything that is active.",
+  "title": "Server Rules & Quality of Life",
+  "updated": "2026-11-21",
+  "h1": "Minecraft Server Rules, Anti-Cheat and Quality-of-Life Tweaks Explained",
+  "description": "Survival server rules on PvP, griefing, cheat mods and land claims, plus quality-of-life tweaks, ban appeals and how to reach staff on a Minecraft server.",
+  "intro": "Good survival servers are defined by their rules as much as their features: what fights are fair, what counts as griefing and which tweaks make everyday play easier. These answers cover both. Gilly SMP is the worked example.",
   "groups": [
     {
-      "title": "Fair play rules",
+      "title": "Fair play",
       "items": [
         {
-          "q": "Is Gilly SMP pay to win?",
-          "a": "No. Gilly SMP is strictly non pay-to-win: the store sells only quality-of-life items and cosmetics, nothing that gives a power advantage. Ranks are quality-of-life perks too, granted by staff."
+          "q": "Is PvP allowed on a Minecraft survival server?",
+          "a": "On Gilly SMP, PvP is allowed if it's fair. Tp-trapping and spawn-killing are not. Teleports have a 3-second warmup that moving or taking damage cancels, so you can't teleport out of a fight."
         },
         {
-          "q": "Is PvP allowed on Gilly SMP?",
-          "a": "Yes, PvP is allowed when it is fair. Teleport-trapping and spawn-killing are not. Teleports have a 3-second warmup that is cancelled by moving or taking damage, so you cannot teleport out of a fight."
+          "q": "Are cheat mods allowed on a Minecraft server?",
+          "a": "No. An anti-cheat runs on Gilly SMP, and mods like X-ray, freecam or Wurst are banned. Suspected players may be asked to run a verification mod."
         },
         {
-          "q": "Is griefing or stealing allowed on Gilly SMP?",
-          "a": "No. Griefing and stealing are forbidden: the first offence gets a warning, and a second offence gets a temporary ban. There is no land claiming, so respect other players' builds."
+          "q": "What is the punishment for griefing on a Minecraft server?",
+          "a": "On Gilly SMP, griefing and stealing are not allowed. The first offence gets a warning, and the second gets a temporary ban."
         },
         {
-          "q": "Are cheat mods allowed on Gilly SMP?",
-          "a": "No. An anti-cheat runs on the server, and mods such as X-ray, freecam and Wurst are banned. If staff suspect cheating, they may ask you to run a verification mod. Client-side performance, minimap and shader mods are fine."
-        },
-        {
-          "q": "Why was I muted on Gilly SMP?",
-          "a": "Spam is detected automatically. Repeating the same message, flooding, very long messages, excessive capitals and random characters can trigger a short mute, and it lasts longer if it keeps happening."
+          "q": "Can you claim land on a Minecraft survival server?",
+          "a": "There is no land claiming on Gilly SMP. Respect other players' builds."
         }
       ]
     },
     {
-      "title": "Staff, appeals and commands",
+      "title": "Quality of life",
       "items": [
         {
-          "q": "How do I contact staff or appeal a ban on Gilly SMP?",
-          "a": "Open a ticket on Discord, which is the fastest route, or email gilly-smp@outlook.com. Ban appeals and staff contact both go through those channels."
+          "q": "How do I lock a chest or hide an item frame in Minecraft?",
+          "a": "On Gilly SMP, chests can be locked so only you and the players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible."
         },
         {
-          "q": "Why does Gilly SMP say my command is not available?",
-          "a": "Only player commands are enabled on Gilly SMP. Anything else is blocked, hidden from tab completion and answers 'That command is not available'. Bedrock players have almost all available commands as buttons in <code>/menu</code>."
+          "q": "How do I keep a chunk loaded in Minecraft?",
+          "a": "Drop a Nether Star on a lodestone. On Gilly SMP the chunk stays loaded until the lodestone is broken."
         },
         {
-          "q": "Which commands can I use on Gilly SMP?",
-          "a": "Commands cover homes and teleporting (<code>/spawn</code>, <code>/sethome</code>, <code>/tpa</code>), chat (<code>/msg</code>, <code>/ignore</code>), economy and storage (<code>/points</code>, <code>/order</code>, <code>/trade</code>, <code>/ec</code>), tools (<code>/ch</code>, <code>/afk</code>, <code>/mechanics</code>), referrals and <code>/menu</code> for Bedrock. The complete list is in <a href=\"/wiki.html#commands\">All commands</a>."
+          "q": "How do I merge an elytra with a chestplate in Minecraft?",
+          "a": "Drop both on an anvil. Enchantments are kept. Drop the result on a grindstone to split them again."
         }
       ]
     },
     {
-      "title": "Quality-of-life tweaks",
+      "title": "Is it pay-to-win, and how do I appeal?",
       "items": [
         {
-          "q": "How do I show my coordinates on Gilly SMP?",
-          "a": "Use <code>/ch toggle</code> (also <code>/coordshud</code>) to show XYZ, facing direction and a 24-hour in-game clock in your action bar."
+          "q": "Is this Minecraft server pay-to-win?",
+          "a": "No. Gilly SMP is non pay-to-win: the store only sells quality-of-life items and cosmetics."
         },
         {
-          "q": "Can I lock chests or item frames on Gilly SMP?",
-          "a": "Yes. Chests can be locked so only you and players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible."
-        },
-        {
-          "q": "How do I keep a chunk loaded on Gilly SMP?",
-          "a": "Drop a Nether Star on a lodestone. The chunk stays loaded until the lodestone is broken. This is one of the quality-of-life tweaks active on the server."
-        },
-        {
-          "q": "Can I sit on stairs or merge an elytra with a chestplate?",
-          "a": "Yes to both. Right-click a stair with a saddle, then right-click it again to sit; break the stair to get the saddle back. For an elytra, drop it together with a chestplate on an anvil, and drop the result on a grindstone to split them again while keeping enchantments."
+          "q": "How do I appeal a ban on a Minecraft server?",
+          "a": "On Gilly SMP, open a ticket on Discord, the fastest route, or email the staff address listed on the wiki's support section."
         }
       ]
     }
   ],
   "deeper": [
-    {
-      "url": "/wiki.html#rules",
-      "label": "Wiki: Rules"
-    },
-    {
-      "url": "/wiki.html#support",
-      "label": "Wiki: Staff & ban appeals"
-    },
-    {
-      "url": "/wiki.html#qol",
-      "label": "Wiki: Quality-of-life features"
-    },
-    {
-      "url": "/wiki.html#commands",
-      "label": "Wiki: All commands"
-    }
+    {"url": "/wiki.html#rules", "label": "Wiki: Rules"},
+    {"url": "/wiki.html#qol", "label": "Wiki: Quality-of-life features"},
+    {"url": "/wiki.html#support", "label": "Wiki: Staff & ban appeals"}
   ],
   "related": [
-    {
-      "url": "/guides/chat-voice-afk.html",
-      "label": "Chat, voice & AFK"
-    },
-    {
-      "url": "/guides/ranks-and-storage.html",
-      "label": "Ranks & storage"
-    }
+    {"url": "/guides/chat-voice-afk.html", "label": "Chat, Voice & AFK"},
+    {"url": "/guides/join.html", "label": "Joining a Crossplay Minecraft Server"},
+    {"url": "/guides/ranks-and-storage.html", "label": "Ender Chest, Homes & Ranks"}
   ]
 }

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Crossplay-Minecraft-Server betreten – Gilly SMP Leitfaden</title>
+  <meta name="description" content="So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.">
+  <link rel="canonical" href="https://craft.gillyb.net/de/guides/join.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/join.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/join.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/join.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/join.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/join.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Crossplay-Minecraft-Server betreten – Gilly SMP Leitfaden">
+  <meta property="og:description" content="So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.">
+  <meta property="og:url" content="https://craft.gillyb.net/de/guides/join.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crossplay-Minecraft-Server betreten – Gilly SMP Leitfaden">
+  <meta name="twitter:description" content="So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "So trittst du einem Minecraft-Survival-Server von Java, Bedrock oder Konsole aus bei",
+      "url": "https://craft.gillyb.net/de/guides/join.html",
+      "description": "So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/de/guides/join.html",
+      "inLanguage": "de",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Welche Adresse und welcher Port werden für Bedrock benötigt, um einem Minecraft-Server beizutreten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP verwenden Bedrock-Spieler die Adresse mc.gillyb.net mit dem Port 19132. Unter Windows, Android, iPhone und iPad öffnet der Button Zu Minecraft hinzufügen auf der Serverseite das Spiel mit bereits eingetragenem Server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Minecraft-Java-Version brauche ich, um einem Survival-Server beizutreten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP erfordert Minecraft Java 26.3, ältere Versionen können sich also nicht verbinden. Verwende die Adresse mc.gillyb.net: Java-, Bedrock- und Konsolenspieler teilen sich dieselbe Welt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie trete ich einem Minecraft-Server von Xbox, PlayStation oder Switch aus bei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Füge GillySMP auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo für das Online-Spiel, du brauchst es also, um dich zu verbinden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich einem Minecraft-Server mit einem gecrackten oder Offline-Launcher beitreten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Gilly SMP läuft im Online-Modus, daher können nur legitime, gekaufte Minecraft-Konten beitreten. Gecrackte und Offline-Launcher können sich nicht verbinden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich auf einer Whitelist stehen, um einem Minecraft-Server beizutreten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Gilly SMP nicht. Es gibt keine Whitelist: Jeder mit einem legitimen Konto kann beitreten. Der Server fasst bis zu 20 Spieler."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum beginnt mein Bedrock-Name auf einem Java-Server mit einem Unterstrich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bedrock-Namen bekommen ein _-Präfix, und Leerzeichen werden zu Unterstrichen, damit sie nie mit Java-Namen kollidieren. Das Präfix ist auf Proxy und Server gleich, du behältst also überall denselben Namen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Brauche ich ein Ressourcenpaket, um auf einem Minecraft-Server mit eigenen Gegenständen zu spielen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auf Java ja. Gilly SMP sendet sein Ressourcenpaket beim Beitritt automatisch, du musst die Abfrage nur bestätigen. Ohne Paket sehen eigene Gegenstände aus wie in Vanilla, und manche zeigen rohe Textnamen. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen, aber alles funktioniert trotzdem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Mods kann ich auf einem Minecraft-Survival-Server verwenden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clientseitige Mods wie Performance-Tools, Minimaps, Shader und Sprachchat sind auf Gilly SMP erlaubt. Cheat-Mods wie X-Ray, Freecam oder manipulierte Clients sind nicht erlaubt, und der Server nutzt einen Anti-Cheat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was sollte ich nach dem Beitritt zu einem Survival-Server als Erstes tun?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Öffne deine Fortschritte mit L auf Java, denn die Survival-Überarbeitung nutzt sie als Schritt-für-Schritt-Anleitung. Sobald du eine Basis hast, setze ein Zuhause mit /sethome base, und /spawn bringt dich jederzeit zurück zum Spawn."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://craft.gillyb.net/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/de/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Leitfäden",
+          "item": "https://craft.gillyb.net/de/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Crossplay-Minecraft-Server betreten",
+          "item": "https://craft.gillyb.net/de/guides/join.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Sprache">
+          <a href="/guides/join.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/join.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/join.html" hreflang="de" lang="de" aria-current="true">DE</a>
+          <a href="/es/guides/join.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+      <a class="brand" href="/de/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressourcen">
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Rezepte</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschritte</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/de/">Startseite</a><span>›</span><a href="/de/wiki.html">Wiki</a><span>›</span><a href="/de/guides/">Leitfäden</a><span>›</span>Crossplay-Minecraft-Server betreten</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>So trittst du einem Minecraft-Survival-Server von Java, Bedrock oder Konsole aus bei</h1>
+        <p class="intro">Willst du Minecraft-Survival mit Freunden spielen, die ein anderes Gerät nutzen? Dieser Leitfaden erklärt, wie sich Java-, Bedrock- und Konsolenspieler mit einem gemeinsamen Crossplay-Server verbinden. Gilly SMP dient als Beispiel.</p>
+        <p class="badges"><span class="badge y">9 Antworten</span><a class="badge" href="/de/wiki.html">Gesamtes Wiki →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Serveradressen nach Plattform</h2>
+    <article class="qa">
+      <h3>Welche Adresse und welcher Port werden für Bedrock benötigt, um einem Minecraft-Server beizutreten?</h3>
+      <p>Auf Gilly SMP verwenden Bedrock-Spieler die Adresse <code>mc.gillyb.net</code> mit dem Port <strong>19132</strong>. Unter Windows, Android, iPhone und iPad öffnet der Button Zu Minecraft hinzufügen auf der Serverseite das Spiel mit bereits eingetragenem Server.</p>
+    </article>
+    <article class="qa">
+      <h3>Welche Minecraft-Java-Version brauche ich, um einem Survival-Server beizutreten?</h3>
+      <p>Gilly SMP erfordert Minecraft Java <strong>26.3</strong>, ältere Versionen können sich also nicht verbinden. Verwende die Adresse <code>mc.gillyb.net</code>: Java-, Bedrock- und Konsolenspieler teilen sich dieselbe Welt.</p>
+    </article>
+    <article class="qa">
+      <h3>Wie trete ich einem Minecraft-Server von Xbox, PlayStation oder Switch aus bei?</h3>
+      <p>Füge <strong>GillySMP</strong> auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo für das Online-Spiel, du brauchst es also, um dich zu verbinden.</p>
+    </article>
+    <h2 class="topic-title">Konten und Zugang</h2>
+    <article class="qa">
+      <h3>Kann ich einem Minecraft-Server mit einem gecrackten oder Offline-Launcher beitreten?</h3>
+      <p>Nein. Gilly SMP läuft im Online-Modus, daher können nur legitime, gekaufte Minecraft-Konten beitreten. Gecrackte und Offline-Launcher können sich nicht verbinden.</p>
+    </article>
+    <article class="qa">
+      <h3>Muss ich auf einer Whitelist stehen, um einem Minecraft-Server beizutreten?</h3>
+      <p>Auf Gilly SMP nicht. Es gibt keine Whitelist: Jeder mit einem legitimen Konto kann beitreten. Der Server fasst bis zu <strong>20 Spieler</strong>.</p>
+    </article>
+    <article class="qa">
+      <h3>Warum beginnt mein Bedrock-Name auf einem Java-Server mit einem Unterstrich?</h3>
+      <p>Bedrock-Namen bekommen ein <code>_</code>-Präfix, und Leerzeichen werden zu Unterstrichen, damit sie nie mit Java-Namen kollidieren. Das Präfix ist auf Proxy und Server gleich, du behältst also überall denselben Namen.</p>
+    </article>
+    <h2 class="topic-title">Vor der ersten Sitzung</h2>
+    <article class="qa">
+      <h3>Brauche ich ein Ressourcenpaket, um auf einem Minecraft-Server mit eigenen Gegenständen zu spielen?</h3>
+      <p>Auf Java ja. Gilly SMP sendet sein Ressourcenpaket beim Beitritt automatisch, du musst die Abfrage nur bestätigen. Ohne Paket sehen eigene Gegenstände aus wie in Vanilla, und manche zeigen rohe Textnamen. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen, aber alles funktioniert trotzdem.</p>
+    </article>
+    <article class="qa">
+      <h3>Welche Mods kann ich auf einem Minecraft-Survival-Server verwenden?</h3>
+      <p>Clientseitige Mods wie Performance-Tools, Minimaps, Shader und Sprachchat sind auf Gilly SMP erlaubt. Cheat-Mods wie X-Ray, Freecam oder manipulierte Clients sind nicht erlaubt, und der Server nutzt einen Anti-Cheat.</p>
+    </article>
+    <article class="qa">
+      <h3>Was sollte ich nach dem Beitritt zu einem Survival-Server als Erstes tun?</h3>
+      <p>Öffne deine Fortschritte mit <code>L</code> auf Java, denn die Survival-Überarbeitung nutzt sie als Schritt-für-Schritt-Anleitung. Sobald du eine Basis hast, setze ein Zuhause mit <code>/sethome base</code>, und <code>/spawn</code> bringt dich jederzeit zurück zum Spawn.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Weiterlesen</h2>
+      <ul class="guide-links">
+        <li><a href="/de/wiki.html#basics">Wiki: Erste Schritte</a></li>
+        <li><a href="/de/wiki.html#bedrock">Wiki: Bedrock-Menü</a></li>
+        <li><a href="/de/advancements.html">Fortschrittsleitfaden</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Verwandte Leitfäden</h2>
+      <ul class="guide-links">
+        <li><a href="/de/guides/crossplay.html">Crossplay &amp; gemeinsamer Fortschritt</a></li>
+        <li><a href="/de/guides/what-is-matcha.html">Was ist Matcha Flavoured?</a></li>
+        <li><a href="/de/guides/matcha-server.html">Einen Matcha-Server finden</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/de/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.</p>
+      </div>
+      <nav class="f-col" aria-label="Entdecken">
+        <h3 class="f-title">Entdecken</h3>
+        <a href="/de/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Startseite</a>
+        <a href="/de/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> So trittst du bei</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Rezeptbuch</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschrittsleitfaden</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Zuletzt aktualisiert <time datetime="2026-11-21">21. November 2026</time></p>
+      <p class="legal">Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von Microsoft genehmigt oder mit ihnen verbunden. Item-Texturen stammen von Minecraft und vom Ressourcenpaket des Servers.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>¿Qué es Matcha Flavoured? – Guía de Gilly SMP</title>
+  <meta name="description" content="Matcha Flavoured es un datapack de Minecraft que quita el hambre y la regeneración, añade aleaciones y suaviza la muerte. Explicación.">
+  <link rel="canonical" href="https://craft.gillyb.net/es/guides/what-is-matcha.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/what-is-matcha.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/what-is-matcha.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/what-is-matcha.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/what-is-matcha.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/what-is-matcha.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="¿Qué es Matcha Flavoured? – Guía de Gilly SMP">
+  <meta property="og:description" content="Matcha Flavoured es un datapack de Minecraft que quita el hambre y la regeneración, añade aleaciones y suaviza la muerte. Explicación.">
+  <meta property="og:url" content="https://craft.gillyb.net/es/guides/what-is-matcha.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="¿Qué es Matcha Flavoured? – Guía de Gilly SMP">
+  <meta name="twitter:description" content="Matcha Flavoured es un datapack de Minecraft que quita el hambre y la regeneración, añade aleaciones y suaviza la muerte. Explicación.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "¿Qué es Matcha Flavoured? Un datapack de supervivencia de Minecraft explicado",
+      "url": "https://craft.gillyb.net/es/guides/what-is-matcha.html",
+      "description": "Matcha Flavoured es un datapack de Minecraft que quita el hambre y la regeneración, añade aleaciones y suaviza la muerte. Explicación.",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/es/guides/what-is-matcha.html",
+      "inLanguage": "es",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es el datapack Matcha Flavoured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Matcha Flavoured es un datapack de Minecraft Java con un paquete de recursos complementario. Reelabora el progreso de supervivencia para que los jugadores casuales puedan reunir recursos a un ritmo parecido al de los jugadores técnicos, y hace la muerte menos severa. Gilly SMP lo ejecuta en el servidor, así que no tienes que instalar nada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Matcha Flavoured es un mod o un datapack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es un datapack con un paquete de recursos complementario, no un mod de cliente que instales. En Gilly SMP se ejecuta en el servidor, así que los jugadores de Java solo necesitan Minecraft 26.3 y el paquete de recursos del servidor, que se envía automáticamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué algunos lo escriben Matcha Flavored con o?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Matcha Flavoured y Matcha Flavored se refieren al mismo datapack. Los jugadores buscan ambas grafías, así que las guías y los servidores de aquí cubren las dos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Elimina Matcha Flavoured el hambre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El hambre ha desaparecido prácticamente: no te mueres de hambre, y la comida se valora por sus efectos en lugar de por llenar una barra. En Gilly SMP hay unos 50 alimentos nuevos, y la curación viene de los efectos de la comida, las pociones y los objetos especiales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Desactiva Matcha Flavoured la regeneración natural de la vida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La regeneración natural de la vida está desactivada: te curas comiendo alimentos con efectos curativos, bebiendo pociones o usando objetos especiales. En Gilly SMP, es una de las reglas básicas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona la muerte en Matcha Flavoured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Gilly SMP conservas el inventario y la XP, pero cada muerte quita un corazón máximo. El servidor funciona en Fácil, así que tu máximo nunca baja de 10 corazones. Los corazones de cristal restauran corazones máximos hasta 30."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesita Matcha Flavoured granjas de mobs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Está diseñado para que no las necesites. El progreso recompensa explorar, cocinar, pescar y comerciar en lugar de usar trituradoras técnicas. En Gilly SMP no hay granjas de mobs, granjas de XP ni salas de comercio de aldeanos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué aleaciones añade Matcha Flavoured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La reelaboración añade aleaciones forjadas sobre metales base: hepatizón y shakudo sobre cobre, acero sobre hierro, y electro y adamante sobre diamante. Gilly SMP también tiene mattocks y dolabras, herramientas dos en uno."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué versión de Minecraft usa Matcha Flavoured en Gilly SMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gilly SMP ejecuta Matcha Flavoured en Minecraft Java 26.3. Los jugadores de Java necesitan la 26.3 para conectarse a mc.gillyb.net, y los de Bedrock se conectan por el puerto 19132. Consulta la página de Primeros pasos para la versión actual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pueden los jugadores de Bedrock jugar a Matcha Flavoured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, en Gilly SMP. Bedrock no puede cargar paquetes de recursos de Java, así que los jugadores de Bedrock ven texturas vanilla y algunas claves sin procesar en los objetos personalizados, pero las reglas de la reelaboración se les aplican igual."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://craft.gillyb.net/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/es/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guías",
+          "item": "https://craft.gillyb.net/es/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "¿Qué es Matcha Flavoured?",
+          "item": "https://craft.gillyb.net/es/guides/what-is-matcha.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Comunidad">
+        <span class="lang-switch" role="group" aria-label="Idioma">
+          <a href="/guides/what-is-matcha.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/what-is-matcha.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/what-is-matcha.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/what-is-matcha.html" hreflang="es" lang="es" aria-current="true">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+      <a class="brand" href="/es/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Recursos">
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Logros</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/es/">Inicio</a><span>›</span><a href="/es/wiki.html">Wiki</a><span>›</span><a href="/es/guides/">Guías</a><span>›</span>¿Qué es Matcha Flavoured?</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>¿Qué es Matcha Flavoured? Un datapack de supervivencia de Minecraft explicado</h1>
+        <p class="intro">Matcha Flavoured es un datapack de Minecraft que reelabora el progreso de supervivencia para jugadores casuales. También lo verás escrito como Matcha Flavored. Estas respuestas explican con claridad qué cambia. Gilly SMP lo ejecuta en un servidor crossplay.</p>
+        <p class="badges"><span class="badge y">10 respuestas</span><a class="badge" href="/es/wiki.html">Wiki completa →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">El datapack</h2>
+    <article class="qa">
+      <h3>¿Qué es el datapack Matcha Flavoured?</h3>
+      <p>Matcha Flavoured es un datapack de Minecraft Java con un paquete de recursos complementario. Reelabora el progreso de supervivencia para que los jugadores casuales puedan reunir recursos a un ritmo parecido al de los jugadores técnicos, y hace la muerte menos severa. Gilly SMP lo ejecuta en el servidor, así que no tienes que instalar nada.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Matcha Flavoured es un mod o un datapack?</h3>
+      <p>Es un datapack con un paquete de recursos complementario, no un mod de cliente que instales. En Gilly SMP se ejecuta en el servidor, así que los jugadores de Java solo necesitan Minecraft 26.3 y el paquete de recursos del servidor, que se envía automáticamente.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Por qué algunos lo escriben Matcha Flavored con o?</h3>
+      <p>Matcha Flavoured y Matcha Flavored se refieren al mismo datapack. Los jugadores buscan ambas grafías, así que las guías y los servidores de aquí cubren las dos.</p>
+    </article>
+    <h2 class="topic-title">Qué cambia en la supervivencia</h2>
+    <article class="qa">
+      <h3>¿Elimina Matcha Flavoured el hambre?</h3>
+      <p>Sí. El hambre ha desaparecido prácticamente: no te mueres de hambre, y la comida se valora por sus efectos en lugar de por llenar una barra. En Gilly SMP hay unos 50 alimentos nuevos, y la curación viene de los efectos de la comida, las pociones y los objetos especiales.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Desactiva Matcha Flavoured la regeneración natural de la vida?</h3>
+      <p>Sí. La regeneración natural de la vida está desactivada: te curas comiendo alimentos con efectos curativos, bebiendo pociones o usando objetos especiales. En Gilly SMP, es una de las reglas básicas.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Cómo funciona la muerte en Matcha Flavoured?</h3>
+      <p>En Gilly SMP conservas el inventario y la XP, pero cada muerte quita un corazón máximo. El servidor funciona en Fácil, así que tu máximo nunca baja de 10 corazones. Los corazones de cristal restauran corazones máximos hasta 30.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Necesita Matcha Flavoured granjas de mobs?</h3>
+      <p>Está diseñado para que no las necesites. El progreso recompensa explorar, cocinar, pescar y comerciar en lugar de usar trituradoras técnicas. En Gilly SMP no hay granjas de mobs, granjas de XP ni salas de comercio de aldeanos.</p>
+    </article>
+    <h2 class="topic-title">Jugarlo</h2>
+    <article class="qa">
+      <h3>¿Qué aleaciones añade Matcha Flavoured?</h3>
+      <p>La reelaboración añade aleaciones forjadas sobre metales base: hepatizón y shakudo sobre cobre, acero sobre hierro, y electro y adamante sobre diamante. Gilly SMP también tiene mattocks y dolabras, herramientas dos en uno.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Qué versión de Minecraft usa Matcha Flavoured en Gilly SMP?</h3>
+      <p>Gilly SMP ejecuta Matcha Flavoured en Minecraft Java 26.3. Los jugadores de Java necesitan la 26.3 para conectarse a <code>mc.gillyb.net</code>, y los de Bedrock se conectan por el puerto 19132. Consulta la <a href="/es/wiki.html#basics">página de Primeros pasos</a> para la versión actual.</p>
+    </article>
+    <article class="qa">
+      <h3>¿Pueden los jugadores de Bedrock jugar a Matcha Flavoured?</h3>
+      <p>Sí, en Gilly SMP. Bedrock no puede cargar paquetes de recursos de Java, así que los jugadores de Bedrock ven texturas vanilla y algunas claves sin procesar en los objetos personalizados, pero las reglas de la reelaboración se les aplican igual.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Para saber más</h2>
+      <ul class="guide-links">
+        <li><a href="/es/wiki.html#survival">Wiki: Reelaboración de la supervivencia</a></li>
+        <li><a href="/es/wiki.html#basics">Wiki: Primeros pasos</a></li>
+        <li><a href="/es/recipes.html">Libro de recetas</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Guías relacionadas</h2>
+      <ul class="guide-links">
+        <li><a href="/es/guides/matcha-server.html">Encontrar un servidor Matcha</a></li>
+        <li><a href="/es/guides/death-and-healing.html">Muerte, corazones y curación</a></li>
+        <li><a href="/es/guides/alloys-and-stations.html">Aleaciones, estaciones y herramientas</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/es/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Un SMP de supervivencia crossplay sin pay-to-win. Java, Bedrock y consola, un solo mundo.</p>
+      </div>
+      <nav class="f-col" aria-label="Explorar">
+        <h3 class="f-title">Explorar</h3>
+        <a href="/es/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Inicio</a>
+        <a href="/es/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Cómo unirse</a>
+        <a href="/es/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/es/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guías</a>
+        <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Libro de recetas</a>
+        <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Guía de logros</a>
+      </nav>
+      <nav class="f-col" aria-label="Comunidad">
+        <h3 class="f-title">Comunidad</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Última actualización <time datetime="2026-11-21">21 de noviembre de 2026</time></p>
+      <p class="legal">Gilly SMP no es un servicio oficial de Minecraft y no está aprobado ni asociado con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del paquete de recursos del servidor.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

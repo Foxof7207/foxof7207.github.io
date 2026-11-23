@@ -1,0 +1,81 @@
+{
+  "slug": "points-orders-trading",
+  "title": "Économie du serveur : points, commandes et échanges",
+  "updated": "2026-11-21",
+  "h1": "Économie d'un serveur Minecraft : points, commandes d'achat et échanges entre joueurs",
+  "description": "Fonctionnement d'une économie Minecraft pilotée par les joueurs : points, commandes d'achat payées hors ligne, échanges, paiements et parrainages.",
+  "intro": "Certains serveurs de survie font tourner une économie pilotée par les joueurs plutôt qu'une boutique, les objets changent donc de mains entre joueurs. Ce guide explique les points, les commandes d'achat, les échanges et les récompenses de parrainage. Gilly SMP sert d'exemple.",
+  "groups": [
+    {
+      "title": "Points et paiements entre joueurs",
+      "items": [
+        {
+          "q": "Comment fonctionne une économie pilotée par les joueurs sur un serveur de survie Minecraft ?",
+          "a": "Sur Gilly SMP, l'économie est entièrement pilotée par les joueurs. Ils se vendent des objets via le marché des commandes ou les échanges, et les points sont la monnaie du serveur. Chaque prix du serveur est exprimé en points."
+        },
+        {
+          "q": "Comment gagner des points sur un serveur de survie Minecraft ?",
+          "a": "Les nouveaux joueurs commencent avec 0 point. Vous en gagnez en vendant des objets à d'autres joueurs via le marché des commandes, car le serveur ne distribue pas de points."
+        },
+        {
+          "q": "Comment payer un autre joueur dans Minecraft ?",
+          "a": "Utilisez <code>/points pay &lt;joueur&gt; &lt;montant&gt;</code>. Les montants sont des nombres entiers d'au moins 1, et payer moins de 1 est refusé."
+        }
+      ]
+    },
+    {
+      "title": "Commandes d'achat",
+      "items": [
+        {
+          "q": "Comment fonctionnent les commandes d'achat Minecraft sur un serveur de survie ?",
+          "a": "Ouvrez le marché des commandes avec <code>/order</code> et publiez une commande d'achat avec un objet, une quantité et un prix unitaire d'au moins 1 point. Les points sont réservés, d'autres joueurs livrent les objets et sont payés instantanément, même si vous êtes hors ligne."
+        },
+        {
+          "q": "Combien de commandes d'achat puis-je avoir en même temps dans Minecraft ?",
+          "a": "Sur Gilly SMP, vous pouvez avoir 5 commandes actives, davantage selon le rang : 7 pour le Bronze, 10 pour l'Or et 15 pour le Diamant. Les commandes expirent au bout de 14 jours."
+        },
+        {
+          "q": "Les commandes d'achat Minecraft exigent-elles l'objet exact ?",
+          "a": "Oui. Les objets doivent correspondre exactement à la commande, enchantements, dégâts, noms personnalisés et contenu compris. Les objets peuvent être livrés depuis des boîtes shulker."
+        }
+      ]
+    },
+    {
+      "title": "Échanges et parrainages",
+      "items": [
+        {
+          "q": "Comment échanger des objets avec un autre joueur dans Minecraft ?",
+          "a": "Accroupissez-vous et faites un clic droit sur le joueur, ou utilisez <code>/trade &lt;joueur&gt;</code>. Vous devez être à moins de 10 blocs, dans le même monde et ne pas être en créatif. Les deux parties proposent des objets et des points, et les deux doivent accepter. L'XP ne peut pas être échangée."
+        },
+        {
+          "q": "Comment fonctionnent les récompenses de parrainage sur un serveur Minecraft ?",
+          "a": "Exécutez <code>/referral</code> pour voir votre code personnel et donnez-le à un ami. Quand il rejoint et tape <code>/refer &lt;code&gt;</code>, il reçoit 5 diamants tout de suite, et vous en recevez 10 une fois qu'il a joué 2 heures. Vous pouvez parrainer jusqu'à 5 joueurs, un par adresse IP."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/fr/wiki.html#economy",
+      "label": "Wiki : Points, commandes et échanges"
+    },
+    {
+      "url": "/fr/wiki.html#referral",
+      "label": "Wiki : Parrainages"
+    }
+  ],
+  "related": [
+    {
+      "url": "/fr/guides/ranks-and-storage.html",
+      "label": "Coffre de l'End, maisons et rangs"
+    },
+    {
+      "url": "/fr/guides/chat-voice-afk.html",
+      "label": "Chat, chat vocal et AFK"
+    },
+    {
+      "url": "/fr/guides/rules-support-qol.html",
+      "label": "Règles et confort de jeu"
+    }
+  ]
+}

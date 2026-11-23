@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Économie du serveur : points, commandes et échanges – Guide Gilly SMP</title>
+  <meta name="description" content="Fonctionnement d&#x27;une économie Minecraft pilotée par les joueurs : points, commandes d&#x27;achat payées hors ligne, échanges, paiements et parrainages.">
+  <link rel="canonical" href="https://craft.gillyb.net/fr/guides/points-orders-trading.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/points-orders-trading.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/points-orders-trading.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/points-orders-trading.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/points-orders-trading.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/points-orders-trading.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Économie du serveur : points, commandes et échanges – Guide Gilly SMP">
+  <meta property="og:description" content="Fonctionnement d&#x27;une économie Minecraft pilotée par les joueurs : points, commandes d&#x27;achat payées hors ligne, échanges, paiements et parrainages.">
+  <meta property="og:url" content="https://craft.gillyb.net/fr/guides/points-orders-trading.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Économie du serveur : points, commandes et échanges – Guide Gilly SMP">
+  <meta name="twitter:description" content="Fonctionnement d&#x27;une économie Minecraft pilotée par les joueurs : points, commandes d&#x27;achat payées hors ligne, échanges, paiements et parrainages.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Économie d'un serveur Minecraft : points, commandes d'achat et échanges entre joueurs",
+      "url": "https://craft.gillyb.net/fr/guides/points-orders-trading.html",
+      "description": "Fonctionnement d'une économie Minecraft pilotée par les joueurs : points, commandes d'achat payées hors ligne, échanges, paiements et parrainages.",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-21",
+      "isPartOf": {
+        "@id": "https://craft.gillyb.net/#website"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "url": "https://craft.gillyb.net/fr/guides/points-orders-trading.html",
+      "inLanguage": "fr",
+      "dateModified": "2026-11-21",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne une économie pilotée par les joueurs sur un serveur de survie Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, l'économie est entièrement pilotée par les joueurs. Ils se vendent des objets via le marché des commandes ou les échanges, et les points sont la monnaie du serveur. Chaque prix du serveur est exprimé en points."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment gagner des points sur un serveur de survie Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les nouveaux joueurs commencent avec 0 point. Vous en gagnez en vendant des objets à d'autres joueurs via le marché des commandes, car le serveur ne distribue pas de points."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment payer un autre joueur dans Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilisez /points pay &lt;joueur&gt; &lt;montant&gt;. Les montants sont des nombres entiers d'au moins 1, et payer moins de 1 est refusé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionnent les commandes d'achat Minecraft sur un serveur de survie ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ouvrez le marché des commandes avec /order et publiez une commande d'achat avec un objet, une quantité et un prix unitaire d'au moins 1 point. Les points sont réservés, d'autres joueurs livrent les objets et sont payés instantanément, même si vous êtes hors ligne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de commandes d'achat puis-je avoir en même temps dans Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur Gilly SMP, vous pouvez avoir 5 commandes actives, davantage selon le rang : 7 pour le Bronze, 10 pour l'Or et 15 pour le Diamant. Les commandes expirent au bout de 14 jours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les commandes d'achat Minecraft exigent-elles l'objet exact ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les objets doivent correspondre exactement à la commande, enchantements, dégâts, noms personnalisés et contenu compris. Les objets peuvent être livrés depuis des boîtes shulker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment échanger des objets avec un autre joueur dans Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Accroupissez-vous et faites un clic droit sur le joueur, ou utilisez /trade &lt;joueur&gt;. Vous devez être à moins de 10 blocs, dans le même monde et ne pas être en créatif. Les deux parties proposent des objets et des points, et les deux doivent accepter. L'XP ne peut pas être échangée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionnent les récompenses de parrainage sur un serveur Minecraft ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exécutez /referral pour voir votre code personnel et donnez-le à un ami. Quand il rejoint et tape /refer &lt;code&gt;, il reçoit 5 diamants tout de suite, et vous en recevez 10 une fois qu'il a joué 2 heures. Vous pouvez parrainer jusqu'à 5 joueurs, un par adresse IP."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://craft.gillyb.net/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wiki",
+          "item": "https://craft.gillyb.net/fr/wiki.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guides",
+          "item": "https://craft.gillyb.net/fr/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Économie du serveur : points, commandes et échanges",
+          "item": "https://craft.gillyb.net/fr/guides/points-orders-trading.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Communauté">
+        <span class="lang-switch" role="group" aria-label="Langue">
+          <a href="/guides/points-orders-trading.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/points-orders-trading.html" hreflang="fr" lang="fr" aria-current="true">FR</a>
+          <a href="/de/guides/points-orders-trading.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/points-orders-trading.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Boutique</a>
+      </nav>
+      <a class="brand" href="/fr/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressources">
+        <a href="/fr/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recettes</a>
+        <a href="/fr/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Progrès</a>
+        <a href="/fr/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/fr/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/fr/">Accueil</a><span>›</span><a href="/fr/wiki.html">Wiki</a><span>›</span><a href="/fr/guides/">Guides</a><span>›</span>Économie du serveur : points, commandes et échanges</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Économie d&#x27;un serveur Minecraft : points, commandes d&#x27;achat et échanges entre joueurs</h1>
+        <p class="intro">Certains serveurs de survie font tourner une économie pilotée par les joueurs plutôt qu'une boutique, les objets changent donc de mains entre joueurs. Ce guide explique les points, les commandes d'achat, les échanges et les récompenses de parrainage. Gilly SMP sert d'exemple.</p>
+        <p class="badges"><span class="badge y">8 réponses</span><a class="badge" href="/fr/wiki.html">Wiki complet →</a></p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <h2 class="topic-title">Points et paiements entre joueurs</h2>
+    <article class="qa">
+      <h3>Comment fonctionne une économie pilotée par les joueurs sur un serveur de survie Minecraft ?</h3>
+      <p>Sur Gilly SMP, l'économie est entièrement pilotée par les joueurs. Ils se vendent des objets via le marché des commandes ou les échanges, et les points sont la monnaie du serveur. Chaque prix du serveur est exprimé en points.</p>
+    </article>
+    <article class="qa">
+      <h3>Comment gagner des points sur un serveur de survie Minecraft ?</h3>
+      <p>Les nouveaux joueurs commencent avec 0 point. Vous en gagnez en vendant des objets à d'autres joueurs via le marché des commandes, car le serveur ne distribue pas de points.</p>
+    </article>
+    <article class="qa">
+      <h3>Comment payer un autre joueur dans Minecraft ?</h3>
+      <p>Utilisez <code>/points pay &lt;joueur&gt; &lt;montant&gt;</code>. Les montants sont des nombres entiers d'au moins 1, et payer moins de 1 est refusé.</p>
+    </article>
+    <h2 class="topic-title">Commandes d&#x27;achat</h2>
+    <article class="qa">
+      <h3>Comment fonctionnent les commandes d&#x27;achat Minecraft sur un serveur de survie ?</h3>
+      <p>Ouvrez le marché des commandes avec <code>/order</code> et publiez une commande d'achat avec un objet, une quantité et un prix unitaire d'au moins 1 point. Les points sont réservés, d'autres joueurs livrent les objets et sont payés instantanément, même si vous êtes hors ligne.</p>
+    </article>
+    <article class="qa">
+      <h3>Combien de commandes d&#x27;achat puis-je avoir en même temps dans Minecraft ?</h3>
+      <p>Sur Gilly SMP, vous pouvez avoir 5 commandes actives, davantage selon le rang : 7 pour le Bronze, 10 pour l'Or et 15 pour le Diamant. Les commandes expirent au bout de 14 jours.</p>
+    </article>
+    <article class="qa">
+      <h3>Les commandes d&#x27;achat Minecraft exigent-elles l&#x27;objet exact ?</h3>
+      <p>Oui. Les objets doivent correspondre exactement à la commande, enchantements, dégâts, noms personnalisés et contenu compris. Les objets peuvent être livrés depuis des boîtes shulker.</p>
+    </article>
+    <h2 class="topic-title">Échanges et parrainages</h2>
+    <article class="qa">
+      <h3>Comment échanger des objets avec un autre joueur dans Minecraft ?</h3>
+      <p>Accroupissez-vous et faites un clic droit sur le joueur, ou utilisez <code>/trade &lt;joueur&gt;</code>. Vous devez être à moins de 10 blocs, dans le même monde et ne pas être en créatif. Les deux parties proposent des objets et des points, et les deux doivent accepter. L'XP ne peut pas être échangée.</p>
+    </article>
+    <article class="qa">
+      <h3>Comment fonctionnent les récompenses de parrainage sur un serveur Minecraft ?</h3>
+      <p>Exécutez <code>/referral</code> pour voir votre code personnel et donnez-le à un ami. Quand il rejoint et tape <code>/refer &lt;code&gt;</code>, il reçoit 5 diamants tout de suite, et vous en recevez 10 une fois qu'il a joué 2 heures. Vous pouvez parrainer jusqu'à 5 joueurs, un par adresse IP.</p>
+    </article>
+    <section class="guide-deeper">
+      <h2>Pour aller plus loin</h2>
+      <ul class="guide-links">
+        <li><a href="/fr/wiki.html#economy">Wiki : Points, commandes et échanges</a></li>
+        <li><a href="/fr/wiki.html#referral">Wiki : Parrainages</a></li>
+      </ul>
+    </section>
+    <section class="guide-related">
+      <h2>Guides liés</h2>
+      <ul class="guide-links">
+        <li><a href="/fr/guides/ranks-and-storage.html">Coffre de l&#x27;End, maisons et rangs</a></li>
+        <li><a href="/fr/guides/chat-voice-afk.html">Chat, chat vocal et AFK</a></li>
+        <li><a href="/fr/guides/rules-support-qol.html">Règles et confort de jeu</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/fr/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Un SMP survie crossplay sans pay-to-win. Java, Bedrock et console, un seul monde.</p>
+      </div>
+      <nav class="f-col" aria-label="Explorer">
+        <h3 class="f-title">Explorer</h3>
+        <a href="/fr/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Accueil</a>
+        <a href="/fr/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> Comment rejoindre</a>
+        <a href="/fr/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/fr/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Guides</a>
+        <a href="/fr/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Livre de recettes</a>
+        <a href="/fr/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Guide des progrès</a>
+      </nav>
+      <nav class="f-col" aria-label="Communauté">
+        <h3 class="f-title">Communauté</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Boutique</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Dernière mise à jour <time datetime="2026-11-21">21 novembre 2026</time></p>
+      <p class="legal">Gilly SMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni associé à Mojang ou Microsoft. Les textures des objets viennent de Minecraft et du pack de ressources du serveur.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

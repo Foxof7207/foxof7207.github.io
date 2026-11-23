@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Minecraft-Survival-Leitfäden – Crossplay, Regeln &amp; Fortschritt</title>
+  <meta name="description" content="Leitfäden zum Minecraft-Survival: Crossplay zwischen Java, Bedrock und Konsole, Herzen und Heilung, Mobs und Dunkelheit, Crafting und Legierungen, Serverwirtschaft und Regeln, mit Beispielen von Gilly SMP.">
+  <link rel="canonical" href="https://craft.gillyb.net/de/guides/">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Minecraft-Survival-Leitfäden – Crossplay, Regeln &amp; Fortschritt">
+  <meta property="og:description" content="Leitfäden zum Minecraft-Survival: Crossplay zwischen Java, Bedrock und Konsole, Herzen und Heilung, Mobs und Dunkelheit, Crafting und Legierungen, Serverwirtschaft und Regeln, mit Beispielen von Gilly SMP.">
+  <meta property="og:url" content="https://craft.gillyb.net/de/guides/">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minecraft-Survival-Leitfäden – Crossplay, Regeln &amp; Fortschritt">
+  <meta name="twitter:description" content="Leitfäden zum Minecraft-Survival: Crossplay zwischen Java, Bedrock und Konsole, Herzen und Heilung, Mobs und Dunkelheit, Crafting und Legierungen, Serverwirtschaft und Regeln, mit Beispielen von Gilly SMP.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/guides.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Minecraft-Survival-Leitfäden",
+  "url": "https://craft.gillyb.net/de/guides/",
+  "description": "Leitfäden zum Minecraft-Survival: Crossplay zwischen Java, Bedrock und Konsole, Herzen und Heilung, Mobs und Dunkelheit, Crafting und Legierungen, Serverwirtschaft und Regeln, mit Beispielen von Gilly SMP.",
+  "dateModified": "2026-11-21",
+  "inLanguage": "de",
+  "isPartOf": {
+    "@id": "https://craft.gillyb.net/#website"
+  }
+}
+  </script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Sprache">
+          <a href="/guides/" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/guides/" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/" hreflang="de" lang="de" aria-current="true">DE</a>
+          <a href="/es/guides/" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+      <a class="brand" href="/de/"><span>Gilly<b>SMP</b></span></a>
+      <nav class="nav-links right" aria-label="Ressourcen">
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Rezepte</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschritte</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/" aria-current="page"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+  <main id="main" class="guide container">
+    <p class="breadcrumbs"><a href="/de/">Startseite</a><span>›</span><a href="/de/wiki.html">Wiki</a><span>›</span>Leitfäden</p>
+    <section class="hero page-hero">
+      <div class="hero-inner container">
+        <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
+        <h1>Minecraft-Survival-<em>Leitfäden</em></h1>
+        <p class="sub">Klare Antworten auf häufige Survival-Fragen zu Minecraft: Crossplay, Herzen und Heilung, Mobs, Crafting, Wirtschaft und Serverregeln. Beispiele stammen von Gilly SMP.</p>
+      </div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+    <section class="guide-index">
+      <h2>Nach Thema durchsuchen</h2>
+      <ul class="guide-masonry">
+        <li><a class="guide-card featured" href="/de/guides/join.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i><span class="guide-card-count">9 Antworten</span></span>
+          <strong>Crossplay-Minecraft-Server betreten</strong>
+          <span class="guide-card-desc">So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/crossplay.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Crossplay &amp; gemeinsamer Fortschritt</strong>
+          <span class="guide-card-desc">Wie Java-, Bedrock- und Konsolenspieler eine Minecraft-Welt teilen: Kontoverknüpfung, gemeinsamer Fortschritt, Namen und Sprachchat erklärt.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/death-and-healing.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Tod, Herzen &amp; Heilung</strong>
+          <span class="guide-card-desc">Warum sich Lebenspunkte in dieser Survival-Überarbeitung nicht regenerieren, was der Tod kostet und wie du dich mit Essen, Tränken und Kristallherzen heilst.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/mobs-and-darkness.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Mobs, Phantome &amp; Dunkelheit</strong>
+          <span class="guide-card-desc">Warum Creeper und Phantome hier selten sind, wie echte Dunkelheit funktioniert, wann die Oberfläche sicher ist und wie Schlafen die Nacht verkürzt.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/alloys-and-stations.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Legierungen, Stationen &amp; Werkzeuge</strong>
+          <span class="guide-card-desc">So stellst du Stahl, Hepatizon und Elektrum her, welche Stationen zuerst freigeschaltet werden, wo Silber liegt und warum Eisen einen Hochofen braucht.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/recipes-and-advancements.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Rezeptbuch &amp; Fortschritte</strong>
+          <span class="guide-card-desc">So findest du jedes Rezept und folgst den Fortschritten einer Minecraft-Survival-Überarbeitung, auch auf Bedrock, wo die Menüs im Spiel eingeschränkt sind.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/world-and-dimensions.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Welt, Schwierigkeit &amp; Dimensionen</strong>
+          <span class="guide-card-desc">Weltguide für einen Minecraft-Survival-Server: Schwierigkeit Einfach, Terrain, Öffnung von Nether und End, Ausrichtung der Portale, Saisons und Weltgrenze.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/ranks-and-storage.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/shield-check.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Enderkiste, Zuhause &amp; Ränge</strong>
+          <span class="guide-card-desc">Enderkisten-Reihen, Zuhause, öffentliche Zuhause und Teilen auf einem Minecraft-Survival-Server sowie was jeder Rang freischaltet, vom Standard bis zum Diamant.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/points-orders-trading.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/users.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Serverwirtschaft: Punkte, Aufträge &amp; Handel</strong>
+          <span class="guide-card-desc">Wie eine von Spielern gesteuerte Minecraft-Wirtschaft funktioniert: Punkte, Kaufaufträge, Handel, Zahlungen und Empfehlungsboni.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/chat-voice-afk.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Chat, Sprache &amp; AFK</strong>
+          <span class="guide-card-desc">Globaler Chat, Privatnachrichten, Java-Sprachchat, Spam-Filter und AFK-Regeln auf einem Minecraft-Survival-Server, mit den wichtigsten Befehlen.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card" href="/de/guides/rules-support-qol.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/scale.svg)" aria-hidden="true"></i><span class="guide-card-count">9 Antworten</span></span>
+          <strong>Serverregeln &amp; Komfortfunktionen</strong>
+          <span class="guide-card-desc">Regeln eines Survival-Servers zu PvP, Grieving, Cheat-Mods und Landbesitz, dazu Komfortfunktionen, Entbannungsanträge und wie du das Team erreichst.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card featured" href="/de/guides/matcha-server.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i><span class="guide-card-count">8 Antworten</span></span>
+          <strong>Einen Matcha-Flavoured-Server finden</strong>
+          <span class="guide-card-desc">So wählst du einen Minecraft-Server mit Matcha Flavoured: worauf du bei serverseitiger Installation, Pay-to-Win, Plattformen und Crossplay achten solltest.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+        <li><a class="guide-card featured" href="/de/guides/what-is-matcha.html">
+          <span class="guide-card-top"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i><span class="guide-card-count">10 Antworten</span></span>
+          <strong>Was ist Matcha Flavoured?</strong>
+          <span class="guide-card-desc">Matcha Flavoured ist ein Minecraft-Datapack, das Hunger und natürliche Regeneration entfernt, Legierungen hinzufügt und den Tod milder macht.</span>
+          <span class="guide-card-more">Leitfaden lesen →</span>
+        </a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/de/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.</p>
+      </div>
+      <nav class="f-col" aria-label="Entdecken">
+        <h3 class="f-title">Entdecken</h3>
+        <a href="/de/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Startseite</a>
+        <a href="/de/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> So trittst du bei</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Rezeptbuch</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschrittsleitfaden</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Zuletzt aktualisiert <time datetime="2026-11-21">21. November 2026</time></p>
+      <p class="legal">Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von Microsoft genehmigt oder mit ihnen verbunden. Item-Texturen stammen von Minecraft und vom Ressourcenpaket des Servers.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

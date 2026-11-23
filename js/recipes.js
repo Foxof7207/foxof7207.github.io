@@ -42,7 +42,7 @@
 
   function tagLabel(t) {
     var p = t.split(':').pop().split('/').pop().replace(/_/g, ' ');
-    return 'Any ' + p.replace(/\b\w/g, function (m) { return m.toUpperCase(); });
+    return T('Any ', 'Tout ') + p.replace(/\b\w/g, function (m) { return m.toUpperCase(); });
   }
 
   // ---------- index ----------
@@ -82,8 +82,8 @@
   function renderChips() {
     var counts = { all: RECIPES.length, food: 0 };
     RECIPES.forEach(function (r) { counts[r.s] = (counts[r.s] || 0) + 1; if (r.g === 'food') counts.food++; });
-    var defs = [['all', 'All', null]].concat(ORDER.map(function (s) { return [s, D.stations[s].n, D.stations[s].i]; }));
-    defs.splice(1, 0, ['food', 'Food', 'minecraft:bowl']);
+    var defs = [['all', T('All', 'Tout'), null]].concat(ORDER.map(function (s) { return [s, D.stations[s].n, D.stations[s].i]; }));
+    defs.splice(1, 0, ['food', T('Food', 'Nourriture'), 'minecraft:bowl']);
     chips.textContent = '';
     defs.forEach(function (d) {
       var b = el('button', 'rv-chip' + (d[2] ? '' : ' plain'));
@@ -130,7 +130,7 @@
     b.appendChild(ic);
     b._keys = keys; b._tag = s.t || null; b._ic = ic;
     if (keys.length > 1) { b.appendChild(el('span', 'tagdot')); cyclers.push(b); }
-    b.setAttribute('aria-label', s.t ? tagLabel(s.t) : (keys.length > 1 ? 'Any of: ' + keys.map(nameOf).join(', ') : nameOf(keys[0])));
+    b.setAttribute('aria-label', s.t ? tagLabel(s.t) : (keys.length > 1 ? T('Any of: ', 'Au choix : ') + keys.map(nameOf).join(', ') : nameOf(keys[0])));
     return b;
   }
 
@@ -156,7 +156,7 @@
       var n = r.in.length, w = n <= 1 ? 1 : n <= 4 ? 2 : 3;
       grid.style.gridTemplateColumns = 'repeat(' + w + ', var(--slot))';
       r.in.forEach(function (s) { grid.appendChild(slotEl(s)); });
-      mid.appendChild(el('span', 'rc-shapeless', 'any order'));
+      mid.appendChild(el('span', 'rc-shapeless', T('any order', 'dans le désordre')));
     } else if (r.s === 'smithing') {
       grid.style.gridTemplateColumns = 'repeat(3, var(--slot))';
       r.in.forEach(function (s) { grid.appendChild(slotEl(s)); });
@@ -198,14 +198,14 @@
     if (focus) {
       var f = el('span', 'rv-focus');
       f.appendChild(icon(focus, true));
-      f.appendChild(document.createTextNode(state.make ? 'How to make ' : 'Recipes using '));
+      f.appendChild(document.createTextNode(state.make ? T('How to make ', 'Comment fabriquer ') : T('Recipes using ', 'Recettes utilisant ')));
       f.appendChild(el('b', null, nameOf(focus)));
-      var x = el('button', 'rv-x', '×'); x.type = 'button'; x.setAttribute('aria-label', 'Show all recipes');
+      var x = el('button', 'rv-x', '×'); x.type = 'button'; x.setAttribute('aria-label', T('Show all recipes', 'Afficher toutes les recettes'));
       x.addEventListener('click', function () { state.make = state.use = null; commit(); });
       f.appendChild(x);
       status.appendChild(f);
       var tabs = el('span', 'rv-tabs');
-      [['make', 'Made by', makes[focus]], ['use', 'Used in', uses[focus]]].forEach(function (d) {
+      [['make', T('Made by', 'Fabriqué par'), makes[focus]], ['use', T('Used in', 'Utilisé dans'), uses[focus]]].forEach(function (d) {
         var b = el('button', null, d[1] + ' (' + (d[2] ? d[2].length : 0) + ')'); b.type = 'button';
         b.setAttribute('aria-pressed', String(!!state[d[0]]));
         b.disabled = !d[2];
@@ -223,7 +223,7 @@
     renderStatus();
     [].forEach.call(chips.children, function (b) { b.setAttribute('aria-pressed', String(b.dataset.s === state.s)); });
     if (!shown.length) {
-      list.appendChild(el('p', 'rv-empty', 'No recipe matches. Try another word, or pick "All".'));
+      list.appendChild(el('p', 'rv-empty', T('No recipe matches. Try another word, or pick "All".', 'Aucune recette ne correspond. Essayez un autre mot ou choisissez « Tout ».')));
       moreBtn.hidden = true;
       return;
     }
@@ -320,7 +320,7 @@
     var t = line[0][0], col = line[0][1], m;
     if ((m = /^([\ue030\ue032]+)$/.exec(t)) && col === 'red') {
       var hp = heartsHP(m[1]);
-      return [m[1], 'Heals ' + hearts(hp), ' (' + hp + ' HP)'];
+      return [m[1], T('Heals ', 'Soigne ') + hearts(hp), ' (' + hp + ' HP)'];
     }
     if ((m = /^([\ue030\ue032]+) \((.+)\)$/.exec(t)) && col === 'aqua') {
       var ab = heartsHP(m[1]);
@@ -366,7 +366,7 @@
       if (lb) d.appendChild(el('span', 'lo-k', lb));
       box.appendChild(d);
     });
-    if (it.d) box.appendChild(el('div', 'lo lo-dur', 'Durability ' + it.d.toLocaleString('en')));
+    if (it.d) box.appendChild(el('div', 'lo lo-dur', T('Durability ', 'Durabilité ') + it.d.toLocaleString(LOCALE)));
     return !!(it.l || it.d);
   }
 
@@ -387,7 +387,7 @@
     tip.appendChild(tipName(k));
     statLines(k, tip);
     if (s._tag || s._keys.length > 1) tip.appendChild(el('small', null, s._tag ? tagLabel(s._tag) : s._keys.length + ' options'));
-    tip.appendChild(el('small', null, 'Click for recipes'));
+    tip.appendChild(el('small', null, T('Click for recipes', 'Cliquez pour les recettes')));
     tip.hidden = false;
   });
   list.addEventListener('pointermove', function (e) {
@@ -419,7 +419,7 @@
     var it = ITEMS[key] || {};
     if (it.b) {
       var bl = el('div', 'bedrock');
-      bl.appendChild(document.createTextNode('On Bedrock it looks like '));
+      bl.appendChild(document.createTextNode(T('On Bedrock it looks like ', 'Sur Bedrock, il ressemble à ')));
       bl.appendChild(el('b', null, it.b));
       txt.appendChild(bl);
     }
@@ -430,15 +430,15 @@
     if (statLines(key, stats)) sh.appendChild(stats);
     var row = el('div', 'btn-row');
     var nm = (makes[key] || []).length, nu = (uses[key] || []).length;
-    var b1 = el('button', 'btn btn-yellow', 'How to make (' + nm + ')'); b1.type = 'button'; b1.disabled = !nm;
-    var b2 = el('button', 'btn btn-green', 'Used in (' + nu + ')'); b2.type = 'button'; b2.disabled = !nu;
+    var b1 = el('button', 'btn btn-yellow', T('How to make (', 'Comment fabriquer (') + nm + ')'); b1.type = 'button'; b1.disabled = !nm;
+    var b2 = el('button', 'btn btn-green', T('Used in (', 'Utilisé dans (') + nu + ')'); b2.type = 'button'; b2.disabled = !nu;
     b1.addEventListener('click', function () { state.make = key; state.use = null; state.q = ''; input.value = ''; state.s = 'all'; closeSheet(); commit(); });
     b2.addEventListener('click', function () { state.use = key; state.make = null; state.q = ''; input.value = ''; state.s = 'all'; closeSheet(); commit(); });
     row.appendChild(b1); row.appendChild(b2); sh.appendChild(row);
-    if (!nm) sh.appendChild(el('p', 'rv-alts', 'No recipe makes this item: find it in the world, from mobs, fishing or trades.'));
+    if (!nm) sh.appendChild(el('p', 'rv-alts', T('No recipe makes this item: find it in the world, from mobs, fishing or trades.', 'Aucune recette ne fabrique cet objet : trouvez-le dans le monde, sur des mobs, en pêchant ou par échange.')));
     if (alts) {
       var a = el('div', 'rv-alts');
-      a.appendChild(el('p', null, (tag ? tagLabel(tag) + ': ' : 'Any of these: ') + 'tap one to switch.'));
+      a.appendChild(el('p', null, (tag ? tagLabel(tag) + ': ' : T('Any of these: ', 'Au choix : ')) + T('tap one to switch.', 'touchez-en un pour changer.')));
       var r = el('div', 'row');
       alts.slice(0, 60).forEach(function (k) {
         var b = el('button', 'slot'); b.type = 'button'; b.appendChild(icon(k)); b.setAttribute('aria-label', nameOf(k)); b.title = nameOf(k);
@@ -462,6 +462,6 @@
     render();
     $('#rv-loading').remove();
   }).catch(function () {
-    $('#rv-loading').textContent = 'Could not load the recipes. Please refresh the page.';
+    $('#rv-loading').textContent = T('Could not load the recipes. Please refresh the page.', 'Impossible de charger les recettes. Actualisez la page.');
   });
 })();

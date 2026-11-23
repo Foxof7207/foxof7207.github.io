@@ -1,3 +1,114 @@
+// Language: set by <html lang>. Every page loads this file first, so T() is available
+// to main.js, recipes.js and advancements.js. English is the source text; fr is inline.
+var LANG = document.documentElement.lang || 'en';
+var BASE = { fr: '/fr', de: '/de', es: '/es' }[LANG] || '';
+var LOCALE = { fr: 'fr-FR', de: 'de-DE', es: 'es-ES' }[LANG] || 'en-US';
+var I18N = { de: {
+ "After ": "Nach ",
+ "Chance ": "Chance ",
+ "Clear your ticked steps for the ": "Abgehakte Schritte für den Reiter ",
+ "Completed: ": "Erledigt: ",
+ "Could not load the guide. Please refresh the page.": "Der Leitfaden konnte nicht geladen werden. Bitte lade die Seite neu.",
+ "Everything here is done. Nice work!": "Hier ist alles erledigt. Gut gemacht!",
+ "hidden on Java": "auf Java ausgeblendet",
+ "Mark as done: ": "Als erledigt markieren: ",
+ "Nothing matches. Try another word.": "Nichts gefunden. Versuche ein anderes Wort.",
+ " of 4": " von 4",
+ "Rarity ": "Seltenheit ",
+ "Recipe: ": "Rezept: ",
+ "REWARD": "BELOHNUNG",
+ " tab?": "?",
+ "TO DO": "OFFEN",
+ "Copied!": "Kopiert!",
+ "Java 26.3 required.": "Java 26.3 erforderlich.",
+ "Needs your console's online subscription.": "Erfordert das Online-Abo deiner Konsole.",
+ "Port 19132. On Windows, Android and iOS the \"Add to Minecraft\" button below does it for you.": "Port 19132. Unter Windows, Android und iOS erledigt das der Button „Zu Minecraft hinzufügen“ unten für dich.",
+ "Press Ctrl+C to copy": "Drücke Strg+C zum Kopieren",
+ "result": "Ergebnis",
+ "results": "Ergebnisse",
+ "Server currently offline": "Server derzeit offline",
+ "Server online, be the first in": "Server online, sei der Erste",
+ "Suggested for your device": "Für dein Gerät empfohlen",
+ "player": "Spieler",
+ "players": "Spieler",
+ "online right now": "gerade online",
+ "All": "Alle",
+ "Any ": "Beliebig ",
+ "Any of: ": "Eines von: ",
+ "Any of these: ": "Eines von diesen: ",
+ "any order": "beliebige Reihenfolge",
+ "Click for recipes": "Klicken für Rezepte",
+ "Could not load the recipes. Please refresh the page.": "Rezepte konnten nicht geladen werden. Bitte lade die Seite neu.",
+ "Durability ": "Haltbarkeit ",
+ "Food": "Essen",
+ "Heals ": "Heilt ",
+ "How to make ": "So stellst du her: ",
+ "How to make (": "So stellst du her (",
+ "Made by": "Hergestellt von",
+ "No recipe makes this item: find it in the world, from mobs, fishing or trades.": "Kein Rezept stellt diesen Gegenstand her: finde ihn in der Welt, bei Mobs, beim Angeln oder durch Handel.",
+ "No recipe matches. Try another word, or pick \"All\".": "Kein Rezept passt. Probiere ein anderes Wort oder wähle „Alle“.",
+ "On Bedrock it looks like ": "Auf Bedrock sieht er aus wie ",
+ "Recipes using ": "Rezepte mit ",
+ "Show all recipes": "Alle Rezepte anzeigen",
+ "tap one to switch.": "tippe auf einen, um zu wechseln.",
+ "Used in (": "Verwendet in (",
+ "Used in": "Verwendet in"
+}, es: {
+ "After ": "Tras ",
+ "Chance ": "Probabilidad ",
+ "Clear your ticked steps for the ": "Borrar los pasos marcados de la pestaña ",
+ "Completed: ": "Completado: ",
+ "Could not load the guide. Please refresh the page.": "No se pudo cargar la guía. Recarga la página.",
+ "Everything here is done. Nice work!": "¡Todo está hecho aquí. Buen trabajo!",
+ "hidden on Java": "oculto en Java",
+ "Mark as done: ": "Marcar como hecho: ",
+ "Nothing matches. Try another word.": "No hay coincidencias. Prueba otra palabra.",
+ " of 4": " de 4",
+ "Rarity ": "Rareza ",
+ "Recipe: ": "Receta: ",
+ "REWARD": "RECOMPENSA",
+ " tab?": "?",
+ "TO DO": "PENDIENTE",
+ "Copied!": "¡Copiado!",
+ "Java 26.3 required.": "Se requiere Java 26.3.",
+ "Needs your console's online subscription.": "Requiere la suscripción en línea de tu consola.",
+ "Port 19132. On Windows, Android and iOS the \"Add to Minecraft\" button below does it for you.": "Puerto 19132. En Windows, Android e iOS, el botón «Añadir a Minecraft» de abajo lo hace por ti.",
+ "Press Ctrl+C to copy": "Pulsa Ctrl+C para copiar",
+ "result": "resultado",
+ "results": "resultados",
+ "Server currently offline": "El servidor está desconectado",
+ "Server online, be the first in": "¡Servidor en línea, sé el primero!",
+ "Suggested for your device": "Recomendado para tu dispositivo",
+ "player": "jugador",
+ "players": "jugadores",
+ "online right now": "conectados ahora",
+ "All": "Todas",
+ "Any ": "Cualquier ",
+ "Any of: ": "Uno de: ",
+ "Any of these: ": "Uno de estos: ",
+ "any order": "en cualquier orden",
+ "Click for recipes": "Haz clic para ver recetas",
+ "Could not load the recipes. Please refresh the page.": "No se pudieron cargar las recetas. Recarga la página.",
+ "Durability ": "Durabilidad ",
+ "Food": "Comida",
+ "Heals ": "Cura ",
+ "How to make ": "Cómo fabricar ",
+ "How to make (": "Cómo fabricar (",
+ "Made by": "Fabricado por",
+ "No recipe makes this item: find it in the world, from mobs, fishing or trades.": "Ninguna receta fabrica este objeto: consíguelo en el mundo, con mobs, pescando o comerciando.",
+ "No recipe matches. Try another word, or pick \"All\".": "Ninguna receta coincide. Prueba otra palabra o elige «Todas».",
+ "On Bedrock it looks like ": "En Bedrock se ve como ",
+ "Recipes using ": "Recetas que usan ",
+ "Show all recipes": "Mostrar todas las recetas",
+ "tap one to switch.": "toca una para cambiar.",
+ "Used in (": "Usado en (",
+ "Used in": "Usado en"
+} };
+function T(en, fr) {
+  if (LANG === 'fr') return fr;
+  var d = I18N[LANG];
+  return d && d[en] !== undefined ? d[en] : en;
+}
 (function () {
   'use strict';
 
@@ -57,7 +168,7 @@
         clearTimeout(timer);
         b.classList.toggle('copied', ok);
         b.classList.toggle('failed', !ok);
-        b.innerHTML = ok ? '<i class="ic" style="--i:url(/assets/icons/check.svg)" aria-hidden="true"></i> Copied!' : 'Press Ctrl+C to copy';
+        b.innerHTML = ok ? '<i class="ic" style="--i:url(/assets/icons/check.svg)" aria-hidden="true"></i> ' + T('Copied!', 'Copié !') : T('Press Ctrl+C to copy', 'Appuyez sur Ctrl+C pour copier');
         timer = setTimeout(function () {
           b.classList.remove('copied', 'failed');
           b.innerHTML = original;
@@ -90,7 +201,7 @@
         if (link) link.parentNode.hidden = !any;
       });
       empty.hidden = shown !== 0;
-      count.textContent = terms.length ? shown + ' result' + (shown === 1 ? '' : 's') : '';
+      count.textContent = terms.length ? shown + ' ' + (shown === 1 ? T('result', 'résultat') : T('results', 'résultats')) : '';
     };
     input.addEventListener('input', filter);
     document.addEventListener('keydown', function (e) {
@@ -196,9 +307,9 @@
     : (/Android|iPhone|iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) ? 'bedrock'
     : 'java';
   var data = {
-    java: { addr: 'mc.gillyb.net', copy: 'mc.gillyb.net', note: 'Java 26.3 required.' },
-    bedrock: { addr: 'mc.gillyb.net · port 19132', copy: 'mc.gillyb.net', note: 'Port 19132. On Windows, Android and iOS the "Add to Minecraft" button below does it for you.' },
-    console: { addr: 'Friend: GillySMP', copy: 'GillySMP', note: 'Needs your console\'s online subscription.' }
+    java: { addr: 'mc.gillyb.net', copy: 'mc.gillyb.net', note: T('Java 26.3 required.', 'Minecraft Java 26.3 requis.') },
+    bedrock: { addr: 'mc.gillyb.net · port 19132', copy: 'mc.gillyb.net', note: T('Port 19132. On Windows, Android and iOS the "Add to Minecraft" button below does it for you.', 'Port 19132. Sous Windows, Android et iOS, le bouton « Ajouter à Minecraft » ci-dessous s\'en charge.') },
+    console: { addr: 'Friend: GillySMP', copy: 'GillySMP', note: T('Needs your console\'s online subscription.', 'Nécessite l\'abonnement en ligne de votre console.') }
   };
   var tabs = [].slice.call(document.querySelectorAll('.seg [data-q]'));
   var addr = document.getElementById('quick-addr'), btn = document.getElementById('quick-copy'), note = document.getElementById('quick-note');
@@ -214,7 +325,7 @@
   var card = document.querySelector('.join-card[data-platform="' + guess + '"]');
   if (card) {
     card.classList.add('recommended');
-    var tag = document.createElement('span'); tag.className = 'rec'; tag.textContent = 'Suggested for your device';
+    var tag = document.createElement('span'); tag.className = 'rec'; tag.textContent = T('Suggested for your device', 'Suggéré pour votre appareil');
     card.appendChild(tag);
   }
 
@@ -225,8 +336,8 @@
       var text = document.getElementById('status-text');
       if (d && d.online && d.players) {
         var n = d.players.online;
-        text.textContent = n > 0 ? n + (n === 1 ? ' player' : ' players') + ' online right now' : 'Server online, be the first in';
-      } else if (d && d.online === false) { text.textContent = 'Server currently offline'; st.classList.add('off'); }
+        text.textContent = n > 0 ? n + ' ' + (n === 1 ? T('player', 'joueur') : T('players', 'joueurs')) + ' ' + T('online right now', 'en ligne maintenant') : T('Server online, be the first in', 'Serveur en ligne, soyez le premier');
+      } else if (d && d.online === false) { text.textContent = T('Server currently offline', 'Serveur actuellement hors ligne'); st.classList.add('off'); }
       else return;
       st.hidden = false;
     }).catch(function () {});

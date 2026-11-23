@@ -1,0 +1,80 @@
+{
+  "slug": "mobs-and-darkness",
+  "title": "Mobs, Phantome & Dunkelheit",
+  "updated": "2026-11-21",
+  "h1": "Warum gibt es draußen so wenige Monster? Mobs, Phantome und echte Dunkelheit in Minecraft",
+  "description": "Warum Creeper und Phantome hier selten sind, wie echte Dunkelheit funktioniert, wann die Oberfläche sicher ist und wie Schlafen die Nacht verkürzt.",
+  "intro": "Diese Survival-Überarbeitung ändert, welche Monster sich im Freien zeigen, entfernt Phantome und nutzt echte Dunkelheit. Diese Antworten erklären, was wo spawnt, wie das Schlafen funktioniert und wann die Oberfläche nicht mehr gefährlich ist. Gilly SMP dient als Beispiel.",
+  "groups": [
+    {
+      "title": "Monster und Spawns",
+      "items": [
+        {
+          "q": "Warum spawnen Creeper in Minecraft nicht im Freien?",
+          "a": "Auf Gilly SMP spawnen Creeper, Spinnen, Endermen, Hexen und Schleime nicht im offenen Overworld. Zombies, Skelette und andere Untote spawnen nachts weiterhin, daher sind Höhlen und Ruinen die eigentliche Gefahr."
+        },
+        {
+          "q": "Spawnen Endermen und Hexen in Minecraft im Freien?",
+          "a": "Auf Gilly SMP nicht. Endermen, Hexen und Schleime spawnen nicht im offenen Overworld, genau wie Creeper und Spinnen."
+        },
+        {
+          "q": "Wo lauert in Minecraft-Survival die eigentliche Gefahr?",
+          "a": "Auf Gilly SMP sind Höhlen und Ruinen der eigentliche Gefahrenort. Zombies und Skelette spawnen nachts weiterhin im Freien, nimm also eine Waffe und Licht mit."
+        },
+        {
+          "q": "Sind Phantome in dieser Minecraft-Survival-Überarbeitung deaktiviert?",
+          "a": "Ja. Auf Gilly SMP sind Phantome deaktiviert, du wirst also nachts nicht von ihnen angegriffen, weil du wach bleibst."
+        },
+        {
+          "q": "Wann ist die Oberfläche in Minecraft-Survival sicher?",
+          "a": "Auf Gilly SMP ist die Oberfläche für alle sicher, sobald der Ender-Drache zum ersten Mal besiegt wurde. Dann spawnt im Freien nichts Feindliches mehr."
+        }
+      ]
+    },
+    {
+      "title": "Dunkelheit und Schlafen",
+      "items": [
+        {
+          "q": "Was ist echte Dunkelheit in Minecraft?",
+          "a": "Die Oberwelt nutzt echte Dunkelheit: Ohne Lichtquelle ist es stockfinster. Nimm Fackeln mit. Fullbright-Ressourcenpakete sind auf Gilly SMP verboten."
+        },
+        {
+          "q": "Wie funktioniert das Schlafen im Minecraft-Mehrspielermodus?",
+          "a": "Schlafen überspringt die Nacht nicht sofort. Die Zeit läuft schneller, während Spieler schlafen, und je mehr Spieler schlafen, desto schneller vergeht die Nacht. Die Aktionsleiste zeigt an, wie viele Spieler schlafen."
+        },
+        {
+          "q": "Zerstören Explosionen in Minecraft Blöcke?",
+          "a": "Auf Gilly SMP lassen Explosionen alle zerstörten Blöcke fallen. Du behältst die Materialien also, auch wenn eine Explosion nahe deiner Basis passiert."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/de/wiki.html#world",
+      "label": "Wiki: Welt & Fortschritt"
+    },
+    {
+      "url": "/de/wiki.html#survival",
+      "label": "Wiki: Survival-Überarbeitung"
+    },
+    {
+      "url": "/de/wiki.html#faq",
+      "label": "Wiki: FAQ"
+    }
+  ],
+  "related": [
+    {
+      "url": "/de/guides/death-and-healing.html",
+      "label": "Tod, Herzen & Heilung"
+    },
+    {
+      "url": "/de/guides/world-and-dimensions.html",
+      "label": "Welt & Dimensionen"
+    },
+    {
+      "url": "/de/guides/rules-support-qol.html",
+      "label": "Regeln & Komfortfunktionen"
+    }
+  ]
+}

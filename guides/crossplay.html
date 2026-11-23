@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Crossplay &amp; Accounts – Gilly SMP Guide</title>
-  <meta name="description" content="How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.">
+  <title>Crossplay &amp; Shared Progress – Gilly SMP Guide</title>
+  <meta name="description" content="How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.">
   <link rel="canonical" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/crossplay.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/crossplay.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/crossplay.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/crossplay.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Gilly SMP">
-  <meta property="og:title" content="Crossplay &amp; Accounts – Gilly SMP Guide">
-  <meta property="og:description" content="How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Crossplay &amp; Shared Progress – Gilly SMP Guide">
+  <meta property="og:description" content="How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.">
   <meta property="og:url" content="https://craft.gillyb.net/guides/crossplay.html">
+  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crossplay &amp; Shared Progress – Gilly SMP Guide">
+  <meta name="twitter:description" content="How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.">
+  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
@@ -28,11 +38,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Gilly SMP crossplay: Java, Bedrock and console in one world",
+      "name": "Can Java and Bedrock Players Share One Minecraft World? Crossplay Explained",
       "url": "https://craft.gillyb.net/guides/crossplay.html",
-      "description": "How crossplay works on Gilly SMP: Java, Bedrock and console players share one world. Link accounts to sync inventory and XP, and see why Bedrock names have an underscore.",
+      "description": "How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "isPartOf": {
         "@id": "https://craft.gillyb.net/#website"
       }
@@ -42,78 +52,70 @@
       "@type": "FAQPage",
       "url": "https://craft.gillyb.net/guides/crossplay.html",
       "inLanguage": "en",
-      "dateModified": "2026-11-20",
+      "dateModified": "2026-11-21",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can Java and Bedrock players play together on Gilly SMP?",
+          "name": "Can Java and Bedrock players play in the same Minecraft world?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Java, Bedrock and console players all share one world on Gilly SMP. You can build, trade and explore together regardless of platform, because the server runs a custom crossplay setup rather than separate worlds."
+            "text": "Yes. On Gilly SMP, Java, Bedrock, Xbox, PlayStation and Switch players all share one world. Java uses mc.gillyb.net, and Bedrock uses the same address on port 19132."
           }
         },
         {
           "@type": "Question",
-          "name": "Can Xbox, PlayStation and Switch players join Gilly SMP?",
+          "name": "Can I use the same commands on Bedrock and console as on Java?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Console players add GillySMP as a friend and then join from the console's Friends tab. A console online subscription is required, and that subscription is provided by the console maker, not by Gilly SMP. See the Getting started section."
+            "text": "Almost. Bedrock and console players get most commands as buttons in /menu, including homes, teleport requests, the ender chest, orders, trades and private messages. Clickable chat messages don't work on Bedrock, which is a Bedrock limitation."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I use the same inventory and XP on Java and Bedrock?",
+          "name": "Can I use voice chat on a crossplay server if I play on console?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, once you link the accounts. Run /linkaccount on one account and follow the instructions to link it to the other. The two accounts then share one player profile, so inventory, XP and progress follow you between platforms. Use /unlinkaccount to undo the link."
+            "text": "Voice chat is optional. Java players can install the Simple Voice Chat mod, but Bedrock and console can't use it, so it's never required to play."
           }
         },
         {
           "@type": "Question",
-          "name": "Why does my Bedrock name start with an underscore?",
+          "name": "How do I link a Java and a Bedrock account so they share progress?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bedrock names get a _ prefix on Gilly SMP, and spaces become underscores, so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one consistent name everywhere you play."
+            "text": "Run /linkaccount on one account and follow the instructions to link it to the other. Once linked, the two accounts share one player profile. /unlinkaccount undoes it."
           }
         },
         {
           "@type": "Question",
-          "name": "Are there any Minecraft servers with Java and Bedrock crossplay in Europe?",
+          "name": "Why does my Bedrock username have an underscore in front of it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Gilly SMP is hosted in France and is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world. /linkaccount syncs inventory and XP between accounts, and a Bedrock-compatible resource pack is in development so Bedrock will eventually see the custom textures too."
+            "text": "Bedrock usernames get a _ prefix and spaces are turned into underscores. That stops them clashing with Java names, and the prefix is the same on the proxy and the server, so you keep one name everywhere."
           }
         },
         {
           "@type": "Question",
-          "name": "Do Bedrock players need the Gilly SMP resource pack?",
+          "name": "Can Bedrock players see custom textures from the Java resource pack?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The Gilly SMP resource pack is a Java pack and Bedrock cannot load it. Bedrock players always see vanilla textures and some raw item keys, but every item and mechanic still works the same way."
+            "text": "No. Bedrock can't load Java packs, so Bedrock players see vanilla textures and sometimes raw keys on custom items. Everything still works, but the custom look only appears on Java."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens if I don't accept the resource pack on Java?",
+          "name": "Which mods are allowed on a Minecraft crossplay server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The server sends the Gilly SMP resource pack automatically when you join — just accept the prompt. If you don't, custom items look like vanilla items and some show raw text names. You can rejoin and accept it, or check Options → Resource Packs."
+            "text": "Client-side mods such as minimaps, shaders, performance tools and voice chat are fine on Gilly SMP. Cheat mods such as X-ray or freecam are banned, and an anti-cheat runs on the server."
           }
         },
         {
           "@type": "Question",
-          "name": "Are mods allowed on Gilly SMP?",
+          "name": "Is Gilly SMP pay-to-win?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Client-side mods for performance, minimaps, shaders and voice chat are fine, and no mods are required to play. Cheat mods such as X-ray, freecam and hacked clients are banned; the server runs anti-cheat and staff may ask a suspected player to run a verification mod."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need a paid Minecraft account to join?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gilly SMP runs in online mode, so a legitimate Minecraft account is required. Cracked or offline launchers cannot connect. There is no whitelist, so any legitimate account can join."
+            "text": "No. The store only sells quality-of-life items and cosmetics. Ranks give convenience perks such as more homes and ender chest rows, not power."
           }
         }
       ]
@@ -143,7 +145,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Crossplay & Accounts",
+          "name": "Crossplay & Shared Progress",
           "item": "https://craft.gillyb.net/guides/crossplay.html"
         }
       ]
@@ -151,7 +153,7 @@
   ]
 }
   </script>
-  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true" data-do-not-track="true"></script>
+  <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
   <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
 </head>
 <body>
@@ -159,6 +161,12 @@
   <header class="nav">
     <div class="nav-inner">
       <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Language">
+          <a href="/guides/crossplay.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          <a href="/fr/guides/crossplay.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/guides/crossplay.html" hreflang="de" lang="de" aria-current="false">DE</a>
+          <a href="/es/guides/crossplay.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
         <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Store</a>
@@ -174,71 +182,69 @@
     </div>
   </header>
   <main id="main" class="guide container">
-    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Crossplay &amp; Accounts</p>
+    <p class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/wiki.html">Wiki</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Crossplay &amp; Shared Progress</p>
     <section class="hero page-hero">
       <div class="hero-inner container">
         <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
-        <h1>Gilly SMP crossplay: Java, Bedrock and console in one world</h1>
-        <p class="intro">Gilly SMP runs one shared world for Java, Bedrock and console players. This guide covers how the platforms connect, how to keep progress when you play on more than one, and what changes visually on Bedrock.</p>
-        <p class="badges"><span class="badge y">9 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
+        <h1>Can Java and Bedrock Players Share One Minecraft World? Crossplay Explained</h1>
+        <p class="intro">Crossplay means Minecraft players on Java, Bedrock, Xbox, PlayStation and Switch can explore the same world together. This guide covers how that works in practice, from linking accounts to what each platform can see. Gilly SMP is the worked example.</p>
+        <p class="badges"><span class="badge y">8 answers</span><a class="badge" href="/wiki.html">Full wiki →</a></p>
       </div>
       <div class="ground" aria-hidden="true"></div>
     </section>
     <h2 class="topic-title">Playing together across platforms</h2>
     <article class="qa">
-      <h3>Can Java and Bedrock players play together on Gilly SMP?</h3>
-      <p>Yes. Java, Bedrock and console players all share one world on Gilly SMP. You can build, trade and explore together regardless of platform, because the server runs a custom crossplay setup rather than separate worlds.</p>
+      <h3>Can Java and Bedrock players play in the same Minecraft world?</h3>
+      <p>Yes. On Gilly SMP, Java, Bedrock, Xbox, PlayStation and Switch players all share one world. Java uses <code>mc.gillyb.net</code>, and Bedrock uses the same address on port <strong>19132</strong>.</p>
     </article>
     <article class="qa">
-      <h3>Can Xbox, PlayStation and Switch players join Gilly SMP?</h3>
-      <p>Yes. Console players add <code>GillySMP</code> as a friend and then join from the console's Friends tab. A console online subscription is required, and that subscription is provided by the console maker, not by Gilly SMP. See the <a href="/wiki.html#basics">Getting started section</a>.</p>
+      <h3>Can I use the same commands on Bedrock and console as on Java?</h3>
+      <p>Almost. Bedrock and console players get most commands as buttons in <code>/menu</code>, including homes, teleport requests, the ender chest, orders, trades and private messages. Clickable chat messages don't work on Bedrock, which is a Bedrock limitation.</p>
     </article>
     <article class="qa">
-      <h3>Can I use the same inventory and XP on Java and Bedrock?</h3>
-      <p>Yes, once you link the accounts. Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other. The two accounts then share one player profile, so inventory, XP and progress follow you between platforms. Use <code>/unlinkaccount</code> to undo the link.</p>
+      <h3>Can I use voice chat on a crossplay server if I play on console?</h3>
+      <p>Voice chat is optional. Java players can install the Simple Voice Chat mod, but Bedrock and console can't use it, so it's never required to play.</p>
+    </article>
+    <h2 class="topic-title">Accounts and progress</h2>
+    <article class="qa">
+      <h3>How do I link a Java and a Bedrock account so they share progress?</h3>
+      <p>Run <code>/linkaccount</code> on one account and follow the instructions to link it to the other. Once linked, the two accounts share one player profile. <code>/unlinkaccount</code> undoes it.</p>
     </article>
     <article class="qa">
-      <h3>Why does my Bedrock name start with an underscore?</h3>
-      <p>Bedrock names get a <code>_</code> prefix on Gilly SMP, and spaces become underscores, so they never clash with Java names. The prefix is the same on the proxy and on the server, so you keep one consistent name everywhere you play.</p>
+      <h3>Why does my Bedrock username have an underscore in front of it?</h3>
+      <p>Bedrock usernames get a <code>_</code> prefix and spaces are turned into underscores. That stops them clashing with Java names, and the prefix is the same on the proxy and the server, so you keep one name everywhere.</p>
     </article>
     <article class="qa">
-      <h3>Are there any Minecraft servers with Java and Bedrock crossplay in Europe?</h3>
-      <p>Gilly SMP is hosted in France and is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world. <code>/linkaccount</code> syncs inventory and XP between accounts, and a Bedrock-compatible resource pack is in development so Bedrock will eventually see the custom textures too.</p>
+      <h3>Can Bedrock players see custom textures from the Java resource pack?</h3>
+      <p>No. Bedrock can't load Java packs, so Bedrock players see vanilla textures and sometimes raw keys on custom items. Everything still works, but the custom look only appears on Java.</p>
     </article>
-    <h2 class="topic-title">Resource packs and mods</h2>
+    <h2 class="topic-title">Mods and fair play</h2>
     <article class="qa">
-      <h3>Do Bedrock players need the Gilly SMP resource pack?</h3>
-      <p>No. The Gilly SMP resource pack is a Java pack and Bedrock cannot load it. Bedrock players always see vanilla textures and some raw item keys, but every item and mechanic still works the same way.</p>
-    </article>
-    <article class="qa">
-      <h3>What happens if I don&#x27;t accept the resource pack on Java?</h3>
-      <p>The server sends the Gilly SMP resource pack automatically when you join — just accept the prompt. If you don't, custom items look like vanilla items and some show raw text names. You can rejoin and accept it, or check Options → Resource Packs.</p>
+      <h3>Which mods are allowed on a Minecraft crossplay server?</h3>
+      <p>Client-side mods such as minimaps, shaders, performance tools and voice chat are fine on Gilly SMP. Cheat mods such as X-ray or freecam are banned, and an anti-cheat runs on the server.</p>
     </article>
     <article class="qa">
-      <h3>Are mods allowed on Gilly SMP?</h3>
-      <p>Client-side mods for performance, minimaps, shaders and voice chat are fine, and no mods are required to play. Cheat mods such as X-ray, freecam and hacked clients are banned; the server runs anti-cheat and staff may ask a suspected player to run a verification mod.</p>
-    </article>
-    <article class="qa">
-      <h3>Do I need a paid Minecraft account to join?</h3>
-      <p>Yes. Gilly SMP runs in online mode, so a legitimate Minecraft account is required. Cracked or offline launchers cannot connect. There is no whitelist, so any legitimate account can join.</p>
+      <h3>Is Gilly SMP pay-to-win?</h3>
+      <p>No. The store only sells quality-of-life items and cosmetics. Ranks give convenience perks such as more homes and ender chest rows, not power.</p>
     </article>
     <section class="guide-deeper">
       <h2>Go deeper</h2>
       <ul class="guide-links">
+        <li><a href="/wiki.html#bedrock">Wiki: Bedrock menu</a></li>
         <li><a href="/wiki.html#basics">Wiki: Getting started</a></li>
-        <li><a href="/wiki.html#rules">Wiki: Rules</a></li>
-        <li><a href="/wiki.html#faq">Wiki: FAQ</a></li>
+        <li><a href="/recipes.html">Recipe Book</a></li>
       </ul>
     </section>
     <section class="guide-related">
       <h2>Related guides</h2>
       <ul class="guide-links">
-        <li><a href="/guides/join.html">Joining Gilly SMP</a></li>
-        <li><a href="/guides/recipes-and-advancements.html">Recipes &amp; advancements</a></li>
+        <li><a href="/guides/join.html">Joining a Crossplay Minecraft Server</a></li>
+        <li><a href="/guides/recipes-and-advancements.html">Recipes &amp; Advancements</a></li>
+        <li><a href="/guides/chat-voice-afk.html">Chat, Voice &amp; AFK</a></li>
       </ul>
     </section>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
         <a class="brand" href="/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
@@ -261,7 +267,7 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-20">Guide pages</time></p>
+      <p>© 2026 Gilly SMP · Last updated <time datetime="2026-11-21">November 21, 2026</time></p>
       <p class="legal">Gilly SMP is not an official Minecraft service and is not approved by or associated with Mojang or Microsoft. Item textures come from Minecraft and the server resource pack.</p>
     </div>
   </footer>

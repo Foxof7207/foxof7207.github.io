@@ -1,100 +1,67 @@
 {
   "slug": "matcha-server",
-  "title": "Find a Matcha Server",
-  "h1": "Matcha Flavoured server in Europe: Gilly SMP Java & Bedrock crossplay",
-  "description": "Find a Matcha Flavoured server in Europe: Gilly SMP runs the datapack with Java, Bedrock and console crossplay, no pay-to-win and no datapack install.",
-  "intro": "Looking for a server that already runs the Matcha Flavoured datapack? Gilly SMP is hosted in France, runs the rework server-side and brings Java, Bedrock and console players into one world. This page answers the questions people ask when choosing a Matcha server.",
+  "title": "Find a Matcha Flavoured Server",
+  "updated": "2026-11-21",
+  "h1": "How to Choose a Matcha Flavoured Server: Europe, Crossplay and No Pay-to-Win",
+  "description": "How to choose a Matcha Flavoured Minecraft server: what to check for server-side install, pay-to-win, platforms and crossplay. Gilly SMP is one European option.",
+  "intro": "Looking for a server that already runs the Matcha Flavoured datapack? This guide lists what to check before you pick one, and shows how one European crossplay server answers each point. Gilly SMP is used as the worked example.",
   "groups": [
-    {
-      "title": "Finding a Matcha Flavoured server",
-      "items": [
-        {
-          "q": "Is there a European server running the Matcha Flavoured datapack?",
-          "a": "Yes. Gilly SMP is hosted in France and runs the Matcha Flavoured survival rework on the server. Players in the US get around 100 ms, and there is no whitelist: connect with <code>mc.gillyb.net</code> on Java 26.3 or <code>mc.gillyb.net</code> port 19132 on Bedrock."
-        },
-        {
-          "q": "Which Minecraft servers run the Matcha Flavoured datapack?",
-          "a": "Several community servers run Matcha Flavoured. Gilly SMP runs the rework as a slow, non pay-to-win crossplay SMP in Europe, with about 1275 recipes, 880 advancements, custom alloys, no hunger and no natural regeneration. You do not install the datapack yourself: it runs on the server."
-        },
-        {
-          "q": "Is there a Matcha Flavoured server I can join without installing the datapack?",
-          "a": "Yes. On Gilly SMP the datapack and its progression are already installed server-side, so Java players just add <code>mc.gillyb.net</code> and join with Minecraft 26.3. The server sends its resource pack automatically when you connect; accept the prompt to see custom item names and textures."
-        },
-        {
-          "q": "Is Gilly SMP a Matcha Flavoured server or a custom rework?",
-          "a": "Gilly SMP runs the Matcha Flavoured survival rework with server-side tweaks on top: a player order market, points, ranks, homes, a proximity voice chat option and quality-of-life features. The core rules are the Matcha ones: no hunger, no natural regeneration, death costs a maximum heart, and progression is slower and casual-friendly."
-        }
-      ]
-    },
-    {
-      "title": "Crossplay and platforms",
-      "items": [
-        {
-          "q": "Is there a Matcha Flavoured server with Java and Bedrock crossplay?",
-          "a": "Gilly SMP is the only EU-hosted Matcha Flavoured server with Java–Bedrock crossplay. Java, Bedrock and console players share one world, and <code>/linkaccount</code> lets you use the same inventory and XP on two accounts. A Bedrock-compatible resource pack is in development so Bedrock players will see the custom textures too; today Bedrock sees vanilla textures while every mechanic works."
-        },
-        {
-          "q": "Can Bedrock players join a Matcha Flavoured server?",
-          "a": "Yes on Gilly SMP. Bedrock connects to <code>mc.gillyb.net</code> on port 19132 and shares the world with Java players. Bedrock cannot load the Java resource pack, so custom items show vanilla textures and some raw keys for now; a compatible Bedrock resource pack is being developed."
-        },
-        {
-          "q": "Can I play Matcha Flavoured on Xbox, PlayStation or Switch?",
-          "a": "Yes. Add <code>GillySMP</code> as a friend on your console and join from the Friends tab. A console online subscription is required by the console maker. Console players share the same world and can use <code>/menu</code> for the most common commands."
-        },
-        {
-          "q": "Does the Matcha Flavoured server support console and mobile too?",
-          "a": "Yes. Gilly SMP supports Java, Bedrock on Windows/Android/iOS, and Xbox, PlayStation and Switch. Bedrock and console players use <code>/menu</code> instead of typing commands, and the Advancement Guide replaces the in-game advancements menu that Bedrock cannot open."
-        }
-      ]
-    },
     {
       "title": "Choosing a server",
       "items": [
         {
-          "q": "Is there a non pay-to-win Matcha Flavoured server?",
-          "a": "Yes. Gilly SMP is strictly non pay-to-win: the store sells only cosmetics and quality-of-life items, and ranks grant convenience perks such as more homes and ender chest rows rather than power. The economy is player-driven: you earn points by selling to other players through the order market or trades."
+          "q": "What should I check before joining a Matcha Flavoured server?",
+          "a": "Check whether the datapack is installed server-side so you don't have to install anything, whether the server is pay-to-win, how many players it holds, where it is hosted and which platforms it supports. Gilly SMP is hosted in France, is non pay-to-win and holds up to 20 players."
         },
         {
-          "q": "Is there a casual, slow-paced Matcha Flavoured SMP?",
-          "a": "Yes. Gilly SMP is designed for casual and adult players who do not want mob farms, XP farms or villager trading halls. The server runs Easy difficulty, natural regeneration is off, and progression is guided by advancements so you can take your time."
+          "q": "Is there a European Matcha Flavoured server I can join?",
+          "a": "Gilly SMP is hosted in France and runs the Matcha Flavoured survival rework on the server. Players in the US get around 100 ms. Connect with <code>mc.gillyb.net</code> on Java 26.3, or on Bedrock with port 19132."
         },
         {
-          "q": "Which Matcha Flavoured server has voice chat and player shops?",
-          "a": "Gilly SMP has optional proximity voice chat for Java players through the Simple Voice Chat mod, a player order market for buying and selling with points, safe player trades, and spawn NPCs for the order market and shop. Voice chat is never required, and Bedrock and console players can play without it."
+          "q": "Can I join a Matcha Flavoured server without installing the datapack?",
+          "a": "Yes, on Gilly SMP. The datapack runs on the server, so Java players only add <code>mc.gillyb.net</code> and join with Minecraft 26.3. The server sends its resource pack automatically when you connect; accept the prompt to see custom item names and textures."
+        }
+      ]
+    },
+    {
+      "title": "Platforms and crossplay",
+      "items": [
+        {
+          "q": "Is there a Matcha Flavoured server with Java and Bedrock crossplay?",
+          "a": "Gilly SMP is one. Java, Bedrock and console players share one world, and <code>/linkaccount</code> lets you link two accounts so progress is shared. Bedrock can't load the Java resource pack, so custom items show vanilla textures there, though every mechanic works."
         },
         {
-          "q": "What should I look for in a Matcha Flavoured server?",
-          "a": "Check whether the datapack is installed server-side so you can join without installing anything, whether the server is pay-to-win, how many players it holds, where it is hosted, and whether it supports your platform. Gilly SMP offers server-side Matcha, no pay-to-win, a France host, a 20-player cap and Java, Bedrock and console crossplay."
+          "q": "Can I play a Matcha Flavoured server on Xbox, PlayStation or Switch?",
+          "a": "On Gilly SMP, yes. Add <code>GillySMP</code> as a friend on your console and join from the Friends tab. Your console maker requires an online subscription. Console players can use <code>/menu</code> for the most common commands."
         },
         {
           "q": "How do I join a Matcha Flavoured server with crossplay?",
-          "a": "On Java add <code>mc.gillyb.net</code> with Minecraft 26.3 and accept the resource pack prompt. On Bedrock add <code>mc.gillyb.net</code> port 19132. On console friend <code>GillySMP</code> and join from the Friends tab. Run <code>/linkaccount</code> if you play on more than one platform so your progress follows you. See <a href=\"/guides/join.html\">How to join Gilly SMP</a>."
+          "a": "On Java, add <code>mc.gillyb.net</code> with Minecraft 26.3 and accept the resource pack prompt. On Bedrock, add <code>mc.gillyb.net</code> on port 19132. On console, add <code>GillySMP</code> as a friend. Run <code>/linkaccount</code> if you play on more than one platform."
+        }
+      ]
+    },
+    {
+      "title": "Pay-to-win and play style",
+      "items": [
+        {
+          "q": "Is there a non pay-to-win Matcha Flavoured server?",
+          "a": "Gilly SMP is non pay-to-win. The store only sells cosmetics and quality-of-life items, and ranks grant convenience perks such as more homes and ender chest rows. The economy is player-driven: you earn points by selling to other players."
+        },
+        {
+          "q": "Is there a casual, slow-paced Matcha Flavoured survival server?",
+          "a": "Gilly SMP is built for casual and adult players who don't want mob farms, XP farms or villager trading halls. It runs on Easy, natural regeneration is off, and progression is guided by advancements, so you can take your time."
         }
       ]
     }
   ],
   "deeper": [
-    {
-      "url": "/wiki.html#basics",
-      "label": "Wiki: Getting started"
-    },
-    {
-      "url": "/wiki.html#server",
-      "label": "Wiki: Server info"
-    },
-    {
-      "url": "/guides/",
-      "label": "All player guides"
-    }
+    {"url": "/wiki.html#server", "label": "Wiki: Server info"},
+    {"url": "/wiki.html#basics", "label": "Wiki: Getting started"},
+    {"url": "/guides/join.html", "label": "How to join Gilly SMP"}
   ],
   "related": [
-    {
-      "url": "/guides/what-is-matcha.html",
-      "label": "What is Matcha Flavoured?"
-    },
-    {
-      "url": "/guides/crossplay.html",
-      "label": "Crossplay & accounts"
-    }
+    {"url": "/guides/what-is-matcha.html", "label": "What Is Matcha Flavoured?"},
+    {"url": "/guides/crossplay.html", "label": "Crossplay & Shared Progress"},
+    {"url": "/guides/rules-support-qol.html", "label": "Rules & Quality of Life"}
   ]
 }

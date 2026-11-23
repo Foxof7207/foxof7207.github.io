@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Gilly-SMP-Wiki – Befehle, Ränge, Survival-Überarbeitung & Leitfäden</title>
+  <meta name="description" content="Spielerwiki für Gilly SMP: Beitreten, die Survival-Überarbeitung, Ränge, Zuhause, Teleport, Punkte, Aufträge, Handel, Enderkiste, Chat, Sprachchat, Bedrock-Menü, Komfortfunktionen und FAQ.">
+  <link rel="canonical" href="https://craft.gillyb.net/de/wiki.html">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/wiki.html">
+  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/wiki.html">
+  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/wiki.html">
+  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/wiki.html">
+  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/wiki.html">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="theme-color" content="#123820">
+  <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Gilly-SMP-Wiki",
+  "url": "https://craft.gillyb.net/de/wiki.html",
+  "description": "Spielerwiki für Gilly SMP, einen Minecraft-Crossplay-Survival-Server mit eigener Survival-Überarbeitung: Beitreten, Ränge, Zuhause, Punkte, Aufträge, Handel, Chat, Sprachchat, Bedrock-Menü und Komfortfunktionen.",
+  "inLanguage": "de",
+  "dateModified": "2026-10-26",
+  "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
+}
+  </script>
+<script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
+  <script defer src="https://u.crbo.dev/recorder.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links left" aria-label="Community">
+        <span class="lang-switch" role="group" aria-label="Sprache">
+          <a href="/wiki.html" hreflang="en" lang="en" aria-current="false">EN</a>
+          <a href="/fr/wiki.html" hreflang="fr" lang="fr" aria-current="false">FR</a>
+          <a href="/de/wiki.html" hreflang="de" lang="de" aria-current="true">DE</a>
+          <a href="/es/wiki.html" hreflang="es" lang="es" aria-current="false">ES</a>
+        </span>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+      <a class="brand" href="/de/">
+        <span>Gilly<b>SMP</b></span>
+      </a>
+      <nav class="nav-links right" aria-label="Ressourcen">
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Rezepte</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschritte</a>
+        <a href="/de/wiki.html" aria-current="page"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false"><i class="ic" style="--i:url(/assets/icons/menu.svg)"></i></button>
+    </div>
+  </header>
+
+  <main id="main" class="wiki container">
+    <h1>Gilly-SMP-Wiki</h1>
+    <p class="sec-intro">So funktioniert alles auf Gilly SMP: Java, Bedrock und Konsole, eine gemeinsame Welt. Drücke <kbd>/</kbd> zum Suchen.</p>
+    <div class="wiki-search-slot">
+      <div class="wiki-search" role="search">
+      <i class="ic" style="--i:url(/assets/icons/search.svg)" aria-hidden="true"></i>
+      <input id="wiki-search" type="search" placeholder="Im Wiki suchen (z. B. Zuhause, Handel, Herzen)" aria-label="Im Wiki suchen" autocomplete="off">
+      <span id="wiki-count" class="wiki-count" aria-live="polite"></span>
+    </div>
+    </div>
+    <div class="wiki-layout">
+      <aside class="wiki-side">
+        <h2>Inhalt</h2>
+        <ul><li><a href="#basics">Erste Schritte</a></li><li><a href="#survival">Survival-Überarbeitung</a></li><li><a href="#world">Welt &amp; Fortschritt</a></li><li><a href="#ranks">Ränge</a></li><li><a href="#travel">Zuhause &amp; Teleportieren</a></li><li><a href="#economy">Punkte, Aufträge &amp; Handel</a></li><li><a href="#storage">Enderkiste</a></li><li><a href="#chat">Chat, Sprache &amp; AFK</a></li><li><a href="#bedrock">Bedrock-Menü</a></li><li><a href="#qol">Komfortfunktionen</a></li><li><a href="#commands">Alle Befehle</a></li><li><a href="#referral">Empfehlungen</a></li><li><a href="#rules">Regeln</a></li><li><a href="#server">Serverinfos</a></li><li><a href="#support">Team &amp; Einsprüche</a></li><li><a href="#faq">FAQ</a></li><li><a href="recipes.html">Rezeptbuch ↗</a></li><li><a href="advancements.html">Fortschrittsleitfaden ↗</a></li></ul>
+      </aside>
+      <div class="wiki-content">
+        <p id="wiki-empty" class="wiki-empty" hidden>Keine Ergebnisse. Versuche ein anderes Stichwort oder frag auf unserem <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p>
+
+        <article id="basics">
+          <h2>Erste Schritte</h2>
+          <div class="qa"><h3>Was für ein Server ist Gilly SMP?</h3><p>Ein langsames, nicht pay-to-win <strong>Survival-SMP</strong> (Schwierigkeit Einfach, bis zu 20 Spieler, Online-Modus, keine Whitelist) mit einer <a href="#survival">eigenen Survival-Überarbeitung</a>. Der Fortschritt ist überarbeitet und langsamer, damit Casual-Spieler ohne Mob- oder XP-Farmen mithalten können. Java-, Bedrock- und Konsolenspieler teilen sich eine Welt.</p></div>
+          <div class="qa"><h3>Wie trete ich bei?</h3><p>Nutze die <a href="/de/#join">So-trittst-du-bei-Karten</a>. Java: <code>mc.gillyb.net</code> (Minecraft Java <strong>26.3</strong>, erforderlich). Bedrock: <code>mc.gillyb.net</code>, Port <code>19132</code> (unter Windows, Android, iPhone und iPad öffnet der Button <a href="/de/#join">Zu Minecraft hinzufügen</a> auf der Bedrock-Karte das Spiel mit bereits hinzugefügtem Server). Konsole: Füge <strong>GillySMP</strong> als Freund hinzu und tritt über den Reiter Freunde bei (das Online-Abo deiner Konsole ist vom Konsolenhersteller vorgeschrieben).</p></div>
+          <div class="qa"><h3>Brauche ich ein gekauftes Minecraft-Konto?</h3><p>Ja. Der Server läuft im Online-Modus, gecrackte oder Offline-Launcher können also nicht beitreten.</p></div>
+          <div class="qa"><h3>Brauche ich ein Ressourcenpaket?</h3><p>Auf Java ja: Der Server fügt Hunderte eigener Gegenstände hinzu, die das <strong>Gilly-SMP-Ressourcenpaket</strong> benötigen. Der Server sendet es beim Beitritt automatisch: Bestätige einfach die Abfrage, du musst nichts herunterladen. Ohne Paket sehen Gegenstände aus wie in Vanilla, und manche haben rohe Textnamen. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher immer Vanilla-Texturen und einige rohe Schlüssel; alles funktioniert trotzdem.</p></div>
+          <div class="qa"><h3>Brauche ich Mods?</h3><p>Nein. Clientseitige Mods (Performance, Minimaps, Shader, <a href="#chat">Sprachchat</a>) sind erlaubt. Cheat-Mods (X-Ray, Freecam, manipulierte Clients) sind nicht erlaubt, und der Server nutzt einen Anti-Cheat. Das Team kann bei Verdacht die Installation eines Prüf-Mods verlangen.</p></div>
+          <div class="qa"><h3>Warum beginnt mein Bedrock-Name mit einem Unterstrich?</h3><p>Bedrock-Namen bekommen ein <code>_</code>-Präfix (und Leerzeichen werden zu Unterstrichen), damit sie nie mit Java-Namen kollidieren. Das Präfix ist auf Proxy und Server gleich, du behältst also überall denselben Namen.</p></div>
+          <div class="qa"><h3>Ich spiele auf Java und Bedrock. Kann ich meinen Fortschritt behalten?</h3><p>Ja. Führe <code>/linkaccount</code> auf einem Konto aus und folge den Anweisungen, um es mit dem anderen zu verknüpfen. <code>/unlinkaccount</code> macht das rückgängig. Einmal verknüpft teilen beide Konten ein Spielerprofil.</p></div>
+          <div class="qa"><h3>Was sollte ich zuerst tun?</h3><p>Öffne deine <strong>Fortschritte</strong> (<kbd>L</kbd>). Die Survival-Überarbeitung nutzt sie als Schritt-für-Schritt-Anleitung, und das Rezeptbuch schaltet Rezepte frei, sobald du sie brauchst. Die frühe Phase ist langsamer als in Vanilla, und die natürliche Lebensregeneration ist aus. Setze ein Zuhause, sobald du eine Basis hast (<code>/sethome base</code>), und <code>/spawn</code> bringt dich jederzeit zurück zum Spawn.</p></div>
+          <div class="qa"><h3>Welche ersten Befehle brauche ich?</h3><p><code>/menu</code> (nur Bedrock), <code>/spawn</code>, <code>/sethome base</code>, <code>/homes</code>, <code>/points me</code> und <code>/mechanics</code> (listet jede auf dem Server aktive Anpassung). Die vollständige Liste steht unter <a href="#commands">Alle Befehle</a>.</p></div>
+        </article>
+
+        <article id="survival">
+          <h2>Survival-Überarbeitung</h2>
+          <p class="sec-intro">Die eigene Überarbeitung des Survival auf Gilly SMP: langsames, casual Spiel ohne Mob-Farmen, ohne XP-Farmen und ohne Dorfhandelshallen. Wir bitten Spieler, sie über die Fortschritte zu entdecken (drücke <kbd>L</kbd>), daher bleibt dieser Abschnitt spoilerarm.</p>
+          <div class="qa"><h3>Was ist die Survival-Überarbeitung?</h3><p>Eine Reihe von Änderungen für Minecraft 26.3. Sie fügt rund 1275 Rezepte, 880 Fortschritte, 290 Dorfhändler-Angebote, 31 neue und 43 überarbeitete Verzauberungen, 13 Strukturen, 7 Schallplatten, 10 Banner-Muster, 3 Besatzmaterialien und rund 50 Gerichte hinzu. Sie ersetzt viele Vanilla-Fortschritte und -Rezepte durch eigene.</p></div>
+          <div class="qa"><h3>Warum kann ich mich nicht heilen?</h3><p>Die natürliche Lebensregeneration ist aus. Du heilst dich mit Essenseffekten, Tränken und Spezialgegenständen. Hunger ist praktisch verschwunden: Du verhungerst nicht, und Essen zählt wegen seiner Effekte statt weil es eine Leiste füllt.</p></div>
+          <div class="qa"><h3>Was passiert, wenn ich sterbe?</h3><p>Du <strong>behältst dein Inventar und deine XP</strong>, verlierst aber <strong>1 maximales Herz</strong>. Auf Einfach (diesem Server) fällst du nie unter 10 Herzen. Kristallherzen geben ein maximales Herz zurück, bis 30. Geworfene Enderperlen verschwinden beim Tod nicht.</p></div>
+          <div class="qa"><h3>Warum gibt es so wenige Monster draußen?</h3><p>Creeper, Spinnen, Endermen, Hexen und Schleime spawnen nicht im offenen Overworld. Zombies, Skelette und andere Untote spawnen nachts weiterhin, nimm also eine Waffe und Licht mit. Höhlen und Ruinen sind die eigentliche Gefahr. Phantome sind deaktiviert, und Explosionen lassen alle zerstörten Blöcke fallen.</p><details class="spoiler"><summary><b>Spoiler: Spätspiel</b></summary><p>Sobald der Ender-Drache zum ersten Mal besiegt ist, wird das Böse für alle von der Oberfläche verbannt: Im Freien spawnt nichts Feindliches mehr.</p></details></div>
+          <div class="qa"><h3>Warum ist es so dunkel?</h3><p>Die Oberwelt nutzt echte Dunkelheit: Ohne Lichtquelle ist es stockfinster. Nimm Fackeln mit. Achtung: Fullbright-Ressourcenpakete sind verboten!</p></div>
+          <div class="qa"><h3>Wie funktioniert das Schlafen?</h3><p>Die Nacht überspringt nicht sofort. Die Zeit läuft schneller, während Spieler schlafen, und je mehr Spieler schlafen, desto schneller. Die Aktionsleiste zeigt, wie viele Spieler schlafen.</p></div>
+          <div class="qa"><h3>Wie funktioniert der Fortschritt?</h3><p>Jedes Metall hat eingebaute Eigenschaften (Gold hat Glück und Plünderung, Eisen und Diamant nehmen Legierungen auf). Legierungen werden auf ein Grundmetall geschmiedet: <strong>Hepatizon</strong> und <strong>Shakudo</strong> auf Kupfer, <strong>Stahl</strong> auf Eisen, <strong>Elektrum</strong> und <strong>Adamant</strong> auf Diamant. Silber ist eine Einlage, die in Bergen und Abteien zu finden ist. Neue Stationen kommen vor dem Ofen: Lagerfeuer und Schlammofen, dann Brennofen und Ofen, dann Hochofen, Schmiedetisch und Amboss. Mattocks und Dolabras sind Zwei-in-eins-Werkzeuge. Nimm dir auf jeder Stufe Zeit.</p></div>
+          <div class="qa"><h3>Ich spiele auf Bedrock. Wie folge ich den Fortschritten?</h3><p>Bedrock kann das Fortschrittsmenü nicht öffnen, deshalb gibt es den <a href="advancements.html">Fortschrittsleitfaden</a>: jeden Schritt in Reihenfolge, was ihn abschließt, seine Belohnungen und die Fischliste des Angler-Almanachs. Du kannst Schritte beim Vorankommen abhaken.</p></div>
+          <div class="qa"><h3>Wo sehe ich alle Rezepte?</h3><p>Im <a href="recipes.html">Rezeptbuch</a>: jedes Rezept der Survival-Überarbeitung, durchsuchbar, einschließlich der Rezepte für Schlammofen, Ofen, Hochofen, Anzünder und Schmiedetisch, die das Rezeptbuch von Bedrock nicht anzeigen kann. Tippe auf einen Gegenstand, um zu sehen, wie man ihn herstellt und wofür er verwendet wird. Es enthält Spoiler, nutze es also, wenn du feststeckst.</p></div>
+          <div class="qa"><h3>Ich stecke am Anfang fest.</h3><p>Prüfe die Fortschritte und die Rezepte, die du noch nicht herstellen kannst. Beginne mit einem Lagerfeuer, einer Holzhacke und getrocknetem Gras, dann entzündest du Anzünder mit Zunder oder einem Feuerstein-Anzünder.</p></div>
+          <div class="qa"><h3>Wo sind die Dörfer?</h3><p>Dörfer sind zum <strong>Bauen</strong> gedacht, nicht zum Finden. Die Fortschritte erklären, wie du Dorfbewohner zu dir holst.</p></div>
+          <div class="qa"><h3>Kann ich Spawner abbauen?</h3><p>Ja, und du solltest es: Sie liefern seltene Materialien und Göttliche Fragmente. Benutze keine Spawn-Eier darauf, das zerstört benachbarte Spawner und verletzt dich.</p></div>
+          <div class="qa"><h3>Kann ich in den Nether oder das End gehen?</h3><p>Noch nicht. Beide sind geschlossen und öffnen schrittweise. Der Nether öffnet nach dem nächsten großen Update, er wird also mit der neuesten Version der Überarbeitung erzeugt.</p></div>
+          <div class="qa"><h3>Und Angeln, Essen und Verzaubern?</h3><p>Der <strong>Angler-Almanach</strong> fügt rund 100 Fische hinzu, je nach Biom und Wassertemperatur, dazu Müll und Schätze; verkaufe deinen Fang an einen Fischer-Dorfbewohner. Es gibt rund 50 neue Gerichte und Speisen, und 12 Zutaten haben versteckte Effekte, die beim Kochen sichtbar werden. Das Verzaubern ist überarbeitet, mit neuen Verzauberungen, und Amboss-Reparaturen werden nie „Zu teuer!“. Außerdem gibt es 7 neue Schallplatten, 10 Pride-Banner-Muster und neue Besatzmaterialien.</p></div>
+          <details class="spoiler"><summary><b>Spoiler: der Weg am Anfang</b></summary><p>1. Baue ein <strong>Lagerfeuer</strong> und eine <strong>Holzhacke</strong>. Ernte Gras mit der Hacke und trockne es am Lagerfeuer.<br>2. Entzünde Anzünder mit Zunder oder einem Feuerstein-Anzünder.<br>3. Baue einen <strong>Schlammofen</strong> aus Schlammblöcken und Schlammziegeln und schmelze darin <strong>Kupfer</strong>.<br>4. Stelle Ziegel und eine <strong>Keramikschale</strong> her, dann einen <strong>Ofen</strong> aus Ziegeln und Eisen, um richtige Gerichte zu kochen.<br>5. Eisen → <strong>Kohlenstoffreiches Eisen</strong> (Eisen + Kohleblock) → im Hochofen zu <strong>Stahl</strong> schmelzen.<br>6. Ein Amboss aus Stahl repariert Ausrüstung dauerhaft; ein <strong>Schmiedetisch</strong> lässt dich mit Legierungen aufwerten.</p></details>
+          <details class="spoiler"><summary><b>Spoiler: Schätze und Spätspiel</b></summary><p><strong>Edelsteine („Cantos“)</strong>: Opal (besiege den Meeresgott), Rubin (plündere die Überreste von Pandaemonium), Bernstein (grabe die Pilgerpfade aus), Topas (überfalle Tartarus). <strong>Göttliche Fragmente</strong>: nur durch Abbauen von Spawnern oder das Besiegen mächtiger Bosse. <strong>Kristallherzen</strong>: Wer eines isst, bekommt ein zusätzliches maximales Herz (es tut weh). <strong>Lapis Nazar</strong>: Hält die Toten fern, wenn man es hält, und kann an manche Ausrüstung angebracht werden. <strong>Obolen</strong>: währungsähnliche Schätze. <strong>Ton-Fetische und Statuen</strong>: an verlassenen Orten zu finden. <strong>Leuchtende Anzünder</strong>: signalisieren einen Wandernden Händler, der etwa 10 Minuten später erscheint und 5 bleibt. <strong>Nether</strong>: Estus, Benzol, Segnungen, höllische Bücher und Schutzsteine. <strong>End</strong>: Elytren aus Hepatizon und Shakudo. <strong>Bedrock-Brecher</strong>: ein Spezialsprengstoff, der Bedrock zerbricht. Der <strong>Wither</strong> kann nur an der Oberfläche der Oberwelt beschworen werden.</p></details>
+        </article>
+
+        <article id="world">
+          <h2>Welt &amp; Fortschritt</h2>
+          <div class="qa"><h3>Wie ist die Welt?</h3><p>Vanilla-Terrain und -Biome, mit zusätzlichen Erzen, Bäumen und Strukturen wie Abteien und Beta-Dörfern. Alles nutzt Vanilla-Blöcke, es sind also keine Mods nötig.</p></div>
+          <div class="qa"><h3>Auf welcher Schwierigkeit läuft der Server?</h3><p><strong>Einfach</strong>, der Modus, auf den die Survival-Überarbeitung für entspanntes Spielen abgestimmt ist. Manche Mobs (Creeper, Skelette, Höhlenspinnen) sind abgeschwächt, und die Schwierigkeit steigt nie von allein. Auf Normal kann die Überarbeitung die Welt mit dem Fortschritt der Spieler auf Schwer stellen; auf Einfach bleibt sie auf Einfach. Beim Einloggen zeigt der Chat eine kurze Begrüßung und den aktuellen Modus.</p></div>
+          <div class="qa"><h3>Welche Todesregeln gibt es?</h3><p>Du behältst alle Gegenstände und deine XP beim Tod. Jeder Tod entfernt 1 maximales Herz; auf Einfach fällst du nie unter 10 Herzen. Kristallherzen geben ein maximales Herz zurück, bis 30. Die natürliche Regeneration ist aus, heile dich also mit Essenseffekten, Tränken und Spezialgegenständen. Geworfene Enderperlen verschwinden beim Tod nicht.</p></div>
+          <div class="qa"><h3>Gibt es Mobs an der Oberfläche?</h3><p>Ein paar. Untote (Zombies, Skelette ...) spawnen nachts weiterhin, aber Creeper, Spinnen und andere Nicht-Untote spawnen nicht im Freien. Höhlen und Ruinen sind die eigentliche Gefahr. Phantome sind deaktiviert, und Explosionen lassen alle zerstörten Blöcke fallen.</p></div>
+          <div class="qa"><h3>Wie funktioniert das Schlafen?</h3><p>Schlafen überspringt die Nacht nicht sofort. Stattdessen läuft die Zeit schneller, und je mehr Spieler schlafen, desto schneller vergeht die Nacht. Die Aktionsleiste zeigt, wie viele Spieler schlafen.</p></div>
+          <div class="qa"><h3>Wie dunkel wird es?</h3><p>Die Oberwelt nutzt <strong>echte Dunkelheit</strong>: Ohne Lichtquelle ist es stockfinster. Nimm Fackeln mit.</p></div>
+          <div class="qa"><h3>Sind der Nether und das End offen?</h3><p>Nein, beide Portale sind vorerst geschlossen und öffnen schrittweise, damit alle zuerst die frühe Phase genießen können. Der Nether öffnet nach dem nächsten großen Update. Dann gilt: <code>/portal</code> zeigt dir, wo du ein Portal in der anderen Dimension bauen musst, damit beide zusammenpassen, und Nether-Portale können jede Größe oder Form haben.</p></div>
+          <div class="qa"><h3>Gibt es eine Weltgrenze?</h3><p>Auf der Welt ist noch keine Grenze gesetzt. Falls eine hinzukommt, wird ihre Größe hier aufgeführt.</p></div>
+        </article>
+
+        <article id="ranks">
+          <h2>Ränge</h2>
+          <p class="sec-intro">Es gibt drei Ränge. Jeder enthält alles aus den darunterliegenden Rängen und zeigt ein Namensschild im Chat, in der Spielerliste und über deinem Kopf.</p>
+          <div class="qa"><h3>Was schalten die Ränge frei?</h3><p>Jeder Rang enthält die Vorteile der darunterliegenden Ränge.</p>
+            <table>
+              <thead><tr><th></th><th>Standard</th><th>Bronze</th><th>Gold</th><th>Diamant</th></tr></thead>
+              <tbody>
+                <tr><td>Namensschild im Chat und in der Liste</td><td>–</td><td>[Bronze]</td><td>[Gold]</td><td>[Diamant]</td></tr>
+                <tr><td>Enderkisten-Reihen</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                <tr><td>Zuhause</td><td>2</td><td>3</td><td>4</td><td>6</td></tr>
+                <tr><td>Aktive Aufträge</td><td>5</td><td>7</td><td>10</td><td>15</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qa"><h3>Was passiert mit meinen Gegenständen, wenn ich einen Rang verliere?</h3><p>Sie bleiben in deiner Enderkiste. Du kannst nur die Reihen nutzen, die dein aktueller Rang erlaubt.</p></div>
+          <div class="qa"><h3>Wie sehe ich meinen Rang?</h3><p>Dein Rang wird vor deinem Namen im Chat und in der Spielerliste angezeigt. Bedrock-Spieler sehen ihren Rang und die Grenzen jedes Rangs unter <code>/menu</code> → <strong>Mein Rang</strong>.</p></div>
+          <div class="qa"><h3>Wie bekomme ich einen Rang?</h3><p>Ränge werden vom Team vergeben. Schau dir den <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">Shop</a> an und frag auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> nach. Ränge sind ein Komfortvorteil, kein Machtvorteil.</p></div>
+        </article>
+
+        <article id="travel">
+          <h2>Zuhause &amp; Teleportieren</h2>
+          <p class="sec-intro">Alle Teleports haben eine <strong>Vorlaufzeit von 3 Sekunden</strong>: Steh still und nimm keinen Schaden, sonst wird der Teleport abgebrochen. So kann niemand Teleports nutzen, um einem Kampf zu entkommen.</p>
+          <div class="qa"><h3>Wie komme ich zum Spawn?</h3><p><code>/spawn</code>. Der Spawnpunkt wird vom Team im Spiel gesetzt, er ist also für alle gleich.</p></div>
+          <div class="qa"><h3>Was gibt es am Spawn?</h3><p>Die NPCs <strong>Auftrag</strong> und <strong>eShop</strong> stehen am Spawn bereit, du erreichst den Auftragsmarkt und den Shop also ohne Befehl. Räume am Spawn können außerdem <strong>gemietet</strong> werden. Kontaktiere <strong>@Foxof7207</strong> auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>, um mehr zu erfahren.</p></div>
+          <div class="qa"><h3>Wie stimme ich für den Server ab?</h3><p>Tippe <code>/vote</code>, um für Gilly SMP zu stimmen und Punkte zu verdienen. Du kannst nach der Abklingzeit jeder Abstimmungsseite erneut abstimmen.</p></div>
+          <div class="qa"><h3>Wie setze ich ein Zuhause?</h3><p><code>/sethome &lt;Name&gt;</code> an deiner aktuellen Position. Du bekommst <strong>2 Zuhause</strong>, mit einem <a href="#ranks">Rang</a> mehr. Namen dürfen Buchstaben, Zahlen, <code>-</code> und <code>_</code> enthalten, bis zu 16 Zeichen. Ein bestehender Name verschiebt dieses Zuhause.</p></div>
+          <div class="qa"><h3>Wie komme ich nach Hause?</h3><p><code>/home &lt;Name&gt;</code>, oder nur <code>/home</code>, wenn du eines hast. <code>/homes</code> listet sie auf; klicke auf eines, um dorthin zu gehen.</p></div>
+          <div class="qa"><h3>Wie lösche oder bearbeite ich ein Zuhause?</h3><p><code>/delhome &lt;Name&gt;</code> löscht es. <code>/edithome &lt;Name&gt;</code> benennt es um, verschiebt es, beschreibt es oder macht es öffentlich oder privat.</p></div>
+          <div class="qa"><h3>Wie funktionieren öffentliche Zuhause?</h3><p>Mache ein Zuhause mit <code>/edithome</code> öffentlich und wähle die Datenschutzoption. Andere listen öffentliche Zuhause mit <code>/phomes</code> auf und besuchen sie mit <code>/phome &lt;Besitzer&gt;+&lt;Zuhause&gt;</code>, zum Beispiel <code>/phome Steve+shop</code>. Beachte das <code>+</code> zwischen Besitzer und Zuhause-Namen.</p></div>
+          <div class="qa"><h3>Wie teleportiere ich mich zu einem anderen Spieler?</h3><p><code>/tpa &lt;Spieler&gt;</code> fragt, ob du zu ihm gehen darfst, <code>/tpahere &lt;Spieler&gt;</code> bittet ihn, zu dir zu kommen. Er antwortet mit <code>/tpaccept</code> oder <code>/tpdecline</code> (oder den Chat-Buttons, nur Java) innerhalb von 60 Sekunden. <code>/tpignore &lt;Spieler&gt;</code> blockiert Anfragen einer Person; führe es erneut aus, um es rückgängig zu machen.</p></div>
+          <div class="qa"><h3>Gibt es einen Zufalls-Teleport?</h3><p>Es gibt keinen Befehl <code>/rtp</code>. Stattdessen gibt es eine <strong>RTP-Kanone</strong>: Stelle dich hinein, und sie schießt dich 500 bis 5000 Blöcke weit auf sicheren Boden, mit langsamem Fall. 30 Sekunden Abklingzeit. Die Kanone steht am Spawn; frag auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> nach, falls du sie nicht findest.</p></div>
+          <div class="qa"><h3>Wie funktionieren Aufzüge?</h3><p>Lege eine Enderperle auf einen Wollblock, um ihn in einen Aufzug zu verwandeln. Spring darauf, um zum nächsten Aufzug derselben Farbe darüber zu gelangen, und schleiche, um nach unten zu fahren.</p></div>
+          <div class="qa"><h3>Kann ich das alles auf Bedrock tun?</h3><p>Ja. <code>/menu</code> hat <strong>Zuhause</strong> (eine Auswahlliste deiner Zuhause, plus Setzen und Löschen) und <strong>Teleport-Anfragen</strong> (eine Auswahlliste der Spieler online).</p></div>
+        </article>
+
+        <article id="economy">
+          <h2>Punkte, Aufträge &amp; Handel</h2>
+          <div class="qa"><h3>Was sind Punkte?</h3><p>Die Serverwährung, genutzt für Aufträge und Handel. <code>/points me</code> (oder <code>/p me</code>) zeigt deinen Kontostand, <code>/points look &lt;Spieler&gt;</code> den einer anderen Person, <code>/points lead</code> die Rangliste. Jeder „Geld“-Preis auf dem Server wird in Punkten angegeben.</p></div>
+          <div class="qa"><h3>Wie bekomme ich Punkte?</h3><p>Neue Spieler starten mit <strong>0 Punkten</strong>. Du verdienst sie, indem du Gegenstände über den <a href="#economy">Auftragsmarkt</a> oder im <a href="#economy">Handel</a> an andere Spieler verkaufst, denn der Server verteilt noch keine Punkte. Die Wirtschaft wird also vollständig von Spielern getragen.</p></div>
+          <div class="qa"><h3>Wie bezahle ich jemanden?</h3><p><code>/points pay &lt;Spieler&gt; &lt;Betrag&gt;</code>. Ganze Zahlen, mindestens 1. Zahlungen unter 1 werden abgelehnt.</p></div>
+          <div class="qa"><h3>Wie funktioniert der Auftragsmarkt?</h3><p><code>/order</code> (oder <code>/orders</code>) öffnet ihn. Erstelle einen Kaufauftrag (Gegenstand, Menge, Preis pro Stück, mindestens 1 Punkt); die Punkte werden reserviert, andere Spieler liefern die Gegenstände und werden sofort bezahlt, auch wenn du offline bist. Du holst die Gegenstände später unter <em>Deine Aufträge</em> ab. Du kannst <strong>5 aktive Aufträge</strong> haben, mit einem <a href="#ranks">Rang</a> mehr. Aufträge laufen nach 14 Tagen ab, neue werden im Chat angekündigt, und Gegenstände können aus Shulker-Boxen geliefert werden. Gegenstände müssen exakt zum Auftrag passen, inklusive Verzauberungen, Haltbarkeit, eigenen Namen und Inhalt.</p></div>
+          <div class="qa"><h3>Wie handle ich mit einem Spieler?</h3><p>Schleiche und klicke ihn mit der rechten Maustaste an, oder nutze <code>/trade &lt;Spieler&gt;</code>. Du musst dich innerhalb von 10 Blöcken befinden, in derselben Welt sein und nicht im Kreativmodus. Zwischen Handelsanfragen gibt es eine Abklingzeit von 20 Sekunden. Beide Seiten können Gegenstände und Punkte anbieten, und beide müssen zustimmen. XP kann nicht gehandelt werden: Die Survival-Überarbeitung verwaltet die XP selbst. Bedrock-Spieler können einen Spieler über <code>/menu</code> → <strong>Handel</strong> auswählen.</p></div>
+        </article>
+
+        <article id="storage">
+          <h2>Enderkiste</h2>
+          <div class="qa"><h3>Wie groß ist meine Enderkiste?</h3><p>3 Reihen (27 Plätze), mit einem <a href="#ranks">Rang</a> bis zu 6 Reihen (54 Plätze). Öffne sie überall mit <code>/ec</code>. Bedrock, Befehlsblöcke und Barrieren können nicht gelagert werden. Sie wird jede Nacht automatisch gesichert.</p></div>
+          <div class="qa"><h3>Kann ich sie teilen?</h3><p><code>/ec invite &lt;Spieler&gt;</code> gewährt Zugriff, <code>/ec uninvite &lt;Spieler&gt;</code> entzieht ihn, <code>/ec invitelist</code> zeigt, wer Zugriff hat. Eingeladene Spieler öffnen sie mit <code>/ecshare &lt;Besitzer&gt;</code>.</p></div>
+          <div class="qa"><h3>Kann ich sie umbenennen?</h3><p><code>/ec rename &lt;Name&gt;</code> oder <code>/ec rename reset</code>.</p></div>
+          <div class="qa"><h3>Was ist, wenn etwas schiefgeht?</h3><p>Frag ein Teammitglied auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>. Enderkisten werden jede Nacht gesichert, Gegenstände können also meist wiederhergestellt werden.</p></div>
+        </article>
+
+        <article id="chat">
+          <h2>Chat, Sprache &amp; AFK</h2>
+          <div class="qa"><h3>Wer sieht meine Nachrichten?</h3><p>Alle. Der Chat ist global: Es gibt keinen Reichweiten-Chat und du musst nicht mit <code>!</code> schreien. Dein Rang wird vor deinem Namen angezeigt, zum Beispiel <code>[Gold] &lt;Steve&gt; hallo</code>.</p></div>
+          <div class="qa"><h3>Wie schicke ich eine Privatnachricht?</h3><p><code>/msg &lt;Spieler&gt; &lt;Nachricht&gt;</code> (auch <code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), antworte mit <code>/r</code>. <code>/ignore &lt;Spieler&gt;</code> blendet jemanden aus, <code>/unignore</code> macht es rückgängig. <code>/me</code> sendet eine Emote: <code>/me winkt</code> zeigt <code>* Steve winkt</code>. Bedrock-Spieler können einen Spieler über <code>/menu</code> → <strong>Privatnachricht</strong> auswählen.</p></div>
+          <div class="qa"><h3>Kann ich Farben verwenden?</h3><p><code>&amp;</code>-Farbcodes funktionieren im Chat, auf Schildern und in Amboss-Namen (bis zu 32 Zeichen). Eine Nachricht, die mit <code>&gt;</code> beginnt, ist grün (das <code>&gt;</code> bleibt), eine mit <code>*</code> erhält einen Verlauf von Lila nach Blau.</p></div>
+          <div class="qa"><h3>Wird Spam blockiert?</h3><p>Ja. Wiederholte Nachrichten, Flooding, sehr lange Nachrichten, übermäßige Großbuchstaben und Zufallszeichen werden automatisch erkannt. Spammer werden kurz stummgeschaltet, und länger, wenn sie weitermachen.</p></div>
+          <div class="qa"><h3>Wie funktioniert der Sprachchat?</h3><p>Java-Spieler können den Mod <a href="https://modrinth.com/plugin/simple-voice-chat" rel="noopener" target="_blank">Simple Voice Chat</a> (Fabric, NeoForge, Forge oder Quilt) passend zu Minecraft 26.3 installieren, beitreten und <kbd>V</kbd> drücken, um ihn einzurichten. Du hörst Spieler innerhalb von 48 Blöcken (24 beim Flüstern) und kannst mit <kbd>G</kbd> Gruppen bilden. Sprechen per Taste ist standardmäßig auf <kbd>Feststelltaste</kbd> gelegt; wechsle in den Einstellungen zur Sprachaktivierung. Die Aufnahme ist deaktiviert. Bedrock und Konsole können ihn nicht nutzen, er ist also nie Pflicht.</p></div>
+          <div class="qa"><h3>Was passiert, wenn ich AFK bin?</h3><p>Nach 5 Minuten ohne Bewegung wirst du als <strong>[AFK]</strong> markiert und dein Name wird grau (<code>/afk</code> schaltet das um). Nach weiteren 10 Minuten wirst du getrennt, damit der Server für alle schnell bleibt. Verbinde dich einfach neu; startet der Hauptserver neu, während du weg bist, landest du in der AFK-Zone und kommst mit <code>/server smp</code> zurück.</p></div>
+        </article>
+
+        <article id="bedrock">
+          <h2>Bedrock-Menü</h2>
+          <div class="qa"><h3>Gibt es ein Menü für Bedrock und Konsole?</h3><p>Ja. Tippe <code>/menu</code>, um ein touchfreundliches Menü mit Buttons für die gängigsten Befehle zu öffnen: Spawn, Zuhause, Teleport-Anfragen, Enderkiste, Aufträge, Handel, Privatnachricht, Punkte, Empfehlungen, Mein Rang und Werkzeuge. Wenn du einen Spieler auswählen musst, erhältst du eine Liste aller Online-Spieler.</p></div>
+          <div class="qa"><h3>Warum ist ein Button grau?</h3><p>Buttons, die einen anderen Spieler brauchen, sind grau mit <em>„niemand sonst ist online“</em>, wenn du allein bist. „Zu einem Zuhause gehen“ ist grau, bis du eines gesetzt hast.</p></div>
+          <div class="qa"><h3>Anklickbare Chatnachrichten funktionieren auf Bedrock nicht.</h3><p>Das ist eine Bedrock-Einschränkung. Nutze <code>/menu</code>, um Teleport-Anfragen anzunehmen oder abzulehnen und Zuhause auszuwählen. Java-Spieler brauchen das Menü nicht; sie nutzen die <a href="#commands">Befehle</a> direkt.</p></div>
+          <div class="qa"><h3>Wo sehe ich meinen Rang und diese Grenzen?</h3><p>Unter <code>/menu</code> → <strong>Mein Rang</strong>, dort stehen dein Rang und die Vorteile jedes Rangs.</p></div>
+        </article>
+
+        <article id="qol">
+          <h2>Komfortfunktionen</h2>
+          <p class="sec-intro">Kleine Anpassungen, die das Survival angenehmer machen, auf dem Server hinzugefügt. Die meisten funktionieren ohne Befehl. Anpassungen, die den Fortschritt der Survival-Überarbeitung umgingen (XP-Fläschchen, XP-Reparatur, das Freischalten aller Rezepte, Erzblock-Schmelzen und zusätzliche Rezepte für gesperrte Gegenstände), sind ausgeschaltet: Wenn etwas hier und die Überarbeitung sich widersprechen, gelten die Regeln der Überarbeitung. Führe <code>/mechanics</code> im Spiel aus, um alles Aktive aufzulisten.</p>
+          <div class="qa"><h3>Wie zeige ich meine Koordinaten an?</h3><p><code>/ch toggle</code> (auch <code>/coordshud</code>) zeigt XYZ, die Blickrichtung und eine 24-Stunden-Spieluhr in deiner Aktionsleiste.</p></div>
+          <div class="qa"><h3>Wie benenne ich ein Namensschild ohne Amboss um?</h3><p>Schleiche und klicke mit der rechten Maustaste damit.</p></div>
+          <div class="qa"><h3>Wie verbinde ich ein Elytra mit einem Brustpanzer?</h3><p>Lege beide auf einen Amboss. Lege das Ergebnis auf einen Schleifstein, um sie zu trennen. Verzauberungen bleiben erhalten.</p></div>
+          <div class="qa"><h3>Wie setze ich mich auf Treppen?</h3><p>Klicke mit der rechten Maustaste auf eine Treppe mit einem Sattel, dann noch einmal, um dich hinzusetzen. Zerbrich die Treppe, um den Sattel zurückzubekommen.</p></div>
+          <div class="qa"><h3>Wie halte ich einen Chunk geladen?</h3><p>Lege einen Nether-Stern auf einen Lodestone. Der Chunk bleibt geladen, bis der Lodestone abgebaut wird.</p></div>
+          <div class="qa"><h3>Kann ich gewarnt werden, bevor ein Werkzeug kaputtgeht?</h3><p>Ja, wenn ein Werkzeug oder Rüstungsteil zur Neige geht. Passe es mit <code>/duraping config</code> an.</p></div>
+          <div class="qa"><h3>Kann ich meine Truhen sperren?</h3><p>Ja, Truhen können jetzt gesperrt werden, sodass nur du (und Spieler, die du erlaubst) sie öffnen können.</p></div>
+          <div class="qa"><h3>Wie sperre oder verstecke ich Rahmen?</h3><p>Schleiche und klicke mit der rechten Maustaste mit einer <strong>Schere</strong>, um ihn zu sperren oder zu entsperren, mit einem <strong>Pinsel</strong>, um ihn unsichtbar zu machen.</p></div>
+          <div class="qa"><h3>Was können Kessel?</h3><p>Betonpulver härten, Erde in Schlamm verwandeln, Tränke füllen und leeren, Pfeile spitzen und Schleimbälle und Magmacreme tauschen (Lava- oder Wasserkessel). Schleimblock- und Honigblock-Kessel lassen Kupfer in Massen altern oder wachsen.</p></div>
+          <div class="qa"><h3>Was ist neu im Steinschneider?</h3><p>Mini-Blöcke, Holzgegenstände aus Brettern und Stämmen, Gemälde-Varianten und das Gravieren leerer Schallplatten (hergestellt aus 8 Eisenbarren und einem Diamanten).</p></div>
+          <div class="qa"><h3>Kann ich mein Haustier jemandem geben?</h3><p>Halte die Leine an deinem gezähmten Haustier und klicke mit der rechten Maustaste auf den anderen Spieler.</p></div>
+          <div class="qa"><h3>Kann ich Mobs wachsen oder schrumpfen lassen?</h3><p>Klicke mit einem Goldenen Löwenzahn mit der rechten Maustaste: Erwachsene werden zu Babys und Babys wachsen auf. Funktioniert auch bei Dorfbewohnern und Zombies.</p></div>
+          <div class="qa"><h3>Was gibt es sonst zum Bauen?</h3><p>Schilder entwachsen, indem du dich schleichst und ein gewachstes Schild mit einer Axt rechtsklickst, gefärbte Blöcke in eine andere Farbe umfärben (außer Beton), und Lesepult-Bücher springen beim Schließen zurück zu Seite 1.</p></div>
+          <div class="qa"><h3>Andere kleine Anpassungen?</h3><p>Knochenmehl wirkt auf kleine Blumen, Zuckerrohr, Kakteen und Laub. Samen auf Erde ergeben Gras. Eine Axt entfernt Schleim von klebrigen Kolben; eine Schleimkugel macht einen Kolben wieder klebrig. Blätter verrotten schnell. Husks lassen Sand fallen, mehr Mobs lassen Köpfe fallen, ein Viertel der Creeper explodiert in harmloses Konfetti, und befallene Dorfbewohner werden nach einigen Minuten zu Zombie-Dorfbewohnern.</p></div>
+          <div class="qa"><h3>Gibt es zusätzliche Rezepte?</h3><p>Ja: Treppen, Halbblöcke und Teppiche werden wieder zu Blöcken, Doppelhalbblöcke aus einem Block, das Auspacken von Wolle-, Quarz-, Netherwarzen-Blöcken und Eis, mehr Ertrag bei Treppen, Holzfallentüren, Rinde und Scherben, sowie herstellbarer Schwarzstein, verzierter Schwarzstein, Kalzit, Tuff, Kies, Korallenblöcke, kleiner Tropfstein, Sporenblüten und Kupfergolem-Statuen. Schwarzstein ersetzt Bruchstein in jedem Bruchstein-Rezept, und Sandstein + roter Farbstoff ergibt roten Sandstein. Die Survival-Überarbeitung hat eigene Rezepte für Ziegel, Schlammpressung, Metallfallentüren, Antriebsschienen, Kettenhemd, Leder, schwarzen Farbstoff und Glas: Ihre Fortschritte schalten sie beim Vorankommen frei.</p></div>
+          <div class="qa"><h3>Kann ich ein Gewitter auslösen?</h3><p>Wirf einen Dreizack mit Blitzableiter in den Himmel (das kostet 150 Haltbarkeit).</p></div>
+          <div class="qa"><h3>Gibt es Gräber?</h3><p>Nein. Die Survival-Überarbeitung behält dein Inventar beim Tod, du brauchst also keines.</p></div>
+          <div class="qa"><h3>Was meldet der Chat?</h3><p>Wandernde Händler, die in der Nähe erscheinen (auch die, die durch leuchtende Anzünder beschworen werden), und Tode von Dorfbewohnern mit dem Ort.</p></div>
+        </article>
+
+        <article id="commands">
+          <h2>Alle Befehle</h2>
+          <p class="sec-intro">Dies sind alle Befehle, die Spieler nutzen können. Alles andere ist blockiert, aus der Tab-Vervollständigung ausgeblendet und antwortet mit „Dieser Befehl ist nicht verfügbar. Bedrock-Spieler: nutzt /menu.“ Bedrock-Spieler haben fast alle davon als Buttons in <code>/menu</code>.</p>
+          <div class="qa"><h3>Zuhause, Spawn und Teleportieren</h3><p><code>/spawn</code>, <code>/home</code>, <code>/sethome</code>, <code>/delhome</code>, <code>/homes</code> (<code>/homelist</code>), <code>/edithome</code>, <code>/phome</code>, <code>/phomes</code> (<code>/phomelist</code>), <code>/tpa</code>, <code>/tpahere</code>, <code>/tpaccept</code> (<code>/tpyes</code>), <code>/tpdecline</code> (<code>/tpno</code>, <code>/tpdeny</code>), <code>/tpignore</code></p></div>
+          <div class="qa"><h3>Chat</h3><p><code>/msg</code> (<code>/w</code>, <code>/tell</code>, <code>/m</code>, <code>/whisper</code>), <code>/r</code> (<code>/reply</code>), <code>/me</code> (<code>/emote</code>), <code>/ignore</code> (<code>/block</code>), <code>/unignore</code> (<code>/unblock</code>)</p></div>
+          <div class="qa"><h3>Wirtschaft und Lagerung</h3><p><code>/points</code> (<code>me</code>, <code>pay</code>, <code>look</code>, <code>lead</code>), <code>/order</code> (<code>/orders</code>), <code>/vote</code>, <code>/trade</code>, <code>/ec</code> (<code>/enderchest</code>; <code>invite</code>, <code>uninvite</code>, <code>invitelist</code>, <code>rename</code>), <code>/ecshare</code></p></div>
+          <div class="qa"><h3>Werkzeuge</h3><p><code>/ch</code> (<code>/coordshud</code>), <code>/afk</code>, <code>/duraping</code> (<code>/durabilityping</code>, mit <code>config</code> zum Anpassen), <code>/portal</code> (wo ein passendes Nether-Portal gebaut wird, sobald der Nether offen ist), <code>/mechanics</code></p></div>
+          <div class="qa"><h3>Empfehlungen</h3><p><code>/referral</code> (<code>/code</code>, <code>/mycode</code>), <code>/refer</code> (<code>/usecode</code>), <code>/referraltop</code> (<code>/reftop</code>, <code>/rtop</code>)</p></div>
+          <div class="qa"><h3>Sonstiges</h3><p><code>/menu</code> (Bedrock), <code>/list</code>, <code>/ping</code>, <code>/voicechat</code>, <code>/linkaccount</code>, <code>/unlinkaccount</code>, <code>/discord</code>, <code>/server smp</code> (zurück aus der AFK-Zone), <code>/glist</code>, <code>/trigger</code> (von der Survival-Überarbeitung genutzt, z. B. wenn sie dich bittet, einen Gegenstand zu aktualisieren)</p></div>
+        </article>
+
+        <article id="referral">
+          <h2>Empfehlungen</h2>
+          <div class="qa"><h3>Wie lade ich einen Freund ein?</h3><p>Führe <code>/referral</code> aus, um deinen persönlichen Code zu sehen, und gib ihn deinem Freund. Wenn er beitritt, tippt er <code>/refer &lt;Code&gt;</code>. Dein Freund bekommt sofort <strong>5 Diamanten</strong>, und du bekommst <strong>10 Diamanten</strong>, sobald er 2 Stunden gespielt hat. Bis zu 5 Empfehlungen pro Spieler, eine pro IP-Adresse. <code>/referraltop</code> zeigt die Rangliste.</p></div>
+          <div class="qa"><h3>Was sind die Regeln?</h3><p>Ein neuer Spieler muss einen Code innerhalb seiner ersten <strong>24 Stunden Spielzeit</strong> nutzen. Du kannst bis zu <strong>5 Spieler</strong> empfehlen, und pro IP-Adresse zählt nur eine Empfehlung, Zweitaccounts zählen also nicht. Die Spielzeit stammt aus der Analyse des Servers.</p></div>
+          <div class="qa"><h3>Ist ein kostenloser Diamant ein Problem für den Fortschritt?</h3><p>Er überspringt absichtlich einen Teil des Weges zu Diamanten, und das Team weiß es. Wenn die Belohnung auf etwas geändert wird, das den Fortschritt nicht berührt (Punkte oder Kosmetik), wird diese Seite es sagen.</p></div>
+        </article>
+
+        <article id="rules">
+          <h2>Regeln</h2>
+          <div class="qa"><h3>Ist Gilly SMP Pay-to-Win?</h3><p>Nein. Der <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">Shop</a> verkauft nur Komfortfunktionen und Kosmetik.</p></div>
+          <div class="qa"><h3>Sind Cheats erlaubt?</h3><p>Nein. Ein Anti-Cheat läuft, und Mods wie X-Ray, Freecam oder Wurst sind verboten. Verdächtige Spieler können aufgefordert werden, ein Prüf-Mod zu installieren.</p></div>
+          <div class="qa"><h3>Ist PvP erlaubt?</h3><p>Ja, wenn es fair ist. Kein Tp-Trapping und kein Spawn-Killing. Teleports haben eine Vorlaufzeit von 3 Sekunden, die Bewegung oder Schaden abbrechen, du kannst dich also nicht aus einem Kampf teleportieren.</p></div>
+          <div class="qa"><h3>Sind Grieving und Diebstahl erlaubt?</h3><p>Nein. Erster Verstoß: eine Verwarnung. Zweiter: ein zeitlich begrenzter Bann.</p></div>
+          <div class="qa"><h3>Kann ich Land beanspruchen?</h3><p>Nein, es gibt kein Landbesitz-System. Respektiere die Bauten anderer Spieler.</p></div>
+          <div class="qa"><h3>Noch etwas?</h3><p>Spam wird automatisch erkannt und stummgeschaltet. Eine Liste aller Befehle findest du unter <a href="#commands">Alle Befehle</a>.</p></div>
+        </article>
+
+        <article id="server">
+          <h2>Serverinfos</h2>
+          <div class="qa"><h3>Wo wird der Server gehostet?</h3><p>In <strong>Frankreich</strong>. Spieler in den USA haben etwa 100 ms.</p></div>
+          <div class="qa"><h3>Gibt es eine Whitelist?</h3><p>Nein. Jeder mit einem legitimen Konto kann beitreten.</p></div>
+          <div class="qa"><h3>Wird die Welt zurückgesetzt?</h3><p>Ja, am Ende jeder <strong>Saison</strong>. Du kannst eine Kopie der Welt auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> eine Woche nach Saisonende anfragen.</p></div>
+          <div class="qa"><h3>Wie ist die Welt?</h3><p>Vanilla-Terrain und -Biome, plus zusätzliche Erze, Bäume und Strukturen, alles mit Vanilla-Blöcken.</p></div>
+          <div class="qa"><h3>Was sind die Grenzen des Servers?</h3><p>Bis zu <strong>20 Spieler</strong>, Schwierigkeit <strong>Einfach</strong>, Online-Modus an (es ist also ein legitimes Konto nötig) und keine Whitelist. Die Welt wird am Ende jeder Saison zurückgesetzt.</p></div>
+          <div class="qa"><h3>Was ist die AFK-Zone?</h3><p>Wenn der Server neu startet oder du 20 Minuten untätig bist, wirst du in einen kleinen Wartebereich verschoben, statt getrennt zu werden. Dort bekommst du eine Chat-Nachricht und eine Boss-Leiste, und <code>/server smp</code> bringt dich zurück, sobald der Server wieder läuft.</p></div>
+        </article>
+
+        <article id="support">
+          <h2>Team &amp; Einsprüche</h2>
+          <div class="qa"><h3>Wie kontaktiere ich das Team oder lege Einspruch gegen einen Bann ein?</h3><p>Öffne ein Ticket auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> (am schnellsten) oder schreibe an <a href="mailto:gilly-smp@outlook.com">gilly-smp@outlook.com</a>.</p></div>
+        </article>
+
+        <article id="faq">
+          <h2>FAQ</h2>
+          <p class="sec-intro">Die Fragen, die Spieler am häufigsten stellen. Für alles andere frag auf <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a>.</p>
+          <div class="qa"><h3>Meine Gegenstände haben rohe Textnamen und sehen aus wie Vanilla-Gegenstände.</h3><p>Du hast das Ressourcenpaket des Servers nicht akzeptiert. Verbinde dich neu und akzeptiere es, oder prüfe Optionen → Ressourcenpakete. Siehe <a href="#basics">Erste Schritte</a>. Auf Bedrock ist das erwartet und kann nicht behoben werden.</p></div>
+          <div class="qa"><h3>Ich kann mich nicht heilen!</h3><p>Die natürliche Regeneration ist aus. Iss Gerichte mit Heileffekten, trink Tränke oder nutze Spezialgegenstände. Siehe <a href="#survival">Survival-Überarbeitung</a>.</p></div>
+          <div class="qa"><h3>Ich verliere ständig Herzen.</h3><p>Jeder Tod kostet 1 maximales Herz, bis zu einem Minimum von 10 Herzen. Kristallherzen geben Herzen zurück. Siehe <a href="#world">Welt &amp; Fortschritt</a>.</p></div>
+          <div class="qa"><h3>Ich weiß nicht, was ich als Nächstes tun soll.</h3><p>Öffne deine Fortschritte (<kbd>L</kbd>). Die Fortschritte zeigen den nächsten Schritt. Auf Bedrock, wo dieses Menü fehlt, nutze den <a href="advancements.html">Fortschrittsleitfaden</a>.</p></div>
+          <div class="qa"><h3>Warum kann ich im Schlammofen kein Eisen schmelzen?</h3><p>Der Schlammofen schmilzt nur Kupfer und Erdblöcke (Ziegel, Glas, glatter Stein, Terrakotta). Rohes Eisen und Gold brauchen einen <strong>Hochofen</strong>, hergestellt aus 4 poliertem Tiefenschiefer, 2 glatten Steinen und einem Anzünder. Der Ofenblock ist der <strong>Ofen</strong> und gart nur Essen. Siehe die <a href="recipes.html#s=blast">Rezepte des Hochofens</a>.</p></div>
+          <div class="qa"><h3>Wo sind die Dörfer?</h3><p>Die Survival-Überarbeitung erwartet, dass du dein eigenes Dorf <strong>baust</strong>. Die Fortschritte erklären, wie du Dorfbewohner dorthin holst.</p></div>
+          <div class="qa"><h3>Warum gibt es so wenige Monster draußen?</h3><p>Creeper, Spinnen und andere Nicht-Untote spawnen nicht im Freien. Zombies und Skelette spawnen nachts weiterhin.</p></div>
+          <div class="qa"><h3>„Dieser Befehl ist nicht verfügbar“</h3><p>Nur Spielerbefehle sind aktiviert. Siehe <a href="#commands">Alle Befehle</a>.</p></div>
+          <div class="qa"><h3>Wie teleportiere ich mich zu einem Freund?</h3><p><code>/tpa &lt;Name&gt;</code>, dann tippt er <code>/tpaccept</code>. Siehe <a href="#travel">Zuhause &amp; Teleportieren</a>.</p></div>
+          <div class="qa"><h3>Meine Chatnachrichten werden nicht von allen gesehen.</h3><p>Der Chat ist auf Gilly SMP global: Alle sehen deine Nachrichten. Es gibt keinen Reichweiten-Chat und du musst nicht <code>!</code> verwenden. Wenn eine Nachricht fehlt, prüfe, ob du wegen Spams stummgeschaltet wurdest. Siehe <a href="#chat">Chat, Sprache &amp; AFK</a>.</p></div>
+          <div class="qa"><h3>Ich wurde wegen AFK getrennt.</h3><p>Spieler, die 15 Minuten AFK sind, werden getrennt, damit der Server schnell bleibt. Verbinde dich einfach neu.</p></div>
+          <div class="qa"><h3>Ich spiele auf Bedrock und finde ein Rezept nicht.</h3><p>Das Rezeptbuch von Bedrock zeigt nur Werkbank-Rezepte. Nutze das <a href="recipes.html">Rezeptbuch</a> für alles andere (Schlammofen, Ofen, Hochofen, Anzünder, Schmiedetisch). Es zeigt auch, welchem Vanilla-Gegenstand jeder eigene Gegenstand auf Bedrock ähnelt.</p></div>
+          <div class="qa"><h3>Ich spiele auf Bedrock und Befehle tippen nervt.</h3><p>Nutze <code>/menu</code>. Siehe <a href="#bedrock">Bedrock-Menü</a>.</p></div>
+          <div class="qa"><h3>Wie bekomme ich eine größere Enderkiste oder mehr Zuhause?</h3><p>Mit einem <a href="#ranks">Rang</a>.</p></div>
+          <div class="qa"><h3>Kann ich Mods nutzen?</h3><p>Clientseitige Mods (Performance, Minimap, Shader, <a href="#chat">Sprachchat</a>) sind erlaubt. Cheating (X-Ray, Freecam, manipulierte Clients) ist nicht erlaubt, und der Server nutzt einen Anti-Cheat.</p></div>
+          <div class="qa"><h3>Kann ich in den Nether gehen?</h3><p>Noch nicht. Siehe <a href="#world">Welt &amp; Fortschritt</a>.</p></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <section class="section final-cta page-cta" aria-labelledby="cta-h">
+    <div class="container">
+      <h2 id="cta-h">Bereit zum Spielen?</h2>
+      <p class="lead">Kostenlos, ohne Whitelist, ein Profil für Java, Bedrock und Konsole.</p>
+      <div class="quick" id="quick">
+        <div class="seg" role="tablist" aria-label="Deine Plattform">
+          <button role="tab" data-q="java" aria-selected="false">Java</button>
+          <button role="tab" data-q="bedrock" aria-selected="false">Bedrock</button>
+          <button role="tab" data-q="console" aria-selected="false">Konsole</button>
+        </div>
+        <div class="quick-row">
+          <code class="quick-addr" id="quick-addr" aria-live="polite">mc.gillyb.net</code>
+          <button class="copy" id="quick-copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Kopieren</button>
+        </div>
+        <p class="quick-note" id="quick-note">Java 26.3 erforderlich.</p>
+        <p class="status" id="status" hidden><span class="dot" aria-hidden="true"></span><span id="status-text"></span></p>
+      </div>
+      <p class="flex">Suchst du einen bestimmten Gegenstand? Probiere das <a href="/de/recipes.html">Rezeptbuch</a> oder den <a href="/de/advancements.html">Fortschrittsleitfaden</a>. <a href="/de/guides/">Durchstöbere die Leitfäden nach Thema</a> für Fragen zu Beitreten, Survival, Rängen und Befehlen.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="/de/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <p>Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.</p>
+      </div>
+      <nav class="f-col" aria-label="Entdecken">
+        <h3 class="f-title">Entdecken</h3>
+        <a href="/de/"><i class="ic" style="--i:url(/assets/icons/house.svg)" aria-hidden="true"></i> Startseite</a>
+        <a href="/de/#join"><i class="ic" style="--i:url(/assets/icons/gamepad-2.svg)" aria-hidden="true"></i> So trittst du bei</a>
+        <a href="/de/wiki.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Wiki</a>
+        <a href="/de/guides/"><i class="ic" style="--i:url(/assets/icons/globe.svg)" aria-hidden="true"></i> Leitfäden</a>
+        <a href="/de/recipes.html"><i class="ic" style="--i:url(/assets/icons/book-open.svg)" aria-hidden="true"></i> Rezeptbuch</a>
+        <a href="/de/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Fortschrittsleitfaden</a>
+      </nav>
+      <nav class="f-col" aria-label="Community">
+        <h3 class="f-title">Community</h3>
+        <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
+        <a href="https://modrinth.com/server/gilly-smp" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/modrinth.svg)" aria-hidden="true"></i> Modrinth</a>
+        <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Shop</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Gilly SMP · Zuletzt aktualisiert <time datetime="2026-10-26">26. Oktober 2026</time></p>
+      <p class="legal">Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von Microsoft genehmigt oder mit ihnen verbunden.</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

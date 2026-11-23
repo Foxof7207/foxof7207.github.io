@@ -58,7 +58,7 @@
   // ---------- rewards ----------
   function reward(code) {
     var p = el('p');
-    p.appendChild(el('span', 'lbl rw', 'REWARD'));
+    p.appendChild(el('span', 'lbl rw', T('REWARD', 'RÉCOMPENSE')));
     var img = function (src) { var i = el('img', 'glyph'); i.src = src; i.alt = ''; i.width = 16; i.height = 16; return i; };
     if (code === 'H') {
       p.appendChild(img('/assets/advancements/brokenheart.png'));
@@ -84,7 +84,7 @@
       var d = !!done[id];
       card.classList.toggle('done', d);
       b.setAttribute('aria-pressed', String(d));
-      b.setAttribute('aria-label', (d ? 'Completed: ' : 'Mark as done: ') + label);
+      b.setAttribute('aria-label', (d ? T('Completed: ', 'Terminé : ') : T('Mark as done: ', 'Marquer comme fait : ')) + label);
       var fr = $('.ac-frame', card); if (fr) fr.style.backgroundPosition = framePos(card.dataset.f, d);
     };
     b.addEventListener('click', function () {
@@ -104,7 +104,7 @@
     var head = el('div', 'ac-head');
     head.appendChild(el('h3', 'ac-title', a.t));
     var meta = el('div', 'ac-meta', '#' + a.num + ' · ' + a.f);
-    if (a.hid) { meta.appendChild(document.createTextNode(' · ')); meta.appendChild(el('span', 'hid', 'hidden on Java')); }
+    if (a.hid) { meta.appendChild(document.createTextNode(' · ')); meta.appendChild(el('span', 'hid', T('hidden on Java', 'masqué sur Java'))); }
     head.appendChild(meta);
     bar.appendChild(head);
     bar.appendChild(checkBtn(a.id, a.t, c));
@@ -112,20 +112,20 @@
 
     var body = el('div', 'ac-body');
     if (a.p && byId[a.p]) {
-      var pa = byId[a.p], af = el('p', 'ac-after', 'After ');
+      var pa = byId[a.p], af = el('p', 'ac-after', T('After ', 'Après '));
       var link = el('a', null, '#' + pa.num + ' ' + pa.t); link.href = '#a=' + encodeURIComponent(pa.id);
       af.appendChild(link); body.appendChild(af);
     }
     if (a.h) body.appendChild(el('p', 'ac-hint', '“' + a.h + '”'));
-    var todo = el('p'); todo.appendChild(el('span', 'lbl todo', 'TO DO'));
+    var todo = el('p'); todo.appendChild(el('span', 'lbl todo', T('TO DO', 'À FAIRE')));
     var g = el('span'); g.innerHTML = a.goal; todo.appendChild(g); body.appendChild(todo);
     if (a.tip) { var tp = el('p'); tp.appendChild(el('span', 'lbl tip', 'TIP')); var t = el('span'); t.innerHTML = a.tip; tp.appendChild(t); body.appendChild(tp); }
     if (a.r) body.appendChild(reward(a.r));
     if (a.rec) {
       var rr = el('div', 'ac-recipes');
       a.rec.forEach(function (r) {
-        var l = el('a'); l.href = '/recipes.html#make=' + encodeURIComponent(r[0]);
-        l.appendChild(itemIcon(r[2])); l.appendChild(document.createTextNode('Recipe: ' + r[1]));
+        var l = el('a'); l.href = BASE + '/recipes.html#make=' + encodeURIComponent(r[0]);
+        l.appendChild(itemIcon(r[2])); l.appendChild(document.createTextNode(T('Recipe: ', 'Recette : ') + r[1]));
         rr.appendChild(l);
       });
       body.appendChild(rr);
@@ -141,12 +141,12 @@
     bd.appendChild(el('h3', null, e.t));
     var line = el('div');
     if (e.st) {
-      var st = el('span', 'stars'); st.setAttribute('aria-label', 'Rarity ' + e.st + ' of 4');
+      var st = el('span', 'stars'); st.setAttribute('aria-label', T('Rarity ', 'Rareté ') + e.st + T(' of 4', ' sur 4'));
       st.appendChild(document.createTextNode('★'.repeat(e.st)));
       if (e.st < 4) st.appendChild(el('span', 'off', '★'.repeat(4 - e.st)));
       line.appendChild(st); line.appendChild(document.createTextNode(' '));
     }
-    if (e.ch) line.appendChild(el('span', 'ch', 'Chance ' + e.ch));
+    if (e.ch) line.appendChild(el('span', 'ch', T('Chance ', 'Chance ') + e.ch));
     bd.appendChild(line);
     if (e.h) bd.appendChild(el('p', null, e.h));
     c.appendChild(bd);
@@ -199,7 +199,7 @@
         sec.appendChild(grid); root.appendChild(sec);
       });
     }
-    if (!count) root.appendChild(el('p', 'av-empty', state.hideDone && !state.q ? 'Everything here is done. Nice work!' : 'Nothing matches. Try another word.'));
+    if (!count) root.appendChild(el('p', 'av-empty', state.hideDone && !state.q ? T('Everything here is done. Nice work!', 'Tout est fait. Bravo !') : T('Nothing matches. Try another word.', 'Aucun résultat. Essayez un autre mot.')));
   }
 
   // ---------- URL state ----------
@@ -235,7 +235,7 @@
   input.addEventListener('input', function () { clearTimeout(qt); qt = setTimeout(function () { state.q = input.value.trim(); writeHash(false); render(); }, 150); });
   hideBox.addEventListener('change', function () { state.hideDone = hideBox.checked; render(); });
   $('#av-reset').addEventListener('click', function () {
-    if (!confirm('Clear your ticked steps for the ' + D.tabs.filter(function (t) { return t.id === state.tab; })[0].n + ' tab?')) return;
+    if (!confirm(T('Clear your ticked steps for the ', 'Effacer les étapes cochées de l\'onglet ') + D.tabs.filter(function (t) { return t.id === state.tab; })[0].n + T(' tab?', ' ?'))) return;
     tabItems(state.tab).forEach(function (a) { delete done[a.id]; });
     save(); render();
   });
@@ -250,5 +250,5 @@
     D.advs.forEach(function (a) { byId[a.id] = a; });
     $('#av-loading').remove();
     if (readHash()) render();
-  }).catch(function () { $('#av-loading').textContent = 'Could not load the guide. Please refresh the page.'; });
+  }).catch(function () { $('#av-loading').textContent = T('Could not load the guide. Please refresh the page.', 'Impossible de charger le guide. Actualisez la page.'); });
 })();

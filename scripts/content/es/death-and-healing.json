@@ -1,0 +1,80 @@
+{
+  "slug": "death-and-healing",
+  "title": "Muerte, corazones y curación",
+  "updated": "2026-11-21",
+  "h1": "Los corazones de Minecraft explicados: penalizaciones por muerte, curación y corazones de cristal",
+  "description": "Por qué la vida no se regenera aquí, qué cuesta morir en corazones y cómo curarte con comida, pociones y corazones de cristal.",
+  "intro": "La vida funciona de otra forma en esta reelaboración de la supervivencia: la regeneración natural está desactivada, el hambre ha desaparecido y morir cuesta corazones máximos en lugar de objetos. Estas respuestas explican las reglas con claridad. Gilly SMP sirve de ejemplo.",
+  "groups": [
+    {
+      "title": "Curación",
+      "items": [
+        {
+          "q": "¿Por qué no se regenera mi vida en Minecraft?",
+          "a": "En esta reelaboración de la supervivencia, la regeneración natural de la vida está desactivada. Te curas con los efectos de la comida, las pociones y los objetos especiales, así que lleva comida cuando explores."
+        },
+        {
+          "q": "¿Importa el hambre en una reelaboración de la supervivencia de Minecraft?",
+          "a": "El hambre ha desaparecido prácticamente en Gilly SMP: no te mueres de hambre, y la comida se valora por sus efectos en lugar de por llenar una barra de hambre."
+        },
+        {
+          "q": "¿Cómo recupero corazones en Minecraft después de morir?",
+          "a": "Los corazones de cristal devuelven un corazón máximo, hasta un total de <strong>30</strong>. Cada muerte cuesta un corazón máximo, así que los corazones de cristal son la forma de recuperar lo perdido."
+        },
+        {
+          "q": "¿Qué objetos curan en una reelaboración de la supervivencia de Minecraft?",
+          "a": "En Gilly SMP te curas con comida que tiene efectos curativos, con pociones y con objetos especiales. La comida se valora por sus efectos en lugar de por llenar una barra."
+        }
+      ]
+    },
+    {
+      "title": "Lo que cuesta morir",
+      "items": [
+        {
+          "q": "¿Qué pasa con mis objetos cuando muero en la supervivencia de Minecraft?",
+          "a": "En Gilly SMP conservas tu inventario y tu XP al morir. Cada muerte te quita en cambio <strong>1 corazón máximo</strong>, y las perlas de ender lanzadas no desaparecen."
+        },
+        {
+          "q": "¿Cuántos corazones como mínimo te deja un servidor de Minecraft?",
+          "a": "En Gilly SMP, que funciona en dificultad Fácil, nunca bajas de <strong>10 corazones</strong> por las muertes."
+        },
+        {
+          "q": "¿Pierdes XP al morir en Minecraft?",
+          "a": "No. En Gilly SMP conservas tu XP al morir, junto con tu inventario."
+        },
+        {
+          "q": "¿Qué es un corazón máximo en Minecraft?",
+          "a": "Un corazón máximo es el número de corazones que puedes alcanzar. En Gilly SMP cada muerte quita uno, y los corazones de cristal devuelven uno, hasta un total de 30."
+        }
+      ]
+    }
+  ],
+  "deeper": [
+    {
+      "url": "/es/wiki.html#survival",
+      "label": "Wiki: Reelaboración de la supervivencia"
+    },
+    {
+      "url": "/es/wiki.html#world",
+      "label": "Wiki: Mundo y progresión"
+    },
+    {
+      "url": "/es/wiki.html#faq",
+      "label": "Wiki: FAQ"
+    }
+  ],
+  "related": [
+    {
+      "url": "/es/guides/mobs-and-darkness.html",
+      "label": "Mobs, fantasmas y oscuridad"
+    },
+    {
+      "url": "/es/guides/world-and-dimensions.html",
+      "label": "Mundo y dimensiones"
+    },
+    {
+      "url": "/es/guides/what-is-matcha.html",
+      "label": "¿Qué es Matcha Flavoured?"
+    }
+  ]
+}
