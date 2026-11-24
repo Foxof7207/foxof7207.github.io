@@ -4,18 +4,18 @@
   "updated": "2026-11-21",
   "h1": "Libro de recetas y guía de logros de Minecraft para Bedrock y Java",
   "description": "Cómo encontrar cada receta y seguir los logros de una reelaboración de supervivencia de Minecraft, también en Bedrock, con menús limitados.",
-  "intro": "Esta reelaboración de la supervivencia reemplaza muchas recetas y logros vanilla, y Bedrock no puede mostrarlos todos en el juego. Estas respuestas explican dónde buscar y cómo seguir el progreso en cualquier plataforma. Gilly SMP sirve de ejemplo.",
+  "intro": "Esta reelaboración de la supervivencia reemplaza muchas recetas y logros vanilla, y Bedrock no puede mostrarlos todos en el juego. Estas respuestas explican dónde buscar y cómo seguir el progreso en cualquier plataforma. MatchaSMP sirve de ejemplo.",
   "groups": [
     {
       "title": "Encontrar recetas",
       "items": [
         {
           "q": "¿Por qué mi libro de recetas de Bedrock no muestra algunas recetas?",
-          "a": "El libro de recetas de Bedrock solo muestra recetas de la mesa de trabajo. Para lo demás, como el horno de barro, el horno, el alto horno, la yesca y la mesa de herrería, usa el Libro de recetas de la web de Gilly SMP, que además indica a qué objeto vanilla se parece cada objeto personalizado en Bedrock."
+          "a": "El libro de recetas de Bedrock solo muestra recetas de la mesa de trabajo. Para lo demás, como el horno de barro, el horno, el alto horno, la yesca y la mesa de herrería, usa el Libro de recetas de la web de MatchaSMP, que además indica a qué objeto vanilla se parece cada objeto personalizado en Bedrock."
         },
         {
           "q": "¿Dónde puedo ver todas las recetas de una reelaboración de la supervivencia de Minecraft personalizada?",
-          "a": "El Libro de recetas enumera todas las recetas de la reelaboración de la supervivencia de Gilly SMP y permite buscar. Toca un objeto para ver cómo se fabrica y en qué se usa. Contiene spoilers, así que úsalo cuando te atasques."
+          "a": "El Libro de recetas enumera todas las recetas de la reelaboración de la supervivencia de MatchaSMP y permite buscar. Toca un objeto para ver cómo se fabrica y en qué se usa. Contiene spoilers, así que úsalo cuando te atasques."
         },
         {
           "q": "¿Cuántas recetas añade esta reelaboración de la supervivencia de Minecraft?",
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "¿Cómo sigo los logros en Bedrock en Minecraft?",
-          "a": "Bedrock no puede abrir el menú de logros, así que usa la Guía de logros de la web de Gilly SMP. Enumera cada paso en orden, lo que lo completa y sus recompensas, y puedes marcar los pasos a medida que avanzas."
+          "a": "Bedrock no puede abrir el menú de logros, así que usa la Guía de logros de la web de MatchaSMP. Enumera cada paso en orden, lo que lo completa y sus recompensas, y puedes marcar los pasos a medida que avanzas."
         },
         {
           "q": "¿Qué es el Almanaque del pescador en Minecraft?",
@@ -40,11 +40,11 @@
         },
         {
           "q": "¿Por qué algunas recetas todavía no aparecen en mi libro de recetas?",
-          "a": "En Gilly SMP, el libro de recetas desbloquea las recetas cuando las necesitas, a medida que avanzas. Si falta una receta, revisa primero tus logros y luego búscala en el Libro de recetas."
+          "a": "En MatchaSMP, el libro de recetas desbloquea las recetas cuando las necesitas, a medida que avanzas. Si falta una receta, revisa primero tus logros y luego búscala en el Libro de recetas."
         },
         {
           "q": "¿Qué es un logro en una reelaboración de la supervivencia de Minecraft?",
-          "a": "En Gilly SMP, los logros son el progreso paso a paso: cada uno indica lo que lo completa y sus recompensas. La Guía de logros muestra los mismos pasos en orden, para los jugadores que no pueden abrir el menú dentro del juego."
+          "a": "En MatchaSMP, los logros son el progreso paso a paso: cada uno indica lo que lo completa y sus recompensas. La Guía de logros muestra los mismos pasos en orden, para los jugadores que no pueden abrir el menú dentro del juego."
         }
       ]
     }

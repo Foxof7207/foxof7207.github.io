@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Cofre de ender, hogares y rangos de Minecraft: cómo funciona el almacenamiento en un servidor de supervivencia",
   "description": "Filas del cofre de ender, hogares públicos, compartir y lo que desbloquea cada rango en un servidor de supervivencia de Minecraft.",
-  "intro": "En un servidor de supervivencia, el almacenamiento y los hogares determinan lo cómodo que es construir. Esta guía cubre el cofre de ender, los hogares y las ventajas de rango que los amplían. Gilly SMP sirve de ejemplo.",
+  "intro": "En un servidor de supervivencia, el almacenamiento y los hogares determinan lo cómodo que es construir. Esta guía cubre el cofre de ender, los hogares y las ventajas de rango que los amplían. MatchaSMP sirve de ejemplo.",
   "groups": [
     {
       "title": "Cofre de ender",
       "items": [
         {
           "q": "¿Qué tamaño tiene un cofre de ender de Minecraft y se puede mejorar?",
-          "a": "En Gilly SMP, el cofre de ender empieza con 3 filas (27 casillas) y llega hasta 6 filas (54 casillas) con un rango. Ábrelo desde cualquier lugar con <code>/ec</code>."
+          "a": "En MatchaSMP, el cofre de ender empieza con 3 filas (27 casillas) y llega hasta 6 filas (54 casillas) con un rango. Ábrelo desde cualquier lugar con <code>/ec</code>."
         },
         {
           "q": "¿Puedo compartir mi cofre de ender con otro jugador en Minecraft?",
@@ -19,7 +19,7 @@
         },
         {
           "q": "¿Qué no puedo guardar en un cofre de ender de Minecraft?",
-          "a": "En Gilly SMP, no se pueden guardar bedrock, bloques de comandos ni barreras en el cofre de ender. El cofre se respalda automáticamente cada noche."
+          "a": "En MatchaSMP, no se pueden guardar bedrock, bloques de comandos ni barreras en el cofre de ender. El cofre se respalda automáticamente cada noche."
         }
       ]
     },
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "¿Cuántos hogares puedo definir en Minecraft?",
-          "a": "En Gilly SMP tienes 2 hogares, con más disponibles según el rango. Usa <code>/sethome &lt;nombre&gt;</code> donde estés, <code>/home &lt;nombre&gt;</code> para volver a él y <code>/homes</code> para listarlos."
+          "a": "En MatchaSMP tienes 2 hogares, con más disponibles según el rango. Usa <code>/sethome &lt;nombre&gt;</code> donde estés, <code>/home &lt;nombre&gt;</code> para volver a él y <code>/homes</code> para listarlos."
         },
         {
           "q": "¿Cómo hago público un hogar de Minecraft para otros jugadores?",
@@ -41,7 +41,7 @@
       "items": [
         {
           "q": "¿Qué desbloquean los rangos en un servidor de supervivencia de Minecraft?",
-          "a": "Gilly SMP tiene tres rangos, Bronce, Oro y Diamante, y cada uno incluye las ventajas de los inferiores. Las filas del cofre de ender van de 3 en el predeterminado a 6 en Diamante, los hogares de 2 a 6 y los pedidos activos de 5 a 15. Los rangos son una ventaja de comodidad, no de poder."
+          "a": "MatchaSMP tiene tres rangos, Bronce, Oro y Diamante, y cada uno incluye las ventajas de los inferiores. Las filas del cofre de ender van de 3 en el predeterminado a 6 en Diamante, los hogares de 2 a 6 y los pedidos activos de 5 a 15. Los rangos son una ventaja de comodidad, no de poder."
         },
         {
           "q": "¿Qué pasa con mi cofre de ender si pierdo mi rango?",
@@ -49,7 +49,7 @@
         },
         {
           "q": "¿Cómo consigo un rango en un servidor de Minecraft?",
-          "a": "En Gilly SMP, los rangos los concede el staff. Echa un vistazo a la tienda y pregunta en Discord."
+          "a": "En MatchaSMP, los rangos los concede el staff. Echa un vistazo a la tienda y pregunta en Discord."
         }
       ]
     }

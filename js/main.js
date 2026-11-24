@@ -307,9 +307,9 @@ function T(en, fr) {
     : (/Android|iPhone|iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) ? 'bedrock'
     : 'java';
   var data = {
-    java: { addr: 'mc.gillyb.net', copy: 'mc.gillyb.net', note: T('Java 26.3 required.', 'Minecraft Java 26.3 requis.') },
-    bedrock: { addr: 'mc.gillyb.net · port 19132', copy: 'mc.gillyb.net', note: T('Port 19132. On Windows, Android and iOS the "Add to Minecraft" button below does it for you.', 'Port 19132. Sous Windows, Android et iOS, le bouton « Ajouter à Minecraft » ci-dessous s\'en charge.') },
-    console: { addr: 'Friend: GillySMP', copy: 'GillySMP', note: T('Needs your console\'s online subscription.', 'Nécessite l\'abonnement en ligne de votre console.') }
+    java: { addr: 'play.matchasmp.eu', copy: 'play.matchasmp.eu', note: T('Java 26.3 required.', 'Minecraft Java 26.3 requis.') },
+    bedrock: { addr: 'play.matchasmp.eu · port 19132', copy: 'play.matchasmp.eu', note: T('Port 19132. On Windows, Android and iOS the "Add to Minecraft" button below does it for you.', 'Port 19132. Sous Windows, Android et iOS, le bouton « Ajouter à Minecraft » ci-dessous s\'en charge.') },
+    console: { addr: 'Friend: MatchaSMP', copy: 'MatchaSMP', note: T('Needs your console\'s online subscription.', 'Nécessite l\'abonnement en ligne de votre console.') }
   };
   var tabs = [].slice.call(document.querySelectorAll('.seg [data-q]'));
   var addr = document.getElementById('quick-addr'), btn = document.getElementById('quick-copy'), note = document.getElementById('quick-note');
@@ -332,7 +332,7 @@ function T(en, fr) {
   // Real player count, hidden if the lookup fails
   var st = document.getElementById('status');
   if (st && window.fetch) {
-    fetch('https://api.mcsrvstat.us/3/mc.gillyb.net').then(function (r) { return r.json(); }).then(function (d) {
+    fetch('https://api.mcsrvstat.us/3/play.matchasmp.eu').then(function (r) { return r.json(); }).then(function (d) {
       var text = document.getElementById('status-text');
       if (d && d.online && d.players) {
         var n = d.players.online;

@@ -1,12 +1,12 @@
-# Gilly SMP
+# MatchaSMP
 
-> Last updated: 2026-11-01. Gilly SMP is a free, non pay-to-win Minecraft survival SMP with crossplay between Java, Bedrock, Xbox, PlayStation and Switch, and playtime sync (inventory, XP) via linked accounts. It runs a custom survival rework for Minecraft 26.3 that makes progression slow and casual-friendly. Full player documentation: https://craft.gillyb.net/wiki.html
+> Last updated: 2026-11-01. MatchaSMP is a free, non pay-to-win Minecraft survival SMP with crossplay between Java, Bedrock, Xbox, PlayStation and Switch, and playtime sync (inventory, XP) via linked accounts. It runs a custom survival rework for Minecraft 26.3 that makes progression slow and casual-friendly. Full player documentation: https://matchasmp.eu/wiki.html
 
 ## How to join
-- Java: mc.gillyb.net (Minecraft Java 26.3 required)
-- Bedrock: mc.gillyb.net, port 19132
-- Console (Xbox / PlayStation / Switch): add "GillySMP" as a friend, then join from the Friends tab. The console's online subscription is required by the console maker.
-- Java players get the Gilly SMP resource pack (item names and textures) automatically when they join; no manual download is needed. Bedrock cannot load it and shows vanilla textures; everything still works.
+- Java: play.matchasmp.eu (Minecraft Java 26.3 required)
+- Bedrock: play.matchasmp.eu, port 19132
+- Console (Xbox / PlayStation / Switch): add "MatchaSMP" as a friend, then join from the Friends tab. The console's online subscription is required by the console maker.
+- Java players get the MatchaSMP resource pack (item names and textures) automatically when they join; no manual download is needed. Bedrock cannot load it and shows vanilla textures; everything still works.
 - Bedrock names get a "_" prefix (e.g. _Steve) so they never clash with Java names.
 
 ## Theme
@@ -33,46 +33,67 @@ Casual and adult survival players, friend groups, and players on different platf
 - Staff contact and ban appeals: Discord ticket (fastest) or gilly-smp@outlook.com
 
 ## Wiki sections
-- [Getting started](https://craft.gillyb.net/wiki.html#basics)
-- [Survival rework](https://craft.gillyb.net/wiki.html#survival)
-- [Recipe book](https://craft.gillyb.net/recipes.html): searchable list of every survival-rework recipe (crafting, Mud Kiln, Oven, Blast Furnace, Kindling, Smithing Table, Stonecutter), with how to make each item and what it is used in.
-- [Advancement guide](https://craft.gillyb.net/advancements.html): every step of the survival rework's guided advancements (Tutorial, Nether, End) with what completes each one and its rewards, plus the Angler's Almanac fish list. Made for Bedrock players, who can't open the advancements menu.
-- [World & progression](https://craft.gillyb.net/wiki.html#world)
-- [Ranks](https://craft.gillyb.net/wiki.html#ranks)
-- [Homes & teleporting](https://craft.gillyb.net/wiki.html#travel)
-- [Points, orders & trading](https://craft.gillyb.net/wiki.html#economy)
-- [Ender chest](https://craft.gillyb.net/wiki.html#storage)
-- [Chat, voice & AFK](https://craft.gillyb.net/wiki.html#chat)
-- [Bedrock menu](https://craft.gillyb.net/wiki.html#bedrock)
-- [Quality-of-life features](https://craft.gillyb.net/wiki.html#qol)
-- [All commands](https://craft.gillyb.net/wiki.html#commands)
-- [Referrals](https://craft.gillyb.net/wiki.html#referral)
-- [Rules](https://craft.gillyb.net/wiki.html#rules)
-- [Server info](https://craft.gillyb.net/wiki.html#server)
-- [Staff & ban appeals](https://craft.gillyb.net/wiki.html#support)
-- [FAQ](https://craft.gillyb.net/wiki.html#faq)
+- [Getting started](https://matchasmp.eu/wiki.html#basics)
+- [Survival rework](https://matchasmp.eu/wiki.html#survival)
+- [Recipe book](https://matchasmp.eu/recipes.html): searchable list of every survival-rework recipe (crafting, Mud Kiln, Oven, Blast Furnace, Kindling, Smithing Table, Stonecutter), with how to make each item and what it is used in.
+- [Advancement guide](https://matchasmp.eu/advancements.html): every step of the survival rework's guided advancements (Tutorial, Nether, End) with what completes each one and its rewards, plus the Angler's Almanac fish list. Made for Bedrock players, who can't open the advancements menu.
+- [World & progression](https://matchasmp.eu/wiki.html#world)
+- [Ranks](https://matchasmp.eu/wiki.html#ranks)
+- [Homes & teleporting](https://matchasmp.eu/wiki.html#travel)
+- [Points, orders & trading](https://matchasmp.eu/wiki.html#economy)
+- [Ender chest](https://matchasmp.eu/wiki.html#storage)
+- [Chat, voice & AFK](https://matchasmp.eu/wiki.html#chat)
+- [Bedrock menu](https://matchasmp.eu/wiki.html#bedrock)
+- [Quality-of-life features](https://matchasmp.eu/wiki.html#qol)
+- [All commands](https://matchasmp.eu/wiki.html#commands)
+- [Referrals](https://matchasmp.eu/wiki.html#referral)
+- [Rules](https://matchasmp.eu/wiki.html#rules)
+- [Server info](https://matchasmp.eu/wiki.html#server)
+- [Staff & ban appeals](https://matchasmp.eu/wiki.html#support)
+- [FAQ](https://matchasmp.eu/wiki.html#faq)
 
 ## Links
-- Website: https://craft.gillyb.net/
-- Wiki: https://craft.gillyb.net/wiki.html
+- Website: https://matchasmp.eu/
+- Wiki: https://matchasmp.eu/wiki.html
 - Modrinth: https://modrinth.com/server/gilly-smp
 - Simple Voice Chat (optional mod): https://modrinth.com/plugin/simple-voice-chat
 - Discord: https://discord.gg/QjfVSgzDNe
 - Store: https://gillysmp.craftingstore.net/
 
 ## Long-tail guides
-Short, question-shaped pages answering specific Gilly SMP queries. Each page is a consolidated hub with self-contained answers (FAQPage structured data). Translations live under /fr/guides/, /de/guides/ and /es/guides/.
-- [Joining a Crossplay Minecraft Server](https://craft.gillyb.net/guides/join.html): How to join a crossplay Minecraft survival server from Java, Bedrock, Xbox, PlayStation or Switch: addresses, ports, versions, accounts and the resource pack.
-- [Crossplay & Shared Progress](https://craft.gillyb.net/guides/crossplay.html): How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.
-- [Death, Hearts & Healing](https://craft.gillyb.net/guides/death-and-healing.html): Why Minecraft health doesn't regenerate on this survival rework, what dying costs in maximum hearts, and how to heal with food, potions and Crystal Hearts.
-- [Mobs, Phantoms & Darkness](https://craft.gillyb.net/guides/mobs-and-darkness.html): Why creepers and phantoms are rare on this Minecraft survival rework, how true darkness works, when the surface is safe and how sleeping speeds up nights.
-- [Alloys, Stations & Tools](https://craft.gillyb.net/guides/alloys-and-stations.html): How to make steel, Hepatizon and Electrum alloys in Minecraft, which stations unlock first, where silver is found and why iron needs a Blast Furnace.
-- [Recipes & Advancements](https://craft.gillyb.net/guides/recipes-and-advancements.html): Find every recipe and follow the advancements in a custom Minecraft survival rework, including on Bedrock, where the in-game menus are limited.
-- [World, Difficulty & Dimensions](https://craft.gillyb.net/guides/world-and-dimensions.html): Minecraft survival world guide covering Easy difficulty, terrain, when the Nether and End open, Nether portal alignment, season resets and the world border.
-- [Ender Chest, Homes & Ranks](https://craft.gillyb.net/guides/ranks-and-storage.html): How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.
-- [Server Economy: Points, Orders & Trading](https://craft.gillyb.net/guides/points-orders-trading.html): How a player-driven Minecraft survival economy works: server points, buy orders that pay out while you're offline, player trades, payments and referral rewards.
-- [Chat, Voice Chat & AFK](https://craft.gillyb.net/guides/chat-voice-afk.html): How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.
-- [Server Rules & Quality of Life](https://craft.gillyb.net/guides/rules-support-qol.html): Survival server rules on PvP, griefing, cheat mods and land claims, plus quality-of-life tweaks, ban appeals and how to reach staff on a Minecraft server.
-- [Find a Matcha Flavoured Server](https://craft.gillyb.net/guides/matcha-server.html): How to choose a Matcha Flavoured Minecraft server: what to check for server-side install, pay-to-win, platforms and crossplay. Gilly SMP is one European option.
-- [What Is Matcha Flavoured?](https://craft.gillyb.net/guides/what-is-matcha.html): What is Matcha Flavoured? A Minecraft datapack that removes hunger and natural regeneration, adds alloys and makes death less punishing for casual players.
-- [All guides](https://craft.gillyb.net/guides/): index of every topic hub.
+Short, question-shaped pages answering specific MatchaSMP queries. Each page is a consolidated hub with self-contained answers (FAQPage structured data). Translations live under /fr/guides/, /de/guides/ and /es/guides/.
+- [Joining a Crossplay Minecraft Server](https://matchasmp.eu/guides/join.html): How to join a crossplay Minecraft survival server from Java, Bedrock, Xbox, PlayStation or Switch: addresses, ports, versions, accounts and the resource pack.
+- [Crossplay & Shared Progress](https://matchasmp.eu/guides/crossplay.html): How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.
+- [Death, Hearts & Healing](https://matchasmp.eu/guides/death-and-healing.html): Why Minecraft health doesn't regenerate on this survival rework, what dying costs in maximum hearts, and how to heal with food, potions and Crystal Hearts.
+- [Mobs, Phantoms & Darkness](https://matchasmp.eu/guides/mobs-and-darkness.html): Why creepers and phantoms are rare on this Minecraft survival rework, how true darkness works, when the surface is safe and how sleeping speeds up nights.
+- [Alloys, Stations & Tools](https://matchasmp.eu/guides/alloys-and-stations.html): How to make steel, Hepatizon and Electrum alloys in Minecraft, which stations unlock first, where silver is found and why iron needs a Blast Furnace.
+- [Recipes & Advancements](https://matchasmp.eu/guides/recipes-and-advancements.html): Find every recipe and follow the advancements in a custom Minecraft survival rework, including on Bedrock, where the in-game menus are limited.
+- [World, Difficulty & Dimensions](https://matchasmp.eu/guides/world-and-dimensions.html): Minecraft survival world guide covering Easy difficulty, terrain, when the Nether and End open, Nether portal alignment, season resets and the world border.
+- [Ender Chest, Homes & Ranks](https://matchasmp.eu/guides/ranks-and-storage.html): How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.
+- [Server Economy: Points, Orders & Trading](https://matchasmp.eu/guides/points-orders-trading.html): How a player-driven Minecraft survival economy works: server points, buy orders that pay out while you're offline, player trades, payments and referral rewards.
+- [Chat, Voice Chat & AFK](https://matchasmp.eu/guides/chat-voice-afk.html): How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.
+- [Server Rules & Quality of Life](https://matchasmp.eu/guides/rules-support-qol.html): Survival server rules on PvP, griefing, cheat mods and land claims, plus quality-of-life tweaks, ban appeals and how to reach staff on a Minecraft server.
+- [Find a Matcha Flavoured Server](https://matchasmp.eu/guides/matcha-server.html): How to choose a Matcha Flavoured Minecraft server: what to check for server-side install, pay-to-win, platforms and crossplay. MatchaSMP is one European option.
+- [What Is Matcha Flavoured?](https://matchasmp.eu/guides/what-is-matcha.html): What is Matcha Flavoured? A Minecraft datapack that removes hunger and natural regeneration, adds alloys and makes death less punishing for casual players.
+- [All guides](https://matchasmp.eu/guides/): index of every topic hub.
+
+## Machine-readable pages
+Every page has a Markdown twin at the same path with a .md suffix. Fetch these directly or follow the <link rel="alternate" type="text/markdown"> element in each page's head.
+- [Home (Markdown)](https://matchasmp.eu/index.md)
+- [Wiki (Markdown)](https://matchasmp.eu/wiki.md)
+- [Recipes (Markdown)](https://matchasmp.eu/recipes.md)
+- [Advancements (Markdown)](https://matchasmp.eu/advancements.md)
+- [Joining a Crossplay Minecraft Server (Markdown)](https://matchasmp.eu/guides/join.md)
+- [Crossplay & Shared Progress (Markdown)](https://matchasmp.eu/guides/crossplay.md)
+- [Death, Hearts & Healing (Markdown)](https://matchasmp.eu/guides/death-and-healing.md)
+- [Mobs, Phantoms & Darkness (Markdown)](https://matchasmp.eu/guides/mobs-and-darkness.md)
+- [Alloys, Stations & Tools (Markdown)](https://matchasmp.eu/guides/alloys-and-stations.md)
+- [Recipes & Advancements (Markdown)](https://matchasmp.eu/guides/recipes-and-advancements.md)
+- [World, Difficulty & Dimensions (Markdown)](https://matchasmp.eu/guides/world-and-dimensions.md)
+- [Ender Chest, Homes & Ranks (Markdown)](https://matchasmp.eu/guides/ranks-and-storage.md)
+- [Server Economy: Points, Orders & Trading (Markdown)](https://matchasmp.eu/guides/points-orders-trading.md)
+- [Chat, Voice Chat & AFK (Markdown)](https://matchasmp.eu/guides/chat-voice-afk.md)
+- [Server Rules & Quality of Life (Markdown)](https://matchasmp.eu/guides/rules-support-qol.md)
+- [Find a Matcha Flavoured Server (Markdown)](https://matchasmp.eu/guides/matcha-server.md)
+- [What Is Matcha Flavoured? (Markdown)](https://matchasmp.eu/guides/what-is-matcha.md)
+- [All guides (Markdown)](https://matchasmp.eu/guides/index.md)

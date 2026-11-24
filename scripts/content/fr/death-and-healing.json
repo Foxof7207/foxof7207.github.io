@@ -4,7 +4,7 @@
   "updated": "2026-11-21",
   "h1": "Les cœurs dans Minecraft expliqués : pénalités de mort, soins et cœurs de cristal",
   "description": "Pourquoi la vie ne se régénère pas ici, ce que coûte la mort en cœurs maximum et comment se soigner : nourriture, potions et Cœurs de cristal.",
-  "intro": "La vie fonctionne différemment dans cette refonte de la survie : la régénération naturelle est désactivée, la faim a disparu et la mort coûte des cœurs maximum plutôt que des objets. Ces réponses expliquent les règles simplement. Gilly SMP sert d'exemple.",
+  "intro": "La vie fonctionne différemment dans cette refonte de la survie : la régénération naturelle est désactivée, la faim a disparu et la mort coûte des cœurs maximum plutôt que des objets. Ces réponses expliquent les règles simplement. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Se soigner",
@@ -15,7 +15,7 @@
         },
         {
           "q": "La faim compte-t-elle dans une refonte de la survie Minecraft ?",
-          "a": "La faim a pratiquement disparu sur Gilly SMP : vous ne mourez pas de faim, et la nourriture vaut pour ses effets plutôt que pour remplir une barre de faim."
+          "a": "La faim a pratiquement disparu sur MatchaSMP : vous ne mourez pas de faim, et la nourriture vaut pour ses effets plutôt que pour remplir une barre de faim."
         },
         {
           "q": "Comment retrouver des cœurs après une mort dans Minecraft ?",
@@ -23,7 +23,7 @@
         },
         {
           "q": "Quels objets soignent dans une refonte de la survie Minecraft ?",
-          "a": "Sur Gilly SMP, vous vous soignez avec les aliments qui ont des effets de soin, les potions et les objets spéciaux. La nourriture vaut pour ses effets plutôt que pour remplir une barre."
+          "a": "Sur MatchaSMP, vous vous soignez avec les aliments qui ont des effets de soin, les potions et les objets spéciaux. La nourriture vaut pour ses effets plutôt que pour remplir une barre."
         }
       ]
     },
@@ -32,19 +32,19 @@
       "items": [
         {
           "q": "Que deviennent mes objets quand je meurs en survie Minecraft ?",
-          "a": "Sur Gilly SMP, vous gardez votre inventaire et votre XP à la mort. Chaque mort retire en revanche <strong>1 cœur maximum</strong>, et les perles de l'End lancées ne disparaissent pas."
+          "a": "Sur MatchaSMP, vous gardez votre inventaire et votre XP à la mort. Chaque mort retire en revanche <strong>1 cœur maximum</strong>, et les perles de l'End lancées ne disparaissent pas."
         },
         {
           "q": "Combien de cœurs un serveur Minecraft laisse-t-il au minimum ?",
-          "a": "Sur Gilly SMP, qui tourne en difficulté Facile, vous ne descendez jamais sous <strong>10 cœurs</strong> à cause des morts."
+          "a": "Sur MatchaSMP, qui tourne en difficulté Facile, vous ne descendez jamais sous <strong>10 cœurs</strong> à cause des morts."
         },
         {
           "q": "Perd-on de l'XP en mourant dans Minecraft ?",
-          "a": "Non. Sur Gilly SMP, vous gardez votre XP à la mort, en même temps que votre inventaire."
+          "a": "Non. Sur MatchaSMP, vous gardez votre XP à la mort, en même temps que votre inventaire."
         },
         {
           "q": "Qu'est-ce qu'un cœur maximum dans Minecraft ?",
-          "a": "Un cœur maximum est le nombre de cœurs que vous pouvez atteindre. Sur Gilly SMP, chaque mort en retire un, et les Cœurs de cristal en rendent un, jusqu'à un total de 30."
+          "a": "Un cœur maximum est le nombre de cœurs que vous pouvez atteindre. Sur MatchaSMP, chaque mort en retire un, et les Cœurs de cristal en rendent un, jusqu'à un total de 30."
         }
       ]
     }

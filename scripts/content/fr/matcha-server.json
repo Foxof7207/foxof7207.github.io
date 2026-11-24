@@ -4,22 +4,22 @@
   "updated": "2026-11-21",
   "h1": "Bien choisir un serveur Matcha Flavoured : Europe, crossplay et sans pay-to-win",
   "description": "Comment choisir un serveur Minecraft Matcha Flavoured : ce qu'il faut vérifier sur l'installation côté serveur, le pay-to-win, les plateformes et le crossplay.",
-  "intro": "Vous cherchez un serveur qui fait déjà tourner le datapack Matcha Flavoured ? Ce guide liste les points à vérifier avant de choisir, et montre comment un serveur crossplay européen répond à chacun. Gilly SMP sert d'exemple.",
+  "intro": "Vous cherchez un serveur qui fait déjà tourner le datapack Matcha Flavoured ? Ce guide liste les points à vérifier avant de choisir, et montre comment un serveur crossplay européen répond à chacun. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Choisir un serveur",
       "items": [
         {
           "q": "Que vérifier avant de rejoindre un serveur Matcha Flavoured ?",
-          "a": "Vérifiez si le datapack est installé côté serveur, pour que vous n'ayez rien à installer, si le serveur est pay-to-win, combien de joueurs il accueille, où il est hébergé et quelles plateformes il prend en charge. Gilly SMP est hébergé en France, sans pay-to-win, et accueille jusqu'à 20 joueurs."
+          "a": "Vérifiez si le datapack est installé côté serveur, pour que vous n'ayez rien à installer, si le serveur est pay-to-win, combien de joueurs il accueille, où il est hébergé et quelles plateformes il prend en charge. MatchaSMP est hébergé en France, sans pay-to-win, et accueille jusqu'à 20 joueurs."
         },
         {
           "q": "Existe-t-il un serveur Matcha Flavoured européen que je peux rejoindre ?",
-          "a": "Gilly SMP est hébergé en France et fait tourner la refonte de la survie Matcha Flavoured côté serveur. Les joueurs aux États-Unis ont environ 100 ms. Connectez-vous avec <code>mc.gillyb.net</code> sur Java 26.3, ou sur Bedrock avec le port 19132."
+          "a": "MatchaSMP est hébergé en France et fait tourner la refonte de la survie Matcha Flavoured côté serveur. Les joueurs aux États-Unis ont environ 100 ms. Connectez-vous avec <code>play.matchasmp.eu</code> sur Java 26.3, ou sur Bedrock avec le port 19132."
         },
         {
           "q": "Peut-on rejoindre un serveur Matcha Flavoured sans installer le datapack ?",
-          "a": "Oui, sur Gilly SMP. Le datapack tourne sur le serveur : les joueurs Java ajoutent simplement <code>mc.gillyb.net</code> et rejoignent avec Minecraft 26.3. Le serveur envoie son pack de ressources automatiquement à la connexion ; acceptez la demande pour voir les noms et les textures des objets personnalisés."
+          "a": "Oui, sur MatchaSMP. Le datapack tourne sur le serveur : les joueurs Java ajoutent simplement <code>play.matchasmp.eu</code> et rejoignent avec Minecraft 26.3. Le serveur envoie son pack de ressources automatiquement à la connexion ; acceptez la demande pour voir les noms et les textures des objets personnalisés."
         }
       ]
     },
@@ -28,15 +28,15 @@
       "items": [
         {
           "q": "Existe-t-il un serveur Matcha Flavoured avec crossplay Java et Bedrock ?",
-          "a": "Gilly SMP en est un. Les joueurs Java, Bedrock et console partagent un même monde, et <code>/linkaccount</code> permet de lier deux comptes pour partager la progression. Bedrock ne peut pas charger le pack de ressources Java : les objets personnalisés y apparaissent avec les textures vanilla, mais chaque mécanique fonctionne."
+          "a": "MatchaSMP en est un. Les joueurs Java, Bedrock et console partagent un même monde, et <code>/linkaccount</code> permet de lier deux comptes pour partager la progression. Bedrock ne peut pas charger le pack de ressources Java : les objets personnalisés y apparaissent avec les textures vanilla, mais chaque mécanique fonctionne."
         },
         {
           "q": "Peut-on jouer à un serveur Matcha Flavoured sur Xbox, PlayStation ou Switch ?",
-          "a": "Sur Gilly SMP, oui. Ajoutez <code>GillySMP</code> comme ami sur votre console et rejoignez depuis l'onglet Amis. Le fabricant de la console exige un abonnement en ligne. Les joueurs console peuvent utiliser <code>/menu</code> pour les commandes les plus courantes."
+          "a": "Sur MatchaSMP, oui. Ajoutez <code>MatchaSMP</code> comme ami sur votre console et rejoignez depuis l'onglet Amis. Le fabricant de la console exige un abonnement en ligne. Les joueurs console peuvent utiliser <code>/menu</code> pour les commandes les plus courantes."
         },
         {
           "q": "Comment rejoindre un serveur Matcha Flavoured en crossplay ?",
-          "a": "Sur Java, ajoutez <code>mc.gillyb.net</code> avec Minecraft 26.3 et acceptez la demande de pack de ressources. Sur Bedrock, ajoutez <code>mc.gillyb.net</code> sur le port 19132. Sur console, ajoutez <code>GillySMP</code> comme ami. Exécutez <code>/linkaccount</code> si vous jouez sur plusieurs plateformes."
+          "a": "Sur Java, ajoutez <code>play.matchasmp.eu</code> avec Minecraft 26.3 et acceptez la demande de pack de ressources. Sur Bedrock, ajoutez <code>play.matchasmp.eu</code> sur le port 19132. Sur console, ajoutez <code>MatchaSMP</code> comme ami. Exécutez <code>/linkaccount</code> si vous jouez sur plusieurs plateformes."
         }
       ]
     },
@@ -45,11 +45,11 @@
       "items": [
         {
           "q": "Existe-t-il un serveur Matcha Flavoured sans pay-to-win ?",
-          "a": "Gilly SMP est sans pay-to-win. La boutique ne vend que des cosmétiques et des améliorations de confort, et les rangs donnent des avantages de confort, comme plus de maisons et de rangées de coffre de l'End. L'économie est pilotée par les joueurs : vous gagnez des points en vendant à d'autres joueurs."
+          "a": "MatchaSMP est sans pay-to-win. La boutique ne vend que des cosmétiques et des améliorations de confort, et les rangs donnent des avantages de confort, comme plus de maisons et de rangées de coffre de l'End. L'économie est pilotée par les joueurs : vous gagnez des points en vendant à d'autres joueurs."
         },
         {
           "q": "Existe-t-il un serveur de survie Matcha Flavoured casual et à rythme lent ?",
-          "a": "Gilly SMP est conçu pour les joueurs casual et adultes qui ne veulent ni farms de mobs, ni farms d'XP, ni salles d'échange. Il tourne en Facile, la régénération naturelle est désactivée, et la progression est guidée par les progrès pour que vous preniez votre temps."
+          "a": "MatchaSMP est conçu pour les joueurs casual et adultes qui ne veulent ni farms de mobs, ni farms d'XP, ni salles d'échange. Il tourne en Facile, la régénération naturelle est désactivée, et la progression est guidée par les progrès pour que vous preniez votre temps."
         }
       ]
     }
@@ -57,7 +57,7 @@
   "deeper": [
     {"url": "/fr/wiki.html#server", "label": "Wiki : Infos serveur"},
     {"url": "/fr/wiki.html#basics", "label": "Wiki : Premiers pas"},
-    {"url": "/fr/guides/join.html", "label": "Comment rejoindre Gilly SMP"}
+    {"url": "/fr/guides/join.html", "label": "Comment rejoindre MatchaSMP"}
   ],
   "related": [
     {"url": "/fr/guides/what-is-matcha.html", "label": "Qu'est-ce que Matcha Flavoured ?"},

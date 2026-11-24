@@ -4,22 +4,22 @@
   "updated": "2026-11-21",
   "h1": "How to Join a Minecraft Survival Server From Java, Bedrock or Console",
   "description": "How to join a crossplay Minecraft survival server from Java, Bedrock, Xbox, PlayStation or Switch: addresses, ports, versions, accounts and the resource pack.",
-  "intro": "Want to play Minecraft survival with friends who use a different device? This guide explains how Java, Bedrock and console players connect to one shared crossplay server. Gilly SMP is used as the worked example.",
+  "intro": "Want to play Minecraft survival with friends who use a different device? This guide explains how Java, Bedrock and console players connect to one shared crossplay server. MatchaSMP is used as the worked example.",
   "groups": [
     {
       "title": "Server addresses by platform",
       "items": [
         {
           "q": "Which address and port do Bedrock players use to join a Minecraft server?",
-          "a": "On Gilly SMP, Bedrock players use the address <code>mc.gillyb.net</code> with port <strong>19132</strong>. On Windows, Android, iPhone and iPad, the Add to Minecraft button on the server page opens the game with the server already added."
+          "a": "On MatchaSMP, Bedrock players use the address <code>play.matchasmp.eu</code> with port <strong>19132</strong>. On Windows, Android, iPhone and iPad, the Add to Minecraft button on the server page opens the game with the server already added."
         },
         {
           "q": "Which Minecraft Java version do I need to join a survival server?",
-          "a": "Gilly SMP requires Minecraft Java <strong>26.3</strong>, so older versions can't connect. Use the address <code>mc.gillyb.net</code>, and Java, Bedrock and console players all share the same world."
+          "a": "MatchaSMP requires Minecraft Java <strong>26.3</strong>, so older versions can't connect. Use the address <code>play.matchasmp.eu</code>, and Java, Bedrock and console players all share the same world."
         },
         {
           "q": "How do I join a Minecraft server from Xbox, PlayStation or Switch?",
-          "a": "Add <strong>GillySMP</strong> as a friend on your console and join from the Friends tab. Your console maker requires an online subscription to play online, so you need one to connect."
+          "a": "Add <strong>MatchaSMP</strong> as a friend on your console and join from the Friends tab. Your console maker requires an online subscription to play online, so you need one to connect."
         }
       ]
     },
@@ -28,11 +28,11 @@
       "items": [
         {
           "q": "Can I join a Minecraft server with a cracked or offline launcher?",
-          "a": "No. Gilly SMP runs in online mode, so only legitimate paid accounts can join. Cracked and offline launchers can't connect."
+          "a": "No. MatchaSMP runs in online mode, so only legitimate paid accounts can join. Cracked and offline launchers can't connect."
         },
         {
           "q": "Do I need to be on a whitelist to join a Minecraft server?",
-          "a": "Not on Gilly SMP. There is no whitelist, so anyone with a legitimate account can join. The server holds up to <strong>20 players</strong>."
+          "a": "Not on MatchaSMP. There is no whitelist, so anyone with a legitimate account can join. The server holds up to <strong>20 players</strong>."
         },
         {
           "q": "Why does my Bedrock name start with an underscore on a Java server?",
@@ -45,11 +45,11 @@
       "items": [
         {
           "q": "Do I need a resource pack to play on a Minecraft server with custom items?",
-          "a": "On Java, yes. Gilly SMP sends its resource pack automatically when you join, so just accept the prompt. Without it, custom items look vanilla and some have raw text names. Bedrock can't load Java packs, so Bedrock players see vanilla textures, but everything still works."
+          "a": "On Java, yes. MatchaSMP sends its resource pack automatically when you join, so just accept the prompt. Without it, custom items look vanilla and some have raw text names. Bedrock can't load Java packs, so Bedrock players see vanilla textures, but everything still works."
         },
         {
           "q": "Which mods can I use on a Minecraft survival server?",
-          "a": "Client-side mods such as performance tools, minimaps, shaders and voice chat are fine on Gilly SMP. Cheat mods like X-ray, freecam or hacked clients are not allowed, and the server runs anti-cheat."
+          "a": "Client-side mods such as performance tools, minimaps, shaders and voice chat are fine on MatchaSMP. Cheat mods like X-ray, freecam or hacked clients are not allowed, and the server runs anti-cheat."
         },
         {
           "q": "What should I do first after joining a survival server?",

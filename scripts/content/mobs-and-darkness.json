@@ -4,30 +4,30 @@
   "updated": "2026-11-21",
   "h1": "Why Are There So Few Monsters Outside? Mobs, Phantoms and True Darkness in Minecraft",
   "description": "Why creepers and phantoms are rare on this Minecraft survival rework, how true darkness works, when the surface is safe and how sleeping speeds up nights.",
-  "intro": "This survival rework changes which monsters appear in the open, removes phantoms and uses true darkness. These answers explain what spawns where, how sleeping works and when the surface stops being dangerous. Gilly SMP is the worked example.",
+  "intro": "This survival rework changes which monsters appear in the open, removes phantoms and uses true darkness. These answers explain what spawns where, how sleeping works and when the surface stops being dangerous. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Monsters and spawns",
       "items": [
         {
           "q": "Why don't creepers spawn in the open in Minecraft?",
-          "a": "On Gilly SMP, creepers, spiders, endermen, witches and slimes don't spawn in the open Overworld. Zombies, skeletons and other undead still spawn at night, so caves and ruins are where the real danger is."
+          "a": "On MatchaSMP, creepers, spiders, endermen, witches and slimes don't spawn in the open Overworld. Zombies, skeletons and other undead still spawn at night, so caves and ruins are where the real danger is."
         },
         {
           "q": "Do endermen and witches spawn in the open in Minecraft?",
-          "a": "Not on Gilly SMP. Endermen, witches and slimes don't spawn in the open Overworld, the same as creepers and spiders."
+          "a": "Not on MatchaSMP. Endermen, witches and slimes don't spawn in the open Overworld, the same as creepers and spiders."
         },
         {
           "q": "Where is the real danger in Minecraft survival?",
-          "a": "On Gilly SMP, caves and ruins are where the real danger is. Zombies and skeletons still spawn in the open at night, so bring a weapon and light."
+          "a": "On MatchaSMP, caves and ruins are where the real danger is. Zombies and skeletons still spawn in the open at night, so bring a weapon and light."
         },
         {
           "q": "Are phantoms disabled in this Minecraft survival rework?",
-          "a": "Yes. Phantoms are disabled on Gilly SMP, so staying up at night doesn't bring them after you."
+          "a": "Yes. Phantoms are disabled on MatchaSMP, so staying up at night doesn't bring them after you."
         },
         {
           "q": "When is the surface safe in Minecraft survival?",
-          "a": "On Gilly SMP, once the Ender Dragon is defeated for the first time, evil is banished from the surface for everyone. Nothing hostile spawns in the open any more."
+          "a": "On MatchaSMP, once the Ender Dragon is defeated for the first time, evil is banished from the surface for everyone. Nothing hostile spawns in the open any more."
         }
       ]
     },
@@ -36,7 +36,7 @@
       "items": [
         {
           "q": "What is true darkness in Minecraft?",
-          "a": "The Overworld uses true darkness: with no light source it's pitch black. Carry torches. Fullbright resource packs are forbidden on Gilly SMP."
+          "a": "The Overworld uses true darkness: with no light source it's pitch black. Carry torches. Fullbright resource packs are forbidden on MatchaSMP."
         },
         {
           "q": "How does sleeping work in Minecraft multiplayer?",
@@ -44,7 +44,7 @@
         },
         {
           "q": "Do explosions destroy blocks in Minecraft?",
-          "a": "On Gilly SMP, explosions drop all the blocks they destroy, so you keep the materials even when a blast goes off near your base."
+          "a": "On MatchaSMP, explosions drop all the blocks they destroy, so you keep the materials even when a blast goes off near your base."
         }
       ]
     }

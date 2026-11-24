@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Wiki de Gilly SMP – Commandes, Rangs, Refonte de la survie et guides</title>
-  <meta name="description" content="Wiki joueur de Gilly SMP : rejoindre, refonte de la survie, rangs, maisons, téléportations, points, commandes, échanges, coffre de l'End, chat, chat vocal, menu Bedrock, confort de jeu et FAQ.">
-  <link rel="canonical" href="https://craft.gillyb.net/fr/wiki.html">
+  <title>Wiki de MatchaSMP – Commandes, Rangs, Refonte de la survie et guides</title>
+  <meta name="description" content="Wiki joueur de MatchaSMP : rejoindre, refonte de la survie, rangs, maisons, téléportations, points, commandes, échanges, coffre de l'End, chat, chat vocal, menu Bedrock, confort de jeu et FAQ.">
+  <link rel="canonical" href="https://matchasmp.eu/fr/wiki.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
-  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/wiki.html">
-  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/wiki.html">
-  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/wiki.html">
-  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/wiki.html">
-  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/wiki.html">
+  <link rel="alternate" type="text/markdown" href="/fr/wiki.md" title="Markdown version">
+  <link rel="describedby" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="alternate" hreflang="en" href="https://matchasmp.eu/wiki.html">
+  <link rel="alternate" hreflang="fr" href="https://matchasmp.eu/fr/wiki.html">
+  <link rel="alternate" hreflang="de" href="https://matchasmp.eu/de/wiki.html">
+  <link rel="alternate" hreflang="es" href="https://matchasmp.eu/es/wiki.html">
+  <link rel="alternate" hreflang="x-default" href="https://matchasmp.eu/wiki.html">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -25,12 +27,12 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Wiki de Gilly SMP",
-  "url": "https://craft.gillyb.net/fr/wiki.html",
-  "description": "Wiki joueur de Gilly SMP, serveur Minecraft survie crossplay avec une refonte de la survie : rejoindre, rangs, maisons, points, échanges, chat, chat vocal, menu Bedrock et confort de jeu.",
+  "name": "Wiki de MatchaSMP",
+  "url": "https://matchasmp.eu/fr/wiki.html",
+  "description": "Wiki joueur de MatchaSMP, serveur Minecraft survie crossplay avec une refonte de la survie : rejoindre, rangs, maisons, points, échanges, chat, chat vocal, menu Bedrock et confort de jeu.",
   "inLanguage": "fr",
   "dateModified": "2026-10-26",
-  "isPartOf": { "@id": "https://craft.gillyb.net/#website" }
+  "isPartOf": { "@id": "https://matchasmp.eu/#website" }
 }
   </script>
 <script defer src="https://u.crbo.dev/script.js" data-website-id="2aae1459-9c84-422e-a850-317547da79fc" data-exclude-hash="true"></script>
@@ -52,7 +54,7 @@
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Boutique</a>
       </nav>
       <a class="brand" href="/fr/">
-        <span>Gilly<b>SMP</b></span>
+        <span>Matcha<b>SMP</b></span>
       </a>
       <nav class="nav-links right" aria-label="Ressources">
         <a href="/fr/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recettes</a>
@@ -65,8 +67,8 @@
   </header>
 
   <main id="main" class="wiki container">
-    <h1>Wiki de Gilly SMP</h1>
-    <p class="sec-intro">Le fonctionnement complet de Gilly SMP : Java, Bedrock et console, un seul monde partagé. Appuyez sur <kbd>/</kbd> pour rechercher.</p>
+    <h1>Wiki de MatchaSMP</h1>
+    <p class="sec-intro">Le fonctionnement complet de MatchaSMP : Java, Bedrock et console, un seul monde partagé. Appuyez sur <kbd>/</kbd> pour rechercher.</p>
     <div class="wiki-search-slot">
       <div class="wiki-search" role="search">
       <i class="ic" style="--i:url(/assets/icons/search.svg)" aria-hidden="true"></i>
@@ -84,10 +86,10 @@
 
         <article id="basics">
           <h2>Premiers pas</h2>
-          <div class="qa"><h3>Quel type de serveur est Gilly SMP ?</h3><p>Un <strong>SMP survie</strong> à rythme lent, sans pay-to-win (difficulté Facile, jusqu'à 20 joueurs, mode en ligne, pas de liste blanche) avec une <a href="#survival">refonte de la survie</a>. La progression est repensée et plus lente pour que les joueurs casual suivent sans farms de mobs ni farms d'XP. Les joueurs Java, Bedrock et console partagent un seul monde.</p></div>
-          <div class="qa"><h3>Comment rejoindre ?</h3><p>Utilisez les <a href="/fr/#join">cartes Comment rejoindre</a>. Java : <code>mc.gillyb.net</code> (Minecraft Java <strong>26.3</strong>, requis). Bedrock : <code>mc.gillyb.net</code>, port <code>19132</code> (sur Windows, Android, iPhone et iPad, le bouton <a href="/fr/#join">Ajouter à Minecraft</a> de la carte Bedrock ouvre le jeu avec le serveur déjà ajouté). Console : ajoutez <strong>GillySMP</strong> comme ami et rejoignez depuis l'onglet Amis (l'abonnement en ligne de votre console est requis par le fabricant de la console).</p></div>
+          <div class="qa"><h3>Quel type de serveur est MatchaSMP ?</h3><p>Un <strong>SMP survie</strong> à rythme lent, sans pay-to-win (difficulté Facile, jusqu'à 20 joueurs, mode en ligne, pas de liste blanche) avec une <a href="#survival">refonte de la survie</a>. La progression est repensée et plus lente pour que les joueurs casual suivent sans farms de mobs ni farms d'XP. Les joueurs Java, Bedrock et console partagent un seul monde.</p></div>
+          <div class="qa"><h3>Comment rejoindre ?</h3><p>Utilisez les <a href="/fr/#join">cartes Comment rejoindre</a>. Java : <code>play.matchasmp.eu</code> (Minecraft Java <strong>26.3</strong>, requis). Bedrock : <code>play.matchasmp.eu</code>, port <code>19132</code> (sur Windows, Android, iPhone et iPad, le bouton <a href="/fr/#join">Ajouter à Minecraft</a> de la carte Bedrock ouvre le jeu avec le serveur déjà ajouté). Console : ajoutez <strong>MatchaSMP</strong> comme ami et rejoignez depuis l'onglet Amis (l'abonnement en ligne de votre console est requis par le fabricant de la console).</p></div>
           <div class="qa"><h3>Ai-je besoin d'un compte Minecraft payant ?</h3><p>Oui. Le serveur fonctionne en mode en ligne : les lanceurs crackés ou hors ligne ne peuvent pas rejoindre.</p></div>
-          <div class="qa"><h3>Ai-je besoin d'un pack de ressources ?</h3><p>Sur Java, oui : le serveur ajoute des centaines d'objets personnalisés qui nécessitent le <strong>pack de ressources de Gilly SMP</strong>. Le serveur l'envoie automatiquement quand vous rejoignez : acceptez simplement la demande, il n'y a rien à télécharger. Sans lui, les objets ressemblent à la version vanilla et certains ont des noms textuels bruts. Bedrock ne peut pas charger les packs Java : les joueurs Bedrock voient donc les textures vanilla et quelques clés brutes ; tout fonctionne quand même.</p></div>
+          <div class="qa"><h3>Ai-je besoin d'un pack de ressources ?</h3><p>Sur Java, oui : le serveur ajoute des centaines d'objets personnalisés qui nécessitent le <strong>pack de ressources de MatchaSMP</strong>. Le serveur l'envoie automatiquement quand vous rejoignez : acceptez simplement la demande, il n'y a rien à télécharger. Sans lui, les objets ressemblent à la version vanilla et certains ont des noms textuels bruts. Bedrock ne peut pas charger les packs Java : les joueurs Bedrock voient donc les textures vanilla et quelques clés brutes ; tout fonctionne quand même.</p></div>
           <div class="qa"><h3>Ai-je besoin de mods ?</h3><p>Non. Les mods côté client (performances, minimaps, shaders, <a href="#chat">chat vocal</a>) sont autorisés. Les mods de triche (X-ray, freecam, clients modifiés) ne le sont pas, et le serveur utilise un anti-triche. Le staff peut demander l'installation d'un mod de vérification en cas de soupçon.</p></div>
           <div class="qa"><h3>Pourquoi mon pseudo Bedrock commence-t-il par un tiret bas ?</h3><p>Les pseudos Bedrock reçoivent un préfixe <code>_</code> (et les espaces deviennent des tirets bas) pour ne jamais entrer en conflit avec les pseudos Java. Le préfixe est le même sur le proxy et sur le serveur : vous gardez un seul pseudo partout.</p></div>
           <div class="qa"><h3>Je joue sur Java et Bedrock. Puis-je garder ma progression ?</h3><p>Oui. Exécutez <code>/linkaccount</code> sur un compte et suivez les instructions pour le lier à l'autre. <code>/unlinkaccount</code> annule la liaison. Une fois liés, les deux comptes partagent un seul profil de joueur.</p></div>
@@ -97,7 +99,7 @@
 
         <article id="survival">
           <h2>Refonte de la survie</h2>
-          <p class="sec-intro">La refonte personnalisée de la survie sur Gilly SMP : un jeu lent et casual, sans farms de mobs, sans farms d'XP et sans salles d'échange de villageois. Nous vous invitons à la découvrir à travers les progrès (appuyez sur <kbd>L</kbd>), donc cette section reste sans spoilers.</p>
+          <p class="sec-intro">La refonte personnalisée de la survie sur MatchaSMP : un jeu lent et casual, sans farms de mobs, sans farms d'XP et sans salles d'échange de villageois. Nous vous invitons à la découvrir à travers les progrès (appuyez sur <kbd>L</kbd>), donc cette section reste sans spoilers.</p>
           <div class="qa"><h3>Qu'est-ce que la refonte de la survie ?</h3><p>Un ensemble de changements conçus pour Minecraft 26.3. Elle ajoute environ 1275 recettes, 880 progrès, 290 échanges de villageois, 31 nouveaux enchantements et 43 enchantements modifiés, 13 structures, 7 disques musicaux, 10 motifs de bannière, 3 matériaux de garniture et environ 50 aliments. Elle remplace de nombreux progrès et recettes vanilla par les siens.</p></div>
           <div class="qa"><h3>Pourquoi ne puis-je pas me soigner ?</h3><p>La régénération naturelle de la vie est désactivée. Vous vous soignez avec les effets des aliments, les potions et des objets spéciaux. La faim a pratiquement disparu : vous ne mourez pas de faim, et la nourriture sert pour ses effets plutôt que pour remplir une barre.</p></div>
           <div class="qa"><h3>Que se passe-t-il quand je meurs ?</h3><p>Vous <strong>gardez votre inventaire et votre XP</strong>, mais perdez <strong>1 cœur maximum</strong>. En Facile (ce serveur), vous ne descendez jamais sous 10 cœurs. Les Cœurs de cristal rendent un cœur maximum, jusqu'à 30. Les perles de l'End lancées ne disparaissent pas à la mort.</p></div>
@@ -152,7 +154,7 @@
           <p class="sec-intro">Toutes les téléportations ont un <strong>délai de 3 secondes</strong> : restez immobile et ne subissez aucun dégât, sinon la téléportation est annulée. Cela empêche de se téléporter pour fuir un combat.</p>
           <div class="qa"><h3>Comment aller au spawn ?</h3><p><code>/spawn</code>. Le staff définit le point de spawn en jeu, il est donc le même pour tout le monde.</p></div>
           <div class="qa"><h3>Que trouve-t-on au spawn ?</h3><p>Les PNJ <strong>Ordre</strong> et <strong>eShop</strong> sont disponibles au spawn, vous pouvez donc accéder au marché des commandes et à la boutique sans commande. Des salles au spawn peuvent aussi être <strong>louées</strong>. Contactez <strong>@Foxof7207</strong> sur <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">Discord</a> pour en savoir plus.</p></div>
-          <div class="qa"><h3>Comment voter pour le serveur ?</h3><p>Tapez <code>/vote</code> pour voter pour Gilly SMP et gagner des points. Vous pouvez revoter après le délai d'attente de chaque site de vote.</p></div>
+          <div class="qa"><h3>Comment voter pour le serveur ?</h3><p>Tapez <code>/vote</code> pour voter pour MatchaSMP et gagner des points. Vous pouvez revoter après le délai d'attente de chaque site de vote.</p></div>
           <div class="qa"><h3>Comment définir une maison ?</h3><p><code>/sethome &lt;nom&gt;</code> à l'endroit où vous vous trouvez. Vous avez <strong>2 maisons</strong>, davantage avec un <a href="#ranks">rang</a>. Les noms peuvent contenir des lettres, des chiffres, <code>-</code> et <code>_</code>, jusqu'à 16 caractères. Utiliser un nom existant déplace cette maison.</p></div>
           <div class="qa"><h3>Comment rentrer chez moi ?</h3><p><code>/home &lt;nom&gt;</code>, ou simplement <code>/home</code> si vous n'en avez qu'une. <code>/homes</code> les liste ; cliquez sur l'une pour y aller.</p></div>
           <div class="qa"><h3>Comment supprimer ou modifier une maison ?</h3><p><code>/delhome &lt;nom&gt;</code> la supprime. <code>/edithome &lt;nom&gt;</code> la renomme, la déplace, la décrit ou la rend publique ou privée.</p></div>
@@ -241,7 +243,7 @@
 
         <article id="rules">
           <h2>Règles</h2>
-          <div class="qa"><h3>Gilly SMP est-il pay-to-win ?</h3><p>Non. La <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">boutique</a> ne vend que des améliorations de confort et des cosmétiques.</p></div>
+          <div class="qa"><h3>MatchaSMP est-il pay-to-win ?</h3><p>Non. La <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">boutique</a> ne vend que des améliorations de confort et des cosmétiques.</p></div>
           <div class="qa"><h3>La triche est-elle autorisée ?</h3><p>Non. Un anti-triche fonctionne, et les mods comme X-ray, freecam ou Wurst sont interdits. Les joueurs suspectés peuvent être invités à installer un mod de vérification.</p></div>
           <div class="qa"><h3>Le PvP est-il autorisé ?</h3><p>Oui, s'il est loyal. Pas de tp-trapping ni de spawn-killing. Les téléportations ont un délai de 3 secondes que le mouvement ou les dégâts annulent, vous ne pouvez donc pas vous téléporter pour fuir un combat.</p></div>
           <div class="qa"><h3>Le grief et le vol sont-ils autorisés ?</h3><p>Non. Première infraction : un avertissement. Deuxième : un bannissement temporaire.</p></div>
@@ -276,7 +278,7 @@
           <div class="qa"><h3>Pourquoi y a-t-il si peu de monstres à l'extérieur ?</h3><p>Les creepers, araignées et autres monstres non morts-vivants n'apparaissent pas à découvert. Les zombies et squelettes apparaissent toujours la nuit.</p></div>
           <div class="qa"><h3>« Cette commande n'est pas disponible »</h3><p>Seules les commandes joueur sont activées. Voir <a href="#commands">Toutes les commandes</a>.</p></div>
           <div class="qa"><h3>Comment me téléporter vers un ami ?</h3><p><code>/tpa &lt;nom&gt;</code>, puis il tape <code>/tpaccept</code>. Voir <a href="#travel">Maisons &amp; téléportation</a>.</p></div>
-          <div class="qa"><h3>Mes messages de chat ne sont pas vus par tout le monde.</h3><p>Le chat est global sur Gilly SMP : tout le monde voit vos messages. Il n'y a pas de chat à portée et pas besoin d'utiliser <code>!</code>. Si un message semble manquer, vérifiez si vous avez été réduit au silence pour spam. Voir <a href="#chat">Chat, chat vocal &amp; AFK</a>.</p></div>
+          <div class="qa"><h3>Mes messages de chat ne sont pas vus par tout le monde.</h3><p>Le chat est global sur MatchaSMP : tout le monde voit vos messages. Il n'y a pas de chat à portée et pas besoin d'utiliser <code>!</code>. Si un message semble manquer, vérifiez si vous avez été réduit au silence pour spam. Voir <a href="#chat">Chat, chat vocal &amp; AFK</a>.</p></div>
           <div class="qa"><h3>J'ai été déconnecté pour inactivité (AFK).</h3><p>Les joueurs AFK pendant 15 minutes sont déconnectés pour garder le serveur rapide. Reconnectez-vous simplement.</p></div>
           <div class="qa"><h3>Je joue sur Bedrock et je ne trouve pas une recette.</h3><p>Le livre de recettes de Bedrock n'affiche que les recettes de l'établi. Utilisez le <a href="recipes.html">Livre de recettes</a> pour le reste (Four à boue, Four, haut-fourneau, Allumage, table de forge). Il indique aussi quel objet vanilla ressemble à chaque objet personnalisé sur Bedrock.</p></div>
           <div class="qa"><h3>Je joue sur Bedrock et taper les commandes est pénible.</h3><p>Utilisez <code>/menu</code>. Voir <a href="#bedrock">Menu Bedrock</a>.</p></div>
@@ -299,8 +301,8 @@
           <button role="tab" data-q="console" aria-selected="false">Console</button>
         </div>
         <div class="quick-row">
-          <code class="quick-addr" id="quick-addr" aria-live="polite">mc.gillyb.net</code>
-          <button class="copy" id="quick-copy" data-copy="mc.gillyb.net"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copier</button>
+          <code class="quick-addr" id="quick-addr" aria-live="polite">play.matchasmp.eu</code>
+          <button class="copy" id="quick-copy" data-copy="play.matchasmp.eu"><i class="ic" style="--i:url(/assets/icons/copy.svg)" aria-hidden="true"></i> Copier</button>
         </div>
         <p class="quick-note" id="quick-note">Java 26.3 requis.</p>
         <p class="status" id="status" hidden><span class="dot" aria-hidden="true"></span><span id="status-text"></span></p>
@@ -312,7 +314,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
-        <a class="brand" href="/fr/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <a class="brand" href="/fr/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Matcha<b>SMP</b></span></a>
         <p>Un SMP survie crossplay sans pay-to-win. Java, Bedrock et console, un seul monde.</p>
       </div>
       <nav class="f-col" aria-label="Explorer">
@@ -332,8 +334,8 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Dernière mise à jour <time datetime="2026-10-26">26 octobre 2026</time></p>
-      <p class="legal">Gilly SMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni associé à Mojang ou Microsoft.</p>
+      <p>© 2026 MatchaSMP · Dernière mise à jour <time datetime="2026-10-26">26 octobre 2026</time></p>
+      <p class="legal">MatchaSMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni associé à Mojang ou Microsoft.</p>
     </div>
   </footer>
   <script src="/js/main.js"></script>

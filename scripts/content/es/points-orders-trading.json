@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Economía de un servidor de Minecraft: puntos, pedidos de compra e intercambios entre jugadores",
   "description": "Cómo funciona una economía de Minecraft dirigida por jugadores: puntos, pedidos de compra, intercambios, pagos y referidos.",
-  "intro": "Algunos servidores de supervivencia tienen una economía dirigida por los jugadores en lugar de una tienda, así que los objetos cambian de manos entre jugadores. Esta guía explica los puntos, los pedidos de compra, los intercambios y las recompensas por referidos. Gilly SMP sirve de ejemplo.",
+  "intro": "Algunos servidores de supervivencia tienen una economía dirigida por los jugadores en lugar de una tienda, así que los objetos cambian de manos entre jugadores. Esta guía explica los puntos, los pedidos de compra, los intercambios y las recompensas por referidos. MatchaSMP sirve de ejemplo.",
   "groups": [
     {
       "title": "Puntos y pagos entre jugadores",
       "items": [
         {
           "q": "¿Cómo funciona una economía dirigida por los jugadores en un servidor de supervivencia de Minecraft?",
-          "a": "En Gilly SMP, la economía la dirigen totalmente los jugadores. Se venden objetos entre ellos a través del mercado de pedidos o en intercambios, y los puntos son la moneda del servidor. Todos los precios del servidor se expresan en puntos."
+          "a": "En MatchaSMP, la economía la dirigen totalmente los jugadores. Se venden objetos entre ellos a través del mercado de pedidos o en intercambios, y los puntos son la moneda del servidor. Todos los precios del servidor se expresan en puntos."
         },
         {
           "q": "¿Cómo gano puntos en un servidor de supervivencia de Minecraft?",
@@ -32,7 +32,7 @@
         },
         {
           "q": "¿Cuántos pedidos de compra puedo tener a la vez en Minecraft?",
-          "a": "En Gilly SMP puedes tener 5 pedidos activos, con más según el rango: 7 en Bronce, 10 en Oro y 15 en Diamante. Los pedidos caducan a los 14 días."
+          "a": "En MatchaSMP puedes tener 5 pedidos activos, con más según el rango: 7 en Bronce, 10 en Oro y 15 en Diamante. Los pedidos caducan a los 14 días."
         },
         {
           "q": "¿Los pedidos de compra de Minecraft exigen el objeto exacto?",

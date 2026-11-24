@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the long-tail SEO guide hubs for the Gilly SMP site, in four languages.
+"""Generate the long-tail SEO guide hubs for the MatchaSMP site, in four languages.
 
 Visible Q&A text and FAQPage JSON-LD come from the same JSON content files, so the two
 cannot drift:
@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "scripts" / "content"
-SITE = "https://craft.gillyb.net"
+SITE = "https://matchasmp.eu"
 OG_IMAGE = SITE + "/assets/og-image.jpg"
 ANALYTICS_ID = "2aae1459-9c84-422e-a850-317547da79fc"
 LANGS = ["en", "fr", "de", "es"]
@@ -58,16 +58,16 @@ QUESTIONS_RANGE = (8, 14)
 INDEX_DESCRIPTION = {
     "en": ("Guides to Minecraft survival: crossplay between Java, Bedrock and console, "
            "hearts and healing, mobs and darkness, crafting and alloys, server economy "
-           "and rules, with examples from Gilly SMP."),
+           "and rules, with examples from MatchaSMP."),
     "fr": ("Guides de survie Minecraft : crossplay entre Java, Bedrock et console, cœurs "
            "et soins, monstres et obscurité, artisanat et alliages, économie et règles "
-           "de serveur, avec des exemples tirés de Gilly SMP."),
+           "de serveur, avec des exemples tirés de MatchaSMP."),
     "de": ("Leitfäden zum Minecraft-Survival: Crossplay zwischen Java, Bedrock und Konsole, "
            "Herzen und Heilung, Mobs und Dunkelheit, Crafting und Legierungen, Serverwirtschaft "
-           "und Regeln, mit Beispielen von Gilly SMP."),
+           "und Regeln, mit Beispielen von MatchaSMP."),
     "es": ("Guías de supervivencia de Minecraft: crossplay entre Java, Bedrock y consola, "
            "corazones y curación, mobs y oscuridad, crafteo y aleaciones, economía del servidor "
-           "y reglas, con ejemplos de Gilly SMP."),
+           "y reglas, con ejemplos de MatchaSMP."),
 }
 
 STR = {
@@ -81,17 +81,17 @@ STR = {
         "recipe_book": "Recipe Book", "advancement_guide": "Advancement Guide",
         "last_updated": "Last updated",
         "tagline": "A non pay-to-win crossplay survival SMP. Java, Bedrock and console, one world.",
-        "legal": ("Gilly SMP is not an official Minecraft service and is not approved by or "
+        "legal": ("MatchaSMP is not an official Minecraft service and is not approved by or "
                   "associated with Mojang or Microsoft. Item textures come from Minecraft and "
                   "the server resource pack."),
         "crumb_home": "Home", "crumb_wiki": "Wiki", "crumb_guides": "Guides",
         "answers": "answers", "full_wiki": "Full wiki →", "go_deeper": "Go deeper",
         "related": "Related guides", "read": "Read guide →", "browse": "Browse by topic",
-        "hub_suffix": " – Gilly SMP Guide",
+        "hub_suffix": " – MatchaSMP Guide",
         "index_title": "Minecraft Survival Guides – Crossplay, Rules & Progression",
         "index_name": "Minecraft survival guides", "index_h1": "Minecraft survival <em>guides</em>",
         "index_sub": ("Clear answers to common Minecraft survival questions: crossplay, hearts and "
-                      "healing, mobs, crafting, economy and server rules. Examples come from Gilly SMP."),
+                      "healing, mobs, crafting, economy and server rules. Examples come from MatchaSMP."),
     },
     "fr": {
         "html_lang": "fr", "base": "/fr", "locale": "fr_FR", "label": "FR",
@@ -103,18 +103,18 @@ STR = {
         "recipe_book": "Livre de recettes", "advancement_guide": "Guide des progrès",
         "last_updated": "Dernière mise à jour",
         "tagline": "Un SMP survie crossplay sans pay-to-win. Java, Bedrock et console, un seul monde.",
-        "legal": ("Gilly SMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni "
+        "legal": ("MatchaSMP n'est pas un service officiel de Minecraft et n'est ni approuvé ni "
                   "associé à Mojang ou Microsoft. Les textures des objets viennent de Minecraft "
                   "et du pack de ressources du serveur."),
         "crumb_home": "Accueil", "crumb_wiki": "Wiki", "crumb_guides": "Guides",
         "answers": "réponses", "full_wiki": "Wiki complet →", "go_deeper": "Pour aller plus loin",
         "related": "Guides liés", "read": "Lire le guide →", "browse": "Parcourir par thème",
-        "hub_suffix": " – Guide Gilly SMP",
+        "hub_suffix": " – Guide MatchaSMP",
         "index_title": "Guides de survie Minecraft – Crossplay, règles et progression",
         "index_name": "Guides de survie Minecraft", "index_h1": "Guides de <em>survie</em> Minecraft",
         "index_sub": ("Réponses claires aux questions courantes sur la survie Minecraft : crossplay, "
                       "cœurs et soins, monstres, artisanat, économie et règles du serveur. "
-                      "Les exemples viennent de Gilly SMP."),
+                      "Les exemples viennent de MatchaSMP."),
     },
     "de": {
         "html_lang": "de", "base": "/de", "locale": "de_DE", "label": "DE",
@@ -126,19 +126,19 @@ STR = {
         "recipe_book": "Rezeptbuch", "advancement_guide": "Fortschrittsleitfaden",
         "last_updated": "Zuletzt aktualisiert",
         "tagline": "Ein Crossplay-Survival-SMP ohne Pay-to-Win. Java, Bedrock und Konsole, eine Welt.",
-        "legal": ("Gilly SMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von "
+        "legal": ("MatchaSMP ist kein offizieller Minecraft-Dienst und weder von Mojang noch von "
                   "Microsoft genehmigt oder mit ihnen verbunden. Item-Texturen stammen von Minecraft "
                   "und vom Ressourcenpaket des Servers."),
         "crumb_home": "Startseite", "crumb_wiki": "Wiki", "crumb_guides": "Leitfäden",
         "answers": "Antworten", "full_wiki": "Gesamtes Wiki →", "go_deeper": "Weiterlesen",
         "related": "Verwandte Leitfäden", "read": "Leitfaden lesen →", "browse": "Nach Thema durchsuchen",
-        "hub_suffix": " – Gilly SMP Leitfaden",
+        "hub_suffix": " – MatchaSMP Leitfaden",
         "index_title": "Minecraft-Survival-Leitfäden – Crossplay, Regeln & Fortschritt",
         "index_name": "Minecraft-Survival-Leitfäden",
         "index_h1": "Minecraft-Survival-<em>Leitfäden</em>",
         "index_sub": ("Klare Antworten auf häufige Survival-Fragen zu Minecraft: Crossplay, Herzen "
                       "und Heilung, Mobs, Crafting, Wirtschaft und Serverregeln. Beispiele stammen "
-                      "von Gilly SMP."),
+                      "von MatchaSMP."),
     },
     "es": {
         "html_lang": "es", "base": "/es", "locale": "es_ES", "label": "ES",
@@ -150,19 +150,19 @@ STR = {
         "recipe_book": "Libro de recetas", "advancement_guide": "Guía de logros",
         "last_updated": "Última actualización",
         "tagline": "Un SMP de supervivencia crossplay sin pay-to-win. Java, Bedrock y consola, un solo mundo.",
-        "legal": ("Gilly SMP no es un servicio oficial de Minecraft y no está aprobado ni asociado "
+        "legal": ("MatchaSMP no es un servicio oficial de Minecraft y no está aprobado ni asociado "
                   "con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del "
                   "paquete de recursos del servidor."),
         "crumb_home": "Inicio", "crumb_wiki": "Wiki", "crumb_guides": "Guías",
         "answers": "respuestas", "full_wiki": "Wiki completa →", "go_deeper": "Para saber más",
         "related": "Guías relacionadas", "read": "Leer guía →", "browse": "Explorar por tema",
-        "hub_suffix": " – Guía de Gilly SMP",
+        "hub_suffix": " – Guía de MatchaSMP",
         "index_title": "Guías de supervivencia de Minecraft – Crossplay, reglas y progresión",
         "index_name": "Guías de supervivencia de Minecraft",
         "index_h1": "Guías de <em>supervivencia</em> de Minecraft",
         "index_sub": ("Respuestas claras a preguntas comunes sobre supervivencia en Minecraft: "
                       "crossplay, corazones y curación, mobs, crafteo, economía y reglas del servidor. "
-                      "Los ejemplos vienen de Gilly SMP."),
+                      "Los ejemplos vienen de MatchaSMP."),
     },
 }
 
@@ -222,7 +222,7 @@ def nav(lang, current, rel):
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank">%(discord_i)s %(discord)s</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank">%(shop_i)s %(store)s</a>
       </nav>
-      <a class="brand" href="%(home)s"><span>Gilly<b>SMP</b></span></a>
+      <a class="brand" href="%(home)s"><span>Matcha<b>SMP</b></span></a>
       <nav class="nav-links right" aria-label="%(resources)s">
         <a href="%(recipes)s">%(hammer_i)s %(recipes_l)s</a>
         <a href="%(adv)s"%(adv_cur)s>%(sprout_i)s %(advancements)s</a>
@@ -259,7 +259,7 @@ def footer(lang, updated):
     return """  <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
-        <a class="brand" href="%(home)s"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <a class="brand" href="%(home)s"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Matcha<b>SMP</b></span></a>
         <p>%(tagline)s</p>
       </div>
       <nav class="f-col" aria-label="%(explore)s">
@@ -279,7 +279,7 @@ def footer(lang, updated):
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · %(last_updated)s <time datetime="%(updated)s">%(pretty)s</time></p>
+      <p>© 2026 MatchaSMP · %(last_updated)s <time datetime="%(updated)s">%(pretty)s</time></p>
       <p class="legal">%(legal)s</p>
     </div>
   </footer>""" % dict(
@@ -298,7 +298,7 @@ def footer(lang, updated):
     )
 
 
-def head(lang, title, description, url, jsonld, alt_block):
+def head(lang, title, description, url, jsonld, alt_block, md_href):
     s = STR[lang]
     ld = json.dumps(jsonld, ensure_ascii=False, indent=2).replace("</", "<\\/")
     return """<!DOCTYPE html>
@@ -313,10 +313,12 @@ def head(lang, title, description, url, jsonld, alt_block):
   <link rel="canonical" href="%(url)s">
 %(alt_block)s
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="alternate" type="text/markdown" href="%(md_href)s" title="Markdown version">
+  <link rel="describedby" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:site_name" content="MatchaSMP">
   <meta property="og:locale" content="%(locale)s">
   <meta property="og:title" content="%(title)s">
   <meta property="og:description" content="%(description)s">
@@ -339,12 +341,13 @@ def head(lang, title, description, url, jsonld, alt_block):
 <body>
   <a class="skip" href="#main">%(skip)s</a>
 """ % dict(html_lang=s["html_lang"], title=esc(title), description=esc(description),
-           url=esc(url), alt_block=alt_block, locale=s["locale"], og_image=OG_IMAGE,
+           url=esc(url), alt_block=alt_block, md_href=esc(md_href), locale=s["locale"], og_image=OG_IMAGE,
            ld=ld, aid=ANALYTICS_ID, skip=s["skip"])
 
 
 def page_shell(lang, body, title, description, url, jsonld, updated, current, alt_block, rel):
-    return (head(lang, title, description, url, jsonld, alt_block) + nav(lang, current, rel) + "\n"
+    md_href = rel[:-5] + ".md" if rel.endswith(".html") else rel + "index.md"
+    return (head(lang, title, description, url, jsonld, alt_block, md_href) + nav(lang, current, rel) + "\n"
             + body + "\n" + footer(lang, updated) +
             '\n  <script src="/js/main.js"></script>\n</body>\n</html>\n')
 
@@ -547,12 +550,29 @@ def wire_sitemap():
 def wire_llms(datas):
     p = ROOT / "llms.txt"
     s = p.read_text(encoding="utf-8")
-    s = re.sub(r"\n## Long-tail guides\n.*?(?=\n## |\Z)", "", s, flags=re.S)
+    # Replace the two generated sections in place; tolerate them being absent.
+    s = re.sub(r"\n*## Long-tail guides\n.*?(?=\n## |\Z)", "\n", s, flags=re.S)
+    s = re.sub(r"\n*## Machine-readable pages\n.*?(?=\n## |\Z)", "\n", s, flags=re.S)
     lines = ["", "## Long-tail guides",
-             "Short, question-shaped pages answering specific Gilly SMP queries. Each page is a consolidated hub with self-contained answers (FAQPage structured data). Translations live under /fr/guides/, /de/guides/ and /es/guides/."]
+             "Short, question-shaped pages answering specific MatchaSMP queries. Each page is a consolidated hub with self-contained answers (FAQPage structured data). Translations live under /fr/guides/, /de/guides/ and /es/guides/."]
     for d in datas:
         lines.append("- [%s](%s): %s" % (d["title"], page_url("en", d["slug"]), d["description"]))
     lines.append("- [All guides](%s): index of every topic hub." % page_url("en"))
+    lines += ["",
+              "## Machine-readable pages",
+              "Every page has a Markdown twin at the same path with a .md suffix. "
+              "Fetch these directly or follow the <link rel=\"alternate\" type=\"text/markdown\"> "
+              "element in each page's head.",
+              "- [Home (Markdown)](https://matchasmp.eu/index.md)",
+              "- [Wiki (Markdown)](https://matchasmp.eu/wiki.md)",
+              "- [Recipes (Markdown)](https://matchasmp.eu/recipes.md)",
+              "- [Advancements (Markdown)](https://matchasmp.eu/advancements.md)"]
+    for d in datas:
+        url = page_url("en", d["slug"]).rstrip("/")
+        if url.endswith(".html"):
+            url = url[: -len(".html")]
+        lines.append("- [%s (Markdown)](%s.md)" % (d["title"], url))
+    lines.append("- [All guides (Markdown)](%sindex.md)" % page_url("en"))
     s = s.rstrip() + "\n" + "\n".join(lines) + "\n"
     p.write_text(s, encoding="utf-8")
 

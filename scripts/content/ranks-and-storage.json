@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Ender Chest, Homes and Server Ranks: How Storage Works on a Survival Server",
   "description": "How ender chest rows, homes, public homes and sharing work on a Minecraft survival server, and what each rank unlocks, from the default tier up to Diamond.",
-  "intro": "On a survival server, storage and homes decide how comfortably you can build. This guide covers the ender chest, homes and the rank perks that expand them. Gilly SMP is the worked example.",
+  "intro": "On a survival server, storage and homes decide how comfortably you can build. This guide covers the ender chest, homes and the rank perks that expand them. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Ender chest",
       "items": [
         {
           "q": "How big is a Minecraft ender chest and can it be upgraded?",
-          "a": "On Gilly SMP the ender chest starts at 3 rows (27 slots) and goes up to 6 rows (54 slots) with a rank. Open it anywhere with <code>/ec</code>."
+          "a": "On MatchaSMP the ender chest starts at 3 rows (27 slots) and goes up to 6 rows (54 slots) with a rank. Open it anywhere with <code>/ec</code>."
         },
         {
           "q": "Can I share my ender chest with another player in Minecraft?",
@@ -19,7 +19,7 @@
         },
         {
           "q": "What can't I store in a Minecraft ender chest?",
-          "a": "On Gilly SMP, bedrock, command blocks and barriers can't be stored in the ender chest. The ender chest is backed up automatically every night."
+          "a": "On MatchaSMP, bedrock, command blocks and barriers can't be stored in the ender chest. The ender chest is backed up automatically every night."
         }
       ]
     },
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "How many homes can I set in Minecraft?",
-          "a": "On Gilly SMP you get 2 homes, with more available by rank. Use <code>/sethome &lt;name&gt;</code> where you stand, <code>/home &lt;name&gt;</code> to go back and <code>/homes</code> to list them."
+          "a": "On MatchaSMP you get 2 homes, with more available by rank. Use <code>/sethome &lt;name&gt;</code> where you stand, <code>/home &lt;name&gt;</code> to go back and <code>/homes</code> to list them."
         },
         {
           "q": "How do I make a Minecraft home public for other players?",
@@ -41,7 +41,7 @@
       "items": [
         {
           "q": "What do the ranks on a Minecraft survival server unlock?",
-          "a": "Gilly SMP has three ranks, Bronze, Gold and Diamond, and each includes the perks below it. Ender chest rows go from 3 on the default to 6 on Diamond, homes from 2 to 6, and active orders from 5 to 15. Ranks are a quality-of-life perk, not a power advantage."
+          "a": "MatchaSMP has three ranks, Bronze, Gold and Diamond, and each includes the perks below it. Ender chest rows go from 3 on the default to 6 on Diamond, homes from 2 to 6, and active orders from 5 to 15. Ranks are a quality-of-life perk, not a power advantage."
         },
         {
           "q": "What happens to my ender chest if I lose my rank?",
@@ -49,7 +49,7 @@
         },
         {
           "q": "How do I get a rank on a Minecraft server?",
-          "a": "On Gilly SMP, ranks are granted by staff. Have a look at the store and ask in Discord."
+          "a": "On MatchaSMP, ranks are granted by staff. Have a look at the store and ask in Discord."
         }
       ]
     }

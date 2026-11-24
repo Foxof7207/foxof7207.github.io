@@ -4,26 +4,26 @@
   "updated": "2026-11-21",
   "h1": "Minecraft World Guide: Difficulty, Nether, End, Seasons and World Resets",
   "description": "Minecraft survival world guide covering Easy difficulty, terrain, when the Nether and End open, Nether portal alignment, season resets and the world border.",
-  "intro": "A survival server's world rules decide how the game feels: difficulty, what generates, when new dimensions open and when the world resets. These answers cover those rules in plain language. Gilly SMP is the worked example.",
+  "intro": "A survival server's world rules decide how the game feels: difficulty, what generates, when new dimensions open and when the world resets. These answers cover those rules in plain language. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Difficulty and terrain",
       "items": [
         {
           "q": "What difficulty does a Minecraft survival server run on?",
-          "a": "Gilly SMP runs on <strong>Easy</strong>, the mode the survival rework is balanced around. Some mobs such as creepers, skeletons and cave spiders are toned down, and the difficulty never rises on its own."
+          "a": "MatchaSMP runs on <strong>Easy</strong>, the mode the survival rework is balanced around. Some mobs such as creepers, skeletons and cave spiders are toned down, and the difficulty never rises on its own."
         },
         {
           "q": "What does the terrain look like on this Minecraft survival server?",
-          "a": "Gilly SMP uses vanilla terrain and biomes, with extra ores, trees and structures such as abbeys and beta villages. Everything uses vanilla blocks, so no mods are needed."
+          "a": "MatchaSMP uses vanilla terrain and biomes, with extra ores, trees and structures such as abbeys and beta villages. Everything uses vanilla blocks, so no mods are needed."
         },
         {
           "q": "Are there villages in this Minecraft survival world?",
-          "a": "The survival rework expects you to build your own village on Gilly SMP. Advancements explain how to bring villagers to it."
+          "a": "The survival rework expects you to build your own village on MatchaSMP. Advancements explain how to bring villagers to it."
         },
         {
           "q": "Is there a world border on this Minecraft server?",
-          "a": "No world border is set on Gilly SMP yet. If one is added, its size will be listed on the wiki."
+          "a": "No world border is set on MatchaSMP yet. If one is added, its size will be listed on the wiki."
         }
       ]
     },
@@ -32,15 +32,15 @@
       "items": [
         {
           "q": "Can I go to the Nether on a Minecraft survival server?",
-          "a": "Not yet. On Gilly SMP both the Nether and the End are closed for now and will open in stages. The Nether opens after the next major update."
+          "a": "Not yet. On MatchaSMP both the Nether and the End are closed for now and will open in stages. The Nether opens after the next major update."
         },
         {
           "q": "How do I line up Nether portals on a Minecraft server?",
-          "a": "Once the Nether opens on Gilly SMP, <code>/portal</code> tells you where to build a portal in the other dimension so the two line up. Nether portals can be any size or shape."
+          "a": "Once the Nether opens on MatchaSMP, <code>/portal</code> tells you where to build a portal in the other dimension so the two line up. Nether portals can be any size or shape."
         },
         {
           "q": "Does the Minecraft world reset on a survival server?",
-          "a": "Yes. On Gilly SMP the world resets at the end of every season. You can ask for a copy of the world on Discord one week after the season ends."
+          "a": "Yes. On MatchaSMP the world resets at the end of every season. You can ask for a copy of the world on Discord one week after the season ends."
         }
       ]
     },
@@ -49,7 +49,7 @@
       "items": [
         {
           "q": "Is there a random teleport command on a Minecraft server?",
-          "a": "There is no <code>/rtp</code> command on Gilly SMP. Instead, an RTP cannon at spawn fires you 500 to 5000 blocks away onto safe ground, with a slow fall and a 30-second cooldown."
+          "a": "There is no <code>/rtp</code> command on MatchaSMP. Instead, an RTP cannon at spawn fires you 500 to 5000 blocks away onto safe ground, with a slow fall and a 30-second cooldown."
         }
       ]
     }
