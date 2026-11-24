@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Can Java and Bedrock Players Share One Minecraft World? Crossplay Explained",
   "description": "How Java, Bedrock and console players share one Minecraft world: account linking, shared progress, usernames, resource packs and voice chat explained.",
-  "intro": "Crossplay means Minecraft players on Java, Bedrock, Xbox, PlayStation and Switch can explore the same world together. This guide covers how that works in practice, from linking accounts to what each platform can see. Gilly SMP is the worked example.",
+  "intro": "Crossplay means Minecraft players on Java, Bedrock, Xbox, PlayStation and Switch can explore the same world together. This guide covers how that works in practice, from linking accounts to what each platform can see. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Playing together across platforms",
       "items": [
         {
           "q": "Can Java and Bedrock players play in the same Minecraft world?",
-          "a": "Yes. On Gilly SMP, Java, Bedrock, Xbox, PlayStation and Switch players all share one world. Java uses <code>mc.gillyb.net</code>, and Bedrock uses the same address on port <strong>19132</strong>."
+          "a": "Yes. On MatchaSMP, Java, Bedrock, Xbox, PlayStation and Switch players all share one world. Java uses <code>play.matchasmp.eu</code>, and Bedrock uses the same address on port <strong>19132</strong>."
         },
         {
           "q": "Can I use the same commands on Bedrock and console as on Java?",
@@ -45,10 +45,10 @@
       "items": [
         {
           "q": "Which mods are allowed on a Minecraft crossplay server?",
-          "a": "Client-side mods such as minimaps, shaders, performance tools and voice chat are fine on Gilly SMP. Cheat mods such as X-ray or freecam are banned, and an anti-cheat runs on the server."
+          "a": "Client-side mods such as minimaps, shaders, performance tools and voice chat are fine on MatchaSMP. Cheat mods such as X-ray or freecam are banned, and an anti-cheat runs on the server."
         },
         {
-          "q": "Is Gilly SMP pay-to-win?",
+          "q": "Is MatchaSMP pay-to-win?",
           "a": "No. The store only sells quality-of-life items and cosmetics. Ranks give convenience perks such as more homes and ender chest rows, not power."
         }
       ]

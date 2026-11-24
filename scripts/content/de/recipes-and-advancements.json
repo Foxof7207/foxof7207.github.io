@@ -4,18 +4,18 @@
   "updated": "2026-11-21",
   "h1": "Minecraft-Rezeptbuch und Fortschrittsleitfaden für Bedrock und Java",
   "description": "So findest du jedes Rezept und folgst den Fortschritten einer Minecraft-Survival-Überarbeitung, auch auf Bedrock, wo die Menüs im Spiel eingeschränkt sind.",
-  "intro": "Diese Survival-Überarbeitung ersetzt viele Vanilla-Rezepte und -Fortschritte, und Bedrock kann nicht alle davon im Spiel anzeigen. Diese Antworten zeigen, wo du suchen musst und wie du den Fortschritt auf jeder Plattform verfolgst. Gilly SMP dient als Beispiel.",
+  "intro": "Diese Survival-Überarbeitung ersetzt viele Vanilla-Rezepte und -Fortschritte, und Bedrock kann nicht alle davon im Spiel anzeigen. Diese Antworten zeigen, wo du suchen musst und wie du den Fortschritt auf jeder Plattform verfolgst. MatchaSMP dient als Beispiel.",
   "groups": [
     {
       "title": "Rezepte finden",
       "items": [
         {
           "q": "Warum fehlen im Rezeptbuch von Bedrock manche Rezepte?",
-          "a": "Das Rezeptbuch von Bedrock zeigt nur Werkbank-Rezepte. Für alles andere, etwa Schlammofen, Brennofen, Hochofen, Anzünder und Schmiedetisch, nutze das Rezeptbuch auf der Gilly-SMP-Website. Dort siehst du auch, welchem Vanilla-Gegenstand jeder eigene Gegenstand auf Bedrock ähnelt."
+          "a": "Das Rezeptbuch von Bedrock zeigt nur Werkbank-Rezepte. Für alles andere, etwa Schlammofen, Brennofen, Hochofen, Anzünder und Schmiedetisch, nutze das Rezeptbuch auf der MatchaSMP-Website. Dort siehst du auch, welchem Vanilla-Gegenstand jeder eigene Gegenstand auf Bedrock ähnelt."
         },
         {
           "q": "Wo sehe ich alle Rezepte einer eigenen Minecraft-Survival-Überarbeitung?",
-          "a": "Das Rezeptbuch listet alle Rezepte der Gilly-SMP-Survival-Überarbeitung und ist durchsuchbar. Tippe auf einen Gegenstand, um zu sehen, wie du ihn herstellst und wofür er gebraucht wird. Es enthält Spoiler, nutze es also, wenn du feststeckst."
+          "a": "Das Rezeptbuch listet alle Rezepte der MatchaSMP-Survival-Überarbeitung und ist durchsuchbar. Tippe auf einen Gegenstand, um zu sehen, wie du ihn herstellst und wofür er gebraucht wird. Es enthält Spoiler, nutze es also, wenn du feststeckst."
         },
         {
           "q": "Wie viele Rezepte fügt diese Minecraft-Survival-Überarbeitung hinzu?",
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "Wie folge ich Fortschritten auf Bedrock in Minecraft?",
-          "a": "Bedrock kann das Fortschrittsmenü nicht öffnen. Nutze daher den Fortschrittsleitfaden auf der Gilly-SMP-Website. Er listet jeden Schritt in Reihenfolge, was ihn abschließt und welche Belohnungen es gibt, und du kannst Schritte beim Vorankommen abhaken."
+          "a": "Bedrock kann das Fortschrittsmenü nicht öffnen. Nutze daher den Fortschrittsleitfaden auf der MatchaSMP-Website. Er listet jeden Schritt in Reihenfolge, was ihn abschließt und welche Belohnungen es gibt, und du kannst Schritte beim Vorankommen abhaken."
         },
         {
           "q": "Was ist das Angler-Almanach in Minecraft?",
@@ -40,11 +40,11 @@
         },
         {
           "q": "Warum fehlen manche Rezepte noch in meinem Rezeptbuch?",
-          "a": "Auf Gilly SMP schaltet das Rezeptbuch Rezepte frei, sobald du sie brauchst, also im Lauf des Fortschritts. Fehlt ein Rezept, prüfe zuerst deine Fortschritte und suche es dann im Rezeptbuch."
+          "a": "Auf MatchaSMP schaltet das Rezeptbuch Rezepte frei, sobald du sie brauchst, also im Lauf des Fortschritts. Fehlt ein Rezept, prüfe zuerst deine Fortschritte und suche es dann im Rezeptbuch."
         },
         {
           "q": "Was ist ein Fortschritt in einer Minecraft-Survival-Überarbeitung?",
-          "a": "Auf Gilly SMP bilden Fortschritte die schrittweise Progression: Jeder nennt, was ihn abschließt, und welche Belohnungen es gibt. Der Fortschrittsleitfaden zeigt dieselben Schritte in Reihenfolge, für Spieler, die das Menü im Spiel nicht öffnen können."
+          "a": "Auf MatchaSMP bilden Fortschritte die schrittweise Progression: Jeder nennt, was ihn abschließt, und welche Belohnungen es gibt. Der Fortschrittsleitfaden zeigt dieselben Schritte in Reihenfolge, für Spieler, die das Menü im Spiel nicht öffnen können."
         }
       ]
     }

@@ -1,4 +1,4 @@
-/* Gilly SMP advancement guide.
+/* MatchaSMP advancement guide.
    Data: /assets/advancements/advancements.json (generated from the survival-rework datapack).
    Progress is a per-device convenience kept in localStorage. URL: #tab=hell&q=steel or #a=<advancement id>. */
 (function () {
@@ -63,7 +63,7 @@
     if (code === 'H') {
       p.appendChild(img('/assets/advancements/brokenheart.png'));
       p.appendChild(el('span', 'rw-heart', ' Heart mark '));
-      p.appendChild(el('span', 'rw-note', 'lowers your minimum hearts. You never go below 10 on Gilly SMP.'));
+      p.appendChild(el('span', 'rw-note', 'lowers your minimum hearts. You never go below 10 on MatchaSMP.'));
     } else {
       var n = parseInt(code.slice(1), 10);
       if (code[0] === 'o') {

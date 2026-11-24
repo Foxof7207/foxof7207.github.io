@@ -4,18 +4,18 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Recipe Book and Advancement Guide for Bedrock and Java",
   "description": "Find every recipe and follow the advancements in a custom Minecraft survival rework, including on Bedrock, where the in-game menus are limited.",
-  "intro": "This survival rework replaces many vanilla recipes and advancements, and Bedrock can't show all of them in game. These answers explain where to look and how to follow progression on any platform. Gilly SMP is the worked example.",
+  "intro": "This survival rework replaces many vanilla recipes and advancements, and Bedrock can't show all of them in game. These answers explain where to look and how to follow progression on any platform. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Finding recipes",
       "items": [
         {
           "q": "Why is my Bedrock recipe book missing recipes?",
-          "a": "Bedrock's recipe book only shows crafting-table recipes. For everything else, such as the Mud Kiln, Oven, Blast Furnace, Kindling and Smithing Table, use the Recipe Book on the Gilly SMP site, which also shows which vanilla item each custom item looks like on Bedrock."
+          "a": "Bedrock's recipe book only shows crafting-table recipes. For everything else, such as the Mud Kiln, Oven, Blast Furnace, Kindling and Smithing Table, use the Recipe Book on the MatchaSMP site, which also shows which vanilla item each custom item looks like on Bedrock."
         },
         {
           "q": "Where can I see every recipe of a custom Minecraft survival rework?",
-          "a": "The Recipe Book lists every recipe of the Gilly SMP survival rework and is searchable. Tap an item to see how to make it and what it's used in. It contains spoilers, so use it when you're stuck."
+          "a": "The Recipe Book lists every recipe of the MatchaSMP survival rework and is searchable. Tap an item to see how to make it and what it's used in. It contains spoilers, so use it when you're stuck."
         },
         {
           "q": "How many recipes does this Minecraft survival rework add?",
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "How do I follow advancements on Bedrock in Minecraft?",
-          "a": "Bedrock can't open the advancements menu, so use the Advancement Guide on the Gilly SMP site. It lists every step in order, what completes it and its rewards, and you can tick steps off as you go."
+          "a": "Bedrock can't open the advancements menu, so use the Advancement Guide on the MatchaSMP site. It lists every step in order, what completes it and its rewards, and you can tick steps off as you go."
         },
         {
           "q": "What is the Angler's Almanac in Minecraft?",
@@ -36,11 +36,11 @@
         },
         {
           "q": "Why won't some recipes show up in my recipe book yet?",
-          "a": "On Gilly SMP the recipe book unlocks recipes when you need them, as you progress. If a recipe is missing, check your advancements first, then look it up in the Recipe Book."
+          "a": "On MatchaSMP the recipe book unlocks recipes when you need them, as you progress. If a recipe is missing, check your advancements first, then look it up in the Recipe Book."
         },
         {
           "q": "What are advancements in a Minecraft survival rework?",
-          "a": "On Gilly SMP advancements are the step-by-step progression: each one lists what completes it and its rewards. The Advancement Guide shows the same steps in order for players who can't open the in-game menu."
+          "a": "On MatchaSMP advancements are the step-by-step progression: each one lists what completes it and its rewards. The Advancement Guide shows the same steps in order for players who can't open the in-game menu."
         },
         {
           "q": "What should I do first in a Minecraft survival rework?",

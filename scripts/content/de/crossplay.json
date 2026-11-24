@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Können Java- und Bedrock-Spieler dieselbe Minecraft-Welt teilen? Crossplay erklärt",
   "description": "Wie Java-, Bedrock- und Konsolenspieler eine Minecraft-Welt teilen: Kontoverknüpfung, gemeinsamer Fortschritt, Namen und Sprachchat erklärt.",
-  "intro": "Crossplay bedeutet, dass Minecraft-Spieler auf Java, Bedrock, Xbox, PlayStation und Switch gemeinsam dieselbe Welt erkunden können. Dieser Leitfaden zeigt, wie das in der Praxis funktioniert, von der Kontoverknüpfung bis zu dem, was jede Plattform sieht. Gilly SMP dient als Beispiel.",
+  "intro": "Crossplay bedeutet, dass Minecraft-Spieler auf Java, Bedrock, Xbox, PlayStation und Switch gemeinsam dieselbe Welt erkunden können. Dieser Leitfaden zeigt, wie das in der Praxis funktioniert, von der Kontoverknüpfung bis zu dem, was jede Plattform sieht. MatchaSMP dient als Beispiel.",
   "groups": [
     {
       "title": "Plattformübergreifend gemeinsam spielen",
       "items": [
         {
           "q": "Können Java- und Bedrock-Spieler in derselben Minecraft-Welt spielen?",
-          "a": "Ja. Auf Gilly SMP teilen sich Java-, Bedrock-, Xbox-, PlayStation- und Switch-Spieler eine Welt. Java nutzt <code>mc.gillyb.net</code>, Bedrock dieselbe Adresse auf Port <strong>19132</strong>."
+          "a": "Ja. Auf MatchaSMP teilen sich Java-, Bedrock-, Xbox-, PlayStation- und Switch-Spieler eine Welt. Java nutzt <code>play.matchasmp.eu</code>, Bedrock dieselbe Adresse auf Port <strong>19132</strong>."
         },
         {
           "q": "Kann ich auf Bedrock und Konsole dieselben Befehle wie auf Java verwenden?",
@@ -45,10 +45,10 @@
       "items": [
         {
           "q": "Welche Mods sind auf einem Minecraft-Crossplay-Server erlaubt?",
-          "a": "Clientseitige Mods wie Minimaps, Shader, Performance-Tools und Sprachchat sind auf Gilly SMP erlaubt. Cheat-Mods wie X-Ray oder Freecam sind verboten, und auf dem Server läuft ein Anti-Cheat."
+          "a": "Clientseitige Mods wie Minimaps, Shader, Performance-Tools und Sprachchat sind auf MatchaSMP erlaubt. Cheat-Mods wie X-Ray oder Freecam sind verboten, und auf dem Server läuft ein Anti-Cheat."
         },
         {
-          "q": "Ist Gilly SMP Pay-to-Win?",
+          "q": "Ist MatchaSMP Pay-to-Win?",
           "a": "Nein. Der Shop verkauft nur Komfortfunktionen und Kosmetik. Ränge geben Komfortvorteile wie mehr Zuhause und Enderkisten-Reihen, keine Macht."
         }
       ]

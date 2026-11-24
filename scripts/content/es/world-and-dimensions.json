@@ -4,22 +4,22 @@
   "updated": "2026-11-21",
   "h1": "Guía del mundo de Minecraft: dificultad, Nether, End, temporadas y reinicios del mundo",
   "description": "Guía del mundo de un servidor de supervivencia: dificultad Fácil, terreno, apertura del Nether y el End, portales, temporadas y límite.",
-  "intro": "Las reglas del mundo de un servidor de supervivencia determinan cómo se siente el juego: dificultad, terreno que se genera, cuándo se abren nuevas dimensiones y cuándo se reinicia el mundo. Estas respuestas explican esas reglas con claridad. Gilly SMP sirve de ejemplo.",
+  "intro": "Las reglas del mundo de un servidor de supervivencia determinan cómo se siente el juego: dificultad, terreno que se genera, cuándo se abren nuevas dimensiones y cuándo se reinicia el mundo. Estas respuestas explican esas reglas con claridad. MatchaSMP sirve de ejemplo.",
   "groups": [
     {
       "title": "Dificultad y terreno",
       "items": [
         {
           "q": "¿En qué dificultad funciona un servidor de supervivencia de Minecraft?",
-          "a": "Gilly SMP funciona en dificultad <strong>Fácil</strong>, el modo para el que está equilibrada la reelaboración de la supervivencia. Algunos monstruos, como los creepers, los esqueletos y las arañas de cueva, están suavizados, y la dificultad nunca sube sola."
+          "a": "MatchaSMP funciona en dificultad <strong>Fácil</strong>, el modo para el que está equilibrada la reelaboración de la supervivencia. Algunos monstruos, como los creepers, los esqueletos y las arañas de cueva, están suavizados, y la dificultad nunca sube sola."
         },
         {
           "q": "¿Cómo es el terreno de este servidor de supervivencia de Minecraft?",
-          "a": "Gilly SMP usa terreno y biomas vanilla, con minerales, árboles y estructuras adicionales como las abadías y los pueblos beta. Todo usa bloques vanilla, así que no hacen falta mods."
+          "a": "MatchaSMP usa terreno y biomas vanilla, con minerales, árboles y estructuras adicionales como las abadías y los pueblos beta. Todo usa bloques vanilla, así que no hacen falta mods."
         },
         {
           "q": "¿Hay un límite de mundo en este servidor de Minecraft?",
-          "a": "En Gilly SMP todavía no hay un límite de mundo. Si se añade uno, su tamaño aparecerá en la wiki."
+          "a": "En MatchaSMP todavía no hay un límite de mundo. Si se añade uno, su tamaño aparecerá en la wiki."
         }
       ]
     },
@@ -28,15 +28,15 @@
       "items": [
         {
           "q": "¿Se puede ir al Nether en un servidor de supervivencia de Minecraft?",
-          "a": "Todavía no. En Gilly SMP, el Nether y el End están cerrados por ahora y se abrirán por etapas. El Nether se abrirá después de la próxima gran actualización."
+          "a": "Todavía no. En MatchaSMP, el Nether y el End están cerrados por ahora y se abrirán por etapas. El Nether se abrirá después de la próxima gran actualización."
         },
         {
           "q": "¿Cómo alineo los portales del Nether en un servidor de Minecraft?",
-          "a": "Cuando el Nether esté abierto en Gilly SMP, <code>/portal</code> te indica dónde construir un portal en la otra dimensión para que ambos coincidan. Los portales del Nether pueden tener cualquier tamaño o forma."
+          "a": "Cuando el Nether esté abierto en MatchaSMP, <code>/portal</code> te indica dónde construir un portal en la otra dimensión para que ambos coincidan. Los portales del Nether pueden tener cualquier tamaño o forma."
         },
         {
           "q": "¿Se reinicia el mundo de Minecraft en un servidor de supervivencia?",
-          "a": "Sí. En Gilly SMP, el mundo se reinicia al final de cada temporada. Puedes pedir una copia del mundo en Discord una semana después de que termine la temporada."
+          "a": "Sí. En MatchaSMP, el mundo se reinicia al final de cada temporada. Puedes pedir una copia del mundo en Discord una semana después de que termine la temporada."
         }
       ]
     },
@@ -45,11 +45,11 @@
       "items": [
         {
           "q": "¿Hay un comando de teletransporte aleatorio en un servidor de Minecraft?",
-          "a": "En Gilly SMP no hay comando <code>/rtp</code>. En su lugar, un cañón RTP situado en el punto de aparición te lanza entre 500 y 5000 bloques a un suelo seguro, con caída lenta y un enfriamiento de 30 segundos."
+          "a": "En MatchaSMP no hay comando <code>/rtp</code>. En su lugar, un cañón RTP situado en el punto de aparición te lanza entre 500 y 5000 bloques a un suelo seguro, con caída lenta y un enfriamiento de 30 segundos."
         },
         {
           "q": "¿Hay pueblos en este mundo de supervivencia de Minecraft?",
-          "a": "La reelaboración de la supervivencia espera que construyas tu propio pueblo en Gilly SMP. Los logros explican cómo llevar aldeanos hasta él."
+          "a": "La reelaboración de la supervivencia espera que construyas tu propio pueblo en MatchaSMP. Los logros explican cómo llevar aldeanos hasta él."
         }
       ]
     }

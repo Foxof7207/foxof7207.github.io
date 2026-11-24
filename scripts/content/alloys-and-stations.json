@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "How to Make Steel, Hepatizon and Other Alloys in a Minecraft Survival Rework",
   "description": "How to make steel, Hepatizon and Electrum alloys in Minecraft, which stations unlock first, where silver is found and why iron needs a Blast Furnace.",
-  "intro": "This survival rework adds metal alloys, a chain of crafting stations and two-in-one tools. Progress comes in tiers, so it helps to know what each station is for and what it can smelt. Gilly SMP is the worked example.",
+  "intro": "This survival rework adds metal alloys, a chain of crafting stations and two-in-one tools. Progress comes in tiers, so it helps to know what each station is for and what it can smelt. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Alloys and metals",
       "items": [
         {
           "q": "What is an alloy in Minecraft?",
-          "a": "An alloy is a metal smithed onto a base metal. On Gilly SMP the alloys are Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond."
+          "a": "An alloy is a metal smithed onto a base metal. On MatchaSMP the alloys are Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond."
         },
         {
           "q": "How do you make steel in Minecraft?",

@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Cómo fabricar acero, hepatizón y otras aleaciones en una reelaboración de la supervivencia de Minecraft",
   "description": "Cómo fabricar acero, hepatizón y electro, qué estaciones se desbloquean primero, dónde está la plata y por qué el hierro necesita un alto horno.",
-  "intro": "Esta reelaboración de la supervivencia añade aleaciones metálicas, una cadena de estaciones de fabricación y herramientas dos en uno. El progreso se da por niveles, así que conviene saber para qué sirve cada estación y qué puede fundir. Gilly SMP sirve de ejemplo.",
+  "intro": "Esta reelaboración de la supervivencia añade aleaciones metálicas, una cadena de estaciones de fabricación y herramientas dos en uno. El progreso se da por niveles, así que conviene saber para qué sirve cada estación y qué puede fundir. MatchaSMP sirve de ejemplo.",
   "groups": [
     {
       "title": "Aleaciones y metales",
       "items": [
         {
           "q": "¿Qué es una aleación en Minecraft?",
-          "a": "Una aleación es un metal forjado sobre un metal base. En Gilly SMP, las aleaciones son hepatizón y shakudo sobre cobre, acero sobre hierro, y electro y adamante sobre diamante."
+          "a": "Una aleación es un metal forjado sobre un metal base. En MatchaSMP, las aleaciones son hepatizón y shakudo sobre cobre, acero sobre hierro, y electro y adamante sobre diamante."
         },
         {
           "q": "¿Cómo fabrico acero en Minecraft?",
@@ -32,7 +32,7 @@
       "items": [
         {
           "q": "¿En qué orden se desbloquean las estaciones de fabricación en Minecraft?",
-          "a": "En Gilly SMP, las nuevas estaciones van antes que el horno: primero la hoguera y el horno de barro, luego el horno de barro y el horno, después el alto horno, la mesa de herrería y el yunque."
+          "a": "En MatchaSMP, las nuevas estaciones van antes que el horno: primero la hoguera y el horno de barro, luego el horno de barro y el horno, después el alto horno, la mesa de herrería y el yunque."
         },
         {
           "q": "¿Qué funde el horno de barro en Minecraft?",

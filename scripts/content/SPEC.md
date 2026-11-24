@@ -2,7 +2,7 @@
 
 Goal: answer broad research questions about Minecraft survival, crossplay and
 server rules, so people who were not looking for this server still find a
-useful answer and discover Gilly SMP. Branded queries are a side effect, not the target.
+useful answer and discover MatchaSMP. Branded queries are a side effect, not the target.
 
 Write ONE JSON file per hub to `scripts/content/<slug>.json`, then run
 `python3 scripts/generate_longtail.py` from the repo root. The generator validates
@@ -25,7 +25,7 @@ JSON schema (exact keys):
   "updated": "YYYY-MM-DD",          // change only when the content changes; drives lastmod and dateModified
   "h1": "<topic-first H1, 6-14 words, describes the question, does not need the server name>",
   "description": "<meta description, 120-160 characters>",
-  "intro": "<2-3 sentences, plain text, names the topic and says Gilly SMP is the worked example>",
+  "intro": "<2-3 sentences, plain text, names the topic and says MatchaSMP is the worked example>",
   "groups": [
     {
       "title": "<topic group heading>",
@@ -44,7 +44,7 @@ JSON schema (exact keys):
 Rules:
 1. 8-14 questions per hub, split across 2-4 groups.
 2. Questions are broad and generic first ("Why doesn't my health regenerate in Minecraft?"),
-   not branded ("Why can't I heal on Gilly SMP?"). Name the server only inside the answer
+   not branded ("Why can't I heal on MatchaSMP?"). Name the server only inside the answer
    where it explains how this server does it.
 3. Every answer must be grounded in the source. Never invent a number, command, item,
    rank perk, port or version. If the wiki does not say it, leave it out.
@@ -73,4 +73,4 @@ Hub slugs and topics:
 - chat-voice-afk — global chat, private messages, voice chat, AFK, colours, coordinates
 - rules-support-qol — rules, PvP, griefing, cheats, appeals, quality-of-life tweaks
 - what-is-matcha — what the Matcha Flavoured datapack is, spelling variants
-- matcha-server — how to choose a Matcha Flavoured server (generic checklist, Gilly SMP as one option)
+- matcha-server — how to choose a Matcha Flavoured server (generic checklist, MatchaSMP as one option)

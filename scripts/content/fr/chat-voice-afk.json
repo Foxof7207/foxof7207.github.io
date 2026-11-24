@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Guide du chat sur un serveur Minecraft : chat global, messages privés, chat vocal et AFK",
   "description": "Chat global, messages privés, chat vocal Java, filtre anti-spam et règles AFK sur un serveur de survie Minecraft, avec les commandes utiles.",
-  "intro": "Le chat, la voix et les règles AFK façonnent l'ambiance d'un serveur, surtout sur un serveur crossplay où tout le monde n'utilise pas la voix. Ces réponses couvrent les bases de la discussion, des messages et de l'inactivité. Gilly SMP sert d'exemple.",
+  "intro": "Le chat, la voix et les règles AFK façonnent l'ambiance d'un serveur, surtout sur un serveur crossplay où tout le monde n'utilise pas la voix. Ces réponses couvrent les bases de la discussion, des messages et de l'inactivité. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Chat",
       "items": [
         {
           "q": "Le chat d'un serveur Minecraft est-il global ou local ?",
-          "a": "Sur Gilly SMP, le chat est global : tout le monde voit vos messages. Il n'y a pas de chat à portée, et pas besoin de crier avec <code>!</code>. Votre rang s'affiche devant votre nom."
+          "a": "Sur MatchaSMP, le chat est global : tout le monde voit vos messages. Il n'y a pas de chat à portée, et pas besoin de crier avec <code>!</code>. Votre rang s'affiche devant votre nom."
         },
         {
           "q": "Comment envoyer un message privé sur un serveur Minecraft ?",
@@ -23,7 +23,7 @@
         },
         {
           "q": "Comment le spam est-il géré dans le chat d'un serveur Minecraft ?",
-          "a": "Sur Gilly SMP, les messages répétés, l'inondation du chat, les messages très longs, l'abus de majuscules et les caractères aléatoires sont détectés automatiquement. Les spammeurs sont réduits au silence pour un court moment, plus longtemps s'ils recommencent."
+          "a": "Sur MatchaSMP, les messages répétés, l'inondation du chat, les messages très longs, l'abus de majuscules et les caractères aléatoires sont détectés automatiquement. Les spammeurs sont réduits au silence pour un court moment, plus longtemps s'ils recommencent."
         }
       ]
     },
@@ -32,11 +32,11 @@
       "items": [
         {
           "q": "Comment fonctionne le chat vocal sur un serveur Minecraft ?",
-          "a": "Sur Gilly SMP, les joueurs Java peuvent installer le mod Simple Voice Chat correspondant à Minecraft 26.3, puis appuyer sur <code>V</code> pour le configurer. Vous entendez les joueurs à moins de 48 blocs, ou 24 en chuchotant, et vous formez des groupes avec <code>G</code>. L'enregistrement est désactivé."
+          "a": "Sur MatchaSMP, les joueurs Java peuvent installer le mod Simple Voice Chat correspondant à Minecraft 26.3, puis appuyer sur <code>V</code> pour le configurer. Vous entendez les joueurs à moins de 48 blocs, ou 24 en chuchotant, et vous formez des groupes avec <code>G</code>. L'enregistrement est désactivé."
         },
         {
           "q": "Le chat vocal est-il obligatoire pour jouer sur un serveur Minecraft crossplay ?",
-          "a": "Non. Bedrock et console ne peuvent pas utiliser le chat vocal, il n'est donc jamais obligatoire sur Gilly SMP."
+          "a": "Non. Bedrock et console ne peuvent pas utiliser le chat vocal, il n'est donc jamais obligatoire sur MatchaSMP."
         }
       ]
     },
@@ -45,7 +45,7 @@
       "items": [
         {
           "q": "Que se passe-t-il quand on est AFK sur un serveur Minecraft ?",
-          "a": "Sur Gilly SMP, après 5 minutes sans bouger, vous êtes marqué [AFK] et votre nom passe en gris ; <code>/afk</code> bascule l'état. Après 10 minutes supplémentaires, vous êtes déconnecté. Si le serveur redémarre pendant votre absence, vous atterrissez dans la zone AFK et revenez avec <code>/server smp</code>."
+          "a": "Sur MatchaSMP, après 5 minutes sans bouger, vous êtes marqué [AFK] et votre nom passe en gris ; <code>/afk</code> bascule l'état. Après 10 minutes supplémentaires, vous êtes déconnecté. Si le serveur redémarre pendant votre absence, vous atterrissez dans la zone AFK et revenez avec <code>/server smp</code>."
         },
         {
           "q": "Comment afficher mes coordonnées dans Minecraft ?",

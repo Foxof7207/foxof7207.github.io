@@ -5,28 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Crossplay y progreso compartido – Guía de Gilly SMP</title>
+  <title>Crossplay y progreso compartido – Guía de MatchaSMP</title>
   <meta name="description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
-  <link rel="canonical" href="https://craft.gillyb.net/es/guides/crossplay.html">
-  <link rel="alternate" hreflang="en" href="https://craft.gillyb.net/guides/crossplay.html">
-  <link rel="alternate" hreflang="fr" href="https://craft.gillyb.net/fr/guides/crossplay.html">
-  <link rel="alternate" hreflang="de" href="https://craft.gillyb.net/de/guides/crossplay.html">
-  <link rel="alternate" hreflang="es" href="https://craft.gillyb.net/es/guides/crossplay.html">
-  <link rel="alternate" hreflang="x-default" href="https://craft.gillyb.net/guides/crossplay.html">
+  <link rel="canonical" href="https://matchasmp.eu/es/guides/crossplay.html">
+  <link rel="alternate" hreflang="en" href="https://matchasmp.eu/guides/crossplay.html">
+  <link rel="alternate" hreflang="fr" href="https://matchasmp.eu/fr/guides/crossplay.html">
+  <link rel="alternate" hreflang="de" href="https://matchasmp.eu/de/guides/crossplay.html">
+  <link rel="alternate" hreflang="es" href="https://matchasmp.eu/es/guides/crossplay.html">
+  <link rel="alternate" hreflang="x-default" href="https://matchasmp.eu/guides/crossplay.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+  <link rel="alternate" type="text/markdown" href="/es/guides/crossplay.md" title="Markdown version">
+  <link rel="describedby" href="/llms.txt" title="LLM-friendly summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <meta name="theme-color" content="#123820">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Gilly SMP">
+  <meta property="og:site_name" content="MatchaSMP">
   <meta property="og:locale" content="es_ES">
-  <meta property="og:title" content="Crossplay y progreso compartido – Guía de Gilly SMP">
+  <meta property="og:title" content="Crossplay y progreso compartido – Guía de MatchaSMP">
   <meta property="og:description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
-  <meta property="og:url" content="https://craft.gillyb.net/es/guides/crossplay.html">
-  <meta property="og:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta property="og:url" content="https://matchasmp.eu/es/guides/crossplay.html">
+  <meta property="og:image" content="https://matchasmp.eu/assets/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Crossplay y progreso compartido – Guía de Gilly SMP">
+  <meta name="twitter:title" content="Crossplay y progreso compartido – Guía de MatchaSMP">
   <meta name="twitter:description" content="Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.">
-  <meta name="twitter:image" content="https://craft.gillyb.net/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://matchasmp.eu/assets/og-image.jpg">
   <link rel="preload" href="/assets/fonts/titan-one-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
@@ -39,18 +41,18 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "¿Pueden los jugadores de Java y Bedrock compartir el mismo mundo de Minecraft? Explicación del crossplay",
-      "url": "https://craft.gillyb.net/es/guides/crossplay.html",
+      "url": "https://matchasmp.eu/es/guides/crossplay.html",
       "description": "Cómo los jugadores de Java, Bedrock y consola comparten un mundo: vinculación de cuentas, progreso común, nombres y chat de voz explicados.",
       "inLanguage": "es",
       "dateModified": "2026-11-21",
       "isPartOf": {
-        "@id": "https://craft.gillyb.net/#website"
+        "@id": "https://matchasmp.eu/#website"
       }
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "url": "https://craft.gillyb.net/es/guides/crossplay.html",
+      "url": "https://matchasmp.eu/es/guides/crossplay.html",
       "inLanguage": "es",
       "dateModified": "2026-11-21",
       "mainEntity": [
@@ -59,7 +61,7 @@
           "name": "¿Pueden los jugadores de Java y Bedrock jugar en el mismo mundo de Minecraft?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. En Gilly SMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa mc.gillyb.net, y Bedrock usa la misma dirección en el puerto 19132."
+            "text": "Sí. En MatchaSMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa play.matchasmp.eu, y Bedrock usa la misma dirección en el puerto 19132."
           }
         },
         {
@@ -107,12 +109,12 @@
           "name": "¿Qué mods están permitidos en un servidor crossplay de Minecraft?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en Gilly SMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat."
+            "text": "Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en MatchaSMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Es Gilly SMP un servidor pay-to-win?",
+          "name": "¿Es MatchaSMP un servidor pay-to-win?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. La tienda solo vende mejoras de comodidad y cosméticos. Los rangos dan ventajas de comodidad, como más hogares y filas de cofre de ender, no poder."
@@ -128,25 +130,25 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Inicio",
-          "item": "https://craft.gillyb.net/es/"
+          "item": "https://matchasmp.eu/es/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Wiki",
-          "item": "https://craft.gillyb.net/es/wiki.html"
+          "item": "https://matchasmp.eu/es/wiki.html"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Guías",
-          "item": "https://craft.gillyb.net/es/guides/"
+          "item": "https://matchasmp.eu/es/guides/"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Crossplay y progreso compartido",
-          "item": "https://craft.gillyb.net/es/guides/crossplay.html"
+          "item": "https://matchasmp.eu/es/guides/crossplay.html"
         }
       ]
     }
@@ -171,7 +173,7 @@
         <a href="https://discord.gg/QjfVSgzDNe" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/discord.svg)" aria-hidden="true"></i> Discord</a>
         <a href="https://gillysmp.craftingstore.net/" rel="noopener" target="_blank"><i class="ic" style="--i:url(/assets/icons/shopping-bag.svg)" aria-hidden="true"></i> Tienda</a>
       </nav>
-      <a class="brand" href="/es/"><span>Gilly<b>SMP</b></span></a>
+      <a class="brand" href="/es/"><span>Matcha<b>SMP</b></span></a>
       <nav class="nav-links right" aria-label="Recursos">
         <a href="/es/recipes.html"><i class="ic" style="--i:url(/assets/icons/hammer.svg)" aria-hidden="true"></i> Recetas</a>
         <a href="/es/advancements.html"><i class="ic" style="--i:url(/assets/icons/sprout.svg)" aria-hidden="true"></i> Logros</a>
@@ -187,7 +189,7 @@
       <div class="hero-inner container">
         <img class="hero-logo pixel" src="/assets/logo.webp" width="72" height="72" alt="">
         <h1>¿Pueden los jugadores de Java y Bedrock compartir el mismo mundo de Minecraft? Explicación del crossplay</h1>
-        <p class="intro">El crossplay permite a los jugadores de Minecraft en Java, Bedrock, Xbox, PlayStation y Switch explorar juntos el mismo mundo. Esta guía explica cómo funciona en la práctica, desde vincular cuentas hasta lo que ve cada plataforma. Gilly SMP sirve de ejemplo.</p>
+        <p class="intro">El crossplay permite a los jugadores de Minecraft en Java, Bedrock, Xbox, PlayStation y Switch explorar juntos el mismo mundo. Esta guía explica cómo funciona en la práctica, desde vincular cuentas hasta lo que ve cada plataforma. MatchaSMP sirve de ejemplo.</p>
         <p class="badges"><span class="badge y">8 respuestas</span><a class="badge" href="/es/wiki.html">Wiki completa →</a></p>
       </div>
       <div class="ground" aria-hidden="true"></div>
@@ -195,7 +197,7 @@
     <h2 class="topic-title">Jugar juntos entre plataformas</h2>
     <article class="qa">
       <h3>¿Pueden los jugadores de Java y Bedrock jugar en el mismo mundo de Minecraft?</h3>
-      <p>Sí. En Gilly SMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa <code>mc.gillyb.net</code>, y Bedrock usa la misma dirección en el puerto <strong>19132</strong>.</p>
+      <p>Sí. En MatchaSMP, los jugadores de Java, Bedrock, Xbox, PlayStation y Switch comparten un mismo mundo. Java usa <code>play.matchasmp.eu</code>, y Bedrock usa la misma dirección en el puerto <strong>19132</strong>.</p>
     </article>
     <article class="qa">
       <h3>¿Puedo usar los mismos comandos en Bedrock y consola que en Java?</h3>
@@ -221,10 +223,10 @@
     <h2 class="topic-title">Mods y juego limpio</h2>
     <article class="qa">
       <h3>¿Qué mods están permitidos en un servidor crossplay de Minecraft?</h3>
-      <p>Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en Gilly SMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat.</p>
+      <p>Los mods del lado del cliente, como los minimapas, los shaders, las herramientas de rendimiento y el chat de voz, están permitidos en MatchaSMP. Los mods de trampas, como X-ray o freecam, están prohibidos, y el servidor ejecuta un sistema anticheat.</p>
     </article>
     <article class="qa">
-      <h3>¿Es Gilly SMP un servidor pay-to-win?</h3>
+      <h3>¿Es MatchaSMP un servidor pay-to-win?</h3>
       <p>No. La tienda solo vende mejoras de comodidad y cosméticos. Los rangos dan ventajas de comodidad, como más hogares y filas de cofre de ender, no poder.</p>
     </article>
     <section class="guide-deeper">
@@ -247,7 +249,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="f-brand">
-        <a class="brand" href="/es/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Gilly<b>SMP</b></span></a>
+        <a class="brand" href="/es/"><img class="pixel" src="/assets/logo.webp" width="40" height="40" alt=""><span>Matcha<b>SMP</b></span></a>
         <p>Un SMP de supervivencia crossplay sin pay-to-win. Java, Bedrock y consola, un solo mundo.</p>
       </div>
       <nav class="f-col" aria-label="Explorar">
@@ -267,8 +269,8 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 Gilly SMP · Última actualización <time datetime="2026-11-21">21 de noviembre de 2026</time></p>
-      <p class="legal">Gilly SMP no es un servicio oficial de Minecraft y no está aprobado ni asociado con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del paquete de recursos del servidor.</p>
+      <p>© 2026 MatchaSMP · Última actualización <time datetime="2026-11-21">21 de noviembre de 2026</time></p>
+      <p class="legal">MatchaSMP no es un servicio oficial de Minecraft y no está aprobado ni asociado con Mojang o Microsoft. Las texturas de los objetos provienen de Minecraft y del paquete de recursos del servidor.</p>
     </div>
   </footer>
   <script src="/js/main.js"></script>

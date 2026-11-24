@@ -4,22 +4,22 @@
   "updated": "2026-11-21",
   "h1": "So trittst du einem Minecraft-Survival-Server von Java, Bedrock oder Konsole aus bei",
   "description": "So trittst du einem Crossplay-Survival-Server von Java, Bedrock, Xbox, PlayStation oder Switch bei: Adressen, Ports, Versionen und Ressourcenpaket.",
-  "intro": "Willst du Minecraft-Survival mit Freunden spielen, die ein anderes Gerät nutzen? Dieser Leitfaden erklärt, wie sich Java-, Bedrock- und Konsolenspieler mit einem gemeinsamen Crossplay-Server verbinden. Gilly SMP dient als Beispiel.",
+  "intro": "Willst du Minecraft-Survival mit Freunden spielen, die ein anderes Gerät nutzen? Dieser Leitfaden erklärt, wie sich Java-, Bedrock- und Konsolenspieler mit einem gemeinsamen Crossplay-Server verbinden. MatchaSMP dient als Beispiel.",
   "groups": [
     {
       "title": "Serveradressen nach Plattform",
       "items": [
         {
           "q": "Welche Adresse und welcher Port werden für Bedrock benötigt, um einem Minecraft-Server beizutreten?",
-          "a": "Auf Gilly SMP verwenden Bedrock-Spieler die Adresse <code>mc.gillyb.net</code> mit dem Port <strong>19132</strong>. Unter Windows, Android, iPhone und iPad öffnet der Button Zu Minecraft hinzufügen auf der Serverseite das Spiel mit bereits eingetragenem Server."
+          "a": "Auf MatchaSMP verwenden Bedrock-Spieler die Adresse <code>play.matchasmp.eu</code> mit dem Port <strong>19132</strong>. Unter Windows, Android, iPhone und iPad öffnet der Button Zu Minecraft hinzufügen auf der Serverseite das Spiel mit bereits eingetragenem Server."
         },
         {
           "q": "Welche Minecraft-Java-Version brauche ich, um einem Survival-Server beizutreten?",
-          "a": "Gilly SMP erfordert Minecraft Java <strong>26.3</strong>, ältere Versionen können sich also nicht verbinden. Verwende die Adresse <code>mc.gillyb.net</code>: Java-, Bedrock- und Konsolenspieler teilen sich dieselbe Welt."
+          "a": "MatchaSMP erfordert Minecraft Java <strong>26.3</strong>, ältere Versionen können sich also nicht verbinden. Verwende die Adresse <code>play.matchasmp.eu</code>: Java-, Bedrock- und Konsolenspieler teilen sich dieselbe Welt."
         },
         {
           "q": "Wie trete ich einem Minecraft-Server von Xbox, PlayStation oder Switch aus bei?",
-          "a": "Füge <strong>GillySMP</strong> auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo für das Online-Spiel, du brauchst es also, um dich zu verbinden."
+          "a": "Füge <strong>MatchaSMP</strong> auf deiner Konsole als Freund hinzu und tritt über den Reiter Freunde bei. Der Konsolenhersteller verlangt ein Online-Abo für das Online-Spiel, du brauchst es also, um dich zu verbinden."
         }
       ]
     },
@@ -28,11 +28,11 @@
       "items": [
         {
           "q": "Kann ich einem Minecraft-Server mit einem gecrackten oder Offline-Launcher beitreten?",
-          "a": "Nein. Gilly SMP läuft im Online-Modus, daher können nur legitime, gekaufte Minecraft-Konten beitreten. Gecrackte und Offline-Launcher können sich nicht verbinden."
+          "a": "Nein. MatchaSMP läuft im Online-Modus, daher können nur legitime, gekaufte Minecraft-Konten beitreten. Gecrackte und Offline-Launcher können sich nicht verbinden."
         },
         {
           "q": "Muss ich auf einer Whitelist stehen, um einem Minecraft-Server beizutreten?",
-          "a": "Auf Gilly SMP nicht. Es gibt keine Whitelist: Jeder mit einem legitimen Konto kann beitreten. Der Server fasst bis zu <strong>20 Spieler</strong>."
+          "a": "Auf MatchaSMP nicht. Es gibt keine Whitelist: Jeder mit einem legitimen Konto kann beitreten. Der Server fasst bis zu <strong>20 Spieler</strong>."
         },
         {
           "q": "Warum beginnt mein Bedrock-Name auf einem Java-Server mit einem Unterstrich?",
@@ -45,11 +45,11 @@
       "items": [
         {
           "q": "Brauche ich ein Ressourcenpaket, um auf einem Minecraft-Server mit eigenen Gegenständen zu spielen?",
-          "a": "Auf Java ja. Gilly SMP sendet sein Ressourcenpaket beim Beitritt automatisch, du musst die Abfrage nur bestätigen. Ohne Paket sehen eigene Gegenstände aus wie in Vanilla, und manche zeigen rohe Textnamen. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen, aber alles funktioniert trotzdem."
+          "a": "Auf Java ja. MatchaSMP sendet sein Ressourcenpaket beim Beitritt automatisch, du musst die Abfrage nur bestätigen. Ohne Paket sehen eigene Gegenstände aus wie in Vanilla, und manche zeigen rohe Textnamen. Bedrock kann Java-Pakete nicht laden, Bedrock-Spieler sehen daher Vanilla-Texturen, aber alles funktioniert trotzdem."
         },
         {
           "q": "Welche Mods kann ich auf einem Minecraft-Survival-Server verwenden?",
-          "a": "Clientseitige Mods wie Performance-Tools, Minimaps, Shader und Sprachchat sind auf Gilly SMP erlaubt. Cheat-Mods wie X-Ray, Freecam oder manipulierte Clients sind nicht erlaubt, und der Server nutzt einen Anti-Cheat."
+          "a": "Clientseitige Mods wie Performance-Tools, Minimaps, Shader und Sprachchat sind auf MatchaSMP erlaubt. Cheat-Mods wie X-Ray, Freecam oder manipulierte Clients sind nicht erlaubt, und der Server nutzt einen Anti-Cheat."
         },
         {
           "q": "Was sollte ich nach dem Beitritt zu einem Survival-Server als Erstes tun?",

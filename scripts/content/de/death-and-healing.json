@@ -4,7 +4,7 @@
   "updated": "2026-11-21",
   "h1": "Minecraft-Herzen erklärt: Todesstrafen, Heilung und Kristallherzen",
   "description": "Warum sich Lebenspunkte in dieser Survival-Überarbeitung nicht regenerieren, was der Tod kostet und wie du dich mit Essen, Tränken und Kristallherzen heilst.",
-  "intro": "Die Lebenspunkte funktionieren in dieser Survival-Überarbeitung anders: Die natürliche Regeneration ist aus, Hunger gibt es nicht mehr, und der Tod kostet maximale Herzen statt Gegenstände. Diese Antworten erklären die Regeln verständlich. Gilly SMP dient als Beispiel.",
+  "intro": "Die Lebenspunkte funktionieren in dieser Survival-Überarbeitung anders: Die natürliche Regeneration ist aus, Hunger gibt es nicht mehr, und der Tod kostet maximale Herzen statt Gegenstände. Diese Antworten erklären die Regeln verständlich. MatchaSMP dient als Beispiel.",
   "groups": [
     {
       "title": "Heilung",
@@ -15,7 +15,7 @@
         },
         {
           "q": "Spielt Hunger in einer Minecraft-Survival-Überarbeitung eine Rolle?",
-          "a": "Hunger ist auf Gilly SMP praktisch verschwunden: Du verhungerst nicht, und Essen zählt wegen seiner Effekte und nicht, weil es eine Hungerleiste füllt."
+          "a": "Hunger ist auf MatchaSMP praktisch verschwunden: Du verhungerst nicht, und Essen zählt wegen seiner Effekte und nicht, weil es eine Hungerleiste füllt."
         },
         {
           "q": "Wie bekomme ich nach dem Tod in Minecraft Herzen zurück?",
@@ -23,7 +23,7 @@
         },
         {
           "q": "Welche Gegenstände heilen in einer Minecraft-Survival-Überarbeitung?",
-          "a": "Auf Gilly SMP heilst du dich mit Nahrung, die Heileffekte hat, mit Tränken und Spezialgegenständen. Essen zählt wegen seiner Effekte und nicht, weil es eine Leiste füllt."
+          "a": "Auf MatchaSMP heilst du dich mit Nahrung, die Heileffekte hat, mit Tränken und Spezialgegenständen. Essen zählt wegen seiner Effekte und nicht, weil es eine Leiste füllt."
         }
       ]
     },
@@ -32,19 +32,19 @@
       "items": [
         {
           "q": "Was passiert mit meinen Gegenständen, wenn ich in Minecraft-Survival sterbe?",
-          "a": "Auf Gilly SMP behältst du bei deinem Tod Inventar und XP. Jeder Tod kostet dafür <strong>1 maximales Herz</strong>, und geworfene Enderperlen verschwinden nicht."
+          "a": "Auf MatchaSMP behältst du bei deinem Tod Inventar und XP. Jeder Tod kostet dafür <strong>1 maximales Herz</strong>, und geworfene Enderperlen verschwinden nicht."
         },
         {
           "q": "Wie viele Herzen lässt mir ein Minecraft-Server mindestens?",
-          "a": "Auf Gilly SMP, das auf Einfach läuft, fällst du durch Tode nie unter <strong>10 Herzen</strong>."
+          "a": "Auf MatchaSMP, das auf Einfach läuft, fällst du durch Tode nie unter <strong>10 Herzen</strong>."
         },
         {
           "q": "Verliert man in Minecraft beim Sterben XP?",
-          "a": "Nein. Auf Gilly SMP behältst du deine XP beim Tod, zusammen mit deinem Inventar."
+          "a": "Nein. Auf MatchaSMP behältst du deine XP beim Tod, zusammen mit deinem Inventar."
         },
         {
           "q": "Was ist ein maximales Herz in Minecraft?",
-          "a": "Ein maximales Herz ist die Anzahl der Herzen, die du erreichen kannst. Auf Gilly SMP entfernt jeder Tod eines, und Kristallherzen geben eines zurück, bis insgesamt 30."
+          "a": "Ein maximales Herz ist die Anzahl der Herzen, die du erreichen kannst. Auf MatchaSMP entfernt jeder Tod eines, und Kristallherzen geben eines zurück, bis insgesamt 30."
         }
       ]
     }

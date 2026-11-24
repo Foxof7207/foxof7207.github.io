@@ -4,18 +4,18 @@
   "updated": "2026-11-21",
   "h1": "Livre de recettes et guide des progrès de Minecraft pour Bedrock et Java",
   "description": "Trouver chaque recette et suivre les progrès d'une refonte de la survie Minecraft, y compris sur Bedrock, où les menus en jeu sont limités.",
-  "intro": "Cette refonte de la survie remplace de nombreuses recettes et progrès vanilla, et Bedrock ne peut pas tous les afficher en jeu. Ces réponses expliquent où chercher et comment suivre la progression sur n'importe quelle plateforme. Gilly SMP sert d'exemple.",
+  "intro": "Cette refonte de la survie remplace de nombreuses recettes et progrès vanilla, et Bedrock ne peut pas tous les afficher en jeu. Ces réponses expliquent où chercher et comment suivre la progression sur n'importe quelle plateforme. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Trouver les recettes",
       "items": [
         {
           "q": "Pourquoi le livre de recettes de Bedrock ne montre-t-il pas certaines recettes ?",
-          "a": "Le livre de recettes de Bedrock n'affiche que les recettes de l'établi. Pour le reste, comme le Four à boue, le Four, le haut-fourneau, l'Allumage et la table de forge, utilisez le Livre de recettes du site Gilly SMP, qui indique aussi quel objet vanilla ressemble à chaque objet personnalisé sur Bedrock."
+          "a": "Le livre de recettes de Bedrock n'affiche que les recettes de l'établi. Pour le reste, comme le Four à boue, le Four, le haut-fourneau, l'Allumage et la table de forge, utilisez le Livre de recettes du site MatchaSMP, qui indique aussi quel objet vanilla ressemble à chaque objet personnalisé sur Bedrock."
         },
         {
           "q": "Où voir toutes les recettes d'une refonte de la survie Minecraft personnalisée ?",
-          "a": "Le Livre de recettes liste toutes les recettes de la refonte de la survie de Gilly SMP, avec recherche. Touchez un objet pour voir comment le fabriquer et à quoi il sert. Il contient des spoilers : utilisez-le quand vous êtes bloqué."
+          "a": "Le Livre de recettes liste toutes les recettes de la refonte de la survie de MatchaSMP, avec recherche. Touchez un objet pour voir comment le fabriquer et à quoi il sert. Il contient des spoilers : utilisez-le quand vous êtes bloqué."
         },
         {
           "q": "Combien de recettes cette refonte de la survie Minecraft ajoute-t-elle ?",
@@ -28,7 +28,7 @@
       "items": [
         {
           "q": "Comment suivre les progrès sur Bedrock dans Minecraft ?",
-          "a": "Bedrock ne peut pas ouvrir le menu des progrès : utilisez donc le Guide des progrès du site Gilly SMP. Il liste chaque étape dans l'ordre, ce qui la complète et ses récompenses, et vous pouvez cocher les étapes au fur et à mesure."
+          "a": "Bedrock ne peut pas ouvrir le menu des progrès : utilisez donc le Guide des progrès du site MatchaSMP. Il liste chaque étape dans l'ordre, ce qui la complète et ses récompenses, et vous pouvez cocher les étapes au fur et à mesure."
         },
         {
           "q": "Qu'est-ce que l'Almanach du pêcheur dans Minecraft ?",
@@ -40,11 +40,11 @@
         },
         {
           "q": "Pourquoi certaines recettes n'apparaissent-elles pas encore dans mon livre de recettes ?",
-          "a": "Sur Gilly SMP, le livre de recettes débloque les recettes au moment où vous en avez besoin, au fil de la progression. Si une recette manque, consultez d'abord vos progrès, puis cherchez-la dans le Livre de recettes."
+          "a": "Sur MatchaSMP, le livre de recettes débloque les recettes au moment où vous en avez besoin, au fil de la progression. Si une recette manque, consultez d'abord vos progrès, puis cherchez-la dans le Livre de recettes."
         },
         {
           "q": "Qu'est-ce qu'un progrès dans une refonte de la survie Minecraft ?",
-          "a": "Sur Gilly SMP, les progrès forment la progression pas à pas : chacun indique ce qui le complète et ses récompenses. Le Guide des progrès présente les mêmes étapes dans l'ordre, pour les joueurs qui ne peuvent pas ouvrir le menu en jeu."
+          "a": "Sur MatchaSMP, les progrès forment la progression pas à pas : chacun indique ce qui le complète et ses récompenses. Le Guide des progrès présente les mêmes étapes dans l'ordre, pour les joueurs qui ne peuvent pas ouvrir le menu en jeu."
         }
       ]
     }

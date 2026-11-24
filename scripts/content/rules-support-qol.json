@@ -4,26 +4,26 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Server Rules, Anti-Cheat and Quality-of-Life Tweaks Explained",
   "description": "Survival server rules on PvP, griefing, cheat mods and land claims, plus quality-of-life tweaks, ban appeals and how to reach staff on a Minecraft server.",
-  "intro": "Good survival servers are defined by their rules as much as their features: what fights are fair, what counts as griefing and which tweaks make everyday play easier. These answers cover both. Gilly SMP is the worked example.",
+  "intro": "Good survival servers are defined by their rules as much as their features: what fights are fair, what counts as griefing and which tweaks make everyday play easier. These answers cover both. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Fair play",
       "items": [
         {
           "q": "Is PvP allowed on a Minecraft survival server?",
-          "a": "On Gilly SMP, PvP is allowed if it's fair. Tp-trapping and spawn-killing are not. Teleports have a 3-second warmup that moving or taking damage cancels, so you can't teleport out of a fight."
+          "a": "On MatchaSMP, PvP is allowed if it's fair. Tp-trapping and spawn-killing are not. Teleports have a 3-second warmup that moving or taking damage cancels, so you can't teleport out of a fight."
         },
         {
           "q": "Are cheat mods allowed on a Minecraft server?",
-          "a": "No. An anti-cheat runs on Gilly SMP, and mods like X-ray, freecam or Wurst are banned. Suspected players may be asked to run a verification mod."
+          "a": "No. An anti-cheat runs on MatchaSMP, and mods like X-ray, freecam or Wurst are banned. Suspected players may be asked to run a verification mod."
         },
         {
           "q": "What is the punishment for griefing on a Minecraft server?",
-          "a": "On Gilly SMP, griefing and stealing are not allowed. The first offence gets a warning, and the second gets a temporary ban."
+          "a": "On MatchaSMP, griefing and stealing are not allowed. The first offence gets a warning, and the second gets a temporary ban."
         },
         {
           "q": "Can you claim land on a Minecraft survival server?",
-          "a": "There is no land claiming on Gilly SMP. Respect other players' builds."
+          "a": "There is no land claiming on MatchaSMP. Respect other players' builds."
         }
       ]
     },
@@ -32,11 +32,11 @@
       "items": [
         {
           "q": "How do I lock a chest or hide an item frame in Minecraft?",
-          "a": "On Gilly SMP, chests can be locked so only you and the players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible."
+          "a": "On MatchaSMP, chests can be locked so only you and the players you allow can open them. Crouch and right-click an item frame with shears to lock or unlock it, or with a brush to make it invisible."
         },
         {
           "q": "How do I keep a chunk loaded in Minecraft?",
-          "a": "Drop a Nether Star on a lodestone. On Gilly SMP the chunk stays loaded until the lodestone is broken."
+          "a": "Drop a Nether Star on a lodestone. On MatchaSMP the chunk stays loaded until the lodestone is broken."
         },
         {
           "q": "How do I merge an elytra with a chestplate in Minecraft?",
@@ -49,11 +49,11 @@
       "items": [
         {
           "q": "Is this Minecraft server pay-to-win?",
-          "a": "No. Gilly SMP is non pay-to-win: the store only sells quality-of-life items and cosmetics."
+          "a": "No. MatchaSMP is non pay-to-win: the store only sells quality-of-life items and cosmetics."
         },
         {
           "q": "How do I appeal a ban on a Minecraft server?",
-          "a": "On Gilly SMP, open a ticket on Discord, the fastest route, or email the staff address listed on the wiki's support section."
+          "a": "On MatchaSMP, open a ticket on Discord, the fastest route, or email the staff address listed on the wiki's support section."
         }
       ]
     }

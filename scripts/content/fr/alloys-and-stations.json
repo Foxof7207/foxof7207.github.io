@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Comment fabriquer de l'acier, de l'hépatizon et d'autres alliages dans une refonte de la survie Minecraft",
   "description": "Comment fabriquer acier, hépatizon et électrum, quelles stations se débloquent en premier, où trouver l'argent et pourquoi le fer demande un haut-fourneau.",
-  "intro": "Cette refonte de la survie ajoute des alliages métalliques, une chaîne de stations d'artisanat et des outils deux-en-un. La progression se fait par paliers : il est utile de savoir à quoi sert chaque station et ce qu'elle peut fondre. Gilly SMP sert d'exemple.",
+  "intro": "Cette refonte de la survie ajoute des alliages métalliques, une chaîne de stations d'artisanat et des outils deux-en-un. La progression se fait par paliers : il est utile de savoir à quoi sert chaque station et ce qu'elle peut fondre. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Alliages et métaux",
       "items": [
         {
           "q": "Qu'est-ce qu'un alliage dans Minecraft ?",
-          "a": "Un alliage est un métal forgé sur un métal de base. Sur Gilly SMP, les alliages sont l'Hépatizon et le Shakudo sur le cuivre, l'Acier sur le fer, et l'Électrum et l'Adamant sur le diamant."
+          "a": "Un alliage est un métal forgé sur un métal de base. Sur MatchaSMP, les alliages sont l'Hépatizon et le Shakudo sur le cuivre, l'Acier sur le fer, et l'Électrum et l'Adamant sur le diamant."
         },
         {
           "q": "Comment fabriquer de l'acier dans Minecraft ?",
@@ -32,7 +32,7 @@
       "items": [
         {
           "q": "Dans quel ordre les stations d'artisanat se débloquent-elles dans Minecraft ?",
-          "a": "Sur Gilly SMP, les nouvelles stations viennent avant le four : d'abord le feu de camp et le Four à boue, puis le Four à boue et le Four, puis le haut-fourneau, la table de forge et l'enclume."
+          "a": "Sur MatchaSMP, les nouvelles stations viennent avant le four : d'abord le feu de camp et le Four à boue, puis le Four à boue et le Four, puis le haut-fourneau, la table de forge et l'enclume."
         },
         {
           "q": "Que fond le Four à boue dans Minecraft ?",

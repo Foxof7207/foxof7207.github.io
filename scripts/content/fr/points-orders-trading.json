@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Économie d'un serveur Minecraft : points, commandes d'achat et échanges entre joueurs",
   "description": "Fonctionnement d'une économie Minecraft pilotée par les joueurs : points, commandes d'achat payées hors ligne, échanges, paiements et parrainages.",
-  "intro": "Certains serveurs de survie font tourner une économie pilotée par les joueurs plutôt qu'une boutique, les objets changent donc de mains entre joueurs. Ce guide explique les points, les commandes d'achat, les échanges et les récompenses de parrainage. Gilly SMP sert d'exemple.",
+  "intro": "Certains serveurs de survie font tourner une économie pilotée par les joueurs plutôt qu'une boutique, les objets changent donc de mains entre joueurs. Ce guide explique les points, les commandes d'achat, les échanges et les récompenses de parrainage. MatchaSMP sert d'exemple.",
   "groups": [
     {
       "title": "Points et paiements entre joueurs",
       "items": [
         {
           "q": "Comment fonctionne une économie pilotée par les joueurs sur un serveur de survie Minecraft ?",
-          "a": "Sur Gilly SMP, l'économie est entièrement pilotée par les joueurs. Ils se vendent des objets via le marché des commandes ou les échanges, et les points sont la monnaie du serveur. Chaque prix du serveur est exprimé en points."
+          "a": "Sur MatchaSMP, l'économie est entièrement pilotée par les joueurs. Ils se vendent des objets via le marché des commandes ou les échanges, et les points sont la monnaie du serveur. Chaque prix du serveur est exprimé en points."
         },
         {
           "q": "Comment gagner des points sur un serveur de survie Minecraft ?",
@@ -32,7 +32,7 @@
         },
         {
           "q": "Combien de commandes d'achat puis-je avoir en même temps dans Minecraft ?",
-          "a": "Sur Gilly SMP, vous pouvez avoir 5 commandes actives, davantage selon le rang : 7 pour le Bronze, 10 pour l'Or et 15 pour le Diamant. Les commandes expirent au bout de 14 jours."
+          "a": "Sur MatchaSMP, vous pouvez avoir 5 commandes actives, davantage selon le rang : 7 pour le Bronze, 10 pour l'Or et 15 pour le Diamant. Les commandes expirent au bout de 14 jours."
         },
         {
           "q": "Les commandes d'achat Minecraft exigent-elles l'objet exact ?",

@@ -4,18 +4,18 @@
   "updated": "2026-11-21",
   "h1": "What Is Matcha Flavoured? A Minecraft Survival Datapack Explained",
   "description": "What is Matcha Flavoured? A Minecraft datapack that removes hunger and natural regeneration, adds alloys and makes death less punishing for casual players.",
-  "intro": "Matcha Flavoured is a Minecraft datapack that reworks survival progression for casual players, and you may also see it spelled Matcha Flavored. These answers explain what it changes in plain language. Gilly SMP runs it as a crossplay server.",
+  "intro": "Matcha Flavoured is a Minecraft datapack that reworks survival progression for casual players, and you may also see it spelled Matcha Flavored. These answers explain what it changes in plain language. MatchaSMP runs it as a crossplay server.",
   "groups": [
     {
       "title": "The datapack",
       "items": [
         {
           "q": "What is the Matcha Flavoured datapack?",
-          "a": "Matcha Flavoured is a Minecraft Java datapack with a companion resource pack. It reworks survival progression so casual players can gather resources at a pace closer to technical players, and it makes death less punishing. Gilly SMP runs it server-side, so you don't need to install it yourself."
+          "a": "Matcha Flavoured is a Minecraft Java datapack with a companion resource pack. It reworks survival progression so casual players can gather resources at a pace closer to technical players, and it makes death less punishing. MatchaSMP runs it server-side, so you don't need to install it yourself."
         },
         {
           "q": "Is Matcha Flavoured a mod or a datapack?",
-          "a": "It is a datapack with a companion resource pack, not a client mod you install. On Gilly SMP it runs on the server, so Java players only need Minecraft 26.3 and the server resource pack, which is sent automatically."
+          "a": "It is a datapack with a companion resource pack, not a client mod you install. On MatchaSMP it runs on the server, so Java players only need Minecraft 26.3 and the server resource pack, which is sent automatically."
         },
         {
           "q": "Why do people write Matcha Flavored with an o?",
@@ -28,19 +28,19 @@
       "items": [
         {
           "q": "Does Matcha Flavoured remove hunger?",
-          "a": "Yes. Hunger is effectively gone: you don't starve, and food is about its effects instead of filling a bar. On Gilly SMP there are about 50 new foods, and healing comes from food effects, potions and special items."
+          "a": "Yes. Hunger is effectively gone: you don't starve, and food is about its effects instead of filling a bar. On MatchaSMP there are about 50 new foods, and healing comes from food effects, potions and special items."
         },
         {
           "q": "Does Matcha Flavoured turn off natural health regeneration?",
-          "a": "Yes. Natural health regeneration is off, so you heal by eating foods with healing effects, drinking potions or using special items. On Gilly SMP this is one of the core rules."
+          "a": "Yes. Natural health regeneration is off, so you heal by eating foods with healing effects, drinking potions or using special items. On MatchaSMP this is one of the core rules."
         },
         {
           "q": "How does death work in Matcha Flavoured?",
-          "a": "On Gilly SMP you keep your inventory and XP, but each death removes one maximum heart. The server runs Easy, so your maximum never drops below 10 hearts. Crystal Hearts restore maximum hearts up to 30."
+          "a": "On MatchaSMP you keep your inventory and XP, but each death removes one maximum heart. The server runs Easy, so your maximum never drops below 10 hearts. Crystal Hearts restore maximum hearts up to 30."
         },
         {
           "q": "Does Matcha Flavoured need mob farms?",
-          "a": "It is designed so you don't need them. Progression rewards exploration, cooking, fishing and trading instead of technical grinders. On Gilly SMP there are no mob farms, XP farms or villager trading halls."
+          "a": "It is designed so you don't need them. Progression rewards exploration, cooking, fishing and trading instead of technical grinders. On MatchaSMP there are no mob farms, XP farms or villager trading halls."
         }
       ]
     },
@@ -49,15 +49,15 @@
       "items": [
         {
           "q": "Which alloys does Matcha Flavoured add?",
-          "a": "The rework adds alloys smithed onto base metals: Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond. Gilly SMP also has mattocks and dolabras, which are two-in-one tools."
+          "a": "The rework adds alloys smithed onto base metals: Hepatizon and Shakudo on copper, Steel on iron, and Electrum and Adamant on diamond. MatchaSMP also has mattocks and dolabras, which are two-in-one tools."
         },
         {
-          "q": "Which Minecraft version does Matcha Flavoured use on Gilly SMP?",
-          "a": "Gilly SMP runs Matcha Flavoured on Minecraft Java 26.3. Java players need 26.3 to connect to <code>mc.gillyb.net</code>, and Bedrock players connect on port 19132. Check the <a href=\"/wiki.html#basics\">Getting started page</a> for the current version."
+          "q": "Which Minecraft version does Matcha Flavoured use on MatchaSMP?",
+          "a": "MatchaSMP runs Matcha Flavoured on Minecraft Java 26.3. Java players need 26.3 to connect to <code>play.matchasmp.eu</code>, and Bedrock players connect on port 19132. Check the <a href=\"/wiki.html#basics\">Getting started page</a> for the current version."
         },
         {
           "q": "Can Bedrock players play Matcha Flavoured?",
-          "a": "Yes on Gilly SMP. Bedrock can't load Java resource packs, so Bedrock players see vanilla textures and some raw keys on custom items, but the rework's rules still apply to them."
+          "a": "Yes on MatchaSMP. Bedrock can't load Java resource packs, so Bedrock players see vanilla textures and some raw keys on custom items, but the rework's rules still apply to them."
         }
       ]
     }

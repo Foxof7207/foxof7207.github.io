@@ -4,7 +4,7 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Hearts Explained: Death Penalties, Healing and Crystal Hearts",
   "description": "Why Minecraft health doesn't regenerate on this survival rework, what dying costs in maximum hearts, and how to heal with food, potions and Crystal Hearts.",
-  "intro": "Health works differently on this survival rework: natural regeneration is off, hunger is gone, and death costs maximum hearts rather than items. These answers explain the rules in plain language. Gilly SMP is the worked example.",
+  "intro": "Health works differently on this survival rework: natural regeneration is off, hunger is gone, and death costs maximum hearts rather than items. These answers explain the rules in plain language. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Healing",
@@ -15,11 +15,11 @@
         },
         {
           "q": "Does hunger matter in a Minecraft survival rework?",
-          "a": "Hunger is effectively gone on Gilly SMP: you won't starve, and food is valued for its effects instead of filling a hunger bar."
+          "a": "Hunger is effectively gone on MatchaSMP: you won't starve, and food is valued for its effects instead of filling a hunger bar."
         },
         {
           "q": "Which items heal you in a Minecraft survival rework?",
-          "a": "On Gilly SMP you heal with foods that have healing effects, potions and special items. Food is valued for its effects rather than for filling a bar."
+          "a": "On MatchaSMP you heal with foods that have healing effects, potions and special items. Food is valued for its effects rather than for filling a bar."
         },
         {
           "q": "How do I get hearts back in Minecraft after dying?",
@@ -32,19 +32,19 @@
       "items": [
         {
           "q": "What happens to my items when I die in Minecraft survival?",
-          "a": "On Gilly SMP you keep your inventory and XP when you die. Each death removes <strong>1 maximum heart</strong> instead, and thrown ender pearls don't vanish."
+          "a": "On MatchaSMP you keep your inventory and XP when you die. Each death removes <strong>1 maximum heart</strong> instead, and thrown ender pearls don't vanish."
         },
         {
           "q": "What is the minimum number of hearts in Minecraft on a server?",
-          "a": "On Gilly SMP, which runs on Easy, you never drop below <strong>10 hearts</strong> from deaths."
+          "a": "On MatchaSMP, which runs on Easy, you never drop below <strong>10 hearts</strong> from deaths."
         },
         {
           "q": "What is a maximum heart in Minecraft?",
-          "a": "A maximum heart is the most hearts you can reach. On Gilly SMP each death removes one, and Crystal Hearts add one back, up to a total of 30."
+          "a": "A maximum heart is the most hearts you can reach. On MatchaSMP each death removes one, and Crystal Hearts add one back, up to a total of 30."
         },
         {
           "q": "Do you lose XP when you die in Minecraft?",
-          "a": "No. On Gilly SMP you keep your XP on death, along with your inventory."
+          "a": "No. On MatchaSMP you keep your XP on death, along with your inventory."
         }
       ]
     }

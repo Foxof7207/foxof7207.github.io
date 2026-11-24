@@ -1,4 +1,4 @@
-/* Gilly SMP recipe viewer.
+/* MatchaSMP recipe viewer.
    Data: /assets/recipes/recipes.json (generated from the survival-rework datapack), icons: /assets/recipes/items.png.
    State lives in the URL hash so searches can be shared: #q=steel&s=blast&make=<item>&use=<item> */
 (function () {

@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "So stellst du Stahl, Hepatizon und andere Legierungen in einer Minecraft-Survival-Überarbeitung her",
   "description": "So stellst du Stahl, Hepatizon und Elektrum her, welche Stationen zuerst freigeschaltet werden, wo Silber liegt und warum Eisen einen Hochofen braucht.",
-  "intro": "Diese Survival-Überarbeitung fügt Metalllegierungen, eine Kette von Herstellungsstationen und Zwei-in-eins-Werkzeuge hinzu. Der Fortschritt erfolgt in Stufen, daher hilft es, die Aufgabe jeder Station und ihre Schmelzmöglichkeiten zu kennen. Gilly SMP dient als Beispiel.",
+  "intro": "Diese Survival-Überarbeitung fügt Metalllegierungen, eine Kette von Herstellungsstationen und Zwei-in-eins-Werkzeuge hinzu. Der Fortschritt erfolgt in Stufen, daher hilft es, die Aufgabe jeder Station und ihre Schmelzmöglichkeiten zu kennen. MatchaSMP dient als Beispiel.",
   "groups": [
     {
       "title": "Legierungen und Metalle",
       "items": [
         {
           "q": "Was ist eine Legierung in Minecraft?",
-          "a": "Eine Legierung ist ein Metall, das auf ein Grundmetall geschmiedet wird. Auf Gilly SMP gibt es Hepatizon und Shakudo auf Kupfer, Stahl auf Eisen sowie Elektrum und Adamant auf Diamant."
+          "a": "Eine Legierung ist ein Metall, das auf ein Grundmetall geschmiedet wird. Auf MatchaSMP gibt es Hepatizon und Shakudo auf Kupfer, Stahl auf Eisen sowie Elektrum und Adamant auf Diamant."
         },
         {
           "q": "Wie stelle ich Stahl in Minecraft her?",
@@ -32,7 +32,7 @@
       "items": [
         {
           "q": "In welcher Reihenfolge werden die Herstellungsstationen in Minecraft freigeschaltet?",
-          "a": "Auf Gilly SMP kommen neue Stationen vor dem Ofen: zuerst das Lagerfeuer und der Schlammofen, dann Brennofen und Ofen, danach der Hochofen, der Schmiedetisch und der Amboss."
+          "a": "Auf MatchaSMP kommen neue Stationen vor dem Ofen: zuerst das Lagerfeuer und der Schlammofen, dann Brennofen und Ofen, danach der Hochofen, der Schmiedetisch und der Amboss."
         },
         {
           "q": "Was schmilzt der Schlammofen in Minecraft?",

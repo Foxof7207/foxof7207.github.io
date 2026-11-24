@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Server Economy: Points, Buy Orders and Player Trading Explained",
   "description": "How a player-driven Minecraft survival economy works: server points, buy orders that pay out while you're offline, player trades, payments and referral rewards.",
-  "intro": "Some survival servers run a player-driven economy instead of a shop, so items change hands between players. This guide explains points, buy orders, trades and referral rewards. Gilly SMP is the worked example.",
+  "intro": "Some survival servers run a player-driven economy instead of a shop, so items change hands between players. This guide explains points, buy orders, trades and referral rewards. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Points and paying players",
       "items": [
         {
           "q": "How does a player-driven economy work on a Minecraft survival server?",
-          "a": "On Gilly SMP the economy is entirely player-driven. Players sell items to each other through the order market or trades, and every price on the server is in points, the server currency."
+          "a": "On MatchaSMP the economy is entirely player-driven. Players sell items to each other through the order market or trades, and every price on the server is in points, the server currency."
         },
         {
           "q": "How do I earn points on a Minecraft survival server?",
@@ -32,7 +32,7 @@
         },
         {
           "q": "How many buy orders can I have at once in Minecraft?",
-          "a": "On Gilly SMP you can have 5 active orders, with more allowed by rank: 7 on Bronze, 10 on Gold and 15 on Diamond. Orders expire after 14 days."
+          "a": "On MatchaSMP you can have 5 active orders, with more allowed by rank: 7 on Bronze, 10 on Gold and 15 on Diamond. Orders expire after 14 days."
         },
         {
           "q": "Do Minecraft buy orders need the exact item?",

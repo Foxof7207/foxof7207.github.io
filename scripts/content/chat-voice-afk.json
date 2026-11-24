@@ -4,14 +4,14 @@
   "updated": "2026-11-21",
   "h1": "Minecraft Server Chat Guide: Global Chat, Private Messages, Voice Chat and AFK",
   "description": "How global chat, private messages, spam filtering, Java voice chat and AFK rules work on a Minecraft survival server, with the commands you need.",
-  "intro": "Chat, voice and AFK rules shape how a server feels, especially on a crossplay server where not everyone uses voice. These answers cover the basics of talking, messaging and idling. Gilly SMP is the worked example.",
+  "intro": "Chat, voice and AFK rules shape how a server feels, especially on a crossplay server where not everyone uses voice. These answers cover the basics of talking, messaging and idling. MatchaSMP is the worked example.",
   "groups": [
     {
       "title": "Chat",
       "items": [
         {
           "q": "Is Minecraft server chat global or local?",
-          "a": "On Gilly SMP chat is global: everyone sees your messages. There is no ranged chat and no need to shout with <code>!</code>. Your rank shows in front of your name."
+          "a": "On MatchaSMP chat is global: everyone sees your messages. There is no ranged chat and no need to shout with <code>!</code>. Your rank shows in front of your name."
         },
         {
           "q": "How do I send a private message on a Minecraft server?",
@@ -23,7 +23,7 @@
         },
         {
           "q": "How is spam handled in Minecraft server chat?",
-          "a": "On Gilly SMP, repeated messages, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, and longer if they keep doing it."
+          "a": "On MatchaSMP, repeated messages, flooding, very long messages, excessive capitals and random characters are detected automatically. Spammers are muted for a short time, and longer if they keep doing it."
         }
       ]
     },
@@ -32,11 +32,11 @@
       "items": [
         {
           "q": "How does Minecraft voice chat work on a server?",
-          "a": "On Gilly SMP, Java players can install the Simple Voice Chat mod matching Minecraft 26.3, then press <code>V</code> to set it up. You hear players within 48 blocks, or 24 when whispering, and can form groups with <code>G</code>. Recording is disabled."
+          "a": "On MatchaSMP, Java players can install the Simple Voice Chat mod matching Minecraft 26.3, then press <code>V</code> to set it up. You hear players within 48 blocks, or 24 when whispering, and can form groups with <code>G</code>. Recording is disabled."
         },
         {
           "q": "Is voice chat required to play on a crossplay Minecraft server?",
-          "a": "No. Bedrock and console can't use voice chat, so it's never required to play on Gilly SMP."
+          "a": "No. Bedrock and console can't use voice chat, so it's never required to play on MatchaSMP."
         }
       ]
     },
@@ -45,7 +45,7 @@
       "items": [
         {
           "q": "What happens when you go AFK on a Minecraft server?",
-          "a": "On Gilly SMP, after 5 minutes without moving you're marked [AFK] and your name turns grey; <code>/afk</code> toggles it. After 10 more minutes you're disconnected. If the server restarts while you're away, you land in the AFK zone and can return with <code>/server smp</code>."
+          "a": "On MatchaSMP, after 5 minutes without moving you're marked [AFK] and your name turns grey; <code>/afk</code> toggles it. After 10 more minutes you're disconnected. If the server restarts while you're away, you land in the AFK zone and can return with <code>/server smp</code>."
         },
         {
           "q": "How do I show my coordinates in Minecraft?",
