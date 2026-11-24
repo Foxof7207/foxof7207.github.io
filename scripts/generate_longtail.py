@@ -308,6 +308,7 @@ def head(lang, title, description, url, jsonld, alt_block, md_href):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="/js/legacy-redirect.js"></script>
   <title>%(title)s</title>
   <meta name="description" content="%(description)s">
   <link rel="canonical" href="%(url)s">
