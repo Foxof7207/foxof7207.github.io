@@ -146,7 +146,7 @@ Opens Minecraft and adds the server for you (Windows, Android, iPhone, iPad). Or
 
 Friend: MatchaSMP
 
-1. Add `MatchaSMP` as a friend on your platform
+1. Add `MatchaEU` as a friend on your platform
 2. Open Minecraft
 3. Join from the Friends tab
 
