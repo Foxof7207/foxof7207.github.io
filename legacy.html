@@ -3,8 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
-  <script src="/js/legacy-redirect.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' https://u.crbo.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://u.crbo.dev https://api.mcsrvstat.us; worker-src 'self' blob:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <script>
+    // Redirect visitors from old domain to this page
+    (function () {
+      "use strict";
+      var host = (window.location.hostname || "").toLowerCase();
+      var ref = document.referrer || "";
+      var OLD_HOST = "craft.gillyb.net";
+      var fromOldDomain =
+        host === OLD_HOST ||
+        host.endsWith("." + OLD_HOST) ||
+        new RegExp("(^|[/]|[.])" + OLD_HOST.replace(/\./g, "\\.") + "([/:]|$)", "i").test(ref);
+      if (fromOldDomain && window.location.pathname !== "/legacy.html") {
+        window.location.replace("/legacy.html");
+      }
+    })();
+  </script>
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>We've moved – MatchaSMP</title>
   <meta name="description" content="Gilly-SMP is now MatchaSMP. The site has moved to matchasmp.eu and the server address is play.matchasmp.eu.">
