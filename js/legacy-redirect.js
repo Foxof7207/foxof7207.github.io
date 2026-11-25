@@ -19,7 +19,10 @@
     host.endsWith("." + OLD_HOST) ||
     new RegExp("(^|[/]|[.])" + OLD_HOST.replace(/\./g, "\\.") + "([/:]|$)", "i").test(ref);
 
+  console.log("[legacy-redirect] host:", host, "fromOldDomain:", fromOldDomain, "pathname:", window.location.pathname);
+
   if (fromOldDomain && window.location.pathname !== "/legacy.html") {
+    console.log("[legacy-redirect] Redirecting to /legacy.html");
     window.location.replace("/legacy.html");
   }
 })();
